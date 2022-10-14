@@ -1,0 +1,29 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix monu: <http://MonumentMadrid.com> .
+@prefix ont: <http://MonumentMadrid.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+monu:409512 a mon:Monument ;
+            ont:haspk 409512^^xsd:integer ;
+            ont:hasname "A los Abuelos"^^xsd:string ;
+            ont:hassubtype "Grupo Escultórico"^^xsd:string ;
+            ont:hasdescription "Pequeña escultura, situada en un parque delimitado por la intersección entre las calles Alicún y Purchena, que fue donada por la cercana Escuela Infantil “El Carmen” al Concejal del Distrito Jorge Tapia. La obra constituye un homenaje a los abuelos y abuelas que cuidan de sus nietos."^^xsd:string ;
+            ont:hasinagurationDate 1994^^xsd:integer .
+
+monu:M_Esther a mon:Author ;
+            ont:hasname "M., Esther"^^xsd:string .
+
+monu:Alicun a mon:Location ;
+            ont:hasaddressname "Alicun"^^xsd:string ;
+            ont:hasaddresstype "C"^^xsd:string ;
+            ont:hascity "Madrid"^^xsd:string ;
+            ont:hasprovince "Madrid"^^xsd:string ;
+            ont:hasneighborhood "APÓSTOL SANTIAGO"^^xsd:string ;
+            ont:hasdistrict "HORTALEZA"^^xsd:string ;
+            ont:hascoordx "443913"^^xsd:string ;
+            ont:hascoordy "4481224"^^xsd:string .
+
+monu:409512 ont:desingedBy monu:M_Esther ;
+            ont:hasAddress monu:Alicun .

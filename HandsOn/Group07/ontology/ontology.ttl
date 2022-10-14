@@ -41,7 +41,7 @@ ns2:tiene_GisY a owl:DatatypeProperty ;
 ns2:tiene_Nfinca a owl:DatatypeProperty ;
     rdfs:label "tiene_ nfinca" ;
     rdfs:domain ns:Direccion ;
-    rdfs:range xsd:integer .
+    rdfs:range xsd:string .
 
 ns2:tiene_barrio a owl:ObjectProperty ;
     rdfs:label "tiene_barrio" ;
@@ -81,7 +81,7 @@ ns2:tiene_long a owl:DatatypeProperty ;
 ns2:tiene_numero a owl:DatatypeProperty ;
     rdfs:label "tiene_numero" ;
     rdfs:domain ns:Estacion ;
-    rdfs:range xsd:integer .
+    rdfs:range xsd:string .
 
 ns:Barrio a owl:Class ;
     rdfs:label "Barrio" .

@@ -1,0 +1,118 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "ERAR_PARAMETRO",
+    "expression": "grel:value[4,9]",
+    "onError": "set-to-blank",
+    "newColumnName": "parameter",
+    "columnInsertIndex": 1,
+    "description": "Create column parameter at index 1 based on column ERAR_PARAMETRO using expression grel:value[4,9]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "ERAR_PARAMETRO",
+    "expression": "grel:value[0,3]",
+    "onError": "set-to-blank",
+    "newColumnName": "location",
+    "columnInsertIndex": 1,
+    "description": "Create column location at index 1 based on column ERAR_PARAMETRO using expression grel:value[0,3]"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ERAR_PARAMETRO",
+    "description": "Remove column ERAR_PARAMETRO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"VIV\",\"Viveros de la Villa\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"VIV\",\"Viveros de la Villa\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"CHI\",\"La China\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"CHI\",\"La China\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"GAV\",\"La Gavia\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"GAV\",\"La Gavia\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"REJ\",\"Rejas\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"REJ\",\"Rejas\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "parameter",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column parameter using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "parameter",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EColi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ecoli"
+      }
+    ],
+    "description": "Mass edit cells in column parameter"
+  }
+]

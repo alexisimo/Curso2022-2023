@@ -9,7 +9,7 @@
 	schema:address "Calle Chulapos s/n"^^xsd:string ;
 	properties:emplazamiento "Vía pública"^^xsd:string ;
 	properties:numEquipo "1"^^xsd:integer ;
-	properties:potencia  "50"^^xsd:integer ;
+	properties:potencia  "50 Kw"^^xsd:string ;
 	properties:conectorAC "1"^^xsd:integer ;
 	properties:conectorCC "2"^^xsd:integer ;
 	properties:operador "REPSOL"^^xsd:string ;
@@ -18,14 +18,15 @@
 
 
 <http://www.puntodecargasmadrid/Recursos/Distrito/98356728> a classes:Distrito ;
-	schema:value "02"^^xsd:integer ;
-	schema:label "Arganzuela"^^xsd:string ;
+	rdf:value "02"^^xsd:integer ;
+	rdf:label "Arganzuela"^^xsd:string ;
 	properties:distPerteneceBarrio <http://www.puntodecargasmadrid/Recursos/Barrio/17238941> .
 
 <http://www.puntodecargasmadrid/Recursos/Barrio/17238941> a classes:Barrio ;
-	schema:value "1"^^xsd:integer ;
-	schema:label "Imperial"^^xsd:string .
+	rdf:value "1"^^xsd:integer ;
+	rdf:label "Imperial"^^xsd:string .
 
 <http://www.puntodecargasmadrid/Recursos/coordonnes/88812731> a schema:GeoCoordinates ;
 	schema:longitude "438893,73000000"^^xsd:string ;
 	schema:latitude  "4473226,26000000"^^xsd:string .
+	   

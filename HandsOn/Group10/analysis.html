@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Analysis</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <link href="requirements/Template/bootstrap.css" rel="stylesheet">
+
+    <link href="requirements/Template/jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Análisis</h1>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Analisis de los datos</h2>
+                    <p class="card-text">
+                        Los datos analizados han sido obtenidos del CSV monumentos-ciudad-madrid: <br></b>
+                    </p>
+                        <ul>
+                            <li>
+                                PK: valor Integer. Restriccion: empieza por 4.
+                            </li>
+                            <li>
+                                Nombre: valor String.
+                            </li>
+                            <li>
+                                SubTipo: valor String. Las posibilidades son:  Edificacion singular, (Elemento conmemorativo, Lápida), Elemento de ornamentación, Escultura conceptual o abstracta, Estatua, (Fuente, Estanque, Lámina de agua), Grupo Escultorico, (Puente construccion civil), (Puerta, Arco triunfal). 
+                            </li>
+                            <li>
+                                Descripcion: valor String.
+                            </li>
+                            <li>
+                                Fecha: valor Integer. Solo es el año
+                            </li>
+                            <li>
+                                Autores: valor String.
+                            </li>
+                            <li>
+                                Content-URL: valor URI.
+                            </li>
+                            <li>
+                                Nombre-via: valor String.
+                            </li>
+                            <li>
+                                Clase-via: valor String.
+                            </li>
+                            <li>
+                                Num: valor Integer.
+                            </li>
+                            <li>
+                                Localidad: valor String.
+                            </li>
+                            <li>
+                                Provincia: valor String.
+                            </li>
+                            <li>
+                                Codigo Postal: valor Integer.
+                            </li>
+                            <li>
+                                Cod Barrio: valor Integer.
+                            </li>
+                            <li>
+                                Barrio: valor String.
+                            </li>
+                            <li>
+                                Cod Distrito: valor Integer.
+                            </li>
+                            <li>
+                                Distrito: valor String.
+                            </li>
+                            <li>
+                                Coordenada-X: valor Integer de 6 cifras.
+                            </li>
+                            <li>
+                                Coordenada-Y: valor Integer de 7 cifras.
+                            </li>
+                </div>
+            </div>
+            <br/>
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Licencia de los datos</h2>
+                    <h4>Propiertario de los datos</h4>
+                    <p class="card-text">
+                        El propietario de los datos es el Ayuntamiento de Madrid.<br>
+                    </p>
+                    <h4>Licencia</h4>
+                    <p class="card-text">
+                        La licencia es Creative Commons CC BY 4.0.
+                    </p>
+                    <h4>Uso de la licencia</h4>
+                    <p class="card-text">
+                        La licencia se utiliza para proporcionar un conjunto estándar de términos y condiciones
+                        que los creadores y otros titulares de derechos pueden utilizar para compartir obras originales
+                        de su autoría y cualquier otro material sujeto a derechos de autor.
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Resource naming strategy</h2>
+                    <p class="card-text">
+
+                    <p class="card-text">
+                       Lista completa de clases, propiedades y recursos quedará definida de la siguiente manera:
+                    </p>
+                    <ul>
+                        <li>Dominio: <a href="http://www.monumentmadrid.com">http://www.monumentmadrid.com</a></li>
+                    </ul>
+                    <ul>
+                        <li>Ruta ontología clases: http://www.monumentmadrid.com/ontology#[nombreClase]
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Ruta ontología propiedades: http://www.monumentmadrid.com/ontology#[nombrePropiedad]
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Ruta recursos: http://www.monumentmadrid.com/resource/[identificador]
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</main>
+</body>
+</html>

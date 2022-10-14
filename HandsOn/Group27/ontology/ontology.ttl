@@ -1,5 +1,5 @@
-@base <http://www.semanticweb_g27.org/ontology/ElectricCons> .
-@prefix ec:<http://www.semanticweb_g27.org/ontology/ElectricCons#> .
+@base <http://www.semanticweb_g27.org/ontology/EnergyCons> .
+@prefix ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
@@ -10,7 +10,7 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 
 # Ontology v3
-<http://www.semanticweb_g27.org/ontology/ElectricCons> rdf:type owl:Ontology .
+<http://www.semanticweb_g27.org/ontology/EnergyCons> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -23,11 +23,11 @@ ec:isValid rdf:type owl:ObjectProperty ;
                 rdfs:domain ssn:Observation ;
                 rdfs:range xsd:boolean .
 
-ec:typeOfElectricity rdf:type owl:ObjectProperty ;
+ec:typeOfEnergy rdf:type owl:ObjectProperty ; # Coherency refactor
                 rdfs:domain ssn:Observation ;
                 rdfs:range xsd:string .
 
-ec:electricityGroup rdf:type owl:ObjectProperty ;
+ec:energy rdf:type owl:ObjectProperty ; # Coherency refactor
                 rdfs:domain ssn:Observation ;
                 rdfs:range xsd:string .
 

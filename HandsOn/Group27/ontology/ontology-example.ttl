@@ -1,4 +1,4 @@
-@prefix ec: <http://www.semanticweb_g27.org/ontology/ElectricCons#> .
+@prefix ec: <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
@@ -8,8 +8,8 @@
 <http://www.semanticweb_g27.org/resource/Observation/O2258> a ssn:Observation ;
     schema:unitText "kWh"^^xsd:string ;
     schema:value "13099"^^xsd:string ;
-    ec:electricityGroup "Activa Interruptor Gral"^^xsd:string ;
-    ec:typeOfElectricity "Externo"^^xsd:string ;
+    ec:energyGroup "Activa Interruptor Gral"^^xsd:string ;
+    ec:typeOfEnergy "Energia Activa"^^xsd:string ;
     ssn:featureOfInterest <http://www.semanticweb_g27.org/resource/CivicStructure/E00000000> ;
     time:inXSDDate "2022-03-01"^^xsd:date .
 

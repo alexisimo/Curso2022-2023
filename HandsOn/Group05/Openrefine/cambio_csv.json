@@ -1,0 +1,1401 @@
+
+josellorentev
+/
+Curso2022-2023
+Public
+forked from FacultadInformatica-LinkedData/Curso2022-2023
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Curso2022-2023/HandsOn/Group05/cambios_csv.json
+@CarlosD21
+CarlosD21 Hands-on assignment 3
+ 1 contributor
+1382 lines (1382 sloc)  35.4 KB
+[
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "1",
+                  "l": "1"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "grel:\"Gratuito\"",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column PRECIO using expression grel:\"Gratuito\""
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Gratuita con inscripción previa",
+            "Gratuito con inscripción previa"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Más información sobre precios y programación en próximas fechas.",
+            "Más información sobre precios y programación en próximas fechas"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Más información sobre precios y programación en próximas fechas."
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "10 euros por niño (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad",
+            "10 euros por niño (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "10 euros por niño (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Entrada libre",
+            "Entrada libre hasta completar aforo "
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        },
+        {
+          "from": [
+            "Próximamente más información",
+            "Próximamente a la venta"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Próximamente más información"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Acceso libre",
+            "Acceso libre hasta completar aforo",
+            "Acceso libre hasta completar el aforo"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "30 euros (más gastos de gestión) las 3 sesiones. Solo se devolverá el importe de la matrícula en caso de cancelación de la actividad.",
+            "30 euros las 3 sesiones (más gastos de gestión). Solo se devolverá el importe de la matrícula en caso de cancelación de la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "30 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "10 euros (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "10 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "10 euros por niño (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "10 euro"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "10 euro"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "10 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "12 euros por persona (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "12 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "140 euros /trimestre (más gastos de gestión). Solo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "140 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "30 euros (más gastos de gestión)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "30 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "30 euros las tres sesiones (más gastos de gestión). Solo se devolverá el importe de la matrícula en caso de cancelación de la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "30 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "4 euros (tanto niños como adultos)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "4 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "40  euros las cuatro sesiones (más gastos de gestión). Sólo se devolverá el importe de la matrícula en caso de que la organización cancele la actividad."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "40  euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "40  euros"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "40 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "5 euros (tanto niños como adultos)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "5 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "6 euros (tanto niños como adultos)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "6 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Acceso gratuito"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Descarga de invitación disponible una semana antes del encuentro"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Entrada general: 11  euros Próximamente a la venta  audimadrid.com"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "11 euros"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Entrada gratuita"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Gratuito con previa descarga de invitación una semana antes de la actividad"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Gratuito previa descarga de invitación. Las entradas estarán disponibles para descarga en la web desde 7 días antes de cada sesión"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Para inscripciones, reservas y más información en lassinsombrero.actividades@gmail.com (ver pestaña sobre inscripciones).  Para asistir a cualquiera de estas actividades es recomendable darse de alta previamente en Amigos del Teatro (desde los 18 años) y en el JOBO (desde los 16 años).  NOTA: Entrada libre hasta completar aforo (con inscripción previa, cuando se indica)."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Gratuito"
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "0",
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Próximamente más información"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Más información sobre precios y programación en próximas fechas."
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "GRATUITO",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column GRATUITO using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "PRECIO",
+            "expression": "value",
+            "columnName": "PRECIO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "Gratuito",
+                  "l": "Gratuito"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          },
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": 0,
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "GRATUITO",
+      "expression": "grel:1",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column GRATUITO using expression grel:1"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PRECIO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "Más información sobre precios y programación en próximas fechas."
+        }
+      ],
+      "description": "Mass edit cells in column PRECIO"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": 0,
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "LARGA-DURACION",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column LARGA-DURACION using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": 0,
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "FECHA",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column FECHA using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "GRATUITO",
+            "expression": "value",
+            "columnName": "GRATUITO",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": 0,
+                  "l": "0"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "FECHA-FIN",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column FECHA-FIN using expression value.toDate()"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Column",
+      "description": "Remove column Column"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "LARGA-DURACION",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column LARGA-DURACION using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "FECHA",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column FECHA using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "FECHA-FIN",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column FECHA-FIN using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "LATITUD",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column LATITUD using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "LONGITUD",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column LONGITUD using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "COORDENADA-Y",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column COORDENADA-Y using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "COORDENADA-X",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column COORDENADA-X using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "ACCESIBILIDAD-INSTALACION",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ACCESIBILIDAD-INSTALACION using expression value.toNumber()"
+    }
+  ]

@@ -1,0 +1,197 @@
+@prefix : <http://monumentmadrid.com#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ont: <http://monumentmadrid.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix monu: <http://monumentmadrid.com> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://monumentmadrid.com> .
+
+<http://monumentmadrid.com> rdf:type owl:Ontology ;
+                             dc:creator "Grupo 10" ;
+                             dc:description "Ontology code created by Chowlk" ;
+                             dc:title "Monument Ontology" ;
+                             owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://monumentmadrid.com/ontology#desingedBy
+ont:desingedBy rdf:type owl:ObjectProperty ;
+               rdfs:label "desinged by" .
+
+
+###  http://monumentmadrid.com/ontology#hasAddress
+ont:hasAddress rdf:type owl:ObjectProperty ;
+               rdfs:label "has address" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://monumentmadrid.com/ontology#hasaddressname
+ont:hasaddressname rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "hasaddressname" .
+
+
+###  http://monumentmadrid.com/ontology#hasaddressnumber
+ont:hasaddressnumber rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:integer ;
+                     rdfs:label "hasaddressnumber" .
+
+
+###  http://monumentmadrid.com/ontology#hasaddresstype
+ont:hasaddresstype rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "hasaddresstype" .
+
+
+###  http://monumentmadrid.com/ontology#hascity
+ont:hascity rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "hascity" .
+
+
+###  http://monumentmadrid.com/ontology#hascontenturl
+ont:hascontenturl rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "hascontenturl" .
+
+
+###  http://monumentmadrid.com/ontology#hascoordx
+ont:hascoordx rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "hascoordx" .
+
+
+###  http://monumentmadrid.com/ontology#hascoordy
+ont:hascoordy rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "hascoordy" .
+
+
+###  http://monumentmadrid.com/ontology#hasdescription
+ont:hasdescription rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "hasdescription" .
+
+
+###  http://monumentmadrid.com/ontology#hasdistrict
+ont:hasdistrict rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "hasdistrict" .
+
+
+###  http://monumentmadrid.com/ontology#hasdistrictCode
+ont:hasdistrictCode rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:integer ;
+                    rdfs:label "hasdistrict code" .
+
+
+###  http://monumentmadrid.com/ontology#hasinagurationDate
+ont:hasinagurationDate rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:integer ;
+                       rdfs:label "hasinaguration date" .
+
+
+###  http://monumentmadrid.com/ontology#hasname
+ont:hasname rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "hasname" .
+
+
+###  http://monumentmadrid.com/ontology#hasneighborhood
+ont:hasneighborhood rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "hasneighborhood" .
+
+
+###  http://monumentmadrid.com/ontology#hasneighborhoodcode
+ont:hasneighborhoodcode rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:integer ;
+                        rdfs:label "hasneighborhoodcode" .
+
+
+###  http://monumentmadrid.com/ontology#haspk
+ont:haspk rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:integer ;
+          rdfs:label "haspk" .
+
+
+###  http://monumentmadrid.com/ontology#haspostalcode
+ont:haspostalcode rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "haspostalcode" .
+
+
+###  http://monumentmadrid.com/ontology#hasprovince
+ont:hasprovince rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:integer ;
+                rdfs:label "hasprovince" .
+
+
+###  http://monumentmadrid.com/ontology#hassubtype
+ont:hassubtype rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "hassubtype" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://monumentmadrid.comAddress
+monu:Address rdf:type owl:Class ;
+             rdfs:subClassOf monu:Location ;
+             rdfs:label "Address" .
+
+
+###  http://monumentmadrid.comAuthor
+monu:Author rdf:type owl:Class ;
+            rdfs:subClassOf ont:Person ;
+            rdfs:label "Author" .
+
+
+###  http://monumentmadrid.comLocation
+monu:Location rdf:type owl:Class ;
+              rdfs:label "Location" .
+
+
+###  http://monumentmadrid.comMonument
+monu:Monument rdf:type owl:Class ;
+              rdfs:subClassOf monu:TuristAttraction ;
+              rdfs:label "Monument" .
+
+
+###  http://monumentmadrid.comTuristAttraction
+monu:TuristAttraction rdf:type owl:Class ;
+                      rdfs:label "Turist Attraction" .
+
+
+###  http://monumentmadrid.com/ontology#Person
+ont:Person rdf:type owl:Class ;
+           rdfs:label "Person" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

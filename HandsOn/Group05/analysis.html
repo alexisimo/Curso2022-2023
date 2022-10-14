@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Analysis</h1>
+        <h2>Análisis del dataset</h2>
+        <style type="text/css">
+            ol {
+                margin: 0;
+                padding: 0
+            }
+
+            table td,
+            table th {
+                padding: 0
+            }
+
+            .c2 {
+                border-right-style: solid;
+                padding: 5pt 5pt 5pt 5pt;
+                border-bottom-color: #000000;
+                border-top-width: 1pt;
+                border-right-width: 1pt;
+                border-left-color: #000000;
+                vertical-align: top;
+                border-right-color: #000000;
+                border-left-width: 1pt;
+                border-top-style: solid;
+                border-left-style: solid;
+                border-bottom-width: 1pt;
+                width: 112.9pt;
+                border-top-color: #000000;
+                border-bottom-style: solid
+            }
+
+            .c4 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 11pt;
+                font-family: "Arial";
+                font-style: normal
+            }
+
+            .c7 {
+                padding-top: 0pt;
+                padding-bottom: 0pt;
+                line-height: 1.15;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .c9 {
+                border-spacing: 0;
+                border-collapse: collapse;
+                margin-right: auto
+            }
+
+            .c1 {
+                padding-top: 0pt;
+                padding-bottom: 0pt;
+                line-height: 1.0;
+                text-align: left
+            }
+
+            .c6 {
+                background-color: #ffffff;
+                max-width: 451.4pt;
+                padding: 72pt 72pt 72pt 72pt
+            }
+
+            .c0 {
+                font-size: 8.5pt;
+                font-weight: 700
+            }
+
+            .c5 {
+                height: 11pt
+            }
+
+            .c8 {
+                height: 34.9pt
+            }
+
+            .c3 {
+                height: 0pt
+            }
+
+            .title {
+                padding-top: 0pt;
+                color: #000000;
+                font-size: 26pt;
+                padding-bottom: 3pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .subtitle {
+                padding-top: 0pt;
+                color: #666666;
+                font-size: 15pt;
+                padding-bottom: 16pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            li {
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Arial"
+            }
+
+            p {
+                margin: 0;
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Arial"
+            }
+
+            h1 {
+                padding-top: 20pt;
+                color: #000000;
+                font-size: 20pt;
+                padding-bottom: 6pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h2 {
+                padding-top: 18pt;
+                color: #000000;
+                font-size: 16pt;
+                padding-bottom: 6pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h3 {
+                padding-top: 16pt;
+                color: #434343;
+                font-size: 14pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h4 {
+                padding-top: 14pt;
+                color: #666666;
+                font-size: 12pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h5 {
+                padding-top: 12pt;
+                color: #666666;
+                font-size: 11pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h6 {
+                padding-top: 12pt;
+                color: #666666;
+                font-size: 11pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                font-style: italic;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+        </style>
+        </head>
+
+        <body class="c6 doc-content">
+            <p class="c5 c7"><span class="c4"></span></p><a id="t.8ca6c9483a17b3bdcbce6c9fff41bec7cf95cc3f"></a><a
+                id="t.0"></a>
+            <table class="c9">
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Columna</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Tipo</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Comment/Range</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Problema</span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">ID-EVENTO</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Integer</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">8200000-11900000</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">TITULO</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">PRECIO</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">GRATUITO</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Boolean</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">0-False, 1-True</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">LARGA-DURACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Boolean</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">0-False, 1-True</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c8">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">DIAS-SEMANA</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">DIAS-EXCLUIDOS</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Date</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">FECHA</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Date</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">FECHA-FIN</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Date</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">HORA</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Time</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">DESCRIPCION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">CONTENT-URL</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">TITULO-ACTIVIDAD</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">URL-ACTIVIDAD</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">URL-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">NOMBRE-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">ACCESIBILIDAD-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Double</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">0-3.02</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">CLASE-VIAL-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">NOMBRE-VIA-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">NUM-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Integer</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">0-360</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">DISTRITO-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">BARRIO-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">CODIGO-POSTAL-INSTALACION</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Integer</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">28001-28054</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">COORDENADA-X</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Integer</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">433000-452000</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">COORDENADA-Y</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Integer</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">4465000-4486000</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">LATITUD</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Double</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">40.33-40.52</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">LONGITUD</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Double</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">-3.78 - -3.57</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">Valores negativos</span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">TIPO</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+                <tr class="c3">
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c0">AUDIENCIA</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">String</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c4">No unico, valores vacios</span></p>
+                    </td>
+                    <td class="c2" colspan="1" rowspan="1">
+                        <p class="c1 c5"><span class="c4"></span></p>
+                    </td>
+                </tr>
+            </table>
+            <p class="c7 c5"><span class="c4"></span></p>
+    </div>
+    <div>
+        <h2>Licencias potenciales</h2>
+        <p>
+            Este proyecto proyecto es solo para valor educativo y no puede ser usado con fines comerciales.
+        </p>
+    </div>
+    <div>
+        <h2>Naming strategy</h2>
+        <h3>Ontological terms path:</h3>
+        <p>
+            http://ocioMadrid/lcc/ontology/EventosMadrid#
+        </p>
+        <h3>Individuals path: </h3>
+        <p>
+            http://ocioMadrid/lcc/resource
+        </p>
+        <h3>Ontological terms example: </h3>
+        <p>
+            http://ocioMadrid/lcc/EventosMadrid#seLocaliza
+        </p>
+        <h3>Individuals example:</h3>
+        <p>
+            http://ocioMadrid/tcc/resource/Evento/1321124
+        </p>
+    </div>
+
+</body>
+
+</html>

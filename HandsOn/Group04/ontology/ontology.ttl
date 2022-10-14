@@ -37,7 +37,7 @@ properties:numEquipo rdf:type owl:DatatypeProperty ;
 
 properties:potencia rdf:type owl:DatatypeProperty ;
 	rdf:domain classes:puntoRecarga ;
-        rdfs:range xsd:integer .
+        rdfs:range xsd:string .
 
 properties:conectorCC rdf:type owl:DatatypeProperty ;
         rdfs:domain classes:PuntoRecarga ;
