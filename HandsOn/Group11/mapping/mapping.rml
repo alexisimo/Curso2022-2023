@@ -1,0 +1,161 @@
+@base <https://zonas_verdes_madrid.com/>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org#> .
+@prefix vocab: <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#>.
+
+
+<#ZonasVerdesMap1> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/03-SuperficieZonasVerdesDistritosCalles-2021.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+
+    rr:subjectMap [
+        rr:template "https://zonas_verdes_madrid.com/ZonasVerdes#{ID_ZonaVerde}";
+        rr:termType rr:IRI;
+        rr:class vocab:ZonaVerdes
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant vocab:belongsNeighborhood;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ZonasVerdesMap2>;
+            rr:joinCondition [
+                rr:child "ID_ZonaVerde"; rr:parent "ID_ZonaVerde";
+                ]
+            ]
+            ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant vocab:belongsDistrict;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ZonasVerdesMap3>;
+            rr:joinCondition [
+                rr:child "ID_ZonaVerde"; rr:parent "ID_ZonaVerde";
+                ]
+            ]
+            ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant vocab:hasSurface;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ZonasVerdesMap4>;
+            rr:joinCondition [
+                rr:child "ID_ZonaVerde"; rr:parent "ID_ZonaVerde";
+                ]
+            ]
+            ];
+
+    rr:predicateObjectMap [
+       rr:predicate vocab:ID_ZonaVerde;
+        rr:objectMap [
+            rml:reference "ID_ZonaVerde"; 
+            rr:datatype xsd:integer;
+        ]
+    ];
+
+
+    rr:predicateObjectMap [
+       rr:predicate vocab:Nombre_ZonaVerde;
+        rr:objectMap [
+            rml:reference "Nombre_ZonaVerde";
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+<#ZonasVerdesMap2> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/03-SuperficieZonasVerdesDistritosCalles-2021.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "https://zonas_verdes_madrid.com/Barrio#{ID_Barrio}";
+        rr:termType rr:IRI;
+        rr:class vocab:Barrio
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:ID_Barrio;
+        rr:objectMap [
+            rml:reference "ID_Barrio"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:Nombre_Barrio; 
+        rr:objectMap [
+            rml:reference "Nombre_Barrio"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+<#ZonasVerdesMap3> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/03-SuperficieZonasVerdesDistritosCalles-2021.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "https://zonas_verdes_madrid.com/Distrito#{ID_District}";
+        rr:termType rr:IRI;
+        rr:class vocab:Distrito
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:ID_District;
+        rr:objectMap [
+            rml:reference "ID_District"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:Nombre_Distrito; 
+        rr:objectMap [
+            rml:reference "Nombre_Distrito"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+<#ZonasVerdesMap4> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/03-SuperficieZonasVerdesDistritosCalles-2021.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "https://zonas_verdes_madrid.com/Superficie#{ID_ZonaVerde}";
+        rr:termType rr:IRI;
+        rr:class vocab:Superficie
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate vocab:m2;
+        rr:objectMap [
+            rml:reference "m2"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:ha; 
+        rr:objectMap [
+            rml:reference "ha"; 
+            rr:datatype xsd:string;
+        ]
+    ].

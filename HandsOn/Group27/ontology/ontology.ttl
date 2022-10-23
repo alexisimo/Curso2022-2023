@@ -7,7 +7,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix time: <http://www.w3.org/TR/owl-time#> .
 @prefix schema: <http://schema.org/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 
 # Ontology v3
 <http://www.semanticweb_g27.org/ontology/EnergyCons> rdf:type owl:Ontology .
@@ -37,7 +36,7 @@ schema:unitText rdf:type owl:ObjectProperty ;
 
 schema:value rdf:type owl:ObjectProperty ;
                 rdfs:domain ssn:Observation ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:float .
 
 time:inXSDDateTime rdf:type owl:ObjectProperty ;
                 rdfs:domain time:Observation ;
@@ -53,11 +52,11 @@ ssn:featureOfInterest rdf:type owl:ObjectProperty ;
 
 schema:longitude rdf:type owl:ObjectProperty ;
                 rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:float .
 
 schema:latitude rdf:type owl:ObjectProperty ;
                 rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:float .
 
 schema:geo rdf:type owl:ObjectProperty ;
                 rdfs:domain schema:CivicStructure ;

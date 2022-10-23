@@ -222,5 +222,65 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column ﻿Número using expression grel:if(value.split(\" \").length() == 2, toNumber(value.split(\" \")[0]) + \" \" + value.split(\" \")[1], toString(toNumber(value.split(\" \")[0])))"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "ID_BIKEST",
+    "description": "Rename column ﻿Número to ID_BIKEST"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nombre Distrito",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column Nombre Distrito to DISTRICT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número Distrito",
+    "newColumnName": "DISTRICT_ID",
+    "description": "Rename column Número Distrito to DISTRICT_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número Barrio",
+    "newColumnName": "NEIGHBOURHOOD_ID",
+    "description": "Rename column Número Barrio to NEIGHBOURHOOD_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nombre Barrio",
+    "newColumnName": "NEIGHBOURHOOD",
+    "description": "Rename column Nombre Barrio to NEIGHBOURHOOD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Calle",
+    "newColumnName": "STREET",
+    "description": "Rename column Calle to STREET"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº Finca",
+    "newColumnName": "ST_NUMBER",
+    "description": "Rename column Nº Finca to ST_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "CAPACITY",
+    "description": "Rename column Número de Plazas to CAPACITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Longitud",
+    "newColumnName": "LONGITUDE",
+    "description": "Rename column Longitud to LONGITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Latitud",
+    "newColumnName": "LATITUDE",
+    "description": "Rename column Latitud to LATITUDE"
   }
 ]

@@ -101,11 +101,6 @@
     },
     {
         "op": "core/column-removal",
-        "columnName": "Direccion 1",
-        "description": "Remove column Direccion 1"
-    },
-    {
-        "op": "core/column-removal",
         "columnName": "Fecha de Alta",
         "description": "Remove column Fecha de Alta"
     },
@@ -115,14 +110,225 @@
         "description": "Remove column Calle"
     },
     {
-    "op": "core/column-removal",
-    "columnName": "Tipo de Reserva",
-    "description": "Remove column Tipo de Reserva"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Direccion 2",
-    "newColumnName": "Direccion",
-    "description": "Rename column Direccion 2 to Direccion"
-  }
+        "op": "core/column-removal",
+        "columnName": "Tipo de Reserva",
+        "description": "Remove column Tipo de Reserva"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Direccion 2",
+        "newColumnName": "Direccion",
+        "description": "Rename column Direccion 2 to Direccion"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Nº Finca",
+        "newColumnName": "N_finca",
+        "description": "Rename column Nº Finca to N_finca"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Número de Plazas",
+        "newColumnName": "Numero_de_plazas",
+        "description": "Rename column Número de Plazas to Numero_de_plazas"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "﻿Número",
+        "newColumnName": "﻿Numero",
+        "description": "Rename column ﻿Número to ﻿Numero"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "﻿Numero",
+        "expression": "grel:value.replace(\" \", \"_\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column ﻿Numero using expression grel:value.replace(\" \", \"_\")"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "Direccion 1",
+        "description": "Remove column Direccion 1"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Distrito",
+        "newColumnName": "nombre_distrito",
+        "description": "Rename column Distrito to nombre_distrito"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Barrio",
+        "newColumnName": "nombre_barrio",
+        "description": "Rename column Barrio to nombre_barrio"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_distrito",
+        "expression": "value.trim()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column nombre_distrito using expression value.trim()"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "﻿Numero",
+        "newColumnName": "Numero",
+        "description": "Rename column ﻿Numero to Numero"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "Gis_X",
+        "expression": "grel:value.replace(\",\",\".\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column Gis_X using expression grel:value.replace(\",\",\".\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "Gis_Y",
+        "expression": "grel:value.replace(\",\",\".\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column Gis_Y using expression grel:value.replace(\",\",\".\")"
+    },
+    {
+        "op": "core/column-move",
+        "columnName": "Longitud",
+        "index": 9,
+        "description": "Move column Longitud to position 9"
+    },
+    {
+        "op": "core/column-split",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_distrito",
+        "guessCellType": true,
+        "removeOriginalColumn": true,
+        "mode": "separator",
+        "separator": " ",
+        "regex": false,
+        "maxColumns": 0,
+        "description": "Split column nombre_distrito by separator"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_distrito 2",
+        "expression": "join ([coalesce(cells['nombre_distrito 2'].value,''),coalesce(cells['nombre_distrito 3'].value,''),coalesce(cells['nombre_distrito 4'].value,'')],' ')",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column nombre_distrito 2 using expression join ([coalesce(cells['nombre_distrito 2'].value,''),coalesce(cells['nombre_distrito 3'].value,''),coalesce(cells['nombre_distrito 4'].value,'')],' ')"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "nombre_distrito 3",
+        "description": "Remove column nombre_distrito 3"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "nombre_distrito 4",
+        "description": "Remove column nombre_distrito 4"
+    },
+    {
+        "op": "core/column-split",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_barrio",
+        "guessCellType": true,
+        "removeOriginalColumn": true,
+        "mode": "separator",
+        "separator": " ",
+        "regex": false,
+        "maxColumns": 0,
+        "description": "Split column nombre_barrio by separator"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_barrio 2",
+        "expression": "join ([coalesce(cells['nombre_barrio 2'].value,''),coalesce(cells['nombre_barrio 3'].value,''),coalesce(cells['nombre_barrio 4'].value,'')],' ')",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column nombre_barrio 2 using expression join ([coalesce(cells['nombre_barrio 2'].value,''),coalesce(cells['nombre_barrio 3'].value,''),coalesce(cells['nombre_barrio 4'].value,'')],' ')"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "nombre_barrio 3",
+        "description": "Remove column nombre_barrio 3"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "nombre_barrio 4",
+        "description": "Remove column nombre_barrio 4"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "nombre_distrito 1",
+        "newColumnName": "Distrito_id",
+        "description": "Rename column nombre_distrito 1 to Distrito_id"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "nombre_distrito 2",
+        "newColumnName": "nombre_distrito",
+        "description": "Rename column nombre_distrito 2 to nombre_distrito"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "nombre_barrio 1",
+        "newColumnName": "Barrio_id",
+        "description": "Rename column nombre_barrio 1 to Barrio_id"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "nombre_barrio 2",
+        "newColumnName": "nombre_barrio",
+        "description": "Rename column nombre_barrio 2 to nombre_barrio"
+    },
+    {
+        "op": "core/column-move",
+        "columnName": "Latitud",
+        "index": 9,
+        "description": "Move column Latitud to position 9"
+    },
+    {
+        "op": "core/column-move",
+        "columnName": "Latitud",
+        "index": 10,
+        "description": "Move column Latitud to position 10"
+    }
 ]

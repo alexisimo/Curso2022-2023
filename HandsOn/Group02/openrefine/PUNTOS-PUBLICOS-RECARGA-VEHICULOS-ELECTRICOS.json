@@ -301,5 +301,113 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column neighbourhood_number_id using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coord_long",
+    "description": "Remove column coord_long"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coord_lat",
+    "description": "Remove column coord_lat"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district_number_id",
+    "expression": "grel:row.index+1",
+    "onError": "set-to-blank",
+    "newColumnName": "IDENTIFIER",
+    "columnInsertIndex": 1,
+    "description": "Create column IDENTIFIER at index 1 based on column district_number_id using expression grel:row.index+1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IDENTIFIER",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IDENTIFIER using expression value.toString()"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "district_number_id",
+    "index": 1,
+    "description": "Move column district_number_id to position 1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IDENTIFIER",
+    "newColumnName": "ID_CHARGEST",
+    "description": "Rename column IDENTIFIER to ID_CHARGEST"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "capacity",
+    "newColumnName": "CAPACITY",
+    "description": "Rename column capacity to CAPACITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street",
+    "newColumnName": "STREET",
+    "description": "Rename column street to STREET"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street_number",
+    "newColumnName": "ST_NUMBER",
+    "description": "Rename column street_number to ST_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "conector_info",
+    "newColumnName": "CONECTOR_INFO",
+    "description": "Rename column conector_info to CONECTOR_INFO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "operator_name_id",
+    "newColumnName": "OPERATOR",
+    "description": "Rename column operator_name_id to OPERATOR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighbourhood_number_id",
+    "newColumnName": "NEIGHBOURHOOD_ID",
+    "description": "Rename column neighbourhood_number_id to NEIGHBOURHOOD_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighbourhood_name_id",
+    "newColumnName": "NEIGHBOURHOOD",
+    "description": "Rename column neighbourhood_name_id to NEIGHBOURHOOD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "District_name_id",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column District_name_id to DISTRICT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "location_name_id",
+    "newColumnName": "LOCATION",
+    "description": "Rename column location_name_id to LOCATION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "district_number_id",
+    "newColumnName": "DISTRICT_ID",
+    "description": "Rename column district_number_id to DISTRICT_ID"
   }
 ]

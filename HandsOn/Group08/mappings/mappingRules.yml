@@ -1,0 +1,84 @@
+ prefixes:
+    rr: http://www.w3.org/ns/r2rml#
+    foaf: http://xmlns.com/foaf/0.1/
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    rev: http://purl.org/stuff/rev#
+    schema: http://schema.org/
+    dct: http://purl.org/dc/terms/
+    rml: http://semweb.mmlab.be/ns/rml#
+    ql: http://semweb.mmlab.be/ns/ql#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    ont: http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#
+    
+ mappings:
+    cleanPoint:
+      sources:
+        - [./csv/puntos-limpios-fijos-updated.csv~csv]
+      s:http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/$(PK)
+      po:
+       - [a, ont:CleanPoint]
+       - [ont:hasId, $(PK),xsd:string]
+       - [ont:hasName, $(NOMBRE),xsd:string]
+       - [ont:hasTransport, $(TRANSPORTE),xsd:string]
+       - [ont:hasAccessibility, $(ACCESIBILIDAD),xsd:string]
+       - [ont:hasUrl, $(CONTENT-URL),xsd:string]
+       - [ont:hasCoordinateX, $(COORDENADA-X),xsd:double]
+       - [ont:hasCoordinateY, $(COORDENADA-Y),xsd:double]
+       - [ont:hasLatitude, $(LATITUD),xsd:double]
+       - [ont:hasLongitude, $(LONGITUD),xsd:double]
+       - p: ont:locatedIn 
+         o:
+          mapping: address
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(NOMBRE-VIA)]
+              - [str2, $(NOMBRE-VIA)]
+              
+    address:
+      sources:
+        - [./csv/puntos-limpios-fijos-updated.csv~csv]
+      s: http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/$(NOMBRE-VIA)
+      po:
+       - [a, ont:Address]
+       - [ont:hasNameStreet, $(NOMBRE-VIA),xsd:string]
+       - [ont:hasTypeStreet, $(CLASE-VIAL),xsd:string]
+       - [ont:hasTypeNumber, $(TIPO-NUM),xsd:string]
+       - [ont:hasNumber, $(NUM),xsd:string]
+       - [ont:hasOrientation, $(ORIENTACION),xsd:string]
+       - [ont:hasZipCode, $(CODIGO-POSTAL),xsd:string]
+       - p: ont:belongsToNeighborhood 
+         o:
+          mapping: neighborhood
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(BARRIO)]
+              - [str2, $(BARRIO)]
+              
+    neighborhood:
+      sources:
+        - [./csv/puntos-limpios-fijos-updated.csv~csv]
+      s: http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Neighborhood/$(BARRIO)
+      po:
+       - [a, ont:Neighborhood]
+       - [ont:hasNeighborhood, $(BARRIO),xsd:string]
+       - [ont:hasNeighborhoodCode, $(COD-BARRIO),xsd:string]
+       - p: ont:partOfDistrict  
+         o:
+          mapping: district
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(DISTRITO)]
+              - [str2, $(DISTRITO)]
+              
+    district:
+      sources:
+        - [./csv/puntos-limpios-fijos-updated.csv~csv]
+      s: http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/$(DISTRITO)
+      po:
+       - [a, ont:District]
+       - [ont:hasDistrict, $(DISTRITO),xsd:string]    
+       - [ont:hasDistrictCode, $(COD-DISTRITO),xsd:string]         

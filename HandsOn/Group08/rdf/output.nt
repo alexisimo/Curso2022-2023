@@ -1,0 +1,338 @@
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#address>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "JOSE PAULETE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "LUIS I".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "BASCUÑUELOS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "TOMAS REDONDO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "SAN ROMUALDO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "ESTRELLA DENEBOLA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "DAROCA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "SENDA DEL REY".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "ALHAURIN".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "ARROYO DE LA MEDIA LEGUA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "CIDRO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "UBEDA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "CRISTO DE LA VICTORIA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "ANGEL SANZ BRIZ".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "ALFONSO XIII".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet> "SEPIOLITA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28038".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28034".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28032".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28037".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28045".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28040".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28032".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28030".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28042".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28031".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28016".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28044".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28047".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28026".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28033".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode> "28021".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber> "V".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#cleanPoint>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "ENTRADA JUNTO GASOLINERA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "CON VUELTA POLIDEPORTIVO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "JUNTO AL CEMENTERIO DE LA ALMUDENA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "C/V c/ Maratón".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "ACCESO AVDA. PUERTA DE HIERRO SALIDA 6 A-6 FACULTAD DE VETERINARIA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation> "C/V ISLA DE AROSA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLA%20DE%20VALLECAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/SAN%20BLAS-CANILLEJAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CARABANCHEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CHAMARTIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/ARGANZUELA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/LATINA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/USERA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MORATALAZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/FUENCARRAL-EL%20PARDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/HORTALEZA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/PUENTE%20DE%20VALLECAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/BARAJAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MONCLOA-ARAVACA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VICALVARO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CIUDAD%20LINEAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLAVERDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#district>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/BARAJAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "BARAJAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CHAMARTIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "CHAMARTIN".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLAVERDE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "VILLAVERDE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/LATINA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "LATINA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MORATALAZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "MORATALAZ".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CIUDAD%20LINEAL> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "CIUDAD LINEAL".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/SAN%20BLAS-CANILLEJAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "SAN BLAS-CANILLEJAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CARABANCHEL> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "CARABANCHEL".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/HORTALEZA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "HORTALEZA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/USERA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "USERA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/ARGANZUELA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "ARGANZUELA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MONCLOA-ARAVACA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "MONCLOA-ARAVACA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VICALVARO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "VICALVARO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/FUENCARRAL-EL%20PARDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "FUENCARRAL-EL PARDO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLA%20DE%20VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "VILLA DE VALLECAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/PUENTE%20DE%20VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#districtName> "PUENTE DE VALLECAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CASCO%20H.VALLECAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/LOS%20CARMENES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/AMBROZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CIUDAD%20UNIVERSITARIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SAN%20ANDRES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/NUMANCIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SIMANCAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PE%C3%91A%20GRANDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VENTAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/DELICIAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/HISPANOAMERICA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VALDEFUENTES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/MARROQUINA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/TIMON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PRADOLONGO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/BUENAVISTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "AVENIDA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "AVENIDA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "PASEO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "AVENIDA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet> "CALLE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "19960".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "5568093".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "13893".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "13890".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "135224".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "169981".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "4910478".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "23605".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "43200".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "146362".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "138166".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "67093".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "13891".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "32555".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "4566529".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId> "67286".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/PUENTE%20DE%20VALLECAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/USERA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/HORTALEZA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/BARAJAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/FUENCARRAL-EL%20PARDO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MONCLOA-ARAVACA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MORATALAZ>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/LATINA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CHAMARTIN>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CARABANCHEL>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLAVERDE>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VICALVARO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CIUDAD%20LINEAL>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/SAN%20BLAS-CANILLEJAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/ARGANZUELA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLA%20DE%20VALLECAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SAN%20ANDRES>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VALDEFUENTES>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VENTAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/LOS%20CARMENES>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/DELICIAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PE%C3%91A%20GRANDE>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/MARROQUINA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SIMANCAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PRADOLONGO>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/HISPANOAMERICA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CIUDAD%20UNIVERSITARIA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CASCO%20H.VALLECAS>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/NUMANCIA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/TIMON>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/BUENAVISTA>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/AMBROZ>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VENTAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "VENTAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VALDEFUENTES> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "VALDEFUENTES".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/TIMON> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "TIMON".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CASCO%20H.VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "CASCO H.VALLECAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/LOS%20CARMENES> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "LOS CARMENES".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SAN%20ANDRES> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "SAN ANDRES".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/DELICIAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "DELICIAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/AMBROZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "AMBROZ".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CIUDAD%20UNIVERSITARIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "CIUDAD UNIVERSITARIA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/MARROQUINA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "MARROQUINA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/BUENAVISTA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "BUENAVISTA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PRADOLONGO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "PRADOLONGO".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SIMANCAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "SIMANCAS".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/HISPANOAMERICA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "HISPANOAMERICA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PE%C3%91A%20GRANDE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "PEÑA GRANDE".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/NUMANCIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood> "NUMANCIA".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CIDRO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "5".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ARROYO%20DE%20LA%20MEDIA%20LEGUA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "72".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALHAURIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "5".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/DAROCA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "104".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/LUIS%20I> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "40".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/JOSE%20PAULETE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "43".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SENDA%20DEL%20REY> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ANGEL%20SANZ%20BRIZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "4".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/UBEDA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "6".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/TOMAS%20REDONDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "8".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/CRISTO%20DE%20LA%20VICTORIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "245".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ESTRELLA%20DENEBOLA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "5".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/ALFONSO%20XIII> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "128".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SAN%20ROMUALDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "20".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/SEPIOLITA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "6".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/BASCU%C3%91UELOS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber> "3".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=179a444a2951c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=30175a0f8161c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d26592355c51c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=458b8f90a581c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=67bc4d69197c9110VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=494129ea9281c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=86375a0f8161c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5fe55f463b81c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e9e65a0f8161c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c34261715dd22110VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a5165f463b81c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e2aa5cee4051c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8c3592355c51c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f6df1a8633e96210VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0da9f0bde551c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=39ca5cee4051c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyUri>.
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/LATINA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "10".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MORATALAZ> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "14".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/HORTALEZA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "16".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/MONCLOA-ARAVACA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "9".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/VILLA%20DE%20VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "18".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/FUENCARRAL-EL%20PARDO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "8".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CHAMARTIN> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "5".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/ARGANZUELA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "2".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CARABANCHEL> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "11".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/BARAJAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "21".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/CIUDAD%20LINEAL> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "15".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/USERA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "12".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/PUENTE%20DE%20VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "13".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/SAN%20BLAS-CANILLEJAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode> "20".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Metro: Vinateros (línea 9)Bus: 30 , 32 , 71 , 113".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 47 , 108 , 118".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Metro: Barajas (línea 8)Bus: 105 , 115".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 7 , 11 , 40 , 52".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 63 , 143 , E".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 130".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 70 , 106".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 104".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 79".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Metro: San Cipriano (línea 9) Bus: 100 , 106".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 6 , 60 , 78 , 81".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Metro: Méndez Álvaro (línea 6)Bus: 148, 102, 152".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 83, 133".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 28 , 105".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Bus: 119 , 138".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport> "Metro: Avda. IlustraciónBus: 67 , 83 , 133 , 124".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Ciudad Lineal".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Carabanchel".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de San Blas-Canillejas".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Fuencarral - El Pardo".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Hortaleza".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Chamartín".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Usera".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Latina".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Villa de Vallecas".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Moncloa - Aravaca".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Villaverde".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Barajas".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Moratalaz".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Puente de Vallecas".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Arganzuela".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName> "Punto Limpio Fijo del Ayuntamiento de Madrid. Distrito de Vicálvaro".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/HISPANOAMERICA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "4".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/MARROQUINA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "3".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/LOS%20CARMENES> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "1".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PRADOLONGO> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "7".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VALDEFUENTES> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "6".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/NUMANCIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "6".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CASCO%20H.VALLECAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "1".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/PE%C3%91A%20GRANDE> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "3".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/SIMANCAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "1".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/DELICIAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "5".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/TIMON> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "4".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/BUENAVISTA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "6".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/CIUDAD%20UNIVERSITARIA> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "3".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/VENTAS> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode> "1".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/135224> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/19960> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13890> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/32555> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13891> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/169981> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/138166> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/43200> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/13893> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67286> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/146362> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4910478> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/5568093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/23605> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/67093> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".
+<https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/4566529> <https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccesibility> "0".

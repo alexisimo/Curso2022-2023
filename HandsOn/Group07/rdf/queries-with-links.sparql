@@ -1,0 +1,14 @@
+SELECT DISTINCT ?distrito_wikidata_URI
+    WHERE{
+        ?distrito ns0:tiene_barrio <http://bicimad.es/group07/barrio/01-03> .
+        ?distrito owl:sameAs ?distrito_wikidata_URI
+    }
+	
+	SELECT DISTINCT ?barrio_wikidata_URI
+    WHERE{
+        ?estacion ns0:tiene_lat ?Latitud .
+        ?estacion ns0:tiene_distrito ?distrito .
+        ?distrito ns0:tiene_barrio ?barrio .
+        ?barrio owl:sameAs ?barrio_wikidata_URI .
+        FILTER(?Latitud > 40.4254027)
+    }

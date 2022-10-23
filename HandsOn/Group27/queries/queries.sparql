@@ -1,0 +1,55 @@
+PREFIX ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> .
+PREFIX ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX time: <http://www.w3.org/TR/owl-time#> .
+PREFIX schema: <http://schema.org/> .
+
+# Check civicStructures instance properties
+
+SELECT ?civicStructures ?name
+WHERE 
+{
+    ?civicStructures a schema:CivicStructure ;
+        rdfs:label ?name ;
+        schema:address ?structure_address ;
+        schema:geo ?structure_geo ;
+        ec:buildingType ?structure_type ;
+        ec:district ?structure_district ;
+        ec:neighborhood ?structure_neighborhood .
+    
+    ?structure_geo a schema:GeoCoordinates .
+}
+
+# Check (number of observation) == (rows from csv - 1) (header) 
+
+SELECT COUNT(?observation)
+WHERE 
+{
+    ?observation a ssn:Observation .
+}
+
+# Check observations have mandatory values 
+
+SELECT ?observation
+WHERE 
+{
+    ?observation a ssn:Observation ;
+        schema:unitText ?ob_unit_text ;
+        schema:value ?ob_value ;
+        ssn:featureOfInterest ?ob_civicStructures ;
+        time:inXSDDate ?ob_time .
+        OPTIONAL{
+            ?observation ec:energyGroup ?ob_ec_energy_group ;
+                ec:typeOfEnergy ?ob_ec_type_of_energy ;
+        }
+    ?ob_civicStructures a schema:CivicStructure .
+}
+
+# Check GeoCoordinates instance properties
+    SELECT ?geo_location
+    WHERE 
+    {
+        ?geo_location a schema:GeoCoordinates ;
+            schema:longitude ?lon ;
+            schema:latitude ?lat .
+    }

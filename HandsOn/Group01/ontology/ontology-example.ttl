@@ -1,4 +1,4 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://HO-G1.linkeddata.es> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -23,29 +23,24 @@ ns:hasAddress a owl:ObjectProperty ;
 ns:hasChargingStation a owl:ObjectProperty ;
     rdfs:label "has charging station" .
 
-ns:hasCoordinate a owl:ObjectProperty ;
-    rdfs:label "has coordinate" .
-
 ns:hasPeripheral a owl:ObjectProperty ;
     rdfs:label "has peripheral" ;
     rdfs:range ns:Peripheral .
 
+ns:longitude a owl:ObjectProperty ;
+    rdfs:label "longitude" .
+
 ns:Address05 a owl:NamedIndividual ;
-    ns:number "28"^^xsd1:Integer ;
-    ns:street "Avenida de España"^^xsd1:String .
+    ns:address "Avenida de España, 28"^^xsd1:String .
 
 ns:Charging_station05 a owl:NamedIndividual ;
     ns:bookable "No se puede reservar"^^xsd1:String ;
     ns:cablesAnnotation "No"^^xsd1:String ;
     ns:hasAddress ns:Address05 ;
-    ns:hasCoordinate ns:CoordinateCs05 ;
+    ns:latitude "40.546535"^^xsd1:decimal ;
     ns:owner "EMOVILI"^^xsd1:String ;
     ns:schedule "24 horas todos los días"^^xsd1:String ;
     ns:timeLimit "2"^^xsd1:Integer .
-
-ns:CoordinateCs05 a owl:NamedIndividual ;
-    ns:latitude "40.546535"^^xsd1:decimal ;
-    ns:longitude "3.641618"^^xsd1:decimal .
 
 ns:Peripheral a owl:Class ;
     rdfs:label "Peripheral" .

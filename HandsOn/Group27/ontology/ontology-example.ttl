@@ -7,7 +7,7 @@
 
 <http://www.semanticweb_g27.org/resource/Observation/O2258> a ssn:Observation ;
     schema:unitText "kWh"^^xsd:string ;
-    schema:value "13099"^^xsd:string ;
+    schema:value "13099.0"^^xsd:float ;
     ec:energyGroup "Activa Interruptor Gral"^^xsd:string ;
     ec:typeOfEnergy "Energia Activa"^^xsd:string ;
     ssn:featureOfInterest <http://www.semanticweb_g27.org/resource/CivicStructure/E00000000> ;
@@ -22,6 +22,6 @@
     ec:neighborhood "SAN ISIDRO"^^xsd:string .
 
 <http://www.semanticweb_g27.org/resource/GeoCoordinates/GEO_E00000000> a schema:GeoCoordinates ;
-    schema:latitude "0"^^xsd:string ;
-    schema:longitude "0"^^xsd:string .
+    schema:latitude "0"^^xsd:float ;
+    schema:longitude "0"^^xsd:float .
 

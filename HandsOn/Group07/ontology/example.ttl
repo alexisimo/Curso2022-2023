@@ -11,25 +11,24 @@
 
 est:261 a ns:Estacion ;
     ns:tiene_numero 261 ;
-    ns:tiene_fecha de alta 44194 ;
     ns:tiene_distrito "09 MONCLOA-ARAVACA"^^xsd:string ;
     ns:tiene_direccion "COMPLUTENSE, AVENIDA, frente al 7"^^xsd:string ; 
-    ns:tiene t reserva "BiciMad"^^xsd:string ;
+    ns:tiene nplaza 24 ;
+    ns:tiene_ gis x 438161,53 ;
+    ns:tiene_ gis y 4478015,95 ;
+    ns:tiene_lat 40.4505032 ;
+    ns:tiene_long -3.7292576 ;
 
 
 dist:09 Moncloa-Aravaca a ns:Distrito ;
     ns:nombre_distrito "09 MONCLOA-ARAVACA"^^xsd:string ;
+    ns:Distrito_id 9;
     ns:tiene_barrio "09-03 CIUDAD UNIVERSITARIA"^^xsd:string ;
 
 dir:Avenida Complutense frente al 7 a ns:Direccion ;
-    ns:tiene nplaza 24 ;
-    ns:tiene_ gis x 438161,53 ;
-    ns:tiene_ gis y 4478015,95 ;
-    ns:tiene_calle "COMPLUTENSe, AVENIDA"^^xsd:string ;
+    ns:tiene_calle "COMPLUTENSE, AVENIDA"^^xsd:string ;
     ns:tiene_ nfinca "frente al 7"^^xsd:String ;
-    ns:tiene_lat 40.4505032 ;
-    ns:tiene_long -3.7292576 ;
 
 barr:09-03 Ciudad Universitaria a ns:Barrio ;
-    ns:nombre_barrio "09-03 CIUDAD UNIVERSITARIA"^^xsd:string ;
-    
+    ns:nombre_barrio "CIUDAD UNIVERSITARIA"^^xsd:string ;
+    ns:Barrio_id "09-03"^^xsd:string ;

@@ -1,0 +1,76 @@
+prefixes:
+  ns: http://HO-G1.linkeddata.es/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  
+mappings:
+  City: # city
+    sources:
+      - [puntos-de-recarga-updated.csv~csv]
+    s: http://HO-G1.linkeddata.es/City/$(City)
+    po:
+      - [a, ns:City]
+      - p: ns:hasChargingStation
+        o:
+          mapping: Charging_station
+          condition:
+          function: equals
+          parameters:
+            - [str1, $(Charging Station)]
+            - [str2, $(Charging Station)]
+
+  Charging_station: # charging_station
+    sources:
+      - [puntos-de-recarga-updated.csv~csv]
+    s: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)
+    po:
+      - [a, ns:Charging_station]
+      - [ns:owner, $(Owner),xsd:String]
+      - [ns:timeLimit, $(Time limit),xsd:Integer]
+      - [ns:schedule, $(Schedule),xsd:String]
+      - [ns:bookable, $(Bookable),xsd:String]
+      - [ns:cablesAnnotation, $(Cables Annotation),xsd:String]
+      - [ns:Longitude, $(Longitude),xsd:decimal]
+      - [ns:Latitude, $(Latitude),xsd:decimal]
+      - p: ns:hasAddress
+        o:
+          mapping: ns:Address
+          condition:
+          function: equals
+          parameters:
+            - [str1, $(Address)]
+            - [str2, $(Address)]
+      - p: ns:hasPeripheral
+        o:
+          mapping: ns:Peripheral
+          condition:
+          function: equals
+          parameters:
+            - [str1, $(Peripheral)]
+            - [str2, $(Peripheral)]
+    
+
+  Address: # address
+    sources:
+      - [puntos-de-recarga-updated.csv~csv]
+    s: http://HO-G1.linkeddata.es/Address/$(Address)
+    po:
+      - [a, ns:Address]
+      - [ns:address, $(Address),xsd:String]
+
+  Peripheral: # peripheral
+    sources:
+      - [puntos-de-recarga-updated.csv~csv]
+    s: http://HO-G1.linkeddata.es/Peripheral/$(Peripheral)
+    po:
+      - [a, ns:Peripheral]
+      
+
+  Connector: # connector
+    sources:
+      - [puntos-de-recarga-updated.csv~csv]
+    s: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector/$(Connector)
+    po:
+      - [a, ns:Connector]
+      - [rdf:subClassOf, ns:Peripheral]
+      - [ns:number, $(Number of connectors),xsd:Integer]
+      - [ns:type, $(Peripheral),xsd:String]

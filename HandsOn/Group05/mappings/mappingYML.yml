@@ -1,0 +1,104 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  em: http://ocioMadrid/lcc/ontology/EventosMadrid#
+  er: http://ocioMadrid/lcc/resource/
+  ns: http://ns.com#
+  time: http://www.owl-ontologies.com/time#
+  xsd: http://www.w3.org/2001/XMLer#
+
+  
+mappings:
+  actividad:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-csv-updated.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Actividad/$(TITULO-ACTIVIDAD)
+   po:
+      - [a, er:Actividad]
+      - [ns:Titulo-Actividad,$(TITULO-ACTIVIDAD)]
+      - [ns:URL-Actividad,$(URL-ACTIVIDAD)]
+      
+  instalacion:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-csv-updated.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Instalacion/$(NOMBRE-INSTALACION)
+   po:
+      - [a, er:Instalacion]
+      - [ns:URL-Instalacion,$(URL-INSTALACION)]
+      - [ns:Nombre-Instalacion,$(NOMBRE-INSTALACION)]
+      - [ns:Accesibilidad,$(ACCESIBILIDAD-INSTALACION),xsd:double]
+      - [ns:ClaseVial,$(CLASE-VIAL-INSTALACION)]
+      - [ns:Via,$(NOMBRE-VIA-INSTALACION)]
+      - [ns:CodogoPostal,$(CODIGO-POSTAL-INSTALACION)]
+      - [ns:Coordenadas-X,$(COORDENADA-X),xsd:double]
+      - [ns:Coordenadas-Y,$(COORDENADA-Y),xsd:double]
+      - [ns:Nombre-Dristrito,$(DISTRITO-INSTALACION)]
+      - [ns:Nombre-Barrio,$(BARRIO-INSTALACION)]      
+ 
+  intervaloTiempo:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-csv-updated.csv~csv']
+   s: http://www.owl-ontologies.com/time#IntervaloTiempo/$(FECHA)_$(FECHA-FIN)_$(HORA)
+   po:
+      - [a, time:intervaloTiempo]
+      - [time:hora,$(HORA),xsd:time]
+      - [time:inicio,$(FECHA),xsd:date]
+      - [time:fin,$(FECHA-FIN),xsd:date]
+      
+  evento:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-csv-updated.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Evento/$(ID-EVENTO)
+   po:
+      - [a, er:Evento]
+      - [ns:titulo,$(TITULO)]
+      - [ns:Precio,$(PRECIO)]
+      - [ns:Gratuito,$(GRATUITO),xsd:integer]
+      - [ns:Audiencia,$(AUDIENCIA)]
+      - [ns:tipo,$(TIPO)]
+      - [ns:LargaDuracion,$(LARGA-DURACION) ]
+      
+      - [time:hora,$(HORA),xsd:time]
+      - [time:inicio,$(FECHA),xsd:date]
+      - [time:fin,$(FECHA-FIN),xsd:date]
+      
+      - [ns:Titulo-Actividad,$(TITULO-ACTIVIDAD)]
+      - [ns:URL-Actividad,$(URL-ACTIVIDAD)]
+      
+      - [ns:URL-Instalacion,$(URL-INSTALACION)]
+      - [ns:Nombre-Instalacion,$(NOMBRE-INSTALACION)]
+      - [ns:Accesibilidad,$(ACCESIBILIDAD-INSTALACION),xsd:double]
+      - [ns:ClaseVial,$(CLASE-VIAL-INSTALACION)]
+      - [ns:Via,$(NOMBRE-VIA-INSTALACION)]
+      - [ns:CodogoPostal,$(CODIGO-POSTAL-INSTALACION)]
+      - [ns:Coordenadas-X,$(COORDENADA-X),xsd:double]
+      - [ns:Coordenadas-Y,$(COORDENADA-Y),xsd:double]
+      - [ns:Nombre-Dristrito,$(DISTRITO-INSTALACION)]
+      - [ns:Nombre-Barrio,$(BARRIO-INSTALACION)]
+      
+      - p: em:inscribe
+        o:
+        - mapping: actividad
+          condition:
+            function: equal
+            parameters:
+            - [str1,$ (TITULO-ACTIVIDAD)]
+            - [str2,$ (TITULO-ACTIVIDAD)]
+            
+      - p: em:seLocaliza
+        o:
+        - mapping: instalacion
+          condition:
+          function: equal
+          parameters:
+          - [str1,$ (NOMBRE-INSTALACION)]
+          - [str2,$ (NOMBRE-INSTALACION)]
+      - p: em:seDesrrolla
+        o:
+        - mapping: intervaloTiempo
+          condition:
+          function: equal
+          parameters:
+          - [str1,$(FECHA) - $(FECHA-FIN) - $(HORA)]
+          - [str2,$(FECHA) - $(FECHA-FIN) - $(HORA)]
+    
+     

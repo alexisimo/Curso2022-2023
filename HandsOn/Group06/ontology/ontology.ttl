@@ -2,7 +2,6 @@
 @prefix : <http://desfibriladores.com/ontology/desfibrilador/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -10,21 +9,16 @@
 
 ######    Classes ###### 
 :Desfibrilador rdf:type owl:Class .
-:Establecimiento rdf:type owl:Class .
-:Titulariadad rdf:type owl:Class .
 :Municipio rdf:type owl:Class .
 :Direccion rdf:type owl:Class .
-:HorarioAcceso rdf:type owl:Class .
-:CodigoDea rdf:type owl:Class .
-
 
 
 ###### Propiedades de los Datos ######
 :hasEstablecimiento rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Establecimiento ;
+    rdfs:domain :Desfibrilador ;
     rdfs:range xsd:string .
 :hasTitularidad rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Titularidad ;
+    rdfs:domain :Desfibrilador ;
     rdfs:range xsd:string .
 
 :hasCodigoMunicipio rdf:type owl:DatatypeProperty ;
@@ -63,18 +57,19 @@
     rdfs:range xsd:float .
 
 :hasHorarioAcceso rdf:type owl:DatatypeProperty ;
-    rdfs:domain :HorarioAcceso;
+    rdfs:domain :Desfibrilador ;
     rdfs:range xsd:string .
 
 :hasCodigoDea rdf:type owl:DatatypeProperty ;
-    rdfs:domain :CodigoDea ;
+    rdfs:domain :Desfibrilador ;
     rdfs:range xsd:string .
 
 
 ###### Propiedades de los Objetos######
 :hasMunicipio rdf:type owl:ObjectProperty ;
- rdfs:domain :Direccion ;
-rdfs:range :Municipio .
-:hasDireccion rdf:type owl:ObjectProperty ;
- rdfs:domain :Desfibrilador ;
-rdfs:range :Direccion .
+    rdfs:domain :Direccion ;
+    rdfs:range :Municipio .
+#Nuevo campo compuesto de los diferentes datos de una direccion
+:hasDireccionEstablecimiento rdf:type owl:ObjectProperty ;
+    rdfs:domain :Desfibrilador;
+    rdfs:range :Direccion .

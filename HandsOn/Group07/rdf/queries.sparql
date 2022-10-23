@@ -1,0 +1,14 @@
+SELECT DISTINCT ?nombre_barrio
+    WHERE{
+        ?distrito ns1:tiene_barrio ?barrio .
+        ?distrito ns1:nombre_distrito "CENTRO" .
+        ?barrio ns1:nombre_barrio ?nombre_barrio
+    }
+
+
+SELECT DISTINCT ?numero
+    WHERE{
+        ?estacion ns1:tiene_Nplaza ?Nplaza .
+        ?estacion ns1:tiene_numero ?numero .
+        FILTER(?Nplaza < 5) .
+    }

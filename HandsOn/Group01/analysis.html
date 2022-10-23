@@ -106,25 +106,22 @@
     </p>
     <h2>Resource naming strategy</h2>
     <p>City: HO-G1.linkeddata.es/City<br />
-      &emsp;hasChargingStation: HO-G1.linkeddata.es/City#hasChargingStation<br />
-      Coordinate: HO-G1.linkeddata.es/Coordinate<br />
-      &emsp;Longitude: HO-G1.linkeddata.es/Coordinate#Longitude<br />
-      &emsp;Latitude: HO-G1.linkeddata.es/Coordinate#Latitude<br />
-      Charging_station: HO-G1.linkeddata.es/Charging_station<br />
-      &emsp;hasCoordinate: HO-G1.linkeddata.es/Charging_station#hasCoordinate<br />
-      &emsp;hasPeripheral: HO-G1.linkeddata.es/Charging_station#hasPeripheral<br />
-      &emsp;hasAddress: HO-G1.linkeddata.es/Charging_station#hasAddress<br />
-      &emsp;Owner: HO-G1.linkeddata.es/Charging_station#owner<br />
-      &emsp;timeLimit: HO-G1.linkeddata.es/Charging_station#timeLimit<br />
-      &emsp;schedule: HO-G1.linkeddata.es/Charging_station#schedule<br />
-      &emsp;bookable: HO-G1.linkeddata.es/Charging_station#bookable<br />
-      &emsp;cablesAnnotation: HO-G1.linkeddata.es/Charging_station#cablesAnnotation<br />
-      Address: HO-G1.linkeddata.es/Address<br />
-      &emsp;street: HO-G1.linkeddata.es/Address#street<br />
-      &emsp;number: HO-G1.linkeddata.es/Address#number<br />
-      Connector: HO-G1.linkeddata.es/Connector<br />
-      &emsp;number: HO-G1.linkeddata.es/Connector#number<br />
-      &emsp;type: HO-G1.linkeddata.es/Connector#type<br />
+      &emsp;hasChargingStation: http://HO-G1.linkeddata.es/City/$(City)#hasChargingStation<br />
+      Charging_station: http://HO-G1.linkeddata.es/Chargingstation<br />
+      &emsp;hasPeripheral: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#hasPeripheral<br />
+      &emsp;hasAddress: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#hasAddress<br />
+      &emsp;Owner: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#owner<br />
+      &emsp;timeLimit: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#timeLimit<br />
+      &emsp;schedule: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#schedule<br />
+      &emsp;bookable: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#bookable<br />
+      &emsp;cablesAnnotation: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#cablesAnnotation<br />
+      &emsp;Longitude: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#Longitude<br />
+      &emsp;Latitude: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#Latitude<br />
+      Address: http://HO-G1.linkeddata.es/Address<br />
+      &emsp;address: http://HO-G1.linkeddata.es/Address/$(Address)<br />
+      Connector: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector<br />
+      &emsp;number: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector/$(Connector)#number<br />
+      &emsp;type: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector/$(Connector)#type<br />
     </p>
     </p>
 

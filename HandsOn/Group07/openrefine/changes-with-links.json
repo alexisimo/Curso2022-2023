@@ -1,0 +1,112 @@
+[
+    {
+        "op": "core/recon",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_distrito",
+        "config": {
+            "mode": "standard-service",
+            "service": "https://wikidata.reconci.link/en/api",
+            "identifierSpace": "http://www.wikidata.org/entity/",
+            "schemaSpace": "http://www.wikidata.org/prop/direct/",
+            "type": {
+                "id": "Q3032114",
+                "name": "district of Madrid"
+            },
+            "autoMatch": true,
+            "columnDetails": [],
+            "limit": 0
+        },
+        "description": "Reconcile cells in column nombre_distrito to type Q3032114"
+    },
+    {
+        "op": "core/recon",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_barrio",
+        "config": {
+            "mode": "standard-service",
+            "service": "https://wikidata.reconci.link/en/api",
+            "identifierSpace": "http://www.wikidata.org/entity/",
+            "schemaSpace": "http://www.wikidata.org/prop/direct/",
+            "type": {
+                "id": "Q10267336",
+                "name": "neighborhood of Madrid"
+            },
+            "autoMatch": true,
+            "columnDetails": [],
+            "limit": 0
+        },
+        "description": "Reconcile cells in column nombre_barrio to type Q10267336"
+    },
+    {
+        "op": "core/recon-judge-similar-cells",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_barrio",
+        "similarValue": "CÁRMENES  ",
+        "judgment": "matched",
+        "match": {
+            "id": "Q10319792",
+            "name": "Los Cármenes",
+            "types": [
+                "Q10267336"
+            ],
+            "score": 80
+        },
+        "shareNewTopics": false,
+        "description": "Match item Los Cármenes (Q10319792) for cells containing \"CÁRMENES  \" in column nombre_barrio"
+    },
+    {
+        "op": "core/recon-judge-similar-cells",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nombre_barrio",
+        "similarValue": "COMILLA  ",
+        "judgment": "matched",
+        "match": {
+            "id": "Q955844",
+            "name": "Comillas",
+            "types": [
+                "Q10267336"
+            ],
+            "score": 93
+        },
+        "shareNewTopics": false,
+        "description": "Match item Comillas (Q955844) for cells containing \"COMILLA  \" in column nombre_barrio"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "nombre_distrito",
+        "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+        "onError": "set-to-blank",
+        "newColumnName": "distrito_wikidata_URI",
+        "columnInsertIndex": 5,
+        "description": "Create column distrito_wikidata_URI at index 5 based on column nombre_distrito using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "nombre_barrio",
+        "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+        "onError": "set-to-blank",
+        "newColumnName": "barrio_wikidata_URI",
+        "columnInsertIndex": 8,
+        "description": "Create column barrio_wikidata_URI at index 8 based on column nombre_barrio using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    }
+]

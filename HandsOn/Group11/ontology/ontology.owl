@@ -1,0 +1,88 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#belongsDistrit
+<http://www.co-ode.org/ontologies/ont.owl#belongsDistrit> rdf:type owl:ObjectProperty ;
+                                                          owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#hasNeighborhood> ;
+                                                          rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Barrio> ;
+                                                          rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Distrito> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasGreenArea
+<http://www.co-ode.org/ontologies/ont.owl#hasGreenArea> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Barrio> ,
+                                                                    <http://www.co-ode.org/ontologies/ont.owl#Distrito> ;
+                                                        rdfs:range <http://www.co-ode.org/ontologies/ont.owl#ZonasVerdes> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasNeighborhood
+<http://www.co-ode.org/ontologies/ont.owl#hasNeighborhood> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Distrito> ;
+                                                           rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Barrio> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasSurface
+<http://www.co-ode.org/ontologies/ont.owl#hasSurface> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#ZonasVerdes> ;
+                                                      rdfs:range <http://www.co-ode.org/ontologies/ont.owl#Superficie> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#Units
+<http://www.co-ode.org/ontologies/ont.owl#Units> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain [ rdf:type owl:Restriction ;
+                                                               owl:onProperty owl:topObjectProperty ;
+                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#Superficie>
+                                                             ] ;
+                                                 rdfs:range xsd:string .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Value
+<http://www.co-ode.org/ontologies/ont.owl#Value> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain [ rdf:type owl:Restriction ;
+                                                               owl:onProperty owl:topObjectProperty ;
+                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/ont.owl#Superficie>
+                                                             ] ;
+                                                 rdfs:range xsd:string .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasID
+<http://www.co-ode.org/ontologies/ont.owl#hasID> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Distrito> ;
+                                                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#Barrio
+<http://www.co-ode.org/ontologies/ont.owl#Barrio> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Distrito
+<http://www.co-ode.org/ontologies/ont.owl#Distrito> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Superficie
+<http://www.co-ode.org/ontologies/ont.owl#Superficie> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ZonasVerdes
+<http://www.co-ode.org/ontologies/ont.owl#ZonasVerdes> rdf:type owl:Class .

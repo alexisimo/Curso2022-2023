@@ -1,0 +1,144 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha)",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 1",
+    "newColumnName": "ID_District",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 1 to ID_District"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 2",
+    "newColumnName": "Nombre_Distrito",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 2 to Nombre_Distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 3",
+    "newColumnName": "Nombre_Barrio",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 3 to Nombre_Barrio"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 4",
+    "newColumnName": "Nombre_ZonaVerde",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 4 to Nombre_ZonaVerde"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 5",
+    "newColumnName": "m2",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 5 to m2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 6",
+    "newColumnName": "ha",
+    "description": "Rename column N§ Distrito;DISTRITO;BARRIO;PARQUES Y ZONAS VERDES DE DISTRITO CON MAYOR SUPERFICIE;Superficie (m2);Superficie (ha) 6 to ha"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Nombre_ZonaVerde",
+    "expression": "grel:rowIndex+1",
+    "onError": "set-to-blank",
+    "newColumnName": "ID_ZonaVerde",
+    "columnInsertIndex": 4,
+    "description": "Create column ID_ZonaVerde at index 4 based on column Nombre_ZonaVerde using expression grel:rowIndex+1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Barrio",
+    "expression": "grel:value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_Barrio using expression grel:value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_ZonaVerde",
+    "expression": "grel:value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_ZonaVerde using expression grel:value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_ZonaVerde",
+    "expression": "grel:value.replace(\"§\",\"º\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_ZonaVerde using expression grel:value.replace(\"§\",\"º\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_ZonaVerde",
+    "expression": "grel:value.replace(\"¥\",\"Ñ\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_ZonaVerde using expression grel:value.replace(\"¥\",\"Ñ\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Distrito",
+    "expression": "grel:value.replace(\"¥\",\"Ñ\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_Distrito using expression grel:value.replace(\"¥\",\"Ñ\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Barrio",
+    "expression": "grel:value.replace(\"¥\",\"Ñ\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre_Barrio using expression grel:value.replace(\"¥\",\"Ñ\")"
+  }
+]

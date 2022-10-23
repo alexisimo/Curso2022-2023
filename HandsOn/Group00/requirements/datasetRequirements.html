@@ -1,0 +1,511 @@
+<! DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<head>
+    <title> Dataset Requirements </title>
+</head>
+
+<body>
+<h1>Dataset Requirements</h1>
+<p>For this project, the first four requirements should be accomplished by the selected datasets and the remaining two
+ are optional. They are described next:</p>
+    <ul>
+        <li>
+            <p> <strong>R1. Data are in one of the selected smart city domains.</strong>
+            </p>
+        </li>
+        <li>
+            <p> <strong>R2. Data are available as a CSV file</strong>
+            </p>
+        </li>
+        <li>
+            <p> <strong>R3. Data have an open license so they can be published.</strong>
+            </p>
+        </li>
+        <li>
+            <p> <strong>R4. Data can be easily linked with generic real-world entities.</strong>
+            </p>
+        </li>
+        <li>
+            <p> <strong>R5. Documentation exists for the data (optional).</strong>
+            </p>
+        </li>
+        <li>
+            <p> <strong>R6. Data can come from multiple data sources (optional).</strong>
+            </p>
+        </li>
+    </ul>
+<p>The next table shows the details of each dataset.</p>
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>R1 Smartcities Domain</th>
+    <th>R2 Serialization</th>
+    <th>R2 Comment</th>
+    <th>R3 License</th>
+    <th>R4 Linkage</th>
+    <th>R5 Documentation</th>
+    <th>R6 Datasources</th>
+    <th>Comment</th>
+  </tr>
+ <tr>
+  <td>Datadis Supplies</td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Datadis platform</td>
+  <td>access granted
+  only for a set of public buildings</td>
+ </tr>
+ <tr>
+  <td>Datadis timeseries EnergyConsumptionGridElectricity PT1H</td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Datadis platform</td>
+  <td>access granted
+  only for a set of public buildings</td>
+ </tr>
+ <tr>
+  <td>GPG patrimony</td>
+  <td>Government</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Gesti&oacute del Patrimoni de la Generalitat</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>Gemweb buildings</td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Gemweb platform</td>
+  <td>access granted
+  only for a set of public buildings partial data</td>
+ </tr>
+ <tr>
+  <td>Gemweb entities</td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Gemweb platform</td>
+  <td>access granted
+  only for a set of public buildings partial data</td>
+ </tr>
+ <tr>
+  <td>Gemweb supplies</td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Stored in private
+  DB exportable to csv</td>
+  <td>Public assets
+  private data, requires authorization</td>
+  <td>See table below</td>
+  <td>Not available</td>
+  <td>Single
+  datasource: Gemweb platform</td>
+  <td>access granted
+  only for a set of public buildings partial data</td>
+ </tr>
+ <tr>
+  <td>INSPIRE Catalonia buildings</td>
+  <td>Government</td>
+  <td>gml</td>
+  <td>Three gml files per municipality within a compressed zip file. Extracted from this
+      <a href="http://www.catastro.minhafp.es/INSPIRE/buildings/ES.SDGC.BU.atom.xml">link</a>.</td>
+  <td>Can be published only with a preliminar transformation. More details
+      <a href="https://www.catastro.minhap.es/webinspire/documentos/Licencia.pdf">here</a>.</td>
+  <td>See table below</td>
+  <td>Data <a href="https://www.catastro.minhap.es/webinspire/documentos/Conjuntos%20de%20datos.pdf">description</a>.
+  <br>
+    INSPIRE <a href="http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_BU_v3.0rc2.pdf">Specification</a>.</td>
+  <td>Single datasource: Direcci&oacuten General del Catastro</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>INSPIRE
+  Catalonia addresses</td>
+  <td>Government</td>
+  <td>gml</td>
+  <td>One gml file per municipality within a compressed zip file.
+  Extracted from this <a href="http://www.catastro.minhafp.es/INSPIRE/Addresses/ES.SDGC.AD.atom.xml">link</a>.</td>
+  <td>Can be published only with a preliminar transformation. More
+  details <a href="https://www.catastro.minhap.es/webinspire/documentos/Licencia.pdf">here</a>.</td>
+  <td>See table below</td>
+  <td>Data <a href="https://www.catastro.minhap.es/webinspire/documentos/Conjuntos%20de%20datos.pdf">description</a>.<br>
+    INSPIRE <a href="http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.1.pdf">Specification</a>.</td>
+  <td>Single datasource: Direcci&oacuten General del Catastro</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>INSPIRE
+  Catalonia parcels</td>
+  <td>Government</td>
+  <td>gml</td>
+  <td>Two gml files per municipality within a compressed zip file.
+  Extracted from this <a href="http://www.catastro.minhafp.es/INSPIRE/CadastralParcels/ES.SDGC.CP.atom.xml">link</a>.</td>
+  <td>Can be published only with a preliminar transformation. More
+  details <a href="https://www.catastro.minhap.es/webinspire/documentos/Licencia.pdf">here</a>.</td>
+  <td>See table below</td>
+  <td>Data <a href="https://www.catastro.minhap.es/webinspire/documentos/Conjuntos%20de%20datos.pdf">description</a>.<br>
+    INSPIRE <a href="http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_CP_v3.0.1.pdf">Specification</a>.</td>
+  <td>Single datasource: Direcci&oacuten General del Catastro</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>Geonames
+  Spain regions, Catalonia provinces and municipalities</td>
+  <td>Government</td>
+  <td>ttl</td>
+  <td>ttl filtered only for Spain. Extracted from <a href="https://download.geonames.org/all-geonames-rdf.zip">here</a>.</td>
+  <td>Creative commons attributions license as stated in this <a href="https://www.geonames.org/export/">link</a>.</td>
+  <td>See table below</td>
+  <td>Geonames ontology available to download in this <a href="https://www.geonames.org/ontology/ontology_v3.2.rdf">link</a>.
+  <br>
+    Features description can be seen <a href="http://www.geonames.org/statistics/total.html">here</a>.
+  </td>
+  <td>Crowd-sourced and combined with 402 datasources. More details <a href="http://www.geonames.org/datasources/" >here</a>.</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td><span>Catalonia certificates of energetic efficiency of buildings</span></td>
+  <td>Energy</td>
+  <td>csv</td>
+  <td>Can be extracted in RDF format but seems incomplete. Csv extracted from this <a href="https://analisi.transparenciacatalunya.cat/en/Energia/Certificats-d-efici-ncia-energ-tica-d-edificis/j6ii-t3w2">webpage</a>.</td>
+  <td>Open license allowing publishment and distribution without modification. More details <a href="https://governobert.gencat.cat/ca/dades_obertes/llicencia-oberta-informacio-catalunya/"></a></td>
+  <td>See table below</td>
+  <td>Dataset description available in this <a href="https://analisi.transparenciacatalunya.cat/en/Energia/Certificats-d-efici-ncia-energ-tica-d-edificis/j6ii-t3w2">webpage</a>.</td>
+  <td>Single datasource: Institut Catal&agrave d'Energia (ICAEN)</td>
+  <td>&nbsp;</td>
+ </tr>
+</table>
+<br>
+<p>For the fourth requirement linking analysis is detailed in the separate table shown below.</p>
+<br>
+
+<table>
+ <tr>
+  <th>Datadis supplies</th>
+  <th>Datadis energy consumption<br> timeseries</th>
+  <th>GPG patrimony</th>
+  <th>Gemweb entities</th>
+  <th>Gemweb patrimony</th>
+  <th>Gemweb supplies</th>
+  <th>INSPIRE Catalonia buildings projected<br>
+    gml:featureMember - ogr:qgis - ...</th>
+  <th>INSPIRE Catalonia addresses<br>
+    gml:FeatureCollection</th>
+  <th>INSPIRE Catalonia addresses projected<br>
+   gml:featureMember - ogr:qgis - ...</th>
+  <th>INSPIRE Catalonia parcels projected<br>
+    gml:FeatureMember - ogr:qgis - ...</th>
+  <th>Geonames Spain regions, Catalonia provinces and municipalities<br>
+    prefix gn: &lt;https://www.geonames.org/ontology#&gt;</th>
+  <th>EPC</th>
+ </tr>
+ <tr height="60">
+  <td>_id</td>
+  <td>_id</td>
+  <td bgcolor="#E7E6E6">_id*</td>
+  <td bgcolor="#E7E6E6">_id*</td>
+  <td bgcolor="#E7E6E6">_id</td>
+  <td>_id</td>
+  <td bgcolor="#D9E1F2">ogr:gml_id</td>
+  <td bgcolor="#D9E1F2">gml:featureMember - AD:Address - gml:id</td>
+  <td bgcolor="#E2EFDA">ogr:geometryProperty - gml:Point - gml:coordinates</td>
+  <td bgcolor="#D9E1F2">ogr:nationalCadastralReference</td>
+  <td>subject(gn:feature)</td>
+  <td>NUM_CAS</td>
+ </tr>
+ <tr>
+  <td bgcolor="#E2EFDA">address</td>
+  <td>datetime</td>
+  <td bgcolor="#E2EFDA">Codi_postal</td>
+  <td bgcolor="#E2EFDA">codi_postal</td>
+  <td bgcolor="#E2EFDA">direccio</td>
+  <td bgcolor="#FCE4D6">cups</td>
+  <td>ogr:informationSystem</td>
+  <td bgcolor="#E2EFDA">gml:featureMember - AD:Address - AD:locator - AD:AddressLocator - AD:designator -
+  AD:LocatorDesignator - AD:designator</td>
+  <td bgcolor="#D9E1F2">ogr:gml_id</td>
+  <td>ogr:geometryProperty - gml:MultiPolygon - gml:polygonMember - gml:Polygon - gml:outerBoundaryIs - gml:LinearRing -
+  gml:coordinates</td>
+  <td>gn:parentADM2</td>
+  <td bgcolor=#E2EFDA>ADRE&CcedilA</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FFF2CC">municipality</td>
+  <td bgcolor="#FCE4D6">cups</td>
+  <td>Espai</td>
+  <td bgcolor="#E2EFDA">direccio</td>
+  <td bgcolor="#E7E6E6">id_entitats*</td>
+  <td bgcolor="#E7E6E6">id_centres_consum</td>
+  <td style="color:red">ogr:value</td>
+  <td bgcolor="#DDEBF7">gml:featureMember - AD:ThoroughfareName - gml:id</td>
+  <td>&nbsp;</td>
+  <td>ogr:geometryProperty - gml:MultiPolygon -
+  gml:polygonMember - gml:Polygon - gml:innerBoundaryIs - gml:LinearRing -
+  gml:coordinates</td>
+  <td>gn:parentADM1</td>
+  <td bgcolor="#E2EFDA">NUMERO</td>
+ </tr>
+ <tr>
+  <td bgcolor="#E2EFDA">postalCode</td>
+  <td>consumptionKWh</td>
+  <td bgcolor="#FFF2CC">Municipi</td>
+  <td bgcolor="#E2EFDA">latitud</td>
+  <td>nom</td>
+  <td bgcolor="#E7E6E6">id_entitats*</td>
+  <td>ogr:value_uom</td>
+  <td bgcolor="#E2EFDA">gml:featureMember -
+  AD:ThoroughfareName - AD:name - AD:ThoroughfareNameValue - AD:name -
+  GN:GeographicalName - GN:spelling - GN:SpellingOfName - GN:text</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#D9E1F2">ogr:gml_id</td>
+  <td bgcolor="#E2EFDA">http://www.w3.org/2003/01/geo/wgs84_pos#lat</td>
+  <td bgcolor="#E2EFDA">CODI_POSTAL</td>
+ </tr>
+ <tr height="60">
+  <td bgcolor="#FFF2CC">province</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">Num_via</td>
+  <td bgcolor="#E2EFDA">longitud</td>
+  <td bgcolor="#D9E1F2">observacions</td>
+  <td>tipus_submin</td>
+  <td><b>ogr:currentUse</b></td>
+  <td bgcolor="#DDEBF7">gml:featureMember - AD:PostalDescriptor - gml:id</td>
+  <td>&nbsp;</td>
+  <td style="color:red">ogr:areaValue</td>
+  <td bgcolor="#FFF2CC">gn:name</td>
+  <td bgcolor="#FFF2CC">POBLACIO</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">Provincia</td>
+  <td>nom</td>
+  <td bgcolor="#FFF2CC">poblacio</td>
+  <td>&nbsp;</td>
+  <td>ogr:geometryProperty - gml:Polygon - gml:outerBoundaryIs
+  - gml:LinearRing - gml:coordinates</td>
+  <td bgcolor="#E2EFDA">gml:featureMember - AD:PostalDescriptor - AD:postCode</td>
+  <td>&nbsp;</td>
+  <td>ogr:areaValue_uom</td>
+  <td>gn:parentCountry</td>
+  <td bgcolor="#FFF2CC">NOM_PROVINCIA</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#D9E1F2">Ref_Cadastral</td>
+  <td bgcolor="#FFF2CC">poblacio</td>
+  <td style="color:red">superficie</td>
+  <td>&nbsp;</td>
+  <td>ogr:geometryProperty - gml:Polygon - gml:innerBoundaryIs
+  - gml:LinearRing - gml:coordinates</td>
+  <td bgcolor="#DDEBF7">gml:featureMember -
+  AD:AdminUnitName - gml:id</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+  <td bgcolor="#DDEBF7">REFERENCIA CADASTRAL</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="color:red">Sup_const_sobre_rasant</td>
+  <td bgcolor="#FFF2CC">provincia</td>
+  <td bgcolor="#E2EFDA">codi_postal</td>
+  <td>&nbsp;</td>
+  <td>ogr:geometryProperty - gml:MultiPolygon -
+  gml:polygonMember - gml:Polygon - gml:outerBoundaryIs - gml:LinearRing -
+  gml:coordinates</td>
+  <td bgcolor="#FFF2CC">gml:featureMember -
+  AD:AdminUnitName - AD:name - GN:GeographicalName - GN:spelling -
+  GN:SpellingOfName - GN:text</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">http://www.w3.org/2003/01/geo/wgs84_pos#long</td>
+  <td style="color:red">METRES_CADASTRE</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="color:red">Sup_const_sotarasant</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">provincia</td>
+  <td>&nbsp;</td>
+  <td>ogr:geometryProperty - gml:MultiPolygon -
+  gml:polygonMember - gml:Polygon - gml:innerBoundaryIs - gml:LinearRing -
+  gml:coordinates</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>gn:parentFeature</td>
+  <td>ANY_CONSTRUCCIO</td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="color:red">Sup_const_total</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">latitud</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td><b>gn:featureCode</b></td>
+  <td><b>US_EDIFICI</b></td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="color:red">Sup_terreny</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">longitud</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">gn:officialName
+  </td>
+  <td>Qualificaci&oacute de consum d'energia primaria no renovable</td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td><b>Tipus_us</b></td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">pais</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">gn:alternateName</td>
+  <td>Qualificacio d'emissions de CO2</td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">Via</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#FFF2CC">gn:shortName</td>
+  <td>Consum d'energia final</td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">gn:postalCode</td>
+  <td bgcolor="#E2EFDA">LONGITUD</td>
+ </tr>
+ <tr height="60">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td bgcolor="#E2EFDA">LATITUD</td>
+ </tr>
+</table>
+<br>
+<p>This table follows the code described next.</p>
+
+<table>
+ <tr>
+  <th>Color code</th>
+  <th>Linkage through
+</th>
+ </tr>
+ <tr>
+  <td bgcolor="#E2EFDA"> Address information</td>
+  <td>Reconciliation against cadastral addresses</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FFF2CC"> Administrative divisions</td>
+  <td>Reconciliation against RDF geonames triples</td>
+ </tr>
+ <tr>
+  <td bgcolor="#D9E1F2"> Cadastral reference</td>
+  <td>URI sharing</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FCE4D6"> Supply point unique number</td>
+  <td>URI sharing</td>
+ </tr>
+</table>
+<br>
+<table>
+ <tr>
+  <th> Code </th>
+  <th> Comment </th>
+ </tr>
+ <tr>
+  <td style="color:red"> Surface area </td>
+  <td> Multiple values for a single attribute.</td>
+ </tr>
+ <tr>
+  <td><b> Buildings typology</b></td>
+  <td>Each dataset has its own taxonomy</td>
+ </tr>
+</table>
+
+
+</body>
+</html>

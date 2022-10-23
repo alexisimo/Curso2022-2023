@@ -1,12 +1,22 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://bicimad.es/group07/class#> .
-@prefix ns2: <http://bicimad.es/group07/property#> .
+@prefix ns: <http://bicimad.com/group07/class#> .
+@prefix ns2: <http://bicimad.com/group07/property#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
+
+ns2:Barrio_id a owl:DatatypeProperty ;
+    rdfs:label "barrio_id" ;
+    rdfs:domain ns:Barrio ;
+    rdfs:range xsd:string .
+
+ns2:Distrito_id a owl:DatatypeProperty ;
+    rdfs:label "distrito_id" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:integer .
 
 ns2:nombre_barrio a owl:DatatypeProperty ;
     rdfs:label "nombre_barrio" ;
@@ -20,22 +30,17 @@ ns2:nombre_distrito a owl:DatatypeProperty ;
 
 ns2:tieneNplaza a owl:DatatypeProperty ;
     rdfs:label "tiene nplaza" ;
-    rdfs:domain ns:Direccion ;
-    rdfs:range xsd:integer .
-
-ns2:tieneTReserva a owl:DatatypeProperty ;
-    rdfs:label "tiene t reserva" ;
     rdfs:domain ns:Estacion ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:integer .
 
 ns2:tiene_GisX a owl:DatatypeProperty ;
     rdfs:label "tiene_ gis x" ;
-    rdfs:domain ns:Direccion ;
+    rdfs:domain ns:Estacion ;
     rdfs:range xsd:double .
 
 ns2:tiene_GisY a owl:DatatypeProperty ;
     rdfs:label "tiene_ gis y" ;
-    rdfs:domain ns:Direccion ;
+    rdfs:domain ns:Estacion ;
     rdfs:range xsd:double .
 
 ns2:tiene_Nfinca a owl:DatatypeProperty ;
@@ -61,21 +66,16 @@ ns2:tiene_direccion a owl:ObjectProperty ;
 ns2:tiene_distrito a owl:ObjectProperty ;
     rdfs:label "tiene_distrito" ;
     rdfs:domain ns:Estacion ;
-    rdfs:range ns:Distrito .
-
-ns2:tiene_fechaDeAlta a owl:DatatypeProperty ;
-    rdfs:label "tiene_fecha de alta" ;
-    rdfs:domain ns:Estacion ;
-    rdfs:range xsd:integer .
+    rdfs:range ns:Distrito.
 
 ns2:tiene_lat a owl:DatatypeProperty ;
     rdfs:label "tiene_lat" ;
-    rdfs:domain ns:Direccion ;
+    rdfs:domain ns:Estacion ;
     rdfs:range xsd:float .
 
 ns2:tiene_long a owl:DatatypeProperty ;
     rdfs:label "tiene_long" ;
-    rdfs:domain ns:Direccion ;
+    rdfs:domain ns:Estacion ;
     rdfs:range xsd:float .
 
 ns2:tiene_numero a owl:DatatypeProperty ;
@@ -86,11 +86,12 @@ ns2:tiene_numero a owl:DatatypeProperty ;
 ns:Barrio a owl:Class ;
     rdfs:label "Barrio" .
 
+ns:Direccion a owl:Class ;
+    rdfs:label "Direccion" .
+
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
 
 ns:Estacion a owl:Class ;
     rdfs:label "Estacion" .
 
-ns:Direccion a owl:Class ;
-    rdfs:label "Direccion" .

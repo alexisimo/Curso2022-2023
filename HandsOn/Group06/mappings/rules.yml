@@ -1,0 +1,46 @@
+base: http://desfibriladores.com/ontology/desfibrilador/
+
+prefixes:
+  ns: http://desfibriladores.com/ontology/desfibrilador/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+sources:
+  desfibriladores:
+    [../csv/desfibriladores-externos-fuera-ambito-sanitario-csv-updated.csv~csv]
+
+mappings:
+  triplesmap1:
+    sources: desfibriladores
+    s: http://desfibriladores.com/ontology/desfibrilador/$(codigo_dea)
+    po:
+      - [a, ns:Desfibrilador]
+      - [ns:hasEstablecimiento, $(tipo_establecimiento)]
+      - [ns:hasTitularidad, $(tipo_titularidad)]
+      - [ns:hasDireccionEstablecimiento, $(direccion_establecimiento)]
+      - [ns:hasHorarioAcceso , $(horario_acceso)]
+      - [ns:hasCodigoDea, $(codigo_dea)]
+      - [ns:hasMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]
+      - [ns:hasHorarioAcceso, $(horario_acceso)]
+
+  triplesmap2:
+    sources: desfibriladores
+    s: $(direccion_establecimiento)
+    po:
+      - [a, ns:Direccion]
+      - [ns:hasCodigoViaDireccion, $(direccion_via_codigo)]
+      - [ns:hasNombreViaDireccion, $(direccion_via_nombre)]
+      - [ns:hasNumeroPortalDireccion, $(direccion_portal_numero)]
+      - [ns:hasPisoDireccion, $(direccion_piso)]
+      - [ns:hasPuertaDireccion, $(direccion_puerta)]
+      - [ns:hasCodigoPostalDireccion, $(direccion_codigo_postal), xsd:nonNegativeInteger]
+      - [ns:hasUbicacionDireccion, $(direccion_ubicacion)]
+      - [ns:hasCoordXDireccion, $(direccion_coordenada_x), xsd:float]
+      - [ns:hasCoordYDireccion, $(direccion_coordenada_y), xsd:float]
+  
+  triplesmap3:
+    sources: desfibriladores
+    s: $(municipio_codigo)
+    po:
+      - [a, ns:Municipio]
+      - [ns:hasCodigoMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]
+      - [ns:hasNombreMunicipio, $(municipio_nombre)]

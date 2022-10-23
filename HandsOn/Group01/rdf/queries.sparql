@@ -1,0 +1,6 @@
+SELECT DISTINCT ?sub
+WHERE
+{
+    ?sub ?pre ?obj
+} 
+LIMIT 1000

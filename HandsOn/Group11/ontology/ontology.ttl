@@ -1,0 +1,108 @@
+@prefix : <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://zonas_verdes_madrid.com/ontology/ZonasVerdes> .
+
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#belongsDistrit
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#belongsDistrit> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> ;
+                                                          rdfs:range <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Distrito> .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#belongsNeighborhood
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#belongsNeighborhood> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> ;
+                                                               rdfs:range <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Barrio> .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#hasSurface
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#hasSurface> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> ;
+                                                      rdfs:range <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Superficie> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_Barrio
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_Barrio> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Barrio> ;
+                                                     rdfs:range xsd:int .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_Distrito
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_Distrito> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Distrito> ;
+                                                       rdfs:range xsd:int .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_ZonaVerde
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ID_ZonaVerde> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> ;
+                                                        rdfs:range xsd:integer .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_Barrio
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_Barrio> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Barrio> ;
+                                                         rdfs:range xsd:string .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_Distrito
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_Distrito> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:subPropertyOf owl:topDataProperty ;
+                                                           rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Distrito> ;
+                                                           rdfs:range xsd:string .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_ZonaVerde
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Nombre_ZonaVerde> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> ;
+                                                            rdfs:range xsd:string .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ha
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ha> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Superficie> ;
+                                              rdfs:range xsd:float .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#m2
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#m2> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Superficie> ;
+                                              rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Barrio
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Barrio> rdf:type owl:Class .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Distrito
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Distrito> rdf:type owl:Class .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Superficie
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#Superficie> rdf:type owl:Class .
+
+
+###  https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes
+<https://zonas_verdes_madrid.com/ontology/ZonasVerdes#ZonasVerdes> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
