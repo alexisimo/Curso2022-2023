@@ -1,19 +1,22 @@
-@prefix : <http://monumentmadrid.com#> .
+@prefix : <http://monumentmadrid.com/resource/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix ont: <http://monumentmadrid.com/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix res: <http://monumentmadrid.com/resource/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix monu: <http://monumentmadrid.com> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://monumentmadrid.com> .
+@prefix geo_core: <https://datos.ign.es/def/geo_core#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@base <http://monumentmadrid.com/resource/> .
 
-<http://monumentmadrid.com> rdf:type owl:Ontology ;
-                             dc:creator "Grupo 10" ;
-                             dc:description "Ontology code created by Chowlk" ;
-                             dc:title "Monument Ontology" ;
-                             owl:versionInfo "0.0.1" .
+<http://monumentmadrid.com/resource/> rdf:type owl:Ontology ;
+                                       dc:creator "Grupo 10" ;
+                                       dc:description "Ontology code created by Chowlk" ;
+                                       dc:title "Monument Ontology" ;
+                                       owl:versionInfo "0.0.1" .
 
 #################################################################
 #    Annotation properties
@@ -35,19 +38,25 @@ dc:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://monumentmadrid.com/ontology#desingedBy
-ont:desingedBy rdf:type owl:ObjectProperty ;
-               rdfs:label "desinged by" .
-
-
 ###  http://monumentmadrid.com/ontology#hasAddress
 ont:hasAddress rdf:type owl:ObjectProperty ;
                rdfs:label "has address" .
 
 
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geosparql:hasGeometry rdf:type owl:ObjectProperty ;
+                      rdfs:label "has geometry" .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://monumentmadrid.com/ontology#designedBy
+ont:designedBy rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "designed by" .
+
 
 ###  http://monumentmadrid.com/ontology#hasaddressname
 ont:hasaddressname rdf:type owl:DatatypeProperty ;
@@ -77,18 +86,6 @@ ont:hascity rdf:type owl:DatatypeProperty ;
 ont:hascontenturl rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:string ;
                   rdfs:label "hascontenturl" .
-
-
-###  http://monumentmadrid.com/ontology#hascoordx
-ont:hascoordx rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:string ;
-              rdfs:label "hascoordx" .
-
-
-###  http://monumentmadrid.com/ontology#hascoordy
-ont:hascoordy rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:string ;
-              rdfs:label "hascoordy" .
 
 
 ###  http://monumentmadrid.com/ontology#hasdescription
@@ -147,7 +144,7 @@ ont:haspostalcode rdf:type owl:DatatypeProperty ;
 
 ###  http://monumentmadrid.com/ontology#hasprovince
 ont:hasprovince rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:integer ;
+                rdfs:range xsd:string ;
                 rdfs:label "hasprovince" .
 
 
@@ -157,41 +154,59 @@ ont:hassubtype rdf:type owl:DatatypeProperty ;
                rdfs:label "hassubtype" .
 
 
+###  https://datos.ign.es/def/geo_core#latETRS89
+geo_core:latETRS89 rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "lat e t r s89" .
+
+
+###  https://datos.ign.es/def/geo_core#lonETRS89
+geo_core:lonETRS89 rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "lon e t r s89" .
+
+
+###  https://datos.ign.es/def/geo_core#xETRS89
+geo_core:xETRS89 rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "x e t r s89" .
+
+
+###  https://datos.ign.es/def/geo_core#yETRS89
+geo_core:yETRS89 rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "y e t r s89" .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://monumentmadrid.comAddress
-monu:Address rdf:type owl:Class ;
-             rdfs:subClassOf monu:Location ;
-             rdfs:label "Address" .
+###  http://monumentmadrid.com/ontology#Location
+ont:Location rdf:type owl:Class ;
+             rdfs:label "Location" .
 
 
-###  http://monumentmadrid.comAuthor
-monu:Author rdf:type owl:Class ;
-            rdfs:subClassOf ont:Person ;
-            rdfs:label "Author" .
+###  http://monumentmadrid.com/ontology#TuristAttraction
+ont:TuristAttraction rdf:type owl:Class ;
+                     rdfs:label "Turist Attraction" .
 
 
-###  http://monumentmadrid.comLocation
-monu:Location rdf:type owl:Class ;
-              rdfs:label "Location" .
+###  http://monumentmadrid.com/resource/Address
+res:Address rdf:type owl:Class ;
+            rdfs:subClassOf ont:Location ;
+            rdfs:label "Address" .
 
 
-###  http://monumentmadrid.comMonument
-monu:Monument rdf:type owl:Class ;
-              rdfs:subClassOf monu:TuristAttraction ;
-              rdfs:label "Monument" .
+###  http://monumentmadrid.com/resource/Monument
+res:Monument rdf:type owl:Class ;
+             rdfs:subClassOf ont:TuristAttraction ;
+             rdfs:label "Monument" .
 
 
-###  http://monumentmadrid.comTuristAttraction
-monu:TuristAttraction rdf:type owl:Class ;
-                      rdfs:label "Turist Attraction" .
-
-
-###  http://monumentmadrid.com/ontology#Person
-ont:Person rdf:type owl:Class ;
-           rdfs:label "Person" .
+###  http://www.opengis.net/ont/sf#Point
+sf:Point rdf:type owl:Class ;
+         rdfs:label "Point" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

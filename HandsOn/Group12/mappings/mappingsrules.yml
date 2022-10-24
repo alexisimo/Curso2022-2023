@@ -14,7 +14,7 @@ prefixes:
 mappings:
   purification_plant:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/purification_plant/$(location)
     po:
       - [a, regeneratedwater:purification_plant]
@@ -33,7 +33,7 @@ mappings:
 
   parameter:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/parameter/$(parameter)
     po:
       - [a, regeneratedwater:parameter]
@@ -50,158 +50,169 @@ mappings:
 
   Muestra1_1:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_1)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_1) ]
   Muestra2_1:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_2)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_1) ]
   Muestra1_2:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_2)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value , $(Muestra1_2)]
   Muestra2_2:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_2)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_2) ]
   Muestra1_3:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_3)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value , $(Muestra1_3)]
   Muestra2_3:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_3)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_3) ]
   Muestra1_4:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_4)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_4) ]
   Muestra2_4:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_4)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_4) ]
   Muestra1_5:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_5)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_5) ]
   Muestra2_5:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_5)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_5) ]
   Muestra1_6:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_6)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_6) ]
   Muestra2_6:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_6)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_6) ]
   Muestra1_7:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_7)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_7) ]
   Muestra2_7:
     sources:
-      - [Calidad_AgRegenerada_2022-update~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_7)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_7) ]
   Muestra1_8:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_8)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_8) ]
   Muestra2_8:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_8)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_8) ]
   Muestra1_9:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_9))
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_9) ]
   Muestra2_9:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_9)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_9) ]
   Muestra1_10:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_10)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_10) ]
   Muestra2_10:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_10)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_10) ]
   Muestra1_11:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra1_11)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra1_11) ]
   Muestra2_11:
     sources:
-      - [/data/NombreArchivo2.csv~csv]
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
     s: http://base.regeneratedwater.com/$(Muestra2_11)
     po:
       - [a, regeneratedwater:sample]
       - [regeneratedwater:value ,$(Muestra2_11) ]
-  
-      
-      
+  Muestra1_12:
+    sources:
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
+    s: http://base.regeneratedwater.com/$(Muestra1_12)
+    po:
+      - [a, regeneratedwater:sample]
+      - [regeneratedwater:value ,$(Muestra1_12) ]
+  Muestra2_12:
+    sources:
+      - [Calidad_AgRegenerada_2022-update.csv~csv]
+    s: http://base.regeneratedwater.com/$(Muestra2_12)
+    po:
+      - [a, regeneratedwater:sample]
+      - [regeneratedwater:value ,$(Muestra2_12) ]

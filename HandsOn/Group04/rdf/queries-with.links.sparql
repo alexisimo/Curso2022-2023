@@ -1,0 +1,30 @@
+PRFEIX classes: https://www.puntodecargasmadrid/Clases# .
+PREFIX properties: https://www.puntodecargasmadrid/Propiedades# .
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema# .
+PREFIX schema: http://schema.org/ .
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+
+#Devuelve los puntos de carga que se localizan en el distrito RETIRO 
+SELECT DISTINCT ?puntoRecarga
+	WHERE {
+		?puntoRecarga a classes:puntoRecarga
+	        ?puntoCarga properties:puntoRecargaPerteneceDist ?distrito
+		?distrito owl:sameAs <https://wikidata.org/entity/Q2002296>
+	}
+
+#Devuelve los links de los distintos barrios del distrito chamartin
+SELECT DISTINCT ?links
+	WHERE {
+		
+		?distrito owl:sameAs <https://wikidata.org/entity/Q1766348>
+		?distrito properties:distPerteneceBarrio ?barrio
+		?barrio owl:sameAs ?links
+		
+	}
+
+
+
+
+
+

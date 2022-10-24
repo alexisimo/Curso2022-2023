@@ -1,0 +1,9 @@
+
+
+
+
+
+SELECT DISTINCT ?statements
+	WHERE{
+		?statements owl:sameAs <https://www.wikidata.org/wiki/Q2807>
+	}

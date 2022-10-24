@@ -1,0 +1,44 @@
+PREFIX  xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ns:     <http://desfibriladores.com/ontology/desfibrilador/>
+PREFIX  owl:    <http://www.w3.org/2002/07/owl#/>
+
+# Desfibriladores con sus codigos DEA identificativos
+SELECT ?desfibrilador ?codigo_dea
+WHERE{
+    ?desfibrilador rdf:type ns:Desfibrilador
+    ?desfibrilador <http://desfibriladores.com/ontology/desfibrilador/hasCodigoDea> ?codigo_dea
+}
+# Codigos DEA de aquellos desfibriladores con una dirección con puerta
+SELECT ?codigo_dea
+WHERE{
+    ?desfibrilador rdf:type ns:Desfibrilador
+    ?desfibrilador ns:hasCodigoDea ?codigo
+    ?desfibrilador ns:direccion_establecimiento ?direccion
+    ?direccion ns:hasPuertaDireccion ?puerta
+}
+# Municipos, y su link, equivalentes en wikidata
+SELECT ?municipio ?link
+WHERE{
+    ?municipio rdf:type ns:Municipio
+    ?municipio owl:sameAs ?same_as_wikidata_municipio
+}
+
+# Codigos DEA de aquellos desfibriladores con titularidad Publica
+SELECT ?codigo_dea
+WHERE{
+    ?desfibrilador rdf:type ns:Desfibrilador
+    ?desfibrilador ns:hasCodigoDea ?codigo_dea
+    ?desfibrilador ns:hasTitularidad "Pública"
+}
+
+# Codigos DEA de aquellos desfibriladores cuyo municipio sea Madrid y su tipo de via sea CALLE
+SELECT ?codigo_dea
+WHERE{
+    ?desfibrilador rdf:type ns:Desfibrilador
+    ?desfibrilador ns:hasCodigoDea ?codigo_dea  
+    ?desfibrilador ns:hasMunicipio ?municipio
+    ?municipio ns:hasNombreMunicipio "Madrid"
+    ?desfibrilador ns:hasDireccion ?direccion
+    ?direccion ns:hasCodigoVia "CALLE"
+}

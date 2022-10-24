@@ -409,5 +409,146 @@
     "oldColumnName": "district_number_id",
     "newColumnName": "DISTRICT_ID",
     "description": "Rename column district_number_id to DISTRICT_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET",
+    "expression": "grel:value.match(/(\\D*)\\s(?:\\d*).*/)[0].split(\",\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET using expression grel:value.match(/(\\D*)\\s(?:\\d*).*/)[0].split(\",\")[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ST_NUMBER",
+    "expression": "grel:if(value == null, \"S/N\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ST_NUMBER using expression grel:if(value == null, \"S/N\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "OPERATOR",
+    "keyColumnName": "ID_CHARGEST",
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "description": "Split multi-valued cells in column OPERATOR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "expression": "grel:value.match(/\\s*(.*)/)[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OPERATOR using expression grel:value.match(/\\s*(.*)/)[0]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC (CIRCUTOR)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERATOR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD_ID",
+    "expression": "grel:cells['DISTRICT_ID'].value + value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD_ID using expression grel:cells['DISTRICT_ID'].value + value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ID_CHARGEST",
+          "expression": "value",
+          "columnName": "ID_CHARGEST",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
   }
 ]

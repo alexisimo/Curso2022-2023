@@ -26,9 +26,11 @@ SELECT ?Subject WHERE {
 
 # list bike station districts
 
-SELECT ?Subject WHERE { 
-    ?Subject a ns1:BikeStation.
-    ?Subject a ns1:District.
+SELECT DISTINCT ?sub WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
 }
 
 # list bike station neighbourhoods
@@ -145,9 +147,11 @@ SELECT ?Subject WHERE {
 
 # list charge station districts
 
-SELECT ?Subject WHERE { 
-    ?Subject a ns1:ChargeStation.
-    ?Subject a ns1:District.
+SELECT DISTINCT ?sub WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
 }
 
 # list neighbourhoods the charge stations belong to

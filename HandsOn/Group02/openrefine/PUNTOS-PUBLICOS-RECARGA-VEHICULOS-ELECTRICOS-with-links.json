@@ -1,0 +1,292 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRICT to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NEIGHBOURHOOD to type Q10267336"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q4830453",
+        "name": "business"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column OPERATOR to type Q4830453"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "GIC",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114757945",
+      "name": "Gestión Inteligente de Cargas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gestión Inteligente de Cargas (Q114757945) for cells containing \"GIC\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "GIC",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114757945",
+      "name": "Gestión Inteligente de Cargas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gestión Inteligente de Cargas (Q114757945) for cells containing \"GIC\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "ENDESA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1275336",
+      "name": "Endesa",
+      "types": [
+        "Q6881511",
+        "Q891723",
+        "Q1326624"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Endesa (Q1275336) for cells containing \"ENDESA\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "DRIVE THE CITY",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114758003",
+      "name": "DRIVE THE CITY",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item DRIVE THE CITY (Q114758003) for cells containing \"DRIVE THE CITY\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "ECOLINERAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114758119",
+      "name": "Ecolineras",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ecolineras (Q114758119) for cells containing \"ECOLINERAS\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "EMT",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1094755",
+      "name": "Empresa Municipal de Transportes de Madrid",
+      "types": [
+        "Q740752",
+        "Q30014735"
+      ],
+      "score": 46
+    },
+    "shareNewTopics": false,
+    "description": "Match item Empresa Municipal de Transportes de Madrid (Q1094755) for cells containing \"EMT\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "GIC-CEPSA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q608819",
+      "name": "Spanish Petroleum Company",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Spanish Petroleum Company (Q608819) for cells containing \"GIC-CEPSA\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "NATURGY",
+    "judgment": "matched",
+    "match": {
+      "id": "Q474690",
+      "name": "naturgy",
+      "types": [
+        "Q4830453",
+        "Q6881511",
+        "Q891723"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item naturgy (Q474690) for cells containing \"NATURGY\" in column OPERATOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "similarValue": "GIC-GALP",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1492739",
+      "name": "Galp Energia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Galp Energia (Q1492739) for cells containing \"GIC-GALP\" in column OPERATOR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRICT",
+    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "WIKIDATA_DISTRICT",
+    "columnInsertIndex": 3,
+    "description": "Create column WIKIDATA_DISTRICT at index 3 based on column DISTRICT using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NEIGHBOURHOOD",
+    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "WIKIDATA_NEIGHBOURHOOD",
+    "columnInsertIndex": 6,
+    "description": "Create column WIKIDATA_NEIGHBOURHOOD at index 6 based on column NEIGHBOURHOOD using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "OPERATOR",
+    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "WIKIDATA_OPERATOR",
+    "columnInsertIndex": 13,
+    "description": "Create column WIKIDATA_OPERATOR at index 13 based on column OPERATOR using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+  }
+]

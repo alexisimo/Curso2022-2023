@@ -1,47 +1,53 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://HO-G1.linkeddata.es> .
+ @prefix add: <http://HO-G1.linkeddata.es/resource/Address/> .
+@prefix city: <http://HO-G1.linkeddata.es/resource/City/> .
+@prefix conn: <http://HO-G1.linkeddata.es/resource/Connector/> .
+@prefix cs: <http://HO-G1.linkeddata.es/resource/Chargingstation/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ph: <http://HO-G1.linkeddata.es/resource/Peripheral/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
 
 ns: a owl:Ontology ;
     dc:creator "Semantic Web 2022-23 (UPM) Group 01" ;
     dc:description "Ontology code created by Chowlk" ;
-    dc:title "Alcobendas charging stations Ontology" ;
+    dc:title "Alcobendas charging stations Ontology individual example" ;
     owl:versionInfo "0.0.1" .
-
-ns:Alcobendas a owl:NamedIndividual ;
-    ns:hasChargingStation ns:Charging_station05 .
-
-ns:Connector05 a owl:NamedIndividual ;
-    ns:number "2"^^xsd1:Integer ;
-    ns:type "TYPE 2 7.40kW|"^^xsd1:String .
 
 ns:hasAddress a owl:ObjectProperty ;
     rdfs:label "has address" .
 
-ns:hasChargingStation a owl:ObjectProperty ;
-    rdfs:label "has charging station" .
-
 ns:hasPeripheral a owl:ObjectProperty ;
     rdfs:label "has peripheral" ;
-    rdfs:range ns:Peripheral .
+    rdfs:range ph:Peripheral .
+
+ns:isLocatedIn a owl:ObjectProperty ;
+    rdfs:label "is located in" .
 
 ns:longitude a owl:ObjectProperty ;
     rdfs:label "longitude" .
 
-ns:Address05 a owl:NamedIndividual ;
-    ns:address "Avenida de España, 28"^^xsd1:String .
-
-ns:Charging_station05 a owl:NamedIndividual ;
+cs:Charging_station05 a owl:NamedIndividual ;
     ns:bookable "No se puede reservar"^^xsd1:String ;
     ns:cablesAnnotation "No"^^xsd1:String ;
-    ns:hasAddress ns:Address05 ;
+    ns:hasAddress add:Address05 ;
+    ns:isLocatedIn city:Alcobendas ;
     ns:latitude "40.546535"^^xsd1:decimal ;
     ns:owner "EMOVILI"^^xsd1:String ;
+    ns:price "Gratuito"^^xsd1:String ;
     ns:schedule "24 horas todos los días"^^xsd1:String ;
     ns:timeLimit "2"^^xsd1:Integer .
 
-ns:Peripheral a owl:Class ;
+conn:Connector05 a owl:NamedIndividual ;
+    ns:number "2"^^xsd1:Integer ;
+    ns:type "TYPE 2 7.40kW|"^^xsd1:String .
+
+add:Address05 a owl:NamedIndividual ;
+    ns:address "Avenida de España, 28"^^xsd1:String .
+
+city:Alcobendas a owl:NamedIndividual .
+
+ph:Peripheral a owl:Class ;
     rdfs:label "Peripheral" .
 

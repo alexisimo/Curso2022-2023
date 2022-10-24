@@ -1,0 +1,350 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "location",
+    "expression": "grel:value.replace(\"Viveros de la Villa\",\"Paseo del Marqués de Monistrol\")",
+    "onError": "set-to-blank",
+    "newColumnName": "street",
+    "columnInsertIndex": 1,
+    "description": "Create column street at index 1 based on column location using expression grel:value.replace(\"Viveros de la Villa\",\"Paseo del Marqués de Monistrol\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(\"La China\",\"Calle de Embajadores\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(\"La China\",\"Calle de Embajadores\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(\"La Gavia\",\"Poligono UZP0301 Valdecarros\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(\"La Gavia\",\"Poligono UZP0301 Valdecarros\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(\"Rejas\",\"Camino la Muñoza\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(\"Rejas\",\"Camino la Muñoza\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column street to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Paseo del Marqués de Monistrol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q93452124",
+      "name": "Avenida de la Ilustración",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de la Ilustración (Q93452124) for cells containing \"Paseo del Marqués de Monistrol\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Paseo del Marqués de Monistrol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3319235",
+      "name": "Ciudad Universitaria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ciudad Universitaria (Q3319235) for cells containing \"Paseo del Marqués de Monistrol\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Poligono UZP0301 Valdecarros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21006950",
+      "name": "Tomateros Stadium",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tomateros Stadium (Q21006950) for cells containing \"Poligono UZP0301 Valdecarros\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Poligono UZP0301 Valdecarros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24014714",
+      "name": "Valdecarros",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdecarros (Q24014714) for cells containing \"Poligono UZP0301 Valdecarros\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Poligono UZP0301 Valdecarros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q667797",
+      "name": "Valdecarros",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdecarros (Q667797) for cells containing \"Poligono UZP0301 Valdecarros\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Poligono UZP0301 Valdecarros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1947988",
+      "name": "Villa de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villa de Vallecas (Q1947988) for cells containing \"Poligono UZP0301 Valdecarros\" in column street"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "similarValue": "Camino la Muñoza",
+    "judgment": "matched",
+    "match": {
+      "id": "Q807230",
+      "name": "Barajas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barajas (Q807230) for cells containing \"Camino la Muñoza\" in column street"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street",
+    "newColumnName": "district",
+    "description": "Rename column street to district"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "district_URI_from_Wikidata",
+    "columnInsertIndex": 2,
+    "description": "Create column district_URI_from_Wikidata at index 2 based on column district using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parameter",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q213907",
+        "name": "model organism"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column parameter to type Q213907"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parameter",
+    "similarValue": "Turb",
+    "judgment": "matched",
+    "match": {
+      "id": "Q898574",
+      "name": "turbidity",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item turbidity (Q898574) for cells containing \"Turb\" in column parameter"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parameter",
+    "similarValue": "Leg",
+    "judgment": "matched",
+    "match": {
+      "id": "Q158013",
+      "name": "Legionella",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Legionella (Q158013) for cells containing \"Leg\" in column parameter"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parameter",
+    "similarValue": "SS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q905309",
+      "name": "suspended solids",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item suspended solids (Q905309) for cells containing \"SS\" in column parameter"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parameter",
+    "similarValue": "Nem",
+    "judgment": "matched",
+    "match": {
+      "id": "Q44746774",
+      "name": "Intestinal nematodes and pulmonary tuberculosis.",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Intestinal nematodes and pulmonary tuberculosis. (Q44746774) for cells containing \"Nem\" in column parameter"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "parameter",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "parameter_URI_from_Wikidata",
+    "columnInsertIndex": 4,
+    "description": "Create column parameter_URI_from_Wikidata at index 4 based on column parameter using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

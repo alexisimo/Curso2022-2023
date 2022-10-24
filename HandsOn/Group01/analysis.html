@@ -106,22 +106,28 @@
     </p>
     <h2>Resource naming strategy</h2>
     <p>City: HO-G1.linkeddata.es/City<br />
-      &emsp;hasChargingStation: http://HO-G1.linkeddata.es/City/$(City)#hasChargingStation<br />
-      Charging_station: http://HO-G1.linkeddata.es/Chargingstation<br />
-      &emsp;hasPeripheral: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#hasPeripheral<br />
-      &emsp;hasAddress: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#hasAddress<br />
-      &emsp;Owner: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#owner<br />
-      &emsp;timeLimit: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#timeLimit<br />
-      &emsp;schedule: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#schedule<br />
-      &emsp;bookable: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#bookable<br />
-      &emsp;cablesAnnotation: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#cablesAnnotation<br />
-      &emsp;Longitude: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#Longitude<br />
-      &emsp;Latitude: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)#Latitude<br />
-      Address: http://HO-G1.linkeddata.es/Address<br />
+      &emsp;hasAddress: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasAddress<br />
+      &emsp;hasPeripheral: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasPeripheral<br />
+      &emsp;isLocatedIn: http://HO-G1.linkeddata.es/ontology/Chargingstation#isLocatedIn<br />
+
+      Charging_station: http://HO-G1.linkeddata.es/resource/Chargingstation/<br />
+      &emsp;owner: http://HO-G1.linkeddata.es/ontology/Chargingstation#owner<br />
+      &emsp;timeLimit: http://HO-G1.linkeddata.es/ontology/Chargingstation#timeLimit<br />
+      &emsp;schedule: http://HO-G1.linkeddata.es/ontology/Chargingstation#schedule<br />
+      &emsp;bookable: http://HO-G1.linkeddata.es/ontology/Chargingstation#bookable<br />
+      &emsp;cablesAnnotation: http://HO-G1.linkeddata.es/ontology/Chargingstation#cablesAnnotation<br />
+      &emsp;longitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#longitude<br />
+      &emsp;latitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#latitude<br />
+      &emsp;price: http://HO-G1.linkeddata.es/ontology/Chargingstation#price<br />
+      
+      Address: http://HO-G1.linkeddata.es/resource/Address/<br />
       &emsp;address: http://HO-G1.linkeddata.es/Address/$(Address)<br />
-      Connector: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector<br />
-      &emsp;number: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector/$(Connector)#number<br />
-      &emsp;type: http://HO-G1.linkeddata.es/Chargingstation/$(Charging Station)/Connector/$(Connector)#type<br />
+
+      Peripheral: http://HO-G1.linkeddata.es/resource/Peripheral/<br />
+      
+      Connector: http://HO-G1.linkeddata.es/resource/Connector/<br />
+      &emsp;number: http://HO-G1.linkeddata.es/ontology/Chargingstation#number<br />
+      &emsp;type: http://HO-G1.linkeddata.es/ontology/Chargingstation#type<br />
     </p>
     </p>
 
