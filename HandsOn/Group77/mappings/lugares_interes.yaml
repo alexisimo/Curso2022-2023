@@ -1,0 +1,15 @@
+preprefixes:
+ ex: "http://culturaAndaluza.es/sevilla/"
+ dbo: "http://dbpedia.org/ontology/"
+ dbp: "http://dbpedia.org/property/"
+ owl: "http://www.w3.org/2002/07/owl"
+mappings:        
+  lugares:
+    sources:
+      - ['Lugares.csv~csv']
+    s: ex:$(ID)
+    po:
+        - [dbp:latitude, $(Latitud)]
+        - [dbp:longitude, $(Longitud)]
+        - [dbp:fullname, $(Nombre)]
+        - [a, dbo:Monument]

@@ -1,0 +1,859 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column City to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q4830453",
+        "name": "business"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Owner to type Q4830453"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Number of connectors",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q21199",
+        "name": "natural number"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Number of connectors to type Q21199"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Price",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q151885",
+        "name": "concept"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Price to type Q151885"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "ENDESA ENERGIA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q113464339",
+      "name": "ENERGIA XXI COMERCIALIZADORA DE REFERENCIA, S.L.",
+      "types": [
+        "Q4830453"
+      ],
+      "score": 44
+    },
+    "shareNewTopics": false,
+    "description": "Match item ENERGIA XXI COMERCIALIZADORA DE REFERENCIA, S.L. (Q113464339) for cells containing \"ENDESA ENERGIA, S.A.\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Acciona I+D",
+    "judgment": "matched",
+    "match": {
+      "id": "Q339142",
+      "name": "Acciona",
+      "types": [
+        "Q4830453",
+        "Q6881511",
+        "Q891723"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acciona (Q339142) for cells containing \"Acciona I+D\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Mitsubishi",
+    "judgment": "matched",
+    "match": {
+      "id": "Q36033",
+      "name": "Mitsubishi Motors",
+      "types": [
+        "Q786820",
+        "Q891723"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mitsubishi Motors (Q36033) for cells containing \"Mitsubishi\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Hotel Amura Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q111409068",
+      "name": "Amura Alcobendas",
+      "types": [
+        "Q27686"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Amura Alcobendas (Q111409068) for cells containing \"Hotel Amura Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Acciona Agua",
+    "judgment": "matched",
+    "match": {
+      "id": "Q339142",
+      "name": "Acciona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acciona (Q339142) for cells containing \"Acciona Agua\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Acciona - Avenidad de Europa",
+    "judgment": "matched",
+    "match": {
+      "id": "Q339142",
+      "name": "Acciona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acciona (Q339142) for cells containing \"Acciona - Avenidad de Europa\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Sede de Groupe Renault",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6686",
+      "name": "Renault",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Renault (Q6686) for cells containing \"Sede de Groupe Renault\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Renault Autofer Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6686",
+      "name": "Renault",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Renault (Q6686) for cells containing \"Renault Autofer Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Nissan Ibericar Reicomsa Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20165",
+      "name": "Nissan",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nissan (Q20165) for cells containing \"Nissan Ibericar Reicomsa Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Mercadona Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q377705",
+      "name": "Mercadona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mercadona (Q377705) for cells containing \"Mercadona Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "McDonalds Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q38076",
+      "name": "McDonald’s",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item McDonald’s (Q38076) for cells containing \"McDonalds Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Rafaelhoteles Madrid Norte",
+    "judgment": "matched",
+    "match": {
+      "id": "Q111388622",
+      "name": "Rafaelhoteles Atocha",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rafaelhoteles Atocha (Q111388622) for cells containing \"Rafaelhoteles Madrid Norte\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Feníe Energía/0259",
+    "judgment": "matched",
+    "match": {
+      "id": "Q113464312",
+      "name": "FENIE ENERGIA,",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item FENIE ENERGIA, (Q113464312) for cells containing \"Feníe Energía/0259\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Estación de recarga ACCIONA-Bia en Moraleja Green",
+    "judgment": "matched",
+    "match": {
+      "id": "Q339142",
+      "name": "Acciona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acciona (Q339142) for cells containing \"Estación de recarga ACCIONA-Bia en Moraleja Green\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Distrito Telefónica Pk. Sur-Este",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5283575",
+      "name": "Distrito Telefónica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Distrito Telefónica (Q5283575) for cells containing \"Distrito Telefónica Pk. Sur-Este\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Carrefour Alcobendas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3117359",
+      "name": "Carrefour Group",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrefour Group (Q3117359) for cells containing \"Carrefour Alcobendas\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "BBVA campus moraleja",
+    "judgment": "matched",
+    "match": {
+      "id": "Q806189",
+      "name": "Bilbao Vizcaya Argentaria Bank",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bilbao Vizcaya Argentaria Bank (Q806189) for cells containing \"BBVA campus moraleja\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "Acciona Transmaditerranea",
+    "judgment": "matched",
+    "match": {
+      "id": "Q339142",
+      "name": "Acciona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acciona (Q339142) for cells containing \"Acciona Transmaditerranea\" in column Owner"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Owner",
+    "similarValue": "RED ELECTRICA DE ESPAÑA, S.A.U.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q113464348",
+      "name": "Red Eléctrica de España",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Red Eléctrica de España (Q113464348) for cells containing \"RED ELECTRICA DE ESPAÑA, S.A.U.\" in column Owner"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "City",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_as_wikidata_city",
+    "columnInsertIndex": 1,
+    "description": "Create column Same_as_wikidata_city at index 1 based on column City using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Owner",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_as_wikidata_Owner",
+    "columnInsertIndex": 3,
+    "description": "Create column Same_as_wikidata_Owner at index 3 based on column Owner using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Number of connectors",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_as_wikidata_N_Connector",
+    "columnInsertIndex": 9,
+    "description": "Create column Same_as_wikidata_N_Connector at index 9 based on column Number of connectors using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Price",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_as_wikidata_Price",
+    "columnInsertIndex": 13,
+    "description": "Create column Same_as_wikidata_Price at index 13 based on column Price using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Cables Annotation: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Cables Annotation",
+          "from": 100,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Time limit",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q21199",
+        "name": "natural number"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Time limit to type Q21199"
+  }
+]

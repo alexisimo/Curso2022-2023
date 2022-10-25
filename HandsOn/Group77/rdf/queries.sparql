@@ -1,0 +1,290 @@
+QUERY 1)
+-----------------------------------------------------
+-----------------------------------------------------
+PREFIX obj: <http://www.openrdf.org/rdf/2009/object#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX can: <http://culturaandaluza.es/sevilla/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT ?sub WHERE {
+  ?sub dbp:phoneNumber ?obj.
+  FILTER(strstarts(str(?obj),'955'))
+} 
+LIMIT 10
+-----------------------------------------------------
+RESULT:
+{
+  "head" : {
+    "vars" : [
+      "sub"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/19"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/18"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/21"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/16"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/2"
+        }
+      }
+    ]
+  }
+}
+-----------------------------------------------------
+-----------------------------------------------------
+QUERY2:
+PREFIX obj: <http://www.openrdf.org/rdf/2009/object#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX can: <http://culturaandaluza.es/sevilla/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?sub WHERE {
+  ?sub owl:sameAs ?obj
+} 
+LIMIT 10
+-----------------------------------------------------
+RESULT:
+{
+  "head" : {
+    "vars" : [
+      "sub"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/0"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/19"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/5"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/22"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/18"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/4"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/3"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/20"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/16"
+        }
+      },
+      {
+        "sub" : {
+          "type" : "uri",
+          "value" : "http://culturaandaluza.es/sevilla/2"
+        }
+      }
+    ]
+  }
+}
+-----------------------------------------------------
+-----------------------------------------------------
+QUERY3:
+PREFIX obj: <http://www.openrdf.org/rdf/2009/object#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX can: <http://culturaandaluza.es/sevilla/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?lat ?lon WHERE {
+  ?sub dbp:latitude ?lat .
+  ?sub dbp:longitude ?lon
+} 
+LIMIT 10
+-----------------------------------------------------
+RESULT:
+{
+  "head" : {
+    "vars" : [
+      "lat",
+      "lon"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.996442105487888"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.397305140721699"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.9941"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.397305140721699"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.987133"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.370965"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-6.003013"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.370965"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.996373"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.400236"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-6.000525"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.400236"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.989589"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.402728"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.992473"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.402728"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-5.991061237086621"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.370575010264133"
+        }
+      },
+      {
+        "lon" : {
+          "type" : "literal",
+          "value" : "-6.13083"
+        },
+        "lat" : {
+          "type" : "literal",
+          "value" : "37.370575010264133"
+        }
+      }
+    ]
+  }
+}
+-----------------------------------------------------
+-----------------------------------------------------
+QUERY 4(FEDERADA)
+PREFIX obj: <http://www.openrdf.org/rdf/2009/object#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX can: <http://culturaandaluza.es/sevilla/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wikidata: <http://www.wikidata.org/Property/>
+SELECT ?property ?value WHERE {
+  ?sub owl:sameAs ?enlace .
+  SERVICE<https://query.wikidata.org/> {
+    ?enlace ?property ?value .
+  }
+} 
+-----------------------------------------------------
+RESULT:--->NO OBTENIDO DADO A UN ERROR DEL SERVIDOR
+org.eclipse.rdf4j.repository.sparql.federation.RepositoryFederatedService.evaluateInternal(RepositoryFederatedService.java:367) [materialiser-0.3.14.jar!/:na]
+Server responded with an unsupported file format: text/html

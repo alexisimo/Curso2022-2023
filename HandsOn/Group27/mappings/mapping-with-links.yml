@@ -5,7 +5,6 @@ prefixes:
     ssn: http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#
     rdfs: http://www.w3.org/2000/01/rdf-schema#
     xsd: http://www.w3.org/2001/XMLSchema#
-    time: http://www.w3.org/TR/owl-time#
     schema: http://schema.org/
 
 mappings:
@@ -81,7 +80,7 @@ mappings:
                 o:
                     value: $(type_of_energy)
                     datatype: xsd:string
-            -   p: time:inXSDDate
+            -   p: ssn:resultTime
                 o:
                     value: $(date)
                     datatype: xsd:date

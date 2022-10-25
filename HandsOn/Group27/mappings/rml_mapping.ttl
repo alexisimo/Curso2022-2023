@@ -10,7 +10,6 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix schema: <http://schema.org/> .
 @prefix ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
-@prefix time: <http://www.w3.org/TR/owl-time#> .
 @prefix ec: <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
 
 map:map_civic_structure_000 rml:logicalSource map:source_000 ;
@@ -173,7 +172,7 @@ map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant ec:typeOfEnergy .
 
 map:pm_017 rdf:type rr:PredicateMap ;
-	rr:constant time:inXSDDate .
+	rr:constant ssn:resultTime .
 
 map:pm_018 rdf:type rr:PredicateMap ;
 	rr:constant ssn:featureOfInterest .

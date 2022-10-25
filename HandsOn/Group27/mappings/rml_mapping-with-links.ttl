@@ -10,7 +10,6 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix schema: <http://schema.org/> .
 @prefix ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
-@prefix time: <http://www.w3.org/TR/owl-time#> .
 @prefix ec: <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
 
 map:map_civic_structure_000 rml:logicalSource map:source_000 ;
@@ -18,7 +17,6 @@ map:map_civic_structure_000 rml:logicalSource map:source_000 ;
 	rdfs:label "civic_structure" ;
 	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
 	rr:subjectMap map:s_000 .
-
 
 map:map_geo_coordinates_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
@@ -181,7 +179,7 @@ map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant ec:typeOfEnergy .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant time:inXSDDate .
+	rr:constant ssn:resultTime .
 
 map:pm_019 rdf:type rr:PredicateMap ;
 	rr:constant ssn:featureOfInterest .
@@ -279,14 +277,14 @@ map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://www.semanticweb_g27.org/resource/Observation/{observation_id}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "consumo-energia-edificios-updated.csv" ;
+	rml:source "consumo-energia-edificios-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "consumo-energia-edificios-updated.csv" ;
+	rml:source "consumo-energia-edificios-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "consumo-energia-edificios-updated.csv" ;
+	rml:source "consumo-energia-edificios-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 

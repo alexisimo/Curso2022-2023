@@ -1,0 +1,37 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> .
+PREFIX em: <http://ocioMadrid/lcc/ontology/EventosMadrid#> .
+PREFIX er: <http://ocioMadrid/lcc/resource/> .
+PREFIX ns: <http://ns.com#> .
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX time: <http://www.owl-ontologies.com/time#> .
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX mz: <http://madrid/zonas/> .
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wds: <http://www.wikidata.org/entity/statement/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+    SELECT DISTINCT ?barrio WHERE {
+       ?barrio ps:P31 wd:Q10267336.
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  }
+
+
+    SELECT DISTINCT ?distrito WHERE {
+       ?distrito ps:P31 wd:Q3032114.
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  }
+
+SELECT DISTINCT ?event ?distritowiki ?barriowiki
+WHERE{
+    ?event em:seEncuentra ?instalacion .
+    ?instalacion em:perteneDistrito ?distrito .
+    ?distrito owl:sameAs ?distritowiki
+    ?instalacion em:perteneDistrito ?barrio .
+    ?barrio owl:sameAs ?barriowiki
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+   }
+} LIMIT 100
+

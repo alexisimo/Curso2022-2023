@@ -1,0 +1,74 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  ns: http://HO-G1.linkeddata.es/ontology/Chargingstation#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  owl: http://www.w3.org/2002/07/owl#
+  
+mappings:
+  City:
+    sources:
+      - [puntos-de-recarga-updated-with-links.csv~csv]
+    s: http://HO-G1.linkeddata.es/resource/City/$(City)
+    po:
+      - [a, ns:City]
+      - [owl:sameAs, $(Same_as_wikidata_city)~iri]
+      
+
+  Charging_station:
+    sources:
+      - [puntos-de-recarga-updated-with-links.csv~csv]
+    s: http://HO-G1.linkeddata.es/resource/Chargingstation/$(Charging Station)
+    po:
+      - [a, ns:Charging_station]
+      - [ns:owner, $(Owner),xsd:String]
+      - [ns:timeLimit, $(Time limit),xsd:Integer]
+      - [ns:schedule, $(Schedule),xsd:String]
+      - [ns:bookable, $(Bookable),xsd:String]
+      - [ns:cablesAnnotation, $(Cables Annotation),xsd:String]
+      - [ns:price, $(Price),xsd:String]
+      - [ns:longitude, $(Longitude),xsd:decimal]
+      - [ns:latitude, $(Latitude),xsd:decimal]
+      - [owl:sameAs, $(Same_as_wikidata_Owner)~iri]
+      - [owl:sameAs, $(Same_as_wikidata_Price)~iri]
+      - p: ns:hasAddress
+        o:
+        - mapping: Address
+      - p: ns:hasPeripheral
+        o:
+        - mapping: Peripheral
+      - p: ns:isLocatedIn
+        o:
+        - mapping: City
+
+  Address:
+    sources:
+      - [puntos-de-recarga-updated-with-links.csv~csv]
+    s: http://HO-G1.linkeddata.es/resource/Address/$(Address)
+    po:
+      - [a, ns:Address]
+      - [ns:address, $(Address),xsd:String]
+
+  Peripheral:
+    sources:
+      - [puntos-de-recarga-updated-with-links.csv~csv]
+    s: http://HO-G1.linkeddata.es/resource/Peripheral/$(Peripheral)
+    po:
+      - [a, ns:Peripheral]
+      
+
+  Connector:
+    sources:
+      - [puntos-de-recarga-updated-with-links.csv~csv]
+    s: http://HO-G1.linkeddata.es/resource/Connector/$(Connector)
+    po:
+      - [a, ns:Connector]
+      - [rdf:subClassOf, ns:Peripheral]
+      - [ns:number, $(Number of connectors),xsd:Integer]
+      - [ns:type, $(Peripheral),xsd:String]
+      - [owl:sameAs, $(Same_as_wikidata_N_Connector)~iri]

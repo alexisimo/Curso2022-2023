@@ -30,7 +30,7 @@
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hashorario;
+    rr:predicate schema:hashorarioBib;
     rr:objectMap [
       rml:reference "HORARIO"
     ]];
@@ -59,31 +59,31 @@
     ];
     
     rr:predicateObjectMap [
-    rr:predicate schema:localiza;
+    rr:predicate schema:hasdireccion;
     rr:objectMap [
       rml:reference "DIRECCION"
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:localiza;
+    rr:predicate schema:hastelefono;
     rr:objectMap [
       rml:reference "TELEFONO"
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:localiza;
+    rr:predicate schema:hasemail;
     rr:objectMap [
       rml:reference "EMAIL"
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:localiza;
+    rr:predicate schema:haslocalidad;
     rr:objectMap [
       rml:reference "LOCALIDAD"
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:wikidataBil;
+    rr:predicate schema:wikidata;
     rr:objectMap [
       rml:reference "WIKIDATA:BIBLIOTECAS"
     ]].
@@ -131,7 +131,7 @@
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hashora;
+    rr:predicate schema:hashoraEvent;
     rr:objectMap [
       rml:reference "HORA"
     ]];
@@ -149,7 +149,7 @@
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasurl-evento;
+    rr:predicate schema:wikidata-evento;
     rr:objectMap [
       rml:reference "WIKIDATA:EVENTOS"
     ]].
