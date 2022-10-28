@@ -1,0 +1,264 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "XCoord",
+    "description": "Remove column XCoord"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "YCoord",
+    "description": "Remove column YCoord"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_ADICI",
+    "description": "Remove column INFO_ADICI"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "POINT_X",
+    "description": "Remove column POINT_X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "POINT_Y",
+    "description": "Remove column POINT_Y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD_DIS",
+    "newColumnName": "DISTRICT_NUMBER",
+    "description": "Rename column COD_DIS to DISTRICT_NUMBER"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT_NUMBER",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT_NUMBER using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "DISTRICT_NAME",
+    "description": "Rename column DISTRITO to DISTRICT_NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT_NAME",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT_NAME using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD_BAR",
+    "newColumnName": "NEIGHBOURHOOD_NUMBER",
+    "description": "Rename column COD_BAR to NEIGHBOURHOOD_NUMBER"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD_NUMBER",
+    "expression": "grel:cells['DISTRICT_NUMBER'].value*10 + toNumber(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD_NUMBER using expression grel:cells['DISTRICT_NUMBER'].value*10 + toNumber(value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "NEIGHBOURHOOD_NAME",
+    "description": "Rename column BARRIO to NEIGHBOURHOOD_NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD_NAME",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD_NAME using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EMPLAZAMIE",
+    "newColumnName": "LOCATION",
+    "description": "Rename column EMPLAZAMIE to LOCATION"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCATION",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LOCATION using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº_EQUIPO",
+    "newColumnName": "CAPACITY",
+    "description": "Rename column Nº_EQUIPO to CAPACITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OPERADOR",
+    "newColumnName": "OPERATOR",
+    "description": "Rename column OPERADOR to OPERATOR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "expression": "grel:if(value.split(\"/\").length()==2,value.split(\"/\")[0].trim()+\"-\"+value.split(\"/\")[1].trim(),if(value.match(/(\\D*)\\(.*\\)/)!=null,value.match(/(\\D*)\\(.*\\)/)[0].trim(),value.trim()))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OPERATOR using expression grel:if(value.split(\"/\").length()==2,value.split(\"/\")[0].trim()+\"-\"+value.split(\"/\")[1].trim(),if(value.match(/(\\D*)\\(.*\\)/)!=null,value.match(/(\\D*)\\(.*\\)/)[0].trim(),value.trim()))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UBICACIÓN",
+    "expression": "grel:if(value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)==null,if(value.match(/\\D+/)!=null,\"S/N\",if(value.match(/\\D*,\\s*(\\d+).*/)!=null,value.match(/\\D*,\\s*(\\d+).*/)[0],if(value.match(/\\D*\\s(\\d+)\\s.*/)!=null,value.match(/\\D*\\s(\\d+)\\s.*/)[0],\"S/N\"))),if(value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[0] != null, value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[0],value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[1]))",
+    "onError": "set-to-blank",
+    "newColumnName": "AD_NUMBER",
+    "columnInsertIndex": 5,
+    "description": "Create column AD_NUMBER at index 5 based on column UBICACIÓN using expression grel:if(value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)==null,if(value.match(/\\D+/)!=null,\"S/N\",if(value.match(/\\D*,\\s*(\\d+).*/)!=null,value.match(/\\D*,\\s*(\\d+).*/)[0],if(value.match(/\\D*\\s(\\d+)\\s.*/)!=null,value.match(/\\D*\\s(\\d+)\\s.*/)[0],\"S/N\"))),if(value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[0] != null, value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[0],value.match(/.*\\D(\\d+)\\s*\\(.*\\)$|\\D*(\\d+)/)[1]))"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UBICACIÓN",
+    "newColumnName": "AD_NAME",
+    "description": "Rename column UBICACIÓN to AD_NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AD_NAME",
+    "expression": "grel:if(value.match(/(\\D+),.*,.*|(\\D+),.*/)!=null,if(value.match(/(\\D+),.*,.*|(\\D+),.*/)[0]!=null,value.match(/(\\D+),.*,.*|(\\D+),.*/)[0].trim(),value.match(/(\\D+),.*,.*|(\\D+),.*/)[1].trim()),if(value.match(/(\\D+)\\d+/)!=null,value.match(/(\\D+)\\d+/)[0].trim(),if(value.match(/\\D+/)!=null,value.chomp(\"s/n\").chomp(\"S/N\").trim(),if(value.match(/(\\D+)\\s\\d+\\s.*/)!=null,value.match(/(\\D+)\\s\\d+\\s.*/)[0],if(value.match(/.*Anexo\\s(.*)/)!=null,value.match(/.*Anexo\\s(.*)/)[0].trim(),if(value.endsWith(\". Mercamadrid\"),value.chomp(\". Mercamadrid\"),if(value.match(/.*-(\\D+)\\d*\\s*\\(.*/)!=null,value.match(/.*-(\\D+)\\d*\\s*\\(.*/)[0].trim(),value.trim())))))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column AD_NAME using expression grel:if(value.match(/(\\D+),.*,.*|(\\D+),.*/)!=null,if(value.match(/(\\D+),.*,.*|(\\D+),.*/)[0]!=null,value.match(/(\\D+),.*,.*|(\\D+),.*/)[0].trim(),value.match(/(\\D+),.*,.*|(\\D+),.*/)[1].trim()),if(value.match(/(\\D+)\\d+/)!=null,value.match(/(\\D+)\\d+/)[0].trim(),if(value.match(/\\D+/)!=null,value.chomp(\"s/n\").chomp(\"S/N\").trim(),if(value.match(/(\\D+)\\s\\d+\\s.*/)!=null,value.match(/(\\D+)\\s\\d+\\s.*/)[0],if(value.match(/.*Anexo\\s(.*)/)!=null,value.match(/.*Anexo\\s(.*)/)[0].trim(),if(value.endsWith(\". Mercamadrid\"),value.chomp(\". Mercamadrid\"),if(value.match(/.*-(\\D+)\\d*\\s*\\(.*/)!=null,value.match(/.*-(\\D+)\\d*\\s*\\(.*/)[0].trim(),value.trim())))))))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AD_NAME",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column AD_NAME using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍ",
+    "expression": "jython:import re\nreg = re.findall(\"(\\d+) conector\",value)\nints = [int(x) for x in reg]\nif sum(ints) < 1 : return 1\nreturn sum(ints)",
+    "onError": "set-to-blank",
+    "newColumnName": "SOCKET_NUMBER",
+    "columnInsertIndex": 9,
+    "description": "Create column SOCKET_NUMBER at index 9 based on column CARACTERÍ using expression jython:import re\nreg = re.findall(\"(\\d+) conector\",value)\nints = [int(x) for x in reg]\nif sum(ints) < 1 : return 1\nreturn sum(ints)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes",
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes",
+          "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍ"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍ",
+    "expression": "jython:import re\ntypes = [\"Caravan_Mains_Socket\", \"CHAdeMO\", \"CCS/SAE\", \"Dual_CHAdeMO\", \"Dual_J-1772\", \"Dual_Mennekes\", \"J-1772\", \"Mennekes\", \"Other\", \"Tesla\", \"Type2\", \"Type3\", \"Wall_Euro\"]\n\nvalues = re.sub(\"2 \", \"dual_\",value).upper().strip()\n\nres = []\nfor t in types:\n  if re.findall(\"[^a-zA-Z_]\"+t.upper()+\"[^a-zA-Z]*\",values): res.append(t)\n\nif len(res)==0: return types[8]\nreturn \"|\".join(res)",
+    "onError": "set-to-blank",
+    "newColumnName": "SOCKET_TYPE",
+    "columnInsertIndex": 9,
+    "description": "Create column SOCKET_TYPE at index 9 based on column CARACTERÍ using expression jython:import re\ntypes = [\"Caravan_Mains_Socket\", \"CHAdeMO\", \"CCS/SAE\", \"Dual_CHAdeMO\", \"Dual_J-1772\", \"Dual_Mennekes\", \"J-1772\", \"Mennekes\", \"Other\", \"Tesla\", \"Type2\", \"Type3\", \"Wall_Euro\"]\n\nvalues = re.sub(\"2 \", \"dual_\",value).upper().strip()\n\nres = []\nfor t in types:\n  if re.findall(\"[^a-zA-Z_]\"+t.upper()+\"[^a-zA-Z]*\",values): res.append(t)\n\nif len(res)==0: return types[8]\nreturn \"|\".join(res)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CARACTERÍ",
+    "description": "Remove column CARACTERÍ"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRICT_NUMBER",
+    "expression": "grel:rowIndex + 1",
+    "onError": "set-to-blank",
+    "newColumnName": "ID_EVC",
+    "columnInsertIndex": 1,
+    "description": "Create column ID_EVC at index 1 based on column DISTRICT_NUMBER using expression grel:rowIndex + 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID_EVC",
+    "index": 0,
+    "description": "Move column ID_EVC to position 0"
+  }
+]
