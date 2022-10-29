@@ -18,6 +18,12 @@
     ];
 
     rr:predicateObjectMap [
+    rr:predicate schema:haspk;
+    rr:objectMap [
+      rml:reference "PK"
+    ]];
+
+    rr:predicateObjectMap [
     rr:predicate schema:hasnombre;
     rr:objectMap [
       rml:reference "NOMBRE"
