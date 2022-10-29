@@ -1,0 +1,65 @@
+@prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
+@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <http://smartcity.linkeddata.es/transport/data/> .
+@prefix bikeSt: <http://smartcity.linkeddata.es/transport/data/bikeStation/> .
+@prefix chargeSt: <http://smartcity.linkeddata.es/transport/data/vehicleChargeStation/> .
+@prefix location: <http://smartcity.linkeddata.es/transport/data/location/> .
+@prefix hood: <http://smartcity.linkeddata.es/transport/data/neighbourhood/> .
+@prefix dist: <http://smartcity.linkeddata.es/transport/data/district/> .
+@prefix op: <http://smartcity.linkeddata.es/transport/data/operator/> .
+@prefix geopoint: <http://smartcity.linkeddata.es/transport/data/geopoint/> .
+@prefix address: <http://smartcity.linkeddata.es/transport/data/address/> .
+
+geopoint:1 a geosparql:Point ;
+            geosparql:asWKT "POINT(40.4346168 -3.6740365)"^geosparql:wktLiteral ;
+
+address:1 a ont:Address ;
+            ont:ad_name "CALLE DE ALONSO HEREDIA"^^xsd:string ;
+            ont:ad_number "1"^^xsd:string .
+
+dist:salamanca a ont:District ;
+            ont:number_id 4^^xsd:integer ;
+            ont:name_id "Salamanca"^^xsd:string .
+
+hood:guindalera a ont:Neighbourhood ;
+            ont:number_id 4^^xsd:integer ;
+            ont:name_id "Guindalera"^^xsd:string ;
+            ont:hasDistrict dist:salamanca .
+            
+bikeSt:00191 a esbici:EstacionBicicleta ;
+            dct:identifier "191"^^xsd:string ;
+            ont:capacity 18^^xsd:integer ;
+            geosparql:hasGeometry geopoint:1 ; 
+            ont:hasAddress address:1 ;
+            ont:hasNeighbourhood hood:guindalera .
+
+op:endesa a ont:Operator ;
+            ont:name_id "Endesa"^^xsd:string .
+
+location:aparcamiento a ont:Location ;
+            ont:name_id "Aparcamiento"^^xsd:string .  
+
+address:2 a ont:Address ;
+            ont:ad_name "PLAZA DE SAN CAYETANO"^^xsd:string ;
+            ont:ad_number "S/N"^^xsd:string ;
+
+geopoint:2 a geosparql:Point ;
+            geosparql:asWKT "POINT(40.4346168 -3.6740365)"^geosparql:wktLiteral ;
+
+chargeSt:00008 a ev:EVChargingStation ;
+            ev:allowedVehicleType ( "car" "truck" ) ;
+            ev:capacity 3^^xsd:integer ;
+            ev:socketNumber 3^^xsd:integer ;
+            ev:id "8"^^xsd:string ;
+            ev:socketType ( "CHAdeMO" "Dual_Mennekes" ) ;
+            ev:type "EVChargingStation"^^xsd:string ;
+            ont:hasAddress address:2 ;
+            ont:hasOperator op:endesa ;
+            ont:hasLocation location:aparcamiento ;
+            ont:hasNeighbourhood hood:guindalera .
