@@ -269,5 +269,14 @@
     "separator": "|",
     "regex": false,
     "description": "Split multi-valued cells in column SOCKET_TYPE"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_EVC",
+    "description": "Fill down cells in column ID_EVC"
   }
 ]
