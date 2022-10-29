@@ -231,48 +231,6 @@
     "description": "Match item naturgy (Q474690) for cells containing \"NATURGY\" in column OPERATOR"
   },
   {
-    "op": "core/recon",
-    "engineConfig": {
-      "facets": [],
-      "mode": "record-based"
-    },
-    "columnName": "SOCKET_TYPE",
-    "config": {
-      "mode": "standard-service",
-      "service": "https://wikidata.reconci.link/en/api",
-      "identifierSpace": "http://www.wikidata.org/entity/",
-      "schemaSpace": "http://www.wikidata.org/prop/direct/",
-      "type": {
-        "id": "Q352917",
-        "name": "battery charger"
-      },
-      "autoMatch": true,
-      "columnDetails": [],
-      "limit": 0
-    },
-    "description": "Reconcile cells in column SOCKET_TYPE to type Q352917"
-  },
-  {
-    "op": "core/recon-judge-similar-cells",
-    "engineConfig": {
-      "facets": [],
-      "mode": "record-based"
-    },
-    "columnName": "SOCKET_TYPE",
-    "similarValue": "Dual_Mennekes",
-    "judgment": "matched",
-    "match": {
-      "id": "Q114902408",
-      "name": "Dual Mennekes",
-      "types": [
-        ""
-      ],
-      "score": 46
-    },
-    "shareNewTopics": false,
-    "description": "Match item Dual Mennekes (Q114902408) for cells containing \"Dual_Mennekes\" in column SOCKET_TYPE"
-  },
-  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -312,22 +270,9 @@
     "description": "Create column WIKIDATA_OPERATOR at index 13 based on column OPERATOR using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
   },
   {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "record-based"
-    },
-    "baseColumnName": "SOCKET_TYPE",
-    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
-    "onError": "set-to-blank",
-    "newColumnName": "WIKIDATA_SOCKET_TYPE",
-    "columnInsertIndex": 12,
-    "description": "Create column WIKIDATA_SOCKET_TYPE at index 12 based on column SOCKET_TYPE using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
-  },
-  {
     "op": "core/column-move",
     "columnName": "WIKIDATA_OPERATOR",
-    "index": 15,
-    "description": "Move column WIKIDATA_OPERATOR to position 15"
+    "index": 14,
+    "description": "Move column WIKIDATA_OPERATOR to position 14"
   }
 ]
