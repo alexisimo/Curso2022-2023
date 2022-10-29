@@ -260,5 +260,14 @@
     "columnName": "ID_EVC",
     "index": 0,
     "description": "Move column ID_EVC to position 0"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "SOCKET_TYPE",
+    "keyColumnName": "ID_EVC",
+    "mode": "separator",
+    "separator": "|",
+    "regex": false,
+    "description": "Split multi-valued cells in column SOCKET_TYPE"
   }
 ]
