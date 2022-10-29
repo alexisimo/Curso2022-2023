@@ -237,11 +237,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "DISTRICT_NAME",
-    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "WIKIDATA_DISTRICT",
     "columnInsertIndex": 3,
-    "description": "Create column WIKIDATA_DISTRICT at index 3 based on column DISTRICT_NAME using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+    "description": "Create column WIKIDATA_DISTRICT at index 3 based on column DISTRICT_NAME using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -250,11 +250,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "NEIGHBOURHOOD_NAME",
-    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "WIKIDATA_NEIGHBOURHOOD",
     "columnInsertIndex": 6,
-    "description": "Create column WIKIDATA_NEIGHBOURHOOD at index 6 based on column NEIGHBOURHOOD_NAME using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+    "description": "Create column WIKIDATA_NEIGHBOURHOOD at index 6 based on column NEIGHBOURHOOD_NAME using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -263,11 +263,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "OPERATOR",
-    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "WIKIDATA_OPERATOR",
     "columnInsertIndex": 13,
-    "description": "Create column WIKIDATA_OPERATOR at index 13 based on column OPERATOR using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+    "description": "Create column WIKIDATA_OPERATOR at index 13 based on column OPERATOR using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-move",
