@@ -1,5 +1,9 @@
 package Clases;
 
+import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
+import querys.DatosWiki;
+import java.io.IOException;
+
 public class Bibliotecas {
     private String pk;
     private String nombre;
@@ -8,13 +12,13 @@ public class Bibliotecas {
     private String Telefono;
     private String Direccion;
     private String Url;
+    private String nivelDeMar;
 
-    public Bibliotecas() {
-
+    public Bibliotecas() throws IOException, MediaWikiApiErrorException {
     }
 
     public String getPk() {
-        return pk;
+        return this.pk;
     }
 
     public void setPk(String pk) {
@@ -22,7 +26,7 @@ public class Bibliotecas {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
@@ -30,42 +34,49 @@ public class Bibliotecas {
     }
 
     public String getDescripcion() {
-        return Descripcion;
+        return this.Descripcion;
     }
 
     public void setDescripcion(String descripcion) {
-        Descripcion = descripcion;
+        this.Descripcion = descripcion;
     }
 
     public String getHorario() {
-        return Horario;
+        return this.Horario;
     }
 
     public void setHorario(String horario) {
-        Horario = horario;
+        this.Horario = horario;
     }
 
     public String getTelefono() {
-        return Telefono;
+        return this.Telefono;
     }
 
     public void setTelefono(String telefono) {
-        Telefono = telefono;
+        this.Telefono = telefono;
     }
 
     public String getDireccion() {
-        return Direccion;
+        return this.Direccion;
     }
 
     public void setDireccion(String direccion) {
-        Direccion = direccion;
+        this.Direccion = direccion;
     }
 
     public String getUrl() {
-        return Url;
+        return this.Url;
     }
 
     public void setUrl(String url) {
-        Url = url;
+        this.Url = url;
     }
+    public String getNivelDeMar() {
+        return this.nivelDeMar;
+    }
+    public void setNivelDeMar(String nivelDeMar) {
+        this.nivelDeMar = nivelDeMar;
+    }
+
 }

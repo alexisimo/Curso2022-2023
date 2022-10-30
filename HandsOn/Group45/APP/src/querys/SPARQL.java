@@ -5,7 +5,9 @@ import Clases.Eventos;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.util.FileManager;
+import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class SPARQL {
@@ -23,7 +25,7 @@ public class SPARQL {
     public static void printEventos(ArrayList<Eventos>list){
         list.forEach((n)->System.out.println(n.getNombreEvento()));
     }
-    public static ArrayList<Bibliotecas> conv(ArrayList<QuerySolution> arr){
+    public static ArrayList<Bibliotecas> conv(ArrayList<QuerySolution> arr) throws IOException, MediaWikiApiErrorException {
         ArrayList<Bibliotecas> sol= new ArrayList<>();
         for(int i=0;i<arr.size();i++){
             String a=arr.get(i).toString();
@@ -32,7 +34,7 @@ public class SPARQL {
         }
         return sol;
     }
-    public static Bibliotecas ConvertBiblio(String[] s){
+    public static Bibliotecas ConvertBiblio(String[] s) throws IOException, MediaWikiApiErrorException {
         Bibliotecas b=new Bibliotecas();
         for(int i=1;i<s.length;i+=2){
             switch (i){
@@ -61,7 +63,7 @@ public class SPARQL {
         }
         return b;
     }
-    public static ArrayList<Bibliotecas> queryBiblioteca(){
+    public static ArrayList<Bibliotecas> queryBiblioteca() throws IOException, MediaWikiApiErrorException {
         ArrayList<QuerySolution> lista = new ArrayList<QuerySolution>();
         Query query = null;
         //FileManager.get().addLocatorClassLoader(SPARQL.class.getClassLoader());
@@ -93,7 +95,8 @@ public class SPARQL {
         } finally {
             qexec.close();
         }
-        return(conv(lista));
+        ArrayList<Bibliotecas> bibliotecas = new DatosWiki().DatosMadrid(conv(lista));
+        return bibliotecas;
     }
     public static ArrayList<Eventos> convEventos(ArrayList<QuerySolution> arr){
         ArrayList<Eventos> sol= new ArrayList<>();
@@ -112,42 +115,42 @@ public class SPARQL {
                     b.setNombreEvento(s[i]);
                     break;
                 case 3:
-                    b.setDiasDeSemanas(s[i]);
-                    break;
-                case 5:
                     b.setFechaInicio(s[i]);
                     break;
-                case 7:
+                case 5:
                     b.setFechaFin(s[i]);
                     break;
-                case 9:
+                case 7:
                     b.setHoraEmpiezo(s[i]);
                     break;
-                case 11:
+                case 9:
                     b.setNombreIntalacion(s[i]);
+                    break;
+                case 11:
+                    b.setWikidataEvento(s[i].split("/")[4]);
                     break;
             }
         }
         return b;
     }
-    public static ArrayList<Eventos> queryEventos(String id ){
+    public static ArrayList<Eventos> queryEventos(String id ) throws IOException, MediaWikiApiErrorException {
         ArrayList<QuerySolution> lista = new ArrayList<QuerySolution>();
         Query query = null;
         //FileManager.get().addLocatorClassLoader(SPARQL.class.getClassLoader());
         Model model = FileManager.get().loadModel(uri);
         String queryString =
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
-                        "SELECT DISTINCT ?Titulo ?Dias ?FechaInicio ?FechaFin ?Hora ?NombreInstalacion\n" +
+                        "SELECT ?Titulo ?FechaInicio ?FechaFin ?Hora ?NombreInstalacion ?wikidata\n" +
                         "\tWHERE {\n" +
                         "  \t\t?s rdf:type <https://schema.org/Biblioteca>. \n" +
                         "  \t\t?s <https://schema.org/haspk> \""+id+"\".\n" +
                         "  \t\t?s <https://schema.org/hasEvento> ?Eventos .\n" +
                         "  \t\t?Eventos <https://schema.org/hastitulo> ?Titulo .\n" +
-                        "  \t\t?Eventos <https://schema.org/hasdias> ?Dias .\n" +
                         "  \t\t?Eventos <https://schema.org/hasfecha-ini> ?FechaInicio .\n" +
                         "  \t\t?Eventos <https://schema.org/hasfecha-fin> ?FechaFin .\n" +
                         "  \t\t?Eventos <https://schema.org/hashoraEvent> ?Hora .\n" +
                         "\t\t?Eventos <https://schema.org/hasnombre-instalacion> ?NombreInstalacion .\n" +
+                        "\t\t ?Eventos <https://schema.org/wikidata-evento> ?wikidata . \n"+
                         "\t}";
         query = QueryFactory.create(queryString);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -161,11 +164,18 @@ public class SPARQL {
         } finally {
             qexec.close();
         }
-        return convEventos(lista);
+        print(lista);
+        ArrayList<Eventos> sol =new DatosWiki().DatosEventos(convEventos(lista));
+        return sol;
+    }
+    public static ArrayList<QuerySolution> Wikidata(){
+        ArrayList<QuerySolution> sol = new ArrayList<>();
+
+        return sol;
     }
     //@SuppressWarnings("deprecation")
-    public static void main (String args[]) {
-        queryBiblioteca();
+    public static void main (String args[]) throws IOException, MediaWikiApiErrorException {
+        System.out.println(queryEventos("1790").get(0).getWikidataEvento());
     }
 
 

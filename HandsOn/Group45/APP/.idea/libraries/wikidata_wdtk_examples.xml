@@ -1,0 +1,65 @@
+<component name="libraryTable">
+  <library name="wikidata.wdtk.examples" type="repository">
+    <properties maven-id="org.wikidata.wdtk:wdtk-examples:0.14.1">
+      <exclude>
+        <dependency maven-id="org.slf4j:slf4j-reload4j" />
+        <dependency maven-id="org.slf4j:slf4j-api" />
+        <dependency maven-id="org.slf4j:jcl-over-slf4j" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-model-api" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-model-vocabulary" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-model" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-rio-api" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-rio-datatypes" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-rio-languages" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-rio-ntriples" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-rio-turtle" />
+        <dependency maven-id="org.eclipse.rdf4j:rdf4j-util" />
+      </exclude>
+    </properties>
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-examples/0.14.1/wdtk-examples-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-datamodel/0.14.1/wdtk-datamodel-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/threeten/threeten-extra/1.7.1/threeten-extra-1.7.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-dumpfiles/0.14.1/wdtk-dumpfiles-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-rdf/0.14.1/wdtk-rdf-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jsonld-java/jsonld-java/0.13.3/jsonld-java-0.13.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient-osgi/4.5.13/httpclient-osgi-4.5.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient-cache/4.5.13/httpclient-cache-4.5.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/fluent-hc/4.5.13/fluent-hc-4.5.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore-osgi/4.4.14/httpcore-osgi-4.4.14.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore-nio/4.4.14/httpcore-nio-4.4.14.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-util/0.14.1/wdtk-util-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-wikibaseapi/0.14.1/wdtk-wikibaseapi-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.31/kotlin-stdlib-common-1.5.31.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.6.20/kotlin-stdlib-1.6.20.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp-urlconnection/4.10.0/okhttp-urlconnection-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.6.10/kotlin-stdlib-jdk8-1.6.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.10/kotlin-stdlib-jdk7-1.6.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/se/akerfeldt/okhttp-signpost/1.1.0/okhttp-signpost-1.1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wikidata/wdtk/wdtk-storage/0.14.1/wdtk-storage-0.14.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ch/qos/reload4j/reload4j/1.2.19/reload4j-1.2.19.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

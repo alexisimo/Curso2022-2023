@@ -2,58 +2,75 @@ package Clases;
 
 public class Eventos {
     private String NombreEvento;
-    private String DiasDeSemanas;
     private String FechaInicio;
     private String FechaFin;
     private String HoraEmpiezo;
     private String NombreIntalacion;
+    private String WikidataEvento;
+    private String WikiStreet;
+    private String WikiCoor;
+
+    public String getWikiStreet() {
+        return WikiStreet;
+    }
+
+    public void setWikiStreet(String wikiStreet) {
+        WikiStreet = wikiStreet;
+    }
+
+    public String getWikiCoor() {
+        return WikiCoor;
+    }
+
+    public void setWikiCoor(String wikiCoor) {
+        WikiCoor = wikiCoor;
+    }
+
+    public String getWikidataEvento() {
+        return this.WikidataEvento;
+    }
+
+    public void setWikidataEvento(String wikidataEvento) {
+        this.WikidataEvento = wikidataEvento;
+    }
 
     public String getNombreEvento() {
-        return NombreEvento;
+        return this.NombreEvento;
     }
 
     public void setNombreEvento(String nombreEvento) {
-        NombreEvento = nombreEvento;
+        this.NombreEvento = nombreEvento;
     }
-
-    public String getDiasDeSemanas() {
-        return DiasDeSemanas;
-    }
-
-    public void setDiasDeSemanas(String diasDeSemanas) {
-        DiasDeSemanas = diasDeSemanas;
-    }
-
     public String getFechaInicio() {
-        return FechaInicio;
+        return this.FechaInicio;
     }
 
     public void setFechaInicio(String fechaInicio) {
-        FechaInicio = fechaInicio;
+        this.FechaInicio = fechaInicio;
     }
 
     public String getFechaFin() {
-        return FechaFin;
+        return this.FechaFin;
     }
 
     public void setFechaFin(String fechaFin) {
-        FechaFin = fechaFin;
+        this.FechaFin = fechaFin;
     }
 
     public String getHoraEmpiezo() {
-        return HoraEmpiezo;
+        return this.HoraEmpiezo;
     }
 
     public void setHoraEmpiezo(String horaEmpiezo) {
-        HoraEmpiezo = horaEmpiezo;
+        this.HoraEmpiezo = horaEmpiezo;
     }
 
     public String getNombreIntalacion() {
-        return NombreIntalacion;
+        return this.NombreIntalacion;
     }
 
     public void setNombreIntalacion(String nombreIntalacion) {
-        NombreIntalacion = nombreIntalacion;
+        this.NombreIntalacion = nombreIntalacion;
     }
 
     public Eventos() {
