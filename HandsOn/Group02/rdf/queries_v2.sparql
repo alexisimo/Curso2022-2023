@@ -1,0 +1,324 @@
+PREFIX ns1: <http://smartcity.linkeddata.es/transport/ontology/> .
+PREFIX ns2: <http://www.opengis.net/ont/geosparql#> .
+PREFIX ns3: <http://purl.org/dc/terms/> .
+PREFIX ns4: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+PREFIX esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#>
+
+
+# list every element 
+SELECT * 
+WHERE
+{
+    ?sub ?pre ?obj
+}
+
+# list classes
+
+SELECT DISTINCT ?clase
+WHERE
+{
+    ?sub a ?clase
+}
+
+# BIKE STATIONS--------------------------------------------------------------------------
+
+# list bike stations
+
+SELECT ?sub WHERE { 
+    ?sub a esbici:EstacionBicicleta.
+}
+
+# list bike stations identifiers
+
+SELECT ?sub ?val WHERE { 
+    ?sub a esbici:EstacionBicicleta.
+    ?sub ns4:identifier ?val.
+}
+
+
+#list capacity of each bike station
+
+SELECT ?sub ?val WHERE {
+    ?sub a esbici:EstacionBicicleta.
+    ?sub ns1:capacity ?val.
+}
+
+# list bike stations addresses
+
+SELECT ?sub ?val WHERE { 
+    ?sub a esbici:EstacionBicicleta.
+    ?sub ns1:hasAddress ?val.
+}
+
+# list all neighbourhoods a bike station may belong
+
+SELECT DISTINCT ?sub WHERE {
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+}
+
+# list all districts a bike station may belong
+
+SELECT DISTINCT ?sub WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+}
+
+#list coordinates of each bike station
+
+SELECT ?sub ?val WHERE {
+    ?sub a esbici:EstacionBicicleta.
+    ?sub ns2:hasGeometry ?point.
+    ?point a ns2:Point.
+    ?point ns2:asWKT ?val.
+}
+
+# list bike stations address names
+
+SELECT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasAddress ?sub.
+    ?sub ns1:ad_name ?val.
+}
+
+# list bike stations address numbers
+
+SELECT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasAddress ?sub.
+    ?sub ns1:ad_number ?val.
+}
+
+#list neighbourhood of each bike station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a esbici:EstacionBicicleta.
+    ?sub ns1:hasNeighbourhood ?val.
+}
+
+# list name of neighbourhoods the bike stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of bike station neighbourhoods
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:number_id ?val.
+}
+
+# list bike station neighbourhoods districts
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:hasDistrict ?val.
+}
+
+# list name of each district the bike stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of each district the bike stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:number_id ?val.
+}
+
+
+# VEHICLE CHARGE STATIONS -------------------------------------------------------
+
+# list charge stations
+
+SELECT ?sub WHERE { 
+    ?sub a ns4:EVChargingStation.
+}
+
+# list charge stations addresses
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns1:hasAddress ?val.
+}
+
+# list bike stations address names
+
+SELECT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasAddress ?sub.
+    ?sub ns1:ad_name ?val.
+}
+
+# list bike stations address numbers
+
+SELECT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasAddress ?sub.
+    ?sub ns1:ad_number ?val.
+}
+
+# list neighbourhoods the charge stations may belong to
+
+SELECT DISTINCT ?sub WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+}
+
+#list neighbourhood of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns1:hasNeighbourhood ?val.
+}
+
+# list name of neighbourhoods the charge stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of charge station neighbourhoods
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:number_id ?val.
+}
+
+# list charge station neighbourhoods districts
+
+SELECT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:hasDistrict ?val.
+}
+
+# list all districts a charge station may belong
+
+SELECT DISTINCT ?sub WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+}
+
+# list name of each district the charge stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of each district the charge stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:number_id ?val.
+}
+
+# list charge station operators 
+
+SELECT DISTINCT ?sub WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasOperator ?sub.
+    ?sub a ns1:Operator.
+}
+
+#list operator of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns1:hasOperator ?val.
+    ?val a ns1:Operator.
+}
+
+# list operators names
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?sub a ns1:Operator.
+    ?sub ns1:name_id ?val.
+}
+
+#list coordinates of each charge station
+
+SELECT ?sub ?val WHERE {
+    ?sub a ns4:EVChargingStation.
+    ?sub ns2:hasGeometry ?point.
+    ?point a ns2:Point.
+    ?point ns2:asWKT ?val.
+}
+
+#list charge stations allowed vehicle type
+
+SELECT DISTINCT ?val WHERE {
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:allowedVehicleType ?val.
+}
+
+#list capacity of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:capacity ?val.
+}
+
+#list identifier of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:id ?val.
+}
+
+#list charge station socket number
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:socketNumber ?val.
+}
+
+#list charge stations possible socket type
+
+SELECT DISTINCT ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:socketType ?val.
+}
+
+#list charge station type
+
+SELECT DISTINCT ?val WHERE { 
+    ?sub a ns4:EVChargingStation.
+    ?sub ns4:type ?val.
+}
