@@ -1,4 +1,4 @@
- @prefix base: <http://smartcity.linkeddata.es/transport/> .
+@prefix base: <http://smartcity.linkeddata.es/transport/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
 @prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
@@ -16,10 +16,12 @@ base: a owl:Ontology ;
 
 ont:ad_name a owl:DatatypeProperty ;
     rdfs:label "ad_name" ;
+    rdfs:domain ont:Address ;
     rdfs:range xsd:string .
 
 ont:ad_number a owl:DatatypeProperty ;
     rdfs:label "ad_number" ;
+    rdfs:domain ont:Address ;
     rdfs:range xsd:string .
 
 ont:capacity a owl:DatatypeProperty ;
@@ -63,9 +65,6 @@ esbici:EstacionBicicleta a owl:Class ;
     rdfs:label "Estacion Bicicleta" ;
     rdfs:subClassOf geosparql:Feature .
 
-ont:Address a owl:Class ;
-    rdfs:label "Address" .
-
 ont:District a owl:Class ;
     rdfs:label "District" .
 
@@ -81,6 +80,9 @@ ev:EVChargingStation a owl:Class ;
 
 ont:Neighbourhood a owl:Class ;
     rdfs:label "Neighbourhood" .
+
+ont:Address a owl:Class ;
+    rdfs:label "Address" .
 
 geosparql:Feature a owl:Class ;
     rdfs:label "Feature" .
