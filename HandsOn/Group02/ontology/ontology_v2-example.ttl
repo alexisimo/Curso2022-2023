@@ -3,13 +3,12 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
-@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix data: <http://smartcity.linkeddata.es/transport/data/> .
 @prefix bikeSt: <http://smartcity.linkeddata.es/transport/data/bikeStation/> .
 @prefix chargeSt: <http://smartcity.linkeddata.es/transport/data/vehicleChargeStation/> .
-@prefix location: <http://smartcity.linkeddata.es/transport/data/location/> .
 @prefix hood: <http://smartcity.linkeddata.es/transport/data/neighbourhood/> .
 @prefix dist: <http://smartcity.linkeddata.es/transport/data/district/> .
 @prefix op: <http://smartcity.linkeddata.es/transport/data/operator/> .
@@ -42,9 +41,6 @@ bikeSt:00191 a esbici:EstacionBicicleta ;
 op:endesa a ont:Operator ;
             ont:name_id "Endesa"^^xsd:string .
 
-location:aparcamiento a ont:Location ;
-            ont:name_id "Aparcamiento"^^xsd:string .  
-
 address:2 a ont:Address ;
             ont:ad_name "PLAZA DE SAN CAYETANO"^^xsd:string ;
             ont:ad_number "S/N"^^xsd:string ;
@@ -56,10 +52,9 @@ chargeSt:00008 a ev:EVChargingStation ;
             ev:allowedVehicleType ( "car" "truck" ) ;
             ev:capacity 3^^xsd:integer ;
             ev:socketNumber 3^^xsd:integer ;
-            ev:id "8"^^xsd:string ;
             ev:socketType ( "CHAdeMO" "Dual_Mennekes" ) ;
-            ev:type "EVChargingStation"^^xsd:string ;
+            ont:id "8"^^xsd:string ;
+            ont:hasLocationType "Aparcamiento"^^xsd:string .  ;
             ont:hasAddress address:2 ;
             ont:hasOperator op:endesa ;
-            ont:hasLocation location:aparcamiento ;
             ont:hasNeighbourhood hood:guindalera .
