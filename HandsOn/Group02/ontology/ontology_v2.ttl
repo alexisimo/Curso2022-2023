@@ -1,7 +1,7 @@
-@prefix base: <http://smartcity.linkeddata.es/transport/> .
+ @prefix base: <http://smartcity.linkeddata.es/transport/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
-@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -26,6 +26,7 @@ ont:ad_number a owl:DatatypeProperty ;
 
 ont:capacity a owl:DatatypeProperty ;
     rdfs:label "capacity" ;
+    rdfs:domain esbici:EstacionBicicleta ;
     rdfs:range xsd:integer .
 
 ont:hasAddress a owl:ObjectProperty ;
@@ -38,10 +39,10 @@ ont:hasDistrict a owl:ObjectProperty ;
     rdfs:domain ont:Neighbourhood ;
     rdfs:range ont:District .
 
-ont:hasLocation a owl:ObjectProperty ;
-    rdfs:label "has location" ;
+ont:hasLocationType a owl:DatatypeProperty ;
+    rdfs:label "has location type" ;
     rdfs:domain geosparql:Feature ;
-    rdfs:range ont:Location .
+    rdfs:range xsd:string .
 
 ont:hasNeighbourhood a owl:ObjectProperty ;
     rdfs:label "has neighbourhood" ;
@@ -53,6 +54,11 @@ ont:hasOperator a owl:ObjectProperty ;
     rdfs:domain ev:EVChargingStation ;
     rdfs:range ont:Operator .
 
+ont:id a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    rdfs:domain ev:EVChargingStation ;
+    rdfs:range xsd:string .
+
 ont:name_id a owl:DatatypeProperty ;
     rdfs:label "name_id" ;
     rdfs:range xsd:string .
@@ -61,25 +67,22 @@ ont:number_id a owl:DatatypeProperty ;
     rdfs:label "number_id" ;
     rdfs:range xsd:integer .
 
-esbici:EstacionBicicleta a owl:Class ;
-    rdfs:label "Estacion Bicicleta" ;
-    rdfs:subClassOf geosparql:Feature .
-
 ont:District a owl:Class ;
     rdfs:label "District" .
-
-ont:Location a owl:Class ;
-    rdfs:label "Location" .
 
 ont:Operator a owl:Class ;
     rdfs:label "Operator" .
 
-ev:EVChargingStation a owl:Class ;
-    rdfs:label "E V Charging Station" ;
+esbici:EstacionBicicleta a owl:Class ;
+    rdfs:label "Estacion Bicicleta" ;
     rdfs:subClassOf geosparql:Feature .
 
 ont:Neighbourhood a owl:Class ;
     rdfs:label "Neighbourhood" .
+
+ev:EVChargingStation a owl:Class ;
+    rdfs:label "E V Charging Station" ;
+    rdfs:subClassOf geosparql:Feature .
 
 ont:Address a owl:Class ;
     rdfs:label "Address" .
