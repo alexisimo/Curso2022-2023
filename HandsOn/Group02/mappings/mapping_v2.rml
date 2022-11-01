@@ -14,7 +14,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
-@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+@prefix ev: <https://smart-data-models.github.io/dataModel.Transportation/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
 
@@ -65,12 +65,6 @@ map:map_geopointEVC_000 rml:logicalSource map:source_004 ;
 	rdfs:label "geopointEVC" ;
 	rr:predicateObjectMap map:pom_014, map:pom_015 ;
 	rr:subjectMap map:s_004 .
-
-map:map_location_000 rml:logicalSource map:source_011 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "location" ;
-	rr:predicateObjectMap map:pom_043, map:pom_044 ;
-	rr:subjectMap map:s_011 .
 
 map:map_neighbourhood_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
@@ -163,7 +157,7 @@ map:om_015 rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_016 rdf:type rr:ObjectMap ;
-	rr:constant "https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation" ;
+	rr:constant "https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation" ;
 	rr:termType rr:IRI .
 
 map:om_017 rdf:type rr:ObjectMap ;
@@ -186,18 +180,18 @@ map:om_020 rml:reference "SOCKET_NUMBER" ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "ID_EVC" ;
+map:om_021 rml:reference "SOCKET_TYPE" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_022 rml:reference "SOCKET_TYPE" ;
+map:om_022 rml:reference "ID_EVC" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_023 rdf:type rr:ObjectMap ;
-	rr:constant "EVChargingStation" ;
+map:om_023 rml:reference "LOCATION" ;
+	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
@@ -290,15 +284,6 @@ map:om_043 rml:reference "OPERATOR" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_044 rdf:type rr:ObjectMap ;
-	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Location" ;
-	rr:termType rr:IRI .
-
-map:om_045 rml:reference "LOCATION" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
-	rr:termType rr:Literal .
-
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
@@ -360,13 +345,13 @@ map:pm_019 rdf:type rr:PredicateMap ;
 	rr:constant ev:socketNumber .
 
 map:pm_020 rdf:type rr:PredicateMap ;
-	rr:constant ev:id .
-
-map:pm_021 rdf:type rr:PredicateMap ;
 	rr:constant ev:socketType .
 
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant ont:id .
+
 map:pm_022 rdf:type rr:PredicateMap ;
-	rr:constant ev:type .
+	rr:constant ont:hasLocationType .
 
 map:pm_023 rdf:type rr:PredicateMap ;
 	rr:constant ont:hasAddress .
@@ -426,12 +411,6 @@ map:pm_041 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_042 rdf:type rr:PredicateMap ;
-	rr:constant ont:name_id .
-
-map:pm_043 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_044 rdf:type rr:PredicateMap ;
 	rr:constant ont:name_id .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -606,15 +585,7 @@ map:pom_042 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_043 ;
 	rr:predicateMap map:pm_042 .
 
-map:pom_043 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_044 ;
-	rr:predicateMap map:pm_043 .
-
-map:pom_044 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_045 ;
-	rr:predicateMap map:pm_044 .
-
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_location_000, map:map_neighbourhood_000, map:map_neighbourhood_001, map:map_operator_000 ;
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_neighbourhood_000, map:map_neighbourhood_001, map:map_operator_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -649,9 +620,6 @@ map:s_009 rdf:type rr:SubjectMap ;
 
 map:s_010 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" .
-
-map:s_011 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/transport/data/location/{LOCATION}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/bases_bicimad-updated-v2.csv" ;
@@ -694,10 +662,6 @@ map:source_009 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_010 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv" ;
-	rdf:type rml:LogicalSource .
-
-map:source_011 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv" ;
 	rdf:type rml:LogicalSource .
 

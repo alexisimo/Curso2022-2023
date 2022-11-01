@@ -1,6 +1,6 @@
 @prefix ns1: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns2: <http://smartcity.linkeddata.es/transport/ontology/> .
-@prefix ns3: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+@prefix ns3: <https://smart-data-models.github.io/dataModel.Transportation/> .
 @prefix ns4: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1855,1079 +1855,1067 @@
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/1> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD1EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/21> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "1" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP1EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "1" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/10> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD10EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "10" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP10EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "10" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/11> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD11EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "11" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP11EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "11" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/12> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD12EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "12" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP12EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "12" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/13> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD13EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "13" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP13EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "13" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/14> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD14EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "14" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP14EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "14" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/15> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD15EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "15" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP15EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "15" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/16> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD16EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "16" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP16EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "16" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/17> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD17EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "17" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP17EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "17" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/18> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD18EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "18" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP18EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "18" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/19> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD19EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "19" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP19EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "19" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/2> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD2EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "2" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP2EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "2" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/20> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD20EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "20" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP20EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "20" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/21> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD21EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "21" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP21EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "21" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/22> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD22EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/85> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "22" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP22EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "22" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/23> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD23EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/156> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "23" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP23EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "23" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/24> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD24EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "24" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP24EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "24" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/25> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD25EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "25" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP25EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "25" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/26> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD26EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/66> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "26" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP26EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "26" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/27> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD27EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/86> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "27" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP27EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "27" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/28> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD28EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "28" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP28EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "28" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/29> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD29EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/96> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "29" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP29EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "29" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/3> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD3EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "3" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP3EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "3" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/30> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD30EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "30" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP30EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "30" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/31> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD31EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "31" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP31EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "31" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/32> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD32EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/107> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "32" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP32EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "32" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/33> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD33EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/134> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Ecolineras> ;
+    ns2:id "33" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP33EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "33" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/34> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD34EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/166> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "34" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP34EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "34" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/35> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD35EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/173> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "35" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP35EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "35" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/36> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD36EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/183> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "36" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP36EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "36" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/37> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD37EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "37" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP37EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "37" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/38> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD38EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns2:id "38" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP38EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "38" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/39> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD39EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns2:id "39" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP39EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 4 ;
-    ns3:id "39" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/4> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD4EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "4" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP4EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "4" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/40> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD40EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns2:id "40" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP40EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "40" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/41> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD41EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns2:id "41" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP41EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "41" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/42> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD42EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "42" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP42EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "42" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/43> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD43EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "43" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP43EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "43" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/44> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD44EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "44" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP44EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "44" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/45> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD45EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/88> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "45" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP45EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "45" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/46> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD46EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/163> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "46" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP46EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "46" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/47> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD47EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/166> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "47" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP47EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "47" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/48> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD48EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns2:id "48" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP48EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "48" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/49> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD49EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "49" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP49EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "49" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/5> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD5EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "5" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP5EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "5" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/50> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD50EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/215> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "50" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP50EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 4 ;
-    ns3:id "50" ;
     ns3:socketNumber 1 ;
-    ns3:socketType "Other" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "Other" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/51> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD51EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/215> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "51" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP51EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "51" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/52> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD52EVC> ;
+    ns2:hasLocationType "MERCAMADRID" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "52" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP52EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "52" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/53> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD53EVC> ;
+    ns2:hasLocationType "MERCAMADRID" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "53" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP53EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "53" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/54> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD54EVC> ;
+    ns2:hasLocationType "MERCAMADRID" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "54" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP54EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "54" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/55> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD55EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "55" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP55EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "55" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/56> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD56EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "56" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP56EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "56" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/57> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD57EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/116> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "57" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP57EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "57" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/58> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD58EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "58" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP58EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "58" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/59> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD59EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/171> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "59" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP59EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "59" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/6> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD6EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "6" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP6EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "6" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/60> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD60EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "60" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP60EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "60" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/61> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD61EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/122> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "61" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP61EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "61" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/62> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD62EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/122> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "62" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP62EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "62" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/63> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD63EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/165> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns2:id "63" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP63EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "63" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/64> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD64EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "64" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP64EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 3 ;
-    ns3:id "64" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/65> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD65EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/157> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "65" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP65EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "65" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/66> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD66EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/155> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "66" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP66EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "66" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/67> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD67EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/143> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "67" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP67EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "67" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/68> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD68EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/201> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns2:id "68" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP68EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "68" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/69> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD69EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/183> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "69" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP69EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "69" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/7> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD7EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "7" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP7EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "7" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/70> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD70EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns2:id "70" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP70EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "70" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/71> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD71EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "71" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP71EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "71" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/72> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD72EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns2:id "72" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP72EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "72" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/73> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD73EVC> ;
+    ns2:hasLocationType "VÍA PÚBLICA" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/GIC> ;
+    ns2:id "73" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP73EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "73" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/74> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD74EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/64> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "74" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP74EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "74" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/75> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD75EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/52> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns2:id "75" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP75EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "75" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "CHAdeMO" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "CHAdeMO" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/76> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD76EVC> ;
+    ns2:hasLocationType "MERCAMADRID" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/198> ;
+    ns2:id "76" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP76EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 2 ;
-    ns3:id "76" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/77> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD77EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/198> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "77" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP77EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "77" ;
     ns3:socketNumber 2 ;
-    ns3:socketType "Other" ;
-    ns3:type "EVChargingStation" .
+    ns3:socketType "Other" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/8> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD8EVC> ;
+    ns2:hasLocationType "APARCAMIENTO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns2:id "8" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP8EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "8" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/chargeStation/9> a ns3:EVChargingStation ;
     ns2:hasAddress <http://smartcity.linkeddata.es/transport/data/address/AD9EVC> ;
+    ns2:hasLocationType "ESTACIÓN DE SERVICIO" ;
     ns2:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
     ns2:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns2:id "9" ;
     ns1:hasGeometry <http://smartcity.linkeddata.es/transport/data/geopoint/GP9EVC> ;
     ns3:allowedVehicleType "car",
         "truck" ;
     ns3:capacity 1 ;
-    ns3:id "9" ;
     ns3:socketNumber 3 ;
     ns3:socketType "CHAdeMO",
-        "Dual_Mennekes" ;
-    ns3:type "EVChargingStation" .
-
-<http://smartcity.linkeddata.es/transport/data/location/APARCAMIENTO> a ns2:Location ;
-    ns2:name_id "APARCAMIENTO" .
-
-<http://smartcity.linkeddata.es/transport/data/location/ESTACI%C3%93N%20DE%20SERVICIO> a ns2:Location ;
-    ns2:name_id "ESTACIÓN DE SERVICIO" .
-
-<http://smartcity.linkeddata.es/transport/data/location/MERCAMADRID> a ns2:Location ;
-    ns2:name_id "MERCAMADRID" .
-
-<http://smartcity.linkeddata.es/transport/data/location/V%C3%8DA%20P%C3%9ABLICA> a ns2:Location ;
-    ns2:name_id "VÍA PÚBLICA" .
+        "Dual_Mennekes" .
 
 <http://smartcity.linkeddata.es/transport/data/address/AD100BS> a ns2:Address ;
     ns2:ad_name "CALLE DE GOYA" ;
