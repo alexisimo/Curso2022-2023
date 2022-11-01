@@ -1,7 +1,7 @@
 PREFIX ns1: <http://smartcity.linkeddata.es/transport/ontology/> .
 PREFIX ns2: <http://www.opengis.net/ont/geosparql#> .
 PREFIX ns3: <http://purl.org/dc/terms/> .
-PREFIX ns4: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/> .
+PREFIX ns4: <https://smart-data-models.github.io/dataModel.Transportation/> .
 PREFIX esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#>
 
 
@@ -32,7 +32,7 @@ SELECT ?sub WHERE {
 
 SELECT ?sub ?val WHERE { 
     ?sub a esbici:EstacionBicicleta.
-    ?sub ns4:identifier ?val.
+    ?sub ns3:identifier ?val.
 }
 
 
@@ -299,7 +299,7 @@ SELECT ?sub ?val WHERE {
 
 SELECT ?sub ?val WHERE { 
     ?sub a ns4:EVChargingStation.
-    ?sub ns4:id ?val.
+    ?sub ns1:id ?val.
 }
 
 #list charge station socket number
@@ -314,11 +314,4 @@ SELECT ?sub ?val WHERE {
 SELECT DISTINCT ?val WHERE { 
     ?sub a ns4:EVChargingStation.
     ?sub ns4:socketType ?val.
-}
-
-#list charge station type
-
-SELECT DISTINCT ?val WHERE { 
-    ?sub a ns4:EVChargingStation.
-    ?sub ns4:type ?val.
 }
