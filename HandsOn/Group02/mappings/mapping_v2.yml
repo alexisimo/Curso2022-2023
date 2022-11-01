@@ -4,7 +4,7 @@ prefixes:
   dc: http://purl.org/dc/elements/1.1/
   geosparql: http://www.opengis.net/ont/geosparql# 
   esbici: http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#
-  ev: https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/
+  ev: https://smart-data-models.github.io/dataModel.Transportation/
   xsd: http://www.w3.org/2001/XMLSchema#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   rev: http://purl.org/stuff/rev#
@@ -71,9 +71,9 @@ mappings:
       - [ev:allowedVehicleType,["car", "truck"], xsd:string]
       - [ev:capacity,$(CAPACITY),xsd:integer]
       - [ev:socketNumber,$(SOCKET_NUMBER),xsd:integer]
-      - [ev:id,$(ID_EVC),xsd:string]
       - [ev:socketType,$(SOCKET_TYPE),xsd:string]
-      - [ev:type,"EVChargingStation",xsd:string]
+      - [ont:id,$(ID_EVC),xsd:string]
+      - [ont:hasLocationType,$(LOCATION),xsd:string]
       - [ont:hasAddress, http://smartcity.linkeddata.es/transport/data/address/AD$(ID_EVC)EVC~iri]
       - [ont:hasNeighbourhood, http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_NUMBER)~iri]
       - [ont:hasOperator, http://smartcity.linkeddata.es/transport/data/operator/$(OPERATOR)~iri]
@@ -107,11 +107,3 @@ mappings:
     po:
       - [a, ont:Operator]
       - [ont:name_id,$(OPERATOR),xsd:string]
-
-  location:
-    sources:
-      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv~csv]
-    s: http://smartcity.linkeddata.es/transport/data/location/$(LOCATION)
-    po:
-      - [a, ont:Location]
-      - [ont:name_id,$(LOCATION),xsd:string]
