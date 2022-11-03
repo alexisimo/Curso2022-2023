@@ -1,87 +1,119 @@
-@base <http://www.semanticweb_g27.org/ontology/EnergyCons> .
-@prefix ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> .
+@base <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
+@prefix ec: <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 
-# Ontology v3
-<http://www.semanticweb_g27.org/ontology/EnergyCons> rdf:type owl:Ontology .
+<http://www.semanticweb_g27.org/ontology/EnergyCons#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-##
-### Properties for a Sensor Measurement (Observation)
-##
-ec:typeOfEnergy rdf:type owl:ObjectProperty ; # Coherency refactor
-                rdfs:domain ssn:Observation ;
-                rdfs:range xsd:string .
-
-ec:energyGroup rdf:type owl:ObjectProperty ; # Coherency refactor
-                rdfs:domain ssn:Observation ;
-                rdfs:range xsd:string .
-
-schema:unitText rdf:type owl:ObjectProperty ;
-                rdfs:domain ssn:Observation ;
-                rdfs:range xsd:string .
-
-schema:value rdf:type owl:ObjectProperty ;
-                rdfs:domain ssn:Observation ;
-                rdfs:range xsd:float .
-
-ssn:resultTime rdf:type owl:ObjectProperty ;
-                rdfs:domain ssn:Observation ;
-                rdfs:range xsd:dateTime .
-
-ssn:featureOfInterest rdf:type owl:ObjectProperty ;
-                rdfs:domain ssn:Observation ;
-                rdfs:range ssn:FeatureOfInterest .
-
-##
-### Properties to describe location of a CivicStructure
-##
-
-schema:longitude rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:float .
-
-schema:latitude rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:float .
-
+###  http://schema.org/geo
 schema:geo rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:CivicStructure ;
-                rdfs:range schema:GeoCoordinates .
+           rdfs:domain schema:CivicStructure ;
+           rdfs:range schema:GeoCoordinates .
 
-schema:address rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:CivicStructure ;
+
+###  http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#hasFeatureOfInterest
+ssn:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
+                         rdfs:domain ssn:Observation ;
+                         rdfs:range ssn:FeatureOfInterest .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/address
+schema:address rdf:type owl:DatatypeProperty ;
+               rdfs:domain schema:CivicStructure ;
+               rdfs:range xsd:string .
+
+
+###  http://schema.org/latitude
+schema:latitude rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:GeoCoordinates ;
+                rdfs:range xsd:float .
+
+
+###  http://schema.org/longitude
+schema:longitude rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:GeoCoordinates ;
+                 rdfs:range xsd:float .
+
+
+###  http://schema.org/unitText
+schema:unitText rdf:type owl:DatatypeProperty ;
+                rdfs:domain ssn:Observation ;
                 rdfs:range xsd:string .
 
-ec:buildingType rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:CivicStructure ;
+
+###  http://schema.org/value
+schema:value rdf:type owl:DatatypeProperty ;
+             rdfs:domain ssn:Observation ;
+             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb_g27.org/ontology/EnergyCons#buildingType
+ec:buildingType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:CivicStructure ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb_g27.org/ontology/EnergyCons#district
+ec:district rdf:type owl:DatatypeProperty ;
+             rdfs:domain schema:CivicStructure ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb_g27.org/ontology/EnergyCons#energyGroup
+ec:energyGroup rdf:type owl:DatatypeProperty ;
+                rdfs:domain ssn:Observation ;
                 rdfs:range xsd:string .
 
-ec:district rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:CivicStructure ;
-                rdfs:range xsd:string .
 
-ec:neighborhood rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:CivicStructure ;
-                rdfs:range xsd:string .
+###  http://www.semanticweb_g27.org/ontology/EnergyCons#neighborhood
+ec:neighborhood rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:CivicStructure ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb_g27.org/ontology/EnergyCons#typeOfEnergy
+ec:typeOfEnergy rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ssn:Observation ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#resultTime
+ssn:resultTime rdf:type owl:DatatypeProperty ;
+               rdfs:domain ssn:Observation ;
+               rdfs:range xsd:date .
+
 
 #################################################################
 #    Classes
 #################################################################
 
-ssn:FeatureOfInterest rdf:type owl:Class .
-
+###  http://schema.org/CivicStructure
 schema:CivicStructure rdf:type owl:Class ;
-                rdfs:subClassOf ssn:FeatureOfInterest .
+                      rdfs:subClassOf ssn:FeatureOfInterest .
 
+
+###  http://schema.org/GeoCoordinates
 schema:GeoCoordinates rdf:type owl:Class .
 
+
+###  http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#FeatureOfInterest
+ssn:FeatureOfInterest rdf:type owl:Class .
+
+
+###  http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#Observation
 ssn:Observation rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

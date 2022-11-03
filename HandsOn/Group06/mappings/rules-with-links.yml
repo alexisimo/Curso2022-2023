@@ -17,15 +17,21 @@ mappings:
       - [a, ns:Desfibrilador]
       - [ns:hasEstablecimiento, $(tipo_establecimiento)]
       - [ns:hasTitularidad, $(tipo_titularidad)]
-      - [ns:hasDireccionEstablecimiento, $(direccion_establecimiento)]
+      #- [ns:hasDireccionEstablecimiento, $(direccion_establecimiento)]
       - [ns:hasHorarioAcceso , $(horario_acceso)]
       - [ns:hasCodigoDea, $(codigo_dea)]
-      - [ns:hasMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]
+      #- [ns:hasMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]
       - [ns:hasHorarioAcceso, $(horario_acceso)]
+      - p: ns:hasDireccionEstablecimiento
+        o:
+        - mapping: triplesmap2
+      - p: ns:hasMunicipio
+        o:
+        - mapping: triplesmap3
 
   triplesmap2:
     sources: desfibriladores
-    s: $(direccion_establecimiento)
+    s: http://desfibriladores.com/ontology/desfibrilador/direccion/$(direccion_establecimiento)
     po:
       - [a, ns:Direccion]
       - [ns:hasCodigoViaDireccion, $(direccion_via_codigo)]
@@ -33,14 +39,14 @@ mappings:
       - [ns:hasNumeroPortalDireccion, $(direccion_portal_numero)]
       - [ns:hasPisoDireccion, $(direccion_piso)]
       - [ns:hasPuertaDireccion, $(direccion_puerta)]
-      - [ns:hasCodigoPostalDireccion, $(direccion_codigo_postal), xsd:nonNegativeInteger]
+      - [ns:hasCodigoPostalDireccion, $(direccion_codigo_postal)]
       - [ns:hasUbicacionDireccion, $(direccion_ubicacion)]
       - [ns:hasCoordXDireccion, $(direccion_coordenada_x), xsd:float]
       - [ns:hasCoordYDireccion, $(direccion_coordenada_y), xsd:float]
-  
+
   triplesmap3:
     sources: desfibriladores
-    s: $(municipio_codigo)
+    s: http://desfibriladores.com/ontology/desfibrilador/municipio/$(municipio_codigo)
     po:
       - [a, ns:Municipio]
       - [ns:hasCodigoMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]

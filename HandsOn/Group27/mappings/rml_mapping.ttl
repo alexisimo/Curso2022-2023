@@ -175,7 +175,7 @@ map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant ssn:resultTime .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant ssn:featureOfInterest .
+	rr:constant ssn:hasFeatureOfInterest .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
