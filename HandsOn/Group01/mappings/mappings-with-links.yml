@@ -9,66 +9,50 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   owl: http://www.w3.org/2002/07/owl#
-  
+  uiote: http://www.w3id.org/urban-iot/uiote
+  mv: http://schema.mobivoc.org/#
+
 mappings:
-  City:
-    sources:
-      - [puntos-de-recarga-updated-with-links.csv~csv]
-    s: http://HO-G1.linkeddata.es/resource/City/$(City)
-    po:
-      - [a, ns:City]
-      - [owl:sameAs, $(Same_as_wikidata_city)~iri]
-      
 
   Charging_station:
     sources:
       - [puntos-de-recarga-updated-with-links.csv~csv]
-    s: http://HO-G1.linkeddata.es/resource/Chargingstation/$(Charging Station)
+    s: http://HO-G1.linkeddata.es/resource/Chargingstation/$(Charging Station Id)
     po:
-      - [a, ns:Charging_station]
-      - [ns:owner, $(Owner),xsd:String]
-      - [ns:timeLimit, $(Time limit),xsd:Integer]
-      - [ns:schedule, $(Schedule),xsd:String]
-      - [ns:bookable, $(Bookable),xsd:String]
-      - [ns:cablesAnnotation, $(Cables Annotation),xsd:String]
-      - [ns:price, $(Price),xsd:String]
-      - [ns:longitude, $(Longitude),xsd:decimal]
-      - [ns:latitude, $(Latitude),xsd:decimal]
+      - [a, uiote:ChargingStation]
+      - [ns:owner, $(Owner),xsd:string]
+      - [ns:timeLimit, $(Time limit),xsd:integer]
+      - [schema:schedule, $(Schedule),xsd:string]
+      - [ns:bookable, $(Bookable),xsd:string]
+      - [ns:cablesAnnotation, $(Cables Annotation),xsd:string]
+      - [schema:price, $(Price),xsd:string]
+      - [schema:address, $(Address),xsd:string]
+      - [schema:City, $(City),xsd:string]
+      - [uiote:Connector, http://HO-G1.linkeddata.es/resource/Connector/$(Connector Id)~iri]
+      - [schema:GeoCoordinates, http://HO-G1.linkeddata.es/resource/Geocoordinates/$(Geolocation Id)~iri]
       - [owl:sameAs, $(Same_as_wikidata_Owner)~iri]
       - [owl:sameAs, $(Same_as_wikidata_Price)~iri]
-      - p: ns:hasAddress
+      - p: ns:hasConnector
         o:
-        - mapping: Address
-      - p: ns:hasPeripheral
+        - mapping: Connector
+      - p: ns:hasGeocoordinates
         o:
-        - mapping: Peripheral
-      - p: ns:isLocatedIn
-        o:
-        - mapping: City
+        - mapping: Geocoordinates
 
-  Address:
+  Geocoordinates:
     sources:
       - [puntos-de-recarga-updated-with-links.csv~csv]
-    s: http://HO-G1.linkeddata.es/resource/Address/$(Address)
+    s: http://HO-G1.linkeddata.es/resource/Geocoordinates/$(Geolocation Id)
     po:
-      - [a, ns:Address]
-      - [ns:address, $(Address),xsd:String]
-
-  Peripheral:
-    sources:
-      - [puntos-de-recarga-updated-with-links.csv~csv]
-    s: http://HO-G1.linkeddata.es/resource/Peripheral/$(Peripheral)
-    po:
-      - [a, ns:Peripheral]
-      
+      - [a, schema:GeoCoordinates]
+      - [schema:longitude, $(Longitude),xsd:decimal]
+      - [schema:latitude, $(Latitude),xsd:decimal]
 
   Connector:
     sources:
       - [puntos-de-recarga-updated-with-links.csv~csv]
-    s: http://HO-G1.linkeddata.es/resource/Connector/$(Connector)
+    s: http://HO-G1.linkeddata.es/resource/Connector/$(Connector Id)
     po:
-      - [a, ns:Connector]
-      - [rdf:subClassOf, ns:Peripheral]
-      - [ns:number, $(Number of connectors),xsd:Integer]
-      - [ns:type, $(Peripheral),xsd:String]
-      - [owl:sameAs, $(Same_as_wikidata_N_Connector)~iri]
+      - [a, uiote:Connector]
+      - [ns:numberOfConnectors, $(Number of connectors),xsd:integer]
+      - [mv:plugType, $(Connector type),xsd:string]
