@@ -94,7 +94,18 @@
 
     <h2>Licensing</h2>
     <p>
-      Licensing name: ODC-BY 1.0 license
+      Original csv licensing name: ODC-BY 1.0 license
+      <br />
+      We are free:
+      <br />
+      -To share: To copy, distribute and use the database.
+      <br />
+      -To create: To produce works from the database.
+      <br />
+      -To adapt: To modify, transform and build upon the database.
+    </p>
+    <p>
+      Generated ontology licensing name: CC-BY 4.0 license
       <br />
       We are free:
       <br />
@@ -105,29 +116,36 @@
       -To adapt: To modify, transform and build upon the database.
     </p>
     <h2>Resource naming strategy</h2>
-    <p>City: HO-G1.linkeddata.es/City<br />
-      &emsp;hasAddress: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasAddress<br />
-      &emsp;hasPeripheral: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasPeripheral<br />
-      &emsp;isLocatedIn: http://HO-G1.linkeddata.es/ontology/Chargingstation#isLocatedIn<br />
+    <p>
+      We have used the following naming strategy for the ontology:<br/>
 
-      Charging_station: http://HO-G1.linkeddata.es/resource/Chargingstation/<br />
+      Object properties:<br/>
+      &emsp;hasGeocoordinate: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasAddress<br />
+      &emsp;hasConnector: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasConnector<br />
+
+      <br />
+      ChargingStation: http://HO-G1.linkeddata.es/ontology/Chargingstation#Charging_station<br />
       &emsp;owner: http://HO-G1.linkeddata.es/ontology/Chargingstation#owner<br />
       &emsp;timeLimit: http://HO-G1.linkeddata.es/ontology/Chargingstation#timeLimit<br />
       &emsp;schedule: http://HO-G1.linkeddata.es/ontology/Chargingstation#schedule<br />
       &emsp;bookable: http://HO-G1.linkeddata.es/ontology/Chargingstation#bookable<br />
       &emsp;cablesAnnotation: http://HO-G1.linkeddata.es/ontology/Chargingstation#cablesAnnotation<br />
+      &emsp;price: http://HO-G1.linkeddata.es/ontology/Chargingstation#price<br />
+      &emsp;address: http://HO-G1.linkeddata.es/ontology/Chargingstation#address<br />
+      &emsp;City: http://HO-G1.linkeddata.es/ontology/Chargingstation#City<br />
+      
+      Geocoordinates: http://HO-G1.linkeddata.es/ontology/Chargingstation#Geocoordinates/<br />
       &emsp;longitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#longitude<br />
       &emsp;latitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#latitude<br />
-      &emsp;price: http://HO-G1.linkeddata.es/ontology/Chargingstation#price<br />
-      
-      Address: http://HO-G1.linkeddata.es/resource/Address/<br />
-      &emsp;address: http://HO-G1.linkeddata.es/Address/$(Address)<br />
 
-      Peripheral: http://HO-G1.linkeddata.es/resource/Peripheral/<br />
-      
-      Connector: http://HO-G1.linkeddata.es/resource/Connector/<br />
+      Connector: http://HO-G1.linkeddata.es/ontology/Chargingstation#Connector<br />
       &emsp;number: http://HO-G1.linkeddata.es/ontology/Chargingstation#number<br />
-      &emsp;type: http://HO-G1.linkeddata.es/ontology/Chargingstation#type<br />
+      &emsp;plugType: http://HO-G1.linkeddata.es/ontology/Chargingstation#type<br />
+
+      Individuals URIs are described as follows:<br />
+      &emsp;Chargingstation: http://HO-G1.linkeddata.es/resource/Chargingstation/$(Charging Station Id)<br />
+      &emsp;Connector: http://HO-G1.linkeddata.es/resource/Connector/$(Connector Id)<br />
+      &emsp;Geocoordinates: http://HO-G1.linkeddata.es/resource/Geocoordinates/$(Geolocation Id)<br />
     </p>
     </p>
 

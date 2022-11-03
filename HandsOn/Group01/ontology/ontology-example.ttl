@@ -1,13 +1,14 @@
- @prefix add: <http://HO-G1.linkeddata.es/resource/Address/> .
-@prefix city: <http://HO-G1.linkeddata.es/resource/City/> .
 @prefix conn: <http://HO-G1.linkeddata.es/resource/Connector/> .
 @prefix cs: <http://HO-G1.linkeddata.es/resource/Chargingstation/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gc: <http://HO-G1.linkeddata.es/resource/Geocoordinate/> .
+@prefix mv: <http://schema.mobivoc.org/#> .
 @prefix ns: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ph: <http://HO-G1.linkeddata.es/resource/Peripheral/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
+@prefix schema: <http://schema.org/> .
+@prefix uiote: <http://www.w3id.org/urban-iot/uiote> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns: a owl:Ontology ;
     dc:creator "Semantic Web 2022-23 (UPM) Group 01" ;
@@ -15,39 +16,40 @@ ns: a owl:Ontology ;
     dc:title "Alcobendas charging stations Ontology individual example" ;
     owl:versionInfo "0.0.1" .
 
-ns:hasAddress a owl:ObjectProperty ;
-    rdfs:label "has address" .
+ns:hasConnector a owl:ObjectProperty ;
+    rdfs:label "has connector" .
 
-ns:hasPeripheral a owl:ObjectProperty ;
-    rdfs:label "has peripheral" ;
-    rdfs:range ph:Peripheral .
+ns:hasGeolocation a owl:ObjectProperty ;
+    rdfs:label "has geolocation" .
 
-ns:isLocatedIn a owl:ObjectProperty ;
-    rdfs:label "is located in" .
+cs:CS_f55addb024f8ddf4cdbaba59d295f45a a owl:NamedIndividual,
+        uiote:ChargingStation ;
+    ns:address "Avenida de España, 28"^^xsd:string ;
+    ns:bookable "No se puede reservar"^^xsd:string ;
+    ns:cablesAnnotation "No"^^xsd:string ;
+    ns:hasConnector conn:CN_70cc6e7019e47c4cfcec499371b7fd7a ;
+    ns:hasGeolocation gc:GL_2f71b40e1e07202f84038c436bafb646 ;
+    ns:owner "EMOVILI"^^xsd:string ;
+    ns:timeLimit 2 ;
+    schema:City "Alcobendas"^^xsd:string ;
+    schema:Schedule "24 horas todos los días"^^xsd:string ;
+    schema:price "Gratuito"^^xsd:string .
 
-ns:longitude a owl:ObjectProperty ;
-    rdfs:label "longitude" .
+ns:Geolocation a owl:Class ;
+    rdfs:label "Geolocation" .
 
-cs:Charging_station05 a owl:NamedIndividual ;
-    ns:bookable "No se puede reservar"^^xsd1:String ;
-    ns:cablesAnnotation "No"^^xsd1:String ;
-    ns:hasAddress add:Address05 ;
-    ns:isLocatedIn city:Alcobendas ;
-    ns:latitude "40.546535"^^xsd1:decimal ;
-    ns:owner "EMOVILI"^^xsd1:String ;
-    ns:price "Gratuito"^^xsd1:String ;
-    ns:schedule "24 horas todos los días"^^xsd1:String ;
-    ns:timeLimit "2"^^xsd1:Integer .
+conn:CN_70cc6e7019e47c4cfcec499371b7fd7a a owl:NamedIndividual,
+        uiote:Connector ;
+    ns:numberOfConnectors 2 ;
+    mv:plugType "TYPE 2 7.40kW|"^^xsd:string .
 
-conn:Connector05 a owl:NamedIndividual ;
-    ns:number "2"^^xsd1:Integer ;
-    ns:type "TYPE 2 7.40kW|"^^xsd1:String .
+gc:GL_2f71b40e1e07202f84038c436bafb646 a ns:Geolocation,
+        owl:NamedIndividual ;
+    schema:latitude 40.546535 ;
+    schema:longitude 3.641618 .
 
-add:Address05 a owl:NamedIndividual ;
-    ns:address "Avenida de España, 28"^^xsd1:String .
+uiote:ChargingStation a owl:Class ;
+    rdfs:label "Charging Station" .
 
-city:Alcobendas a owl:NamedIndividual .
-
-ph:Peripheral a owl:Class ;
-    rdfs:label "Peripheral" .
-
+uiote:Connector a owl:Class ;
+    rdfs:label "Connector" .
