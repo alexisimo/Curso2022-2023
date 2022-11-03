@@ -1,104 +1,225 @@
- @prefix bib: <http://semanticweb_grp45.com/ontology/biblioteca#> .
+@prefix base: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix ont: <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-bib: a owl:Ontology ;
+base: a owl:Ontology ;
     dc:creator "Alfonso Fernando Sanchez de Toca",
         "YiDong Zhu" ;
     dc:description "Ontology code created by Chowlk" ;
-    dc:title "Template Ontology" ;
+    dc:title "Biblioteca-Evento" ;
     owl:versionInfo "0.0.1" .
 
-ns:descripcion a owl:ObjectProperty ;
-    rdfs:label "descripcion" ;
-    rdfs:domain ns:Biblioteca .
+ont:hasdescripcion a owl:ObjectProperty ;
+    rdfs:label "hasdescripcion" ;
+    rdfs:domain ont:Descripcion ;
+    rdfs:range ont:Biblioteca .
 
-ns:dias a owl:ObjectProperty ;
-    rdfs:label "dias" ;
-    rdfs:domain ns:Evento .
+ont:hasdiasemana a owl:ObjectProperty ;
+    rdfs:label "hasdiasemana" ;
+    rdfs:domain ont:Dias_Semanas ;
+    rdfs:range ont:Evento .
 
-ns:direccion a owl:ObjectProperty ;
-    rdfs:label "direccion" ;
-    rdfs:domain ns:Direccion .
+ont:hasdireccion a owl:ObjectProperty ;
+    rdfs:label "hasdireccion" ;
+    rdfs:domain ont:Direccion ;
+    rdfs:range ont:Biblioteca .
 
-ns:email a owl:ObjectProperty ;
-    rdfs:label "email" ;
-    rdfs:domain ns:Direccion .
+ont:hasemail a owl:ObjectProperty ;
+    rdfs:label "hasemail" ;
+    rdfs:domain ont:Email ;
+    rdfs:range ont:Biblioteca .
 
-ns:fecha a owl:ObjectProperty ;
-    rdfs:label "fecha" ;
-    rdfs:domain ns:Evento .
+ont:hasevent_id a owl:ObjectProperty ;
+    rdfs:label "hasevent_id" ;
+    rdfs:domain ont:EventoId ;
+    rdfs:range ont:Evento .
 
-ns:fechaFin a owl:ObjectProperty ;
-    rdfs:label "fecha fin" ;
-    rdfs:domain ns:Evento .
+ont:haseventos a owl:ObjectProperty ;
+    rdfs:label "haseventos" ;
+    rdfs:domain ont:Evento ;
+    rdfs:range ont:Biblioteca .
 
-ns:hasDireccion a owl:ObjectProperty ;
-    rdfs:label "has direccion" ;
-    rdfs:domain ns:Biblioteca ;
-    rdfs:range ns:Direccion .
+ont:hasfechafin a owl:ObjectProperty ;
+    rdfs:label "hasfechafin" ;
+    rdfs:domain ont:Fecha_Fin ;
+    rdfs:range ont:Evento .
 
-ns:hasEventos a owl:ObjectProperty ;
-    rdfs:label "has eventos" ;
-    rdfs:domain ns:Biblioteca ;
-    rdfs:range ns:Evento .
+ont:hasfechaini a owl:ObjectProperty ;
+    rdfs:label "hasfechaini" ;
+    rdfs:domain ont:Fecha_Ini ;
+    rdfs:range ont:Evento .
 
-ns:hora a owl:ObjectProperty ;
-    rdfs:label "hora" ;
-    rdfs:domain ns:Evento .
+ont:hashora a owl:ObjectProperty ;
+    rdfs:label "hashora" ;
+    rdfs:domain ont:Hora ;
+    rdfs:range ont:Evento .
 
-ns:horario a owl:ObjectProperty ;
-    rdfs:label "horario" ;
-    rdfs:domain ns:Biblioteca .
+ont:hashorario a owl:ObjectProperty ;
+    rdfs:label "hashorario" ;
+    rdfs:domain ont:Horario ;
+    rdfs:range ont:Biblioteca .
 
-ns:id-biblioteca a owl:ObjectProperty ;
-    rdfs:label "id-biblioteca" ;
-    rdfs:domain ns:Evento .
+ont:hasnombreevento a owl:ObjectProperty ;
+    rdfs:label "hasnombreevento" ;
+    rdfs:domain ont:Titulo_Evento ;
+    rdfs:range ont:Evento .
 
-ns:idEvento a owl:ObjectProperty ;
-    rdfs:label "id evento" ;
-    rdfs:domain ns:Evento .
+ont:hasnombreinstalacion a owl:ObjectProperty ;
+    rdfs:label "hasnombreinstalacion" ;
+    rdfs:domain ont:Id_Biblioteca ;
+    rdfs:range ont:Evento .
 
-ns:nombre a owl:ObjectProperty ;
-    rdfs:label "nombre" ;
-    rdfs:domain ns:Biblioteca .
+ont:hasnombreinstalcion a owl:ObjectProperty ;
+    rdfs:label "hasnombreinstalcion" ;
+    rdfs:domain ont:Nombre_Instalacion ;
+    rdfs:range ont:Evento .
 
-ns:nombre-instalacion a owl:ObjectProperty ;
-    rdfs:label "nombre-instalacion" ;
-    rdfs:domain ns:Evento .
+ont:haspk a owl:ObjectProperty ;
+    rdfs:label "haspk" ;
+    rdfs:domain ont:Id ;
+    rdfs:range ont:Biblioteca .
 
-ns:pk a owl:ObjectProperty ;
-    rdfs:label "pk" ;
-    rdfs:domain ns:Biblioteca .
+ont:hastelefono a owl:ObjectProperty ;
+    rdfs:label "hastelefono" ;
+    rdfs:domain ont:Telefono ;
+    rdfs:range ont:Biblioteca .
 
-ns:submision a owl:ObjectProperty ;
-    rdfs:label "submision" ;
-    rdfs:domain ns:Direccion .
+ont:hastitulo a owl:ObjectProperty ;
+    rdfs:label "hastitulo" ;
+    rdfs:domain ont:Titulo ;
+    rdfs:range ont:Biblioteca .
 
-ns:telefono a owl:ObjectProperty ;
-    rdfs:label "telefono" ;
-    rdfs:domain ns:Direccion .
+ont:hasurl a owl:ObjectProperty ;
+    rdfs:label "hasurl" ;
+    rdfs:domain ont:Url ;
+    rdfs:range ont:Biblioteca .
 
-ns:titulo a owl:ObjectProperty ;
-    rdfs:label "titulo" ;
-    rdfs:domain ns:Evento .
+ont:hasurlevento a owl:ObjectProperty ;
+    rdfs:label "hasurlevento" ;
+    rdfs:domain ont:Url_Evento ;
+    rdfs:range ont:Evento .
 
-ns:url-instalacion a owl:ObjectProperty ;
-    rdfs:label "url-instalacion" ;
-    rdfs:domain ns:Evento .
+ont:id_biblioteca a owl:DatatypeProperty ;
+    rdfs:label "id_biblioteca" ;
+    rdfs:range xsd:string .
 
-ns:urlBiblioteca a owl:ObjectProperty ;
-    rdfs:label "url biblioteca" ;
-    rdfs:domain ns:Biblioteca .
+ont:num_evento_id a owl:DatatypeProperty ;
+    rdfs:label "num_evento_id" ;
+    rdfs:range xsd:string .
 
-ns:Direccion a owl:Class ;
+ont:number_id a owl:DatatypeProperty ;
+    rdfs:label "number_id" ;
+    rdfs:range xsd:string .
+
+ont:st_descripcion a owl:DatatypeProperty ;
+    rdfs:label "st_descripcion" ;
+    rdfs:range xsd:string .
+
+ont:st_dias_semanas a owl:DatatypeProperty ;
+    rdfs:label "st_dias_semanas" ;
+    rdfs:range xsd:string .
+
+ont:st_direccion a owl:DatatypeProperty ;
+    rdfs:label "st_direccion" ;
+    rdfs:range xsd:string .
+
+ont:st_email a owl:DatatypeProperty ;
+    rdfs:label "st_email" ;
+    rdfs:range xsd:string .
+
+ont:st_evento a owl:DatatypeProperty ;
+    rdfs:label "st_evento" ;
+    rdfs:range xsd:string .
+
+ont:st_fecha_fin a owl:DatatypeProperty ;
+    rdfs:label "st_fecha_fin" ;
+    rdfs:range xsd:string .
+
+ont:st_fecha_ini a owl:DatatypeProperty ;
+    rdfs:label "st_fecha_ini" ;
+    rdfs:range xsd:string .
+
+ont:st_hora a owl:DatatypeProperty ;
+    rdfs:label "st_hora" ;
+    rdfs:range xsd:string .
+
+ont:st_horario a owl:DatatypeProperty ;
+    rdfs:label "st_horario" ;
+    rdfs:range xsd:string .
+
+ont:st_nombre a owl:DatatypeProperty ;
+    rdfs:label "st_nombre" ;
+    rdfs:range xsd:string .
+
+ont:st_nombre_instalacion a owl:DatatypeProperty ;
+    rdfs:label "st_nombre_instalacion" ;
+    rdfs:range xsd:string .
+
+ont:st_titulo a owl:DatatypeProperty ;
+    rdfs:label "st_titulo" ;
+    rdfs:range xsd:string .
+
+ont:st_url a owl:DatatypeProperty ;
+    rdfs:label "st_url" ;
+    rdfs:range xsd:string .
+
+ont:Descripcion a owl:Class ;
+    rdfs:label "Descripcion" .
+
+ont:Dias_Semanas a owl:Class ;
+    rdfs:label "Dias_ Semanas" .
+
+ont:Direccion a owl:Class ;
     rdfs:label "Direccion" .
 
-ns:Biblioteca a owl:Class ;
+ont:Email a owl:Class ;
+    rdfs:label "Email" .
+
+ont:EventoId a owl:Class ;
+    rdfs:label "Evento Id" .
+
+ont:Fecha_Fin a owl:Class ;
+    rdfs:label "Fecha_ Fin" .
+
+ont:Fecha_Ini a owl:Class ;
+    rdfs:label "Fecha_ Ini" .
+
+ont:Hora a owl:Class ;
+    rdfs:label "Hora" .
+
+ont:Horario a owl:Class ;
+    rdfs:label "Horario" .
+
+ont:Id a owl:Class ;
+    rdfs:label "Id" .
+
+ont:Id_Biblioteca a owl:Class ;
+    rdfs:label "Id_ Biblioteca" .
+
+ont:Nombre_Instalacion a owl:Class ;
+    rdfs:label "Nombre_ Instalacion" .
+
+ont:Telefono a owl:Class ;
+    rdfs:label "Telefono" .
+
+ont:Titulo a owl:Class ;
+    rdfs:label "Titulo" .
+
+ont:Titulo_Evento a owl:Class ;
+    rdfs:label "Titulo_ Evento" .
+
+ont:Url a owl:Class ;
+    rdfs:label "Url" .
+
+ont:Url_Evento a owl:Class ;
+    rdfs:label "Url_ Evento" .
+
+ont:Biblioteca a owl:Class ;
     rdfs:label "Biblioteca" .
 
-ns:Evento a owl:Class ;
+ont:Evento a owl:Class ;
     rdfs:label "Evento" .
 
