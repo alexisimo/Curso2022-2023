@@ -1,0 +1,69 @@
+{
+	"@context": {
+	"xsd": "http://www.w3.org/2001/XMLSchema#",
+	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "subject": "https://oeg.fi.upm.es/ontologies/subject/",
+	"person": "https://oeg.fi.upm.es/ontologies/person/",
+    "name": "xsd:label",
+    "hometown":"rdfs:label",
+	"age":"xsd:integer",
+	"almaMater":"rdfs:label"
+    
+	},
+	"@id": "person:Alvaro",
+    "@type": "person",
+	"name":"Alvaro Alonso Miguel",
+	"hometown":"Almeria",
+	"age":"72",
+	"almaMater":"UPM",
+	"parents":[
+		{
+			"@type":"person",
+			"name":"Roberto"
+		},
+		{
+			"@type":"person",
+			"name":"Maria"
+		}
+	],
+	"subjects":[
+		{
+            "@id": "subject:SemanticWeb",
+            "@type": "subject",
+			"name":"Semantic Web, Linked Data and Knowledge Graphs",
+			"teachers":[
+				{
+					"@id": "person:Oscar",
+					"@type":"person",
+					"name":"Oscar Corcho"
+				},
+				{
+					"@id": "person:Raul",
+					"@type":"person",
+					"name":"Raul Garcia"				
+				}
+			
+			],
+			"briefDescription":"Linked data and Knowledge Graphs"
+		},
+		{
+            "@id":"subject:GPTI",
+            "@type":"subject",
+			"name":"GPTI",
+			"teachers":[
+				{
+					"@id": "person:Edmundo",
+					"@type":"person",
+					"name":"Edmundo Tovar"
+				},
+				{
+					"@id": "person:Oscar",
+					"@type":"person",
+					"name":"Oscar Dieste"				
+				}
+			
+			],
+			"briefDescription":"Buenas practicas para la gestion de la empresa"		
+		}
+	]
+}

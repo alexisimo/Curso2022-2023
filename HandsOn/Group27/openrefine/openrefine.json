@@ -1,0 +1,1771 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA  MONFORTE DE LEMOS, 38 28029 MADRID",
+          "AVENIDA  MONFORTE DE LEMOS,  38  28029  MADRID"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA MONFORTE DE LEMOS, 38 28029 MADRID"
+      }
+    ],
+    "description": "Mass edit cells in column DIRECCION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SENSOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AMBIBIFILIPINAS_Gas_General*0,429",
+          "AMBIBIFILIPINAS_Gas_General*0.429"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBIFILIPINAS_Gas_General*0,429"
+      },
+      {
+        "from": [
+          "Gas Fútbol+Gas Frontón-Pabellón-Béisbol",
+          "Gas Futbol+Gas Frontón-Pabellón-Béisbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gas Fútbol+Gas Frontón-Pabellón-Béisbol"
+      },
+      {
+        "from": [
+          "0,2077 * (AMBIBFAYALA_Enfriadora + AMBIBFAYALA_General_Clima) + AMBIBFAYALA_General_Biblioteca",
+          "0.2077*(AMBIBFAYALA_Enfriadora+AMBIBFAYALA_General_Clima)+AMBIBFAYALA_General_Biblioteca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0,2077*(AMBIBFAYALA_Enfriadora + AMBIBFAYALA_General_Clima) + AMBIBFAYALA_General_Biblioteca"
+      },
+      {
+        "from": [
+          "AMBIBPABLONERUDA_Gas_General*0,72",
+          "AMBIBPABLONERUDA_Gas_General*0.72"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBPABLONERUDA_Gas_General*0,72"
+      },
+      {
+        "from": [
+          "AMBIBGLORIAFUERTES_Electricidad_General* 0,572",
+          "AMBIBGLORIAFUERTES_Electricidad_General*0.572"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBGLORIAFUERTES_Electricidad_General*0,572"
+      },
+      {
+        "from": [
+          "AMBIBMLEJARRAGA_Electricidad_General* 0,1444",
+          "AMBIBMLEJARRAGA_Electricidad_General*0.1444"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBMLEJARRAGA_Electricidad_General*0,1444"
+      }
+    ],
+    "description": "Mass edit cells in column SENSOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SENSOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AMBIBGLORIAFUERTES_Gas_General* 0,6",
+          "AMBIBGLORIAFUERTES_Gas_General*0.6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBGLORIAFUERTES_Gas_General*0,6"
+      },
+      {
+        "from": [
+          "AMBIBIFILIPINAS_Electricidad_General - AMBIBIFILIPINAS_Electricidad_CentroMayores - AMBIBIFILIPINAS_Electricidad_SocioCultural",
+          "AMBIBIFILIPINAS_Electricidad_General-AMBIBIFILIPINAS_Electricidad_CentroMayores-AMBIBIFILIPINAS_Electricidad_SocioCultural"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMBIBIFILIPINAS_Electricidad_General - AMBIBIFILIPINAS_Electricidad_CentroMayores - AMBIBIFILIPINAS_Electricidad_SocioCultural"
+      }
+    ],
+    "description": "Mass edit cells in column SENSOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Energia Reactiva",
+          "Energia reactiva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Energia Reactiva"
+      },
+      {
+        "from": [
+          "Energia Activa",
+          "Energia activa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Energia Activa"
+      }
+    ],
+    "description": "Mass edit cells in column CLASE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UNIDADES",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "kVAr",
+          "KVAr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kVAr"
+      }
+    ],
+    "description": "Mass edit cells in column UNIDADES"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "﻿AÑO",
+    "expression": "grel:row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "id_Lectura",
+    "columnInsertIndex": 1,
+    "description": "Create column id_Lectura at index 1 based on column ﻿AÑO using expression grel:row.index"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "id_Lectura",
+    "expression": "join ([coalesce(cells['id_Lectura'].value,''),coalesce(cells['﻿AÑO'].value,''),coalesce(cells['MES'].value,''),coalesce(cells['ID'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id_Lectura using expression join ([coalesce(cells['id_Lectura'].value,''),coalesce(cells['﻿AÑO'].value,''),coalesce(cells['MES'].value,''),coalesce(cells['ID'].value,'')],'')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "id_Lectura",
+    "expression": "grel:\"O\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id_Lectura using expression grel:\"O\"+value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros administrativos",
+                "l": "Centros administrativos"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros deportivos",
+                "l": "Centros deportivos"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros escolares",
+                "l": "Centros escolares"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros mixtos",
+                "l": "Centros mixtos"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros sociales",
+                "l": "Centros sociales"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Otras dependencias",
+                "l": "Otras dependencias"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Seguridad y emergencias",
+                "l": "Seguridad y emergencias"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "join ([coalesce(cells['﻿AÑO'].value,''),coalesce(cells['MES'].value,'')],'-')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿AÑO using expression join ([coalesce(cells['﻿AÑO'].value,''),coalesce(cells['MES'].value,'')],'-')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MES",
+    "description": "Remove column MES"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-03"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-04"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-05"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-06"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-07"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-08"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-01"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020-9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-09"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-02"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-03"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-04"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-05"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-06"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-07"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-08"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2021-9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2021-09"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-01"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-02"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-03"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-04"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-05"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-06"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2022-7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2022-07"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿AÑO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "grel:\"E\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression grel:\"E\"+value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SENSOR",
+    "description": "Remove column SENSOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-X",
+    "description": "Remove column COORDENADA-X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-Y",
+    "description": "Remove column COORDENADA-Y"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CÓDIGO DISTRITO",
+    "description": "Remove column CÓDIGO DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CÓDIGO BARRIO",
+    "description": "Remove column CÓDIGO BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO",
+    "description": "Remove column TIPO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ID",
+    "expression": "grel:\"GEO_\"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "geo_id",
+    "columnInsertIndex": 3,
+    "description": "Create column geo_id at index 3 based on column ID using expression grel:\"GEO_\"+value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "building_id",
+    "description": "Rename column ID to building_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id_Lectura",
+    "newColumnName": "observation_id",
+    "description": "Rename column id_Lectura to observation_id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOEDIFICIO",
+          "expression": "value",
+          "columnName": "TIPOEDIFICIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centros culturales y bibliotecas",
+                "l": "Centros culturales y bibliotecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "﻿AÑO",
+    "expression": "grel:value+\"-01\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿AÑO using expression grel:value+\"-01\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿AÑO",
+    "newColumnName": "date",
+    "description": "Rename column ﻿AÑO to date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPOEDIFICIO",
+    "newColumnName": "building_type",
+    "description": "Rename column TIPOEDIFICIO to building_type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EDIFICIO",
+    "newColumnName": "building_name",
+    "description": "Rename column EDIFICIO to building_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION",
+    "newColumnName": "address",
+    "description": "Rename column DIRECCION to address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "district",
+    "description": "Rename column DISTRITO to district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "neighborhood",
+    "description": "Rename column BARRIO to neighborhood"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LONGITUD",
+    "newColumnName": "longitude",
+    "description": "Rename column LONGITUD to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LATITUD",
+    "newColumnName": "latitude",
+    "description": "Rename column LATITUD to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CLASE",
+    "newColumnName": "type_of_electricity",
+    "description": "Rename column CLASE to type_of_electricity"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "GRUPO",
+    "newColumnName": "energy_group",
+    "description": "Rename column GRUPO to energy_group"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "type_of_electricity",
+    "newColumnName": "type_of_energy",
+    "description": "Rename column type_of_electricity to type_of_energy"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UNIDADES",
+    "newColumnName": "unit_text",
+    "description": "Rename column UNIDADES to unit_text"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONSUMO",
+    "newColumnName": "value",
+    "description": "Rename column CONSUMO to value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "value",
+    "expression": "grel:value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column value using expression grel:value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "value",
+          "expression": "value",
+          "columnName": "value",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "0",
+                "l": "0"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "value",
+          "expression": "value",
+          "columnName": "value",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(No hay datos)",
+                "l": "(No hay datos)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "value",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column value using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "value",
+          "expression": "value",
+          "columnName": "value",
+          "from": -200000,
+          "to": 3600000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "value",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column value using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression value.toString()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "building_id",
+          "expression": "value",
+          "columnName": "building_id",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

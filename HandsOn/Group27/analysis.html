@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DataSet Analysis, URI Strategy and license</title>
+</head>
+<body>
+    <h4><strong>DataSet Analysis</strong></h4>
+
+    <table class="table table-bordered table-hover table-condensed">
+        <thead>
+        <tr>
+        <th title="Field #1">COLUMN</th>
+        <th title="Field #2">TYPE</th>
+        <th title="Field #3">COMMENTS/Range</th>
+        <th title="Field #4">PROBLEMS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>A&Ntilde;O</td>
+        <td>String</td>
+        <td>2020,2021,2022</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>MES</td>
+        <td>String</td>
+        <td>1 - 12</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>ID</td>
+        <td>String</td>
+        <td>0 - 2200</td>
+        <td>Includes some blank entries</td>
+        </tr>
+        <tr>
+        <td>TIPOEDIFICIO</td>
+        <td>String</td>
+        <td>Nominal type of center</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>EDIFICIO</td>
+        <td>String</td>
+        <td>Name of building</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>DIRECCION</td>
+        <td>String</td>
+        <td>Address of the building</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>DISTRITO</td>
+        <td>String</td>
+        <td>District name</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>C&Oacute;DIGO DISTRITO</td>
+        <td>String</td>
+        <td>Discrict code value range: 1-21</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>BARRIO</td>
+        <td>String</td>
+        <td>neighbourhood name</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>C&Oacute;DIGO BARRIO</td>
+        <td>String</td>
+        <td>neighbourhood code value range: 1-210</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>COORDENADA-X</td>
+        <td>String</td>
+        <td>X coordenades could be interpreted as double</td>
+        <td>Uses a , instead a .</td>
+        </tr>
+        <tr>
+        <td>COORDENADA-Y</td>
+        <td>String</td>
+        <td>Y coordenades could be interpreted as double</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>LONGITUD</td>
+        <td>String</td>
+        <td>Longitude could be interpreted as double</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>LATITUD</td>
+        <td>String</td>
+        <td>Latitude could be interpreted as double</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>SENSOR</td>
+        <td>String</td>
+        <td>Identifier of the sensor a group of concatenated strings</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>TIPO</td>
+        <td>String</td>
+        <td>type of sensor</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>CLASE</td>
+        <td>String</td>
+        <td>class of electricity</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>GRUPO</td>
+        <td>String</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>UNIDADES</td>
+        <td>String</td>
+        <td>unit of measurement</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>CONSUMO</td>
+        <td>String</td>
+        <td>quantity of consumption could be interpreted as a double</td>
+        <td>&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+
+    <h4><strong>URI Strategy</strong></h4>
+    <p><br />Content Negotiation:<br /><br />The application will handle content negotiation with ease, using "/" for resources and "#" for classes/properties, in case of a request the response will redirect to a related page or by default will download the ontology.</p>
+    <p>Pattern URI for resources:<br />http://www.semanticweb_g27.org/resource/{Class_name}/{resource_id}</p>
+    <p>- The id will be the identifier provided by the dataset followed by a capital letter.</p>
+    <p>- In case that the dataset doesn't provide an identifier, a random 8-digit number will be applied instead.</p>
+    <p>Pattern URI for Classes and Properties:</p>
+    <p>http://www.semanticweb_g27.org/ontology/EnergyCons#[{Class_name} | {Property_name}]</p>
+    <p>- The name for the ontology is "EnergyCons".</p>
+    <p>- The class name starts with a capital letter.</p>
+    <p>- Properties name starts with <span class="VIiyi" lang="en"><span class="JLqJ4b ChMk0b"><span class="Q4iAWc">lowercase.</span></span></span></p>
+    <h5><strong>Licensing of the data source </strong></h5>
+    <h6><strong>Publisher of the dataset as well as the license of the dataset</strong></h6>
+    <p>The publisher of the dataset is &ldquo;Ayuntamiento de Madrid&rdquo;. The dataset license is OGL-ROU-1.0. It is free to commercial and no commercial use with some conditions. It is forbidden to distort the meaning of the information. The source of the documents to be reused must be cited. The date of the last update of the documents to be reused must be mentioned. It may not indicate, insinuate or suggest that the Madrid City Council participates, sponsors or supports the reuse that is carried out with the information. Metadata on the date of update and applicable reuse conditions, including the following, must be retained, not altered or deleted. Our licence CC BY-NC Others can remix, adapt, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial.</p>
+</body>
+</html>

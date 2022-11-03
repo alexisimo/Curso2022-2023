@@ -1,0 +1,42 @@
+@prefix ont: <https://datos.madrid.es/egob/catalogo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <https://datos.madrid.es/egob/catalogo/300154-0-calidad-aguas-regenerada> .
+@prefix aguaRegenerada: <https://datos.madrid.es/egob/catalogo/300154-0-calidad-aguas-regenerada/> .
+
+
+m1_1VIV_Turb: a ont:regeneratedWater ;
+            ont:fecha "1"^^xsd:string ;
+            ont:turb 1.1^^xsd:float ;
+            ont:ecoli 0^^xsd:float ;
+            ont:leg 0^^xsd:float ;
+            ont:ss 0^^xsd:float ;
+            ont:nem 0^^xsd:float ;
+            ont:lugar "EDAR de Viveros de la Villa"^^xsd:string ;
+
+
+m_2_1CHI_Turb: a ont:regeneratedWater ;
+            ont:fecha "1"^^xsd:string ;
+            ont:turb 1.2^^xsd:float ;
+            ont:ecoli 0^^xsd:float ;
+            ont:leg 0^^xsd:float ;
+            ont:ss 3.99^^xsd:float ;
+            ont:nem 0^^xsd:float ;
+            ont:lugar "a EDAR de La China"^^xsd:string ;
+
+m2_3GAV_Turb: a ont:regeneratedWater ;
+            ont:fecha "2"^^xsd:string ;
+            ont:turb 2,1^^xsd:float ;
+            ont:ecoli 0^^xsd:float ;
+            ont:leg 0^^xsd:float ;
+            ont:ss 3.99^^xsd:float ;
+            ont:nem 0^^xsd:float ;
+            ont:lugar "EDAR de La Gavia"^^xsd:string ;   
+
+m2_2REJ_Turb: a ont:regeneratedWater ;
+            ont:fecha "2"^^xsd:string ;
+            ont:turb 2,6^^xsd:float ;
+            ont:ecoli 0^^xsd:float ;
+            ont:leg 0^^xsd:float ;
+            ont:ss 5,2^^xsd:float ;
+            ont:nem 0.99^^xsd:float ;
+            ont:lugar "EDAR de Rejas "^^xsd:string ;   

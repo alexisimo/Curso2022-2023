@@ -1,0 +1,3790 @@
+@prefix ns1: <http://smartcity.linkeddata.es/transport/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/10> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4254027"^^xsd:float ;
+    ns1:coord_long "-3.6920816"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "10" ;
+    ns1:st_number "16" ;
+    ns1:street "CALLE DEL MARQUES DE LA ENSENADA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/100> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4247843"^^xsd:float ;
+    ns1:coord_long "-3.6738777"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "100" ;
+    ns1:st_number "99" ;
+    ns1:street "CALLE DE GOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/101> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4231223"^^xsd:float ;
+    ns1:coord_long "-3.6694246"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "101" ;
+    ns1:st_number "131" ;
+    ns1:street "CALLE DE JORGE JUAN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/102> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4211552"^^xsd:float ;
+    ns1:coord_long "-3.6840806"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "102" ;
+    ns1:st_number "95" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/103> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4303733"^^xsd:float ;
+    ns1:coord_long "-3.6865351"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:identifier "103" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DE JOSE ORTEGA Y GASSET" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/104> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4267658"^^xsd:float ;
+    ns1:coord_long "-3.6895792"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "104" ;
+    ns1:st_number "4" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/105> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4270684"^^xsd:float ;
+    ns1:coord_long "-3.6874745"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "105" ;
+    ns1:st_number "46" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/106a> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4248642"^^xsd:float ;
+    ns1:coord_long "-3.6878868"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "106a" ;
+    ns1:st_number "32" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/106b> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4250085"^^xsd:float ;
+    ns1:coord_long "-3.6878604"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "106b" ;
+    ns1:st_number "34" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/107> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4215952"^^xsd:float ;
+    ns1:coord_long "-3.6884243"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "107" ;
+    ns1:st_number "8" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/108> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4274425"^^xsd:float ;
+    ns1:coord_long "-3.670653"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "108" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE LAS MARTIRES CONCEPCIONISTAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/109> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4301281"^^xsd:float ;
+    ns1:coord_long "-3.6815253"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:identifier "109" ;
+    ns1:st_number "32" ;
+    ns1:street "CALLE DE JOSE ORTEGA Y GASSET" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/11> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4270517"^^xsd:float ;
+    ns1:coord_long "-3.7036192"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "11" ;
+    ns1:st_number "20" ;
+    ns1:street "CALLE DE SAN ANDRES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/110> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4347654"^^xsd:float ;
+    ns1:coord_long "-3.7201316"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/91> ;
+    ns1:identifier "110" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DE MORET" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/111a> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4335742"^^xsd:float ;
+    ns1:coord_long "-3.7174896"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/71> ;
+    ns1:identifier "111a" ;
+    ns1:st_number "8" ;
+    ns1:street "CALLE DEL ARCIPRESTE DE HITA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/111b> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.433982"^^xsd:float ;
+    ns1:coord_long "-3.7177783"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/71> ;
+    ns1:identifier "111b" ;
+    ns1:st_number "12" ;
+    ns1:street "CALLE DEL ARCIPRESTE DE HITA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/112> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4326267"^^xsd:float ;
+    ns1:coord_long "-3.7248727"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "112" ;
+    ns1:st_number "11" ;
+    ns1:street "PASEO DE MORET" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/113> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4277472"^^xsd:float ;
+    ns1:coord_long "-3.7207145"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/91> ;
+    ns1:identifier "113" ;
+    ns1:st_number "38" ;
+    ns1:street "PASEO DEL PINTOR ROSALES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/114> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4278211"^^xsd:float ;
+    ns1:coord_long "-3.7174151"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "114" ;
+    ns1:st_number "13" ;
+    ns1:street "CALLE DE QUINTANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/115> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4253802"^^xsd:float ;
+    ns1:coord_long "-3.7169626"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "115" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DEL MARQUES DE CERRALBO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/116a> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4240632"^^xsd:float ;
+    ns1:coord_long "-3.7117588"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "116a" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE ESPAÑA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/116b> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4241889"^^xsd:float ;
+    ns1:coord_long "-3.7118457"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "116b" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE ESPAÑA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/117> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4309046"^^xsd:float ;
+    ns1:coord_long "-3.7189152"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "117" ;
+    ns1:st_number "24" ;
+    ns1:street "CALLE DE ALTAMIRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/118> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4007959"^^xsd:float ;
+    ns1:coord_long "-3.688135"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:identifier "118" ;
+    ns1:st_number "16" ;
+    ns1:street "CALLE DE JUAN MARTIN EL EMPECINADO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/119> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4014567"^^xsd:float ;
+    ns1:coord_long "-3.6865777"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/27> ;
+    ns1:identifier "119" ;
+    ns1:st_number "7" ;
+    ns1:street "CALLE DE MENDEZ ALVARO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/12> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4285271"^^xsd:float ;
+    ns1:coord_long "-3.7062202"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "12" ;
+    ns1:st_number "87" ;
+    ns1:street "CALLE DE SAN BERNARDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/120> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4030362"^^xsd:float ;
+    ns1:coord_long "-3.6947791"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:identifier "120" ;
+    ns1:st_number "27" ;
+    ns1:street "CALLE DE PALOS DE LA FRONTERA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/121> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4018356"^^xsd:float ;
+    ns1:coord_long "-3.6986046"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:identifier "121" ;
+    ns1:st_number "58" ;
+    ns1:street "PASEO DE SANTA MARIA DE LA CABEZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/122> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.429524"^^xsd:float ;
+    ns1:coord_long "-3.6962626"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:identifier "122" ;
+    ns1:st_number "16" ;
+    ns1:street "CALLE DE SANTA ENGRACIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/123> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4306386"^^xsd:float ;
+    ns1:coord_long "-3.7134685"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/71> ;
+    ns1:identifier "123" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE GUZMAN EL BUENO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/124> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4308173"^^xsd:float ;
+    ns1:coord_long "-3.6993182"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
+    ns1:identifier "124" ;
+    ns1:st_number "18" ;
+    ns1:street "CALLE DE MANUEL SILVELA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/125> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4353128"^^xsd:float ;
+    ns1:coord_long "-3.6948316"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:identifier "125" ;
+    ns1:st_number "29" ;
+    ns1:street "CALLE DE FERNANDEZ DE LA HOZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/126> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4345672"^^xsd:float ;
+    ns1:coord_long "-3.7017424"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
+    ns1:identifier "126" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DEL GENERAL ALVAREZ DE CASTRO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/127> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4339055"^^xsd:float ;
+    ns1:coord_long "-3.7083987"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:identifier "127" ;
+    ns1:st_number "19" ;
+    ns1:street "CALLE DE FERNANDO EL CATOLICO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/128> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4390329"^^xsd:float ;
+    ns1:coord_long "-3.7155506"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/71> ;
+    ns1:identifier "128" ;
+    ns1:st_number "59" ;
+    ns1:street "CALLE DE CEA BERMUDEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/129> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4384684"^^xsd:float ;
+    ns1:coord_long "-3.6982818"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "129" ;
+    ns1:st_number "33" ;
+    ns1:street "CALLE DE JOSE ABASCAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/13> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4273652"^^xsd:float ;
+    ns1:coord_long "-3.7104727"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "13" ;
+    ns1:st_number "22" ;
+    ns1:street "CALLE DEL CONDE DUQUE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/130> a ns1:BikeStation ;
+    ns1:capacity 20 ;
+    ns1:coord_lat "40.4417195"^^xsd:float ;
+    ns1:coord_long "-3.7017071"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "130" ;
+    ns1:st_number "129" ;
+    ns1:street "CALLE DE SANTA ENGRACIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/131> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4417543"^^xsd:float ;
+    ns1:coord_long "-3.704022"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "131" ;
+    ns1:st_number "44" ;
+    ns1:street "CALLE DE BRAVO MURILLO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/132> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4463889"^^xsd:float ;
+    ns1:coord_long "-3.7035911"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "132" ;
+    ns1:st_number "168" ;
+    ns1:street "CALLE DE SANTA ENGRACIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/133> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4471673"^^xsd:float ;
+    ns1:coord_long "-3.7000292"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "133" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE DULCINEA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/134> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.444027"^^xsd:float ;
+    ns1:coord_long "-3.6955114"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "134" ;
+    ns1:st_number "58" ;
+    ns1:street "CALLE DE MARIA DE GUZMAN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/135> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4414845"^^xsd:float ;
+    ns1:coord_long "-3.6928901"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "135" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE SAN JUAN DE LA CRUZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/136> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4452833"^^xsd:float ;
+    ns1:coord_long "-3.6908127"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "136" ;
+    ns1:st_number "106" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/137> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4454958"^^xsd:float ;
+    ns1:coord_long "-3.6852925"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "137" ;
+    ns1:st_number "6" ;
+    ns1:street "PLAZA DE LA REPUBLICA ARGENTINA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/138> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4456884"^^xsd:float ;
+    ns1:coord_long "-3.6915818"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "138" ;
+    ns1:st_number "108" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/139> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4393558"^^xsd:float ;
+    ns1:coord_long "-3.6904495"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "139" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE JOSE GUTIERREZ ABASCAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/14> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4259913"^^xsd:float ;
+    ns1:coord_long "-3.7133768"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:identifier "14" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE VENTURA RODRIGUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/140> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.438628"^^xsd:float ;
+    ns1:coord_long "-3.6829045"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "140" ;
+    ns1:st_number "134" ;
+    ns1:street "CALLE DE VELAZQUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/141> a ns1:BikeStation ;
+    ns1:capacity 12 ;
+    ns1:coord_lat "40.4354253"^^xsd:float ;
+    ns1:coord_long "-3.6892902"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:identifier "141" ;
+    ns1:st_number "43" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/142> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4335262"^^xsd:float ;
+    ns1:coord_long "-3.6880402"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:identifier "142" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/143> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.434616"^^xsd:float ;
+    ns1:coord_long "-3.6782355"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
+    ns1:identifier "143" ;
+    ns1:st_number "54" ;
+    ns1:street "CALLE DE DIEGO DE LEON" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/144> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4323192"^^xsd:float ;
+    ns1:coord_long "-3.6754628"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
+    ns1:identifier "144" ;
+    ns1:st_number "50" ;
+    ns1:street "CALLE DE JUAN BRAVO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/145> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4297717"^^xsd:float ;
+    ns1:coord_long "-3.671401"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
+    ns1:identifier "145" ;
+    ns1:st_number "87" ;
+    ns1:street "CALLE DE JOSE ORTEGA Y GASSET" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/146> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4442406"^^xsd:float ;
+    ns1:coord_long "-3.67879"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "146" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE MARIA FRANCISCA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/147> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4483353"^^xsd:float ;
+    ns1:coord_long "-3.6795811"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "147" ;
+    ns1:st_number "45" ;
+    ns1:street "AVENIDA DEL DOCTOR ARCE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/148> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4510203"^^xsd:float ;
+    ns1:coord_long "-3.6816993"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "148" ;
+    ns1:st_number "210" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/149> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4498448"^^xsd:float ;
+    ns1:coord_long "-3.6878512"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "149" ;
+    ns1:st_number "42" ;
+    ns1:street "PASEO DE LA HABANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/15> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4262937"^^xsd:float ;
+    ns1:coord_long "-3.7073611"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "15" ;
+    ns1:st_number "10" ;
+    ns1:street "CALLE DEL NORTE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/150> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4491125"^^xsd:float ;
+    ns1:coord_long "-3.690541"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "150" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/151> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4488617"^^xsd:float ;
+    ns1:coord_long "-3.6952023"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "151" ;
+    ns1:st_number "10" ;
+    ns1:street "CALLE DE ORENSE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/152> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4527163"^^xsd:float ;
+    ns1:coord_long "-3.6989497"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "152" ;
+    ns1:st_number "4" ;
+    ns1:street "AVENIDA DEL GENERAL PERON" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/153> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.45235"^^xsd:float ;
+    ns1:coord_long "-3.6930894"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "153" ;
+    ns1:st_number "36" ;
+    ns1:street "AVENIDA DEL GENERAL PERON" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/154> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4547769"^^xsd:float ;
+    ns1:coord_long "-3.6946736"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "154" ;
+    ns1:st_number "36" ;
+    ns1:street "CALLE DE ORENSE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/155> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4572863"^^xsd:float ;
+    ns1:coord_long "-3.700864"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "155" ;
+    ns1:st_number "55" ;
+    ns1:street "CALLE DE SAN GERMÁN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/156> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4592406"^^xsd:float ;
+    ns1:coord_long "-3.6913229"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/63> ;
+    ns1:identifier "156" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE SOR ANGELA DE LA CRUZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/157> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.459282"^^xsd:float ;
+    ns1:coord_long "-3.6893305"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:identifier "157" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/158> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.45862"^^xsd:float ;
+    ns1:coord_long "-3.6847049"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:identifier "158" ;
+    ns1:st_number "22 A" ;
+    ns1:street "AVENIDA DE ALBERTO ALCOCER" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/159> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4542549"^^xsd:float ;
+    ns1:coord_long "-3.6837348"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:identifier "159" ;
+    ns1:st_number "63" ;
+    ns1:street "PASEO DE LA HABANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/16> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4229421"^^xsd:float ;
+    ns1:coord_long "-3.7074955"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "16" ;
+    ns1:st_number "22" ;
+    ns1:street "CALLE DE SAN BERNARDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/160> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4571995"^^xsd:float ;
+    ns1:coord_long "-3.6766176"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:identifier "160" ;
+    ns1:st_number "7" ;
+    ns1:street "CALLE DE COLOMBIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/161> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4221372"^^xsd:float ;
+    ns1:coord_long "-3.7220624"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/91> ;
+    ns1:identifier "161" ;
+    ns1:st_number "8" ;
+    ns1:street "PASEO DE LA FLORIDA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/162> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4035176"^^xsd:float ;
+    ns1:coord_long "-3.7107559"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "162" ;
+    ns1:st_number "28" ;
+    ns1:street "PASEO DE LOS OLMOS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/163> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4036349"^^xsd:float ;
+    ns1:coord_long "-3.7064372"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "163" ;
+    ns1:st_number "2" ;
+    ns1:street "PASEO DE LA ESPERANZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/164> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3971366"^^xsd:float ;
+    ns1:coord_long "-3.6944851"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/25> ;
+    ns1:identifier "164" ;
+    ns1:st_number "94" ;
+    ns1:street "PASEO DE LAS DELICIAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/165> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.3928841"^^xsd:float ;
+    ns1:coord_long "-3.6976134"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/23> ;
+    ns1:identifier "165" ;
+    ns1:st_number "49" ;
+    ns1:street "PASEO DE LA CHOPERA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/166> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4139396"^^xsd:float ;
+    ns1:coord_long "-3.7133382"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "166" ;
+    ns1:st_number "21" ;
+    ns1:street "CALLE DE SEGOVIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/167> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4137331"^^xsd:float ;
+    ns1:coord_long "-3.7176456"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/21> ;
+    ns1:identifier "167" ;
+    ns1:st_number "47 A" ;
+    ns1:street "CALLE DE SEGOVIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/168> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4045828"^^xsd:float ;
+    ns1:coord_long "-3.6959159"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:identifier "168" ;
+    ns1:st_number "32" ;
+    ns1:street "PASEO DE SANTA MARIA DE LA CABEZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/169> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.401578"^^xsd:float ;
+    ns1:coord_long "-3.713846"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "169" ;
+    ns1:st_number "181" ;
+    ns1:street "CALLE DE TOLEDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/17> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4231675"^^xsd:float ;
+    ns1:coord_long "-3.7041859"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "17" ;
+    ns1:st_number "2" ;
+    ns1:street "PLAZA DE CARLOS CAMBRONERO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/170> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4011039"^^xsd:float ;
+    ns1:coord_long "-3.704403"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "170" ;
+    ns1:st_number "21" ;
+    ns1:street "PASEO DE LA ESPERANZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/171> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3997626"^^xsd:float ;
+    ns1:coord_long "-3.6984459"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/25> ;
+    ns1:identifier "171" ;
+    ns1:st_number "97" ;
+    ns1:street "CALLE DE EMBAJADORES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/172> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4008683"^^xsd:float ;
+    ns1:coord_long "-3.6935448"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:identifier "172" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE BUSTAMANTE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/173> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3981757"^^xsd:float ;
+    ns1:coord_long "-3.7023615"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "173" ;
+    ns1:st_number "59" ;
+    ns1:street "PASEO DE LA ESPERANZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/174> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.397417"^^xsd:float ;
+    ns1:coord_long "-3.7063771"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "174" ;
+    ns1:st_number "8" ;
+    ns1:street "PASEO DE LAS YESERIAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/175> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.3962687"^^xsd:float ;
+    ns1:coord_long "-3.6983033"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/23> ;
+    ns1:identifier "175" ;
+    ns1:st_number "30" ;
+    ns1:street "CALLE DE JAIME EL CONQUISTADOR" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/176> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3942411"^^xsd:float ;
+    ns1:coord_long "-3.6936302"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/25> ;
+    ns1:identifier "176" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE ALICANTE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/177> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3915019"^^xsd:float ;
+    ns1:coord_long "-3.694087"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/25> ;
+    ns1:identifier "177" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE BOLIVAR" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/178> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4030242"^^xsd:float ;
+    ns1:coord_long "-3.6788939"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/31> ;
+    ns1:identifier "178" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE LEON GIL DE PALACIO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/179> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3979341"^^xsd:float ;
+    ns1:coord_long "-3.6690602"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/132> ;
+    ns1:identifier "179" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AUTOVIA M-30" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/18> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4209206"^^xsd:float ;
+    ns1:coord_long "-3.6995679"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "18" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DE PEDRO ZEROLO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/180> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3941252"^^xsd:float ;
+    ns1:coord_long "-3.6759244"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/27> ;
+    ns1:identifier "180" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE DE LA RETAMA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/181> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4181748"^^xsd:float ;
+    ns1:coord_long "-3.67664"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
+    ns1:identifier "181" ;
+    ns1:st_number "18" ;
+    ns1:street "CALLE DE IBIZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/182> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4187145"^^xsd:float ;
+    ns1:coord_long "-3.6655023"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/33> ;
+    ns1:identifier "182" ;
+    ns1:st_number "90" ;
+    ns1:street "CALLE DEL ALCALDE SAINZ DE BARANDA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/183> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4256358"^^xsd:float ;
+    ns1:coord_long "-3.6694506"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "183" ;
+    ns1:st_number "135" ;
+    ns1:street "CALLE DE HERMOSILLA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/184> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4260023"^^xsd:float ;
+    ns1:coord_long "-3.6653095"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/43> ;
+    ns1:identifier "184" ;
+    ns1:st_number "24" ;
+    ns1:street "PASEO DEL MARQUES DE ZAFRA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/185> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4250682"^^xsd:float ;
+    ns1:coord_long "-3.661533"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/43> ;
+    ns1:identifier "185" ;
+    ns1:st_number "4" ;
+    ns1:street "GLORIETA DEL MARQUES DE ZAFRA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/186> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.429069"^^xsd:float ;
+    ns1:coord_long "-3.6782783"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
+    ns1:identifier "186" ;
+    ns1:st_number "56" ;
+    ns1:street "CALLE DEL GENERAL PARDIÑAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/187> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4301353"^^xsd:float ;
+    ns1:coord_long "-3.6638407"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/43> ;
+    ns1:identifier "187" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE ALEJANDRO GONZALEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/188> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4311658"^^xsd:float ;
+    ns1:coord_long "-3.6589062"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/151> ;
+    ns1:identifier "188" ;
+    ns1:st_number "2" ;
+    ns1:street "AVENIDA DE DAROCA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/189> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4350206"^^xsd:float ;
+    ns1:coord_long "-3.6555431"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/154> ;
+    ns1:identifier "189" ;
+    ns1:st_number "18" ;
+    ns1:street "CALLE DE LA VIRGEN DE LA ALEGRIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/19> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4218997"^^xsd:float ;
+    ns1:coord_long "-3.6953951"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "19" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DE PRIM" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/190> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4343761"^^xsd:float ;
+    ns1:coord_long "-3.6834711"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:identifier "190" ;
+    ns1:st_number "91" ;
+    ns1:street "CALLE DE VELAZQUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/191> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4346168"^^xsd:float ;
+    ns1:coord_long "-3.6740365"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "191" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE ALONSO HEREDIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/192> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.431855"^^xsd:float ;
+    ns1:coord_long "-3.6714315"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "192" ;
+    ns1:st_number "3" ;
+    ns1:street "AVENIDA DE LOS TOREROS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/193> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4325204"^^xsd:float ;
+    ns1:coord_long "-3.665644"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "193" ;
+    ns1:st_number "47" ;
+    ns1:street "AVENIDA DE LOS TOREROS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/194> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4371986"^^xsd:float ;
+    ns1:coord_long "-3.6771947"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "194" ;
+    ns1:st_number "86" ;
+    ns1:street "CALLE DE FRANCISCO SILVELA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/195> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4392483"^^xsd:float ;
+    ns1:coord_long "-3.6754913"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/52> ;
+    ns1:identifier "195" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DEL PADRE INDALECIO HERNANDEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/196> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4440957"^^xsd:float ;
+    ns1:coord_long "-3.6750918"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/53> ;
+    ns1:identifier "196" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE SUERO DE QUIÑONES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/197> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4515501"^^xsd:float ;
+    ns1:coord_long "-3.6780252"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "197" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA DE CONCHA ESPINA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/198> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4331172"^^xsd:float ;
+    ns1:coord_long "-3.6915713"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:identifier "198" ;
+    ns1:st_number "2" ;
+    ns1:street "GLORIETA DE RUBEN DARIO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/199> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4343244"^^xsd:float ;
+    ns1:coord_long "-3.7148406"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/71> ;
+    ns1:identifier "199" ;
+    ns1:st_number "61" ;
+    ns1:street "CALLE DE FERNANDO EL CATOLICO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/1a> a ns1:BikeStation ;
+    ns1:capacity 30 ;
+    ns1:coord_lat "40.4171107"^^xsd:float ;
+    ns1:coord_long "-3.701998"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "1a" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/1b> a ns1:BikeStation ;
+    ns1:capacity 30 ;
+    ns1:coord_lat "40.4172132"^^xsd:float ;
+    ns1:coord_long "-3.7015636"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "1b" ;
+    ns1:st_number "6" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/2> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.42058"^^xsd:float ;
+    ns1:coord_long "-3.7056739"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "2" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE MIGUEL MOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/20> a ns1:BikeStation ;
+    ns1:capacity 30 ;
+    ns1:coord_lat "40.4191989"^^xsd:float ;
+    ns1:coord_long "-3.6952095"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "20" ;
+    ns1:st_number "49" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/200> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4336617"^^xsd:float ;
+    ns1:coord_long "-3.704671"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:identifier "200" ;
+    ns1:st_number "4" ;
+    ns1:street "GLORIETA DE QUEVEDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/201> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4387323"^^xsd:float ;
+    ns1:coord_long "-3.7038161"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "201" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE JOSE ABASCAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/202> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4411686"^^xsd:float ;
+    ns1:coord_long "-3.7080969"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/76> ;
+    ns1:identifier "202" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE SANTANDER" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/203> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4417547"^^xsd:float ;
+    ns1:coord_long "-3.7144239"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/76> ;
+    ns1:identifier "203" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DEL GENERAL AMPUDIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/204> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4476606"^^xsd:float ;
+    ns1:coord_long "-3.7041702"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/61> ;
+    ns1:identifier "204" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DEL DOCTOR SANTERO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/205> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4535024"^^xsd:float ;
+    ns1:coord_long "-3.7033408"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/61> ;
+    ns1:identifier "205" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE NAVARRA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/206> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4607994"^^xsd:float ;
+    ns1:coord_long "-3.6990499"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/66> ;
+    ns1:identifier "206" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE DEL MARQUES DE VIANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/207> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4630291"^^xsd:float ;
+    ns1:coord_long "-3.6973991"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/65> ;
+    ns1:identifier "207" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE LAS AZUCENAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/208> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4665125"^^xsd:float ;
+    ns1:coord_long "-3.6886852"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
+    ns1:identifier "208" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/209> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4656872"^^xsd:float ;
+    ns1:coord_long "-3.6887875"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:identifier "209" ;
+    ns1:st_number "9" ;
+    ns1:street "PLAZA DE CASTILLA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/210> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4197538"^^xsd:float ;
+    ns1:coord_long "-3.702631"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "210" ;
+    ns1:st_number "9" ;
+    ns1:street "CALLE DE LAS TRES CRUCES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/211> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4206168"^^xsd:float ;
+    ns1:coord_long "-3.7025369"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "211" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DEL DESENGAÑO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/212> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3981605"^^xsd:float ;
+    ns1:coord_long "-3.7165313"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/113> ;
+    ns1:identifier "212" ;
+    ns1:st_number "9" ;
+    ns1:street "GLORIETA DEL MARQUES DE VADILLO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/213> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3889363"^^xsd:float ;
+    ns1:coord_long "-3.7001575"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/125> ;
+    ns1:identifier "213" ;
+    ns1:st_number "129" ;
+    ns1:street "CALLE DE ANTONIO LOPEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/214> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4434012"^^xsd:float ;
+    ns1:coord_long "-3.6569597"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/155> ;
+    ns1:identifier "214" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE LA CONDESA DE VENADITO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/215> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4296903"^^xsd:float ;
+    ns1:coord_long "-3.6409697"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/152> ;
+    ns1:identifier "215" ;
+    ns1:st_number "77" ;
+    ns1:street "CALLE DE GUTIERRE DE CETINA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/216> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4140528"^^xsd:float ;
+    ns1:coord_long "-3.7288948"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/102> ;
+    ns1:identifier "216" ;
+    ns1:st_number "3" ;
+    ns1:street "PLAZA DE LA PUERTA DEL ANGEL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/217> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4810028"^^xsd:float ;
+    ns1:coord_long "-3.6891094"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/85> ;
+    ns1:identifier "217" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DE PEDRO RICO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/218> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4105519"^^xsd:float ;
+    ns1:coord_long "-3.6573999"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/144> ;
+    ns1:identifier "218" ;
+    ns1:st_number "28" ;
+    ns1:street "CALLE DEL CAMINO DE LOS VINATEROS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/219> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4083961"^^xsd:float ;
+    ns1:coord_long "-3.6467783"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/143> ;
+    ns1:identifier "219" ;
+    ns1:st_number "108" ;
+    ns1:street "CALLE DEL CAMINO DE LOS VINATEROS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/22> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4201452"^^xsd:float ;
+    ns1:coord_long "-3.7064995"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "22" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE JACOMETREZO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/220> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4061548"^^xsd:float ;
+    ns1:coord_long "-3.6514264"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/144> ;
+    ns1:identifier "220" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DEL ARROYO DE LAS PILILLAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/221> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4004579"^^xsd:float ;
+    ns1:coord_long "-3.6346859"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/141> ;
+    ns1:identifier "221" ;
+    ns1:st_number "346" ;
+    ns1:street "CALLE DE LA HACIENDA DE PAVONES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/222> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3917816"^^xsd:float ;
+    ns1:coord_long "-3.7026887"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/125> ;
+    ns1:identifier "222" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE DE EUGENIO CAXES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/223> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4064341"^^xsd:float ;
+    ns1:coord_long "-3.7245226"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/101> ;
+    ns1:identifier "223" ;
+    ns1:st_number "48" ;
+    ns1:street "PASEO DE LA ERMITA DEL SANTO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/224> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.408882"^^xsd:float ;
+    ns1:coord_long "-3.7288262"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/102> ;
+    ns1:identifier "224" ;
+    ns1:st_number "52" ;
+    ns1:street "CALLE DE CARAMUEL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/225> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4026388"^^xsd:float ;
+    ns1:coord_long "-3.6601933"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/136> ;
+    ns1:identifier "225" ;
+    ns1:st_number "33" ;
+    ns1:street "CALLE DE LA SIERRA TOLEDANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/226> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3991986"^^xsd:float ;
+    ns1:coord_long "-3.6606789"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/136> ;
+    ns1:identifier "226" ;
+    ns1:st_number "94" ;
+    ns1:street "CAMINO DE VALDERRIBAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/227> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3940355"^^xsd:float ;
+    ns1:coord_long "-3.6661421"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/132> ;
+    ns1:identifier "227" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE DEL ARROYO DEL OLIVAR" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/228> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3943842"^^xsd:float ;
+    ns1:coord_long "-3.7080437"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/111> ;
+    ns1:identifier "228" ;
+    ns1:st_number "9" ;
+    ns1:street "CALLE DE SAN DELFIN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/229> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4370782"^^xsd:float ;
+    ns1:coord_long "-3.6486507"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/154> ;
+    ns1:identifier "229" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE DE JOSE DEL HIERRO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/23> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4202137"^^xsd:float ;
+    ns1:coord_long "-3.7082901"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "23" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE SANTO DOMINGO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/230> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4436986"^^xsd:float ;
+    ns1:coord_long "-3.6491034"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/155> ;
+    ns1:identifier "230" ;
+    ns1:st_number "32" ;
+    ns1:street "CALLE DE CARLOTA O'NEILL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/231> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.439748"^^xsd:float ;
+    ns1:coord_long "-3.6558172"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/155> ;
+    ns1:identifier "231" ;
+    ns1:st_number "14" ;
+    ns1:street "CALLE DE LOS DERECHOS HUMANOS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/232> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4328362"^^xsd:float ;
+    ns1:coord_long "-3.6485701"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/151> ;
+    ns1:identifier "232" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE JOSE MARIA PEREDA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/233> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4229144"^^xsd:float ;
+    ns1:coord_long "-3.655633"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/151> ;
+    ns1:identifier "233" ;
+    ns1:st_number "12" ;
+    ns1:street "AVENIDA DEL MARQUES DE CORBERA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/234> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.426163"^^xsd:float ;
+    ns1:coord_long "-3.651125"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/151> ;
+    ns1:identifier "234" ;
+    ns1:st_number "52" ;
+    ns1:street "AVENIDA DEL MARQUES DE CORBERA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/235> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.3889853"^^xsd:float ;
+    ns1:coord_long "-3.6911834"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/24> ;
+    ns1:identifier "235" ;
+    ns1:st_number "1 B" ;
+    ns1:street "CALLE DEL SODIO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/236> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4074236"^^xsd:float ;
+    ns1:coord_long "-3.7171449"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/21> ;
+    ns1:identifier "236" ;
+    ns1:st_number "20" ;
+    ns1:street "PASEO IMPERIAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/237> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.451395"^^xsd:float ;
+    ns1:coord_long "-3.7105146"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/61> ;
+    ns1:identifier "237" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE FRANCISCO BALSEIRO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/238> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4562183"^^xsd:float ;
+    ns1:coord_long "-3.6932474"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:identifier "238" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE DE SAN GERMÁN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/239> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4567345"^^xsd:float ;
+    ns1:coord_long "-3.7079276"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/66> ;
+    ns1:identifier "239" ;
+    ns1:st_number "62" ;
+    ns1:street "CALLE DE FRANCOS RODRIGUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/24> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.417906"^^xsd:float ;
+    ns1:coord_long "-3.7105866"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "24" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE CARLOS III" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/240> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4367138"^^xsd:float ;
+    ns1:coord_long "-3.6609886"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "240" ;
+    ns1:st_number "9" ;
+    ns1:street "AVENIDA DE BRASILIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/241> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4377568"^^xsd:float ;
+    ns1:coord_long "-3.6677796"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "241" ;
+    ns1:st_number "23" ;
+    ns1:street "AVENIDA DE CAMILO JOSE CELA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/242> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4394662"^^xsd:float ;
+    ns1:coord_long "-3.6629058"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "242" ;
+    ns1:st_number "56" ;
+    ns1:street "AVENIDA DE BRUSELAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/243> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4351648"^^xsd:float ;
+    ns1:coord_long "-3.6700894"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:identifier "243" ;
+    ns1:st_number "38" ;
+    ns1:street "CALLE DE CARTAGENA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/244> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4398513"^^xsd:float ;
+    ns1:coord_long "-3.7175468"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/76> ;
+    ns1:identifier "244" ;
+    ns1:st_number "44" ;
+    ns1:street "CALLE DE ISAAC PERAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/245> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4364656"^^xsd:float ;
+    ns1:coord_long "-3.7101726"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:identifier "245" ;
+    ns1:st_number "63" ;
+    ns1:street "CALLE DE GALILEO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/246> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.436026"^^xsd:float ;
+    ns1:coord_long "-3.699252"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
+    ns1:identifier "246" ;
+    ns1:st_number "87" ;
+    ns1:street "CALLE DE SANTA ENGRACIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/247> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4383672"^^xsd:float ;
+    ns1:coord_long "-3.692843"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/75> ;
+    ns1:identifier "247" ;
+    ns1:st_number "90" ;
+    ns1:street "CALLE DE ZURBANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/248> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4743243"^^xsd:float ;
+    ns1:coord_long "-3.6878414"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/85> ;
+    ns1:identifier "248" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE SINESIO DELGADO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/249> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4794159"^^xsd:float ;
+    ns1:coord_long "-3.6852959"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
+    ns1:identifier "249" ;
+    ns1:st_number "298" ;
+    ns1:street "PASEO DE LA CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/250> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4408151"^^xsd:float ;
+    ns1:coord_long "-3.6861"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:identifier "250" ;
+    ns1:st_number "113 b" ;
+    ns1:street "CALLE DE SERRANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/251> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.444183"^^xsd:float ;
+    ns1:coord_long "-3.6668532"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/52> ;
+    ns1:identifier "251" ;
+    ns1:st_number "31" ;
+    ns1:street "CALLE DE SANTA HORTENSIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/252> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4715645"^^xsd:float ;
+    ns1:coord_long "-3.6839094"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
+    ns1:identifier "252" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE RODRIGUEZ JAEN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/253> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.455606"^^xsd:float ;
+    ns1:coord_long "-3.688443"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:identifier "253" ;
+    ns1:st_number "7" ;
+    ns1:street "CALLE DEL DOCTOR FLEMING" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/254> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4610436"^^xsd:float ;
+    ns1:coord_long "-3.6765549"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:identifier "254" ;
+    ns1:st_number "3" ;
+    ns1:street "AVENIDA DE PIO XII" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/255> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4637286"^^xsd:float ;
+    ns1:coord_long "-3.6851815"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:identifier "255" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DEL GENERAL LOPEZ POZAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/256> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4463599"^^xsd:float ;
+    ns1:coord_long "-3.7138353"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "256" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE BEATRIZ DE BOBADILLA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/257> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.438804"^^xsd:float ;
+    ns1:coord_long "-3.73029"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "257" ;
+    ns1:st_number "1" ;
+    ns1:street "AVENIDA DE JUAN DE HERRERA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/258> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.449019"^^xsd:float ;
+    ns1:coord_long "-3.7273004"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "258" ;
+    ns1:st_number "14" ;
+    ns1:street "AVENIDA COMPLUTENSE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/259> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4444176"^^xsd:float ;
+    ns1:coord_long "-3.727031"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "259" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE RAMON Y CAJAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/25a> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4173416"^^xsd:float ;
+    ns1:coord_long "-3.7059978"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "25a" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DEL CELENQUE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/25b> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4172593"^^xsd:float ;
+    ns1:coord_long "-3.7060243"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "25b" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DEL CELENQUE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/26> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4238308"^^xsd:float ;
+    ns1:coord_long "-3.6945421"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "26" ;
+    ns1:st_number "8" ;
+    ns1:street "PLAZA DE LAS SALESAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/260> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4482316"^^xsd:float ;
+    ns1:coord_long "-3.7272637"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "260" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE JOSE ANTONIO NOVAIS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/261> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4505032"^^xsd:float ;
+    ns1:coord_long "-3.7292576"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:identifier "261" ;
+    ns1:st_number "7" ;
+    ns1:street "AVENIDA COMPLUTENSE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/27> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4132831"^^xsd:float ;
+    ns1:coord_long "-3.6955803"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "27" ;
+    ns1:st_number "6" ;
+    ns1:street "CALLE DE JESUS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/28> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4180695"^^xsd:float ;
+    ns1:coord_long "-3.6983662"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "28" ;
+    ns1:st_number "26" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/29> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.416244"^^xsd:float ;
+    ns1:coord_long "-3.6958008"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "29" ;
+    ns1:st_number "25" ;
+    ns1:street "CALLE DEL MARQUES DE CUBAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/3> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4303224"^^xsd:float ;
+    ns1:coord_long "-3.7072122"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:identifier "3" ;
+    ns1:st_number "2" ;
+    ns1:street "PLAZA DEL CONDE DEL VALLE DE SUCHIL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/30> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4193355"^^xsd:float ;
+    ns1:coord_long "-3.7115428"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "30" ;
+    ns1:st_number "6" ;
+    ns1:street "CALLE DE PAVIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/31> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4163446"^^xsd:float ;
+    ns1:coord_long "-3.706625"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "31" ;
+    ns1:st_number "18" ;
+    ns1:street "CALLE MAYOR" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/32> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.4148511"^^xsd:float ;
+    ns1:coord_long "-3.7061355"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "32" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DE LA PROVINCIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/33> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4164757"^^xsd:float ;
+    ns1:coord_long "-3.7032096"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "33" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE LAS CARRETAS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/34> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4144117"^^xsd:float ;
+    ns1:coord_long "-3.7035044"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "34" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE JACINTO BENAVENTE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/35> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4141792"^^xsd:float ;
+    ns1:coord_long "-3.7103676"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "35" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DEL CORDON" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/36> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4168229"^^xsd:float ;
+    ns1:coord_long "-3.711764"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "36" ;
+    ns1:st_number "5" ;
+    ns1:street "PLAZA DE RAMALES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/37> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4108606"^^xsd:float ;
+    ns1:coord_long "-3.7141234"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "37" ;
+    ns1:st_number "5" ;
+    ns1:street "PLAZA DE SAN FRANCISCO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/38> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4112961"^^xsd:float ;
+    ns1:coord_long "-3.7114443"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "38" ;
+    ns1:st_number "1" ;
+    ns1:street "CARRERA DE SAN FRANCISCO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/39> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4112662"^^xsd:float ;
+    ns1:coord_long "-3.7090043"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "39" ;
+    ns1:st_number "16" ;
+    ns1:street "PLAZA DE LA CEBADA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/4> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4285905"^^xsd:float ;
+    ns1:coord_long "-3.7026739"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "4" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE MANUELA MALASAÑA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/40> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4137865"^^xsd:float ;
+    ns1:coord_long "-3.7047463"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "40" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DEL CONDE DE ROMANONES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/41> a ns1:BikeStation ;
+    ns1:capacity 18 ;
+    ns1:coord_lat "40.412228"^^xsd:float ;
+    ns1:coord_long "-3.6989898"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "41" ;
+    ns1:st_number "56" ;
+    ns1:street "CALLE DE ATOCHA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/42> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4107714"^^xsd:float ;
+    ns1:coord_long "-3.6982294"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "42" ;
+    ns1:st_number "32" ;
+    ns1:street "CALLE DE SANTA ISABEL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/43> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4100889"^^xsd:float ;
+    ns1:coord_long "-3.7025446"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "43" ;
+    ns1:st_number "36" ;
+    ns1:street "CALLE DE LAVAPIES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/44> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4098162"^^xsd:float ;
+    ns1:coord_long "-3.7039138"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "44" ;
+    ns1:st_number "35" ;
+    ns1:street "CALLE DEL MESON DE PAREDES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/45> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4069486"^^xsd:float ;
+    ns1:coord_long "-3.7111381"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "45" ;
+    ns1:st_number "1" ;
+    ns1:street "GLORIETA DE LA PUERTA DE TOLEDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/46> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4054496"^^xsd:float ;
+    ns1:coord_long "-3.7071178"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "46" ;
+    ns1:st_number "28" ;
+    ns1:street "CALLE DE LA RIBERA DE CURTIDORES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/47> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4046233"^^xsd:float ;
+    ns1:coord_long "-3.702755"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/22> ;
+    ns1:identifier "47" ;
+    ns1:st_number "7 B" ;
+    ns1:street "GLORIETA DE EMBAJADORES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/48> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4054473"^^xsd:float ;
+    ns1:coord_long "-3.7020997"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "48" ;
+    ns1:st_number "2" ;
+    ns1:street "GLORIETA DE EMBAJADORES" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/49> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4060497"^^xsd:float ;
+    ns1:coord_long "-3.6992427"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "49" ;
+    ns1:st_number "36" ;
+    ns1:street "RONDA DE ATOCHA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/5> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.428362"^^xsd:float ;
+    ns1:coord_long "-3.7020743"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "5" ;
+    ns1:st_number "106" ;
+    ns1:street "CALLE DE FUENCARRAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/50> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4083102"^^xsd:float ;
+    ns1:coord_long "-3.69322"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "50" ;
+    ns1:st_number "57" ;
+    ns1:street "CALLE DE SANTA ISABEL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/51> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4077234"^^xsd:float ;
+    ns1:coord_long "-3.6935934"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "51" ;
+    ns1:st_number "7" ;
+    ns1:street "PLAZA DEL EMPERADOR CARLOS V" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/52> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4145181"^^xsd:float ;
+    ns1:coord_long "-3.7007838"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "52" ;
+    ns1:st_number "9" ;
+    ns1:street "PLAZA DE SANTA ANA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/53> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4082802"^^xsd:float ;
+    ns1:coord_long "-3.7007295"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/12> ;
+    ns1:identifier "53" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE VALENCIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/54> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4266233"^^xsd:float ;
+    ns1:coord_long "-3.7003435"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "54" ;
+    ns1:st_number "7" ;
+    ns1:street "CALLE DE BARCELO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/55> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4240716"^^xsd:float ;
+    ns1:coord_long "-3.7019295"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "55" ;
+    ns1:st_number "8" ;
+    ns1:street "PLAZA DE SAN ILDEFONSO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/56> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.418484"^^xsd:float ;
+    ns1:coord_long "-3.7032875"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:identifier "56" ;
+    ns1:st_number "1" ;
+    ns1:street "PLAZA DEL CARMEN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/57> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4296363"^^xsd:float ;
+    ns1:coord_long "-3.7128181"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "57" ;
+    ns1:st_number "24" ;
+    ns1:street "CALLE DE SANTA CRUZ DE MARCENADO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/58> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4222601"^^xsd:float ;
+    ns1:coord_long "-3.6979458"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "58" ;
+    ns1:st_number "33" ;
+    ns1:street "CALLE DE AUGUSTO FIGUEROA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/59> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4254802"^^xsd:float ;
+    ns1:coord_long "-3.7041167"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:identifier "59" ;
+    ns1:st_number "30" ;
+    ns1:street "CALLE DEL ESPIRITU SANTO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/6> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4241633"^^xsd:float ;
+    ns1:coord_long "-3.6984093"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "6" ;
+    ns1:st_number "63" ;
+    ns1:street "CALLE DE HORTALEZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/60> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4194508"^^xsd:float ;
+    ns1:coord_long "-3.6881994"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "60" ;
+    ns1:st_number "7" ;
+    ns1:street "PLAZA DE LA INDEPENDENCIA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/61> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4214379"^^xsd:float ;
+    ns1:coord_long "-3.675206"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
+    ns1:identifier "61" ;
+    ns1:st_number "30" ;
+    ns1:street "CALLE DE O'DONNELL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/62> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4212986"^^xsd:float ;
+    ns1:coord_long "-3.6724223"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
+    ns1:identifier "62" ;
+    ns1:st_number "48" ;
+    ns1:street "CALLE DE O'DONNELL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/63> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4178926"^^xsd:float ;
+    ns1:coord_long "-3.6706508"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
+    ns1:identifier "63" ;
+    ns1:st_number "64" ;
+    ns1:street "CALLE DE IBIZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/65> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4166859"^^xsd:float ;
+    ns1:coord_long "-3.6893825"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "65" ;
+    ns1:st_number "15" ;
+    ns1:street "CALLE DE ANTONIO MAURA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/67> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.410829"^^xsd:float ;
+    ns1:coord_long "-3.6931349"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "67" ;
+    ns1:st_number "28" ;
+    ns1:street "CALLE DE ALMADEN" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/68> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.412781"^^xsd:float ;
+    ns1:coord_long "-3.6911649"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "68" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE DE ESPALTER" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/69> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4100609"^^xsd:float ;
+    ns1:coord_long "-3.6888669"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "69" ;
+    ns1:st_number "54" ;
+    ns1:street "CALLE DE ALFONSO XII" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/7> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4252161"^^xsd:float ;
+    ns1:coord_long "-3.6977399"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:identifier "7" ;
+    ns1:st_number "75" ;
+    ns1:street "CALLE DE HORTALEZA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/70> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4152203"^^xsd:float ;
+    ns1:coord_long "-3.6777994"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "70" ;
+    ns1:st_number "63" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/71> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4160054"^^xsd:float ;
+    ns1:coord_long "-3.674021"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/36> ;
+    ns1:identifier "71" ;
+    ns1:st_number "28" ;
+    ns1:street "CALLE DEL DOCE DE OCTUBRE" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/72> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.415721"^^xsd:float ;
+    ns1:coord_long "-3.669623"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/36> ;
+    ns1:identifier "72" ;
+    ns1:st_number "62" ;
+    ns1:street "CALLE DEL DOCTOR ESQUERDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/73> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.411463"^^xsd:float ;
+    ns1:coord_long "-3.669099"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/33> ;
+    ns1:identifier "73" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE LOS ASTROS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/74> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4117601"^^xsd:float ;
+    ns1:coord_long "-3.6765768"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "74" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/75> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4083387"^^xsd:float ;
+    ns1:coord_long "-3.6784149"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "75" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/76> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4072851"^^xsd:float ;
+    ns1:coord_long "-3.6751544"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/36> ;
+    ns1:identifier "76" ;
+    ns1:st_number "19" ;
+    ns1:street "AVENIDA DEL MEDITERRANEO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/77> a ns1:BikeStation ;
+    ns1:capacity 22 ;
+    ns1:coord_lat "40.4063347"^^xsd:float ;
+    ns1:coord_long "-3.6707742"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/31> ;
+    ns1:identifier "77" ;
+    ns1:st_number "8" ;
+    ns1:street "PLAZA DEL CONDE DE CASAL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/78> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4005704"^^xsd:float ;
+    ns1:coord_long "-3.6745783"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
+    ns1:identifier "78" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DEL CERRO DE LA PLATA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/79> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4050482"^^xsd:float ;
+    ns1:coord_long "-3.6805524"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/31> ;
+    ns1:identifier "79" ;
+    ns1:st_number "38" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/8> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4277143"^^xsd:float ;
+    ns1:coord_long "-3.6953067"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:identifier "8" ;
+    ns1:st_number "6" ;
+    ns1:street "PLAZA DE ALONSO MARTINEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/80a> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4074122"^^xsd:float ;
+    ns1:coord_long "-3.6904816"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/27> ;
+    ns1:identifier "80a" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA DE LA CIUDAD DE BARCELONA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/80b> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.407626"^^xsd:float ;
+    ns1:coord_long "-3.6907238"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/27> ;
+    ns1:identifier "80b" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA DE LA CIUDAD DE BARCELONA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/81> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4095758"^^xsd:float ;
+    ns1:coord_long "-3.6919663"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "81" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE DE CLAUDIO MOYANO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/82> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4084793"^^xsd:float ;
+    ns1:coord_long "-3.669683"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/33> ;
+    ns1:identifier "82" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE LA LIRA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/83> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4132589"^^xsd:float ;
+    ns1:coord_long "-3.6745339"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/36> ;
+    ns1:identifier "83" ;
+    ns1:st_number "8 B" ;
+    ns1:street "CALLE DE PIO BAROJA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/84> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4033695"^^xsd:float ;
+    ns1:coord_long "-3.6726923"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
+    ns1:identifier "84" ;
+    ns1:st_number "191" ;
+    ns1:street "CALLE DEL DOCTOR ESQUERDO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/85> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4211415"^^xsd:float ;
+    ns1:coord_long "-3.6799299"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:identifier "85" ;
+    ns1:st_number "9" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/86> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4185779"^^xsd:float ;
+    ns1:coord_long "-3.6933298"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/13> ;
+    ns1:identifier "86" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PASEO DEL PRADO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/87> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4276717"^^xsd:float ;
+    ns1:coord_long "-3.6835631"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "87" ;
+    ns1:st_number "44" ;
+    ns1:street "CALLE DE AYALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/88> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4312077"^^xsd:float ;
+    ns1:coord_long "-3.6837471"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:identifier "88" ;
+    ns1:st_number "73" ;
+    ns1:street "CALLE DE VELAZQUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/89> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4272628"^^xsd:float ;
+    ns1:coord_long "-3.6751716"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "89" ;
+    ns1:st_number "102" ;
+    ns1:street "CALLE DE AYALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/9> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4156134"^^xsd:float ;
+    ns1:coord_long "-3.7094093"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:identifier "9" ;
+    ns1:st_number "9" ;
+    ns1:street "PLAZA DE SAN MIGUEL" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/90> a ns1:BikeStation ;
+    ns1:capacity 30 ;
+    ns1:coord_lat "40.4250878"^^xsd:float ;
+    ns1:coord_long "-3.6837297"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "90" ;
+    ns1:st_number "18" ;
+    ns1:street "CALLE DE GOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/91> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4261113"^^xsd:float ;
+    ns1:coord_long "-3.6788203"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "91" ;
+    ns1:st_number "73" ;
+    ns1:street "CALLE DE HERMOSILLA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/92> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4262237"^^xsd:float ;
+    ns1:coord_long "-3.6864821"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "92" ;
+    ns1:st_number "45" ;
+    ns1:street "CALLE DE CLAUDIO COELLO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/93> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4256984"^^xsd:float ;
+    ns1:coord_long "-3.6894124"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "93" ;
+    ns1:st_number "3" ;
+    ns1:street "CALLE DE GOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/94> a ns1:BikeStation ;
+    ns1:capacity 21 ;
+    ns1:coord_lat "40.4233686"^^xsd:float ;
+    ns1:coord_long "-3.6907044"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "94" ;
+    ns1:st_number "22" ;
+    ns1:street "PASEO DE RECOLETOS" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/95> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4226634"^^xsd:float ;
+    ns1:coord_long "-3.6869914"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "95" ;
+    ns1:st_number "19" ;
+    ns1:street "CALLE DE CLAUDIO COELLO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/96> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4220516"^^xsd:float ;
+    ns1:coord_long "-3.6820471"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:identifier "96" ;
+    ns1:st_number "111" ;
+    ns1:street "CALLE DE ALCALA" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/97> a ns1:BikeStation ;
+    ns1:capacity 27 ;
+    ns1:coord_lat "40.4224846"^^xsd:float ;
+    ns1:coord_long "-3.6801515"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "97" ;
+    ns1:st_number "1" ;
+    ns1:street "AVENIDA DE MENENDEZ PELAYO" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/98> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4241911"^^xsd:float ;
+    ns1:coord_long "-3.6754079"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "98" ;
+    ns1:st_number "5" ;
+    ns1:street "AVENIDA DE FELIPE II" .
+
+<http://smartcity.linkeddata.es/transport/data/bikeStation/99> a ns1:BikeStation ;
+    ns1:capacity 24 ;
+    ns1:coord_lat "40.4261048"^^xsd:float ;
+    ns1:coord_long "-3.6739638"^^xsd:float ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:identifier "99" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE ALCANTARA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/1> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/21> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "1" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE CHULAPOS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/10> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "10" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA ALFONSO XIII" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/11> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "11" ;
+    ns1:st_number "74" ;
+    ns1:street "CALLE VELÁZQUEZ" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/12> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "12" ;
+    ns1:st_number "52" ;
+    ns1:street "PASEO CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/13> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/51> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "13" ;
+    ns1:st_number "106" ;
+    ns1:street "PASEO CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/14> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/54> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "14" ;
+    ns1:st_number "160" ;
+    ns1:street "PASEO CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/15> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "15" ;
+    ns1:st_number "6" ;
+    ns1:street "CALLE CARDENAL MARCELO SPÍNOLA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/16> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "16" ;
+    ns1:st_number "42" ;
+    ns1:street "CALLE FERNÁNDEZ DE LOS RÍOS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/17> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/72> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "17" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DEL CONDE DE VALLE DE" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/18> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "18" ;
+    ns1:st_number "16" ;
+    ns1:street "CALLE MANUEL SILVELA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/19> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "19" ;
+    ns1:st_number "11" ;
+    ns1:street "AVENIDA ALBERTO ALCOCER" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/2> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/26> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "2" ;
+    ns1:st_number "1" ;
+    ns1:street "RONDA DE VALENCIA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/20> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/73> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "20" ;
+    ns1:st_number "115" ;
+    ns1:street "CALLE SANTA ENGRACIA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/21> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/74> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "21" ;
+    ns1:st_number "33" ;
+    ns1:street "PASEO CASTELLANA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/22> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/85> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "22" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE SINESIO DELGADO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/23> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/156> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "23" ;
+    ns1:st_number "29" ;
+    ns1:street "CALLE BUESO PINEDA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/24> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "24" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE LA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/25> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/55> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "25" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE MATEO INURRIA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/26> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/66> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "26" ;
+    ns1:st_number "64" ;
+    ns1:street "CALLE OFELIA NIETO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/27> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/86> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "27" ;
+    ns1:st_number "8" ;
+    ns1:street "CALLE DEL ABETAL" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/28> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/93> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "28" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CRED HIPODROMOCR" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/29> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/96> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "29" ;
+    ns1:st_number "34" ;
+    ns1:street "A6 - AVENIDA VICTORIA 34 (CRED EL PLANTIO)" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/3> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "3" ;
+    ns1:st_number "4" ;
+    ns1:street "CALLE CERRO DE LA PLATA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/30> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "30" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CRED A5 PK 9" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/31> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "31" ;
+    ns1:st_number "6" ;
+    ns1:street "AVENIDA DE LA PESETA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/32> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/107> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "32" ;
+    ns1:st_number "51" ;
+    ns1:street "CALLE DE JOSÉ DE CADALSO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/33> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/134> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Ecolineras> ;
+    ns1:identifier "33" ;
+    ns1:st_number "319" ;
+    ns1:street "AVENIDA DE LA ALBUFERA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/34> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/166> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "34" ;
+    ns1:st_number "15" ;
+    ns1:street "AVENIDA MARÍA DE PORTUGAL" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/35> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/173> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "35" ;
+    ns1:st_number "147" ;
+    ns1:street "AVDA. DE LOS ROSALES" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/36> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/183> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "36" ;
+    ns1:st_number "74" ;
+    ns1:street "AVENIDA REAL DE ARGANDA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/37> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "37" ;
+    ns1:st_number "S/N" ;
+    ns1:street "BARAJAS II A2 KM 12" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/38> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/16> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns1:identifier "38" ;
+    ns1:st_number "6" ;
+    ns1:street "PLAZA DE JACINTO BENAVENTE" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/39> a ns1:ChargeStation ;
+    ns1:capacity 12 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns1:identifier "39" ;
+    ns1:st_number "S/N" ;
+    ns1:street "JARDINES DEL DESCUBRIMIENTO - ACCESO A COMPLEJO DE APARCAMIENTOS SUBTERRÁNEOS POR CALLE DE LA ARMADA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/4> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "4" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE ALFONSO XII" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/40> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/45> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns1:identifier "40" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE MARQUÉS DE" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/41> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/56> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> ;
+    ns1:identifier "41" ;
+    ns1:st_number "36" ;
+    ns1:street "CALLE HIEDRA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/42> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/11> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "42" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE LA CEBADA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/43> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/15> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "43" ;
+    ns1:st_number "9" ;
+    ns1:street "CALLE ALBERTO AGUILERA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/44> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/32> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "44" ;
+    ns1:st_number "6" ;
+    ns1:street "PLAZA DEL CONDE DE CASAL" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/45> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/88> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "45" ;
+    ns1:st_number "20" ;
+    ns1:street "CALLE DEL MONASTERIO DE ARLANZA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/46> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/163> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "46" ;
+    ns1:st_number "105" ;
+    ns1:street "AVENIDA DE MACHUPICHU" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/47> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/166> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Galp%20Energia> ;
+    ns1:identifier "47" ;
+    ns1:st_number "20" ;
+    ns1:street "AVENIDA DE NICETO ALCALA ZAMORA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/48> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns1:identifier "48" ;
+    ns1:st_number "7" ;
+    ns1:street "AVENIDA EJE CENTRAL" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/49> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "49" ;
+    ns1:st_number "278" ;
+    ns1:street "CARRETERA DE VILLAVERDE A VALLECAS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/5> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/41> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "5" ;
+    ns1:st_number "36" ;
+    ns1:street "CALLE GOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/50> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "350 kW conector CC (CCS)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/215> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Spanish%20Petroleum%20Company> ;
+    ns1:identifier "50" ;
+    ns1:st_number "2" ;
+    ns1:street "AVENIDA DEL CONSEJO DE EUROPA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/51> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/215> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "51" ;
+    ns1:st_number "5" ;
+    ns1:street "AVENIDA DEL PARTENÓN" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/52> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Mercamadrid> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "52" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA LEGAZPI" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/53> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Mercamadrid> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "53" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVENIDA LEGAZPI" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/54> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Mercamadrid> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "54" ;
+    ns1:street "CALLE 3" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/55> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/34> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "55" ;
+    ns1:st_number "1" ;
+    ns1:street "CALLE IBIZA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/56> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/35> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "56" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE LA LEALTAD" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/57> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/116> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "57" ;
+    ns1:st_number "20" ;
+    ns1:street "CALLE HILARIO HERRANZ ESTABLOS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/58> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/92> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "58" ;
+    ns1:st_number "27" ;
+    ns1:street "CALLE MARQUÉS DE URQUIJO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/59> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/171> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "59" ;
+    ns1:st_number "24" ;
+    ns1:street "CALLE VALLE DE TOBALINA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/6> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/42> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "6" ;
+    ns1:st_number "123" ;
+    ns1:street "CALLE GOYA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/60> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/62> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "60" ;
+    ns1:st_number "122" ;
+    ns1:street "CALLE BRAVO MURILLO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/61> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/122> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "61" ;
+    ns1:st_number "2" ;
+    ns1:street "CALLE DE EDUARDO BARREIROS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/62> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/122> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "62" ;
+    ns1:st_number "S/N" ;
+    ns1:street "A4" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/63> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/165> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns1:identifier "63" ;
+    ns1:st_number "77" ;
+    ns1:street "AVENIDA DE SAN LUIS" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/64> a ns1:ChargeStation ;
+    ns1:capacity 9 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "64" ;
+    ns1:street "CALLE 29" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/65> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/157> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "65" ;
+    ns1:st_number "175" ;
+    ns1:street "CALLE ARTURO SORIA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/66> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/155> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "66" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE VERDAGUER Y GARCIA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/67> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/143> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "67" ;
+    ns1:st_number "S/N" ;
+    ns1:street "GLORIETA CORREGIDOR SANCHO DE CÓRDOBA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/68> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/201> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Repsol> ;
+    ns1:identifier "68" ;
+    ns1:st_number "510" ;
+    ns1:street "CALLE ALCALÁ" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/69> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/183> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "69" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE ALTO DEL RETIRO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/7> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/46> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "7" ;
+    ns1:st_number "105" ;
+    ns1:street "CALLE CASTELLÓ" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/70> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns1:identifier "70" ;
+    ns1:st_number "10" ;
+    ns1:street "CALLE DEYANIRA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/71> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/206> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "71" ;
+    ns1:st_number "5" ;
+    ns1:street "CALLE NANCLARES DE OCA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/72> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/181> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/naturgy> ;
+    ns1:identifier "72" ;
+    ns1:st_number "7" ;
+    ns1:street "AVENIDA EJE CENTRAL" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/73> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/14> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> ;
+    ns1:identifier "73" ;
+    ns1:st_number "24" ;
+    ns1:street "CALLE GÉNOVA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/74> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/64> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "74" ;
+    ns1:st_number "S/N" ;
+    ns1:street "CALLE SAN AQUILINO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/75> a ns1:ChargeStation ;
+    ns1:capacity 4 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/52> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> ;
+    ns1:identifier "75" ;
+    ns1:st_number "9" ;
+    ns1:street "AVENIDA DE AMÉRICA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/76> a ns1:ChargeStation ;
+    ns1:capacity 6 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Mercamadrid> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/1818> ;
+    ns1:identifier "76" ;
+    ns1:st_number "S/N" ;
+    ns1:street "AVDA. DE MADRID - APARCAMIENTO ESTE DEL MERCADO CENTRAL DE PESCADOS (PARCELA" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/77> a ns1:ChargeStation ;
+    ns1:capacity 2 ;
+    ns1:conector_info "180 kW 2 conectores CC (CCS)" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/1818> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "77" ;
+    ns1:street "CALLE 29" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/8> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/44> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/Endesa> ;
+    ns1:identifier "8" ;
+    ns1:st_number "S/N" ;
+    ns1:street "PLAZA DE SAN CAYETANO" .
+
+<http://smartcity.linkeddata.es/transport/data/chargeStation/9> a ns1:ChargeStation ;
+    ns1:capacity 3 ;
+    ns1:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns1:hasLocation <http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> ;
+    ns1:hasNeighbourhood <http://smartcity.linkeddata.es/transport/data/neighbourhood/106> ;
+    ns1:hasOperator <http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> ;
+    ns1:identifier "9" ;
+    ns1:st_number "9" ;
+    ns1:street "CALLE SINFONIA" .
+
+<http://smartcity.linkeddata.es/transport/data/district/21> a ns1:District ;
+    ns1:name_id "Barajas" ;
+    ns1:number_id 21 ;
+    owl:sameAs <https://wikidata.org/wiki/Q807230> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/101> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/10> ;
+    ns1:name_id "Los Cármenes" ;
+    ns1:number_id 101 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10319792> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/107> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/10> ;
+    ns1:name_id "Las Águilas" ;
+    ns1:number_id 107 ;
+    owl:sameAs <https://wikidata.org/wiki/Q5971372> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/111> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/11> ;
+    ns1:name_id "Comillas" ;
+    ns1:number_id 111 ;
+    owl:sameAs <https://wikidata.org/wiki/Q955844> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/113> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/11> ;
+    ns1:name_id "San Isidro" ;
+    ns1:number_id 113 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3813733> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/116> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/11> ;
+    ns1:name_id "Buenavista" ;
+    ns1:number_id 116 ;
+    owl:sameAs <https://wikidata.org/wiki/Q953929> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/134> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/13> ;
+    ns1:name_id "Palomeras Sureste" ;
+    ns1:number_id 134 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10343901> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/141> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/14> ;
+    ns1:name_id "Pavones" ;
+    ns1:number_id 141 ;
+    owl:sameAs <https://wikidata.org/wiki/Q71760> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/152> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "Pueblo Nuevo" ;
+    ns1:number_id 152 ;
+    owl:sameAs <https://wikidata.org/wiki/Q71753> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/156> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "San Juan Bautista" ;
+    ns1:number_id 156 ;
+    owl:sameAs <https://wikidata.org/wiki/Q165609> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/157> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "Colina" ;
+    ns1:number_id 157 ;
+    owl:sameAs <https://wikidata.org/wiki/Q18475981> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/163> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/16> ;
+    ns1:name_id "Canillas" ;
+    ns1:number_id 163 ;
+    owl:sameAs <https://wikidata.org/wiki/Q9694341> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/165> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/16> ;
+    ns1:name_id "Apóstol Santiago" ;
+    ns1:number_id 165 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11906303> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/171> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/17> ;
+    ns1:name_id "Villaverde Alto, Casco Histórico de Villaverde" ;
+    ns1:number_id 171 ;
+    owl:sameAs <https://wikidata.org/wiki/Q390435> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/173> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/17> ;
+    ns1:name_id "Butarque" ;
+    ns1:number_id 173 ;
+    owl:sameAs <https://wikidata.org/wiki/Q390453> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/201> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/20> ;
+    ns1:name_id "Simancas" ;
+    ns1:number_id 201 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10371626> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/24> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Legazpi" ;
+    ns1:number_id 24 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773990> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/53> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "Ciudad Jardín" ;
+    ns1:number_id 53 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773744> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/63> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Castillejos" ;
+    ns1:number_id 63 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11913212> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/64> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Almenara" ;
+    ns1:number_id 64 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2265427> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/65> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Valdeacederas" ;
+    ns1:number_id 65 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10388711> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/86> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/8> ;
+    ns1:name_id "Valverde" ;
+    ns1:number_id 86 ;
+    owl:sameAs <https://wikidata.org/wiki/Q31132> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/88> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/8> ;
+    ns1:name_id "El Goloso" ;
+    ns1:number_id 88 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10271137> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/96> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/9> ;
+    ns1:name_id "El Plantío" ;
+    ns1:number_id 96 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773742> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Ecolineras> a ns1:Operator ;
+    ns1:name_id "Ecolineras" ;
+    owl:sameAs <https://wikidata.org/wiki/Q114758119> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Galp%20Energia> a ns1:Operator ;
+    ns1:name_id "Galp Energia" ;
+    owl:sameAs <https://wikidata.org/wiki/Q1492739> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Spanish%20Petroleum%20Company> a ns1:Operator ;
+    ns1:name_id "Spanish Petroleum Company" ;
+    owl:sameAs <https://wikidata.org/wiki/Q608819> .
+
+<http://smartcity.linkeddata.es/transport/data/district/12> a ns1:District ;
+    ns1:name_id "Usera" ;
+    ns1:number_id 12 ;
+    owl:sameAs <https://wikidata.org/wiki/Q953368> .
+
+<http://smartcity.linkeddata.es/transport/data/district/17> a ns1:District ;
+    ns1:name_id "Villaverde" ;
+    ns1:number_id 17 ;
+    owl:sameAs <https://wikidata.org/wiki/Q919536> .
+
+<http://smartcity.linkeddata.es/transport/data/district/20> a ns1:District ;
+    ns1:name_id "San Blas" ;
+    ns1:number_id 20 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2001937> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/102> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/10> ;
+    ns1:name_id "Barrio de Puerta del Ángel" ;
+    ns1:number_id 102 ;
+    owl:sameAs <https://wikidata.org/wiki/Q31142> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/122> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/12> ;
+    ns1:name_id "Orcasur" ;
+    ns1:number_id 122 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10341270> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/125> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/12> ;
+    ns1:name_id "Moscardó" ;
+    ns1:number_id 125 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11937679> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/132> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/13> ;
+    ns1:name_id "San Diego" ;
+    ns1:number_id 132 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11946851> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/136> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/13> ;
+    ns1:name_id "Numancia" ;
+    ns1:number_id 136 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10338144> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/143> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/14> ;
+    ns1:name_id "Marroquina" ;
+    ns1:number_id 143 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11935636> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/144> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/14> ;
+    ns1:name_id "Media Legua" ;
+    ns1:number_id 144 ;
+    owl:sameAs <https://wikidata.org/wiki/Q9031035> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/154> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "Concepción" ;
+    ns1:number_id 154 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11915156> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/166> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/16> ;
+    ns1:name_id "Valdefuentes" ;
+    ns1:number_id 166 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10388714> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/1818> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/18> ;
+    ns1:name_id "Casco Histórico de Vallecas" ;
+    ns1:number_id 1818 ;
+    owl:sameAs <https://wikidata.org/wiki/Q16544370> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/183> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/18> ;
+    ns1:name_id "Ensanche de Vallecas" ;
+    ns1:number_id 183 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3847485> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/215> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/21> ;
+    ns1:name_id "Corralejos" ;
+    ns1:number_id 215 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10260772> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/23> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "La Chopera" ;
+    ns1:number_id 23 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773750> .
+
+<http://smartcity.linkeddata.es/transport/data/district/11> a ns1:District ;
+    ns1:name_id "Carabanchel" ;
+    ns1:number_id 11 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1001991> .
+
+<http://smartcity.linkeddata.es/transport/data/district/13> a ns1:District ;
+    ns1:name_id "Puente de Vallecas" ;
+    ns1:number_id 13 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2003054> .
+
+<http://smartcity.linkeddata.es/transport/data/district/14> a ns1:District ;
+    ns1:name_id "Moratalaz" ;
+    ns1:number_id 14 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2076109> .
+
+<http://smartcity.linkeddata.es/transport/data/district/16> a ns1:District ;
+    ns1:name_id "Hortaleza" ;
+    ns1:number_id 16 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1928529> .
+
+<http://smartcity.linkeddata.es/transport/data/district/18> a ns1:District ;
+    ns1:name_id "Villa de Vallecas" ;
+    ns1:number_id 18 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1947988> .
+
+<http://smartcity.linkeddata.es/transport/data/district/8> a ns1:District ;
+    ns1:name_id "Fuencarral-El Pardo" ;
+    ns1:number_id 8 ;
+    owl:sameAs <https://wikidata.org/wiki/Q656196> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/106> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/10> ;
+    ns1:name_id "Cuatro Vientos" ;
+    ns1:number_id 106 ;
+    owl:sameAs <https://wikidata.org/wiki/Q5191881> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/206> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/20> ;
+    ns1:name_id "Rejas" ;
+    ns1:number_id 206 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10359029> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/21> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Imperial" ;
+    ns1:number_id 21 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773740> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/31> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Pacífico" ;
+    ns1:number_id 31 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773753> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/33> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Estrella" ;
+    ns1:number_id 33 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773738> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/43> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "Fuente del Berro" ;
+    ns1:number_id 43 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814564> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/52> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "Prosperidad" ;
+    ns1:number_id 52 ;
+    owl:sameAs <https://wikidata.org/wiki/Q4776> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/61> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Bellas Vistas" ;
+    ns1:number_id 61 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11908929> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/66> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Berruguete" ;
+    ns1:number_id 66 ;
+    owl:sameAs <https://wikidata.org/wiki/Q11909208> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/76> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Vallehermoso" ;
+    ns1:number_id 76 ;
+    owl:sameAs <https://wikidata.org/wiki/Q6122685> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/85> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/8> ;
+    ns1:name_id "La Paz" ;
+    ns1:number_id 85 ;
+    owl:sameAs <https://wikidata.org/wiki/Q5869740> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/91> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/9> ;
+    ns1:name_id "Casa de Campo" ;
+    ns1:number_id 91 ;
+    owl:sameAs <https://wikidata.org/wiki/Q16302441> .
+
+<http://smartcity.linkeddata.es/transport/data/district/10> a ns1:District ;
+    ns1:name_id "Latina" ;
+    ns1:number_id 10 ;
+    owl:sameAs <https://wikidata.org/wiki/Q794954> .
+
+<http://smartcity.linkeddata.es/transport/data/district/9> a ns1:District ;
+    ns1:name_id "Moncloa-Aravaca" ;
+    ns1:number_id 9 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2017682> .
+
+<http://smartcity.linkeddata.es/transport/data/location/Mercamadrid> a ns1:Location ;
+    ns1:name_id "Mercamadrid" .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/151> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "Ventas" ;
+    ns1:number_id 151 ;
+    owl:sameAs <https://wikidata.org/wiki/Q71762> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/155> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/15> ;
+    ns1:name_id "San Pascual" ;
+    ns1:number_id 155 ;
+    owl:sameAs <https://wikidata.org/wiki/Q165612> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/25> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Las Delicias" ;
+    ns1:number_id 25 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773736> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/27> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Atocha" ;
+    ns1:number_id 27 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814594> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/32> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Adelfas" ;
+    ns1:number_id 32 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3774001> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/36> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Niño Jesús" ;
+    ns1:number_id 36 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3773746> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Empresa%20Municipal%20de%20Transportes%20de%20Madrid> a ns1:Operator ;
+    ns1:name_id "Empresa Municipal de Transportes de Madrid" ;
+    owl:sameAs <https://wikidata.org/wiki/Q1094755> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/naturgy> a ns1:Operator ;
+    ns1:name_id "naturgy" ;
+    owl:sameAs <https://wikidata.org/wiki/Q474690> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/34> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Ibiza" ;
+    ns1:number_id 34 ;
+    owl:sameAs <https://wikidata.org/wiki/Q15249910> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/45> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "Lista" ;
+    ns1:number_id 45 ;
+    owl:sameAs <https://wikidata.org/wiki/Q4779> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/56> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "Castilla" ;
+    ns1:number_id 56 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3813735> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/71> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Gaztambide" ;
+    ns1:number_id 71 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10288587> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/73> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Trafalgar" ;
+    ns1:number_id 73 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10384027> .
+
+<http://smartcity.linkeddata.es/transport/data/district/1> a ns1:District ;
+    ns1:name_id "Centro" ;
+    ns1:number_id 1 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1763376> .
+
+<http://smartcity.linkeddata.es/transport/data/district/15> a ns1:District ;
+    ns1:name_id "Ciudad Lineal" ;
+    ns1:number_id 15 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1763694> .
+
+<http://smartcity.linkeddata.es/transport/data/district/3> a ns1:District ;
+    ns1:name_id "Retiro" ;
+    ns1:number_id 3 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2002296> .
+
+<http://smartcity.linkeddata.es/transport/data/district/4> a ns1:District ;
+    ns1:name_id "Salamanca" ;
+    ns1:number_id 4 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1773521> .
+
+<http://smartcity.linkeddata.es/transport/data/district/5> a ns1:District ;
+    ns1:name_id "Chamartín" ;
+    ns1:number_id 5 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1766348> .
+
+<http://smartcity.linkeddata.es/transport/data/district/6> a ns1:District ;
+    ns1:name_id "Tetuán" ;
+    ns1:number_id 6 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1773540> .
+
+<http://smartcity.linkeddata.es/transport/data/district/7> a ns1:District ;
+    ns1:name_id "Chamberí" ;
+    ns1:number_id 7 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1763370> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/26> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Palos de la Frontera" ;
+    ns1:number_id 26 ;
+    owl:sameAs <https://wikidata.org/wiki/Q521009> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/54> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "Hispanoamérica" ;
+    ns1:number_id 54 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814573> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/55> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "Nueva España" ;
+    ns1:number_id 55 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10338128> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/72> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Arapiles" ;
+    ns1:number_id 72 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10856744> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/74> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Almagro" ;
+    ns1:number_id 74 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10954432> .
+
+<http://smartcity.linkeddata.es/transport/data/district/2> a ns1:District ;
+    ns1:name_id "Arganzuela" ;
+    ns1:number_id 2 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2000929> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/13> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Cortes" ;
+    ns1:number_id 13 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2535637> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/181> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/18> ;
+    ns1:name_id "Casco Histórico de Vallecas" ;
+    ns1:number_id 181 ;
+    owl:sameAs <https://wikidata.org/wiki/Q16544370> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/93> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/9> ;
+    ns1:name_id "Ciudad Universitaria" ;
+    ns1:number_id 93 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3319235> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Endesa> a ns1:Operator ;
+    ns1:name_id "Endesa" ;
+    owl:sameAs <https://wikidata.org/wiki/Q1275336> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Iberdrola> a ns1:Operator ;
+    ns1:name_id "Iberdrola" ;
+    owl:sameAs <https://wikidata.org/wiki/Q1437502> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/22> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/2> ;
+    ns1:name_id "Las Acacias" ;
+    ns1:number_id 22 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3319190> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/46> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "Castellana" ;
+    ns1:number_id 46 ;
+    owl:sameAs <https://wikidata.org/wiki/Q4781> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/62> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/6> ;
+    ns1:name_id "Cuatro Caminos" ;
+    ns1:number_id 62 ;
+    owl:sameAs <https://wikidata.org/wiki/Q5824684> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/92> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/9> ;
+    ns1:name_id "Argüelles" ;
+    ns1:number_id 92 ;
+    owl:sameAs <https://wikidata.org/wiki/Q64874> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/44> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "La Guindalera" ;
+    ns1:number_id 44 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814559> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/75> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/7> ;
+    ns1:name_id "Ríos Rosas" ;
+    ns1:number_id 75 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10366270> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/42> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "Goya" ;
+    ns1:number_id 42 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814578> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/DRIVE%20THE%20CITY> a ns1:Operator ;
+    ns1:name_id "DRIVE THE CITY" ;
+    owl:sameAs <https://wikidata.org/wiki/Q114758003> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/12> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Embajadores" ;
+    ns1:number_id 12 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2449844> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/14> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Justicia" ;
+    ns1:number_id 14 ;
+    owl:sameAs <https://wikidata.org/wiki/Q1992319> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/16> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Sol" ;
+    ns1:number_id 16 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2465181> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/35> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/3> ;
+    ns1:name_id "Jerónimos" ;
+    ns1:number_id 35 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10306766> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/11> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Palacio" ;
+    ns1:number_id 11 ;
+    owl:sameAs <https://wikidata.org/wiki/Q2136510> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/51> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/5> ;
+    ns1:name_id "El Viso" ;
+    ns1:number_id 51 ;
+    owl:sameAs <https://wikidata.org/wiki/Q4778> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/15> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/1> ;
+    ns1:name_id "Universidad" ;
+    ns1:number_id 15 ;
+    owl:sameAs <https://wikidata.org/wiki/Q10387767> .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Gesti%C3%B3n%20Inteligente%20de%20Cargas> a ns1:Operator ;
+    ns1:name_id "Gestión Inteligente de Cargas" ;
+    owl:sameAs <https://wikidata.org/wiki/Q114757945> .
+
+<http://smartcity.linkeddata.es/transport/data/neighbourhood/41> a ns1:Neighbourhood ;
+    ns1:hasDistrict <http://smartcity.linkeddata.es/transport/data/district/4> ;
+    ns1:name_id "Recoletos" ;
+    ns1:number_id 41 ;
+    owl:sameAs <https://wikidata.org/wiki/Q3814551> .
+
+<http://smartcity.linkeddata.es/transport/data/location/Aparcamiento> a ns1:Location ;
+    ns1:name_id "Aparcamiento" .
+
+<http://smartcity.linkeddata.es/transport/data/location/V%C3%ADa%20p%C3%BAblica> a ns1:Location ;
+    ns1:name_id "Vía pública" .
+
+<http://smartcity.linkeddata.es/transport/data/location/Estaci%C3%B3n%20de%20servicio> a ns1:Location ;
+    ns1:name_id "Estación de servicio" .
+
+<http://smartcity.linkeddata.es/transport/data/operator/Repsol> a ns1:Operator ;
+    ns1:name_id "Repsol" ;
+    owl:sameAs <https://wikidata.org/wiki/Q174747> .
+

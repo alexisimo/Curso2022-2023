@@ -1,0 +1,258 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "YCoord",
+    "expression": "grel:1",
+    "onError": "set-to-blank",
+    "newColumnName": "PuntoRecargaID",
+    "columnInsertIndex": 2,
+    "description": "Create column PuntoRecargaID at index 2 based on column YCoord using expression grel:1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "PuntoRecargaID",
+    "index": 0,
+    "description": "Move column PuntoRecargaID to position 0"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PuntoRecargaID",
+    "expression": "jython:import random\nimport math \n\n\nrange = 1\n\nreturn math.trunc(value + (range * random.random())*10*10*10*10*10*10*10*10)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PuntoRecargaID using expression jython:import random\nimport math \n\n\nrange = 1\n\nreturn math.trunc(value + (range * random.random())*10*10*10*10*10*10*10*10)"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "PuntoRecargaID",
+      "XCoord",
+      "YCoord",
+      "COD_DIS",
+      "DISTRITO",
+      "COD_BAR",
+      "BARRIO",
+      "UBICACIÓN",
+      "EMPLAZAMIE",
+      "INFO_ADICI",
+      "Nº_EQUIPO",
+      "CARACTERÍ",
+      "OPERADOR"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "W",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CARACTERÍ by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 1",
+    "expression": "jython:return value+\"W\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CARACTERÍ 1 using expression jython:return value+\"W\""
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CARACTERÍ 2 by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 2 1",
+    "expression": "jython:return value.replace(\" conectores CC\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CARACTERÍ 2 1 using expression jython:return value.replace(\" conectores CC\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "y ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CARACTERÍ 2 2 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CARACTERÍ 2 2 1",
+    "description": "Remove column CARACTERÍ 2 2 1"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 2 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " c",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CARACTERÍ 2 2 2 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CARACTERÍ 2 2 2 2",
+    "description": "Remove column CARACTERÍ 2 2 2 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍ 2 2 2 1",
+    "expression": "grel:if(value==null,0,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CARACTERÍ 2 2 2 1 using expression grel:if(value==null,0,value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CARACTERÍ 1",
+    "newColumnName": "POTENCIA",
+    "description": "Rename column CARACTERÍ 1 to POTENCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CARACTERÍ 2 1",
+    "newColumnName": "CONECTOR CC",
+    "description": "Rename column CARACTERÍ 2 1 to CONECTOR CC"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CARACTERÍ 2 2 2 1",
+    "newColumnName": "CONECTOR AC",
+    "description": "Rename column CARACTERÍ 2 2 2 1 to CONECTOR AC"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PuntoRecargaID",
+    "expression": "grel:value*0",
+    "onError": "set-to-blank",
+    "newColumnName": "PUNTORECARGAPERTENECEDIST",
+    "columnInsertIndex": 1,
+    "description": "Create column PUNTORECARGAPERTENECEDIST at index 1 based on column PuntoRecargaID using expression grel:value*0"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PUNTORECARGAPERTENECEDIST",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTPERTENECEBARRIO",
+    "columnInsertIndex": 2,
+    "description": "Create column DISTPERTENECEBARRIO at index 2 based on column PUNTORECARGAPERTENECEDIST using expression grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTPERTENECEBARRIO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "COORDONNES",
+    "columnInsertIndex": 3,
+    "description": "Create column COORDONNES at index 3 based on column DISTPERTENECEBARRIO using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PUNTORECARGAPERTENECEDIST",
+    "expression": "jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PUNTORECARGAPERTENECEDIST using expression jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTPERTENECEBARRIO",
+    "expression": "jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTPERTENECEBARRIO using expression jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDONNES",
+    "expression": "jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDONNES using expression jython:import random\nimport math\nrange = 1 \nreturn math.trunc(value + (range*random.random())*10*10*10*10*10*10*10*10)"
+  }
+]

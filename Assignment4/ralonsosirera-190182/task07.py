@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -26,15 +26,20 @@ from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://somewhere#")
 query1 = prepareQuery('''
     SELECT ?Subject WHERE {
-        ?Subject rdfs:subClassOf ns:Person
+        ?Subject rdfs:subClassOf+ ns:Person
     }
     ''',
     initNs={"ns":Namespace("http://somewhere#"), "rdfs": RDFS}
     )
+# Now subclass hierarchy is taken into account
 # Visualize the results
 print("RDFLib")
-for s, p, o in g.triples((None,RDFS.subClassOf,ns.Person)):
-    print(s,p,o)
+def retrieveSubclasses(GivenRDFClass):
+  for subclass, p, o in g.triples((None,RDFS.subClassOf,GivenRDFClass)):
+    print(subclass)
+    retrieveSubclasses(subclass)
+
+retrieveSubclasses(ns.Person)
 # Result in SPARQL (by using the query)
 print("SPARQL")
 for results in g.query(query1):
@@ -44,7 +49,7 @@ query2 = prepareQuery('''
   SELECT DISTINCT ?Subject WHERE { 
     {?Subject rdf:type ns:Person. }
     UNION 
-    {?s rdfs:subClassOf ns:Person.
+    {?s rdfs:subClassOf+ ns:Person.
     ?Subject rdf:type ?s}
   }
   ''',
@@ -53,13 +58,14 @@ query2 = prepareQuery('''
 # Visualize the results
 # RDFLib
 print("RDFLib")
-# First we print those individuals who are Person directly
-for s, p, o in g.triples((None, RDF.type, ns.Person)):
-  print(s)
-# Then those who are a subClassOf Person
-for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
-  for subject, prop, value in g.triples((None,RDF.type,s)):
+# Those people who are either a person or a subClassOf Person (hierarchy taken into account)
+def retrieveIndividuals(CurrentClass):
+  for subject,property,value in g.triples((None, RDF.type, CurrentClass)):
     print(subject)
+  for subclass, p, o in g.triples((None,RDFS.subClassOf,CurrentClass)):
+    retrieveIndividuals(subclass)
+
+retrieveIndividuals(ns.Person)
 # SPARQL
 print("SPARQL")
 for results in g.query(query2):
@@ -70,7 +76,7 @@ query3 = prepareQuery('''
     {?Subject rdf:type ns:Person.
      ?Subject ?Property ?Value}
     UNION 
-    {?s rdfs:subClassOf ns:Person.
+    {?s rdfs:subClassOf+ ns:Person.
     ?Subject rdf:type ?s.
     ?Subject ?Property ?Value}
   }
@@ -80,16 +86,15 @@ query3 = prepareQuery('''
 # Visualize the results
 # RDFLib
 print("RDFLib")
-# As the previous task we print the values for the Person individuals
-for persona,propiedad,valor in g.triples((None,RDF.type,ns.Person)):
-  for x,prop,val in g.triples((persona,None,None)):
-    print(persona,prop,val)
-# Then those from the subclasses
-for scPersona,propiedad,valor in g.triples((None,RDFS.subClassOf,ns.Person)):
-  for x,prop,val in g.triples((None,RDF.type,scPersona)):
-    for person,property,value in g.triples((x,None,None)):
-      print(person,property,value)
+# As the previous task we print the values for the Person a subclass individuals
+def retrieveIndividualsAndProp(Class):
+  for subject,property,value in g.triples((None, RDF.type, Class)):
+    for subject,property,value in g.triples((subject,None,None)):
+      print(subject,property,value)
+  for subclass, p, o in g.triples((None,RDFS.subClassOf,Class)):
+    retrieveIndividualsAndProp(subclass)
 
+retrieveIndividualsAndProp(ns.Person)
 # SPARQL 
 print("SPARQL")
 for results in g.query(query3):

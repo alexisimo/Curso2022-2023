@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Requirements</title>
+</head>
+<body>
+
+    <header>
+        <h1>Application Requirements</h1>
+        <!--p>An HTML document that specifies the requirements of the application that will be built, with user interface
+            mock-ups</p-->
+        <p>The application intents the collection, harmonisation and enable the analytical processing of a large number
+            of datasets belonging to different departments of the Catalan administration whose KPIs are to be displayed
+            in a dashboard.</p>
+        <p>Reporting and tracking of buildings energy performance is the main objective of the app which includes not only
+        simple tracking but also basic longitudinal and cross-sectional benchmarking.</p>
+    </header>
+    <h2>Mock-ups</h2>
+    <h3>Simple Tracking</h3>
+    <p>"Monthly or annual energy use totals are recorded either at the whole-building, system, or end-use level. You can
+        use either utility billing data or interval meter data to quantify energy use totals. You can present these
+        totals either in tables or plots, and examine them over time for irregularities or large increases or decreases
+        in use that might indicate operational or efficiency problems. Simple tracking does not involve normalization of
+        energy use data, as might be true of other analysis methods."</p>
+    <p>Energy consumption is plotted for a calendar year, for two retrofit buildings.
+        Energy use in the year before a retrofit is plotted with a dashed line.
+        Energy use in the year after a retrofit is shown with a solid line.</p>
+    <img src="images/SimpleTracking.png" alt="SimpleTracking" width="600"
+     height=auto> <img src="images/SimpleTrackingMultiple.png" alt="SimpleTrackingMultiple" width="600"
+     height=auto>
+    <p>Submetered electric end use is plotted for a calendar year in a stacked bar chart. The height of each bar shows
+        the total electric use for the month. Each end use is represented with a different color. The size of the
+        colored portion of each bar represents end use energy total.</p>
+    <img src="images/SimpleTrackingBarChart.png" alt="SimpleTrackingBarChart" width="600"
+     height=auto> <img src="images/SimpleTrackingPieChart.png" alt="SimpleTrackingPieChart" width="600"
+     height=auto>
+    <h3>Basic Longitudinal Benchmarking</h3>
+    <p>"Characterize energy use in the base, or reference, period with a simple or model-based baseline and express it
+        according to your metric of choice, forming a “benchmark.” Then track energy performance relative to the base-period
+        benchmark. Annual whole-building benchmarking is most common, with kilowatt-hours per square foot per year (kWh/sf-yr)
+        taken as the associated usage metric; however, longitudinal benchmarking may also be conducted seasonally and for
+        systems and equipment."</p>
+    <p>Heating energy for an academic building is plotted on the y-axis in therms/sf-yr. Each bar represents total
+        heating energy for the prior 12-month period.</p>
+    <img src="images/BasicLongitudinalBenchmarking.png" alt="BasicLongitudinalBenchmarking" width="600"
+     height=auto>
+    <h3>Basic Cross-Sectional Benchmarking</h3>
+    <p>"Total building energy use (typically annually) and express it according to a metric of interest, such as kWh/sf/yr.
+        Normalize the energy use for parameters such as weather, operation hours, and other factors, and compare it to
+        that of other buildings. A simple normalization approach is to directly filter the peer group for buildings with
+        similar characteristics to the building being benchmarked. A more rigorous approach is to conduct a regression
+        analysis on the peer data set, which yields an equation that relates the performance metric to normalizing parameters."</p>
+    <img src="images/BasicCrossSectionalBenchmarking.png" alt="BasicCrossSectionalBenchmarking" width="600"
+     height=auto>
+    <img src="images/PortfolioCrossSectionalBenchmarking.png" alt="PortfolioCrossSectionalBenchmarking" width="600"
+     height=auto>
+    <p>Scores from 16 buildings are shown on a bar chart, sorted from low to high.</p>
+    <p>The filtering feature includes categories such as types of buildings, organizations, climatic zone and more.</p>
+</body>
+</html>
+

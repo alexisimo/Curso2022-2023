@@ -1,0 +1,54 @@
+PREFIX ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> 
+PREFIX ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX schema: <http://schema.org/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+
+# Get building info
+SELECT DISTINCT ?building_id ?building_name ?structure_type ?structure_neighborhood ?structure_district ?latitude ?longitude ?wikidata
+WHERE 
+{
+    ?building_id a schema:CivicStructure ;
+        rdfs:label ?building_name ;
+        schema:geo ?structure_geo ;
+        ec:buildingType ?structure_type ;
+        ec:district ?structure_district ;
+        ec:neighborhood ?structure_neighborhood .
+    
+    OPTIONAL {?building_id owl:sameAs ?wikidata .}
+    
+    ?structure_geo a schema:GeoCoordinates ;
+        schema:latitude ?latitude ;
+        schema:longitude ?longitude .
+}
+
+# Get observations info
+SELECT DISTINCT ?ob_id ?building_id ?ob_unit_text ?ob_value ?ob_ec_energy_group ?ob_ec_type_of_energy (year(?date) as ?year) (month(?date) as ?month)
+{
+    ?ob_id a ssn:Observation ;
+        ssn:resultTime ?date ;
+        ssn:featureOfInterest ?building_id ;
+        schema:unitText ?ob_unit_text ;
+        schema:value ?ob_value .
+        OPTIONAL{
+            ?ob_id ec:energyGroup ?ob_ec_energy_group ;
+                ec:typeOfEnergy ?ob_ec_type_of_energy .
+        }
+    ?building_id a schema:CivicStructure ;
+        rdfs:label ?building_name ;
+        schema:geo ?structure_geo ;
+        ec:buildingType ?structure_type ;
+        ec:district ?structure_district ;
+        ec:neighborhood ?structure_neighborhood .
+    
+    # ... contextual filters
+} ORDER BY DESC(?date) 
+
+
+# Get years and months 
+SELECT DISTINCT (year(?date) as ?year) (month(?date) as ?month)
+WHERE 
+{
+    ?ob_id a ssn:Observation ;
+        ssn:resultTime ?date .
+}

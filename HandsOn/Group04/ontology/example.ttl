@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix classes: <https://www.puntodecargasMadrid/Clases#> .
+@prefix properties: <https://www.puntodecargasMadrid/Propiedades#> .
+
+
+<http://www.puntodecargasmadrid/Recursos/PuntoRecarga/82937121> a classes:puntoRecarga ;
+	schema:address "Calle Chulapos s/n"^^xsd:string ;
+	properties:emplazamiento "Vía pública"^^xsd:string ;
+	properties:numEquipo "1"^^xsd:integer ;
+	properties:potencia  "50 Kw"^^xsd:string ;
+	properties:conectorAC "1"^^xsd:integer ;
+	properties:conectorCC "2"^^xsd:integer ;
+	properties:operador "REPSOL"^^xsd:string ;
+	properties:puntoRecargaPerteneceDist <http://www.puntodecargasmadrid/Recursos/Distrito/98356728> ;
+	schema:GeoCoordinates <http://www.puntodecargasmadrid/Recursos/coordonnes/88812731> .
+
+
+<http://www.puntodecargasmadrid/Recursos/Distrito/98356728> a classes:Distrito ;
+	rdf:value "02"^^xsd:integer ;
+	rdf:label "Arganzuela"^^xsd:string ;
+	properties:distPerteneceBarrio <http://www.puntodecargasmadrid/Recursos/Barrio/17238941> .
+
+<http://www.puntodecargasmadrid/Recursos/Barrio/17238941> a classes:Barrio ;
+	rdf:value "1"^^xsd:integer ;
+	rdf:label "Imperial"^^xsd:string .
+
+<http://www.puntodecargasmadrid/Recursos/coordonnes/88812731> a schema:GeoCoordinates ;
+	schema:longitude "438893,73000000"^^xsd:string ;
+	schema:latitude  "4473226,26000000"^^xsd:string .
+	   

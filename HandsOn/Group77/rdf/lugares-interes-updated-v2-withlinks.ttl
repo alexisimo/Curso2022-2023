@@ -1,0 +1,428 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://culturaandaluza.es/sevilla/0> a dbo:Monument;
+dbp:fullname "Monumento a Juan Belmonte";
+dbp:latitude "37.385355";
+dbp:longitude "-6.003013" .
+<http://culturaandaluza.es/sevilla/1> a dbo:Monument;
+dbp:fullname "Edificio de la farmacia Murillo";
+dbp:latitude "37.385063";
+dbp:longitude "-6.003412" .
+<http://culturaandaluza.es/sevilla/2> a dbo:Monument;
+dbp:fullname "Monumento al Arte Flamenco";
+dbp:latitude "37.385355";
+dbp:longitude "-6.003013" .
+<http://culturaandaluza.es/sevilla/3> a dbo:Monument;
+dbp:fullname "Castillo de San Jorge. ";
+dbp:latitude "37.385742";
+dbp:longitude "-6.003049";
+owl:sameAs <https://wikidata.org/entity/Q5757560> .
+<http://culturaandaluza.es/sevilla/4> a dbo:Monument;
+dbp:fullname "Capilla del Carmen";
+dbp:latitude "37.385731";
+dbp:longitude "-6.003046" .
+<http://culturaandaluza.es/sevilla/5> a dbo:Monument;
+dbp:fullname "Puente de Triana";
+dbp:latitude "37.386235";
+dbp:longitude "-6.002445";
+owl:sameAs <https://wikidata.org/entity/Q1862973> .
+<http://culturaandaluza.es/sevilla/6> a dbo:Monument;
+dbp:fullname "Monumento ecuestre a María de las Mercedes";
+dbp:latitude "37.386588";
+dbp:longitude "-6.000525" .
+<http://culturaandaluza.es/sevilla/7> a dbo:Monument;
+dbp:fullname "La Casa de la Real Maestranza de Caballería";
+dbp:latitude "37.385863";
+dbp:longitude "-5.99927" .
+<http://culturaandaluza.es/sevilla/8> a dbo:Monument;
+dbp:fullname "Monumento a Curro Romero.";
+dbp:latitude "37.385633";
+dbp:longitude "-5.999173" .
+<http://culturaandaluza.es/sevilla/9> a dbo:Monument;
+dbp:fullname "La Real Plaza de Toros";
+dbp:latitude "37.385956";
+dbp:longitude "-5.998411";
+owl:sameAs <https://wikidata.org/entity/Q2274061> .
+<http://culturaandaluza.es/sevilla/10> a dbo:Monument;
+dbp:fullname "Monumento a Pepe Luis Vázquez";
+dbp:latitude "37.384325";
+dbp:longitude "-5.998665" .
+<http://culturaandaluza.es/sevilla/11> a dbo:Monument;
+dbp:fullname "Teatro de la Maestranza";
+dbp:latitude "37.383881";
+dbp:longitude "-5.997075" .
+<http://culturaandaluza.es/sevilla/12> a dbo:Monument;
+dbp:fullname "Torre del Oro ";
+dbp:latitude "37.382394";
+dbp:longitude "-5.99649";
+owl:sameAs <https://wikidata.org/entity/Q943873> .
+<http://culturaandaluza.es/sevilla/13> a dbo:Monument;
+dbp:fullname "Puerta Jerez";
+dbp:latitude "37.382206";
+dbp:longitude "-5.992473";
+owl:sameAs <https://wikidata.org/entity/Q97635186> .
+<http://culturaandaluza.es/sevilla/14> a dbo:Monument;
+dbp:fullname "Casablanca";
+dbp:latitude "37.383722";
+dbp:longitude "-5.9941" .
+<http://culturaandaluza.es/sevilla/15> dbp:latitude "37.389427";
+dbp:longitude "-5.995302";
+a dbo:Monument;
+dbp:fullname "Barbiana" .
+<http://culturaandaluza.es/sevilla/16> dbp:fullname "La Alicantina ";
+a dbo:Monument;
+dbp:latitude "37.390243";
+dbp:longitude "-5.99299" .
+<http://culturaandaluza.es/sevilla/17> a dbo:Monument;
+dbp:fullname "Freiduría El Arenal ";
+dbp:latitude "37.385098";
+dbp:longitude "-5.997066" .
+<http://culturaandaluza.es/sevilla/18> a dbo:Monument;
+dbp:fullname "Taberna Chani ";
+dbp:latitude "37.378306";
+dbp:longitude "-5.973529" .
+<http://culturaandaluza.es/sevilla/19> a dbo:Monument;
+dbp:fullname "Reserva Natural Cañada de los Pájaros";
+dbp:latitude "37.239632";
+dbp:longitude "-6.13083" .
+<http://culturaandaluza.es/sevilla/20> a dbo:Monument;
+dbp:fullname "Reserva Natural Castillo de las Guardas";
+dbp:latitude "37.693256";
+dbp:longitude "-6.315356" .
+<http://culturaandaluza.es/sevilla/21> a dbo:Monument;
+dbp:fullname "Zoo de Sevilla";
+dbp:latitude "37.566189";
+dbp:longitude "-6.079895" .
+<http://culturaandaluza.es/sevilla/22> a dbo:Monument;
+dbp:fullname "Acuario de Sevilla ";
+dbp:latitude "37.370565";
+dbp:longitude "-5.991229";
+owl:sameAs <https://wikidata.org/entity/Q20746709> .
+<http://culturaandaluza.es/sevilla/23> dbp:longitude "-5.994343";
+dbp:latitude "37.778101";
+a dbo:Monument;
+dbp:fullname "Centro Andaluz de la Fauna Salvaje" .
+<http://culturaandaluza.es/sevilla/24> a dbo:Monument;
+dbp:fullname "Antigüedades El Museo";
+dbp:latitude "37.392712";
+dbp:longitude "-5.999268" .
+<http://culturaandaluza.es/sevilla/25> a dbo:Monument;
+dbp:fullname "Numismatica Pliego";
+dbp:latitude "37.389693";
+dbp:longitude "-5.993274" .
+<http://culturaandaluza.es/sevilla/26> a dbo:Monument;
+dbp:fullname "Bastilippo Antigüedades";
+dbp:latitude "37.391386";
+dbp:longitude "-5.993245" .
+<http://culturaandaluza.es/sevilla/27> dbp:latitude "37.397533";
+dbp:fullname "Casa Ricardo";
+a dbo:Monument;
+dbp:longitude "-5.996042" .
+<http://culturaandaluza.es/sevilla/28> a dbo:Monument;
+dbp:fullname "Casa Paco ";
+dbp:latitude "37.388972";
+dbp:longitude "-5.971094" .
+<http://culturaandaluza.es/sevilla/29> a dbo:Monument;
+dbp:fullname "Barbiana";
+dbp:latitude "37.389427";
+dbp:longitude "-5.995302" .
+<http://culturaandaluza.es/sevilla/30> dbp:fullname "La Alicantina ";
+a dbo:Monument;
+dbp:longitude "-5.99299";
+dbp:latitude "37.390243" .
+<http://culturaandaluza.es/sevilla/31> a dbo:Monument;
+dbp:fullname "La Primera del Puente ";
+dbp:latitude "37.381353";
+dbp:longitude "-5.997799" .
+<http://culturaandaluza.es/sevilla/32> dbp:fullname "La Reja ";
+a dbo:Monument;
+dbp:latitude "37.392624";
+dbp:longitude "-5.994923" .
+<http://culturaandaluza.es/sevilla/33> a dbo:Monument;
+dbp:fullname "Génova ";
+dbp:latitude "37.389173";
+dbp:longitude "-5.997262" .
+<http://culturaandaluza.es/sevilla/34> a dbo:Monument;
+dbp:fullname "El Candil Triana ";
+dbp:latitude "37.379286";
+dbp:longitude "-6.001041" .
+<http://culturaandaluza.es/sevilla/35> a dbo:Monument;
+dbp:fullname "Bodega Santa Cruz (Las Columnas)";
+dbp:latitude "37.386023";
+dbp:longitude "-5.990772" .
+<http://culturaandaluza.es/sevilla/36> dbp:fullname "Restaurante La Infanta ";
+a dbo:Monument;
+dbp:latitude "37.385632";
+dbp:longitude "-5.995508" .
+<http://culturaandaluza.es/sevilla/37> a dbo:Monument;
+dbp:fullname "Asador Salas ";
+dbp:latitude "37.38832";
+dbp:longitude "-5.999788" .
+<http://culturaandaluza.es/sevilla/38> a dbo:Monument;
+dbp:fullname "Taberna Berrocal";
+dbp:latitude "37.389914";
+dbp:longitude "-5.99761" .
+<http://culturaandaluza.es/sevilla/39> a dbo:Monument;
+dbp:fullname "Calle Dueñas";
+dbp:latitude "37.394758";
+dbp:longitude "-5.989507" .
+<http://culturaandaluza.es/sevilla/40> a dbo:Monument;
+dbp:fullname "Calle Bustos Tavera";
+dbp:latitude "37.394955";
+dbp:longitude "-5.988074" .
+<http://culturaandaluza.es/sevilla/41> a dbo:Monument;
+dbp:fullname "Calle Siete Revueltas";
+dbp:latitude "37.390858";
+dbp:longitude "-5.991881" .
+<http://culturaandaluza.es/sevilla/42> a dbo:Monument;
+dbp:fullname "Plaza de la Encarnación";
+dbp:latitude "37.39331";
+dbp:longitude "-5.992348";
+owl:sameAs <https://wikidata.org/entity/Q97288162> .
+<http://culturaandaluza.es/sevilla/43> a dbo:Monument;
+dbp:fullname "Mercado de abastos de la Encarnación";
+dbp:latitude "37.393327";
+dbp:longitude "-5.991921" .
+<http://culturaandaluza.es/sevilla/44> a dbo:Monument;
+dbp:fullname "El Antiquarium";
+dbp:latitude "37.393183";
+dbp:longitude "-5.991754" .
+<http://culturaandaluza.es/sevilla/45> dbp:latitude "37.399184";
+a dbo:Monument;
+dbp:longitude "-5.991821";
+dbp:fullname "Calle Feria" .
+<http://culturaandaluza.es/sevilla/46> a dbo:Monument;
+dbp:fullname "Calle San Luis";
+dbp:latitude "37.399677";
+dbp:longitude "-5.988524" .
+<http://culturaandaluza.es/sevilla/47> a dbo:Monument;
+dbp:fullname "Iglesia de San Marcos";
+dbp:latitude "37.396272";
+dbp:longitude "-5.987684";
+owl:sameAs <https://wikidata.org/entity/Q5910720> .
+<http://culturaandaluza.es/sevilla/48> dbp:longitude "-5.987065";
+a dbo:Monument;
+dbp:fullname "Convento de Santa Isabel";
+dbp:latitude "37.396457" .
+<http://culturaandaluza.es/sevilla/49> a dbo:Monument;
+dbp:fullname "Hiniesta-Lira-Duque Cornejo";
+dbp:latitude "37.398783";
+dbp:longitude "-5.985634" .
+<http://culturaandaluza.es/sevilla/50> dbp:latitude "37.398793";
+a dbo:Monument;
+dbp:fullname "Iglesia de San Julián";
+dbp:longitude "-5.985503" .
+<http://culturaandaluza.es/sevilla/51> a dbo:Monument;
+dbp:fullname "Basílica de la Macarena ";
+dbp:latitude "37.403406";
+dbp:longitude "-5.994248" .
+<http://culturaandaluza.es/sevilla/52> a dbo:Monument;
+dbp:fullname "Iglesia de San Hermenegildo";
+dbp:latitude "37.400352";
+dbp:longitude "-5.985134";
+owl:sameAs <https://wikidata.org/entity/Q5675110> .
+<http://culturaandaluza.es/sevilla/53> a dbo:Monument;
+dbp:fullname "Hospital de las Cinco Llagas";
+dbp:latitude "37.40459";
+dbp:longitude "-5.987573";
+owl:sameAs <https://wikidata.org/entity/Q2983985> .
+<http://culturaandaluza.es/sevilla/54> a dbo:Monument;
+dbp:fullname "Iglesia Colegial del Divino Salvador";
+dbp:latitude "37.389987";
+dbp:longitude "-5.992755";
+owl:sameAs <https://wikidata.org/entity/Q5912858> .
+<http://culturaandaluza.es/sevilla/55> dbp:longitude "-5.988706";
+dbp:fullname "Calle Doña María Coronel";
+a dbo:Monument;
+dbp:latitude "37.393513" .
+<http://culturaandaluza.es/sevilla/56> a dbo:Monument;
+dbp:fullname "Calle Regina";
+dbp:latitude "37.394705";
+dbp:longitude "-5.991543" .
+<http://culturaandaluza.es/sevilla/57> dbp:latitude "37.403407";
+a dbo:Monument;
+dbp:fullname "Murallas de Sevilla";
+dbp:longitude "-5.994248";
+owl:sameAs <https://wikidata.org/entity/Q3896917> .
+<http://culturaandaluza.es/sevilla/58> a dbo:Monument;
+dbp:fullname "Monte Gurugú";
+dbp:latitude "37.374165";
+dbp:longitude "-5.988511";
+owl:sameAs <https://wikidata.org/entity/Q9034741> .
+<http://culturaandaluza.es/sevilla/59> a dbo:Monument;
+dbp:fullname "Isleta de los Pájaros";
+dbp:latitude "37.374871";
+dbp:longitude "-5.98833" .
+<http://culturaandaluza.es/sevilla/60> a dbo:Monument;
+dbp:fullname "La Plaza de España";
+dbp:latitude "37.377196";
+dbp:longitude "-5.986893" .
+<http://culturaandaluza.es/sevilla/61> a dbo:Monument;
+dbp:fullname "El Costurero de la Reina ";
+dbp:latitude "37.375868";
+dbp:longitude "-5.990486" .
+<http://culturaandaluza.es/sevilla/62> a dbo:Monument;
+dbp:fullname "Pabellón de Estados Unidos";
+dbp:latitude "37.376331";
+dbp:longitude "-5.991999" .
+<http://culturaandaluza.es/sevilla/63> a dbo:Monument;
+dbp:fullname "La Universidad de Sevilla";
+dbp:latitude "37.380758";
+dbp:longitude "-5.991231" .
+<http://culturaandaluza.es/sevilla/64> a dbo:Monument;
+dbp:fullname "Palacio de San Telmo";
+dbp:latitude "37.38031";
+dbp:longitude "-5.993906";
+owl:sameAs <https://wikidata.org/entity/Q2665595> .
+<http://culturaandaluza.es/sevilla/65> a dbo:Monument;
+dbp:fullname "Torre del Oro";
+dbp:latitude "37.382413";
+dbp:longitude "-5.99649";
+owl:sameAs <https://wikidata.org/entity/Q943873> .
+<http://culturaandaluza.es/sevilla/66> dbp:latitude "37.379474";
+dbp:longitude "-5.996854";
+a dbo:Monument;
+dbp:fullname "Museo de Carruajes" .
+<http://culturaandaluza.es/sevilla/67> a dbo:Monument;
+dbp:fullname "Iglesia de Santa Ana ";
+dbp:latitude "37.382869";
+dbp:longitude "-6.000359";
+owl:sameAs <https://wikidata.org/entity/Q3584901> .
+<http://culturaandaluza.es/sevilla/68> a dbo:Monument;
+dbp:fullname "Casa de las Columnas ";
+dbp:latitude "37.384123";
+dbp:longitude "-6.004387";
+owl:sameAs <https://wikidata.org/entity/Q97639955> .
+<http://culturaandaluza.es/sevilla/69> a dbo:Monument;
+dbp:fullname "Capilla de los marineros ";
+dbp:latitude "37.383993";
+dbp:longitude "-6.001271" .
+<http://culturaandaluza.es/sevilla/70> a dbo:Monument;
+dbp:fullname "Plaza de América ";
+dbp:latitude "37.371049";
+dbp:longitude "-5.987187" .
+<http://culturaandaluza.es/sevilla/71> owl:sameAs <https://wikidata.org/entity/Q5881375>;
+dbp:latitude "37.377787";
+dbp:longitude "-5.990336";
+a dbo:Monument;
+dbp:fullname "Glorieta de Becquer" .
+<http://culturaandaluza.es/sevilla/72> a dbo:Monument;
+dbp:fullname "Teatro Lope de Vega ";
+dbp:latitude "37.378333";
+dbp:longitude "-5.990692" .
+<http://culturaandaluza.es/sevilla/73> a dbo:Monument;
+dbp:fullname "Plaza Santa Cruz";
+dbp:latitude "37.385201";
+dbp:longitude "-5.988453" .
+<http://culturaandaluza.es/sevilla/74> a dbo:Monument;
+dbp:fullname "Plaza de Doña Elvira";
+dbp:latitude "37.384853";
+dbp:longitude "-5.990542" .
+<http://culturaandaluza.es/sevilla/75> dbp:fullname "Callejón del Agua";
+a dbo:Monument;
+dbp:latitude "37.384429";
+dbp:longitude "-5.989609" .
+<http://culturaandaluza.es/sevilla/76> a dbo:Monument;
+dbp:fullname "Jardines de Murillo";
+dbp:latitude "37.382656";
+dbp:longitude "-5.988665" .
+<http://culturaandaluza.es/sevilla/77> dbp:latitude "37.385452";
+dbp:longitude "-5.987602";
+a dbo:Monument;
+dbp:fullname "Plaza de los Refinadores" .
+<http://culturaandaluza.es/sevilla/78> a dbo:Monument;
+dbp:fullname "Patio de Banderas";
+dbp:latitude "37.384898";
+dbp:longitude "-5.991325";
+owl:sameAs <https://wikidata.org/entity/Q498261> .
+<http://culturaandaluza.es/sevilla/79> a dbo:Monument;
+dbp:fullname "Centro de Interpretación de la Judería";
+dbp:latitude "37.386168";
+dbp:longitude "-5.989029" .
+<http://culturaandaluza.es/sevilla/80> a dbo:Monument;
+dbp:fullname "Marieta";
+dbp:latitude "37.393599";
+dbp:longitude "-5.993776" .
+<http://culturaandaluza.es/sevilla/81> a dbo:Monument;
+dbp:fullname "Francisco Carrera Iglesias";
+dbp:latitude "37.389233";
+dbp:longitude "-5.991299" .
+<http://culturaandaluza.es/sevilla/82> a dbo:Monument;
+dbp:fullname "Mundo Cofrade";
+dbp:latitude "37.394699";
+dbp:longitude "-5.995888" .
+<http://culturaandaluza.es/sevilla/83> a dbo:Monument;
+dbp:fullname "Casa Rodriguez";
+dbp:latitude "37.388381";
+dbp:longitude "-5.992758" .
+<http://culturaandaluza.es/sevilla/84> a dbo:Monument;
+dbp:fullname "Sevilla Imaginera";
+dbp:latitude "37.393539";
+dbp:longitude "-5.987999" .
+<http://culturaandaluza.es/sevilla/85> a dbo:Monument;
+dbp:fullname "Antigua Casa Rodríguez";
+dbp:latitude "37.390356";
+dbp:longitude "-5.991637" .
+<http://culturaandaluza.es/sevilla/86> a dbo:Monument;
+dbp:fullname "Dado Hobby - La Casa del Belenista";
+dbp:latitude "37.393666";
+dbp:longitude "-5.993411" .
+<http://culturaandaluza.es/sevilla/87> a dbo:Monument;
+dbp:fullname "La Casa Del Nazareno";
+dbp:latitude "37.393909";
+dbp:longitude "-5.985353" .
+<http://culturaandaluza.es/sevilla/88> a dbo:Monument;
+dbp:fullname "Al Siglo Sevillano";
+dbp:latitude "37.388714";
+dbp:longitude "-5.993242" .
+<http://culturaandaluza.es/sevilla/89> a dbo:Monument;
+dbp:fullname "Juncia y Romero";
+dbp:latitude "37.388581";
+dbp:longitude "-5.992994" .
+<http://culturaandaluza.es/sevilla/90> a dbo:Monument;
+dbp:fullname "Gonzalo Reina";
+dbp:latitude "37.39189";
+dbp:longitude "-5.987882" .
+<http://culturaandaluza.es/sevilla/91> a dbo:Monument;
+dbp:latitude "37.381784";
+dbp:fullname "Casa Ruperto";
+dbp:longitude "-6.008503" .
+<http://culturaandaluza.es/sevilla/92> a dbo:Monument;
+dbp:fullname "El Rey de los Caracoles ";
+dbp:latitude "37.388814";
+dbp:longitude "-5.999231" .
+<http://culturaandaluza.es/sevilla/93> a dbo:Monument;
+dbp:fullname "Bar G. Hijón ";
+dbp:latitude "37.400051";
+dbp:longitude "-5.985042" .
+<http://culturaandaluza.es/sevilla/94> a dbo:Monument;
+dbp:fullname "Bar Rodríguez";
+dbp:latitude "37.397789";
+dbp:longitude "-5.998517" .
+<http://culturaandaluza.es/sevilla/95> dbp:fullname "Bar Rosita ";
+dbp:latitude "37.375748";
+dbp:longitude "-5.975132";
+a dbo:Monument .
+<http://culturaandaluza.es/sevilla/96> a dbo:Monument;
+dbp:fullname "Casablanca";
+dbp:latitude "37.383722";
+dbp:longitude "-5.9941" .
+<http://culturaandaluza.es/sevilla/97> a dbo:Monument;
+dbp:fullname "Las Teresas";
+dbp:latitude "37.385886";
+dbp:longitude "-5.989202";
+owl:sameAs <https://wikidata.org/entity/Q43088700> .
+<http://culturaandaluza.es/sevilla/98> a dbo:Monument;
+dbp:fullname "Jardines de Cristina";
+dbp:latitude "37.381456";
+dbp:longitude "-5.994233";
+owl:sameAs <https://wikidata.org/entity/Q28662534> .
+<http://culturaandaluza.es/sevilla/99> dbp:fullname "El Palacio de San Telmo";
+a dbo:Monument;
+dbp:latitude "37.381088";
+dbp:longitude "-5.993672";
+owl:sameAs <https://wikidata.org/entity/Q2665595> .

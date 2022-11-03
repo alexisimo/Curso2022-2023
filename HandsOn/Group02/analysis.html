@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analisis</title>
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analysis & Resource naming strategy</h1><br>
+    <div>
+        <h2>License applied for the generated datasets</h2>
+        <p>We are going to use the same license for the generated datasets. Commercial and non-commercial.</p>
+    </div>
+    <div>
+        <h2>BiciMAD</h2>
+        <div>
+            <div>
+                <h3>License</h3>
+                <p>Rights Holder: Madrid Townhall</p>
+                <p>License: The general conditions allow the reuse of documents for commercial and non-commercial
+                    purposes. Reuse means the use of documents held by the Madrid Townhall, provided that such use does
+                    not constitute a public administrative activity.</p>
+            </div>
+            <div>
+                <h3>Dataset Analysis</h3>
+                <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                    <tr bgcolor="#40836c">
+                        <td width=25% align="center">
+                            <font size="5">Column</font>
+                        </td>
+                        <td width=15% align="center">
+                            <font size="5">Type</font>
+                        </td>
+                        <td width=30% align="center">
+                            <font size="5">Comments/Range(rounded)</font>
+                        </td>
+                        <td width=30% align="center">
+                            <font size="5">Problems</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Número</td>
+                        <td>String</td>
+                        <td>Unique</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Gis_X</td>
+                        <td>Float</td>
+                        <td>Not unique</td>
+                        <td>Field is useless for our project</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Gis_Y</td>
+                        <td>Float</td>
+                        <td>Not unique</td>
+                        <td>Field is useless for our project</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Fecha de alta</td>
+                        <td>Integer</td>
+                        <td>Not unique / 41782 - 44194</td>
+                        <td>The format is not comprehensible</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Distrito</td>
+                        <td>String</td>
+                        <td>Not unique</td>
+                        <td>The data is composed by an integer identifier plus and string identifier, its not really
+                            useful as a single column</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Barrio</td>
+                        <td>String</td>
+                        <td>Not Unique</td>
+                        <td>The data is composed by an integer identifier (composed at the same time by the Distrito
+                            integer identifier plus another integer identifier) and a string identifier, its not really
+                            useful as a single column</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Calle</td>
+                        <td>String</td>
+                        <td>Not Unique</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Nº Finca</td>
+                        <td>Strihg</td>
+                        <td>Not unique</td>
+                        <td>Empty values expressed as "s/n". Some values use the prefix "frente". One error value
+                            described as a Float.</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Tipo de Reserva</td>
+                        <td>String</td>
+                        <td>Not unique</td>
+                        <td>Just one value, not useful for anything</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Número de Plazas</td>
+                        <td>Integer</td>
+                        <td>Not unique / 3 - 30</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Longitud</td>
+                        <td>Float</td>
+                        <td>Not unique / -3.73029 - -3.6346859</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Latitud</td>
+                        <td>Float</td>
+                        <td>Not unique / 40.3889363 - 40.4810028</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#b2cdc4">Dirección</td>
+                        <td>String</td>
+                        <td>Not unique</td>
+                        <td>This is a complex data formed by "Calle" and "Nº Finca"</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bike lanes</h2>
+        <div>
+            <h3>License</h3>
+            <p>Rights Holder: Madrid Townhall</p>
+            <p>License: The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+                Reuse means the use of documents held by the Madrid Townhall, provided that such use does not constitute
+                a public administrative activity.</p>
+        </div>
+        <div>
+            <h3>Dataset Analysis</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#40836c">
+                    <td width=25% align="center">
+                        <font size="5">Column</font>
+                    </td>
+                    <td width=15% align="center">
+                        <font size="5">Type</font>
+                    </td>
+                    <td width=30% align="center">
+                        <font size="5">Comments/Range(rounded)</font>
+                    </td>
+                    <td width=30% align="center">
+                        <font size="5">Problems</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">CAPA</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Repeated Values</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">TX_NOMBRE</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Wrong Encoding</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">MaxSimpTol</td>
+                    <td>Number</td>
+                    <td>Not unique/ 0-3055</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">MinSimpTol</td>
+                    <td>Number</td>
+                    <td>Not unique/ 0-0.2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">FECHA</td>
+                    <td>Date</td>
+                    <td>Not unique/ 01.08.2014-25.11.2014</td>
+                    <td>Wrong Format</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">Longitud</td>
+                    <td>Number (km)</td>
+                    <td>Not Unique/ 0.064-3.464</td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h2>Public Quick Charge Stations</h2>
+        <div>
+            <h3>License</h3>
+            <p>Rights Holder: Madrid Townhall</p>
+            <p>License: The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+                Reuse means the use of documents held by the Madrid Townhall, provided that such use does not constitute
+                a public administrative activity.</p>
+        </div>
+        <div>
+            <h3>Dataset Analysis</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#40836c">
+                    <td width=25% align="center">
+                        <font size="5">Column</font>
+                    </td>
+                    <td width=15% align="center">
+                        <font size="5">Type</font>
+                    </td>
+                    <td width=30% align="center">
+                        <font size="5">Comments/Range(rounded)</font>
+                    </td>
+                    <td width=30% align="center">
+                        <font size="5">Problems</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">XCoord</td>
+                    <td>Number</td>
+                    <td>Not unique: 4304793,6 - 451967,11
+                    </td>
+                    <td>Not expressed as longitude or latitude. Not useful for our project</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">YCoord</td>
+                    <td>Number</td>
+                    <td>Not Unique/ 4465309,95-4484580,97
+                    </td>
+                    <td>Not expressed as longitude or latitude. Not useful for our project</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">COD_DIS</td>
+                    <td>Number</td>
+                    <td>Not unique/ 1-21</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">DISTRITO</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">COD_BAR</td>
+                    <td>Number</td>
+                    <td>Not unique/ 1-18</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">BARRIO</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">UBICACIÓN</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">EMPLAZAMIE</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Char errors</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">INFO_ADICI</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td>Not useful for our project</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">Nº_EQUIPO</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">CARACTERÍ
+                    </td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b2cdc4">OPERADOR
+                    </td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div>
+        <h2>Resource naming strategys</h2>
+        <p>
+            <font style="font-weight: bold;">Domain:</font> http://smartcity.linkeddata.es/<br>
+            <font style="font-weight: bold;">Path:</font> transport/<br>
+            <font style="font-weight: bold;">&emsp;Ontology:</font> ontology/<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Class:</font> [ontologyName]/[className]<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Property:</font> [ontologyName]/[propertyName]<br>
+            <font style="font-weight: bold;">&emsp;Data:</font> resource/<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Individual:</font> [className]/[identifier]<br>
+        </p>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

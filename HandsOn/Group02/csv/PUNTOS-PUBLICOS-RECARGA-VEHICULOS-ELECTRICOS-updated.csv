@@ -1,0 +1,78 @@
+ID_CHARGEST,DISTRICT_ID,DISTRICT,NEIGHBOURHOOD_ID,NEIGHBOURHOOD,STREET,ST_NUMBER,LOCATION,CONECTOR_INFO,CAPACITY,OPERATOR
+1,2,ARGANZUELA,21,IMPERIAL,CALLE CHULAPOS,S/N,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+2,2,ARGANZUELA,26,PALOS DE MOGUER,RONDA DE VALENCIA,1,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+3,3,RETIRO,32,ADELFAS,CALLE CERRO DE LA PLATA,4,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+4,3,RETIRO,35,JERÓNIMOS,CALLE ALFONSO XII,2,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+5,4,SALAMANCA,41,RECOLETOS,CALLE GOYA,36,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+6,4,SALAMANCA,42,GOYA,CALLE GOYA,123,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+7,4,SALAMANCA,46,CASTELLANA,CALLE CASTELLÓ,105,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+8,4,SALAMANCA,44,GUINDALERA,PLAZA DE SAN CAYETANO,S/N,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+9,10,LATINA,106,CUATRO VIENTOS,CALLE SINFONIA,9,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,DRIVE THE CITY
+10,5,CHAMARTÍN,54,HISPANOAMÉRICA,AVENIDA ALFONSO XIII,S/N,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+11,4,SALAMANCA,46,CASTELLANA,CALLE VELÁZQUEZ,74,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+12,4,SALAMANCA,46,CASTELLANA,PASEO CASTELLANA,52,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+13,5,CHAMARTÍN,51,EL VISO,PASEO CASTELLANA,106,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+14,5,CHAMARTÍN,54,HISPANOAMÉRICA,PASEO CASTELLANA,160,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+15,5,CHAMARTÍN,56,CASTILLA,CALLE CARDENAL MARCELO SPÍNOLA,6,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+16,7,CHAMBERÍ,72,ARAPILES,CALLE FERNÁNDEZ DE LOS RÍOS,42,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+17,7,CHAMBERÍ,72,ARAPILES,PLAZA DEL CONDE DE VALLE DE,S/N,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+18,7,CHAMBERÍ,73,TRAFALGAR,CALLE MANUEL SILVELA,16,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+19,5,CHAMARTÍN,55,NUEVA ESPAÑA,AVENIDA ALBERTO ALCOCER,11,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+20,7,CHAMBERÍ,73,TRAFALGAR,CALLE SANTA ENGRACIA,115,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+21,7,CHAMBERÍ,74,ALMAGRO,PASEO CASTELLANA,33,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+22,8,FUENCARRAL - EL PARDO,85,LA PAZ,CALLE DE SINESIO DELGADO,2,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+23,15,CIUDAD LINEAL,156,SAN JUAN BAUTISTA,CALLE BUESO PINEDA,29,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+24,1,CENTRO,11,PALACIO,PLAZA DE LA,S/N,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),2,DRIVE THE CITY
+25,5,CHAMARTÍN,55,NUEVA ESPAÑA,CALLE MATEO INURRIA,4,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+26,6,TETUÁN,66,BERRUGUETE,CALLE OFELIA NIETO,64,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+27,8,FUENCARRAL - EL PARDO,86,VALVERDE,CALLE DEL ABETAL,8,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,REPSOL
+28,9,MONCLOA - ARAVACA,93,CIUDAD UNIVERSITARIA,CRED HIPODROMOCR,S/N,Estación de servicio,50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+29,9,MONCLOA - ARAVACA,96,EL PLANTÍO,A6 - AVENIDA VICTORIA 34 (CRED EL PLANTIO),34,Estación de servicio,50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+30,10,LATINA,106,CUATRO VIENTOS,CRED A5 PK 9,S/N,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+31,10,LATINA,106,CUATRO VIENTOS,AVENIDA DE LA PESETA,6,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+32,10,LATINA,107,ÁGUILAS,CALLE DE JOSÉ DE CADALSO,51,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,DRIVE THE CITY
+33,13,PUENTE DE VALLECAS,134,PALOMERAS SURESTE,AVENIDA DE LA ALBUFERA,319,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,ECOLINERAS
+34,16,HORTALEZA,166,VALDEFUENTES,AVENIDA MARÍA DE PORTUGAL,15,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,IBERDROLA
+35,17,VILLAVERDE,173,BUTARQUE,AVDA. DE LOS ROSALES,147,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+36,18,VILLA DE VALLECAS,183,ENSANCHE DE VALLECAS,AVENIDA REAL DE ARGANDA,74,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+37,20,SAN BLAS - CANILLEJAS,206,REJAS,BARAJAS II A2 KM 12,S/N,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+38,1,CENTRO,16,SOL,PLAZA DE JACINTO BENAVENTE,6,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,EMT
+39,4,SALAMANCA,41,RECOLETOS,JARDINES DEL DESCUBRIMIENTO - ACCESO A COMPLEJO DE APARCAMIENTOS SUBTERRÁNEOS POR CALLE DE LA ARMADA,S/N,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,12,EMT
+40,4,SALAMANCA,45,LISTA,PLAZA DE MARQUÉS DE,S/N,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,EMT
+41,5,CHAMARTÍN,56,CASTILLA,CALLE HIEDRA,36,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,EMT
+42,1,CENTRO,11,PALACIO,PLAZA DE LA CEBADA,S/N,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),2,DRIVE THE CITY
+43,1,CENTRO,15,UNIVERSIDAD,CALLE ALBERTO AGUILERA,9,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo),2,REPSOL
+44,3,RETIRO,32,ADELFAS,PLAZA DEL CONDE DE CASAL,6,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),4,DRIVE THE CITY
+45,8,FUENCARRAL - EL PARDO,88,EL GOLOSO,CALLE DEL MONASTERIO DE ARLANZA,20,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),4,IBERDROLA
+46,16,HORTALEZA,163,CANILLAS,AVENIDA DE MACHUPICHU,105,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo),2,GIC
+47,16,HORTALEZA,166,VALDEFUENTES,AVENIDA DE NICETO ALCALA ZAMORA,20,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo),2,GIC-GALP
+48,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,AVENIDA EJE CENTRAL,7,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,NATURGY
+49,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,CARRETERA DE VILLAVERDE A VALLECAS,278,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo),2,REPSOL
+50,21,BARAJAS,215,CORRALEJOS,AVENIDA DEL CONSEJO DE EUROPA,2,Estación de servicio,350 kW conector CC (CCS),4,GIC-CEPSA
+51,21,BARAJAS,215,CORRALEJOS,AVENIDA DEL PARTENÓN,5,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),4,IBERDROLA
+52,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,AVENIDA LEGAZPI,S/N,Mercamadrid,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,DRIVE THE CITY
+53,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,AVENIDA LEGAZPI,S/N,Mercamadrid,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,DRIVE THE CITY
+54,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,CALLE 3,,Mercamadrid,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+55,3,RETIRO,34,IBIZA,CALLE IBIZA,1,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+56,3,RETIRO,35,JERÓNIMOS,PLAZA DE LA LEALTAD,S/N,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+57,11,CARABANCHEL,116,BUENAVISTA,CALLE HILARIO HERRANZ ESTABLOS,20,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+58,9,MONCLOA - ARAVACA,92,ARGÜELLES,CALLE MARQUÉS DE URQUIJO,27,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+59,17,VILLAVERDE,171,"VILLAVERDE ALTO, CASCO HISTÓRICO DE VILLAVERDE",CALLE VALLE DE TOBALINA,24,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,IBERDROLA
+60,6,TETUÁN,62,CUATRO CAMINOS,CALLE BRAVO MURILLO,122,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,DRIVE THE CITY
+61,12,USERA,122,ORCASUR,CALLE DE EDUARDO BARREIROS,2,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+62,12,USERA,122,ORCASUR,A4,S/N,Estación de servicio,50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+63,16,HORTALEZA,165,APOSTOL SANTIAGO,AVENIDA DE SAN LUIS,77,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,NATURGY
+64,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,CALLE 29,,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,9,DRIVE THE CITY
+65,15,CIUDAD LINEAL,157,COLINA,CALLE ARTURO SORIA,175,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+66,15,CIUDAD LINEAL,155,SAN PASCUAL,CALLE VERDAGUER Y GARCIA,5,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+67,14,MORATALAZ,143,MARROQUINA,GLORIETA CORREGIDOR SANCHO DE CÓRDOBA,S/N,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+68,20,SAN BLAS - CANILLEJAS,201,SIMANCAS,CALLE ALCALÁ,510,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,REPSOL
+69,18,VILLA DE VALLECAS,183,ENSANCHE DE VALLECAS,CALLE ALTO DEL RETIRO,S/N,Estación de servicio,50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,ENDESA
+70,20,SAN BLAS - CANILLEJAS,206,REJAS,CALLE DEYANIRA,10,Aparcamiento,50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,NATURGY
+71,20,SAN BLAS - CANILLEJAS,206,REJAS,CALLE NANCLARES DE OCA,5,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,IBERDROLA
+72,18,VILLA DE VALLECAS,181,CASCO HISTÓRICO DE VALLECAS,AVENIDA EJE CENTRAL,7,Estación de servicio,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,NATURGY
+73,1,CENTRO,14,JUSTICIA,CALLE GÉNOVA,24,Vía pública,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,3,GIC
+74,6,TETUÁN,64,ALMENARA,CALLE SAN AQUILINO,S/N,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),4,IBERDROLA
+75,5,CHAMARTÍN,52,PROSPERIDAD,AVENIDA DE AMÉRICA,9,Aparcamiento,50 kW 2 conectores CC (CCS/Chademo),4,IBERDROLA
+76,18,VILLA DE VALLECAS,1818,CASCO HISTÓRICO DE VALLECAS,AVDA. DE MADRID - APARCAMIENTO ESTE DEL MERCADO CENTRAL DE PESCADOS (PARCELA,S/N,Mercamadrid,50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes,6,
+77,18,VILLA DE VALLECAS,1818,CASCO HISTÓRICO DE VALLECAS,CALLE 29,,Aparcamiento,180 kW 2 conectores CC (CCS),2,DRIVE THE CITY

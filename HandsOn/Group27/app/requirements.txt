@@ -1,0 +1,4 @@
+flask 
+folium 
+rdflib 
+SPARQLWrapper

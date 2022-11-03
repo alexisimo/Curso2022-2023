@@ -1,0 +1,54 @@
+{   
+    "id": "1",
+    "fullName":"Pablo",
+    "hometown":"Madrid",
+    "yourAge":"21",
+    "almaMater":"UPM",
+    "nameOfParents":"José, Mercedes",
+    "subjets": [
+            {
+            "name":"SemanticWeb", "teachers":"Oscar Corcho", "BriefDescription": "Asignatura impartida en Inglés relacionada con la obtencion de datos"
+            },
+            {
+            "name":"ComputacionCuantica", "teachers":"NiIdea", "BriefDescription": "Introducción a los Qubits"
+            },
+            {
+            "name":"BuildinUp", "teachers":"Ruth", "BriefDescription": "Asignatura impartida en Inglés para la realización del B2"
+            }
+    ]
+}
+
+{
+    "@context": {
+        "pab": "http://www.pablo.es/schema/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "fullName": "rdfs:label",
+        "hometown": "rdfs:label",
+        "yourAge": "rdfs:label",
+        "almaMater": "rdfs:label",
+        "nameOfParents": "rdfs:comment",
+        "subjets": "sub:subjet",
+            "name": "subj:nombre",
+            "teachers": "subj:profesor",
+            "briefDescription": "subj:brebeDescripcion"
+    },
+    "@id": "http://www.pablo.es/schema/descripcion-persona/1",
+    "@type": "pab:schema/descripcion-persona",
+    "fullName":"Raul",
+    "hometown":"Madrid",
+    "yourAge":"21",
+    "almaMater":"UPM",
+    "nameOfParents":"José, Mercedes",
+    "subjets": [
+            {
+            "name":"SemanticWeb", "teachers":"Oscar Corcho", "briefDescription": "Asignatura impartida en Inglés relacionada con la obtencion de datos"
+            },
+            {
+            "name":"ComputacionCuantica", "teachers":"NiIdea", "briefDescription": "Introducción a los Qubits"
+            },
+            {
+            "name":"BuildinUp", "teachers":"Ruth", "briefDescription": "Asignatura impartida en Inglés para la realización del B2"
+            }
+    ]
+}
+  

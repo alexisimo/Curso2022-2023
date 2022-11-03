@@ -1,0 +1,39 @@
+@prefix : <http://desfibriladores.com/ontology/desfibrilador/> .
+@prefix desfibrilador: <http://desfibriladores.com/ontology/desfibrilador/desfibrilador/> .
+@prefix establecimiento: <http://desfibriladores.com/ontology/desfibrilador/establecimiento/> .
+@prefix titulariadad: <http://desfibriladores.com/ontology/desfibrilador/titulariadad/> .
+@prefix municipio: <http://desfibriladores.com/ontology/desfibrilador/municipio/> .
+@prefix direccion: <http://desfibriladores.com/ontology/desfibrilador/direccion/> .
+@prefix horarioacceso: <http://desfibriladores.com/ontology/desfibrilador/horarioacceso/> .
+@prefix codigodea: <http://desfibriladores.com/ontology/desfibrilador/codigodea/> .
+
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+desfibrilador:1 a :Desfibrilador .
+
+establecimiento:1 a :Establecimiento;
+:hasEstablecimiento  "Establecimiento dependiente de una Administración Pública"^^xsd:string .
+
+titulariadad:Pública a :Titulariadad.
+
+municipio:Madrid a :Municipio ;
+:hasCodigoMunicipio "079"^^xsd:nonNegativeInteger;
+:hasNombreMunicipio "Madrid"^^xsd:string. 
+
+direccion:1 a :Direccion;
+:hasCodigoViaDireccion "CALLE"^^xsd:string;
+:hasNombreViaDireccion  "de Ríos Rosas"^^xsd:string;
+:hasPisoDireccion   "23"^^xsd:string;
+:hasPuertaDireccion   "BAJA"^^xsd:string;
+:hasCodigoPostalDireccion  "28003"^^xsd:string;
+:hasUbicacionDireccion   "INSTITUTO GEOLÓGICO Y MINERO DE ESPAÑA JUNTO AL SERVICIO MÉDICO"^^xsd:string;
+:hasCoordXDireccion   "440663"^^xsd:float;
+:hasCoordYDireccion   "CALLE"^^xsd:float.
+
+horarioacceso:1 a :HorarioAcceso ;
+:hasHorarioAcceso "24 HORAS"^^xsd:string.
+
+
+codigodea:1 a :HorarioAcceso ;
+:hasHorarioAcceso "2017-38"^^xsd:string.

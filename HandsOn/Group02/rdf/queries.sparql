@@ -1,0 +1,274 @@
+PREFIX ns1:<http://smartcity.linkeddata.es/transport/ontology/>
+
+
+# list every element 
+SELECT * 
+WHERE
+{
+    ?sub ?pre ?obj
+}
+
+# list classes
+
+SELECT DISTINCT ?clase
+WHERE
+{
+    ?sub a ?clase
+}
+
+# BIKE STATIONS--------------------------------------------------------------------------
+
+# list bike stations
+
+SELECT ?Subject WHERE { 
+    ?Subject a ns1:BikeStation.
+}
+
+# list bike station districts
+
+SELECT DISTINCT ?sub WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+}
+
+# list bike station neighbourhoods
+
+SELECT ?Subject WHERE {
+    ?Subject a ns1:BikeStation.
+    ?Subject a ns1:Neighbourhood.
+}
+
+#list capacity of each bike station
+
+SELECT ?sub ?val WHERE {
+    ?sub a ns1:BikeStation.
+    ?sub ns1:capacity ?val.
+}
+
+#list latitude of each bike station
+
+SELECT ?sub ?val WHERE {
+    ?sub a ns1:BikeStation.
+    ?sub ns1:coord_lat ?val.
+}
+
+#list longitude of each bike station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:BikeStation.
+    ?sub ns1:coord_long ?val.
+}
+
+#list neighbourhood of each bike station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:BikeStation.
+    ?sub ns1:hasNeighbourhood ?val.
+}
+
+#list identifier of each bike station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:BikeStation.
+    ?sub ns1:identifier ?val.
+}
+
+#list street of each bike station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:BikeStation.
+    ?sub ns1:street ?val.
+}
+
+#list street number of each bike station
+
+SELECT ?sub ?val WHERE {
+    ?sub a ns1:BikeStation.
+    ?sub ns1:st_number ?val.
+}
+
+# list name of each district the bike stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of each district the bike stations belong to
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:number_id ?val.
+}
+
+# list name of neighbourhoods the bike stations belong to
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of neighbourhoods
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:number_id ?val.
+}
+
+# list neighbourhoods district
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:hasDistrict ?val.
+}
+
+
+# VEHICLE CHARGE STATIONS -------------------------------------------------------
+
+# list charge stations
+
+SELECT ?Subject WHERE { 
+    ?Subject a ns1:ChargeStation.
+}
+
+# list charge station districts
+
+SELECT DISTINCT ?sub WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+}
+
+# list neighbourhoods the charge stations belong to
+
+SELECT ?Subject WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasNeighbourhood ?Subject.
+    ?Subject a ns1:Neighbourhood.
+}
+
+# list Operator 
+
+SELECT DISTINCT ?Subject WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasOperator ?Subject.
+    ?Subject a ns1:Operator.
+}
+
+#list capacity of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:capacity ?val.
+}
+
+#list conector info of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:conector_info ?val.
+}
+
+#list neighbourhood of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:hasNeighbourhood ?val.
+}
+
+#list operator of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:hasOperator ?val.
+}
+
+#list identifier of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:identifier ?val.
+}
+
+#list street of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:street ?val.
+}
+
+#list street number of each charge station
+
+SELECT ?sub ?val WHERE { 
+    ?sub a ns1:ChargeStation.
+    ?sub ns1:st_number ?val.
+}
+
+# list name of each district the charge stations belong to
+
+SELECT ?sub ?val WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of districts the charge stations belong to
+
+SELECT ?sub ?val WHERE { 
+    ?cs a ns1:ChargeStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub ns1:number_id ?val.
+}
+
+# list name of neighbourhoods the charge stations belong to
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:ChargeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:name_id ?val.
+}
+
+# list id of neighbourhoods
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:ChargeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:number_id ?val.
+}
+
+# list neighbourhoods district
+
+SELECT ?sub ?val WHERE { 
+    ?bike a ns1:ChargeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub ns1:hasDistrict ?val.
+}
+
+# list name of operators
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?sub a ns1:Operator.
+    ?sub ns1:name_id ?val.
+}

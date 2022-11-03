@@ -1,0 +1,585 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
+
+map:map_bikeStation_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "bikeStation" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
+	rr:subjectMap map:s_000 .
+
+map:map_chargeStation_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "chargeStation" ;
+	rr:predicateObjectMap map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014, map:pom_015, map:pom_016 ;
+	rr:subjectMap map:s_001 .
+
+map:map_district_000 rml:logicalSource map:source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "district" ;
+	rr:predicateObjectMap map:pom_027, map:pom_028, map:pom_029, map:pom_030 ;
+	rr:subjectMap map:s_004 .
+
+map:map_district_001 rml:logicalSource map:source_005 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "district" ;
+	rr:predicateObjectMap map:pom_031, map:pom_032, map:pom_033, map:pom_034 ;
+	rr:subjectMap map:s_005 .
+
+map:map_location_000 rml:logicalSource map:source_007 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "location" ;
+	rr:predicateObjectMap map:pom_038, map:pom_039 ;
+	rr:subjectMap map:s_007 .
+
+map:map_neighbourhood_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "neighbourhood" ;
+	rr:predicateObjectMap map:pom_017, map:pom_018, map:pom_019, map:pom_020, map:pom_021 ;
+	rr:subjectMap map:s_002 .
+
+map:map_neighbourhood_001 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "neighbourhood" ;
+	rr:predicateObjectMap map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026 ;
+	rr:subjectMap map:s_003 .
+
+map:map_operator_000 rml:logicalSource map:source_006 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "operator" ;
+	rr:predicateObjectMap map:pom_035, map:pom_036, map:pom_037 ;
+	rr:subjectMap map:s_006 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/BikeStation" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "ID_BIKEST" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "CAPACITY" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "LONGITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "LATITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "STREET" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "ST_NUMBER" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_007 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_ID}" ;
+	rr:termType rr:IRI .
+
+map:om_008 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/ChargeStation" ;
+	rr:termType rr:IRI .
+
+map:om_009 rml:reference "ID_CHARGEST" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_010 rml:reference "CAPACITY" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_011 rml:reference "STREET" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_012 rml:reference "ST_NUMBER" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_013 rml:reference "CONECTOR_INFO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_014 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/location/{LOCATION}" ;
+	rr:termType rr:IRI .
+
+map:om_015 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_ID}" ;
+	rr:termType rr:IRI .
+
+map:om_016 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" ;
+	rr:termType rr:IRI .
+
+map:om_017 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Neighbourhood" ;
+	rr:termType rr:IRI .
+
+map:om_018 rml:reference "NEIGHBOURHOOD_ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_019 rml:reference "NEIGHBOURHOOD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_020 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_ID}" ;
+	rr:termType rr:IRI .
+
+map:om_021 rml:reference "WIKIDATA_NEIGHBOURHOOD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_022 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Neighbourhood" ;
+	rr:termType rr:IRI .
+
+map:om_023 rml:reference "NEIGHBOURHOOD_ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_024 rml:reference "NEIGHBOURHOOD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_025 rdf:type rr:ObjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_ID}" ;
+	rr:termType rr:IRI .
+
+map:om_026 rml:reference "WIKIDATA_NEIGHBOURHOOD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_027 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/District" ;
+	rr:termType rr:IRI .
+
+map:om_028 rml:reference "DISTRICT_ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_029 rml:reference "DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_030 rml:reference "WIKIDATA_DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_031 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/District" ;
+	rr:termType rr:IRI .
+
+map:om_032 rml:reference "DISTRICT_ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_033 rml:reference "DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_034 rml:reference "WIKIDATA_DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_035 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Operator" ;
+	rr:termType rr:IRI .
+
+map:om_036 rml:reference "OPERATOR" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_037 rml:reference "WIKIDATA_OPERATOR" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_038 rdf:type rr:ObjectMap ;
+	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Location" ;
+	rr:termType rr:IRI .
+
+map:om_039 rml:reference "LOCATION" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant ont:identifier .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant ont:capacity .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant ont:coord_long .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant ont:coord_lat .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant ont:street .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant ont:st_number .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasNeighbourhood .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant ont:identifier .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant ont:capacity .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant ont:street .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant ont:st_number .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant ont:conector_info .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasLocation .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasNeighbourhood .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasOperator .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant ont:number_id .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasDistrict .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant ont:number_id .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant ont:hasDistrict .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant ont:number_id .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant ont:number_id .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant ont:name_id .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_018 .
+
+map:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_019 ;
+	rr:predicateMap map:pm_019 .
+
+map:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_020 ;
+	rr:predicateMap map:pm_020 .
+
+map:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_021 ;
+	rr:predicateMap map:pm_021 .
+
+map:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_022 ;
+	rr:predicateMap map:pm_022 .
+
+map:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_023 ;
+	rr:predicateMap map:pm_023 .
+
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_036 .
+
+map:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_037 ;
+	rr:predicateMap map:pm_037 .
+
+map:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_038 ;
+	rr:predicateMap map:pm_038 .
+
+map:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_039 ;
+	rr:predicateMap map:pm_039 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_location_000, map:map_neighbourhood_000, map:map_neighbourhood_001, map:map_operator_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/bikeStation/{ID_BIKEST}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/chargeStation/{ID_CHARGEST}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_ID}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_ID}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_ID}" .
+
+map:s_005 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_ID}" .
+
+map:s_006 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" .
+
+map:s_007 rdf:type rr:SubjectMap ;
+	rr:template "http://smartcity.linkeddata.es/transport/data/location/{LOCATION}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/bases_bicimad-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/bases_bicimad-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/bases_bicimad-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_005 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_006 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_007 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+

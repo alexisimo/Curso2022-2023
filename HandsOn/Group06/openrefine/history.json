@@ -1,0 +1,37 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "direccion_via_codigo",
+    "expression": "grel:join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_via_nombre'].value,''),coalesce(cells['direccion_portal_numero'].value,''),coalesce(cells['direccion_piso'].value,''),coalesce(cells['direccion_puerta'].value,'')],' ')",
+    "onError": "set-to-blank",
+    "newColumnName": "direccion_establecimiento",
+    "columnInsertIndex": 5,
+    "description": "Create column direccion_establecimiento at index 5 based on column direccion_via_codigo using expression grel:join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_via_nombre'].value,''),coalesce(cells['direccion_portal_numero'].value,''),coalesce(cells['direccion_piso'].value,''),coalesce(cells['direccion_puerta'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "codigo_dea",
+      "tipo_establecimiento",
+      "tipo_titularidad",
+      "municipio_codigo",
+      "municipio_nombre",
+      "direccion_establecimiento",
+      "direccion_via_codigo",
+      "direccion_via_nombre",
+      "direccion_portal_numero",
+      "direccion_piso",
+      "direccion_puerta",
+      "direccion_codigo_postal",
+      "direccion_ubicacion",
+      "direccion_coordenada_x",
+      "direccion_coordenada_y",
+      "horario_acceso"
+    ],
+    "description": "Reorder columns"
+  }
+]

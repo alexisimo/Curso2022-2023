@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Analysis - Group 01</h1>
+    <h2>Data source</h2>
+    <p>
+      Dataset filename: puntos-de-recarga.csv The data sets we are using is
+      regarding all the charge station for electric vehicle in the city of
+      Alcobendas. The available information is: - Owner, address, longitudes,
+      latitudes, number of connectors, type of connectors, price, cables and
+      adaptors, bookable, schedule, timelimit.
+    </p>
+    <! Diapositiva 25 https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/10225755/mod_resource/content/9/07.MGLD.pdf>
+    <div>
+      <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0pky"><strong>Column</strong></th>
+            <th class="tg-0pky"><strong>Type</strong></th>
+            <th class="tg-0pky"><strong>Comments/Range</strong></th>
+            <th class="tg-0pky"><strong>Problems</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0pky">Titular</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique</td>
+            <td class="tg-0pky"></td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Situacion</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Unique</td>
+            <td class="tg-0pky"></td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Longitud</td>
+            <td class="tg-0pky">Decimal</td>
+            <td class="tg-0pky">-3.67 — -3.61</td>
+            <td class="tg-0pky"></td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Latitud</td>
+            <td class="tg-0pky">Decimal</td>
+            <td class="tg-0pky">40.51 — 40.55</td>
+            <td class="tg-0pky"></td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Número de conectdores</td>
+            <td class="tg-0pky">Integer</td>
+            <td class="tg-0pky">1 — 23</td>
+            <td class="tg-0pky">n/d?</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Tipo de conectores</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique / Empty value</td>
+            <td class="tg-0pky">1 blank</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Precio</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique</td>
+            <td class="tg-0pky">n/d?</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Cables y adaptadores</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique</td>
+            <td class="tg-0pky">n/d?</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Reservar</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique</td>
+            <td class="tg-0pky">n/d?</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Horario</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique</td>
+            <td class="tg-0pky">n/d? / No standard for hours and days</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Límite de tiempo</td>
+            <td class="tg-0pky">String</td>
+            <td class="tg-0pky">Not unique / Empty value</td>
+            <td class="tg-0pky">A lots of blanks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Licensing</h2>
+    <p>
+      Licensing name: ODC-BY 1.0 license
+      <br />
+      We are free:
+      <br />
+      -To share: To copy, distribute and use the database.
+      <br />
+      -To create: To produce works from the database.
+      <br />
+      -To adapt: To modify, transform and build upon the database.
+    </p>
+    <h2>Resource naming strategy</h2>
+    <p>City: HO-G1.linkeddata.es/City<br />
+      &emsp;hasAddress: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasAddress<br />
+      &emsp;hasPeripheral: http://HO-G1.linkeddata.es/ontology/Chargingstation#hasPeripheral<br />
+      &emsp;isLocatedIn: http://HO-G1.linkeddata.es/ontology/Chargingstation#isLocatedIn<br />
+
+      Charging_station: http://HO-G1.linkeddata.es/resource/Chargingstation/<br />
+      &emsp;owner: http://HO-G1.linkeddata.es/ontology/Chargingstation#owner<br />
+      &emsp;timeLimit: http://HO-G1.linkeddata.es/ontology/Chargingstation#timeLimit<br />
+      &emsp;schedule: http://HO-G1.linkeddata.es/ontology/Chargingstation#schedule<br />
+      &emsp;bookable: http://HO-G1.linkeddata.es/ontology/Chargingstation#bookable<br />
+      &emsp;cablesAnnotation: http://HO-G1.linkeddata.es/ontology/Chargingstation#cablesAnnotation<br />
+      &emsp;longitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#longitude<br />
+      &emsp;latitude: http://HO-G1.linkeddata.es/ontology/Chargingstation#latitude<br />
+      &emsp;price: http://HO-G1.linkeddata.es/ontology/Chargingstation#price<br />
+      
+      Address: http://HO-G1.linkeddata.es/resource/Address/<br />
+      &emsp;address: http://HO-G1.linkeddata.es/Address/$(Address)<br />
+
+      Peripheral: http://HO-G1.linkeddata.es/resource/Peripheral/<br />
+      
+      Connector: http://HO-G1.linkeddata.es/resource/Connector/<br />
+      &emsp;number: http://HO-G1.linkeddata.es/ontology/Chargingstation#number<br />
+      &emsp;type: http://HO-G1.linkeddata.es/ontology/Chargingstation#type<br />
+    </p>
+    </p>
+
+    <!-----Estilos de la tabla------>
+    <style type="text/css">
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+      .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+      .tg .tg-0pky {
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+ @prefix base: <http://smartcity.linkeddata.es/transport/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    dc:creator "Group02-SemanticWeb-2022/2023" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "EcoMobility" ;
+    owl:versionInfo "0.0.1" .
+
+ont:BikeStation a owl:Class ;
+    rdfs:label "Bike Station" .
+
+ont:VehicleChargeStation a owl:Class ;
+    rdfs:label "Vehicle Charge Station" .
+
+ont:capacity a owl:DatatypeProperty ;
+    rdfs:label "capacity" ;
+    rdfs:range xsd:integer .
+
+ont:conector_info a owl:DatatypeProperty ;
+    rdfs:label "conector_info" ;
+    rdfs:range xsd:string .
+
+ont:coord_lat a owl:DatatypeProperty ;
+    rdfs:label "coord_lat" ;
+    rdfs:range xsd:float .
+
+ont:coord_long a owl:DatatypeProperty ;
+    rdfs:label "coord_long" ;
+    rdfs:range xsd:float .
+
+ont:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:range ont:District .
+
+ont:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" ;
+    rdfs:range ont:Location .
+
+ont:hasNeighbourhood a owl:ObjectProperty ;
+    rdfs:label "has neighbourhood" ;
+    rdfs:range ont:Neighbourhood .
+
+ont:hasOperator a owl:ObjectProperty ;
+    rdfs:label "has operator" ;
+    rdfs:range ont:Operator .
+
+ont:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:range xsd:string .
+
+ont:name_id a owl:DatatypeProperty ;
+    rdfs:label "name_id" ;
+    rdfs:range xsd:string .
+
+ont:number_id a owl:DatatypeProperty ;
+    rdfs:label "number_id" ;
+    rdfs:range xsd:integer .
+
+ont:st_number a owl:DatatypeProperty ;
+    rdfs:label "st_number" ;
+    rdfs:range xsd:string .
+
+ont:street a owl:DatatypeProperty ;
+    rdfs:label "street" ;
+    rdfs:range xsd:string .
+
+ont:District a owl:Class ;
+    rdfs:label "District" .
+
+ont:Location a owl:Class ;
+    rdfs:label "Location" .
+
+ont:Neighbourhood a owl:Class ;
+    rdfs:label "Neighbourhood" .
+
+ont:Operator a owl:Class ;
+    rdfs:label "Operator" .
+

@@ -1,0 +1,16 @@
+@base <https://www.fi.upm.es/>.
+@prefix relations: <https://www.fi.upm.es/relations/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ClassRoom03 relations:contains :Sensor347, 
+		     :Table322.
+
+:Sensor347 relations:hasMeasurement :Measurement8432.
+
+:Measurement8432 relations:hasTemperature 29;
+                                         relations:atTime "2022-09-12T12:01:12"^^xsd:dateTime.
+
+:Table322 relations:hasOwner :ETSIInformaticos.
+
+:ETSIInformaticos relations:hasName "ETSI Informáticos".
+

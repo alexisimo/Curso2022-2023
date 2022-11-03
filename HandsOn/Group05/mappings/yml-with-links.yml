@@ -1,0 +1,129 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  em: http://ocioMadrid/lcc/ontology/EventosMadrid#
+  er: http://ocioMadrid/lcc/resource/
+  ns: http://ns.com#
+  mz: http://madrid/zonas/
+  time: http://www.owl-ontologies.com/time#
+  xsd: http://www.w3.org/2001/XMLer#
+
+  
+mappings:
+  actividad:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Actividad/$(TITULO-ACTIVIDAD)
+   po:
+      - [a, er:Actividad]
+      - [ns:Titulo-Actividad,$(TITULO-ACTIVIDAD)]
+      - [ns:URL-Actividad,$(URL-ACTIVIDAD)]
+
+  distrito:
+      sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+      s:  http://madrid/zonas/Distrito/$(DISTRITO-INSTALACION)
+      po:
+       - [a,mz:Distrito]
+       - [rdfs:label,$(DISTRITO-INSTALACION)]
+       - [owl:sameAs,$(same_as_distrito)~iri]
+
+  barrio:
+      sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+      s:  http://madrid/zonas/Barrio/$(BARRIO-INSTALACION)
+      po:
+       - [a,mz:Barrio]
+       - [rdfs:label,$(BARRIO-INSTALACION)]
+       - [owl:sameAs,$(same_as_barrio)~iri]   
+
+  instalacion:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Instalacion/$(NOMBRE-INSTALACION)
+   po:
+      - [a, er:Instalacion]
+      - [ns:URL_Instalacion,$(URL-INSTALACION)]
+      - [ns:Nombre_Instalacion,$(NOMBRE-INSTALACION)]
+      - [ns:Accesibilidad,$(ACCESIBILIDAD-INSTALACION),xsd:double]
+      - [ns:ClaseVial,$(CLASE-VIAL-INSTALACION)]
+      - [ns:Via,$(NOMBRE-VIA-INSTALACION)]
+      - [ns:CodogoPostal,$(CODIGO-POSTAL-INSTALACION)]
+      - [ns:Coordenadas_X,$(COORDENADA-X),xsd:double]
+      - [ns:Coordenadas_Y,$(COORDENADA-Y),xsd:double]
+      - [ns:Distrito,$(DISTRITO-INSTALACION)]
+      - [ns:Barrio,$(BARRIO-INSTALACION)]
+      - p: em:perteneceDistrito
+        o:
+        - mapping: distrito
+          condition:
+            function: equal
+            parameters:
+            - [str1,$ (DISTRITO-INSTALACION)]
+            - [str2,$ (DISTRITO-INSTALACION)]
+      - p: em:perteneceBarrio
+        o:
+        - mapping: barrio
+          condition:
+            function: equal
+            parameters:
+            - [str1,$ (BARRIO-INSTALACION)]
+            - [str2,$ (BARRIO-INSTALACION)]      
+
+  intervaloTiempo:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+   s: http://www.owl-ontologies.com/time#IntervaloTiempo/$(FECHA)_$(FECHA-FIN)_$(HORA)
+   po:
+      - [a, time:intervaloTiempo]
+      - [time:hora,$(HORA),xsd:time]
+      - [time:inicio,$(FECHA),xsd:date]
+      - [time:fin,$(FECHA-FIN),xsd:date]
+      
+  evento:
+   sources:
+      - ['300107-0-agenda-actividades-eventos-with-links.csv~csv']
+   s: http://ocioMadrid/lcc/resource/Evento/$(ID-EVENTO)
+   po:
+      - [a, er:Evento]
+      - [ns:titulo,$(TITULO)]
+      - [ns:Precio,$(PRECIO)]
+      - [ns:Gratuito,$(GRATUITO),xsd:integer]
+      - [ns:Audiencia,$(AUDIENCIA)]
+      - [ns:tipo,$(TIPO)]
+      - [ns:LargaDuracion,$(LARGA-DURACION) ]
+      - [ns:Dias_semana,$(DIAS-SEMANA) ]
+      
+      - [time:hora,$(HORA),xsd:time]
+      - [time:inicio,$(FECHA),xsd:date]
+      - [time:fin,$(FECHA-FIN),xsd:date]
+      
+      - [ns:Titulo-Actividad,$(TITULO-ACTIVIDAD)]
+      
+      - [ns:Nombre-Instalacion,$(NOMBRE-INSTALACION)]
+      
+      - p: em:inscribe
+        o:
+        - mapping: actividad
+          condition:
+            function: equal
+            parameters:
+            - [str1,$ (TITULO-ACTIVIDAD)]
+            - [str2,$ (TITULO-ACTIVIDAD)]
+      - p: em:seLocaliza
+        o:
+        - mapping: instalacion
+          condition:
+          function: equal
+          parameters:
+          - [str1,$ (NOMBRE-INSTALACION)]
+          - [str2,$ (NOMBRE-INSTALACION)]
+      - p: em:seDesrrolla
+        o:
+        - mapping: intervaloTiempo
+          condition:
+          function: equal
+          parameters:
+          - [str1,$(FECHA)]
+          - [str2,$(FECHA)]
+
+   

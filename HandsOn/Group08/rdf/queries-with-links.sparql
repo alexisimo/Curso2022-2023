@@ -1,0 +1,16 @@
+
+#verify direccion in wikidata
+SELECT ?wikidata ?direccion WHERE {
+        VALUES ?direccion { "Avenida de Alfonso XIII"@es }
+        ?wikidata rdfs:label|skos:altLabel ?direccion
+}
+#verify barrio in wikidata
+SELECT ?wikidata ?barrio WHERE {
+        VALUES ?barrio { "Ciudad Universitaria"@es }
+        ?wikidata rdfs:label|skos:altLabel ?barrio
+}
+#verify distrito in wikidata
+SELECT ?wikidata ?distrito WHERE {
+        VALUES ?distrito { "Hortaleza"@es }
+        ?wikidata rdfs:label|skos:altLabel ?distrito
+}

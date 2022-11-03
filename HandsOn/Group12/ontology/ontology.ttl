@@ -1,0 +1,43 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix regeneratedWater: <http://base.regeneratedWater.com> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+regeneratedWater: a owl:Ontology ;
+    dc:creator "Santiago Jose Guardo Vásquez, Isabel Martín González, Diego González Duce" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Regenerate Water ontology" ;
+    owl:versionInfo "0.0.1" .
+
+regeneratedWater:hasParameter a owl:ObjectProperty ;
+    rdfs:label "has parameter" ;
+    rdfs:domain regeneratedWater:purification_plant ;
+    rdfs:range regeneratedWater:parameter .
+
+regeneratedWater:hasSample a owl:ObjectProperty ;
+    rdfs:label "has sample" ;
+    rdfs:domain regeneratedWater:parameter ;
+    rdfs:range regeneratedWater:sample .
+
+regeneratedWater:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:range xsd:string .
+
+regeneratedWater:parameterName a owl:DatatypeProperty ;
+    rdfs:label "parameter name" ;
+    rdfs:range xsd:string .
+
+regeneratedWater:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
+    rdfs:range xsd:float .
+
+regeneratedWater:purification_plant a owl:Class ;
+    rdfs:label "purification_plant" .
+
+regeneratedWater:sample a owl:Class ;
+    rdfs:label "sample" .
+
+regeneratedWater:parameter a owl:Class ;
+    rdfs:label "parameter" .
+

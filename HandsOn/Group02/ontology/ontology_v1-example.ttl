@@ -1,0 +1,39 @@
+@prefix ont: <http://smartcity.linkeddata.es/transport/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <http://smartcity.linkeddata.es/transport/data/> .
+@prefix bikeSt: <http://smartcity.linkeddata.es/transport/data/bikeStation/> .
+@prefix chargeSt: <http://smartcity.linkeddata.es/transport/data/vehicleChargeStation/> .
+@prefix location: <http://smartcity.linkeddata.es/transport/data/location/> .
+@prefix hood: <http://smartcity.linkeddata.es/transport/data/neighbourhood/> .
+@prefix dist: <http://smartcity.linkeddata.es/transport/data/district/> .
+@prefix op: <http://smartcity.linkeddata.es/transport/data/operator/> .
+
+bikeSt:00191 a ont:BikeStation ;
+            ont:identifier "191"^^xsd:string ;
+            ont:capacity 18^^xsd:integer ;
+            ont:coord_long -3.6740365^^xsd:float ;
+            ont:coord_lat 40.4346168^^xsd:float ;
+            ont:street "CALLE DE ALONSO HEREDIA"^^xsd:string ;
+            ont:st_number "1"^^xsd:string .
+chargeSt:00008 a ont:VehicleChargeStation ;
+            ont:identifier "8"^^xsd:string ;
+            ont:capacity 3^^xsd:integer ;
+            ont:street "PLAZA DE SAN CAYETANO"^^xsd:string ;
+            ont:st_number "s/n"^^xsd:string ;
+            ont:conector_info "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"^^xsd:string .
+op:endesa a ont:Operator ;
+            ont:name_id "Endesa"^^xsd:string .
+chargeSt:00008 ont:hasOperator op:endesa .
+location:aparcamiento a ont:Location ;
+            ont:name_id "Aparcamiento"^^xsd:string .
+chargeSt:00008 ont:hasLocation location:aparcamiento .
+hood:guindalera a ont:Neighbourhood ;
+            ont:number_id 4^^xsd:integer ;
+            ont:name_id "Guindalera"^^xsd:string .
+bikeSt:00191 ont:hasNeighbourhood hood:guindalera .
+chargeSt:00008 ont:hasNeighbourhood hood:guindalera .
+dist:salamanca a ont:District ;
+            ont:number_id 4^^xsd:integer ;
+            ont:name_id "Salamanca"^^xsd:string .
+hood:guindalera ont:hasDistrict dist:salamanca .
+

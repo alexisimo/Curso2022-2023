@@ -1,0 +1,7 @@
+#Show all SameAs links  
+SELECT DISTINCT *
+WHERE 
+{
+    ?s ?p ?o .
+    ?s <http://www.w3.org/2002/07/owl#sameAs> ?o .
+}

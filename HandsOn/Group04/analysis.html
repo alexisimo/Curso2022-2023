@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Analisis</title>
+    </head>
+    <body>
+        <h1>Licencia</h1>
+		    <p>Editor: Portal de datos abiertos del Ayuntamiento de Madrid<a href="https://datos.madrid.es/portal/site/egob/">https://datos.madrid.es/portal/site/egob/</a></p>
+		    <p>Propietario: Ayuntamiento de Madrid </p>
+		    <p>Licencia:</p><a href="https://sede.madrid.es/FrameWork/generacionPDF/ANM2016_108.pdf?idNormativa=3eabe8e52c796510VgnVCM1000001d4a900aRCRD&nombreFichero=ANM2016_108&cacheKey=163"></a>
+		    <p>"Con caracter general, sera reutilizable la informacion publicada sin necesidad de autorizacion previa y de forma gratuita"
+					(Articulo 27. Ordenanza de Transparencia de la ciudad de Madrid)
+					 La reutilizacion autorizada incluye actividades como la copia, difusion, modificacion, adaptacion, extraccion, reordenacion y combinacion de la informacion.</p>
+			<h3>Condiciones generales para la reutilizacion</h3>			 
+		        <ul>
+					<li>Esta prohibido desnaturalizar el sentido de la informacion.</li>
+					<li>Debe citarse la fuente de los documentos objeto de la reutilizacion.</li>
+					<li>Debe mencionarse la fecha de la ultima actualizacion de los documentos objeto de la reutilizacion.</li>
+					<li>No se podra indicar, insinuar o sugerir que el Ayuntamiento de Madrid participa, patrocina o apoya la reutilizacion que se lleve a cabo con la informacion.</li>
+					<li>Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualizacion y las condiciones de reutilizacion aplicables incluidos,
+					en su caso, en el documento puesto a disposicion para su reutilizacion.</li>
+					<li>En caso de informacion anonimizada por proteccion de datos personales u otros motivos, esta expresamente prohibido realizar labores de re-identificacion de personas a partir de estos datos
+					y otras fuentes de datos e informacion posibles, pasadas, actuales o futuras.</li>
+		        </ul> 
+        <h1>Analisis de base de datos</h1>
+            <table>
+                <tr>
+                 <td>YCoord</td>
+                    <td>Float</td>
+                    <td>Latitud del punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>XCoord</td>
+                    <td>Float</td>
+                    <td>Longitud del punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>COD_DIS</td>
+                    <td>Integer</td>
+                    <td>Codigo del distrito donde se ubica el punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>DISTRITO</td>
+                    <td>String</td>
+                    <td>Nombre del distrito donde se ubica el punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>COD_BAR</td>
+                    <td>Integer</td>
+                    <td>Codigo del barrio donde se ubica el punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>BARRIO</td>
+                    <td>String</td>
+                    <td>Barrio en el que se encuentra el punto de recarga en cuestion</td>
+                </tr>
+                <tr>
+                    <td>UBICACION</td>
+                    <td>String</td>
+                    <td>Vial, Nombre del vial,
+                        Numero del vial</td>
+                </tr>
+                 <tr>
+                    <td>EMPLAZAMIENTOS</td>
+                    <td>String</td>
+                    <td>Tipo de ubicacion en el
+                        que se encuentra
+                        el punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>INFO_ADIC</td>
+                    <td>String</td>
+                    <td>Informacion que ayuda a concretar la ubicacion del punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>Nº_EQUIPO</td>
+                    <td>Integer</td>
+                    <td>Numero de equipo</td>
+                </tr>
+                <tr>
+                    <td>POTENCIA</td>
+                    <td>Integer</td>
+                    <td>potencia del punto de recarga</td>
+                </tr>
+                <tr>  
+                    <td>CONECTOR CC</td>
+                    <td>Integer</td>
+                    <td>Numero de conectores de tipo CC que utiliza el punto de recarga</td>
+                </tr> 
+                <tr>
+                    <td>CONECTOR AC</td>
+                    <td>Integer</td>
+                    <td>Numero de conectores de tipo AC que utiliza el punto de recarga</td>
+                </tr>
+                <tr>
+                    <td>OPERADOR</td>
+                    <td>String</td>
+                    <td>Indica el nombre del proveedor del punto de recarga</td>
+                </tr>
+            </table>
+        <h1>Resource naming strategy</h1>
+            <ul>
+                <li>Dominio:<a href="https://www.puntodecargasMadrid.com/">https://www.puntodecargasMadrid.com/</a></li>
+                <li>Clases: <a href="">https://www.puntodecargasMadrid/Clases#</a></li>
+                <li>Propiedades: <a href="">https://www.puntodecargasMadrid/Propiedades#</a></li>
+                <ul>
+					<li >emplazamiento</li>
+                    <li >infoAdicional</li>
+                    <li >numEquipo</li>
+                    <li >potencia</li>
+                    <li >conectorCC</li>
+                    <li >conectorAC</li>
+                    <li >operador</li>
+				</ul>
+                <li>Recursos: <a href="">http://www.puntodecargasMadrid/Recursos/{'tipo_clase'}/{id}</a></li>
+                <p>Si el recurso no tiene id se le asignara un numero aleatorio de 8 digitos</p>
+        </ul>
+    </body>
+</html>

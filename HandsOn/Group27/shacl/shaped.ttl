@@ -1,0 +1,74 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ec:    <http://www.semanticweb_g27.org/ontology/EnergyCons#> .
+@prefix ssn:   <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
+@prefix ex: <http:www.shapes.es/evaluation#> .
+
+
+ex:shapesObservation a sh:NodeShape ;
+sh:targetClass ssn:Observation ;
+sh:property [ # _:b1
+    sh:path schema:unitText ;
+    sh:datatype xsd:string 
+] ;
+sh:property [ # _:b1
+    sh:path schema:value ;
+    sh:datatype xsd:float 
+] ;
+sh:property [
+    sh:path ec:energyGroup ;
+    sh:datatype xsd:string
+];
+sh:property [
+    sh:path ec:typeOfEnergy ;
+    sh:datatype xsd:string 
+];
+sh:property [
+    sh:path ssn:featureOfInterest ;
+    sh:class schema:CivicStructure ;
+    sh:nodeKind sh:IRI ;
+];
+sh:property [
+    sh:path ssn:resultTime ;
+    sh:datatype xsd:date 
+].
+
+ex:shapesCivicStructure a sh:NodeShape ;
+sh:targetClass schema:CivicStructure ;
+sh:property [
+    sh:path schema:address ;
+    sh:datatype xsd:string 
+];
+sh:property [
+    sh:path schema:geo ;
+    sh:class schema:GeoCoordinates ;
+    sh:nodeKind sh:IRI 
+];
+sh:property [
+    sh:path ec:buildingType ;
+    sh:datatype xsd:string 
+];
+sh:property [
+    sh:path ec:district ;
+    sh:datatype xsd:string 
+];
+sh:property [
+    sh:path ec:neighborhood ;
+    sh:datatype xsd:string
+].
+
+ex:shapesGeoCoordinates a sh:NodeShape ;
+sh:targetClass schema:GeoCoordinates ;
+sh:property [
+    sh:path schema:latitude ; 
+    sh:datatype xsd:float 
+];
+sh:property [
+    sh:path schema:longitude;
+    sh:datatype xsd:float 
+].

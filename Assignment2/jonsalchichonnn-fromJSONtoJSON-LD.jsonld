@@ -1,0 +1,73 @@
+{
+    "@context":{
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "person": "http://www.fi.upm.es/api/people/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "name": "rdfs:label",
+        "hometown": "dbo:hometown",
+        "age":"dbo:age",
+        "almaMater": "dbo:almaMater",
+        "parents": "dbo:parent",
+        "subjects": "dbo:AcademicSubject",
+        "relation": "dbo:relation",
+        "description":"rdfs:comment",
+        "teachers":"dbo:mentor"
+    },
+    "@id":"http://www.fi.upm.es/people/students/29",
+    "@type": "person:students",
+
+    "name": "Yongsheng Lin",
+    "hometown": "Fuzhou",
+    "age": 97,
+    "almaMater": "UPM",
+    "parents": [
+            {
+                "@id": "http://www.fi.upm.es/people/students/29/parents/father",
+                "@type": "person:parent",
+                "name": "parent1",
+                "relation": "father"
+            },
+            {
+                "@id": "http://www.fi.upm.es/people/students/29/parents/mother",
+                "@type": "person:parent",
+                "name": "parent2",
+                "relation": "mother"
+            }
+        ],
+    "subjects": [
+            {
+                "@id": "http://www.fi.upm.es/subjects/1",
+                "@type": "http://www.fi.upm.es/subjects",
+                "name": "subject1",
+                "teachers": [{
+                    "@id": "http://www.fi.upm.es/people/teachers/a",
+                    "@type": "person:teacher",
+                    "name": "a"
+                }],
+                "description": "subject1"
+            }, 
+            {   
+                "@id": "http://www.fi.upm.es/subjects/2",
+                "@type": "http://www.fi.upm.es/subjects",
+                "name": "subject2",
+                "teachers": [{
+                    "@id": "http://www.fi.upm.es/people/teachers/b",
+                    "@type": "person:teacher",
+                    "name": "b"
+                }],
+                "description": "subject2"
+            }, 
+            {
+                "@id": "http://www.fi.upm.es/subjects/3",
+                "@type": "http://www.fi.upm.es/subjects",
+                "name": "subject3",
+                "teachers": [{
+                    "@id": "http://www.fi.upm.es/people/teachers/c",
+                    "@type": "person:teacher",
+                    "name": "c"
+                }],
+                "description": "subject3"
+            }
+        ]
+}

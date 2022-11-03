@@ -1,0 +1,46 @@
+# MOSTRAR TODO
+  SELECT DISTINCT * WHERE { 
+    ?sub ?pre ?obj. 
+  }
+
+
+#Mostrar owners en el sistema
+  SELECT DISTINCT ?owner
+WHERE 
+{
+    ?chargingStation a ns:Charging_station ;
+        ns:owner ?owner ;
+}
+
+
+#Mostrar todas las estaciones de carga
+  SELECT DISTINCT ?chargingStation
+WHERE 
+{
+    ?chargingStation a ns:Charging_station ;
+}
+
+
+#Mostrar todas las estaciones de carga de un owner
+  SELECT DISTINCT ?chargingStation
+WHERE 
+{
+    ?chargingStation a ns:Charging_station ;
+        ns:owner "EMOVILI"^^xsd:String ;
+}
+
+#Contar todas las estaciones de cargas existentes
+SELECT  (count(?chargingStation) AS ?count)
+WHERE 
+{
+    ?chargingStation a ns:Charging_station ;
+
+}
+
+#mostrar todas las estaciones de carga con precio "Gratuito"
+SELECT DISTINCT ?chargingStation
+    WHERE 
+    {
+        ?chargingStation a ns:Charging_station ;
+            ns:price "Gratuito"^^xsd:String ;
+    }

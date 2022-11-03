@@ -1,0 +1,554 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "XCoord",
+    "newColumnName": "coord_long",
+    "description": "Rename column XCoord to coord_long"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "YCoord",
+    "newColumnName": "coord_lat",
+    "description": "Rename column YCoord to coord_lat"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UBICACIÓN",
+    "newColumnName": "street",
+    "description": "Rename column UBICACIÓN to street"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "District",
+    "description": "Rename column DISTRITO to District"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD_DIS",
+    "newColumnName": "district_number_id",
+    "description": "Rename column COD_DIS to district_number_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD_BAR",
+    "newColumnName": "neighbourhood_number_id",
+    "description": "Rename column COD_BAR to neighbourhood_number_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "District",
+    "newColumnName": "District_name_id",
+    "description": "Rename column District to District_name_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "neighbourhood_name_id",
+    "description": "Rename column BARRIO to neighbourhood_name_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EMPLAZAMIE",
+    "newColumnName": "location_name_id",
+    "description": "Rename column EMPLAZAMIE to location_name_id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_ADICI",
+    "description": "Remove column INFO_ADICI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OPERADOR",
+    "newColumnName": "operator_name_id",
+    "description": "Rename column OPERADOR to operator_name_id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "POINT_X",
+    "description": "Remove column POINT_X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "POINT_Y",
+    "description": "Remove column POINT_Y"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍ",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "new_car",
+    "columnInsertIndex": 10,
+    "description": "Create column new_car at index 10 based on column CARACTERÍ using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "new_car",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes",
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes",
+          "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column new_car"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "new_car",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "180 kW 2 conectores CC (CCS)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column new_car"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "new_car",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "350 kW conector CC (CCS)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column new_car"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "new_car",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column new_car"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "new_car",
+    "expression": "join ([coalesce(cells['new_car'].value,''),coalesce(cells['Nº_EQUIPO'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "capacity",
+    "columnInsertIndex": 11,
+    "description": "Create column capacity at index 11 based on column new_car using expression join ([coalesce(cells['new_car'].value,''),coalesce(cells['Nº_EQUIPO'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "capacity",
+    "expression": "jython:a, b= value.split(\" \");\nreturn int(a) * int(b)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column capacity using expression jython:a, b= value.split(\" \");\nreturn int(a) * int(b)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "new_car",
+    "description": "Remove column new_car"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CARACTERÍ",
+    "newColumnName": "conector_info",
+    "description": "Rename column CARACTERÍ to conector_info"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Nº_EQUIPO",
+    "description": "Remove column Nº_EQUIPO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "street",
+    "expression": "grel:value.match(/\\D*(\\d+)/)[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "street_number",
+    "columnInsertIndex": 7,
+    "description": "Create column street_number at index 7 based on column street using expression grel:value.match(/\\D*(\\d+)/)[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coord_long",
+    "expression": "grel:value.replace(\",\", \".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coord_long using expression grel:value.replace(\",\", \".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coord_long",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coord_long using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coord_lat",
+    "expression": "grel:value.replace(\",\", \".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coord_lat using expression grel:value.replace(\",\", \".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coord_lat",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coord_lat using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district_number_id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district_number_id using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighbourhood_number_id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column neighbourhood_number_id using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coord_long",
+    "description": "Remove column coord_long"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coord_lat",
+    "description": "Remove column coord_lat"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district_number_id",
+    "expression": "grel:row.index+1",
+    "onError": "set-to-blank",
+    "newColumnName": "IDENTIFIER",
+    "columnInsertIndex": 1,
+    "description": "Create column IDENTIFIER at index 1 based on column district_number_id using expression grel:row.index+1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IDENTIFIER",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IDENTIFIER using expression value.toString()"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "district_number_id",
+    "index": 1,
+    "description": "Move column district_number_id to position 1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IDENTIFIER",
+    "newColumnName": "ID_CHARGEST",
+    "description": "Rename column IDENTIFIER to ID_CHARGEST"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "capacity",
+    "newColumnName": "CAPACITY",
+    "description": "Rename column capacity to CAPACITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street",
+    "newColumnName": "STREET",
+    "description": "Rename column street to STREET"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street_number",
+    "newColumnName": "ST_NUMBER",
+    "description": "Rename column street_number to ST_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "conector_info",
+    "newColumnName": "CONECTOR_INFO",
+    "description": "Rename column conector_info to CONECTOR_INFO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "operator_name_id",
+    "newColumnName": "OPERATOR",
+    "description": "Rename column operator_name_id to OPERATOR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighbourhood_number_id",
+    "newColumnName": "NEIGHBOURHOOD_ID",
+    "description": "Rename column neighbourhood_number_id to NEIGHBOURHOOD_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighbourhood_name_id",
+    "newColumnName": "NEIGHBOURHOOD",
+    "description": "Rename column neighbourhood_name_id to NEIGHBOURHOOD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "District_name_id",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column District_name_id to DISTRICT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "location_name_id",
+    "newColumnName": "LOCATION",
+    "description": "Rename column location_name_id to LOCATION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "district_number_id",
+    "newColumnName": "DISTRICT_ID",
+    "description": "Rename column district_number_id to DISTRICT_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET",
+    "expression": "grel:value.match(/(\\D*)\\s(?:\\d*).*/)[0].split(\",\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET using expression grel:value.match(/(\\D*)\\s(?:\\d*).*/)[0].split(\",\")[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ST_NUMBER",
+    "expression": "grel:if(value == null, \"S/N\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ST_NUMBER using expression grel:if(value == null, \"S/N\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "OPERATOR",
+    "keyColumnName": "ID_CHARGEST",
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "description": "Split multi-valued cells in column OPERATOR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "expression": "grel:value.match(/\\s*(.*)/)[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OPERATOR using expression grel:value.match(/\\s*(.*)/)[0]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERATOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC (CIRCUTOR)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERATOR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBOURHOOD_ID",
+    "expression": "grel:cells['DISTRICT_ID'].value + value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBOURHOOD_ID using expression grel:cells['DISTRICT_ID'].value + value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ID_CHARGEST",
+          "expression": "value",
+          "columnName": "ID_CHARGEST",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

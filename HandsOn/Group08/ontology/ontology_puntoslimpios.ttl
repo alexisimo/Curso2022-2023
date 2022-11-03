@@ -1,0 +1,171 @@
+@prefix : <http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios> .
+
+<http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#belongsToNeighborhood
+:belongsToNeighborhood rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Address ;
+                       rdfs:range :Neighborhood .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :CleanPoint ;
+           rdfs:range :Address .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#partOfDistrict
+:partOfDistrict rdf:type owl:ObjectProperty ;
+                rdfs:domain :Neighborhood ;
+                rdfs:range :District .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccessibility
+:hasAccessibility rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CleanPoint ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasCoordinateX
+:hasCoordinateX rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CleanPoint ;
+                rdfs:range xsd:double .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasCoordinateY
+:hasCoordinateY rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CleanPoint ;
+                rdfs:range xsd:double .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrict
+:hasDistrict rdf:type owl:DatatypeProperty ;
+             rdfs:domain :District ;
+             rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasDistrictCode
+:hasDistrictCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :District ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :CleanPoint ;
+       rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CleanPoint ;
+             rdfs:range xsd:double .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :CleanPoint ;
+              rdfs:range xsd:double .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :CleanPoint ;
+         rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNameStreet
+:hasNameStreet rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhood
+:hasNeighborhood rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Neighborhood ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNeighborhoodCode
+:hasNeighborhoodCode rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Neighborhood ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasNumber
+:hasNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Address ;
+           rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasOrientation
+:hasOrientation rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Address ;
+                rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTransport
+:hasTransport rdf:type owl:DatatypeProperty ;
+              rdfs:domain :CleanPoint ;
+              rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeNumber
+:hasTypeNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasTypeStreet
+:hasTypeStreet rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:string .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasUrl
+:hasUrl rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CleanPoint ;
+        rdfs:range xsd:anyURI .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasZipCode
+:hasZipCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Address ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address
+:Address rdf:type owl:Class .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint
+:CleanPoint rdf:type owl:Class .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District
+:District rdf:type owl:Class .
+
+
+###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Neighborhood
+:Neighborhood rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

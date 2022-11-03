@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "person": "https://schema.org/Person",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "fullName": "https://schema.org/name",
+        "hometown": "https://schema.org/birthPlace",
+        "yourAge": "person:Age",
+        "almaMater": "person:AlmaMater",
+        "nameOfParents": "person:ParentsName",
+        "subjects": "sub:subject",
+            "name": "subj:name",
+            "teachers": "subj:teacher",
+            "briefDescription": "subj:briefDescription"
+    },
+    "@id": "https://schema.org/Person/1",
+    "@type": "person:schema",
+    "fullName":"Alejandro",
+    "hometown":"Sevilla",
+    "yourAge":"21",
+    "almaMater":"Universidad Politécnica de Madrid",
+    "nameOfParents":"Jacinto, Manuela",
+    "subjects": [
+            {
+            "name":"SemanticWeb&LinkedData", "teachers":"Oscar Corcho", "briefDescription": "Asignatura sobre ontologías y grafos de conocimiento"
+            },
+            {
+            "name":"IngenieríaDelSoftwareII", "teachers":"SanFeliu", "briefDescription": "Continuación de la asignatura Ingeniería del Software I"
+            },
+            {
+            "name":"Gestión de Procesos de la Tecnología de la Información", "teachers":"Pilar", "briefDescription": "Va de estándares y eso"
+            }
+    ]
+}

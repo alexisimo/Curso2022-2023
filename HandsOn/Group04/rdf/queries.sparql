@@ -1,0 +1,37 @@
+PRFEIX classes: https://www.puntodecargasmadrid/Clases# .
+PREFIX properties: https://www.puntodecargasmadrid/Propiedades# .
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema# .
+PREFIX schema: http://schema.org/ .
+
+# Devuelve los puntos de carga y sus ubicaciones
+
+
+SELECT DISTINCT ?puntoCarga ?ubi
+WHERE 
+{
+    ?puntoCarga a classes:puntoRecarga 
+    ?puntoCarga schema:address ?ubi .
+    
+}
+
+# Devuelve los puntos de carga que su distrito es Chamartín
+
+SELECT DISTINCT ?puntoCarga 
+WHERE 
+{
+    ?puntoCarga a classes:puntoRecarga 
+    ?puntoCarga properties:puntoRecargaPerteneceDist ?distrito
+    ?distrito rdf:label "Chamartín" .
+    
+}
+
+# Devuelve el numero de puntos de recarga que su operador sea REPSOL
+
+SELECT COUNT(?puntoCarga)
+WHERE 
+{
+    ?puntoCarga a classes:puntoRecarga 
+    ?puntoCarga properties:operador "REPSOL" .
+       
+}

@@ -1,0 +1,580 @@
+@prefix  rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  rev: <http://purl.org/stuff/rev#>.
+@prefix  schema: <http://schema.org/>.
+@prefix  dct: <http://purl.org/dc/terms/>.
+@prefix  rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix  ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  regeneratedWater: <http://base.regeneratedwater.com/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+ <#purification_plant> a rr:TriplesMap;
+    rml:logicalSource[
+        rml:source "Calidad_AgRegenerada_2022-update.csv";
+        rml:referenceFormulation ql:CSV 
+        ];
+    rr:subjectMap [
+        rr:template "http://base.regeneratedwater.com/purification_plant/{location}" ;
+        rr:termType rr:IRI; rr:class regeneratedWater:purification_plant
+    ]; 
+    rr:predicateObjectMap[
+        rr:predicateMap [ 
+            rr:constant regeneratedWater:location; rr:termType rr:IRI
+        ];
+        rr:objectMap [
+
+            rml:reference "location";
+            rr:dataType xsd:String;
+            rr:joinCondition [
+                rr:child "location"; rr:parent "parameter"; ];
+        ];
+        
+    ].
+ <#district> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:ReferenceFormulation ql:CSV
+		];
+    rr:subjectMap [
+        rr:template "http://base.regeneratedwater.com/purification_plant/district/{district}";
+        rr:termType rr:IRI; rr:class regeneratedWater:district
+        ]; 
+    rr:predicateObjectMap[
+        rr:predicateMap [ 
+            rr:constant regeneratedWater:district; rr:termType rr:IRI
+        ];
+        
+        rr:objectMap[
+
+            rml:reference "district";
+            rr:dataType xsd:String;
+            rr:joinCondition [
+                rr:child "district"; rr:parent "purification_plant"; ];
+        ]
+    ];
+        rr:predicateObjectMap [
+        rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+            rr:objectMap [
+                rml:reference "district_URI_from_Wikidata";
+                rr:termType rr:IRI 
+            ];
+    ].  
+	
+  <#parameter> a rr:TriplesMap;
+    rml:logicalSource [
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:ReferenceFormulation ql:CSV
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/parameter/{parameter}";
+		rr:termType rr:IRI; rr:class regeneratedWater:parameter
+		]; 
+    rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:parameter; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+
+			rml:reference "parameter";
+			rr:dataType xsd:String;
+			rr:joinCondition [
+                rr:child "parameter"; rr:parent "sample"; ];
+		]	
+	];
+		rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+			rr:objectMap [
+				rml:reference "parameter_URI_from_Wikidata";
+				rr:termType rr:IRI 
+			]
+	].
+	<#Muestra1_1> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_1}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_1";
+			rr:dataType xsd:String
+		]
+	].
+      <#Muestra2_1> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_1}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_1";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_2> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_2}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_2";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_2> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_2}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_2";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_3> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_3}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_3";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_3> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_3}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_3";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_4> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_4}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_4";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_4> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_4}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_4";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_5> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_5}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_5";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_5> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_5}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_5";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_6> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_6}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_6";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_6> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_6}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_6";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_7> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_7}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_7";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_7> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_7}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_7";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_8> a rr:TriplesMap; 
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_8}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_8";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_8> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_8}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_8";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_9> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_9}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_9";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_9> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_9}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_9";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_10> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_10}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_10";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_10> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_10}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_10";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra1_11> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_11}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra1_11";
+			rr:dataType xsd:String
+		]
+	].
+	
+	 <#Muestra2_11> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV   
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_11}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		]; 
+     rr:predicateObjectMap[
+		rr:predicateMap [ 
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+		
+		rr:objectMap[
+			rml:reference "Muestra2_11";
+			rr:dataType xsd:String
+		]
+	].
+	 <#Muestra1_12> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra1_12}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		];
+     rr:predicateObjectMap[
+		rr:predicateMap [
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+
+		rr:objectMap[
+			rml:reference "Muestra1_12";
+			rr:dataType xsd:String
+		]
+	].
+
+	 <#Muestra2_12> a rr:TriplesMap;
+	rml:logicalSource[
+		rml:source "Calidad_AgRegenerada_2022-update.csv";
+		rml:referenceFormulation ql:CSV
+		];
+    rr:subjectMap [
+		rr:template "http://base.regeneratedwater.com/{Muestra2_12}";
+		rr:termType rr:IRI; rr:class regeneratedWater:sample
+		];
+     rr:predicateObjectMap[
+		rr:predicateMap [
+			rr:constant regeneratedWater:value; rr:termType rr:IRI
+		];
+
+		rr:objectMap[
+			rml:reference "Muestra2_12";
+			rr:dataType xsd:String
+		]
+	].
+
+
+   
+
+
+
+
+	
+	  

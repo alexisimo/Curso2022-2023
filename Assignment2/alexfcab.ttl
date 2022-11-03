@@ -1,0 +1,18 @@
+@prefix fiupm: <https://www.fi.upm.es/linkeddata/#> .
+@prefix sensor: <http://www.semanticweb2/sensors/> . 
+@prefix table: <http://www.semanticweb2/tables/> .
+@prefix measurement: <http://www.semanticweb2/measurements/> .
+@prefix class: <http://www.semanticweb2/classes/> .
+@prefix faculty: <http://www.semanticweb2/faculties/> .
+
+class:classroom03 fiupm:contains sensor:sensor347 ;
+fiupm:contains table:table322.
+
+sensor:sensor347 fiupm:hasMeasurement measurement:measurement8432.
+
+table:table322 fiupm:hasOwner faculty:ETSIInformaticos.
+
+measurement:measurement8432 fiupm:hasTemperature 29 ;
+fiupm:atTime "2022-09-12T12:01:12"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+faculty:ETSIInformaticos fiupm:hasName "ETSI Informáticos".

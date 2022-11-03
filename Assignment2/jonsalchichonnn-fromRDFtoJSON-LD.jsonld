@@ -1,0 +1,37 @@
+{
+    "@context":{
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "base": "https://www.fi.upm.es/",
+        "relations": "https://www.fi.upm.es/relations/",
+        "includes": "relations:includes",
+        "hasMeasurement": "relations:hasMeasurement",
+        "temperature": "rdfs:label",
+        "atTime": "xsd:dateTime",
+        "hasOwner": "relations:hasOwner"
+    },
+    "@id":"base:classrooms/1",
+    "@type": "base:facilities",
+    "includes": [
+        {
+            "@id":"base/sensor/029",
+            "@type":"base:sensor",
+            "hasMeasurement":{
+                "@id":"base/measurement/8401",
+                "@type":"base:measurement",
+                "temperature": 29,
+                "atTime": "2022-09-12T12:01:12"
+            }
+        },
+        {
+            "@id":"base/computer/101",
+            "@type":"base:computer",
+            "hasOwner": {
+                    "@id":"base/owner/10A",
+                    "@type":"base:user",
+                    "name": "Pedro"
+            }
+        }
+    ]
+
+}

@@ -1,0 +1,151 @@
+<html>
+	<meta charset="Latin-1">
+	<head>
+	  <link rel="stylesheet" href="estilo.css">
+	</head>
+	
+	<body>
+	<h1> Archivo Analysis.html </h1>
+		<p>Dataset con licencia abierta en el siguiente <a href=http://creativecommons.org/licenses/by/3.0/es>link</a><br></p>
+		<p>LICENCIA:CC BY 3.0 ES<br></p>
+		<p>Usted es libre de:<br></p>
+		<p>Compartir — copiar y redistribuir el material en cualquier medio o formato<br></p>
+		<p>Adaptar — remezclar, transformar y crear a partir del material<br></p>
+		<p>para cualquier finalidad, incluso comercial.<br></p>
+		<p>Esta licencia está aceptada para Obras Culturales Libres.<br></p>
+		<p>El licenciador no puede revocar estas libertades mientras cumpla con los términos de la licencia<br></p>
+		<p>Bajo las condiciones siguientes:<br></p>
+		<p>Reconocimiento — Debe reconocer adecuadamente la autoría, proporcionar un enlace a la licencia e indicar si se han realizado cambios<br></p>
+		<p>Puede hacerlo de cualquier manera razonable, pero no de una manera que sugiera que tiene el apoyo del licenciador o lo recibe por el uso que hace.<br></p>
+		<p>No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
+		<p>---------------------------------------------------------------------------------------------------------------------------<br></p>
+		
+	<h1> 2.- Analisis de los Datasets </h1>
+	<h2> Dataset Stops.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>stop_id</td>
+				<td>String Unique</td>
+				<td>Identifica de forma exclusiva a una parada o estación.<br> Range: ["" - Total of Memory]</td>
+				<td>Es posible que varias rutas utilicen una misma parada.</td>
+			</tr>		
+			<tr>
+				<td>stop_name</td>
+				<td>String Unique</td>
+				<td>Nombre de la parada. Intentando que sea comprensible. <br> Rango: [" " - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_lat</td>
+				<td>Decimal Not Unique</td>
+				<td>Latitud de una parada o estacion. <br> Rango de WGS 84</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_lon</td>
+				<td>Decimal Not Unique</td>
+				<td>Longitud de una parada o estacion. <br> Rango de WGS 84 y [-180 to 180]</td>
+				<td>Valores negativos</td>
+			</tr>
+		</table>
+		
+		<h2> Dataset museos.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>lon</td>
+				<td>Decimal not Unique</td>
+				<td>Longitud del museo.<br> Rango de WGS 84 y [-180 to 180]</td>
+				<td>Valores negativos</td>
+			</tr>		
+			<tr>
+				<td>lat</td>
+				<td>Decimal not Unique</td>
+				<td>Latitud del museo. <br> Rango de WGS 84</td>
+				<td>-</td>
+
+			</tr>		
+			<tr>
+				<td>Nombre</td>
+				<td>String not Unique</td>
+				<td>Nombre del museo <br> Rango: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>Direccion</td>
+				<td>String not Unique</td>
+				<td>Direccion del museo <br> Rango: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Telefono</td>
+				<td>String not Unique</td>
+				<td>Direccion del museo <br> Rango: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Web</td>
+				<td>URI</td>
+				<td>Direccion web del museo <br></td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Foto</td>
+				<td>URI</td>
+				<td>Foto del museo <br></td>
+				<td>-</td>
+			</tr>			
+		</table>
+
+		
+		<h2> Dataset lugares-interes.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>Nombre</td>
+				<td>String Unique</td>
+				<td>Nombre del sitio de interes turistico.<br> Range: ["" - Total of Memory] </td>
+				<td>Valores negativos</td>
+			</tr>		
+		</table>
+		
+		
+		<h1> 3.- Estrategia de Nombrado </h1>
+		<p> La estrategia de nombrado que se seguirá será la siguiente </p>
+		<table>
+			<p>Scheme-> http<br></p>
+			<p>Authority-> www.culturaandaluza.es/<br></p>
+			<p>Domain-> http://culturaandaluza.es<br></p>
+			<p>Path-> sevilla/<br></p>
+			<p>Ontology->ontology/<br></p>
+			<p>Data-> resource/<br></p>
+			<p>Ontological terms example: http://culturaandaluza.es/sevilla/ontology/museum</p>
+			<p>Individuals example: http://culturaandaluza.es/sevilla/resource/lagiralda</p>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  prop: https://www.puntodecargasMadrid/Propiedades#
+  class: https://www.puntodecargasMadrid/Clases#
+
+mappings:
+  PuntoDeCarga:
+    sources:
+      - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
+    s: https://www.puntodecargasmadrid/Recursos/PuntoRecarga/$(PuntoRecargaID)
+    po:
+      - [a, class:puntoRecarga]
+      - [schema:adress, $(UBICACION),xsd:string]
+      - [prop:emplazamiento, $(EMPLAZAMIE),xsd:string]
+      - [prop:operador, $(OPERADOR),xsd:string]
+      - [prop:numEquipo, $(N_EQUIPO),xsd:integer]
+      - [prop:potencia, $(POTENCIA),xsd:integer]
+      - [prop:conectorAC, $(CONECTOR AC),xsd:integer]
+      - [prop:conectorCC, $(CONECTOR CC),xsd:integer]
+      - p: prop:puntoRecargaPerteneceDist 
+        o:
+            mapping: Distrito
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(PUNTORECARGAPERTENECEDIST)]
+              - [str2, $(PUNTORECARGAPERTENECEDIST)]
+              
+      - p: schema:GeoCoordinates  
+        o:
+            mapping: Coordenadas
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(COORDONNES)]
+              - [str2, $(COORDONNES)]
+
+  Distrito:
+    sources:
+      - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
+    s: https://www.puntodecargasmadrid/Clases/Distrito/$(PUNTORECARGAPERTENECEDIST)
+    po:
+      - [a, class:Distrito]
+      - [rdf:label, $(DISTRITO), xsd:string]
+      - [rdf:value, $(COD_DIS), xsd:integer]
+      - p: prop:distPerteneceBarrio
+        o:
+          mapping: Barrio
+          condition:
+           function: equal
+           parameters:
+            - [str1, $(DISTPERTENECEBARRIO)]
+            - [str2, $(DISTPERTENECEBARRIO)]
+            
+  Barrio: 
+    sources: 
+    - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
+    s: http://www.puntodecargasmadrid/Recursos/Barrio/$(DISTPERTENECEBARRIO)
+    po:
+      - [a, class:Barrio]
+      - [rdf:value, $(COD_BAR), xsd:integer]
+      - [rdf:label, $(BARRIO), xsd:string]
+      
+  Coordenadas:
+    sources:
+    - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
+    s: http://www.puntorecargasmadrid/Recursos/coordonnes/$(COORDONNES)
+    po:
+        - [a, schema:GeoCoordinates]
+        - [schema:longitude, $(XCoord), xsd:string]
+        - [schema:latitude, $(YCoord), xsd:string]

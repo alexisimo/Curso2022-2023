@@ -1,0 +1,202 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://culturaandaluza.es/sevilla/0> a dbo:Museum;
+dbp:longitude "-5.987133";
+dbp:latitude "37.370965";
+dbp:fullname "Museo Arqueologico";
+dbp:address "Plaza de America, s/n";
+dbp:phoneNumber "954786465";
+dbp:url "http://www.museosdeandalucia.es/culturaydeporte/museos/MASE/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Arqueologico.jpg";
+owl:sameAs <https://wikidata.org/entity/Q9046766> .
+<http://culturaandaluza.es/sevilla/1> a dbo:Museum;
+dbp:longitude "-5.987839";
+dbp:latitude "37.372076";
+dbp:fullname "Museo de Artes y Costumbres Populares";
+dbp:address "Plaza de Amtrica, 3 - Pabellon Mudejar, Parque de Maria Luisa";
+dbp:phoneNumber "954712391";
+dbp:url "http://www.museosdeandalucia.es/culturaydeporte/museos/MACSE/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de las Artes y Costumbres Populares.jpg";
+owl:sameAs <https://wikidata.org/entity/Q6940778> .
+<http://culturaandaluza.es/sevilla/2> a dbo:Museum;
+dbp:longitude "-5.988946";
+dbp:latitude "37.385693";
+dbp:fullname "Museo Casa de Murillo";
+dbp:address "C/ Santa Teresa, 8";
+dbp:phoneNumber "955037263";
+dbp:url "http://es.wikipedia.org/wiki/Museo_Casa_de_Murillo";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/museo casa murillo.jpg";
+owl:sameAs <https://wikidata.org/entity/Q5047920> .
+<http://culturaandaluza.es/sevilla/3> dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de Baile Flamenco.jpg";
+owl:sameAs <https://wikidata.org/entity/Q2486431>;
+a dbo:Museum;
+dbp:longitude "-5.99116";
+dbp:latitude "37.389135";
+dbp:fullname "Museo de Baile Flamenco";
+dbp:address "C/ Manuel Rojas Marcos, 3";
+dbp:phoneNumber "954340311";
+dbp:url "http://www.museoflamenco.com/" .
+<http://culturaandaluza.es/sevilla/4> a dbo:Museum;
+dbp:longitude "-5.999737";
+dbp:latitude "37.392623";
+dbp:fullname "Museo de Bellas Artes";
+dbp:address "Plaza del Museo, 9";
+dbp:phoneNumber "954786502";
+dbp:url "http://www.juntadeandalucia.es/cultura/museobellasartessevilla";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de Bellas Artes.jpg";
+owl:sameAs <https://wikidata.org/entity/Q2163496> .
+<http://culturaandaluza.es/sevilla/5> a dbo:Museum;
+dbp:longitude "-5.996786";
+dbp:latitude "37.379431";
+dbp:fullname "Museo de Carruajes";
+dbp:address "Antiguo Instituto Hispano-Cubano - Plaza de Cuba, s/n";
+dbp:phoneNumber "954272604";
+dbp:url "http://www.museodecarruajes.com/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de Carruajes.jpg";
+owl:sameAs <https://wikidata.org/entity/Q5480977> .
+<http://culturaandaluza.es/sevilla/6> dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de la Ciudad Convento de Santa Clara.jpg";
+dbp:url "http://espaciosantaclara.org/";
+dbp:address "C/ Santa Clara, 40";
+dbp:phoneNumber "954379905";
+dbp:fullname "Museo de la Ciudad, Convento Sta. Clara, Torre D. Fadrique";
+a dbo:Museum;
+dbp:longitude "-5.996373";
+dbp:latitude "37.400236" .
+<http://culturaandaluza.es/sevilla/7> a dbo:Museum;
+dbp:longitude "-5.992611";
+dbp:latitude "37.394413";
+dbp:fullname "Museo de la Congregacion de Terciarias Franciscanas";
+dbp:address "Hospital del Santisimo Cristo de los Dolores / Plaza del Pozon Santo, 1";
+dbp:phoneNumber "954219430";
+dbp:url " ";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de la Congregacion de Terciarias Franciscanas.jpg" .
+<http://culturaandaluza.es/sevilla/8> a dbo:Museum;
+dbp:longitude "-5.995907";
+dbp:latitude "37.384523";
+dbp:fullname "Museo de la Reales Atarazanas";
+dbp:address "C/ Temprado, 1 esquina C/ Dos de Mayo";
+dbp:phoneNumber "954901957";
+dbp:url "https://es.wikipedia.org/wiki/Atarazanas_Reales_de_Sevilla";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/museo reales atarazanas.jpg" .
+<http://culturaandaluza.es/sevilla/9> a dbo:Museum;
+dbp:longitude "-5.990020771826719";
+dbp:latitude "37.396310246251169";
+dbp:fullname "Museo de Munecas y Juguetes Antiguos";
+dbp:address "C/ Castellar, 43";
+dbp:phoneNumber "954387555";
+dbp:url " ";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo de Munecas y Juguetes Antiguos.jpg" .
+<http://culturaandaluza.es/sevilla/10> a dbo:Museum;
+dbp:longitude "-5.986618";
+dbp:latitude "37.378248";
+dbp:fullname "Museo Militar Regional";
+dbp:address "Plaza de Espana, Puerta de Aragon, Parque de Maria Luisa";
+dbp:phoneNumber "954938283";
+dbp:url "http://www.ejercito.mde.es/unidades/Madrid/ihycm/Museos/sevilla.html";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Historico Militar.jpg" .
+<http://culturaandaluza.es/sevilla/11> a dbo:Museum;
+dbp:longitude "-5.993680699405634";
+dbp:latitude "37.392284082963499";
+dbp:fullname "Museo Palacio de la Condesa de Lebrija";
+dbp:address "C/ Cuna, 8";
+dbp:phoneNumber "954227802";
+dbp:url "http://www.palaciodelebrija.com/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Palacio de la Condesa de Lebrija.jpg" .
+<http://culturaandaluza.es/sevilla/12> a dbo:Museum;
+dbp:longitude "-5.999038";
+dbp:latitude "37.385866";
+dbp:fullname "Museo Taurino y Pza. Toros Real Maestranza";
+dbp:address "Paseo de Cristobal Colon, 12";
+dbp:phoneNumber "954224577";
+dbp:url "http://www.realmaestranza.com/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/museo taurino y plaza de toros de real maestranza.jpg" .
+<http://culturaandaluza.es/sevilla/13> a dbo:Museum;
+dbp:longitude "-5.989589";
+dbp:latitude "37.402728";
+dbp:fullname "Tesoro de la Macarena";
+dbp:address "C/ Becquer, 1";
+dbp:phoneNumber "954901800";
+dbp:url "http://www.hermandaddelamacarena.es/tesoro-de-la-macarena/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Tesoro de La Macarena.jpg" .
+<http://culturaandaluza.es/sevilla/14> a dbo:Museum;
+dbp:longitude "-5.996442105487888";
+dbp:latitude "37.397305140721699";
+dbp:fullname "Museo Tesoro del Templo Gran Poder";
+dbp:address "Plaza de San Lorenzo, 13";
+dbp:phoneNumber "954915686";
+dbp:url "http://www.gran-poder.es/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Tesoro del Templo del Gran Poder.jpg" .
+<http://culturaandaluza.es/sevilla/15> a dbo:Museum;
+dbp:longitude "-5.996317";
+dbp:latitude "37.382402";
+dbp:fullname "Torre del Oro / Museo Naval";
+dbp:address "Paseo de Crist/bal ColNn, s/n";
+dbp:phoneNumber "954222419";
+dbp:url "http://www.armada.mde.es/ArmadaPortal/page/Portal/ArmadaEspannola/ciencia_museo/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Naval Torre del Oro.jpg";
+owl:sameAs <https://wikidata.org/entity/Q32823> .
+<http://culturaandaluza.es/sevilla/16> a dbo:Museum;
+dbp:longitude "-6.004654672374063";
+dbp:latitude "37.385541769599378";
+dbp:fullname "Museo de la Ceramica de Triana";
+dbp:address "C/ San Jorge, 31";
+dbp:phoneNumber "955471422";
+dbp:url "http://www.icas-sevilla.org/visita-el-centro-ceramica-triana/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/museo de la ceramica de triana.jpg";
+owl:sameAs <https://wikidata.org/entity/Q18224363> .
+<http://culturaandaluza.es/sevilla/17> dbp:url "http://www.icas-sevilla.org/visita-el-centro-ceramica-triana/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/museo castillo de san jorge.jpg";
+a dbo:Museum;
+dbp:longitude "-6.003353801003373";
+dbp:latitude "37.385799644004024";
+dbp:fullname "Museo del castillo de San Jorge";
+dbp:address "Plaza del Altozano, s/n";
+dbp:phoneNumber "954332240" .
+<http://culturaandaluza.es/sevilla/18> a dbo:Museum;
+dbp:longitude "-5.991908815134942";
+dbp:latitude "37.39317959088519";
+dbp:fullname "Antiquarium";
+dbp:address "Plaza de la Encarnacion, s/n";
+dbp:phoneNumber "955471580";
+dbp:url "http://antiquarium.icas-sevilla.org/antiquarium/el-espacio/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Antiquarium.jpg";
+owl:sameAs <https://wikidata.org/entity/Q5697381> .
+<http://culturaandaluza.es/sevilla/19> a dbo:Museum;
+dbp:longitude "-5.991061237086621";
+dbp:latitude "37.370575010264133";
+dbp:fullname "Acuario de Sevilla";
+dbp:address "Avda. Santiago Montoto s/n. Muelle de las Delicias";
+dbp:phoneNumber "955441541";
+dbp:url "http://www.acuariosevilla.es/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Acuario de Sevilla.JPG";
+owl:sameAs <https://wikidata.org/entity/Q20746709> .
+<http://culturaandaluza.es/sevilla/20> a dbo:Museum;
+dbp:longitude "-5.99118193649223";
+dbp:latitude "37.377440651897643";
+dbp:fullname "Museo Casa de la Ciencia";
+dbp:address "Avenida de Chile, 2";
+dbp:phoneNumber "954232349";
+dbp:url "http://www.casadelaciencia.csic.es/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Museo Casa de las Ciencias.jpg";
+owl:sameAs <https://wikidata.org/entity/Q7433493> .
+<http://culturaandaluza.es/sevilla/21> a dbo:Museum;
+dbp:longitude "-6.009058859577123";
+dbp:latitude "37.398499393584565";
+dbp:fullname "Centro Andaluz de Arte Contemporaneo";
+dbp:address "C/ Americo Vespucio, 2";
+dbp:phoneNumber "955037070";
+dbp:url "http://www.caac.es/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Centro Andaluz de Arte Contemporaneo.jpg" .
+<http://culturaandaluza.es/sevilla/22> a dbo:Museum;
+dbp:longitude "-6.007835772266362";
+dbp:latitude "37.394275972059042";
+dbp:fullname "Pabellon de la Navegacion";
+dbp:address "Camino de los Descubrimientos, 2";
+dbp:phoneNumber "954043111";
+dbp:url "http://www.pabellondelanavegacion.es/";
+dbp:photo "http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Pabellon de la navegacion.jpg";
+owl:sameAs <https://wikidata.org/entity/Q12198135> .

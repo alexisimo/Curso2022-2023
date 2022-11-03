@@ -1,0 +1,1042 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "ERAR_PARAMETRO",
+    "expression": "grel:value[4,9]",
+    "onError": "set-to-blank",
+    "newColumnName": "parameter",
+    "columnInsertIndex": 1,
+    "description": "Create column parameter at index 1 based on column ERAR_PARAMETRO using expression grel:value[4,9]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "ERAR_PARAMETRO",
+    "expression": "grel:value[0,3]",
+    "onError": "set-to-blank",
+    "newColumnName": "location",
+    "columnInsertIndex": 1,
+    "description": "Create column location at index 1 based on column ERAR_PARAMETRO using expression grel:value[0,3]"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ERAR_PARAMETRO",
+    "description": "Remove column ERAR_PARAMETRO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"VIV\",\"Viveros de la Villa\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"VIV\",\"Viveros de la Villa\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"CHI\",\"La China\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"CHI\",\"La China\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"GAV\",\"La Gavia\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"GAV\",\"La Gavia\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\"REJ\",\"Rejas\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\"REJ\",\"Rejas\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "parameter",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EColi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ecoli"
+      }
+    ],
+    "description": "Mass edit cells in column parameter"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_13",
+    "description": "Remove column Muestra 1_13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_13",
+    "description": "Remove column Muestra 2_13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_14",
+    "description": "Remove column Muestra 1_14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_14",
+    "description": "Remove column Muestra 2_14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_15",
+    "description": "Remove column Muestra 1_15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_15",
+    "description": "Remove column Muestra 2_15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_16",
+    "description": "Remove column Muestra 1_16"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_16",
+    "description": "Remove column Muestra 2_16"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_17",
+    "description": "Remove column Muestra 1_17"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_17",
+    "description": "Remove column Muestra 2_17"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_18",
+    "description": "Remove column Muestra 1_18"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_18",
+    "description": "Remove column Muestra 2_18"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_19",
+    "description": "Remove column Muestra 1_19"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_19",
+    "description": "Remove column Muestra 2_19"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_20",
+    "description": "Remove column Muestra 1_20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_20",
+    "description": "Remove column Muestra 2_20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_21",
+    "description": "Remove column Muestra 1_21"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_21",
+    "description": "Remove column Muestra 2_21"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_22",
+    "description": "Remove column Muestra 1_22"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_22",
+    "description": "Remove column Muestra 2_22"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_23",
+    "description": "Remove column Muestra 1_23"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_23",
+    "description": "Remove column Muestra 2_23"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_24",
+    "description": "Remove column Muestra 1_24"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_24",
+    "description": "Remove column Muestra 2_24"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_25",
+    "description": "Remove column Muestra 1_25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_25",
+    "description": "Remove column Muestra 2_25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muesta 1_26",
+    "description": "Remove column Muesta 1_26"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_26",
+    "description": "Remove column Muestra 2_26"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_27",
+    "description": "Remove column Muestra 1_27"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_27",
+    "description": "Remove column Muestra 2_27"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_28",
+    "description": "Remove column Muestra 1_28"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muesta 2_28",
+    "description": "Remove column Muesta 2_28"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_29",
+    "description": "Remove column Muestra 1_29"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_29",
+    "description": "Remove column Muestra 2_29"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_30",
+    "description": "Remove column Muestra 1_30"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_30",
+    "description": "Remove column Muestra 2_30"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_31",
+    "description": "Remove column Muestra 1_31"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_31",
+    "description": "Remove column Muestra 2_31"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_32",
+    "description": "Remove column Muestra 1_32"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_32",
+    "description": "Remove column Muestra 2_32"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_33",
+    "description": "Remove column Muestra 1_33"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_33",
+    "description": "Remove column Muestra 2_33"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_34",
+    "description": "Remove column Muestra 1_34"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_34",
+    "description": "Remove column Muestra 2_34"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_35",
+    "description": "Remove column Muestra 1_35"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_35",
+    "description": "Remove column Muestra 2_35"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_36",
+    "description": "Remove column Muestra 1_36"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_36",
+    "description": "Remove column Muestra 2_36"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_37",
+    "description": "Remove column Muestra 1_37"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_37",
+    "description": "Remove column Muestra 2_37"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_38",
+    "description": "Remove column Muestra 1_38"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_38",
+    "description": "Remove column Muestra 2_38"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_39",
+    "description": "Remove column Muestra 1_39"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_39",
+    "description": "Remove column Muestra 2_39"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_40",
+    "description": "Remove column Muestra 1_40"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_40",
+    "description": "Remove column Muestra 2_40"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_41",
+    "description": "Remove column Muestra 1_41"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_41",
+    "description": "Remove column Muestra 2_41"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_42",
+    "description": "Remove column Muestra 1_42"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_42",
+    "description": "Remove column Muestra 2_42"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_43",
+    "description": "Remove column Muestra 1_43"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_43",
+    "description": "Remove column Muestra 2_43"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_44",
+    "description": "Remove column Muestra 1_44"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_44",
+    "description": "Remove column Muestra 2_44"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_45",
+    "description": "Remove column Muestra 1_45"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_45",
+    "description": "Remove column Muestra 2_45"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_46",
+    "description": "Remove column Muestra 1_46"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_46",
+    "description": "Remove column Muestra 2_46"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_47",
+    "description": "Remove column Muestra 1_47"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_47",
+    "description": "Remove column Muestra 2_47"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_48",
+    "description": "Remove column Muestra 1_48"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_48",
+    "description": "Remove column Muestra 2_48"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_49",
+    "description": "Remove column Muestra 1_49"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_49",
+    "description": "Remove column Muestra 2_49"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_50",
+    "description": "Remove column Muestra 1_50"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_50",
+    "description": "Remove column Muestra 2_50"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_51",
+    "description": "Remove column Muestra 1_51"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_51",
+    "description": "Remove column Muestra 2_51"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 1_52",
+    "description": "Remove column Muestra 1_52"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Muestra 2_52",
+    "description": "Remove column Muestra 2_52"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column2",
+    "description": "Remove column Column2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_1",
+    "newColumnName": "Muestra1_1",
+    "description": "Rename column Muestra 1_1 to Muestra1_1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_1",
+    "newColumnName": "Muestra2_1",
+    "description": "Rename column Muestra 2_1 to Muestra2_1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muesta 1_2",
+    "newColumnName": "Muesta1_2",
+    "description": "Rename column Muesta 1_2 to Muesta1_2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muesta1_2",
+    "newColumnName": "Muestra1_2",
+    "description": "Rename column Muesta1_2 to Muestra1_2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_2",
+    "newColumnName": "Muestra2_2",
+    "description": "Rename column Muestra 2_2 to Muestra2_2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_3",
+    "newColumnName": "Muestra1_3",
+    "description": "Rename column Muestra 1_3 to Muestra1_3"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_3",
+    "newColumnName": "Muestra2_3",
+    "description": "Rename column Muestra 2_3 to Muestra2_3"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_4",
+    "newColumnName": "Muestra1_4",
+    "description": "Rename column Muestra 1_4 to Muestra1_4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muesta 2_4",
+    "newColumnName": "Muestra2_4",
+    "description": "Rename column Muesta 2_4 to Muestra2_4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_5",
+    "newColumnName": "Muestra1_5",
+    "description": "Rename column Muestra 1_5 to Muestra1_5"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_5",
+    "newColumnName": "Muestra2_5",
+    "description": "Rename column Muestra 2_5 to Muestra2_5"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_6",
+    "newColumnName": "Muestra1_6",
+    "description": "Rename column Muestra 1_6 to Muestra1_6"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_6",
+    "newColumnName": "Muestra2_6",
+    "description": "Rename column Muestra 2_6 to Muestra2_6"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_7",
+    "newColumnName": "Muestra1_7",
+    "description": "Rename column Muestra 1_7 to Muestra1_7"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_7",
+    "newColumnName": "Muestra2_7",
+    "description": "Rename column Muestra 2_7 to Muestra2_7"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_8",
+    "newColumnName": "Muestra1_8",
+    "description": "Rename column Muestra 1_8 to Muestra1_8"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_8",
+    "newColumnName": "Muestra2_8",
+    "description": "Rename column Muestra 2_8 to Muestra2_8"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_9",
+    "newColumnName": "Muestra1_9",
+    "description": "Rename column Muestra 1_9 to Muestra1_9"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_9",
+    "newColumnName": "Muestra2_9",
+    "description": "Rename column Muestra 2_9 to Muestra2_9"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_10",
+    "newColumnName": "Muestra1_10",
+    "description": "Rename column Muestra 1_10 to Muestra1_10"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_10",
+    "newColumnName": "Muestra2_10",
+    "description": "Rename column Muestra 2_10 to Muestra2_10"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_11",
+    "newColumnName": "Muestra1_11",
+    "description": "Rename column Muestra 1_11 to Muestra1_11"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_11",
+    "newColumnName": "Muestra2_11",
+    "description": "Rename column Muestra 2_11 to Muestra2_11"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 1_12",
+    "newColumnName": "Muestra1_12",
+    "description": "Rename column Muestra 1_12 to Muestra1_12"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Muestra 2_12",
+    "newColumnName": "Muestra2_12",
+    "description": "Rename column Muestra 2_12 to Muestra2_12"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "location",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "parameter",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column parameter using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_3",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_3 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_3",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_3 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_4",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_4 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_4",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_4 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_5",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_5 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_5",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_5 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_6",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_6 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_6",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_6 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_7",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_7 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_7",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_7 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_8",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_8 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_8",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_8 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_9",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_9 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_9",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_9 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_10",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_10 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_10",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_10 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_11",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_11 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_11",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_11 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra1_12",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra1_12 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_12",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_12 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_4",
+    "expression": "value.replace(\"N.D.\",\"No detectado\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_4 using expression value.replace(\"N.D.\",\"No detectado\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_8",
+    "expression": "value.replace(\"N.D.\",\"No detectado\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_8 using expression value.replace(\"N.D.\",\"No detectado\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Muestra2_12",
+    "expression": "value.replace(\"N.D.\",\"No detectado\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Muestra2_12 using expression value.replace(\"N.D.\",\"No detectado\")"
+  }
+]

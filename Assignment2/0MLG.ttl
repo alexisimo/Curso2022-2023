@@ -1,0 +1,14 @@
+@base <http://oeg.fi.upm.es/resource>
+@prefix ontology: <http://oeg.fi.upm.es/def/classes#>
+
+class:ClassRoom03	ontology:contains sensor:Sensor347,
+									  table:Table322.
+									  
+sensor:Sensor347 ontology:hasMeasurement measurement:Measurement8432.
+
+measurement:Measurement8432 ontology:hasTemperature "29";
+							ontology:atTime "2022-09-12T12:01:12".
+							 
+table:Table322 ontology:hasOwner school:ETSIInformaticos.
+
+school:ETSIInformaticos ontology:hasName "ETSIInformaticos". 	

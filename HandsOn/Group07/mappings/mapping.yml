@@ -1,0 +1,78 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ns: http://bicimad.com/group07/class#
+  ns2: http://bicimad.com/group07/property#
+  
+mappings:
+  Estacion:
+    sources:
+      - [bases_bicimad-updated.csv~csv]
+    s: http://bicimad.es/group07/estacion/$(Numero)
+    po:
+      - [a, ns:estacion]
+      - [ns2:tiene_numero,$(Numero),xsd:string]
+      - [ns2:tiene_lat,$(Latitud),xsd:float]
+      - [ns2:tiene_long,$(Longitud),xsd:float]
+      - [ns2:tiene_Nplaza, $(Numero_de_plazas), xsd:integer]
+      - [ns2:tiene_GisX, $(Gis_X), xsd:double]
+      - [ns2:tiene_GisY, $(Gis_Y), xsd:double]
+      - p: ns2:tiene_direccion
+        o:
+          mapping: Direccion
+          condition:
+            function: equal
+            parameters:
+                - [str1, $(Direccion)+$(N_finca)]
+                - [str2, $(Direccion)+$(N_finca)]
+      - p: ns2:tiene_distrito
+        o:
+          mapping: Distrito
+          condition:
+            function: equal
+            parameters:
+                - [str1, $(Distrito_id)]
+                - [str2, $(Distrito_id)]
+  Barrio:
+    sources:
+      - [bases_bicimad-updated.csv~csv]
+    s: http://bicimad.es/group07/barrio/$(Barrio_id)
+    po:
+      - [a, ns:barrio]
+      - [ns2:nombre_barrio,$(nombre_barrio),xsd:string]
+      - [ns2:barrio_id,$(Barrio_id),xsd:string]
+    
+  Distrito: 
+    sources:
+      - [bases_bicimad-updated.csv~csv]
+    s: http://bicimad.es/group07/distrito/$(Distrito_id)
+    po:
+      - [a, ns:distrito]
+      - [ns2:distrito_id,$(Distrito_id),xsd:integer]
+      - [ns2:nombre_distrito,$(nombre_distrito),xsd:string]
+      - p: ns2:tiene_barrio
+        o:
+          mapping: Barrio
+          condition:
+            function: equal
+            parameters:
+                - [str1, $(Barrio_id)]
+                - [str2, $(Barrio_id)]
+                
+   
+  Direccion: 
+    sources:
+      - [bases_bicimad-updated.csv~csv]
+    s: http://bicimad.es/group07/direccion/$(Direccion)/$(N_finca)
+    po:
+      - [a, ns:direccion]
+      - [ns2:tiene_NFinca,$(N_finca),xsd:string]
+      - [ns2:tiene_calle,$(Direccion),xsd:string]

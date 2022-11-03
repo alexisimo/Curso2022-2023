@@ -1,0 +1,84 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  owl: http://www.w3.org/2002/07/owl#
+  ont: http://smartcity.linkeddata.es/transport/ontology/
+  
+mappings:
+  bikeStation:
+    sources:
+      - [csv/bases_bicimad-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/bikeStation/$(ID_BIKEST)
+    po:
+      - [a, ont:BikeStation]
+      - [ont:identifier,$(ID_BIKEST),xsd:string]
+      - [ont:capacity,$(CAPACITY),xsd:integer]
+      - [ont:coord_long,$(LONGITUDE),xsd:float]
+      - [ont:coord_lat,$(LATITUDE),xsd:float]
+      - [ont:street,$(STREET),xsd:string]
+      - [ont:st_number,$(ST_NUMBER),xsd:string]
+      - [ont:hasNeighbourhood,http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_ID)~iri]
+
+  chargeStation:
+    sources:
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/chargeStation/$(ID_CHARGEST)
+    po:
+      - [a, ont:ChargeStation]
+      - [ont:identifier,$(ID_CHARGEST),xsd:string]
+      - [ont:capacity,$(CAPACITY),xsd:integer]
+      - [ont:street,$(STREET),xsd:string]
+      - [ont:st_number,$(ST_NUMBER),xsd:string]
+      - [ont:conector_info,$(CONECTOR_INFO),xsd:string]
+      - [ont:hasLocation, http://smartcity.linkeddata.es/transport/data/location/$(LOCATION)~iri]
+      - [ont:hasNeighbourhood, http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_ID)~iri]
+      - [ont:hasOperator, http://smartcity.linkeddata.es/transport/data/operator/$(OPERATOR)~iri]
+
+  neighbourhood:
+    sources:
+      - [csv/bases_bicimad-updated-with-links.csv~csv]
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_ID)
+    po:
+      - [a, ont:Neighbourhood]
+      - [ont:number_id,$(NEIGHBOURHOOD_ID),xsd:integer]
+      - [ont:name_id,$(NEIGHBOURHOOD),xsd:string]
+      - [ont:hasDistrict, http://smartcity.linkeddata.es/transport/data/district/$(DISTRICT_ID)~iri]
+      - [owl:sameAs, $(WIKIDATA_NEIGHBOURHOOD)~iri]
+
+
+  district:
+    sources:
+      - [csv/bases_bicimad-updated-with-links.csv~csv]
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/district/$(DISTRICT_ID)
+    po:
+      - [a, ont:District]
+      - [ont:number_id,$(DISTRICT_ID),xsd:integer]
+      - [ont:name_id,$(DISTRICT),xsd:string]
+      - [owl:sameAs, $(WIKIDATA_DISTRICT)~iri]
+
+  operator:
+    sources:
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/operator/$(OPERATOR)
+    po:
+      - [a, ont:Operator]
+      - [ont:name_id,$(OPERATOR),xsd:string]
+      - [owl:sameAs,$(WIKIDATA_OPERATOR)~iri]
+
+  location:
+    sources:
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/location/$(LOCATION)
+    po:
+      - [a, ont:Location]
+      - [ont:name_id,$(LOCATION),xsd:string]

@@ -1,0 +1,22 @@
+@prefix em: <http://ocioMadrid/lcc/ontology/EventosMadrid#> .
+@prefix ns: <http://ns.com#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.owl-ontologies.com/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ev: <http://ocioMadrid/lcc/resource/Evento#> .
+@prefix ac: <http://ocioMadrid/lcc/resource/Actividad#> .
+@prefix ins: <http://ocioMadrid/lcc/resource/Instalacion#> .
+@prefix dis: <http://ocioMadrid/lcc/resource/Distrito#> .
+@prefix ba: <http://ocioMadrid/lcc/resource/Barrio#> .
+
+ev:11768163 em:seDesarrolla time:IntervaloTiempo [
+    time:inicio "2022-09-30 00:00:00.0"^^xsd:date; 		
+    time:fin "2022-10-02 23:59:00.0"^^xsd:date
+    time:hora "21:00"^^xsd:time
+    ].
+
+ev:11768163 em:inscribe ac:15ª_Edición_Mi_primer_Festival_de_Cine.
+ev:11768163 em:seLocaliza ins:Centro_de_Cultura_Contemporánea_Conde_Duque.
+
+ins:Centro_de_Cultura_Contemporánea_Conde_Duque em:seEncuentra ba:UNIVERSIDAD.  .
+ba:UNIVERSIDAD em:perteneceA dis:CENTRO.

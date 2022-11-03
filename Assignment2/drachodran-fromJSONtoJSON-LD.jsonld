@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "subject": "https://oeg.fi.upm.es/ontologies/subject/",
+    "teacher": "https://oeg.fi.upm.es/ontologies/teachers/",
+    "name": "vcard:FN",
+    "hometown": "rdfs:label",
+    "date_of_birth": "vcard:bday",
+    "alma_mater": "rdfs:label",
+    "name_of_father": "vcard:N",
+    "name_of_mother": "vcard:N",
+    "name_subject": "rdfs:label",
+    "full_name": "vcard:FN"
+  },
+  "@id": "https://cesargayo.eu",
+  "@type": "Person",
+  "name": "César Gayo",
+  "hometown": "Madrid",
+  "date_of_birth": "19810408",
+  "alma_mater": "Universidad Politécnica de Madrid",
+  "name_of_father": "Ramón",
+  "name_of_mother": "Esperanza",
+  "subjects": [
+    {
+      "@id": "subject:OpenData",
+      "@type": "subject",
+      "name_subject": "Open Data and Knowledge Graphs",
+      "teachers": [
+        {
+          "@id": "teacher01",
+          "@type": "teacher",
+          "full_name": "Daniel Garijo"
+        },
+        {
+          "@id": "teacher02",
+          "@type": "teacher",
+          "full_name": "Oscar Corcho"
+        }
+      ]
+    },
+    {
+      "@id": "subject:MachineLearning",
+      "@type": "subject",
+      "name_subject": "Machine Learning",
+      "teachers": [
+        {
+          "@id": "teacher03",
+          "@type": "teacher",
+          "full_name": "Concha Bielza"
+        },
+        {
+          "@id": "teacher04",
+          "@type": "teacher",
+          "full_name": "Pedro Larrañaga"
+        }
+      ]
+    }
+  ]
+}

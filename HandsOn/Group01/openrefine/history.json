@@ -1,0 +1,404 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Situación",
+    "expression": "grel:trim(substring(value,0,lastIndexOf(value,\" \")))",
+    "onError": "set-to-blank",
+    "newColumnName": "Calle",
+    "columnInsertIndex": 2,
+    "description": "Create column Calle at index 2 based on column Situación using expression grel:trim(substring(value,0,lastIndexOf(value,\" \")))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Situación",
+    "expression": "grel:value.split(' ')[-1]",
+    "onError": "set-to-blank",
+    "newColumnName": "Street number",
+    "columnInsertIndex": 2,
+    "description": "Create column Street number at index 2 based on column Situación using expression grel:value.split(' ')[-1]"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Calle",
+    "newColumnName": "Street",
+    "description": "Rename column Calle to Street"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Street",
+    "index": 2,
+    "description": "Move column Street to position 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street",
+    "expression": "grel:value.replace(\",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Street using expression grel:value.replace(\",\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Situación",
+    "description": "Remove column Situación"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Titular",
+    "newColumnName": "Owner",
+    "description": "Rename column Titular to Owner"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Longitud",
+    "newColumnName": "Longitude",
+    "description": "Rename column Longitud to Longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Latitud",
+    "newColumnName": "Latitude",
+    "description": "Rename column Latitud to Latitude"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de conectdores",
+    "expression": "grel:value.replace(\"n/d\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de conectdores using expression grel:value.replace(\"n/d\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de conectdores",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de conectdores using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Street number using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de conectdores",
+    "newColumnName": "Number of conectors",
+    "description": "Rename column Número de conectdores to Number of conectors"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo de conectores",
+    "expression": "grel:value.replace(\"n/d\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo de conectores using expression grel:value.replace(\"n/d\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo de conectores",
+    "newColumnName": "Connectors types",
+    "description": "Rename column Tipo de conectores to Connectors types"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Precio",
+    "expression": "grel:value.replace(\"n/d\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Precio using expression grel:value.replace(\"n/d\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Precio",
+    "newColumnName": "Price",
+    "description": "Rename column Precio to Price"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Cables y adaptadores",
+    "expression": "grel:value.replace(\"n/d\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Cables y adaptadores using expression grel:value.replace(\"n/d\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cables y adaptadores",
+    "newColumnName": "Cables Annotation",
+    "description": "Rename column Cables y adaptadores to Cables Annotation"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Reservar",
+    "expression": "grel:value.replace(\"n/d\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Reservar using expression grel:value.replace(\"n/d\", \"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Reservar",
+    "newColumnName": "Bookable",
+    "description": "Rename column Reservar to Bookable"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Horario",
+    "newColumnName": "Schedule",
+    "description": "Rename column Horario to Schedule"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Schedule",
+    "expression": "grel:value.replace(\"n/d\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Schedule using expression grel:value.replace(\"n/d\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Límite de tiempo",
+    "expression": "grel:value.replace(\"n/d\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Límite de tiempo using expression grel:value.replace(\"n/d\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Límite de tiempo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Límite de tiempo using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Límite de tiempo",
+    "newColumnName": "Time limit",
+    "description": "Rename column Límite de tiempo to Time limit"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Owner",
+    "expression": "grel:\"ALCOBENDAS\"",
+    "onError": "set-to-blank",
+    "newColumnName": "City",
+    "columnInsertIndex": 1,
+    "description": "Create column City at index 1 based on column Owner using expression grel:\"ALCOBENDAS\""
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "City",
+    "index": 0,
+    "description": "Move column City to position 0"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Street number",
+    "newColumnName": "Street_number",
+    "description": "Rename column Street number to Street_number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Number of conectors",
+    "newColumnName": "Number_of_conectors",
+    "description": "Rename column Number of conectors to Number_of_conectors"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Connectors types",
+    "newColumnName": "Connectors_types",
+    "description": "Rename column Connectors types to Connectors_types"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cables Annotation",
+    "newColumnName": "Cables_Annotation",
+    "description": "Rename column Cables Annotation to Cables_Annotation"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Time limit",
+    "newColumnName": "Time_limit",
+    "description": "Rename column Time limit to Time_limit"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street",
+    "expression": "join ([coalesce(cells['Street'].value,''),coalesce(cells['Street number'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Street using expression join ([coalesce(cells['Street'].value,''),coalesce(cells['Street number'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Street number",
+    "description": "Remove column Street number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Street",
+    "newColumnName": "Address",
+    "description": "Rename column Street to Address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Connectors types",
+    "newColumnName": "Connector type",
+    "description": "Rename column Connectors types to Connector type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Number of conectors",
+    "newColumnName": "Number of connectors",
+    "description": "Rename column Number of conectors to Number of connectors"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Owner",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Charging Station",
+    "columnInsertIndex": 2,
+    "description": "Create column Charging Station at index 2 based on column Owner using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Charging Station",
+    "expression": "join ([coalesce(cells['Charging Station'].value,''),coalesce(cells['Longitude'].value,''),coalesce(cells['Latitude'].value,'')],'_')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Charging Station using expression join ([coalesce(cells['Charging Station'].value,''),coalesce(cells['Longitude'].value,''),coalesce(cells['Latitude'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Connector type",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Connector",
+    "columnInsertIndex": 8,
+    "description": "Create column Connector at index 8 based on column Connector type using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Connector",
+    "expression": "grel:if(value==null,\"nc\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Connector using expression grel:if(value==null,\"nc\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Connector",
+    "expression": "join ([coalesce(cells['Connector'].value,''),coalesce(cells['Longitude'].value,''),coalesce(cells['Latitude'].value,'')],'_')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Connector using expression join ([coalesce(cells['Connector'].value,''),coalesce(cells['Longitude'].value,''),coalesce(cells['Latitude'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Connector type",
+    "newColumnName": "Peripheral",
+    "description": "Rename column Connector type to Peripheral"
+  }
+]

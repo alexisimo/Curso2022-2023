@@ -1,0 +1,34 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://bicimad.es/group07/class#> .
+@prefix ns2: <http://bicimad.es/group07/property#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix est: <http://bicimad.es/group07/data/estacion/> .
+@prefix barr: <http://bicimad.es/group07/data/barrio/> .
+@prefix dist: <http://bicimad.es/group07/data/distrito/> .
+@prefix dir: <http://bicimad.es/group07/data/direccion/> .
+
+est:261 a ns:Estacion ;
+    ns:tiene_numero 261 ;
+    ns:tiene_distrito "09 MONCLOA-ARAVACA"^^xsd:string ;
+    ns:tiene_direccion "COMPLUTENSE, AVENIDA, frente al 7"^^xsd:string ; 
+    ns:tiene nplaza 24 ;
+    ns:tiene_ gis x 438161,53 ;
+    ns:tiene_ gis y 4478015,95 ;
+    ns:tiene_lat 40.4505032 ;
+    ns:tiene_long -3.7292576 ;
+
+
+dist:09 Moncloa-Aravaca a ns:Distrito ;
+    ns:nombre_distrito "09 MONCLOA-ARAVACA"^^xsd:string ;
+    ns:Distrito_id 9;
+    ns:tiene_barrio "09-03 CIUDAD UNIVERSITARIA"^^xsd:string ;
+
+dir:Avenida Complutense frente al 7 a ns:Direccion ;
+    ns:tiene_calle "COMPLUTENSE, AVENIDA"^^xsd:string ;
+    ns:tiene_ nfinca "frente al 7"^^xsd:String ;
+
+barr:09-03 Ciudad Universitaria a ns:Barrio ;
+    ns:nombre_barrio "CIUDAD UNIVERSITARIA"^^xsd:string ;
+    ns:Barrio_id "09-03"^^xsd:string ;
