@@ -38,9 +38,6 @@ bikeSt:00191 a esbici:EstacionBicicleta ;
             ont:hasAddress address:1 ;
             ont:hasNeighbourhood hood:guindalera .
 
-op:endesa a ont:Operator ;
-            ont:name_id "Endesa"^^xsd:string .
-
 address:2 a ont:Address ;
             ont:ad_name "PLAZA DE SAN CAYETANO"^^xsd:string ;
             ont:ad_number "S/N"^^xsd:string ;
@@ -56,5 +53,5 @@ chargeSt:00008 a ev:EVChargingStation ;
             ont:id "8"^^xsd:string ;
             ont:hasLocationType "Aparcamiento"^^xsd:string .  ;
             ont:hasAddress address:2 ;
-            ont:hasOperator op:endesa ;
+            ont:hasOperator "Endesa"^^xsd:string;
             ont:hasNeighbourhood hood:guindalera .

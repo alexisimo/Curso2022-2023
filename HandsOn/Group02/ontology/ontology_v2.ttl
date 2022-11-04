@@ -49,10 +49,10 @@ ont:hasNeighbourhood a owl:ObjectProperty ;
     rdfs:domain geosparql:Feature ;
     rdfs:range ont:Neighbourhood .
 
-ont:hasOperator a owl:ObjectProperty ;
+ont:hasOperator a owl:DatatypeProperty ;
     rdfs:label "has operator" ;
     rdfs:domain ev:EVChargingStation ;
-    rdfs:range ont:Operator .
+    rdfs:range xsd:string .
 
 ont:id a owl:DatatypeProperty ;
     rdfs:label "id" ;
@@ -70,9 +70,6 @@ ont:number_id a owl:DatatypeProperty ;
 ont:District a owl:Class ;
     rdfs:label "District" .
 
-ont:Operator a owl:Class ;
-    rdfs:label "Operator" .
-
 esbici:EstacionBicicleta a owl:Class ;
     rdfs:label "Estacion Bicicleta" ;
     rdfs:subClassOf geosparql:Feature .
@@ -89,4 +86,3 @@ ont:Address a owl:Class ;
 
 geosparql:Feature a owl:Class ;
     rdfs:label "Feature" .
-
