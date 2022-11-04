@@ -131,6 +131,23 @@ metro = prepareQuery('''
     ''',
     initNs={"wdt": wdt_metro, "wd":wd, "rdfs": rdfs}
 )
+
+tourist_attractions = prepareQuery('''
+    SELECT ?QNODE ?NAME ?COORDS 
+    WHERE{
+        ?neigh ont:hasDistrict ?district .
+        ?neigh owl:sameAs ?wikiNeigh .
+        SERVICE <https://query.wikidata.org/sparql> {       
+            ?QNODE wdt:P276 ?location .
+            ?location wdt:P131 ?wikiNeigh .
+            ?QNODE wdt:P625 ?COORDS .
+            ?QNODE rdfs:label ?NAME .
+            FILTER(lang(?NAME) = "es")
+        }
+    }LIMIT 3000
+    ''',
+    initNs={"wdt": wdt_metro, "wd":wd, "rdfs": rdfs, "ont": ont, "owl": owl}
+)
     
 #Parse data to list
 points = []
