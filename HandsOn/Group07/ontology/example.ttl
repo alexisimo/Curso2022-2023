@@ -4,10 +4,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix est: <http://bicimad.es/group07/data/estacion/> .
-@prefix barr: <http://bicimad.es/group07/data/barrio/> .
-@prefix dist: <http://bicimad.es/group07/data/distrito/> .
-@prefix dir: <http://bicimad.es/group07/data/direccion/> .
+@prefix est: <http://bicimad.es/group07/estacion/> .
+@prefix barr: <http://bicimad.es/group07/barrio/> .
+@prefix dist: <http://bicimad.es/group07/distrito/> .
+@prefix dir: <http://bicimad.es/group07/direccion/> .
 
 est:261 a ns:Estacion ;
     ns:tiene_numero 261 ;
