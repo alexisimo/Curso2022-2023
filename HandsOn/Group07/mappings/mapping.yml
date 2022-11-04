@@ -71,7 +71,7 @@ mappings:
   Direccion: 
     sources:
       - [bases_bicimad-updated.csv~csv]
-    s: http://bicimad.es/group07/direccion/$(Direccion)/$(N_finca)
+    s: http://bicimad.es/group07/direccion/$(Direccion)$(N_finca)
     po:
       - [a, ns:direccion]
       - [ns2:tiene_NFinca,$(N_finca),xsd:string]
