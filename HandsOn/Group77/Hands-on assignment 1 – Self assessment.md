@@ -1,21 +1,26 @@
-Hands-on assignment 1 – Self assessment
-Checklist
-The “README.md” file:
+# Hands-on assignment 1 – Self assessment
 
-[X] Includes the names and GitHub users of all the members of the group
-The "csv" directory:
+## Checklist
 
-[X] Contains at least one CSV file
-[X] The CSV files belong to one of the selected domains
+**The “README.md” file:**
 
-The "datasetRequirements.html" file:
-[X] Identifies the licenses of all the selected datasets
-[X] Identifies those entities in the selected datasets that can be linked with entities in other datasets
-[X] Identifies those entities in other datasets that can be linked with entities in the selected datasets
+- [x] Includes the names and GitHub users of all the members of the group
 
-The "applicationRequirements.html” file:
-[X] Includes a description of the application user interface
+**The "csv" directory:**
 
-Comments on the self-assessment
-Nos ha resultado complicado encontrar un dataSet que cumpliera los requerimientos propuestos.
-Nos falta perspectiva sobre el concepto de este proyecto, esperamos aclarar dudas en el transcurso de las próximas clases
+- [x] Contains at least one CSV file 
+- [x] The CSV files belong to one of the selected domains
+
+**The "datasetRequirements.html" file:**
+
+- [x] Identifies the licenses of all the selected datasets
+- [x] Identifies those entities in the selected datasets that can be linked with entities in other datasets
+- [x] Identifies those entities in other datasets that can be linked with entities in the selected datasets 
+
+**The "applicationRequirements.html” file:**
+
+- [x] Includes a description of the application user interface (a really brief description)
+
+
+## Comments on the self-assessment
+Nos ha resultado complicado encontrar un dataSet que cumpliera los requerimientos propuestos. Nos falta perspectiva sobre el concepto de este proyecto, esperamos aclarar dudas en el transcurso de las próximas clases

@@ -1,0 +1,158 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+
+<#Biblioteca>
+	rml:logicalSource [
+	  rml:source "/content/Biblioteca.csv";
+	  rml:referenceFormulation ql:CSV 
+  ];
+
+	rr:subjectMap [
+		rr:template "https://data.example.com/biblioteca/{PK}";
+        rr:class schema:Biblioteca
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasnombre;
+    rr:objectMap [
+      rml:reference "NOMBRE"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasdescription;
+    rr:objectMap [
+      rml:reference "DESCRIPCION-ENTIDAD"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hashorario;
+    rr:objectMap [
+      rml:reference "HORARIO"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasequipamiento;
+    rr:objectMap [
+      rml:reference "EQUIPAMIENTO"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasbiblioteca-url;
+    rr:objectMap [
+      rml:reference "CONTENT-URL"
+    ]];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:hasEvento;
+      rr:objectMap [
+          rr:parentTriplesMap <#Evento>;
+          rr:joinCondition [
+              rr:child "PK";
+              rr:parent "ID-BIBLIOTECA";
+          ];
+      ];
+    ];
+    rr:predicateObjectMap [
+      rr:predicate schema:hasDireccion;
+      rr:objectMap [
+          rr:parentTriplesMap <#Direccion>;
+          rr:joinCondition [
+              rr:child "PK";
+              rr:parent "SUBMISION";
+          ];
+      ];
+    ].
+
+# Second RML map (second source)
+<#Evento>
+    rml:logicalSource [
+        rml:source "/content/eventos.csv";
+        rml:referenceFormulation ql:CSV
+        ];
+
+    rr:subjectMap [
+    rr:template "http://data.example.com/Evento/{ID-EVENTO}";
+    rr:class schema:Eventos];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasid-evento;
+    rr:objectMap [
+      rml:reference "ID-EVENTO"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hastitulo;
+    rr:objectMap [
+      rml:reference "TITULO"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasdias;
+    rr:objectMap [
+      rml:reference "DIAS-SEMANA"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasfecha-ini;
+    rr:objectMap [
+      rml:reference "FECHA"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasfecha-fin;
+    rr:objectMap [
+      rml:reference "FECHA-FIN"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hashora;
+    rr:objectMap [
+      rml:reference "HORA"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasurl-evento;
+    rr:objectMap [
+      rml:reference "URL-INSTALACION"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasnombre-instalacion;
+    rr:objectMap [
+      rml:reference "NOMBRE-INSTALACION"
+    ]].
+    
+
+#third RML map (third source)
+<#Direccion>
+    rml:logicalSource [
+        rml:source "/content/DIRECCIONES.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+    rr:template "http://data.example.com/biblioteca/{SUBMISION}/Direccion";
+    rr:class schema:Eventos];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:esdireccion;
+    rr:objectMap [
+      rml:reference "DIRECCION"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:estelefono;
+    rr:objectMap [
+      rml:reference "TELEFONO"
+    ]];
+
+    rr:predicateObjectMap [
+    rr:predicate schema:hasemail;
+    rr:objectMap [
+      rml:reference "EMAIL"
+    ]].

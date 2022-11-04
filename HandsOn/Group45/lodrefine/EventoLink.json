@@ -1,0 +1,106 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CONTENT-URL",
+    "expression": "grel:Madrid",
+    "onError": "set-to-blank",
+    "newColumnName": "Localidad",
+    "columnInsertIndex": 6,
+    "description": "Create column Localidad at index 6 based on column CONTENT-URL using expression grel:Madrid"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Localidad",
+    "newColumnName": "LOCALIDAD",
+    "description": "Rename column Localidad to LOCALIDAD"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column LOCALIDAD to type Q515"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LOCALIDAD",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "LINKED",
+    "columnInsertIndex": 7,
+    "description": "Create column LINKED at index 7 based on column LOCALIDAD using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        "Q2074737",
+        "Q515",
+        "Q1549591",
+        "Q1637706",
+        "Q5119",
+        "Q486972",
+        "Q51929311"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid (Q2807) for cells containing \"Madrid\" in column LOCALIDAD"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LOCALIDAD",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata",
+    "columnInsertIndex": 7,
+    "description": "Create column wikidata at index 7 based on column LOCALIDAD using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LINKED",
+    "description": "Remove column LINKED"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "wikidata",
+    "newColumnName": "WIKIDATA",
+    "description": "Rename column wikidata to WIKIDATA"
+  }
+]

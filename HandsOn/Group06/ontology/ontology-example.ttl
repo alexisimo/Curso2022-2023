@@ -26,7 +26,7 @@ direccion:1 a :Direccion;
 :hasNombreViaDireccion  "de Ríos Rosas"^^xsd:string;
 :hasPisoDireccion   "23"^^xsd:string;
 :hasPuertaDireccion   "BAJA"^^xsd:string;
-:hasCodigoPostalDireccion  "28003"^^xsd:nonNegativeInteger;
+:hasCodigoPostalDireccion  "28003"^^xsd:string;
 :hasUbicacionDireccion   "INSTITUTO GEOLÓGICO Y MINERO DE ESPAÑA JUNTO AL SERVICIO MÉDICO"^^xsd:string;
 :hasCoordXDireccion   "440663"^^xsd:float;
 :hasCoordYDireccion   "CALLE"^^xsd:float.

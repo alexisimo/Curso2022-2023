@@ -1,8 +1,7 @@
-PREFIX ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> .
-PREFIX ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> .
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-PREFIX time: <http://www.w3.org/TR/owl-time#> .
-PREFIX schema: <http://schema.org/> .
+PREFIX ec:<http://www.semanticweb_g27.org/ontology/EnergyCons#> 
+PREFIX ssn: <http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX schema: <http://schema.org/> 
 
 # Check civicStructures instance properties
 
@@ -37,7 +36,7 @@ WHERE
         schema:unitText ?ob_unit_text ;
         schema:value ?ob_value ;
         ssn:featureOfInterest ?ob_civicStructures ;
-        time:inXSDDate ?ob_time .
+        ssn:resultTime ?ob_time .
         OPTIONAL{
             ?observation ec:energyGroup ?ob_ec_energy_group ;
                 ec:typeOfEnergy ?ob_ec_type_of_energy ;

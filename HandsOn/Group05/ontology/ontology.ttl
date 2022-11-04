@@ -6,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.owl-ontologies.com/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
+@prefix mz: <http://madrid/zonas/> .
 ns: a owl:Ontology ;
     dc:creator "Grupo5" ;
     dc:description "Ontology code created by Chowlk" ;
@@ -74,20 +74,20 @@ em:seDesarrolla a owl:ObjectProperty ;
     rdfs:domain er:Evento ;
     rdfs:range time:IntervaloTiempo .
 
-em:seEncuentra a owl:ObjectProperty ;
-    rdfs:label "se encuentra" ;
+em:perteneceBarrio a owl:ObjectProperty ;
+    rdfs:label "pertenece barrio" ;
     rdfs:domain er:Instalacion ;
-    rdfs:range er:Barrio .
+    rdfs:range mz:Barrio .
 
 em:inscribe a owl:ObjectProperty ;
     rdfs:label "inscribe" ;
     rdfs:domain er:Evento ;
     rdfs:range er:Actividad .
 
-em:perteneceA a owl:ObjectProperty ;
-    rdfs:label "pertenece a" ;
-    rdfs:domain er:Barrio ;
-    rdfs:range er:Distrito .
+em:perteneceDistrito a owl:ObjectProperty ;
+    rdfs:label "pertenece distrito" ;
+    rdfs:domain er:Instalacion ;
+    rdfs:range mz:Distrito .
 
 em:seLocaliza a owl:ObjectProperty ;
     rdfs:label "se localiza" ;
@@ -109,10 +109,10 @@ time:inicio a owl:DatatypeProperty ;
 er:Actividad a owl:Class ;
     rdfs:label "Actividad" .
 
-er:Barrio a owl:Class ;
+mz:Barrio a owl:Class ;
     rdfs:label "Barrio" .
 
-er:Distrito a owl:Class ;
+mz:Distrito a owl:Class ;
     rdfs:label "Distrito" .
 
 time:IntervaloTiempo a owl:Class ;

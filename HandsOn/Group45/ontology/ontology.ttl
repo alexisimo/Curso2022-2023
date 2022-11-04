@@ -1,0 +1,104 @@
+ @prefix bib: <http://semanticweb_grp45.com/ontology/biblioteca#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bib: a owl:Ontology ;
+    dc:creator "Alfonso Fernando Sanchez de Toca",
+        "YiDong Zhu" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Template Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+ns:descripcion a owl:ObjectProperty ;
+    rdfs:label "descripcion" ;
+    rdfs:domain ns:Biblioteca .
+
+ns:dias a owl:ObjectProperty ;
+    rdfs:label "dias" ;
+    rdfs:domain ns:Evento .
+
+ns:direccion a owl:ObjectProperty ;
+    rdfs:label "direccion" ;
+    rdfs:domain ns:Direccion .
+
+ns:email a owl:ObjectProperty ;
+    rdfs:label "email" ;
+    rdfs:domain ns:Direccion .
+
+ns:fecha a owl:ObjectProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Evento .
+
+ns:fechaFin a owl:ObjectProperty ;
+    rdfs:label "fecha fin" ;
+    rdfs:domain ns:Evento .
+
+ns:hasDireccion a owl:ObjectProperty ;
+    rdfs:label "has direccion" ;
+    rdfs:domain ns:Biblioteca ;
+    rdfs:range ns:Direccion .
+
+ns:hasEventos a owl:ObjectProperty ;
+    rdfs:label "has eventos" ;
+    rdfs:domain ns:Biblioteca ;
+    rdfs:range ns:Evento .
+
+ns:hora a owl:ObjectProperty ;
+    rdfs:label "hora" ;
+    rdfs:domain ns:Evento .
+
+ns:horario a owl:ObjectProperty ;
+    rdfs:label "horario" ;
+    rdfs:domain ns:Biblioteca .
+
+ns:id-biblioteca a owl:ObjectProperty ;
+    rdfs:label "id-biblioteca" ;
+    rdfs:domain ns:Evento .
+
+ns:idEvento a owl:ObjectProperty ;
+    rdfs:label "id evento" ;
+    rdfs:domain ns:Evento .
+
+ns:nombre a owl:ObjectProperty ;
+    rdfs:label "nombre" ;
+    rdfs:domain ns:Biblioteca .
+
+ns:nombre-instalacion a owl:ObjectProperty ;
+    rdfs:label "nombre-instalacion" ;
+    rdfs:domain ns:Evento .
+
+ns:pk a owl:ObjectProperty ;
+    rdfs:label "pk" ;
+    rdfs:domain ns:Biblioteca .
+
+ns:submision a owl:ObjectProperty ;
+    rdfs:label "submision" ;
+    rdfs:domain ns:Direccion .
+
+ns:telefono a owl:ObjectProperty ;
+    rdfs:label "telefono" ;
+    rdfs:domain ns:Direccion .
+
+ns:titulo a owl:ObjectProperty ;
+    rdfs:label "titulo" ;
+    rdfs:domain ns:Evento .
+
+ns:url-instalacion a owl:ObjectProperty ;
+    rdfs:label "url-instalacion" ;
+    rdfs:domain ns:Evento .
+
+ns:urlBiblioteca a owl:ObjectProperty ;
+    rdfs:label "url biblioteca" ;
+    rdfs:domain ns:Biblioteca .
+
+ns:Direccion a owl:Class ;
+    rdfs:label "Direccion" .
+
+ns:Biblioteca a owl:Class ;
+    rdfs:label "Biblioteca" .
+
+ns:Evento a owl:Class ;
+    rdfs:label "Evento" .
+

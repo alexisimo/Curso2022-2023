@@ -1,0 +1,69 @@
+
+#Q1
+Select Distinct ?subj ?name
+Where {
+?subjloc prop:hasdistrict "CENTRO" .
+?subj prop:hasAddress ?subloc .
+?subj prop:hassubtype "Puerta, Arco triunfal" .
+?subj prop:hasname ?name .
+
+#Resultado de Q1
+#http://www.monumentmadrid.com/resource/414110 Puerta secundaria jardines Cecilio Rodríguez
+#http://www.monumentmadrid.com/resource/408341 Puerta de España del Retiro
+#http://www.monumentmadrid.com/resource/409591 Puerta Colonia de la Prensa
+#http://www.monumentmadrid.com/resource/409551 Puerta de Rodajos
+#http://www.monumentmadrid.com/resource/408695 Puerta de los Osos
+#http://www.monumentmadrid.com/resource/400402 Puerta Real del Jardín Botánico
+#http://www.monumentmadrid.com/resource/409145 Puerta de la Latina
+#http://www.monumentmadrid.com/resource/408346 Puerta de O´Donnell del Retiro
+#http://www.monumentmadrid.com/resource/409370 Puerta del Niño Jesús del Retiro
+#http://www.monumentmadrid.com/resource/409547 Puerta del Zarzón
+#http://www.monumentmadrid.com/resource/409348 Puerta de Granada del Retiro
+#http://www.monumentmadrid.com/resource/408104 Puerta de Toledo
+#http://www.monumentmadrid.com/resource/414103 Puerta de la Reina Mercedes del Retiro
+#http://www.monumentmadrid.com/resource/408344 Puerta de la Independencia del Retiro
+#http://www.monumentmadrid.com/resource/414132 Puerta de Herrero Palacios del Retiro
+#http://www.monumentmadrid.com/resource/400405 Puertas Biblioteca y Museo Arqueológico Nacionales
+#http://www.monumentmadrid.com/resource/400548 Portada de Torre Arias
+#http://www.monumentmadrid.com/resource/408415 Puerta de Alcalá
+#http://www.monumentmadrid.com/resource/400403 Puerta norte del Jardín Botánico
+#http://www.monumentmadrid.com/resource/408342 Puerta de Felipe IV del Retiro
+#http://www.monumentmadrid.com/resource/409915 Puerta de la Ilustración
+#http://www.monumentmadrid.com/resource/409582 Puerta Bonita
+#http://www.monumentmadrid.com/resource/408343 Puerta de Hernani del Retiro
+#http://www.monumentmadrid.com/resource/409545 Puerta del Rey
+#http://www.monumentmadrid.com/resource/414116 Puerta sur de los jardines de Cecilio Rodríguez
+#http://www.monumentmadrid.com/resource/408340 Puerta de la América Española del Retiro
+#http://www.monumentmadrid.com/resource/408300 Puerta de los jardines del Arquitecto Herrero Palacios
+#http://www.monumentmadrid.com/resource/408950 Puerta de la Alcarria
+#http://www.monumentmadrid.com/resource/414129 Puerta de Murillo del Retiro
+#http://www.monumentmadrid.com/resource/400408 Puerta de Hierro
+#http://www.monumentmadrid.com/resource/408295 Puerta de Dante del Retiro
+#http://www.monumentmadrid.com/resource/409030 Puerta de San Vicente
+#http://www.monumentmadrid.com/resource/414127 Puerta del Doce de Octubre del Retiro
+#http://www.monumentmadrid.com/resource/409556 Puerta del Reservado Grande
+#http://www.monumentmadrid.com/resource/414102 Puerta de Sainz de Baranda del Retiro
+#http://www.monumentmadrid.com/resource/409200 Reproducción de la Puerta de Bisagra de Toledo
+#http://www.monumentmadrid.com/resource/409466 Puerta de los Cuarteles de Daoiz y Velarde
+#http://www.monumentmadrid.com/resource/414133 Puerta del pabellón de los Jardines Cecilio Rodríguez
+#http://www.monumentmadrid.com/resource/409347 Puerta del Ángel Caído del Retiro
+#http://www.monumentmadrid.com/resource/412005 Portada Cementerio de la Florida
+#http://www.monumentmadrid.com/resource/414104 Puerta del Olivar de Atocha (Jardines de Cecilio Rodríguez)
+#http://www.monumentmadrid.com/resource/409201 Reproducción de la Puerta del Carmen de Zaragoza
+#http://www.monumentmadrid.com/resource/409228 Puerta Huerta de la Salud
+#http://www.monumentmadrid.com/resource/408345 Puerta de Madrid del Retiro
+
+#Q2
+Select Distinct ?subj ?name ?coordx ?coordy ?description 
+Where {
+?subj prop:haspk 408346 .
+?subj prop:hasname ?name .
+?subj prop:hasdescription ?description .
+?subj prop:hasAddress ?subjadd .
+?subjadd geosparql:hasGeometry ?point .
+?point geo_core:xETRS89 ?coordx .
+?point geo_core:yETRS89 ?coordy .
+}
+
+#Resultado de Q2
+#http://www.monumentmadrid.com/resource/408346 Puerta de O´Donnell del Retiro 442409.0 4474964.0 Puerta creada en la Posguerra por el arquitecto Herrero Palacios para dar acceso a los vecinos de las calles de Alcalá, O’Donnell y Príncipe de Vergara, así como a los visitantes que acudían desde la zona norte de la capital.

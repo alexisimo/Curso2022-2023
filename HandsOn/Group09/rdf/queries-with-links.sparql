@@ -1,0 +1,60 @@
+PREFIX ns: <http://madridturistsites.es>
+
+# Número de códigos postales en Distrito 4 con monumento histórico:
+select count(?cp)
+where
+{
+ <http://madridturistsites.es/Distrito/4> ns:codigoPostal ?cp
+}
+
+# Nombre de vía donde está el monumento indicado:
+select ?via
+where
+{
+ ?pk ns:nombre “Los portadores de la antorcha” .
+ ?pk ns:seEncuentraEn ?via_uri .
+ ?via_uri ns:nombre ?via
+}
+
+# Monumentos construidos en el año indicado:
+select ?monumento
+where
+{
+ ?monumento ns:construidoEn “1950”
+}
+
+# Monumentos en el rango de longitud y latitud indicados:
+select ?monumento ?lat ?lon
+where
+{
+ ?monumento ns:tieneLatitud ?lat .
+ ?monumento ns:tieneLongitud ?lon .
+ FILTER(40.41 <= lat <= 40.42) .
+ FILTER(-3.70 <= lon <= -3.65) .
+}
+
+# Monumentos con su vía y su ontología de un barrio determinado:
+select ?via ?monumento ?ont
+where
+{
+ ?via ns:perteneceA <http://madridturistsites.es/Barrio/1> .
+ ?monumento ns:seEncuentraEn ?via .
+ ?monumento a ?ont
+}
+
+# Ubicación completa de un monumento:
+select “Los portadores de la antorcha” ?tipoVia ?via ?barrio ?distrito ?lat ?lon
+where
+{
+ 
+ ?uri ns:nombre “Los portadores de la antorcha”
+ ?uri ns:seEncuentraEn ?via_uri .
+ ?via_uri ns:nombre ?via .
+ ?via a ?tipoVia .
+ ?via ns:perteneceA ?barrio_uri .
+ ?barrio_uri ns:nombre ?barrio .
+ ?barrio_uri ns:perteneceA ?distrito_uri
+ ?distrito_uri ns:nombre ?distrito
+ ?monumento ns:tieneLatitud ?lat .
+ ?monumento ns:tieneLongitud ?lon .
+}

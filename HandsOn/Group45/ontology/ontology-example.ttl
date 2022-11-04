@@ -1,0 +1,27 @@
+@prefix bib: <http://semanticweb_grp45.com/ontology/biblioteca#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bib: a owl:Ontology ;
+    dc:creator "Alfonso Fernando Sanchez de Toca",
+        "YiDong Zhu" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Template Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+ns:Info a owl:ObjectProperty ;
+    rdfs:label "info" ; (todos los datos como id, description,horario, etc.)
+    rdfs:range ns:Biblioteca .
+
+ns:Localiza a owl:ObjectProperty ;
+    rdfs:label "localiza" ; 
+    rdfs:domain ns:Direccion ; (Av o calle, nombre de la calle, numero de la calle)
+    rdfs:range ns:Biblioteca .
+
+ns:Direccion a owl:Class ;
+    rdfs:label "Direccion" .
+
+ns:Biblioteca a owl:Class ;
+    rdfs:label "Biblioteca" .

@@ -1,7 +1,8 @@
  @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://HO-G1.linkeddata.es> .
+@prefix ns: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
 
 ns: a owl:Ontology ;
     dc:creator "Semantic Web 2022-23 (UPM) Group 01" ;
@@ -9,30 +10,81 @@ ns: a owl:Ontology ;
     dc:title "Alcobendas charging stations Ontology" ;
     owl:versionInfo "0.0.1" .
 
-ns:Connector a owl:Class ;
-    rdfs:label "Connector" ;
-    rdfs:subClassOf ns:Peripheral .
+ns:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain ns:Address ;
+    rdfs:range xsd1:xsd .
+
+ns:bookable a owl:DatatypeProperty ;
+    rdfs:label "bookable" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range xsd1:xsd .
+
+ns:cablesAnnotation a owl:DatatypeProperty ;
+    rdfs:label "cables annotation" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range xsd1:xsd .
 
 ns:hasAddress a owl:ObjectProperty ;
     rdfs:label "has address" ;
     rdfs:domain ns:Charging_station ;
     rdfs:range ns:Address .
 
-ns:hasChargingStation a owl:ObjectProperty ;
-    rdfs:label "has charging station" ;
-    rdfs:domain ns:City ;
-    rdfs:range ns:Charging_station .
-
 ns:hasPeripheral a owl:ObjectProperty ;
     rdfs:label "has peripheral" ;
-    rdfs:domain ns:Charging_station ;
     rdfs:range ns:Peripheral .
+
+ns:isLocatedIn a owl:ObjectProperty ;
+    rdfs:label "is located in" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range ns:City .
+
+ns:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:range xsd1:xsd .
+
+ns:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:range xsd1:xsd .
+
+ns:number a owl:DatatypeProperty ;
+    rdfs:label "number" ;
+    rdfs:domain ns:Connector ;
+    rdfs:range xsd1:xsd .
+
+ns:owner a owl:DatatypeProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range xsd1:xsd .
+
+ns:price a owl:DatatypeProperty ;
+    rdfs:label "price" ;
+    rdfs:range xsd1:xsd .
+
+ns:schedule a owl:DatatypeProperty ;
+    rdfs:label "schedule" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range xsd1:xsd .
+
+ns:timeLimit a owl:DatatypeProperty ;
+    rdfs:label "time limit" ;
+    rdfs:domain ns:Charging_station ;
+    rdfs:range xsd1:xsd .
+
+ns:type a owl:DatatypeProperty ;
+    rdfs:label "type" ;
+    rdfs:domain ns:Connector ;
+    rdfs:range xsd1:xsd .
+
+ns:City a owl:Class ;
+    rdfs:label "City" .
 
 ns:Address a owl:Class ;
     rdfs:label "Address" .
 
-ns:City a owl:Class ;
-    rdfs:label "City" .
+ns:Connector a owl:Class ;
+    rdfs:label "Connector" ;
+    rdfs:subClassOf ns:Peripheral .
 
 ns:Peripheral a owl:Class ;
     rdfs:label "Peripheral" .

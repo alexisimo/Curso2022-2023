@@ -11,7 +11,7 @@
     ec:energyGroup "Activa Interruptor Gral"^^xsd:string ;
     ec:typeOfEnergy "Energia Activa"^^xsd:string ;
     ssn:featureOfInterest <http://www.semanticweb_g27.org/resource/CivicStructure/E00000000> ;
-    time:inXSDDate "2022-03-01"^^xsd:date .
+    ssn:resultTime "2022-03-01"^^xsd:date .
 
 <http://www.semanticweb_g27.org/resource/CivicStructure/E00000000> a schema:CivicStructure ;
     rdfs:label "Biblioteca Ana María Matute"^^xsd:string ;
