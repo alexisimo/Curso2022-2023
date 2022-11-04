@@ -220,7 +220,7 @@ disf = pd.DataFrame(district_dict)
 #Create dic from neighbourhoods
 neighbourhood = []
 for results in g.query(neighbourhoods):
-    neighbourhood.append([str(results.name).title]+ [str(results.neigh)])
+    neighbourhood.append([str(results.name.title())]+ [str(results.neigh)])
     
 neighbourhood_dict = {
     "neighbourhood" : [i[0] for i in neighbourhood],
@@ -255,30 +255,38 @@ app.layout = html.Div([
 ])
 
 @app.callback(
-    Output('MapPlot', 'figure'),
     Output('neighbourhood-dropdown', 'options'),
-    Input('district-dropdown', 'value'))
-def display_district(value):    
-    if(value == None):
-        return fig, []
+    Output('MapPlot', 'figure'),
+    Input('district-dropdown', 'value'),
+    Input('neighbourhood-dropdown', 'value'))
+def display_district(district_value, neighbourhood_value):    
+    if(district_value == None):
+        return [], fig
     
-    if(len(value) < 1):
-        return fig, []
+    if(len(district_value) < 1):
+        return [], fig
     
-    uri_name= disf[disf["district"] == value]['uri'].values[0]
+    uri_name= disf[disf["district"] == district_value]['uri'].values[0]
     
     neighbourhood_dis= []
     for results in g.query(neighbourhoods, initBindings={'district': URIRef(uri_name)}):
-        neighbourhood_dis.append([str(results.name).title] + [str(results.neigh)])
+        neighbourhood_dis.append([str(results.name.title())] + [str(results.neigh)])
 
     neighbourhood_dict_dis = {
         "neighbourhood" : [i[0] for i in neighbourhood_dis],
         "uri" : [i[1] for i in neighbourhood_dis]
     }
-    neigh_dis = pd.DataFrame(neighbourhood_dict_dis)
     
+    neigh_dis = pd.DataFrame(neighbourhood_dict_dis)
+        
     dis_points = []
-    for results in g.query(selectedFeatures, initBindings={'district': URIRef(uri_name)}):
+    uri_type = 'district'
+    
+    if(neighbourhood_value != "Neighbourhoods" and neighbourhood_value is not None and neigh_dis[neigh_dis["neighbourhood"] == neighbourhood_value]['uri'].values.size > 0):
+        uri_name= neigh_dis[neigh_dis["neighbourhood"] == neighbourhood_value]['uri'].values[0]
+        uri_type = 'neigh'
+        
+    for results in g.query(selectedFeatures, initBindings={uri_type: URIRef(uri_name)}):
         id_dis = str(results.sn)
         
         type_dis = str(results.c).split('/')[-1]
@@ -302,7 +310,7 @@ def display_district(value):
         # Merge point and type
         dis_points.append([type_dis +": "+ id_dis] + point + [capacity] + [color])
     
-        points_dict_dis = {
+    points_dict_dis = {
         "name": [i[0] for i in dis_points],
         "Latitude": [i[1] for i in dis_points],
         "Longitude": [i[2] for i in dis_points],
@@ -328,6 +336,6 @@ def display_district(value):
         mapbox_style="mapbox://styles/rcn41/cl9y1jy8s003g14plahpakd40"
     )
     
-    return fig_d, neigh_dis['neighbourhood'].unique()
+    return neigh_dis['neighbourhood'].unique(), fig_d
 
 app.run_server()
