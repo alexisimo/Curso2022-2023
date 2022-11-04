@@ -76,7 +76,7 @@ mappings:
       - [ont:hasLocationType,$(LOCATION),xsd:string]
       - [ont:hasAddress, http://smartcity.linkeddata.es/transport/data/address/AD$(ID_EVC)EVC~iri]
       - [ont:hasNeighbourhood, http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_NUMBER)~iri]
-      - [ont:hasOperator, http://smartcity.linkeddata.es/transport/data/operator/$(OPERATOR)~iri]
+      - [ont:hasOperator, $(OPERATOR), xsd:string]
       - [geosparql:hasGeometry, http://smartcity.linkeddata.es/transport/data/geopoint/GP$(ID_EVC)EVC~iri]
 
   neighbourhood:
@@ -101,12 +101,3 @@ mappings:
       - [ont:number_id,$(DISTRICT_NUMBER),xsd:integer]
       - [ont:name_id,$(DISTRICT_NAME),xsd:string]
       - [owl:sameAs,$(WIKIDATA_DISTRICT)~iri]
-
-  operator:
-    sources:
-      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links-v2.csv~csv]
-    s: http://smartcity.linkeddata.es/transport/data/operator/$(OPERATOR)
-    po:
-      - [a, ont:Operator]
-      - [ont:name_id,$(OPERATOR),xsd:string]
-      - [owl:sameAs,$(WIKIDATA_OPERATOR)~iri]

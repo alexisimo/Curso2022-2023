@@ -78,12 +78,6 @@ map:map_neighbourhood_001 rml:logicalSource map:source_007 ;
 	rr:predicateObjectMap map:pom_031, map:pom_032, map:pom_033, map:pom_034 ;
 	rr:subjectMap map:s_007 .
 
-map:map_operator_000 rml:logicalSource map:source_010 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "operator" ;
-	rr:predicateObjectMap map:pom_041, map:pom_042 ;
-	rr:subjectMap map:s_010 .
-
 map:om_000 rdf:type rr:ObjectMap ;
 	rr:constant "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta" ;
 	rr:termType rr:IRI .
@@ -203,9 +197,10 @@ map:om_025 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_NUMBER}" ;
 	rr:termType rr:IRI .
 
-map:om_026 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" ;
-	rr:termType rr:IRI .
+map:om_026 rml:reference "OPERATOR" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
 
 map:om_027 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/geopoint/GP{ID_EVC}EVC" ;
@@ -271,15 +266,6 @@ map:om_040 rml:reference "DISTRICT_NUMBER" ;
 	rr:termType rr:Literal .
 
 map:om_041 rml:reference "DISTRICT_NAME" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
-	rr:termType rr:Literal .
-
-map:om_042 rdf:type rr:ObjectMap ;
-	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Operator" ;
-	rr:termType rr:IRI .
-
-map:om_043 rml:reference "OPERATOR" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -405,12 +391,6 @@ map:pm_039 rdf:type rr:PredicateMap ;
 	rr:constant ont:number_id .
 
 map:pm_040 rdf:type rr:PredicateMap ;
-	rr:constant ont:name_id .
-
-map:pm_041 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_042 rdf:type rr:PredicateMap ;
 	rr:constant ont:name_id .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -577,15 +557,7 @@ map:pom_040 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_041 ;
 	rr:predicateMap map:pm_040 .
 
-map:pom_041 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_042 ;
-	rr:predicateMap map:pm_041 .
-
-map:pom_042 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_043 ;
-	rr:predicateMap map:pm_042 .
-
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_neighbourhood_000, map:map_neighbourhood_001, map:map_operator_000 ;
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_neighbourhood_000, map:map_neighbourhood_001 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -617,9 +589,6 @@ map:s_008 rdf:type rr:SubjectMap ;
 
 map:s_009 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_NUMBER}" .
-
-map:s_010 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/bases_bicimad-updated-v2.csv" ;
@@ -658,10 +627,6 @@ map:source_008 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_009 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv" ;
-	rdf:type rml:LogicalSource .
-
-map:source_010 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv" ;
 	rdf:type rml:LogicalSource .
 

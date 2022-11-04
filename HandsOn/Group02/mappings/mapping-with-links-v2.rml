@@ -79,12 +79,6 @@ map:map_neighbourhood_001 rml:logicalSource map:source_007 ;
 	rr:predicateObjectMap map:pom_032, map:pom_033, map:pom_034, map:pom_035, map:pom_036 ;
 	rr:subjectMap map:s_007 .
 
-map:map_operator_000 rml:logicalSource map:source_010 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "operator" ;
-	rr:predicateObjectMap map:pom_045, map:pom_046, map:pom_047 ;
-	rr:subjectMap map:s_010 .
-
 map:om_000 rdf:type rr:ObjectMap ;
 	rr:constant "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta" ;
 	rr:termType rr:IRI .
@@ -204,9 +198,10 @@ map:om_025 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/neighbourhood/{NEIGHBOURHOOD_NUMBER}" ;
 	rr:termType rr:IRI .
 
-map:om_026 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" ;
-	rr:termType rr:IRI .
+map:om_026 rml:reference "OPERATOR" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
 
 map:om_027 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/geopoint/GP{ID_EVC}EVC" ;
@@ -289,19 +284,6 @@ map:om_044 rml:reference "DISTRICT_NAME" ;
 	rr:termType rr:Literal .
 
 map:om_045 rml:reference "WIKIDATA_DISTRICT" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_046 rdf:type rr:ObjectMap ;
-	rr:constant "http://smartcity.linkeddata.es/transport/ontology/Operator" ;
-	rr:termType rr:IRI .
-
-map:om_047 rml:reference "OPERATOR" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
-	rr:termType rr:Literal .
-
-map:om_048 rml:reference "WIKIDATA_OPERATOR" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -438,15 +420,6 @@ map:pm_043 rdf:type rr:PredicateMap ;
 	rr:constant ont:name_id .
 
 map:pm_044 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
-
-map:pm_045 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_046 rdf:type rr:PredicateMap ;
-	rr:constant ont:name_id .
-
-map:pm_047 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -629,19 +602,7 @@ map:pom_044 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_045 ;
 	rr:predicateMap map:pm_044 .
 
-map:pom_045 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_046 ;
-	rr:predicateMap map:pm_045 .
-
-map:pom_046 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_047 ;
-	rr:predicateMap map:pm_046 .
-
-map:pom_047 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_048 ;
-	rr:predicateMap map:pm_047 .
-
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_neighbourhood_000, map:map_neighbourhood_001, map:map_operator_000 ;
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressBS_000, map:map_addressEVC_000, map:map_bikeStation_000, map:map_chargeStation_000, map:map_district_000, map:map_district_001, map:map_geopointBS_000, map:map_geopointEVC_000, map:map_neighbourhood_000, map:map_neighbourhood_001 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -673,9 +634,6 @@ map:s_008 rdf:type rr:SubjectMap ;
 
 map:s_009 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/transport/data/district/{DISTRICT_NUMBER}" .
-
-map:s_010 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/transport/data/operator/{OPERATOR}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/bases_bicimad-updated-with-links-v2.csv" ;
@@ -714,10 +672,6 @@ map:source_008 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_009 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links-v2.csv" ;
-	rdf:type rml:LogicalSource .
-
-map:source_010 rml:referenceFormulation ql:CSV ;
 	rml:source "csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-with-links-v2.csv" ;
 	rdf:type rml:LogicalSource .
 
