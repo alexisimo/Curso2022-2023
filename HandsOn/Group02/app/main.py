@@ -233,12 +233,17 @@ neighf = pd.DataFrame(neighbourhood_dict)
 app = dash.Dash()
 app.layout = html.Div([
     html.Div([
+        dcc.Link(
+        html.Button('GeoSparql', id='button'),
+        href='https://www.youtube.com/watch?v=HEtKZH38jV8', refresh=True),],
+    style={'display': 'inline-block'}),
+    html.Div([
     dcc.Dropdown(
         disf['district'].unique(),
         '',
         id='district-dropdown'
         ),],
-    style={'width': '49%', 'display': 'inline-block'}),
+    style={'width': '46%', 'float': 'right', 'display': 'center'}),
     html.Div([
     dcc.Dropdown(
         [],
@@ -246,12 +251,13 @@ app.layout = html.Div([
         placeholder="Select a district",
         id='neighbourhood-dropdown'
         ),],
-    style={'width': '49%', 'float': 'right', 'display': 'inline-block'}),
-    
+    style={'width': '48%', 'float': 'right', 'display': 'inline-block'}),
+    html.Div([
     dcc.Graph(
         id='MapPlot',
         figure=fig
-    )
+    ),],
+    style={'width': '100%', 'float': 'right', 'display': 'inline-block'})
 ])
 
 @app.callback(
