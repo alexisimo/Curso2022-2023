@@ -21,18 +21,6 @@ wdt = Namespace("http://www.wikidata.org/prop/")
 wdt_metro = Namespace("http://www.wikidata.org/prop/direct/")
 wd = Namespace("http://www.wikidata.org/entity/")
 
-"""
-g.namespace_manager.bind('base', Namespace("http://smartcity.linkeddata.es/transport/"), override=False)
-g.namespace_manager.bind('dc', Namespace("http://purl.org/dc/elements/1.1/"), override=False)
-g.namespace_manager.bind('esbici', Namespace("http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#"), override=False)
-g.namespace_manager.bind('ev', Namespace("https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/"), override=False)
-g.namespace_manager.bind('geosparql', Namespace("http://www.opengis.net/ont/geosparql#"), override=False)
-g.namespace_manager.bind('ont', Namespace("http://smartcity.linkeddata.es/transport/ontology/"), override=False)
-g.namespace_manager.bind('owl', Namespace("http://www.w3.org/2002/07/owl#"), override=False)
-g.namespace_manager.bind('rdfs', Namespace("http://www.w3.org/2000/01/rdf-schema#"), override=False)
-g.namespace_manager.bind('xsd', Namespace("http://www.w3.org/2001/XMLSchema#"), override=False)
-g.namespace_manager.bind('dct', Namespace("http://purl.org/dc/terms/"), override=False)
-"""
 
 #For local deployment
 g.parse("ontology/ontology_v2.ttl", format="ttl")
@@ -135,6 +123,7 @@ metro = prepareQuery('''
 tourist_attractions = prepareQuery('''
     SELECT ?QNODE ?NAME ?COORDS 
     WHERE{
+        ?district a ont:District .
         ?neigh ont:hasDistrict ?district .
         ?neigh owl:sameAs ?wikiNeigh .
         SERVICE <https://query.wikidata.org/sparql> {       
@@ -144,7 +133,7 @@ tourist_attractions = prepareQuery('''
             ?QNODE rdfs:label ?NAME .
             FILTER(lang(?NAME) = "es")
         }
-    }LIMIT 3000
+    }LIMIT 500
     ''',
     initNs={"wdt": wdt_metro, "wd":wd, "rdfs": rdfs, "ont": ont, "owl": owl}
 )
@@ -174,7 +163,7 @@ for results in g.query(default):
         color = "Others"
     # Merge point and type
     points.append([type +": "+ id] + point + [capacity] + [color])
-
+    
 #Parse metro data to points
 for results in g.query(metro):
     id = str(results.MLINENUMBERS)
@@ -188,8 +177,7 @@ for results in g.query(metro):
     point = [float(point[1]), float(point[0])]
     
     points.append([type +": "+ id] + point + ["None"] + ["Metro"])
-    
-    
+
 #Points to dict
 points_dict = {
     "name": [i[0] for i in points],
@@ -256,19 +244,19 @@ app.layout = html.Div([
     style={'display': 'inline-block'}),
     html.Div([
     dcc.Dropdown(
-        disf['district'].unique(),
-        '',
-        id='district-dropdown'
-        ),],
-    style={'width': '46%', 'float': 'right', 'display': 'center'}),
-    html.Div([
-    dcc.Dropdown(
         [],
         'Neighbourhoods',
         placeholder="Select a district",
         id='neighbourhood-dropdown'
         ),],
     style={'width': '48%', 'float': 'right', 'display': 'inline-block'}),
+    html.Div([
+    dcc.Dropdown(
+        disf['district'].unique(),
+        '',
+        id='district-dropdown'
+        ),],
+    style={'width': '46%', 'float': 'right', 'display': 'center'}),
     html.Div([
     dcc.Graph(
         id='MapPlot',
@@ -333,6 +321,14 @@ def display_district(district_value, neighbourhood_value):
         # Merge point and type
         dis_points.append([type_dis +": "+ id_dis] + point + [capacity] + [color])
     
+    for results in g.query(tourist_attractions, initBindings={uri_type: URIRef(uri_name)}):
+        point = results.COORDS
+        point = point.replace("Point(", "")
+        point = point.replace(")", "")
+        point = point.split(" ")
+        point = [float(point[1]), float(point[0])]
+        dis_points.append([str(results.NAME.title())] + point + ["None"] + ["Tourist Attraction"])
+    
     points_dict_dis = {
         "name": [i[0] for i in dis_points],
         "Latitude": [i[1] for i in dis_points],
@@ -358,7 +354,7 @@ def display_district(district_value, neighbourhood_value):
         ),
         mapbox_style="mapbox://styles/rcn41/cl9y1jy8s003g14plahpakd40"
     )
-    
+        
     return neigh_dis['neighbourhood'].unique(), fig_d
 
 app.run_server()
