@@ -9,14 +9,14 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  prop: https://www.puntodecargasMadrid/Propiedades#
-  class: https://www.puntodecargasMadrid/Clases#
+  prop: https://www.puntodecargasMadrid/recargas/Propiedades#
+  class: https://www.puntodecargasMadrid/recargas/Clases#
 
 mappings:
   PuntoDeCarga:
     sources:
       - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
-    s: https://www.puntodecargasmadrid/Recursos/PuntoRecarga/$(PuntoRecargaID)
+    s: https://www.puntodecargasmadrid/recargas/recursos/PuntoRecarga/$(PuntoRecargaID)
     po:
       - [a, class:puntoRecarga]
       - [schema:adress, $(UBICACION),xsd:string]
@@ -26,6 +26,7 @@ mappings:
       - [prop:potencia, $(POTENCIA),xsd:integer]
       - [prop:conectorAC, $(CONECTOR AC),xsd:integer]
       - [prop:conectorCC, $(CONECTOR CC),xsd:integer]
+      - 
       - p: prop:puntoRecargaPerteneceDist 
         o:
             mapping: Distrito
@@ -47,7 +48,7 @@ mappings:
   Distrito:
     sources:
       - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
-    s: https://www.puntodecargasmadrid/Clases/Distrito/$(PUNTORECARGAPERTENECEDIST)
+    s: https://www.puntodecargasmadrid/recargas/recursos/Distrito/$(PUNTORECARGAPERTENECEDIST)
     po:
       - [a, class:Distrito]
       - [rdf:label, $(DISTRITO), xsd:string]
@@ -64,7 +65,7 @@ mappings:
   Barrio: 
     sources: 
     - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
-    s: http://www.puntodecargasmadrid/Recursos/Barrio/$(DISTPERTENECEBARRIO)
+    s: http://www.puntodecargasmadrid/recargas/recursos/Barrio/$(DISTPERTENECEBARRIO)
     po:
       - [a, class:Barrio]
       - [rdf:value, $(COD_BAR), xsd:integer]
@@ -73,8 +74,8 @@ mappings:
   Coordenadas:
     sources:
     - [PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv]
-    s: http://www.puntorecargasmadrid/Recursos/coordonnes/$(COORDONNES)
+    s: http://www.puntorecargasmadrid/recargas/recursos/coordonnes/$(COORDONNES)
     po:
         - [a, schema:GeoCoordinates]
-        - [schema:longitude, $(XCoord), xsd:string]
-        - [schema:latitude, $(YCoord), xsd:string]
+        - [schema:longitude, $(XCoord), xsd:float]
+        - [schema:latitude, $(YCoord), xsd:float]
