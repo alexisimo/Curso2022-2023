@@ -9,7 +9,7 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   owl: http://www.w3.org/2002/07/owl#
-  uiote: http://www.w3id.org/urban-iot/uiote
+  uiote: http://www.w3id.org/urban-iot/uiote#
   mv: http://schema.mobivoc.org/#
 
 mappings:

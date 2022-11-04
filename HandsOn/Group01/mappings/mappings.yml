@@ -9,14 +9,14 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   owl: http://www.w3.org/2002/07/owl#
-  uiote: http://www.w3id.org/urban-iot/uiote
+  uiote: http://www.w3id.org/urban-iot/uiote#
   mv: http://schema.mobivoc.org/#
 
 mappings:
 
   Charging_station:
     sources:
-      - [puntos-de-recarga-updated-with-links.csv~csv]
+      - [puntos-de-recarga-updated.csv~csv]
     s: http://HO-G1.linkeddata.es/resource/Chargingstation/$(Charging Station Id)
     po:
       - [a, uiote:ChargingStation]
@@ -39,7 +39,7 @@ mappings:
 
   Geocoordinates:
     sources:
-      - [puntos-de-recarga-updated-with-links.csv~csv]
+      - [puntos-de-recarga-updated.csv~csv]
     s: http://HO-G1.linkeddata.es/resource/Geolocation/$(Geolocation Id)
     po:
       - [a, schema:GeoCoordinates]
@@ -48,7 +48,7 @@ mappings:
 
   Connector:
     sources:
-      - [puntos-de-recarga-updated-with-links.csv~csv]
+      - [puntos-de-recarga-updated.csv~csv]
     s: http://HO-G1.linkeddata.es/resource/Connector/$(Connector Id)
     po:
       - [a, uiote:Connector]

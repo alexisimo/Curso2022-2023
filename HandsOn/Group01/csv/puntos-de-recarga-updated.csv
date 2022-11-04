@@ -1,4 +1,4 @@
-City,Owner,Charging Station Id,Address,Longitude,Latitude,Geolocation Id,Number of connectors,Connector type,Connector Id,Price,Cables_Annotation,Bookable,Schedule,Time_limit
+City,Owner,Charging Station Id,Address,Longitude,Latitude,Geolocation Id,Number of connectors,Connector type,Connector Id,Price,Cables Annotation,Bookable,Schedule,Time limit
 ALCOBENDAS,"ITISFUN, S.L.U",CS_a112b47aa781db7052e21ba75c0f3cee,"Calle Marqués de la Valdavia, 140",-3.656808,40.547812,GL_a033af1b680424620b3abd2d070b3a62,,,CN_8252e7ee3450eb71077eb0a6ed3c6aba,,,,,
 ALCOBENDAS,EMOVILI,CS_c51ba8ceed724fb006b47b1ad561104d,"Plaza de la Moraleja, 9",-3.651422,40.515532,GL_4a7e54afe27f88a8ab6ef194c4fc0fc9,2,TYPE 2 7.40kW,CN_324f400218a1ca1a848c8211f61cd150,Gratuito,No,No se puede reservar,24 horas todos los días,
 ALCOBENDAS,"NUEVA URBANIZADORA RESIDENCIAL, S.A.",CS_291709b8a506c6d21a47f5dd415c5087,"Calle Caléndula, 13",-3.647206,40.525138,GL_c860a576cca64ada4a3afc78728c69f8,,,CN_ecce93a629afaa5a562a820c1a407f3f,,,,,

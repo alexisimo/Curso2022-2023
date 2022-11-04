@@ -266,14 +266,14 @@ map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://HO-G1.linkeddata.es/resource/Connector/{Connector Id}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "puntos-de-recarga-updated-with-links.csv" ;
+	rml:source "puntos-de-recarga-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "puntos-de-recarga-updated-with-links.csv" ;
+	rml:source "puntos-de-recarga-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "puntos-de-recarga-updated-with-links.csv" ;
+	rml:source "puntos-de-recarga-updated.csv" ;
 	rdf:type rml:LogicalSource .
 

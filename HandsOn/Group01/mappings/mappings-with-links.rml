@@ -13,7 +13,7 @@
 @prefix v: <http://rdf.data-vocabulary.org/#> .
 @prefix schema: <http://schema.org/> .
 @prefix ns: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
-@prefix uiote: <http://www.w3id.org/urban-iot/uiote> .
+@prefix uiote: <http://www.w3id.org/urban-iot/uiote#> .
 @prefix mv: <http://schema.mobivoc.org/#> .
 
 map:map_Charging_station_000 rml:logicalSource map:source_000 ;
@@ -35,7 +35,7 @@ map:map_Geocoordinates_000 rml:logicalSource map:source_001 ;
 	rr:subjectMap map:s_001 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant "http://www.w3id.org/urban-iot/uioteChargingStation" ;
+	rr:constant "http://www.w3id.org/urban-iot/uiote#ChargingStation" ;
 	rr:termType rr:IRI .
 
 map:om_001 rml:reference "Owner" ;
@@ -115,7 +115,7 @@ map:om_017 rml:reference "Latitude" ;
 	rr:termType rr:Literal .
 
 map:om_018 rdf:type rr:ObjectMap ;
-	rr:constant "http://www.w3id.org/urban-iot/uioteConnector" ;
+	rr:constant "http://www.w3id.org/urban-iot/uiote#Connector" ;
 	rr:termType rr:IRI .
 
 map:om_019 rml:reference "Number of connectors" ;

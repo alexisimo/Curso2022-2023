@@ -539,5 +539,17 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column Connector Id using expression grel:\"CN_\"+value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cables_Annotation",
+    "newColumnName": "Cables Annotation",
+    "description": "Rename column Cables_Annotation to Cables Annotation"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Time_limit",
+    "newColumnName": "Time limit",
+    "description": "Rename column Time_limit to Time limit"
   }
 ]
