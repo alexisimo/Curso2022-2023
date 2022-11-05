@@ -51,3 +51,15 @@ WHERE
     ?chargingStation a uiote:ChargingStation ;
         schema:price "Gratuito";
 }
+
+#muestra charging station y localización con owner EMOVILI
+SELECT DISTINCT ?lat ?long ?cs
+WHERE 
+{
+      ?cs a uiote:ChargingStation ;
+       ns:owner "EMOVILI" .
+      ?geo a schema:GeoCoordinates ;
+          schema:latitude ?lat ;
+        schema:longitude ?long .
+      ?cs ns:hasGeocoordinates ?geo .
+}
