@@ -3,6 +3,7 @@ package com.example.group02;
 import org.apache.jena.geosparql.spatial.SpatialIndexException;
 
 import com.example.group02.modules.Geosparql;
+import com.example.group02.types.TransportFeature;
 
 public class App {
     
@@ -20,13 +21,9 @@ public class App {
     public static void main(String[] args) {
         try{
             App a = new App();
-            for (String res : a.getGeoSparql().getClosestFeatures("<http://smartcity.linkeddata.es/transport/data/bikeStation/178>", 1000)) {
-                System.out.println(res);
+            for (TransportFeature res : a.getGeoSparql().getClosestMetroStations("<http://smartcity.linkeddata.es/transport/data/bikeStation/178>", 1000)) {
+                System.out.println(res.getType() + ":" + res.getName());
             }
-            //a.getGeoSparql().printTriples();
-            /**GatewayServer gatewayServer = new GatewayServer(new App());
-            gatewayServer.start();
-            System.out.println("Gateway Server Started");*/
         }catch(Exception e){
             e.printStackTrace();
             System.err.println("Error main");
