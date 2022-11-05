@@ -19,19 +19,19 @@
 map:map_Charging_station_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Charging_station" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014 ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013 ;
 	rr:subjectMap map:s_000 .
 
 map:map_Connector_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Connector" ;
-	rr:predicateObjectMap map:pom_018, map:pom_019, map:pom_020 ;
+	rr:predicateObjectMap map:pom_017, map:pom_018, map:pom_019 ;
 	rr:subjectMap map:s_002 .
 
 map:map_Geocoordinates_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Geocoordinates" ;
-	rr:predicateObjectMap map:pom_015, map:pom_016, map:pom_017 ;
+	rr:predicateObjectMap map:pom_014, map:pom_015, map:pom_016 ;
 	rr:subjectMap map:s_001 .
 
 map:om_000 rdf:type rr:ObjectMap ;
@@ -90,40 +90,36 @@ map:om_011 rml:reference "Same_as_wikidata_Owner" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_012 rml:reference "Same_as_wikidata_Price" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_013 rdf:type rr:ObjectMap ;
+map:om_012 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Connector_000 .
 
-map:om_014 rdf:type rr:ObjectMap ;
+map:om_013 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Geocoordinates_000 .
 
-map:om_015 rdf:type rr:ObjectMap ;
+map:om_014 rdf:type rr:ObjectMap ;
 	rr:constant "http://schema.org/GeoCoordinates" ;
 	rr:termType rr:IRI .
 
-map:om_016 rml:reference "Longitude" ;
+map:om_015 rml:reference "Longitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:decimal ;
 	rr:termType rr:Literal .
 
-map:om_017 rml:reference "Latitude" ;
+map:om_016 rml:reference "Latitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:decimal ;
 	rr:termType rr:Literal .
 
-map:om_018 rdf:type rr:ObjectMap ;
+map:om_017 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.w3id.org/urban-iot/uiote#Connector" ;
 	rr:termType rr:IRI .
 
-map:om_019 rml:reference "Number of connectors" ;
+map:om_018 rml:reference "Number of connectors" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_020 rml:reference "Connector type" ;
+map:om_019 rml:reference "Connector type" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -165,30 +161,27 @@ map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
-
-map:pm_013 rdf:type rr:PredicateMap ;
 	rr:constant ns:hasConnector .
 
-map:pm_014 rdf:type rr:PredicateMap ;
+map:pm_013 rdf:type rr:PredicateMap ;
 	rr:constant ns:hasGeocoordinates .
 
-map:pm_015 rdf:type rr:PredicateMap ;
+map:pm_014 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-map:pm_016 rdf:type rr:PredicateMap ;
+map:pm_015 rdf:type rr:PredicateMap ;
 	rr:constant schema:longitude .
 
-map:pm_017 rdf:type rr:PredicateMap ;
+map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant schema:latitude .
 
-map:pm_018 rdf:type rr:PredicateMap ;
+map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-map:pm_019 rdf:type rr:PredicateMap ;
+map:pm_018 rdf:type rr:PredicateMap ;
 	rr:constant ns:numberOfConnectors .
 
-map:pm_020 rdf:type rr:PredicateMap ;
+map:pm_019 rdf:type rr:PredicateMap ;
 	rr:constant mv:plugType .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -270,10 +263,6 @@ map:pom_018 rdf:type rr:PredicateObjectMap ;
 map:pom_019 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_019 ;
 	rr:predicateMap map:pm_019 .
-
-map:pom_020 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_020 ;
-	rr:predicateMap map:pm_020 .
 
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Charging_station_000, map:map_Connector_000, map:map_Geocoordinates_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
