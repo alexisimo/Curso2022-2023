@@ -26,6 +26,10 @@ res/address/:443913-4481224 a clas:Address ;
             prop:hasneighborhood "APÓSTOL SANTIAGO"^^xsd:string ;
             prop:hasdistrict "HORTALEZA"^^xsd:string .
 
+/res/district/:HORTALEZA a clas:District ;
+            prop:hasname HORTALEZA ;
+            prop:hascode 16 .
+
 res/geometry/:443913-4481224 a sf:Point ;
             geo_core:xETRS89 "443913"^^xsd:float ;
             geo_core:yETRS89 "4481224"^^xsd:float ;

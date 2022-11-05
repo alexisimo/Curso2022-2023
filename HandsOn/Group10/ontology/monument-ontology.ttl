@@ -2,14 +2,15 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix add: <http://monumentmadrid.com/resource/address/> .
+@prefix dis: <http://monumentmadrid.com/resource/district/> .
 @prefix mon: <http://monumentmadrid.com/resource/monument/> .
 @prefix ont: <http://monumentmadrid.com/property#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix clas: <http://monumentmadrid.com/class#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix class: <http://monumentmadrid.com/class#> .
 @prefix geo_core: <https://datos.ign.es/def/geo_core#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @base <http://monumentmadrid.com/resource/monument/> .
@@ -45,6 +46,13 @@ ont:hasAddress rdf:type owl:ObjectProperty ;
                rdfs:domain mon:Monument ;
                rdfs:range add:Address ;
                rdfs:label "has address" .
+
+
+###  http://monumentmadrid.com/property#hasDistrict
+ont:hasDistrict rdf:type owl:ObjectProperty ;
+                rdfs:domain add:Address ;
+                rdfs:range dis:District ;
+                rdfs:label "has district" .
 
 
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
@@ -93,6 +101,13 @@ ont:hascity rdf:type owl:DatatypeProperty ;
             rdfs:label "hascity" .
 
 
+###  http://monumentmadrid.com/property#hascode
+ont:hascode rdf:type owl:DatatypeProperty ;
+            rdfs:domain dis:District ;
+            rdfs:range xsd:integer ;
+            rdfs:label "hascode" .
+
+
 ###  http://monumentmadrid.com/property#hascontenturl
 ont:hascontenturl rdf:type owl:DatatypeProperty ;
                   rdfs:domain mon:Monument ;
@@ -107,20 +122,6 @@ ont:hasdescription rdf:type owl:DatatypeProperty ;
                    rdfs:label "hasdescription" .
 
 
-###  http://monumentmadrid.com/property#hasdistrict
-ont:hasdistrict rdf:type owl:DatatypeProperty ;
-                rdfs:domain add:Address ;
-                rdfs:range xsd:string ;
-                rdfs:label "hasdistrict" .
-
-
-###  http://monumentmadrid.com/property#hasdistrictCode
-ont:hasdistrictCode rdf:type owl:DatatypeProperty ;
-                    rdfs:domain add:Address ;
-                    rdfs:range xsd:integer ;
-                    rdfs:label "hasdistrict code" .
-
-
 ###  http://monumentmadrid.com/property#hasinagurationDate
 ont:hasinagurationDate rdf:type owl:DatatypeProperty ;
                        rdfs:domain mon:Monument ;
@@ -130,7 +131,8 @@ ont:hasinagurationDate rdf:type owl:DatatypeProperty ;
 
 ###  http://monumentmadrid.com/property#hasname
 ont:hasname rdf:type owl:DatatypeProperty ;
-            rdfs:domain mon:Monument ;
+            rdfs:domain dis:District ,
+                        mon:Monument ;
             rdfs:range xsd:string ;
             rdfs:label "hasname" .
 
@@ -159,7 +161,7 @@ ont:haspk rdf:type owl:DatatypeProperty ;
 ###  http://monumentmadrid.com/property#haspostalcode
 ont:haspostalcode rdf:type owl:DatatypeProperty ;
                   rdfs:domain add:Address ;
-                  rdfs:range xsd:string ;
+                  rdfs:range xsd:integer ;
                   rdfs:label "haspostalcode" .
 
 
@@ -210,24 +212,30 @@ geo_core:yETRS89 rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  http://monumentmadrid.com/class#Location
-class:Location rdf:type owl:Class ;
-               rdfs:label "Location" .
+clas:Location rdf:type owl:Class ;
+              rdfs:label "Location" .
 
 
 ###  http://monumentmadrid.com/class#TouristAttraction
-class:TouristAttraction rdf:type owl:Class ;
-                        rdfs:label "Tourist Attraction" .
+clas:TouristAttraction rdf:type owl:Class ;
+                       rdfs:label "Tourist Attraction" .
 
 
 ###  http://monumentmadrid.com/resource/address/Address
 add:Address rdf:type owl:Class ;
-            rdfs:subClassOf class:Location ;
+            rdfs:subClassOf clas:Location ;
             rdfs:label "Address" .
+
+
+###  http://monumentmadrid.com/resource/district/District
+dis:District rdf:type owl:Class ;
+             rdfs:subClassOf clas:Location ;
+             rdfs:label "District" .
 
 
 ###  http://monumentmadrid.com/resource/monument/Monument
 mon:Monument rdf:type owl:Class ;
-             rdfs:subClassOf class:TouristAttraction ;
+             rdfs:subClassOf clas:TouristAttraction ;
              rdfs:label "Monument" .
 
 
