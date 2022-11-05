@@ -1,5 +1,7 @@
 package com.semanticWeb.application;
 
+import com.semanticWeb.application.modules.Geosparql;
+import com.semanticWeb.application.types.TransportFeature;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Unit;
 import com.vaadin.flow.component.button.Button;
@@ -14,22 +16,29 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.router.Route;
+import org.apache.jena.geosparql.spatial.SpatialIndexException;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 @Route("")
 public class MainView extends VerticalLayout {
     //private Grid<String> grid = new Grid<>();
-    public static final String SWITCH_BIKES = "Switch to Bike Stations";
-    public static final String SWITCH_EV = "Switch to Electric Vehicle Stations";
+    private static final int DISTANCE = 1000;
+    private static final String SWITCH_BIKES = "Switch to Bike Stations";
+    private static final String SWITCH_EV = "Switch to Electric Vehicle Stations";
+    private static final String ONT_PATH = "C:\\Users\\USUARIO\\Desktop\\semanticWeb\\practica_grupal\\Curso2022-2023\\HandsOn\\Group02\\ontology\\ontology_v2.ttl";
+    private static final String DATA_PATH = "C:\\Users\\USUARIO\\Desktop\\semanticWeb\\practica_grupal\\Curso2022-2023\\HandsOn\\Group02\\rdf\\RDF-with-links-v2.ttl";
+
+    private static final String ORIGIN = "origin";
+    private static final String DESTINATION = "destination";
     private String switchBtnText = SWITCH_BIKES;
-    private List<String> bikeStations = new ArrayList<>(Arrays.asList("ola", "k", "ase"));
-    private List<String> evStations = new ArrayList<>(Arrays.asList("Most recent first", "Rating: high to low",
-            "Rating: low to high", "Price: high to low",
-            "Price: low to high"));
-    private List<String> selectOptions;
+    private Map<String,String> bikeStations, evStations;
+
+    private Set<String> selectOptions;
+
+    private Geosparql geosparql;
+
+    private Map<String, Grid<TransportFeature>> gridMap= new HashMap<>();
 
     // Inicializar switchBtnText a bicis
     Button switchBtn = new Button(switchBtnText);
@@ -42,10 +51,17 @@ public class MainView extends VerticalLayout {
 
 
     public MainView() {
-//        grid.setColumns("col1", "col2", "col3");
-//        add(getForm(), grid);
+        try {
+            geosparql = new Geosparql(ONT_PATH, DATA_PATH);
+        } catch (SpatialIndexException e) {
+            System.err.println("SpatialIndex error!");
+            System.exit(1);
+        }
 
-        selectOptions = bikeStations;
+        bikeStations = geosparql.getFeaturesFromType("bikes");
+        evStations = geosparql.getFeaturesFromType("ev");
+
+        selectOptions = bikeStations.keySet();
         originSlt.setLabel("Origin Station");
         originSlt.setItems(selectOptions);
         originSlt.setPlaceholder("Select station");
@@ -57,7 +73,7 @@ public class MainView extends VerticalLayout {
 
         switchBtn.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         switchBtn.addClickListener(click -> {
-            selectOptions = switchBtnText.equals(SWITCH_BIKES) ? evStations : bikeStations;
+            selectOptions = (switchBtnText.equals(SWITCH_BIKES) ? evStations : bikeStations).keySet();
             originSlt.setItems(selectOptions);
             destSlt.setItems(selectOptions);
             switchBtnText = switchBtnText.equals(SWITCH_BIKES) ? SWITCH_EV : SWITCH_BIKES;
@@ -68,12 +84,14 @@ public class MainView extends VerticalLayout {
         queryBtn.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         queryBtn.addClickListener(click -> {
             // ejecuta queries
-//            originSlt.getValue();
+            gridMap.get(ORIGIN).setItems(getCloseFeatures(String.format("<%s>",bikeStations.get(originSlt.getValue())), DISTANCE));
+            gridMap.get(DESTINATION).setItems(getCloseFeatures(String.format("<%s>",evStations.get(destSlt.getValue())), DISTANCE));
+
         });
 
 
-        VerticalLayout vl1 = (VerticalLayout) buildVerticalLayout("Grid1", "1");
-        VerticalLayout vl2 = (VerticalLayout) buildVerticalLayout("Grid2", "2");
+        VerticalLayout vl1 = (VerticalLayout) buildVerticalLayout("Transport stations close to origin", ORIGIN);
+        VerticalLayout vl2 = (VerticalLayout) buildVerticalLayout("Transport stations close to destination", DESTINATION);
 
         HorizontalLayout innerHl = new HorizontalLayout(vl1, vl2);
         innerHl.setFlexGrow(1, vl1);
@@ -115,20 +133,14 @@ public class MainView extends VerticalLayout {
     }
 
     private Component buildGrid(String id) {
-        Grid<String> grid = new Grid<>(String.class, false);
-        grid.setId(id);
-//        grid.addColumn(Person::getFirstName).setHeader("First name");
-//        grid.addColumn(Person::getLastName).setHeader("Last name");
-//        grid.addColumn(Person::getEmail).setHeader("Email");
-//        grid.addColumn(Person::getProfession).setHeader("Profession");
-//
-//        List<Person> people = DataService.getPeople();
-//        grid.setItems(people);
+        Grid<TransportFeature> grid = new Grid<>(TransportFeature.class, false);
+        grid.addColumn(TransportFeature::getType).setHeader("Type");
+        grid.addColumn(TransportFeature::getName).setHeader("Info");
+        gridMap.put(id, grid);
         return grid;
     }
 
     private Component buildParagraph(String text) {
-//        Paragraph p = new Paragraph(text);
         Label label = new Label(text);
         HorizontalLayout hl = new HorizontalLayout(label);
         hl.setSpacing(false);
@@ -140,5 +152,11 @@ public class MainView extends VerticalLayout {
     private Component buildVerticalLayout(String txt, String id) {
         VerticalLayout vl = new VerticalLayout(buildParagraph(txt), buildGrid(id));
         return vl;
+    }
+
+    private List<TransportFeature> getCloseFeatures(String node, int distance){
+        List<TransportFeature> l = geosparql.getClosestFeatures(node, distance);
+        l.addAll(geosparql.getClosestMetroStations(node, distance));
+        return l;
     }
 }

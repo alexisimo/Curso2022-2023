@@ -1,7 +1,9 @@
-package com.example.group02.modules;
+package com.semanticWeb.application.modules;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.jena.geosparql.configuration.GeoSPARQLConfig;
 import org.apache.jena.geosparql.spatial.SpatialIndex;
@@ -12,7 +14,7 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.riot.RDFDataMgr;
 
-import com.example.group02.types.TransportFeature;
+import com.semanticWeb.application.types.TransportFeature;
 
 public class Geosparql {
     Model model;
@@ -102,5 +104,32 @@ public class Geosparql {
         while(it.hasNext()){
             System.out.println(it.next());
         }
+    }
+
+    public Map<String,String> getFeaturesFromType(String resourceType){
+        String querybikes =  "PREFIX esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#>" +
+                "PREFIX dct: <http://purl.org/dc/terms/>" +
+                "SELECT DISTINCT ?feature ?name "+
+                "WHERE {"+
+                "    ?feature a esbici:EstacionBicicleta ."+
+                "    ?feature dct:identifier ?name ." +
+                "}";
+        String queryev =  "PREFIX ev: <https://smart-data-models.github.io/dataModel.Transportation/>" +
+                "PREFIX ont: <http://smartcity.linkeddata.es/transport/ontology/>"+ 
+                "SELECT DISTINCT ?feature ?name "+
+                "WHERE {"+
+                "    ?feature a ev:EVChargingStation ."+
+                "    ?feature ont:id ?name ." +
+                "}";
+        Map<String,String> res = new HashMap<>();
+        try (QueryExecution qe = QueryExecution.create("bikes".equals(resourceType) ? querybikes : queryev, model)) {
+            ResultSet rs = qe.execSelect();
+            while(rs.hasNext()){
+                QuerySolution s = rs.next();
+                System.out.println(s.get("feature").toString());
+                res.put(s.get("name").toString(),s.get("feature").toString());
+            }
+        }
+        return res;
     }
 }

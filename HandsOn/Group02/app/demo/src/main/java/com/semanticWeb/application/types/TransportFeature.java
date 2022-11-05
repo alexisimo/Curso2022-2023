@@ -1,4 +1,4 @@
-package com.example.group02.types;
+package com.semanticWeb.application.types;
 
 public class TransportFeature {
 
