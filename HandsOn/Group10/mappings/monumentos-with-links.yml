@@ -58,7 +58,7 @@ mappings:
       - [prop:hasprovince,$(PROVINCIA)]
       - [prop:haspostalcode,$(CODIGO-POSTAL)]
       - [prop:hasneighborhood,$(BARRIO)]
-      - [prop:hasneighborhoodcode,$(COD-BARRIO)]
+      - [prop:hasneighborhoodcode,$(COD-BARRIO),xsd:integer]
       - p: geosparql:hasGeometry
         o:
          - mapping: point
@@ -69,7 +69,7 @@ mappings:
   district:
     sources:
       - [csv/monumentos-ciudad-madrid-csv.updated-with-links.csv~csv]
-    s: http://www.monumentmadrid.com/resource/district/$(COD-DISTRITO)
+    s: http://www.monumentmadrid.com/resource/district/$(DISTRITO)
     po:
       - [a, class:District]
       - [prop:hascode,$(COD-DISTRITO),xsd:integer]
