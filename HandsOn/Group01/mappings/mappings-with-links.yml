@@ -31,6 +31,7 @@ mappings:
       - [uiote:Connector, http://HO-G1.linkeddata.es/resource/Connector/$(Connector Id)~iri]
       - [schema:GeoCoordinates, http://HO-G1.linkeddata.es/resource/Geocoordinates/$(Geolocation Id)~iri]
       - [owl:sameAs, $(Same_as_wikidata_Owner)~iri]
+      - [owl:sameAs, $(Same_as_wikidata_Price)~iri]
       - p: ns:hasConnector
         o:
         - mapping: Connector

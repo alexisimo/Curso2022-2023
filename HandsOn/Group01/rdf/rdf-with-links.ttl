@@ -1,769 +1,785 @@
-@prefix ns1: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
-@prefix ns2: <http://schema.org/> .
-@prefix ns3: <http://schema.mobivoc.org/#> .
-@prefix ns4: <http://www.w3id.org/urban-iot/uiote#> .
+@prefix ns1: <http://schema.org/> .
+@prefix ns2: <http://www.w3id.org/urban-iot/uiote#> .
+@prefix ns3: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
+@prefix ns4: <http://schema.mobivoc.org/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_04ac3979b7ee97482020d69ca82c9589> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> ;
-    ns1:owner "COMUNIDAD PROPIETARIOS ANABEL SEGURA" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> ;
-    ns2:address "Calle anabel Segura, 11" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_04ac3979b7ee97482020d69ca82c9589> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> ;
+    ns3:owner "COMUNIDAD PROPIETARIOS ANABEL SEGURA" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> ;
+    ns1:address "Calle anabel Segura, 11" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_081e7a36e1453827964fd020431feead> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> ;
-    ns1:owner "Colegio Aldovea" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> ;
-    ns2:address "Paseo de Alcobendas, 3" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_081e7a36e1453827964fd020431feead> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> ;
+    ns3:owner "Colegio Aldovea" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> ;
+    ns1:address "Paseo de Alcobendas, 3" ;
+    ns1:schedule "24 horas todos los días" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0895c3556ce872c2e6b422eb3bc3f1ef> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> ;
-    ns1:owner "EMOVILI" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> ;
-    ns2:address "Plaza de la Moraleja, 9" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0895c3556ce872c2e6b422eb3bc3f1ef> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> ;
+    ns3:owner "EMOVILI" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> ;
+    ns1:address "Plaza de la Moraleja, 9" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0a2778f730388f8c12e5e2ba4da3d6da> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> ;
-    ns1:owner "FCM" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> ;
-    ns2:address "Calle de Francisco Chico Mendes, 1" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0a2778f730388f8c12e5e2ba4da3d6da> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> ;
+    ns3:owner "FCM" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> ;
+    ns1:address "Calle de Francisco Chico Mendes, 1" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0e5366662a74f78f8d7a6e38344023d9> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> ;
-    ns1:owner "Carrefour Group" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> ;
-    ns2:address "Carr. de Madrid a Burgos Km, 14500" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q3117359> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_0e5366662a74f78f8d7a6e38344023d9> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> ;
+    ns3:owner "Carrefour Group" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> ;
+    ns1:address "Carr. de Madrid a Burgos Km, 14500" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q3117359> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_22e17fd87acd6e144dd100efef145b4a> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "Necesita manguera tipo 2" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> ;
-    ns1:owner "Hampton by Hilton Alcobendas Madrid" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> ;
-    ns2:address "Av. de Fernando Alonso, 4" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_22e17fd87acd6e144dd100efef145b4a> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "Necesita manguera tipo 2" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> ;
+    ns3:owner "Hampton by Hilton Alcobendas Madrid" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> ;
+    ns1:address "Av. de Fernando Alonso, 4" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_29006395ae0be50210e200a58934e908> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> ;
-    ns1:owner "Rafaelhoteles Atocha" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> ;
-    ns2:address "Av. de Barajas, 28" ;
-    ns2:schedule "24 horas todos los días" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_29006395ae0be50210e200a58934e908> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> ;
+    ns3:owner "Rafaelhoteles Atocha" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> ;
+    ns1:address "Av. de Barajas, 28" ;
+    ns1:schedule "24 horas todos los días" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q111388622> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_2faebc168bb1b74c49895284002abc63> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
-    ns1:owner "ITISFUN, S.L.U" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
-    ns2:address "Calle Marqués de la Valdavia, 140" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_2faebc168bb1b74c49895284002abc63> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
+    ns3:owner "ITISFUN, S.L.U" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
+    ns1:address "Calle Marqués de la Valdavia, 140" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_31faa6eca63020c05169e9ff05b4c36a> a ns4:ChargingStation ;
-    ns1:bookable "Obligatorio" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> ;
-    ns1:owner "Bilbao Vizcaya Argentaria Bank" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> ;
-    ns2:address "Calle Valgrande, 9" ;
-    ns2:price "gratis" ;
-    ns2:schedule "9:00h. a 21:30h" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q806189> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_31faa6eca63020c05169e9ff05b4c36a> a ns2:ChargingStation ;
+    ns3:bookable "Obligatorio" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> ;
+    ns3:owner "Bilbao Vizcaya Argentaria Bank" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> ;
+    ns1:address "Calle Valgrande, 9" ;
+    ns1:price "gratis" ;
+    ns1:schedule "9:00h. a 21:30h" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q806189> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_32bbd3f2973ef267b5bff4ee89b856f0> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> ;
-    ns1:owner "Mercadona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> ;
-    ns2:address "Carr. de Fuencarral, " ;
-    ns2:price "gratis" ;
-    ns2:schedule "Comercial" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q377705> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_32bbd3f2973ef267b5bff4ee89b856f0> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> ;
+    ns3:owner "Mercadona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> ;
+    ns1:address "Carr. de Fuencarral, " ;
+    ns1:price "gratis" ;
+    ns1:schedule "Comercial" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q377705> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_33afd614e27151707cf960958c937d34> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
-    ns1:owner "FENIE ENERGIA," ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
-    ns2:address "Avenida de Europa, 13" ;
-    ns2:price "0,6353 EUR/charge" ;
-    ns2:schedule "24 horas todos los días" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_33afd614e27151707cf960958c937d34> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
+    ns3:owner "FENIE ENERGIA," ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
+    ns1:address "Avenida de Europa, 13" ;
+    ns1:price "0,6353 EUR/charge" ;
+    ns1:schedule "24 horas todos los días" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q113464312> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_378573ff831f325600ec4260da6e35d5> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> ;
-    ns1:owner "Centro Comercial El Encinar" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> ;
-    ns2:address "Calle Vereda de Palacio, 10" ;
-    ns2:price "0.35-0.40 €/KWH" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_378573ff831f325600ec4260da6e35d5> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> ;
+    ns3:owner "Centro Comercial El Encinar" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> ;
+    ns1:address "Calle Vereda de Palacio, 10" ;
+    ns1:price "0.35-0.40 €/KWH" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_59193eb6bb29fc3e74a6e369fa662fb7> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> ;
-    ns1:owner "Bricomart parking subterráneo" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> ;
-    ns2:address "Carr. de Fuencarral, 53" ;
-    ns2:price "gratis" ;
-    ns2:schedule "Lunes a viernes: 7:00-21:30 / Sábados: 7:30-22:00 / Domingos de apertura: 9:00-15:00 / Festivos de apertura: 7:00-21:30" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_59193eb6bb29fc3e74a6e369fa662fb7> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> ;
+    ns3:owner "Bricomart parking subterráneo" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> ;
+    ns1:address "Carr. de Fuencarral, 53" ;
+    ns1:price "gratis" ;
+    ns1:schedule "Lunes a viernes: 7:00-21:30 / Sábados: 7:30-22:00 / Domingos de apertura: 9:00-15:00 / Festivos de apertura: 7:00-21:30" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_6680e841119b299ef81caa15ec56e96f> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> ;
-    ns1:owner "Amura Alcobendas" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> ;
-    ns2:address "Av. de Valdelaparra, 2" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q111409068> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_6680e841119b299ef81caa15ec56e96f> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> ;
+    ns3:owner "Amura Alcobendas" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> ;
+    ns1:address "Av. de Valdelaparra, 2" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q111409068>,
+        <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_6de152dad793dc0ea4793b922568f4ae> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> ;
-    ns1:owner "Saltoki Alcobendas" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> ;
-    ns2:address "Carretera Fuencarral 46 km, 15" ;
-    ns2:price "Exclusivo para clientes" ;
-    ns2:schedule "Comercial" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_6de152dad793dc0ea4793b922568f4ae> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> ;
+    ns3:owner "Saltoki Alcobendas" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> ;
+    ns1:address "Carretera Fuencarral 46 km, 15" ;
+    ns1:price "Exclusivo para clientes" ;
+    ns1:schedule "Comercial" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_740847f8f1b60b85e49cd97bb1aa02fe> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> ;
-    ns1:owner "Red Eléctrica de España" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> ;
-    ns2:address "Paseo Conde de los Gaitanes, 177" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_740847f8f1b60b85e49cd97bb1aa02fe> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> ;
+    ns3:owner "Red Eléctrica de España" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> ;
+    ns1:address "Paseo Conde de los Gaitanes, 177" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q113464348> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_78974fccba7a61a71c0e66096ad91520> a ns4:ChargingStation ;
-    ns1:bookable "Recomendado" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> ;
-    ns1:owner "Center Car" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> ;
-    ns2:address "Calle Valgrande, 16" ;
-    ns2:schedule "8-14h 15.30-18h" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_78974fccba7a61a71c0e66096ad91520> a ns2:ChargingStation ;
+    ns3:bookable "Recomendado" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> ;
+    ns3:owner "Center Car" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> ;
+    ns1:address "Calle Valgrande, 16" ;
+    ns1:schedule "8-14h 15.30-18h" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_7b539dea359ac2ad5ca141b0f0629a91> a ns4:ChargingStation ;
-    ns1:bookable "Obligatorio" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> ;
-    ns1:owner "Renault" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> ;
-    ns2:address "Av. de Europa, 1" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q6686> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_7b539dea359ac2ad5ca141b0f0629a91> a ns2:ChargingStation ;
+    ns3:bookable "Obligatorio" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> ;
+    ns3:owner "Renault" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> ;
+    ns1:address "Av. de Europa, 1" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q6686> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_7ed86ef8563ce4fc2255260ff7496047> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> ;
-    ns1:owner "Nissan" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> ;
-    ns2:address "Calle de los Aragoneses, 18" ;
-    ns2:price "gratis" ;
-    ns2:schedule "L-J: 08:00 a 19:00, V: 08:00 a 18:00" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q20165> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_7ed86ef8563ce4fc2255260ff7496047> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> ;
+    ns3:owner "Nissan" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> ;
+    ns1:address "Calle de los Aragoneses, 18" ;
+    ns1:price "gratis" ;
+    ns1:schedule "L-J: 08:00 a 19:00, V: 08:00 a 18:00" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q20165> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_8a7b15af8088881949d338b33c6d6bbd> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> ;
-    ns1:owner "Acciona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> ;
-    ns2:address "Av. de Europa, 10" ;
-    ns2:schedule "De 7 a 19" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_8a7b15af8088881949d338b33c6d6bbd> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> ;
+    ns3:owner "Acciona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> ;
+    ns1:address "Av. de Europa, 10" ;
+    ns1:schedule "De 7 a 19" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q339142> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_936fe37666e69ddae46c9aad4119d44a> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "Sí" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> ;
-    ns1:owner "Moraleja Green (Tesla DC)" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> ;
-    ns2:address "Alcobendas Avenida de, " ;
-    ns2:price "gratis" ;
-    ns2:schedule "Lunes a jueves: 8:30am a 2:00am, viernes y vísperas festivos hasta 3:30am. Sábados: 9:00am a 3:30am. Domingos y festivos de apertura: 9:00am a 2:00am" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_936fe37666e69ddae46c9aad4119d44a> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "Sí" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> ;
+    ns3:owner "Moraleja Green (Tesla DC)" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> ;
+    ns1:address "Alcobendas Avenida de, " ;
+    ns1:price "gratis" ;
+    ns1:schedule "Lunes a jueves: 8:30am a 2:00am, viernes y vísperas festivos hasta 3:30am. Sábados: 9:00am a 3:30am. Domingos y festivos de apertura: 9:00am a 2:00am" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_a1918966b48521a0e71ae62736b352f3> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> ;
-    ns1:owner "CAMINOS DE PASOL, SLU" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> ;
-    ns2:address "Camino del Cura, 10" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_a1918966b48521a0e71ae62736b352f3> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> ;
+    ns3:owner "CAMINOS DE PASOL, SLU" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> ;
+    ns1:address "Camino del Cura, 10" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_a83de739ec6cf36fa719df7a9e0680e4> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> ;
-    ns1:owner "Creara/NL*LMS*P55887869" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> ;
-    ns2:address "Av. de la Industria, 32" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_a83de739ec6cf36fa719df7a9e0680e4> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> ;
+    ns3:owner "Creara/NL*LMS*P55887869" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> ;
+    ns1:address "Av. de la Industria, 32" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_aa9a37d82752bdab8a88345be2be4319> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> ;
-    ns1:owner "Renault" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> ;
-    ns2:address "Calle del Marqués de la Valdavia, 111" ;
-    ns2:price "gratis" ;
-    ns2:schedule "L-V: 8.00 a 13.30 y 15.00 a 20:30, S: 9:00 a 14:00" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q6686> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_aa9a37d82752bdab8a88345be2be4319> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> ;
+    ns3:owner "Renault" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> ;
+    ns1:address "Calle del Marqués de la Valdavia, 111" ;
+    ns1:price "gratis" ;
+    ns1:schedule "L-V: 8.00 a 13.30 y 15.00 a 20:30, S: 9:00 a 14:00" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q6686> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_b4179149bf49c2b2d107be3d47b88a07> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
-    ns1:owner "Acciona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
-    ns2:address "Av. de Europa, 13" ;
-    ns2:price "gratis" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_b4179149bf49c2b2d107be3d47b88a07> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
+    ns3:owner "Acciona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> ;
+    ns1:address "Av. de Europa, 13" ;
+    ns1:price "gratis" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q339142> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> .
+
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_bd3172fc01a3ba9063e754b868e73c82> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> ;
+    ns3:owner "NUEVA URBANIZADORA RESIDENCIAL, S.A." ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> ;
+    ns1:address "Calle Caléndula, 13" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> .
+
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_c3fe455d64470b2450c4b31189ed1c50> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> ;
+    ns3:owner "Acciona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> ;
+    ns1:address "Calle Valportillo Segunda, 8" ;
+    ns1:schedule "24 horas todos los días" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q339142> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_bd3172fc01a3ba9063e754b868e73c82> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> ;
-    ns1:owner "NUEVA URBANIZADORA RESIDENCIAL, S.A." ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> ;
-    ns2:address "Calle Caléndula, 13" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_c77961b07daa7a2929601d6531c86c77> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> ;
+    ns3:owner "C. de Salamanca" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> ;
+    ns1:address "Calle de la Metalurgia, 1" ;
+    ns1:price "Exclusivo para clientes" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_c3fe455d64470b2450c4b31189ed1c50> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> ;
-    ns1:owner "Acciona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> ;
-    ns2:address "Calle Valportillo Segunda, 8" ;
-    ns2:schedule "24 horas todos los días" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q339142> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> .
-
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_c77961b07daa7a2929601d6531c86c77> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> ;
-    ns1:owner "C. de Salamanca" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> ;
-    ns2:address "Calle de la Metalurgia, 1" ;
-    ns2:price "Exclusivo para clientes" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> .
-
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_ce0295c5dec489dc868d022eca75eb5a> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "Si tiene salvo Tipo 2" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
-    ns1:owner "McDonald’s" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
-    ns2:address "Calle del Marqués de la Valdavia, 140" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_ce0295c5dec489dc868d022eca75eb5a> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "Si tiene salvo Tipo 2" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
+    ns3:owner "McDonald’s" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> ;
+    ns1:address "Calle del Marqués de la Valdavia, 140" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q38076> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_d08949d77b03297be3122b2259d9b033> a ns4:ChargingStation ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> ;
-    ns1:owner "Acciona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> ;
-    ns2:address "Avenida de Europa, 18" ;
-    ns2:schedule "24 horas todos los días" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_d08949d77b03297be3122b2259d9b033> a ns2:ChargingStation ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> ;
+    ns3:owner "Acciona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> ;
+    ns1:address "Avenida de Europa, 18" ;
+    ns1:schedule "24 horas todos los días" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q339142> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_d9fd84ffca1cf0b76342a5528fbdd635> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> ;
-    ns1:owner "Parking Valportillo 20" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> ;
-    ns2:address "Calle Valportillo Primera, 20" ;
-    ns2:price "gratis" ;
-    ns2:schedule "Lunes a Viernes 7AM a 7:30PM" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_d9fd84ffca1cf0b76342a5528fbdd635> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> ;
+    ns3:owner "Parking Valportillo 20" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> ;
+    ns1:address "Calle Valportillo Primera, 20" ;
+    ns1:price "gratis" ;
+    ns1:schedule "Lunes a Viernes 7AM a 7:30PM" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_da5b983cdb7a77644c2e27c232bf59c1> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> ;
-    ns1:owner "Hotel Uve Alcobendas" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> ;
-    ns2:address "Bulevar de Salvador Allende, 10" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_da5b983cdb7a77644c2e27c232bf59c1> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> ;
+    ns3:owner "Hotel Uve Alcobendas" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> ;
+    ns1:address "Bulevar de Salvador Allende, 10" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_df2c66f4a36c13c90ef3aa1c07f8960a> a ns4:ChargingStation ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> ;
-    ns1:owner "ENERGIA XXI COMERCIALIZADORA DE REFERENCIA, S.L." ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> ;
-    ns2:address "Avanida Rafael Nadal, 3" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_df2c66f4a36c13c90ef3aa1c07f8960a> a ns2:ChargingStation ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> ;
+    ns3:owner "ENERGIA XXI COMERCIALIZADORA DE REFERENCIA, S.L." ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> ;
+    ns1:address "Avanida Rafael Nadal, 3" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q113464339> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_e0c4ce3019d15941a8becc6f735f5879> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> ;
-    ns1:owner "Mitsubishi Motors" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> ;
-    ns2:address "Calle de Francisco Gervás, 4" ;
-    ns2:schedule "8-13:30 14-19 L-V" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_e0c4ce3019d15941a8becc6f735f5879> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> ;
+    ns3:owner "Mitsubishi Motors" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> ;
+    ns1:address "Calle de Francisco Gervás, 4" ;
+    ns1:schedule "8-13:30 14-19 L-V" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q36033> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_e41a77cb260a0a64d82a9e744c52a1bc> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> ;
-    ns1:owner "Hinober, Valgrande" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> ;
-    ns2:address "Calle Valgrande, 8" ;
-    ns2:price "0,2500 EUR/kWh" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_e41a77cb260a0a64d82a9e744c52a1bc> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> ;
+    ns3:owner "Hinober, Valgrande" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> ;
+    ns1:address "Calle Valgrande, 8" ;
+    ns1:price "0,2500 EUR/kWh" ;
+    ns1:schedule "24 horas todos los días" ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_eb8c1c3bf1ed4400b582a359d033865e> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> ;
-    ns1:owner "Acciona" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> ;
-    ns2:address "Av. de Europa, 20" ;
-    ns2:schedule "Laborables" ;
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_eb8c1c3bf1ed4400b582a359d033865e> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> ;
+    ns3:owner "Acciona" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> ;
+    ns1:address "Av. de Europa, 20" ;
+    ns1:schedule "Laborables" ;
     owl:sameAs <https://www.wikidata.org/wiki/Q339142> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> .
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_f55addb024f8ddf4cdbaba59d295f45a> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> ;
-    ns1:owner "EMOVILI" ;
-    ns1:timeLimit 2 ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> ;
-    ns2:address "Avenida de España, 28" ;
-    ns2:price "gratis" ;
-    ns2:schedule "24 horas todos los días" ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_f55addb024f8ddf4cdbaba59d295f45a> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> ;
+    ns3:owner "EMOVILI" ;
+    ns3:timeLimit 2 ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> ;
+    ns1:address "Avenida de España, 28" ;
+    ns1:price "gratis" ;
+    ns1:schedule "24 horas todos los días" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> .
 
-<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_fed5f21419cfccf0836712d2523039e4> a ns4:ChargingStation ;
-    ns1:bookable "No se puede reservar" ;
-    ns1:cablesAnnotation "No" ;
-    ns1:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> ;
-    ns1:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> ;
-    ns1:owner "Distrito Telefónica" ;
-    ns2:City "Alcobendas" ;
-    ns2:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> ;
-    ns2:address "RONDA DE LA COMUNICACIÓN, " ;
-    ns2:price "gratis" ;
-    ns2:schedule "Laborables de 6:45 a 21:00" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q5283575> ;
-    ns4:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> .
+<http://HO-G1.linkeddata.es/resource/Chargingstation/CS_fed5f21419cfccf0836712d2523039e4> a ns2:ChargingStation ;
+    ns3:bookable "No se puede reservar" ;
+    ns3:cablesAnnotation "No" ;
+    ns3:hasConnector <http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> ;
+    ns3:hasGeocoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> ;
+    ns3:owner "Distrito Telefónica" ;
+    ns1:City "Alcobendas" ;
+    ns1:GeoCoordinates <http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> ;
+    ns1:address "RONDA DE LA COMUNICACIÓN, " ;
+    ns1:price "gratis" ;
+    ns1:schedule "Laborables de 6:45 a 21:00" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1543615>,
+        <https://www.wikidata.org/wiki/Q5283575> ;
+    ns2:Connector <http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> a ns4:Connector ;
-    ns1:numberOfConnectors 4 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_11ea22bb95d02e95a817d164bc47ae04> a ns2:Connector ;
+    ns3:numberOfConnectors 4 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> a ns4:Connector ;
-    ns1:numberOfConnectors 4 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_135707ed0ee511bdef1007d24aac7632> a ns2:Connector ;
+    ns3:numberOfConnectors 4 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType """Schuko (EU Plug) 2.30kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_1461f386dafe9db6899a808f22e1dee8> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType """Schuko (EU Plug) 2.30kW
 TYPE 2 7.40kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "Schuko (EU Plug) 2.30kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_1532fd09c19cea019e020ffba73b0b78> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "Schuko (EU Plug) 2.30kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_1beef8c82ee4a02de59f84f450f78571> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_1f46f4a6ce53242c800223b6f9e960e6> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_27593cc5c9b49035b94ae68e53668632> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_2c179183d504a58d3ff54cb7d0e5fd14> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_2c8f6bf0fa7113b6cab300bffe559ac4> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> a ns4:Connector ;
-    ns1:numberOfConnectors 4 ;
-    ns3:plugType "TYPE 2 3.70kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_454034db0abe1e20f3bcad91b5c85d52> a ns2:Connector ;
+    ns3:numberOfConnectors 4 ;
+    ns4:plugType "TYPE 2 3.70kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_52175f6ddd4e5713d7230b9382249f16> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_5b2d0e2d69c3c223e6fc3948bad5b6da> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> a ns4:Connector ;
-    ns1:numberOfConnectors 22 ;
-    ns3:plugType """TYPE 2 22.00kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_621f6400f3788b8427201048dd58987e> a ns2:Connector ;
+    ns3:numberOfConnectors 22 ;
+    ns4:plugType """TYPE 2 22.00kW
 Schuko (EU Plug) 3.70kW
 TYPE 2 11.00kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 11.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_68238f8239a9e17d06914ad88a3ff4d0> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 11.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> a ns4:Connector ;
-    ns1:numberOfConnectors 4 ;
-    ns3:plugType """TYPE 1 (SAE J1772) 3.70kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_6a93a09ac1a1905f74b7f041d81c0827> a ns2:Connector ;
+    ns3:numberOfConnectors 4 ;
+    ns4:plugType """TYPE 1 (SAE J1772) 3.70kW
 TYPE 2 3.70kW
 Schuko (EU Plug) 3.70kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> a ns4:Connector ;
-    ns1:numberOfConnectors 3 ;
-    ns3:plugType """Schuko (EU Plug) 3.70kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_7022d2325f69163ad373bb9ec5b9a45f> a ns2:Connector ;
+    ns3:numberOfConnectors 3 ;
+    ns4:plugType """Schuko (EU Plug) 3.70kW
 TYPE 1 (SAE J1772) 3.70kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_70cc6e7019e47c4cfcec499371b7fd7a> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_78cd861f061e619803ef75cf431fc75e> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_7dd0e1d2ae8b81506f5a02f010d74528> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> a ns4:Connector ;
-    ns1:numberOfConnectors 3 ;
-    ns3:plugType """TYPE 2 43.00kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_8b22a96ee9a887c410757aecaca98db0> a ns2:Connector ;
+    ns3:numberOfConnectors 3 ;
+    ns4:plugType """TYPE 2 43.00kW
 CHAdeMO 50.00kW
 CCS2 50.00kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> a ns4:Connector ;
-    ns1:numberOfConnectors 3 ;
-    ns3:plugType "Tesla Dest.Charger 11.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_8f0425d05c3e368eb802894906a54828> a ns2:Connector ;
+    ns3:numberOfConnectors 3 ;
+    ns4:plugType "Tesla Dest.Charger 11.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_a3cc39d442238b893926385e3ad98cf7> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_a569425e8910d806178216abd26937c7> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> a ns4:Connector ;
-    ns1:numberOfConnectors 9 ;
-    ns3:plugType "TYPE 2 3.70kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_abf9829ec44a89ced634770f2eb26735> a ns2:Connector ;
+    ns3:numberOfConnectors 9 ;
+    ns4:plugType "TYPE 2 3.70kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 22.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_b90bb0bd0d02ba1fce4332b87d1e54f7> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 22.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 11.00kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_c0a3d18846219b4468d8dddf13efc42c> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 11.00kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> a ns4:Connector ;
-    ns3:plugType "TYPE 2 3.70kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_c4297a140b5a849c2e84409fd2524969> a ns2:Connector ;
+    ns4:plugType "TYPE 2 3.70kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> a ns4:Connector ;
-    ns1:numberOfConnectors 1 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_d25e2354c5975124bcfeb264ed449cab> a ns2:Connector ;
+    ns3:numberOfConnectors 1 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_d717cd01bf8e8ab2943305c949d32d74> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> a ns4:Connector ;
-    ns1:numberOfConnectors 1 .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_db521a08f5a9fb89dd496dcf8397a308> a ns2:Connector ;
+    ns3:numberOfConnectors 1 .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "Schuko (EU Plug) 3.70kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_dd4dacc704a4a8edc9f50f575e794a01> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "Schuko (EU Plug) 3.70kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_e514d3977144a569b2e36e5dc50218ff> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType """Tesla Dest.Charger 11.00kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_e60ae6c2e3b429dad4277b2b6832451d> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType """Tesla Dest.Charger 11.00kW
 TYPE 2 22.00kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_e618960091361a90ccaed9a8b867f444> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> a ns4:Connector .
+<http://HO-G1.linkeddata.es/resource/Connector/CN_e8a0c15125ee28f98ba4e6bf3891ce1a> a ns2:Connector .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> a ns4:Connector ;
-    ns1:numberOfConnectors 2 ;
-    ns3:plugType """CHAdeMO 50.00kW
+<http://HO-G1.linkeddata.es/resource/Connector/CN_f6bbd93e645302d5a967444b261790c5> a ns2:Connector ;
+    ns3:numberOfConnectors 2 ;
+    ns4:plugType """CHAdeMO 50.00kW
 Schuko (EU Plug) 3.70kW
 """ .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> a ns2:GeoCoordinates ;
-    ns2:latitude 40.51569 ;
-    ns2:longitude -3.65682 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_1539c90e4561751e4391e58dceee54f0> a ns1:GeoCoordinates ;
+    ns1:latitude 40.51569 ;
+    ns1:longitude -3.65682 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5268882 ;
-    ns2:longitude -3.6541821 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_24a8a40cec404a851352a04a4e2b99b8> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5268882 ;
+    ns1:longitude -3.6541821 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> a ns2:GeoCoordinates ;
-    ns2:latitude 40.546535 ;
-    ns2:longitude -3.641618 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_2f71b40e1e07202f84038c436bafb646> a ns1:GeoCoordinates ;
+    ns1:latitude 40.546535 ;
+    ns1:longitude -3.641618 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> a ns2:GeoCoordinates ;
-    ns2:latitude 40.524688 ;
-    ns2:longitude -3.613768 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_357e698f764d409af21aeab0dac00012> a ns1:GeoCoordinates ;
+    ns1:latitude 40.524688 ;
+    ns1:longitude -3.613768 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> a ns2:GeoCoordinates ;
-    ns2:latitude 40.536064 ;
-    ns2:longitude -3.649032 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3cca67df6a023a1c22f2dfba0aead8da> a ns1:GeoCoordinates ;
+    ns1:latitude 40.536064 ;
+    ns1:longitude -3.649032 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5243333 ;
-    ns2:longitude -3.6559595 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_3df7cf76ac14debb18e7097c2d0baec5> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5243333 ;
+    ns1:longitude -3.6559595 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> a ns2:GeoCoordinates ;
-    ns2:latitude 40.53069 ;
-    ns2:longitude -3.65569 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_474ced22ce8a07445291cf9c8d1df434> a ns1:GeoCoordinates ;
+    ns1:latitude 40.53069 ;
+    ns1:longitude -3.65569 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> a ns2:GeoCoordinates ;
-    ns2:latitude 40.534246 ;
-    ns2:longitude -3.651594 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_47a804ca1f68fe34e0801bd99746fc5f> a ns1:GeoCoordinates ;
+    ns1:latitude 40.534246 ;
+    ns1:longitude -3.651594 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> a ns2:GeoCoordinates ;
-    ns2:latitude 40.534582 ;
-    ns2:longitude -3.618301 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_49b3957798ddc8138c38991dca89e349> a ns1:GeoCoordinates ;
+    ns1:latitude 40.534582 ;
+    ns1:longitude -3.618301 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> a ns2:GeoCoordinates ;
-    ns2:latitude 40.515532 ;
-    ns2:longitude -3.651422 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_4a7e54afe27f88a8ab6ef194c4fc0fc9> a ns1:GeoCoordinates ;
+    ns1:latitude 40.515532 ;
+    ns1:longitude -3.651422 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> a ns2:GeoCoordinates ;
-    ns2:latitude 40.52089 ;
-    ns2:longitude -3.6639 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_503bdff2da8c9302af735804ea4556ac> a ns1:GeoCoordinates ;
+    ns1:latitude 40.52089 ;
+    ns1:longitude -3.6639 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> a ns2:GeoCoordinates ;
-    ns2:latitude 40.52652 ;
-    ns2:longitude -3.62615 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_573b65e0b0d9230fbdac9657be501cf6> a ns1:GeoCoordinates ;
+    ns1:latitude 40.52652 ;
+    ns1:longitude -3.62615 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5226938 ;
-    ns2:longitude -3.6608542 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_57aab1f0037d15a8387e60dd89ba1bb9> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5226938 ;
+    ns1:longitude -3.6608542 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5236888 ;
-    ns2:longitude -3.6587782 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_5cd618fef5e811b965a9203501ede5b5> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5236888 ;
+    ns1:longitude -3.6587782 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> a ns2:GeoCoordinates ;
-    ns2:latitude 40.519326 ;
-    ns2:longitude -3.657155 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6af3ef5ee94b864fa077ab1b6d6b2c7a> a ns1:GeoCoordinates ;
+    ns1:latitude 40.519326 ;
+    ns1:longitude -3.657155 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> a ns2:GeoCoordinates ;
-    ns2:latitude 40.53067 ;
-    ns2:longitude -3.64952 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f21a6f366cd5daaa8c3fd96f54cf41d> a ns1:GeoCoordinates ;
+    ns1:latitude 40.53067 ;
+    ns1:longitude -3.64952 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> a ns2:GeoCoordinates ;
-    ns2:latitude 40.51187 ;
-    ns2:longitude -3.64323 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_6f673e6e636dee8e775c2a34d68422d1> a ns1:GeoCoordinates ;
+    ns1:latitude 40.51187 ;
+    ns1:longitude -3.64323 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5081 ;
-    ns2:longitude -3.645178 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_8ef731654666bd480b36dcc16a770501> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5081 ;
+    ns1:longitude -3.645178 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> a ns2:GeoCoordinates ;
-    ns2:latitude 40.537986 ;
-    ns2:longitude -3.65155 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_90d773732a90ff0c266450e7f4d4ae34> a ns1:GeoCoordinates ;
+    ns1:latitude 40.537986 ;
+    ns1:longitude -3.65155 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> a ns2:GeoCoordinates ;
-    ns2:latitude 40.532384 ;
-    ns2:longitude -3.626132 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_9ce7d81d3c0ec6e1317ab93c7a16324a> a ns1:GeoCoordinates ;
+    ns1:latitude 40.532384 ;
+    ns1:longitude -3.626132 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5150227 ;
-    ns2:longitude -3.6661338 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a2c4137e40f369c2436b20a9a0274291> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5150227 ;
+    ns1:longitude -3.6661338 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> a ns2:GeoCoordinates ;
-    ns2:latitude 40.546684 ;
-    ns2:longitude -3.65477 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a521c5399940b57cb6974a5cb206f987> a ns1:GeoCoordinates ;
+    ns1:latitude 40.546684 ;
+    ns1:longitude -3.65477 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> a ns2:GeoCoordinates ;
-    ns2:latitude 40.535981 ;
-    ns2:longitude -3.641489 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c330ebcc8e71ab98ae129fe2006330db> a ns1:GeoCoordinates ;
+    ns1:latitude 40.535981 ;
+    ns1:longitude -3.641489 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> a ns2:GeoCoordinates ;
-    ns2:latitude 40.532161 ;
-    ns2:longitude -3.653871 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c68941b76db6dc75df2a659a08cbcabb> a ns1:GeoCoordinates ;
+    ns1:latitude 40.532161 ;
+    ns1:longitude -3.653871 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> a ns2:GeoCoordinates ;
-    ns2:latitude 40.525138 ;
-    ns2:longitude -3.647206 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_c860a576cca64ada4a3afc78728c69f8> a ns1:GeoCoordinates ;
+    ns1:latitude 40.525138 ;
+    ns1:longitude -3.647206 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> a ns2:GeoCoordinates ;
-    ns2:latitude 40.53712 ;
-    ns2:longitude -3.63473 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ca1877da75f81946f7a759f5e02b75c5> a ns1:GeoCoordinates ;
+    ns1:latitude 40.53712 ;
+    ns1:longitude -3.63473 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> a ns2:GeoCoordinates ;
-    ns2:latitude 40.537914 ;
-    ns2:longitude -3.623017 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_e25919751f7c7dd51fc5e98a8f16417c> a ns1:GeoCoordinates ;
+    ns1:latitude 40.537914 ;
+    ns1:longitude -3.623017 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> a ns2:GeoCoordinates ;
-    ns2:latitude 40.53507 ;
-    ns2:longitude -3.62144 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ea9e334c1fa124319ba3273fccb39f8b> a ns1:GeoCoordinates ;
+    ns1:latitude 40.53507 ;
+    ns1:longitude -3.62144 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> a ns2:GeoCoordinates ;
-    ns2:latitude 40.530222 ;
-    ns2:longitude -3.65044 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eaca5bee0e1ff24f88772c2a009d1aa7> a ns1:GeoCoordinates ;
+    ns1:latitude 40.530222 ;
+    ns1:longitude -3.65044 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> a ns2:GeoCoordinates ;
-    ns2:latitude 40.516553 ;
-    ns2:longitude -3.656073 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_eb703e7a2ab3a6d7bfba8189df607e96> a ns1:GeoCoordinates ;
+    ns1:latitude 40.516553 ;
+    ns1:longitude -3.656073 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> a ns2:GeoCoordinates ;
-    ns2:latitude 40.51991 ;
-    ns2:longitude -3.66149 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_ecfbf927546e1b017c77979ea5e99d26> a ns1:GeoCoordinates ;
+    ns1:latitude 40.51991 ;
+    ns1:longitude -3.66149 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> a ns2:GeoCoordinates ;
-    ns2:latitude 40.5186645 ;
-    ns2:longitude -3.6575428 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_f13db98741d3104ec204baab3799bcae> a ns1:GeoCoordinates ;
+    ns1:latitude 40.5186645 ;
+    ns1:longitude -3.6575428 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> a ns2:GeoCoordinates ;
-    ns2:latitude 40.530784 ;
-    ns2:longitude -3.648115 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fb7167577e563d476749d351623b1477> a ns1:GeoCoordinates ;
+    ns1:latitude 40.530784 ;
+    ns1:longitude -3.648115 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> a ns2:GeoCoordinates ;
-    ns2:latitude 40.537382 ;
-    ns2:longitude -3.6519976 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_fbb6a39c683f2c45b8aa0dde37487c1d> a ns1:GeoCoordinates ;
+    ns1:latitude 40.537382 ;
+    ns1:longitude -3.6519976 .
 
-<http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> a ns4:Connector ;
-    ns1:numberOfConnectors 1,
+<http://HO-G1.linkeddata.es/resource/Connector/CN_1b2458a3ee880234cb7c13080db8633d> a ns2:Connector ;
+    ns3:numberOfConnectors 1,
         2 ;
-    ns3:plugType "TYPE 2 7.40kW" .
+    ns4:plugType "TYPE 2 7.40kW" .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> a ns2:GeoCoordinates ;
-    ns2:latitude 40.547812 ;
-    ns2:longitude -3.656808 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_a033af1b680424620b3abd2d070b3a62> a ns1:GeoCoordinates ;
+    ns1:latitude 40.547812 ;
+    ns1:longitude -3.656808 .
 
-<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> a ns2:GeoCoordinates ;
-    ns2:latitude 40.519896 ;
-    ns2:longitude -3.65764 .
+<http://HO-G1.linkeddata.es/resource/Geocoordinates/GL_d69f92c80ec3b2f766b2e4954c872749> a ns1:GeoCoordinates ;
+    ns1:latitude 40.519896 ;
+    ns1:longitude -3.65764 .
 

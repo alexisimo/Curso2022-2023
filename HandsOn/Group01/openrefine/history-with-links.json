@@ -1006,10 +1006,5 @@
     "oldColumnName": "Time_limit",
     "newColumnName": "Time limit",
     "description": "Rename column Time_limit to Time limit"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "Same_as_wikidata_Price",
-    "description": "Remove column Same_as_wikidata_Price"
   }
 ]
