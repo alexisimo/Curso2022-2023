@@ -6,7 +6,7 @@ prefixes:
 
 sources:
   desfibriladores:
-    [../csv/desfibriladores-externos-fuera-ambito-sanitario-csv-updated.csv~csv]
+    [../csv/desfibriladores-externos-fuera-ambito-sanitario-csv.csv~csv]
 
 mappings:
   triplesmap1:
