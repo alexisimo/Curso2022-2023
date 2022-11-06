@@ -14,7 +14,7 @@
   ];
   rr:subjectMap [
     rr:template "https://www.puntoslimpiosmadrid.com/resource/CleanPoint/{PK}";
-    rr:class cp:cleanPoint
+    rr:class cp:CleanPoint
   ];
 
   rr:predicateObjectMap [
@@ -53,7 +53,34 @@
       rr:datatype <http://www.w3.org/2001/XMLSchema#anyUri>
       ]
   ];
-
+  rr:predicateObjectMap [
+    rr:predicate cp:hasCoordinateX;
+    rr:objectMap [
+      rml:reference "COORDENADA-X";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasCoordinateY;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasLatitude;
+    rr:objectMap [
+      rml:reference "LATITUD";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasLongitude;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
   rr:predicateObjectMap [
     rr:predicate cp:locatedIn;
     rr:objectMap [
@@ -90,7 +117,7 @@
   ];
   rr:subjectMap [
     rr:template "https://www.puntoslimpiosmadrid.com/resource/Address/{DIRECCION}";
-    rr:class cp:address
+    rr:class cp:Address
   ];
 
   rr:predicateObjectMap [
@@ -144,7 +171,7 @@
   ];
   rr:subjectMap [
     rr:template "https://www.puntoslimpiosmadrid.com/resource/neighborhood/{BARRIO}";
-    rr:class cp:neighborhood
+    rr:class cp:Neighborhood
   ];
 
   rr:predicateObjectMap [
@@ -178,7 +205,7 @@
   ];
   rr:subjectMap [
     rr:template "https://www.puntoslimpiosmadrid.com/resource/District/{DISTRITO}";
-    rr:class cp:district
+    rr:class cp:District
   ];
 
   rr:predicateObjectMap [
