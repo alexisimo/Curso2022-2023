@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class SPARQL {
     //static String uri = "C:\\Users\\donyi\\Documents\\GitHub\\Curso2022-2023\\HandsOn\\Group45\\rdf\\knowledge-graph.nt";
-    static String uri = "C:\\Users\\donyi\\IdeaProjects\\Semantic\\knowledge-graph.nt";
+    static String uri = "C:\\Users\\donyi\\Documents\\GitHub\\Curso2022-2023\\HandsOn\\Group45\\Semantic APP\\knowledge-graph-linked.nt";
     public SPARQL() {
 
     }
@@ -69,19 +69,19 @@ public class SPARQL {
         //FileManager.get().addLocatorClassLoader(SPARQL.class.getClassLoader());
         Model model = FileManager.get().loadModel(uri);
         String queryString1 =
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-                        "\n" +
                         "SELECT DISTINCT ?Nombre ?Descripcion ?Horario ?Localiza ?Telefono ?Url ?pk\n" +
+                        "\t\n" +
                         "\tWHERE {\n" +
-                        "  \t\t?s rdf:type <https://schema.org/Biblioteca>. \n" +
-                        "  \t\t?s <https://schema.org/haspk> ?pk .\n" +
-                        "\t\t?s <https://schema.org/hasdireccion> ?Localiza .\n" +
-                        "\t\t?s <https://schema.org/hasnombre> ?Nombre .\n" +
-                        "  \t\t?s <https://schema.org/hasdescription> ?Descripcion .\n" +
-                        "  \t\t?s <https://schema.org/hashorarioBib> ?Horario .\n" +
-                        "\t\t?s <https://schema.org/hastelefono> ?Telefono .\n" +
-                        "  \t\t?s <https://schema.org/hasbiblioteca-url> ?Url .\n" +
+                        "  \t\t?s rdf:type <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/Biblioteca>. \n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/haspk> ?pk .\n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasdireccion> ?Localiza .\n" +
+                        "\t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasnombre> ?Nombre .\n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasdescription> ?Descripcion .\n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hashorarioBib> ?Horario .\n" +
+                        "\t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hastelefono> ?Telefono .\n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasbiblioteca-url> ?Url .\n" +
+                        "\n" +
                         "\t}";
         query = QueryFactory.create(queryString1);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -139,18 +139,18 @@ public class SPARQL {
         //FileManager.get().addLocatorClassLoader(SPARQL.class.getClassLoader());
         Model model = FileManager.get().loadModel(uri);
         String queryString =
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
-                        "SELECT ?Titulo ?FechaInicio ?FechaFin ?Hora ?NombreInstalacion ?wikidata\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                        "SELECT DISTINCT ?Titulo ?FechaInicio ?FechaFin ?Hora ?NombreInstalacion ?wikidata\n" +
                         "\tWHERE {\n" +
-                        "  \t\t?s rdf:type <https://schema.org/Biblioteca>. \n" +
-                        "  \t\t?s <https://schema.org/haspk> \""+id+"\".\n" +
-                        "  \t\t?s <https://schema.org/hasEvento> ?Eventos .\n" +
-                        "  \t\t?Eventos <https://schema.org/hastitulo> ?Titulo .\n" +
-                        "  \t\t?Eventos <https://schema.org/hasfecha-ini> ?FechaInicio .\n" +
-                        "  \t\t?Eventos <https://schema.org/hasfecha-fin> ?FechaFin .\n" +
-                        "  \t\t?Eventos <https://schema.org/hashoraEvent> ?Hora .\n" +
-                        "\t\t?Eventos <https://schema.org/hasnombre-instalacion> ?NombreInstalacion .\n" +
-                        "\t\t ?Eventos <https://schema.org/wikidata-evento> ?wikidata . \n"+
+                        "  \t\t?s rdf:type <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/Biblioteca>. \n" +
+                        "  \t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/haspk> \t\""+id+"\"^^<http://www.w3.org/2001/XMLbase#int> .\n" +
+                        "\t\t?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasEvento> ?Eventos .\n" +
+                        "   \t\t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hastitulo> ?Titulo .\n" +
+                        "    \t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasfecha-ini> ?FechaInicio .\n" +
+                        "    \t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasfecha-fin> ?FechaFin .\n" +
+                        "  \t\t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hashoraEvent> ?Hora .\n" +
+                        "  \t\t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasnombre-instalacion> ?NombreInstalacion .\n" +
+                        "\t\t?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/wikidata-evento> ?wikidata .\n" +
                         "\t}";
         query = QueryFactory.create(queryString);
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -174,6 +174,7 @@ public class SPARQL {
     }
     //@SuppressWarnings("deprecation")
     public static void main (String args[]) throws IOException, MediaWikiApiErrorException {
+
 
     }
 
