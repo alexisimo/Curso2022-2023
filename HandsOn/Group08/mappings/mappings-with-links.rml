@@ -59,7 +59,7 @@
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap2>;
       rr:joinCondition [
-        rr:child "NOMBRE-VIA"; rr:parent "NOMBRE-VIA";  ];
+        rr:child "DIRECCION"; rr:parent "DIRECCION";  ];
     ] 
   ];
   rr:predicateObjectMap [
@@ -101,7 +101,7 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasNameStreetWD;
     rr:objectMap [
       rml:reference "wikidata_DIRECCION";
       rr:termType rr:IRI
@@ -155,7 +155,7 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasNeighborhoodWD;
     rr:objectMap [
       rml:reference "wikidata_BARRIO";
       rr:termType rr:IRI
@@ -182,14 +182,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate cp:districtName;
+    rr:predicate cp:hasDistrict;
     rr:objectMap [
       rml:reference "DISTRITO";
       rr:datatype <http://www.w3.org/2001/XMLSchema#string>
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasDistrictWD;
     rr:objectMap [
       rml:reference "wikidata_DISTRITO";
       rr:termType rr:IRI
