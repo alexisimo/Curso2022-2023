@@ -240,7 +240,7 @@ app.layout = html.Div([
     html.Div([
         dcc.Link(
         html.Button('GeoSparql', id='button'),
-        href='https://www.youtube.com/watch?v=HEtKZH38jV8', refresh=True),],
+        href='http://localhost:8080', refresh=True),],
     style={'display': 'inline-block'}),
     html.Div([
     dcc.Dropdown(

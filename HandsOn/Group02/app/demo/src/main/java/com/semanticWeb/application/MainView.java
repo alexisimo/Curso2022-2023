@@ -27,7 +27,7 @@ public class MainView extends VerticalLayout {
 
     private static final String ORIGIN = "origin";
     private static final String DESTINATION = "destination";
-    private String switchBtnText = SWITCH_BIKES;
+    private String switchBtnText = SWITCH_EV;
     private Map<String,String> bikeStations, evStations;
 
     private Set<String> selectOptions;
@@ -69,19 +69,19 @@ public class MainView extends VerticalLayout {
 
         switchBtn.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         switchBtn.addClickListener(click -> {
+            switchBtnText = switchBtnText.equals(SWITCH_BIKES) ? SWITCH_EV : SWITCH_BIKES;
+            switchBtn.setText(switchBtnText);
             selectOptions = (switchBtnText.equals(SWITCH_BIKES) ? evStations : bikeStations).keySet();
             originSlt.setItems(selectOptions);
             destSlt.setItems(selectOptions);
-            switchBtnText = switchBtnText.equals(SWITCH_BIKES) ? SWITCH_EV : SWITCH_BIKES;
-            switchBtn.setText(switchBtnText);
         });
         switchBtn.setWidth(18, Unit.EM);
 
         queryBtn.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         queryBtn.addClickListener(click -> {
             // ejecuta queries
-            gridMap.get(ORIGIN).setItems(getCloseFeatures(String.format("<%s>",bikeStations.get(originSlt.getValue())), DISTANCE));
-            gridMap.get(DESTINATION).setItems(getCloseFeatures(String.format("<%s>",evStations.get(destSlt.getValue())), DISTANCE));
+            gridMap.get(ORIGIN).setItems(getCloseFeatures(String.format("<%s>",(switchBtnText.equals(SWITCH_BIKES) ? evStations : bikeStations).get(originSlt.getValue())), DISTANCE));
+            gridMap.get(DESTINATION).setItems(getCloseFeatures(String.format("<%s>",(switchBtnText.equals(SWITCH_BIKES) ? evStations : bikeStations).get(destSlt.getValue())), DISTANCE));
 
         });
 
