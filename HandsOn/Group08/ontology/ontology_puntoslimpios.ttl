@@ -37,7 +37,7 @@
 ###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasAccessibility
 :hasAccessibility rdf:type owl:DatatypeProperty ;
                   rdfs:domain :CleanPoint ;
-                  rdfs:range xsd:string .
+                  rdfs:range xsd:boolean .
 
 
 ###  http://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#hasCoordinateX
