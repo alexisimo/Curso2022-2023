@@ -3,18 +3,30 @@
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT DISTINCT ?s ?predicate ?object ?hastitulo
+SELECT DISTINCT ?Nombre ?Descripcion ?Horario ?Localiza ?Telefono ?Url ?pk
 	
 	WHERE {
-  		?s rdf:type <https://schema.org/Eventos> .
-		?s <https://schema.org/hastitulo> ?hastitulo .
-  		
+  		?s rdf:type <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/Biblioteca>. 
+  		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/haspk> ?pk .
+  		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasdireccion> ?Localiza .
+		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasnombre> ?Nombre .
+  		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasdescription> ?Descripcion .
+  		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hashorarioBib> ?Horario .
+		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hastelefono> ?Telefono .
+  		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasbiblioteca-url> ?Url .
+
 	}
 
-SELECT DISTINCT ?s   ?Localiza
-	
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?Titulo ?FechaInicio ?FechaFin ?Hora ?NombreInstalacion ?wikidata
 	WHERE {
-  		?s rdf:type <https://schema.org/Biblioteca>. 
-		?s <https://schema.org/hasdireccion> ?Localiza .
-  		
+  		?s rdf:type <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/Biblioteca>. 
+		?s <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasEvento> ?Eventos .
+   		?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hastitulo> ?Titulo .
+    	?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasfecha-ini> ?FechaInicio .
+    	?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasfecha-fin> ?FechaFin .
+  		?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hashoraEvent> ?Hora .
+  		?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/hasnombre-instalacion> ?NombreInstalacion .
+		?Eventos <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/wikidata-evento> ?wikidata .
 	}

@@ -1,9 +1,15 @@
-@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix bib: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
+@prefix data: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ont: <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-base#> .
+@prefix xsd: <http://www.w3.org/2001/XMLbase#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>. 
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
-@prefix schema: <https://schema.org/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix map: <http://mapping.example.com/> .
 
 
 <#Biblioteca>
@@ -13,49 +19,56 @@
   ];
 
 	rr:subjectMap [
-		rr:template "https://data.example.com/biblioteca/{PK}";
-        rr:class schema:Biblioteca
+		rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/data/biblioteca/{PK}";
+        rr:class ont:Biblioteca;
     ];
 
     rr:predicateObjectMap [
-    rr:predicate schema:haspk;
+    rr:predicate ont:haspk;
     rr:objectMap [
-      rml:reference "PK"
+      rml:reference "PK";
+      rr:datatype xsd:int;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasnombre;
+    rr:predicate ont:hasnombre;
     rr:objectMap [
-      rml:reference "NOMBRE"
+      rml:reference "NOMBRE";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasdescription;
+    rr:predicate ont:hasdescription;
     rr:objectMap [
-      rml:reference "DESCRIPCION-ENTIDAD"
+      rml:reference "DESCRIPCION-ENTIDAD";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hashorarioBib;
+    rr:predicate ont:hashorarioBib;
     rr:objectMap [
-      rml:reference "HORARIO"
+      rml:reference "HORARIO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasequipamiento;
+    rr:predicate ont:hasequipamiento;
     rr:objectMap [
-      rml:reference "EQUIPAMIENTO"
+      rml:reference "EQUIPAMIENTO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasbiblioteca-url;
+    rr:predicate ont:hasbiblioteca-url;
     rr:objectMap [
-      rml:reference "CONTENT-URL"
+      rml:reference "CONTENT-URL";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-      rr:predicate schema:hasEvento;
+      rr:predicate ont:hasEvento;
       rr:objectMap [
+          rr:datatype xsd:string ;
           rr:parentTriplesMap <#Evento>;
           rr:joinCondition [
               rr:child "PK";
@@ -65,33 +78,38 @@
     ];
     
     rr:predicateObjectMap [
-    rr:predicate schema:hasdireccion;
+    rr:predicate ont:hasdireccion;
     rr:objectMap [
-      rml:reference "DIRECCION"
+      rml:reference "DIRECCION";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hastelefono;
+    rr:predicate ont:hastelefono;
     rr:objectMap [
-      rml:reference "TELEFONO"
+      rml:reference "TELEFONO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasemail;
+    rr:predicate ont:hasemail;
     rr:objectMap [
-      rml:reference "EMAIL"
+      rml:reference "EMAIL";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:haslocalidad;
+    rr:predicate ont:haslocalidad;
     rr:objectMap [
-      rml:reference "LOCALIDAD"
+      rml:reference "LOCALIDAD";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:wikidata;
+    rr:predicate ont:wikidata;
     rr:objectMap [
-      rml:reference "WIKIDATA:BIBLIOTECAS"
+      rml:reference "WIKIDATA:BIBLIOTECAS";
+      rr:datatype xsd:string ;
     ]].
 
 
@@ -103,59 +121,69 @@
         ];
 
     rr:subjectMap [
-    rr:template "http://data.example.com/Evento/{ID-EVENTO}";
-    rr:class schema:Eventos];
+      rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/data/Evento/{ID-EVENTO}";
+      rr:class ont:Eventos;
+    ];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasid-evento;
+    rr:predicate ont:hasid-evento;
     rr:objectMap [
-      rml:reference "ID-EVENTO"
+      rml:reference "ID-EVENTO";
+      rr:datatype xsd:int ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hastitulo;
+    rr:predicate ont:hastitulo;
     rr:objectMap [
-      rml:reference "TITULO"
+      rml:reference "TITULO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasdias;
+    rr:predicate ont:hasdias;
     rr:objectMap [
-      rml:reference "DIAS-SEMANA"
+      rml:reference "DIAS-SEMANA";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasfecha-ini;
+    rr:predicate ont:hasfecha-ini;
     rr:objectMap [
-      rml:reference "FECHA"
+      rml:reference "FECHA";
+      rr:datatype xsd:Date ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasfecha-fin;
+    rr:predicate ont:hasfecha-fin;
     rr:objectMap [
-      rml:reference "FECHA-FIN"
+      rml:reference "FECHA-FIN";
+      rr:datatype xsd:Date ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hashoraEvent;
+    rr:predicate ont:hashoraEvent;
     rr:objectMap [
-      rml:reference "HORA"
+      rml:reference "HORA";
+      rr:datatype xsd:DateTime ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasurl-evento;
+    rr:predicate ont:hasurl-evento;
     rr:objectMap [
-      rml:reference "URL-INSTALACION"
+      rml:reference "URL-INSTALACION";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:hasnombre-instalacion;
+    rr:predicate ont:hasnombre-instalacion;
     rr:objectMap [
-      rml:reference "NOMBRE-INSTALACION"
+      rml:reference "NOMBRE-INSTALACION";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate schema:wikidata-evento;
+    rr:predicate ont:wikidata-evento;
     rr:objectMap [
-      rml:reference "WIKIDATA:EVENTOS"
+      rml:reference "WIKIDATA:EVENTOS";
+      rr:datatype xsd:string ;
     ]].

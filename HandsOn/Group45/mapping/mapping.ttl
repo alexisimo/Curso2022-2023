@@ -1,6 +1,7 @@
-@prefix base: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
+@prefix bib: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
+@prefix data: <http://bibliotecaevento.linkeddata.es/biblioteca/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ont: <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology> .
+@prefix ont: <http://bibliotecaevento.linkeddata.es/bibliotecas/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-base#> .
 @prefix xsd: <http://www.w3.org/2001/XMLbase#>.
@@ -8,6 +9,8 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix map: <http://mapping.example.com/> .
+
 
 <#Biblioteca>
 	rml:logicalSource [
@@ -16,43 +19,49 @@
   ];
 
 	rr:subjectMap [
-		rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/{PK}";
-        rr:class base:Biblioteca
+		rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/data/biblioteca/{PK}";
+        rr:class ont:Biblioteca;
     ];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasnombre;
+    rr:predicate ont:hasnombre;
     rr:objectMap [
-      rml:reference "NOMBRE"
+      rml:reference "NOMBRE";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasdescription;
+    rr:predicate ont:hasdescription;
     rr:objectMap [
-      rml:reference "DESCRIPCION-ENTIDAD"
+      rml:reference "DESCRIPCION-ENTIDAD";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hashorario;
+    rr:predicate ont:hashorario;
     rr:objectMap [
-      rml:reference "HORARIO"
+      rml:reference "HORARIO" ;
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasequipamiento;
+    rr:predicate ont:hasequipamiento;
     rr:objectMap [
-      rml:reference "EQUIPAMIENTO"
+      rml:reference "EQUIPAMIENTO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasbiblioteca-url;
+    rr:predicate ont:hasbiblioteca-url;
     rr:objectMap [
-      rml:reference "CONTENT-URL"
+      rml:reference "CONTENT-URL";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-      rr:predicate base:hasEvento;
+      rr:predicate ont:hasEvento;
       rr:objectMap [
+          rr:datatype xsd:string ;
           rr:parentTriplesMap <#Evento>;
           rr:joinCondition [
               rr:child "PK";
@@ -69,54 +78,63 @@
         ];
 
     rr:subjectMap [
-    rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/{ID-BIBLIOTECA}/Evento/{ID-EVENTO}";
-    rr:class base:Eventos];
+    rr:template "http://bibliotecaevento.linkeddata.es/biblioteca/data/Evento/{ID-EVENTO}";
+    rr:class ont:Eventos;
+    ];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasid-evento;
+    rr:predicate ont:hasid-evento;
     rr:objectMap [
-      rml:reference "ID-EVENTO"
+      rml:reference "ID-EVENTO";
+      rr:datatype xsd:int ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hastitulo;
+    rr:predicate ont:hastitulo;
     rr:objectMap [
-      rml:reference "TITULO"
+      rml:reference "TITULO";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasdias;
+    rr:predicate ont:hasdias;
     rr:objectMap [
-      rml:reference "DIAS-SEMANA"
+      rml:reference "DIAS-SEMANA";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasfecha-ini;
+    rr:predicate ont:hasfecha-ini;
     rr:objectMap [
-      rml:reference "FECHA"
+      rml:reference "FECHA";
+      rr:datatype xsd:Date ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasfecha-fin;
+    rr:predicate ont:hasfecha-fin;
     rr:objectMap [
-      rml:reference "FECHA-FIN"
+      rml:reference "FECHA-FIN";
+      rr:datatype xsd:Date ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hashora;
+    rr:predicate ont:hashora;
     rr:objectMap [
-      rml:reference "HORA"
+      rml:reference "HORA";
+      rr:datatype xsd:DateTime ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasurl-evento;
+    rr:predicate ont:hasurl-evento;
     rr:objectMap [
-      rml:reference "URL-INSTALACION"
+      rml:reference "URL-INSTALACION";
+      rr:datatype xsd:string ;
     ]];
 
     rr:predicateObjectMap [
-    rr:predicate base:hasnombre-instalacion;
+    rr:predicate ont:hasnombre-instalacion;
     rr:objectMap [
-      rml:reference "NOMBRE-INSTALACION"
+      rml:reference "NOMBRE-INSTALACION";
+      rr:datatype xsd:string ;
     ]].
     
