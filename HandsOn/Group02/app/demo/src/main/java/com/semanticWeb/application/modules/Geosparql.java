@@ -93,7 +93,7 @@ public class Geosparql {
             ResultSet rs = qe.execSelect();
             while(rs.hasNext()){
                 QuerySolution s = rs.next();
-                res.add(new TransportFeature("a/a/a/a/a", s.get("name").toString()));
+                res.add(new TransportFeature("a/a/a/a/a", s.get("name").asLiteral().getString()));
             }
         }
         return res;
@@ -126,7 +126,6 @@ public class Geosparql {
             ResultSet rs = qe.execSelect();
             while(rs.hasNext()){
                 QuerySolution s = rs.next();
-                System.out.println(s.get("feature").toString());
                 res.put(s.get("name").toString(),s.get("feature").toString());
             }
         }
