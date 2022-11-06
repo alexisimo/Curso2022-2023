@@ -50,8 +50,8 @@
     rr:predicate cp:hasUrl;
     rr:objectMap [
       rml:reference "CONTENT-URL";
-      rr:datatype <http://www.w3.org/2001/XMLSchema#anyUri>
-      ]
+      rr:termType rr:IRI
+    ]
   ];
 
   rr:predicateObjectMap [
