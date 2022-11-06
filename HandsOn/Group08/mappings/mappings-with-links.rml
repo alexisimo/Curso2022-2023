@@ -13,7 +13,7 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/{PK}";
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/CleanPoint/{PK}";
     rr:class cp:cleanPoint
   ];
 
@@ -42,7 +42,7 @@
     rr:predicate cp:hasAccesibility;
     rr:objectMap [
       rml:reference "ACCESIBILIDAD";
-      rr:datatype <http://www.w3.org/2001/XMLSchema#string>
+      rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>
     ]
   ];
   
@@ -89,7 +89,7 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/{DIRECCION}";
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/Address/{DIRECCION}";
     rr:class cp:address
   ];
 
@@ -143,7 +143,7 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/{BARRIO}";
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/neighborhood/{BARRIO}";
     rr:class cp:neighborhood
   ];
 
@@ -177,7 +177,7 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/{DISTRITO}";
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/District/{DISTRITO}";
     rr:class cp:district
   ];
 
