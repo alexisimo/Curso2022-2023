@@ -10,7 +10,7 @@ prefixes:
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   prop: http://www.monumentmadrid.com/property#
-  clas: http://www.monumentmadrid.com/class#
+  class: http://www.monumentmadrid.com/class#
   res: http://www.monumentmadrid.com/resource/
   geo_core: https://datos.ign.es/def/geo_core#
   geosparql: http://www.opengis.net/ont/geosparql#
@@ -57,19 +57,30 @@ mappings:
       - [prop:hascity,$(LOCALIDAD)]
       - [prop:hasprovince,$(PROVINCIA)]
       - [prop:haspostalcode,$(CODIGO-POSTAL)]
-      - [prop:hasneighborhood,$(BARRIO)]
-      - [prop:hasneighborhoodcode,$(COD-BARRIO),xsd:integer]
       - p: geosparql:hasGeometry
         o:
          - mapping: point
       - p: prop:hasDistrict
         o:
          - mapping: district
-         
+      - p: prop:hasNeighborhood
+        o:
+         - mapping: neighborhood
+
+  neighborhood:
+    sources:
+      - [csv/monumentos-ciudad-madrid-csv.updated-with-links.csv~csv]
+    s: http://www.monumentmadrid.com/resource/neighborhood/$(COD-BARRIO)
+    po:
+      - [a, class:Neighborhood]
+      - [prop:hascode,$(COD-BARRIO),xsd:integer]
+      - [prop:hasname,$(BARRIO)]
+      - [owl:sameAs, $(SAME_AS_BARRIO)~iri]
+
   district:
     sources:
       - [csv/monumentos-ciudad-madrid-csv.updated-with-links.csv~csv]
-    s: http://www.monumentmadrid.com/resource/district/$(DISTRITO)
+    s: http://www.monumentmadrid.com/resource/district/$(COD-DISTRITO)
     po:
       - [a, class:District]
       - [prop:hascode,$(COD-DISTRITO),xsd:integer]
