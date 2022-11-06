@@ -18,9 +18,9 @@
 
 <http://monumentmadrid.com/resource/monument/> rdf:type owl:Ontology ;
                                                 dc:creator "Grupo 10" ;
-                                                dc:description "Ontology code created by Chowlk" ;
+                                                dc:description "Ontology for Group 10 Semantic Web Project" ;
                                                 dc:title "Monument Ontology" ;
-                                                owl:versionInfo "0.0.1" .
+                                                owl:versionInfo "1.0" .
 
 #################################################################
 #    Annotation properties
