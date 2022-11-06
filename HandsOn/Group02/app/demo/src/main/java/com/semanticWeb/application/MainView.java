@@ -9,9 +9,6 @@ import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.html.Paragraph;
-import com.vaadin.flow.component.icon.Icon;
-import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
@@ -22,12 +19,11 @@ import java.util.*;
 
 @Route("")
 public class MainView extends VerticalLayout {
-    //private Grid<String> grid = new Grid<>();
     private static final int DISTANCE = 1000;
     private static final String SWITCH_BIKES = "Switch to Bike Stations";
     private static final String SWITCH_EV = "Switch to Electric Vehicle Stations";
-    private static final String ONT_PATH = "C:\\Users\\USUARIO\\Desktop\\semanticWeb\\practica_grupal\\Curso2022-2023\\HandsOn\\Group02\\ontology\\ontology_v2.ttl";
-    private static final String DATA_PATH = "C:\\Users\\USUARIO\\Desktop\\semanticWeb\\practica_grupal\\Curso2022-2023\\HandsOn\\Group02\\rdf\\RDF-with-links-v2.ttl";
+    private static final String ONT_PATH = "../../ontology/ontology_v2.ttl";
+    private static final String DATA_PATH = "../../rdf/RDF-with-links-v2.ttl";
 
     private static final String ORIGIN = "origin";
     private static final String DESTINATION = "destination";
@@ -69,7 +65,7 @@ public class MainView extends VerticalLayout {
         destSlt.setLabel("Destination Station");
         destSlt.setItems(selectOptions);
         destSlt.setPlaceholder("Select station");
-//        select.setValue("Most recent first");
+
 
         switchBtn.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         switchBtn.addClickListener(click -> {
@@ -100,11 +96,6 @@ public class MainView extends VerticalLayout {
 
         add(getSelects());
         add(innerHl);
-
-//        add(buildParagraph("Grid1"));
-//        add(getForm(), buildGrid());
-//        add(buildParagraph("Grid2"));
-//        add(getForm(), buildGrid());
     }
 
     private Component getSelects() {
@@ -115,20 +106,6 @@ public class MainView extends VerticalLayout {
         hl.setFlexGrow(1, originSlt);
         hl.setFlexGrow(1, destSlt);
         hl.setWidthFull();
-        return hl;
-    }
-
-    private Component getForm() {
-        HorizontalLayout hl = new HorizontalLayout();
-        hl.setAlignItems(Alignment.BASELINE);
-
-        Button searchBtn = new Button("Search");
-        searchBtn.addClickListener(click -> {
-            // queries
-            // refrescar tabla
-            //grid.setItems();
-        });
-
         return hl;
     }
 
