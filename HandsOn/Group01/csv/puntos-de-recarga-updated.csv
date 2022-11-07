@@ -1,73 +1,56 @@
-City,Owner,Charging Station,Address,Longitude,Latitude,Number of connectors,Peripheral,Connector,Price,Cables Annotation,Bookable,Schedule,Time limit
-ALCOBENDAS,"ITISFUN, S.L.U","ITISFUN, S.L.U_-3.656808_40.547812","Calle Marqués de la Valdavia, 140",-3.656808,40.547812,,,nc_-3.656808_40.547812,,,,,
-ALCOBENDAS,EMOVILI,EMOVILI_-3.651422_40.515532,"Plaza de la Moraleja, 9",-3.651422,40.515532,2,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.651422_40.515532,Gratuito,No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,"NUEVA URBANIZADORA RESIDENCIAL, S.A.","NUEVA URBANIZADORA RESIDENCIAL, S.A._-3.647206_40.525138","Calle Caléndula, 13",-3.647206,40.525138,,,nc_-3.647206_40.525138,,,,,
-ALCOBENDAS,"CAMINOS DE PASOL, SLU","CAMINOS DE PASOL, SLU_-3.645178_40.5081","Camino del Cura, 10",-3.645178,40.5081,,,nc_-3.645178_40.5081,,,,,
-ALCOBENDAS,EMOVILI,EMOVILI_-3.641618_40.546535,"Avenida de España, 28",-3.641618,40.546535,2,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.641618_40.546535,Gratuito,No,No se puede reservar,24 horas todos los días,2
-ALCOBENDAS,COMUNIDAD PROPIETARIOS ANABEL SEGURA,COMUNIDAD PROPIETARIOS ANABEL SEGURA_-3.626132_40.532384,"Calle anabel Segura, 11",-3.626132,40.532384,,,nc_-3.626132_40.532384,,,,,
-ALCOBENDAS,"ENDESA ENERGIA, S.A.","ENDESA ENERGIA, S.A._-3.623017_40.537914","Avanida Rafael Nadal, 3",-3.623017,40.537914,,,nc_-3.623017_40.537914,,,,,
-ALCOBENDAS,"RED ELECTRICA DE ESPAÑA, S.A.U.","RED ELECTRICA DE ESPAÑA, S.A.U._-3.613768_40.524688","Paseo Conde de los Gaitanes, 177",-3.613768,40.524688,,,nc_-3.613768_40.524688,,,,,
-ALCOBENDAS,Acciona I+D,Acciona I+D_-3.65569_40.53069,"Calle Valportillo Segunda, 8",-3.65569,40.53069,1,,nc_-3.65569_40.53069,,No,,24 horas todos los días,
-ALCOBENDAS,Acciona Transmaditerranea,Acciona Transmaditerranea_-3.657155_40.519326,"Av. de Europa, 10",-3.657155,40.519326,2,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.657155_40.519326,,No,No se puede reservar,De 7 a 19,
-ALCOBENDAS,BBVA campus moraleja,BBVA campus moraleja_-3.649032_40.536064,"Calle Valgrande, 9",-3.649032,40.536064,3,"Schuko (EU Plug) 3.70kW
+City,Owner,Charging Station Id,Address,Longitude,Latitude,Geolocation Id,Number of connectors,Connector type,Connector Id,Price,Cables Annotation,Bookable,Schedule,Time limit
+ALCOBENDAS,"ITISFUN, S.L.U",CS_a112b47aa781db7052e21ba75c0f3cee,"Calle Marqués de la Valdavia, 140",-3.656808,40.547812,GL_a033af1b680424620b3abd2d070b3a62,,,CN_8252e7ee3450eb71077eb0a6ed3c6aba,,,,,
+ALCOBENDAS,EMOVILI,CS_c51ba8ceed724fb006b47b1ad561104d,"Plaza de la Moraleja, 9",-3.651422,40.515532,GL_4a7e54afe27f88a8ab6ef194c4fc0fc9,2,TYPE 2 7.40kW,CN_324f400218a1ca1a848c8211f61cd150,Gratuito,No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,"NUEVA URBANIZADORA RESIDENCIAL, S.A.",CS_291709b8a506c6d21a47f5dd415c5087,"Calle Caléndula, 13",-3.647206,40.525138,GL_c860a576cca64ada4a3afc78728c69f8,,,CN_ecce93a629afaa5a562a820c1a407f3f,,,,,
+ALCOBENDAS,"CAMINOS DE PASOL, SLU",CS_42af7e789951ae672950aa57da7089b5,"Camino del Cura, 10",-3.645178,40.5081,GL_8ef731654666bd480b36dcc16a770501,,,CN_04651d9d6862cd1658883c93104b71ab,,,,,
+ALCOBENDAS,EMOVILI,CS_65538ad9bc5c7f8f9e0f9dfa6442c817,"Avenida de España, 28",-3.641618,40.546535,GL_2f71b40e1e07202f84038c436bafb646,2,TYPE 2 7.40kW,CN_7915a3ab393549fc63b710da56b362ab,Gratuito,No,No se puede reservar,24 horas todos los días,2
+ALCOBENDAS,COMUNIDAD PROPIETARIOS ANABEL SEGURA,CS_c0700936ae7eb3be3cf96333179b023f,"Calle anabel Segura, 11",-3.626132,40.532384,GL_9ce7d81d3c0ec6e1317ab93c7a16324a,,,CN_7e1de06ae5d4db3f3af798e122887198,,,,,
+ALCOBENDAS,"ENDESA ENERGIA, S.A.",CS_d081f3afe137496c2485bd32e8a51037,"Avanida Rafael Nadal, 3",-3.623017,40.537914,GL_e25919751f7c7dd51fc5e98a8f16417c,,,CN_3393af144b9f4d4fe14259fbb78d4b14,,,,,
+ALCOBENDAS,"RED ELECTRICA DE ESPAÑA, S.A.U.",CS_e793630cc31fefb530f431858cbee19e,"Paseo Conde de los Gaitanes, 177",-3.613768,40.524688,GL_357e698f764d409af21aeab0dac00012,,,CN_d3d9af5340d4caa1b58f779b24cc42bb,,,,,
+ALCOBENDAS,Acciona I+D,CS_2b6f7bd0f08f44d38c82a73c41c1931f,"Calle Valportillo Segunda, 8",-3.65569,40.53069,GL_474ced22ce8a07445291cf9c8d1df434,1,,CN_d815d675747b536c69a384cca44dc08f,,No,,24 horas todos los días,
+ALCOBENDAS,Acciona Transmaditerranea,CS_1874b5f5a66f06509d9b6901ed7367d3,"Av. de Europa, 10",-3.657155,40.519326,GL_6af3ef5ee94b864fa077ab1b6d6b2c7a,2,TYPE 2 22.00kW,CN_367c458ee673887b4838b8a5d6013333,,No,No se puede reservar,De 7 a 19,
+ALCOBENDAS,BBVA campus moraleja,CS_2e17db05dd3cb942bde18daeb0610df6,"Calle Valgrande, 9",-3.649032,40.536064,GL_3cca67df6a023a1c22f2dfba0aead8da,3,"Schuko (EU Plug) 3.70kW
 TYPE 1 (SAE J1772) 3.70kW
-","Schuko (EU Plug) 3.70kW
-TYPE 1 (SAE J1772) 3.70kW
-_-3.649032_40.536064",Gratuito,No,Obligatorio,9:00h. a 21:30h,
-ALCOBENDAS,Bricomart parking subterráneo,Bricomart parking subterráneo_-3.6608542_40.5226938,"Carr. de Fuencarral, 53",-3.6608542,40.5226938,9,TYPE 2 3.70kW,TYPE 2 3.70kW_-3.6608542_40.5226938,Gratuito,No,No se puede reservar,Lunes a viernes: 7:00-21:30 / Sábados: 7:30-22:00 / Domingos de apertura: 9:00-15:00 / Festivos de apertura: 7:00-21:30,
-ALCOBENDAS,C. de Salamanca,C. de Salamanca_-3.64952_40.53067,"Calle de la Metalurgia, 1",-3.64952,40.53067,1,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.64952_40.53067,Exclusivo para clientes,No,,,
-ALCOBENDAS,Carrefour Alcobendas,Carrefour Alcobendas_-3.6541821_40.5268882,"Carr. de Madrid a Burgos Km, 14500",-3.6541821,40.5268882,2,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.6541821_40.5268882,Gratuito,No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,Center Car,Center Car_-3.65155_40.537986,"Calle Valgrande, 16",-3.65155,40.537986,1,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.65155_40.537986,,No,Recomendado,8-14h 15.30-18h,
-ALCOBENDAS,Centro Comercial El Encinar,Centro Comercial El Encinar_-3.64323_40.51187,"Calle Vereda de Palacio, 10",-3.64323,40.51187,4,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.64323_40.51187,0.35-0.40 €/KWH,No,No se puede reservar,,
-ALCOBENDAS,Colegio Aldovea,Colegio Aldovea_-3.62615_40.52652,"Paseo de Alcobendas, 3",-3.62615,40.52652,1,Schuko (EU Plug) 2.30kW,Schuko (EU Plug) 2.30kW_-3.62615_40.52652,,No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,Creara/NL*LMS*P55887869,Creara/NL*LMS*P55887869_-3.651594_40.534246,"Av. de la Industria, 32",-3.651594,40.534246,2,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.651594_40.534246,Gratuito,No,,24 horas todos los días,
-ALCOBENDAS,Distrito Telefónica Pk. Sur-Este,Distrito Telefónica Pk. Sur-Este_-3.6661338_40.5150227,"RONDA DE LA COMUNICACIÓN, ",-3.6661338,40.5150227,2,"Schuko (EU Plug) 2.30kW
+",CN_031e5b70327114f1b825c5f4db5e4e21,Gratuito,No,Obligatorio,9:00h. a 21:30h,
+ALCOBENDAS,Bricomart parking subterráneo,CS_cdba71c006a052def0c5beff4a142c51,"Carr. de Fuencarral, 53",-3.6608542,40.5226938,GL_57aab1f0037d15a8387e60dd89ba1bb9,9,TYPE 2 3.70kW,CN_7f929e3f1daa067245e406f76f50c0d7,Gratuito,No,No se puede reservar,Lunes a viernes: 7:00-21:30 / Sábados: 7:30-22:00 / Domingos de apertura: 9:00-15:00 / Festivos de apertura: 7:00-21:30,
+ALCOBENDAS,C. de Salamanca,CS_e90fe814589644613e150e26b046c4dd,"Calle de la Metalurgia, 1",-3.64952,40.53067,GL_6f21a6f366cd5daaa8c3fd96f54cf41d,1,TYPE 2 7.40kW,CN_cd6746412435fd2e9348539089bdc6aa,Exclusivo para clientes,No,,,
+ALCOBENDAS,Carrefour Alcobendas,CS_fab7631431f646a579b5df6b74e8a606,"Carr. de Madrid a Burgos Km, 14500",-3.6541821,40.5268882,GL_24a8a40cec404a851352a04a4e2b99b8,2,TYPE 2 7.40kW,CN_95452b9ed7a7f2befc6fae4fd6d72943,Gratuito,No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,Center Car,CS_228925becaf736457758bb742e419701,"Calle Valgrande, 16",-3.65155,40.537986,GL_90d773732a90ff0c266450e7f4d4ae34,1,TYPE 2 7.40kW,CN_6d488b6223ff8ddfb99962c3de015680,,No,Recomendado,8-14h 15.30-18h,
+ALCOBENDAS,Centro Comercial El Encinar,CS_06a61e9dd36ed0944d8b626713954b58,"Calle Vereda de Palacio, 10",-3.64323,40.51187,GL_6f673e6e636dee8e775c2a34d68422d1,4,TYPE 2 22.00kW,CN_970917a7284f4b448a555a1547898d15,0.35-0.40 €/KWH,No,No se puede reservar,,
+ALCOBENDAS,Colegio Aldovea,CS_63a4a3bb6b30f86368e80747106d3a86,"Paseo de Alcobendas, 3",-3.62615,40.52652,GL_573b65e0b0d9230fbdac9657be501cf6,1,Schuko (EU Plug) 2.30kW,CN_df1eea5f38ad13f2821f2a9a765d8872,,No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,Creara/NL*LMS*P55887869,CS_d6252a6bcb431f470dae8556bc1de595,"Av. de la Industria, 32",-3.651594,40.534246,GL_47a804ca1f68fe34e0801bd99746fc5f,2,TYPE 2 22.00kW,CN_0aa9761895687703f9a6c717cae28fcb,Gratuito,No,,24 horas todos los días,
+ALCOBENDAS,Distrito Telefónica Pk. Sur-Este,CS_243e02988fbbf9b61581b669dd41fd83,"RONDA DE LA COMUNICACIÓN, ",-3.6661338,40.5150227,GL_a2c4137e40f369c2436b20a9a0274291,2,"Schuko (EU Plug) 2.30kW
 TYPE 2 7.40kW
-","Schuko (EU Plug) 2.30kW
-TYPE 2 7.40kW
-_-3.6661338_40.5150227",Gratuito,No,No se puede reservar,Laborables de 6:45 a 21:00,
-ALCOBENDAS,Estación de recarga ACCIONA-Bia en Moraleja Green,Estación de recarga ACCIONA-Bia en Moraleja Green_-3.65764_40.519896,"Av. de Europa, 13",-3.65764,40.519896,2,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.65764_40.519896,Gratuito,No,No se puede reservar,,
-ALCOBENDAS,Feníe Energía/0259,Feníe Energía/0259_-3.65764_40.519896,"Avenida de Europa, 13",-3.65764,40.519896,1,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.65764_40.519896,"0,6353 EUR/charge",No,,24 horas todos los días,
-ALCOBENDAS,Hampton by Hilton Alcobendas Madrid,Hampton by Hilton Alcobendas Madrid_-3.618301_40.534582,"Av. de Fernando Alonso, 4",-3.618301,40.534582,4,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.618301_40.534582,,Necesita manguera tipo 2,No se puede reservar,,
-ALCOBENDAS,"Hinober, Valgrande","Hinober, Valgrande_-3.6519976_40.537382","Calle Valgrande, 8",-3.6519976,40.537382,4,TYPE 2 3.70kW,TYPE 2 3.70kW_-3.6519976_40.537382,"0,2500 EUR/kWh",No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,Hotel Amura Alcobendas,Hotel Amura Alcobendas_-3.641489_40.535981,"Av. de Valdelaparra, 2",-3.641489,40.535981,2,Schuko (EU Plug) 3.70kW,Schuko (EU Plug) 3.70kW_-3.641489_40.535981,Gratuito,No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,Hotel Uve Alcobendas,Hotel Uve Alcobendas_-3.63473_40.53712,"Bulevar de Salvador Allende, 10",-3.63473,40.53712,1,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.63473_40.53712,Gratuito,No,No se puede reservar,24 horas todos los días,
-ALCOBENDAS,McDonalds Alcobendas,McDonalds Alcobendas_-3.656808_40.547812,"Calle del Marqués de la Valdavia, 140",-3.656808,40.547812,3,"TYPE 2 43.00kW
+",CN_ba27a0cc740975a23059a3bdbf60e873,Gratuito,No,No se puede reservar,Laborables de 6:45 a 21:00,
+ALCOBENDAS,Estación de recarga ACCIONA-Bia en Moraleja Green,CS_d95a5a609bb60db2b8f72d39286b63af,"Av. de Europa, 13",-3.65764,40.519896,GL_d69f92c80ec3b2f766b2e4954c872749,2,TYPE 2 7.40kW,CN_6e4dc3deb6f291a9702ad7d4356db539,Gratuito,No,No se puede reservar,,
+ALCOBENDAS,Feníe Energía/0259,CS_5fc28c2bd2d9253aed619834189f8634,"Avenida de Europa, 13",-3.65764,40.519896,GL_d69f92c80ec3b2f766b2e4954c872749,1,TYPE 2 7.40kW,CN_6e4dc3deb6f291a9702ad7d4356db539,"0,6353 EUR/charge",No,,24 horas todos los días,
+ALCOBENDAS,Hampton by Hilton Alcobendas Madrid,CS_856fcfda90e25a0b2fcb206e25d94e9f,"Av. de Fernando Alonso, 4",-3.618301,40.534582,GL_49b3957798ddc8138c38991dca89e349,4,TYPE 2 7.40kW,CN_44251b9b5542fb78894daf5f0954df67,,Necesita manguera tipo 2,No se puede reservar,,
+ALCOBENDAS,"Hinober, Valgrande",CS_4bf5b5f7696b7db0bb1dc511a7dede65,"Calle Valgrande, 8",-3.6519976,40.537382,GL_fbb6a39c683f2c45b8aa0dde37487c1d,4,TYPE 2 3.70kW,CN_aca0c903f453b927841229867d15cab7,"0,2500 EUR/kWh",No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,Hotel Amura Alcobendas,CS_1a2fba2c73894c2417679bb6f86481d8,"Av. de Valdelaparra, 2",-3.641489,40.535981,GL_c330ebcc8e71ab98ae129fe2006330db,2,Schuko (EU Plug) 3.70kW,CN_ffaf3236c9cce78084a874b933d70aec,Gratuito,No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,Hotel Uve Alcobendas,CS_6d7cec35f5996e2473aefa0cec86f29e,"Bulevar de Salvador Allende, 10",-3.63473,40.53712,GL_ca1877da75f81946f7a759f5e02b75c5,1,TYPE 2 7.40kW,CN_a7d7a2a52e12aa6a61f6a94cefad6546,Gratuito,No,No se puede reservar,24 horas todos los días,
+ALCOBENDAS,McDonalds Alcobendas,CS_aa3150e695b7b85ea0b9f0e4fb16a5d0,"Calle del Marqués de la Valdavia, 140",-3.656808,40.547812,GL_a033af1b680424620b3abd2d070b3a62,3,"TYPE 2 43.00kW
 CHAdeMO 50.00kW
 CCS2 50.00kW
-","TYPE 2 43.00kW
-CHAdeMO 50.00kW
-CCS2 50.00kW
-_-3.656808_40.547812",,Si tiene salvo Tipo 2,,,
-ALCOBENDAS,Mercadona Alcobendas,Mercadona Alcobendas_-3.6587782_40.5236888,"Carr. de Fuencarral, ",-3.6587782,40.5236888,,TYPE 2 3.70kW,TYPE 2 3.70kW_-3.6587782_40.5236888,Gratuito,No,No se puede reservar,Comercial,
-ALCOBENDAS,Mitsubishi,Mitsubishi_-3.65044_40.530222,"Calle de Francisco Gervás, 4",-3.65044,40.530222,1,TYPE 2 11.00kW,TYPE 2 11.00kW_-3.65044_40.530222,,No,No se puede reservar,8-13:30 14-19 L-V,
-ALCOBENDAS,Moraleja Green (Tesla DC),Moraleja Green (Tesla DC)_-3.6575428_40.5186645,"Alcobendas Avenida de, ",-3.6575428,40.5186645,3,Tesla Dest.Charger 11.00kW,Tesla Dest.Charger 11.00kW_-3.6575428_40.5186645,Gratuito,Sí,No se puede reservar,"Lunes a jueves: 8:30am a 2:00am, viernes y vísperas festivos hasta 3:30am. Sábados: 9:00am a 3:30am. Domingos y festivos de apertura: 9:00am a 2:00am",
-ALCOBENDAS,Nissan Ibericar Reicomsa Alcobendas,Nissan Ibericar Reicomsa Alcobendas_-3.6639_40.52089,"Calle de los Aragoneses, 18",-3.6639,40.52089,2,"CHAdeMO 50.00kW
+",CN_bbb6c66774ed8420b02bbd1d9233bcee,,Si tiene salvo Tipo 2,,,
+ALCOBENDAS,Mercadona Alcobendas,CS_eada8e8fae076dd732b857243fd17727,"Carr. de Fuencarral, ",-3.6587782,40.5236888,GL_5cd618fef5e811b965a9203501ede5b5,,TYPE 2 3.70kW,CN_7870838b676446df02b810e28439eef6,Gratuito,No,No se puede reservar,Comercial,
+ALCOBENDAS,Mitsubishi,CS_dd18283afd2013cc5c73c99a9ba389df,"Calle de Francisco Gervás, 4",-3.65044,40.530222,GL_eaca5bee0e1ff24f88772c2a009d1aa7,1,TYPE 2 11.00kW,CN_56e1aebd6114fd72ff27aa8f7069b0ae,,No,No se puede reservar,8-13:30 14-19 L-V,
+ALCOBENDAS,Moraleja Green (Tesla DC),CS_f3147f6a04c1712bcfe5c99bba910af6,"Alcobendas Avenida de, ",-3.6575428,40.5186645,GL_f13db98741d3104ec204baab3799bcae,3,Tesla Dest.Charger 11.00kW,CN_015ae6cf0329d1378b2e1afdbad6d1aa,Gratuito,Sí,No se puede reservar,"Lunes a jueves: 8:30am a 2:00am, viernes y vísperas festivos hasta 3:30am. Sábados: 9:00am a 3:30am. Domingos y festivos de apertura: 9:00am a 2:00am",
+ALCOBENDAS,Nissan Ibericar Reicomsa Alcobendas,CS_ca3e7e0f76999fd00a297c8f160baf99,"Calle de los Aragoneses, 18",-3.6639,40.52089,GL_503bdff2da8c9302af735804ea4556ac,2,"CHAdeMO 50.00kW
 Schuko (EU Plug) 3.70kW
-","CHAdeMO 50.00kW
-Schuko (EU Plug) 3.70kW
-_-3.6639_40.52089",Gratuito,No,No se puede reservar,"L-J: 08:00 a 19:00, V: 08:00 a 18:00",
-ALCOBENDAS,Parking Valportillo 20,Parking Valportillo 20_-3.653871_40.532161,"Calle Valportillo Primera, 20",-3.653871,40.532161,4,"TYPE 1 (SAE J1772) 3.70kW
+",CN_672f022903fc9cfcbdbebcb00dcd85cf,Gratuito,No,No se puede reservar,"L-J: 08:00 a 19:00, V: 08:00 a 18:00",
+ALCOBENDAS,Parking Valportillo 20,CS_0a6fee4b67d455129119a95d1f84b34f,"Calle Valportillo Primera, 20",-3.653871,40.532161,GL_c68941b76db6dc75df2a659a08cbcabb,4,"TYPE 1 (SAE J1772) 3.70kW
 TYPE 2 3.70kW
 Schuko (EU Plug) 3.70kW
-","TYPE 1 (SAE J1772) 3.70kW
-TYPE 2 3.70kW
-Schuko (EU Plug) 3.70kW
-_-3.653871_40.532161",Gratuito,No,No se puede reservar,Lunes a Viernes 7AM a 7:30PM,
-ALCOBENDAS,Rafaelhoteles Madrid Norte,Rafaelhoteles Madrid Norte_-3.62144_40.53507,"Av. de Barajas, 28",-3.62144,40.53507,2,"Tesla Dest.Charger 11.00kW
+",CN_4ba98ed6161bcea19c4427a8463ea634,Gratuito,No,No se puede reservar,Lunes a Viernes 7AM a 7:30PM,
+ALCOBENDAS,Rafaelhoteles Madrid Norte,CS_31eacb16824de32299e5a9a0e5e2c3bc,"Av. de Barajas, 28",-3.62144,40.53507,GL_ea9e334c1fa124319ba3273fccb39f8b,2,"Tesla Dest.Charger 11.00kW
 TYPE 2 22.00kW
-","Tesla Dest.Charger 11.00kW
-TYPE 2 22.00kW
-_-3.62144_40.53507",,No,,24 horas todos los días,
-ALCOBENDAS,Renault Autofer Alcobendas,Renault Autofer Alcobendas_-3.65477_40.546684,"Calle del Marqués de la Valdavia, 111",-3.65477,40.546684,2,TYPE 2 11.00kW,TYPE 2 11.00kW_-3.65477_40.546684,Gratuito,No,No se puede reservar,"L-V: 8.00 a 13.30 y 15.00 a 20:30, S: 9:00 a 14:00",
-ALCOBENDAS,Saltoki Alcobendas,Saltoki Alcobendas_-3.648115_40.530784,"Carretera Fuencarral 46 km, 15",-3.648115,40.530784,1,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.648115_40.530784,Exclusivo para clientes,No,No se puede reservar,Comercial,
-ALCOBENDAS,Sede de Groupe Renault,Sede de Groupe Renault_-3.66149_40.51991,"Av. de Europa, 1",-3.66149,40.51991,22,"TYPE 2 22.00kW
+",CN_1641c4efe2d3cefb9062cd6b73226276,,No,,24 horas todos los días,
+ALCOBENDAS,Renault Autofer Alcobendas,CS_38a6c22081aef3c863b5fd463e9950e3,"Calle del Marqués de la Valdavia, 111",-3.65477,40.546684,GL_a521c5399940b57cb6974a5cb206f987,2,TYPE 2 11.00kW,CN_ae07af8457a9533972bffe3209b2b72f,Gratuito,No,No se puede reservar,"L-V: 8.00 a 13.30 y 15.00 a 20:30, S: 9:00 a 14:00",
+ALCOBENDAS,Saltoki Alcobendas,CS_62360aef46f29558184a9b9f607b96d1,"Carretera Fuencarral 46 km, 15",-3.648115,40.530784,GL_fb7167577e563d476749d351623b1477,1,TYPE 2 22.00kW,CN_da63717c95a23da70db1e17176700e3d,Exclusivo para clientes,No,No se puede reservar,Comercial,
+ALCOBENDAS,Sede de Groupe Renault,CS_33b16af2bd23d50517f5f01b0991e8f8,"Av. de Europa, 1",-3.66149,40.51991,GL_ecfbf927546e1b017c77979ea5e99d26,22,"TYPE 2 22.00kW
 Schuko (EU Plug) 3.70kW
 TYPE 2 11.00kW
-","TYPE 2 22.00kW
-Schuko (EU Plug) 3.70kW
-TYPE 2 11.00kW
-_-3.66149_40.51991",Gratuito,No,Obligatorio,24 horas todos los días,
-ALCOBENDAS,Acciona - Avenidad de Europa,Acciona - Avenidad de Europa_-3.656073_40.516553,"Avenida de Europa, 18",-3.656073,40.516553,2,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.656073_40.516553,,No,,24 horas todos los días,
-ALCOBENDAS,Acciona Agua,Acciona Agua_-3.65682_40.51569,"Av. de Europa, 20",-3.65682,40.51569,1,TYPE 2 22.00kW,TYPE 2 22.00kW_-3.65682_40.51569,,No,No se puede reservar,Laborables,
-ALCOBENDAS,FCM,FCM_-3.6559595_40.5243333,"Calle de Francisco Chico Mendes, 1",-3.6559595,40.5243333,1,TYPE 2 7.40kW,TYPE 2 7.40kW_-3.6559595_40.5243333,,No,No se puede reservar,,
+",CN_35d2d1445729ec8e65a064ea73dba035,Gratuito,No,Obligatorio,24 horas todos los días,
+ALCOBENDAS,Acciona - Avenidad de Europa,CS_ae539d4c8e879725e93863829875b27a,"Avenida de Europa, 18",-3.656073,40.516553,GL_eb703e7a2ab3a6d7bfba8189df607e96,2,TYPE 2 22.00kW,CN_1e915be6b5e767c30c323b96747b5266,,No,,24 horas todos los días,
+ALCOBENDAS,Acciona Agua,CS_69a480037c4718a731dbe8af62e4ec5b,"Av. de Europa, 20",-3.65682,40.51569,GL_1539c90e4561751e4391e58dceee54f0,1,TYPE 2 22.00kW,CN_108e59e0a35455fa901021142962710d,,No,No se puede reservar,Laborables,
+ALCOBENDAS,FCM,CS_8a188f4e987358c2bc9c4ab53c6330b3,"Calle de Francisco Chico Mendes, 1",-3.6559595,40.5243333,GL_3df7cf76ac14debb18e7097c2d0baec5,1,TYPE 2 7.40kW,CN_092d6ee5a25f4938b6748afcaadd76de,,No,No se puede reservar,,

@@ -1,7 +1,14 @@
+# mv= Namespace("http://schema.mobivoc.org/#")
+# ns= Namespace("http://HO-G1.linkeddata.es/ontology/Chargingstation#")
+# uiote= Namespace("http://www.w3id.org/urban-iot/uiote#")
+# schema= Namespace("http://schema.org/")
+# xsd= Namespace("http://www.w3.org/2001/XMLSchema#")
+# owl= Namespace("http://www.w3.org/2002/07/owl#")
+
 #Show all SameAs links  
 SELECT DISTINCT *
 WHERE 
 {
     ?s ?p ?o .
-    ?s <http://www.w3.org/2002/07/owl#sameAs> ?o .
+    ?s owl:sameAs ?o .
 }
