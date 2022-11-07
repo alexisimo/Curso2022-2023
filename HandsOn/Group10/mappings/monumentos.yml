@@ -9,7 +9,8 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  prop: http://www.monumentmadrid.com/ontology#
+  prop: http://www.monumentmadrid.com/property#
+  clas: http://www.monumentmadrid.com/class#
   res: http://www.monumentmadrid.com/resource/
   geo_core: https://datos.ign.es/def/geo_core#
   geosparql: http://www.opengis.net/ont/geosparql#
@@ -19,9 +20,9 @@ mappings:
   monumento:
     sources:
       - [csv/monumentos-ciudad-madrid.updated.csv~csv]
-    s: http://www.monumentmadrid.com/resource/$(PK)
+    s: http://www.monumentmadrid.com/resource/monument/$(PK)
     po:
-      - [a, prop:Monument]
+      - [a, class:Monument]
       - [prop:haspk,$(PK),xsd:integer]
       - [prop:hasname,$(NOMBRE)]
       - [prop:hassubtype,$(SUBTIPO)]
@@ -46,15 +47,15 @@ mappings:
   address:
     sources:
       - [csv/monumentos-ciudad-madrid.updated.csv~csv]
-    s: http://www.monumentmadrid.com/resource/$(COORDENADA-X)-$(COORDENADA-Y)
+    s: http://www.monumentmadrid.com/resource/address/$(COORDENADA-X)-$(COORDENADA-Y)
     po:
-      - [a, prop:Address]
+      - [a, class:Address]
       - [prop:hasaddressname,$(NOMBRE-VIA)]
       - [prop:hasaddresstype,$(CLASE-VIAL)]
       - [prop:hasaddressnumber,$(NUM),xsd:integer]
       - [prop:hascity,$(LOCALIDAD)]
       - [prop:hasprovince,$(PROVINCIA)]
-      - [prop:haspostalcode,$(CODIGO-POSTAL),xsd:integer]
+      - [prop:haspostalcode,$(CODIGO-POSTAL)]
       - [prop:hasneighborhoodcode,$(COD-BARRIO),xsd:integer]
       - [prop:hasneighborhood,$(BARRIO)]
       - [prop:hasdistrictcode,$(COD-DISTRITO),xsd:integer]
@@ -66,7 +67,7 @@ mappings:
   point:
     sources:
       - [csv/monumentos-ciudad-madrid.updated.csv~csv]
-    s: http://www.monumentmadrid.com/resource/$(COORDENADA-X)-$(COORDENADA-Y)/geometry
+    s: http://www.monumentmadrid.com/resource/geometry/$(COORDENADA-X)-$(COORDENADA-Y)
     po:
       - [a, sf:Point]
       - [geo_core:xETRS89, $(COORDENADA-X),xsd:float]

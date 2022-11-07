@@ -1,0 +1,556 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prop: <http://www.monumentmadrid.com/property#> .
+@prefix class: <http://www.monumentmadrid.com/class#> .
+@prefix res: <http://www.monumentmadrid.com/resource/> .
+@prefix geo_core: <https://datos.ign.es/def/geo_core#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+
+map:map_address_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "address" ;
+	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028 ;
+	rr:subjectMap map:s_001 .
+
+map:map_district_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "district" ;
+	rr:predicateObjectMap map:pom_033, map:pom_034, map:pom_035, map:pom_036 ;
+	rr:subjectMap map:s_003 .
+
+map:map_monumento_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "monumento" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:subjectMap map:s_000 .
+
+map:map_neighborhood_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "neighborhood" ;
+	rr:predicateObjectMap map:pom_029, map:pom_030, map:pom_031, map:pom_032 ;
+	rr:subjectMap map:s_002 .
+
+map:map_point_000 rml:logicalSource map:source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "point" ;
+	rr:predicateObjectMap map:pom_037, map:pom_038, map:pom_039, map:pom_040, map:pom_041 ;
+	rr:subjectMap map:s_004 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.monumentmadrid.com/class#Monument" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "PK" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "NOMBRE" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "SUBTIPO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "DESCRIPCION" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "FECHA" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "CONTENT-URL" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_007 rml:reference "AUTORES 1" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "AUTORES 2" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_009 rml:reference "AUTORES 3" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_010 rml:reference "AUTORES 4" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_011 rml:reference "AUTORES 5" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_012 rml:reference "AUTORES 6" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_013 rml:reference "AUTORES 7" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_014 rml:reference "AUTORES 8" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_015 rml:reference "AUTORES 9" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_016 rml:reference "AUTORES 10" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_017 rml:reference "AUTORES 11" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_018 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_address_000 .
+
+map:om_019 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.monumentmadrid.com/class#Address" ;
+	rr:termType rr:IRI .
+
+map:om_020 rml:reference "NOMBRE-VIA" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_021 rml:reference "CLASE-VIAL" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_022 rml:reference "NUM" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_023 rml:reference "LOCALIDAD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_024 rml:reference "PROVINCIA" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_025 rml:reference "CODIGO-POSTAL" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_026 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_point_000 .
+
+map:om_027 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_district_000 .
+
+map:om_028 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_neighborhood_000 .
+
+map:om_029 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.monumentmadrid.com/class#Neighborhood" ;
+	rr:termType rr:IRI .
+
+map:om_030 rml:reference "COD-BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_031 rml:reference "BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_032 rml:reference "SAME_AS_BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_033 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.monumentmadrid.com/class#District" ;
+	rr:termType rr:IRI .
+
+map:om_034 rml:reference "COD-DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_035 rml:reference "DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_036 rml:reference "SAME_AS_DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_037 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.opengis.net/ont/sf#Point" ;
+	rr:termType rr:IRI .
+
+map:om_038 rml:reference "COORDENADA-X" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_039 rml:reference "COORDENADA-Y" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_040 rml:reference "LATITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_041 rml:reference "LONGITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant prop:haspk .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasname .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant prop:hassubtype .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasdescription .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasinagurationdate .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant prop:hascontenturl .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant prop:designedBy .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasAddress .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasaddressname .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasaddresstype .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasaddressnumber .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant prop:hascity .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasprovince .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant prop:haspostalcode .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant geosparql:hasGeometry .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasDistrict .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasNeighborhood .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant prop:hascode .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasname .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant prop:hascode .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant prop:hasname .
+
+map:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant geo_core:xETRS89 .
+
+map:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant geo_core:yETRS89 .
+
+map:pm_040 rdf:type rr:PredicateMap ;
+	rr:constant geo_core:latETRS89 .
+
+map:pm_041 rdf:type rr:PredicateMap ;
+	rr:constant geo_core:lonETRS89 .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_018 .
+
+map:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_019 ;
+	rr:predicateMap map:pm_019 .
+
+map:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_020 ;
+	rr:predicateMap map:pm_020 .
+
+map:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_021 ;
+	rr:predicateMap map:pm_021 .
+
+map:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_022 ;
+	rr:predicateMap map:pm_022 .
+
+map:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_023 ;
+	rr:predicateMap map:pm_023 .
+
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_036 .
+
+map:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_037 ;
+	rr:predicateMap map:pm_037 .
+
+map:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_038 ;
+	rr:predicateMap map:pm_038 .
+
+map:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_039 ;
+	rr:predicateMap map:pm_039 .
+
+map:pom_040 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_040 ;
+	rr:predicateMap map:pm_040 .
+
+map:pom_041 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_041 ;
+	rr:predicateMap map:pm_041 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_address_000, map:map_district_000, map:map_monumento_000, map:map_neighborhood_000, map:map_point_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://www.monumentmadrid.com/resource/monument/{PK}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://www.monumentmadrid.com/resource/address/{COORDENADA-X}-{COORDENADA-Y}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://www.monumentmadrid.com/resource/neighborhood/{COD-BARRIO}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://www.monumentmadrid.com/resource/district/{COD-DISTRITO}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://www.monumentmadrid.com/resource/geometry/{COORDENADA-X}-{COORDENADA-Y}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/monumentos-ciudad-madrid-csv.updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/monumentos-ciudad-madrid-csv.updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/monumentos-ciudad-madrid-csv.updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/monumentos-ciudad-madrid-csv.updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/monumentos-ciudad-madrid-csv.updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
