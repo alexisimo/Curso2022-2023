@@ -1,1 +1,10 @@
 .DS_Store
+**/HELP.md
+**/demo/mvnw
+**/demo/mvnw.cmd
+**/demo/*.json
+**/demo/*.ts
+**/demo/.idea
+**/demo/frontend
+**/demo/node_modules
+**/demo/target
