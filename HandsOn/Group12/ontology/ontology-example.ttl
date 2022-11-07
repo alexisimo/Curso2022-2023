@@ -1,42 +1,22 @@
 @prefix ont: <https://datos.madrid.es/egob/catalogo> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix data: <https://datos.madrid.es/egob/catalogo/300154-0-calidad-aguas-regenerada> .
-@prefix aguaRegenerada: <https://datos.madrid.es/egob/catalogo/300154-0-calidad-aguas-regenerada/> .
+@prefix regeneratedWater: <https://www.base.regeneratedWater.com/> .
+@prefix pu: <https://www.base.regeneratedWater.com/purification_plant> .
+@prefix pa: <https://www.base.regeneratedWater.com/param> .
+@prefix sa: <https://www.base.regeneratedWater.com/sample> .
+
+pu:m1_1_VIV_Ecoli: a ont:purification_plant ;
+               ont:hasParameter^^xsd:string ;
+               ont:location "Viveros de la Villa"^^xsd:string ;
+               ont:param "Ecoli"^^xsd:string ;
+               ont:paramater "Ecoli"^^xsd:string ;
 
 
-m1_1VIV_Turb: a ont:regeneratedWater ;
-            ont:fecha "1"^^xsd:string ;
-            ont:turb 1.1^^xsd:float ;
-            ont:ecoli 0^^xsd:float ;
-            ont:leg 0^^xsd:float ;
-            ont:ss 0^^xsd:float ;
-            ont:nem 0^^xsd:float ;
-            ont:lugar "EDAR de Viveros de la Villa"^^xsd:string ;
+pa:m1_1_VIV_Ecoli: a ont:param ;
+                  ont:paramater "Ecoli"^^xsd:string ;
+                  ont:hasSample "Muestra1_1"^^xsd:string ;
+                  ont:muestra1_1 1^^xsd:string ;
 
-
-m_2_1CHI_Turb: a ont:regeneratedWater ;
-            ont:fecha "1"^^xsd:string ;
-            ont:turb 1.2^^xsd:float ;
-            ont:ecoli 0^^xsd:float ;
-            ont:leg 0^^xsd:float ;
-            ont:ss 3.99^^xsd:float ;
-            ont:nem 0^^xsd:float ;
-            ont:lugar "a EDAR de La China"^^xsd:string ;
-
-m2_3GAV_Turb: a ont:regeneratedWater ;
-            ont:fecha "2"^^xsd:string ;
-            ont:turb 2,1^^xsd:float ;
-            ont:ecoli 0^^xsd:float ;
-            ont:leg 0^^xsd:float ;
-            ont:ss 3.99^^xsd:float ;
-            ont:nem 0^^xsd:float ;
-            ont:lugar "EDAR de La Gavia"^^xsd:string ;   
-
-m2_2REJ_Turb: a ont:regeneratedWater ;
-            ont:fecha "2"^^xsd:string ;
-            ont:turb 2,6^^xsd:float ;
-            ont:ecoli 0^^xsd:float ;
-            ont:leg 0^^xsd:float ;
-            ont:ss 5,2^^xsd:float ;
-            ont:nem 0.99^^xsd:float ;
-            ont:lugar "EDAR de Rejas "^^xsd:string ;   
+sa:m1_1_VIV_Ecoli: a ont:sample ;
+                  ont:muestra1_1 1^^xsd:string ;
