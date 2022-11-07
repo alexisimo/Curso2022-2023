@@ -10,34 +10,152 @@ regeneratedWater: a owl:Ontology ;
     dc:title "Regenerate Water ontology" ;
     owl:versionInfo "0.0.1" .
 
+regeneratedWater:Muestra1_1 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_1" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_10 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_10" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_11 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_11" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_12 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_12" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_2 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_2" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_3 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_3" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_4 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_4" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_5 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_5" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_6 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_6" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_7 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_7" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_8 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_8" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra1_9 a owl:DatatypeProperty ;
+    rdfs:label "muestra1_9" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_1 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_1" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_10 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_10" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_11 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_11" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_12 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_12" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_2 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_2" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_3 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_3" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_4 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_4" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_5 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_5" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_6 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_6" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_7 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_7" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_8 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_8" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
+regeneratedWater:Muestra2_9 a owl:DatatypeProperty ;
+    rdfs:label "muestra2_9" ;
+    rdfs:domain regeneratedWater:sample ;
+    rdfs:range xsd:string .
+
 regeneratedWater:hasParameter a owl:ObjectProperty ;
     rdfs:label "has parameter" ;
     rdfs:domain regeneratedWater:purification_plant ;
-    rdfs:range regeneratedWater:parameter .
+    rdfs:range regeneratedWater:param .
 
 regeneratedWater:hasSample a owl:ObjectProperty ;
     rdfs:label "has sample" ;
-    rdfs:domain regeneratedWater:parameter ;
+    rdfs:domain regeneratedWater:param ;
     rdfs:range regeneratedWater:sample .
 
 regeneratedWater:location a owl:DatatypeProperty ;
     rdfs:label "location" ;
+    rdfs:domain regeneratedWater:purification_plant ;
     rdfs:range xsd:string .
 
-regeneratedWater:parameterName a owl:DatatypeProperty ;
-    rdfs:label "parameter name" ;
+regeneratedWater:parameter a owl:DatatypeProperty ;
+    rdfs:label "parameter" ;
+    rdfs:domain regeneratedWater:param ;
     rdfs:range xsd:string .
-
-regeneratedWater:value a owl:DatatypeProperty ;
-    rdfs:label "value" ;
-    rdfs:range xsd:float .
 
 regeneratedWater:purification_plant a owl:Class ;
     rdfs:label "purification_plant" .
 
+regeneratedWater:param a owl:Class ;
+    rdfs:label "param" .
+
 regeneratedWater:sample a owl:Class ;
     rdfs:label "sample" .
-
-regeneratedWater:parameter a owl:Class ;
-    rdfs:label "parameter" .
 

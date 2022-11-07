@@ -84,4 +84,4 @@ mappings:
                 o:
                     value: $(date)
                     datatype: xsd:date
-            - [ssn:featureOfInterest, http://www.semanticweb_g27.org/resource/CivicStructure/$(building_id)~iri]
+            - [ssn:hasFeatureOfInterest, http://www.semanticweb_g27.org/resource/CivicStructure/$(building_id)~iri]

@@ -115,9 +115,9 @@ map:om_017 rml:reference "type_of_energy" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_018 rml:reference "date" ;
-	rdf:type rr:ObjectMap ;
+map:om_018 rdf:type rr:ObjectMap ;
 	rr:datatype xsd:date ;
+	rr:template "{date}" ;
 	rr:termType rr:Literal .
 
 map:om_019 rdf:type rr:ObjectMap ;
@@ -182,7 +182,7 @@ map:pm_018 rdf:type rr:PredicateMap ;
 	rr:constant ssn:resultTime .
 
 map:pm_019 rdf:type rr:PredicateMap ;
-	rr:constant ssn:featureOfInterest .
+	rr:constant ssn:hasFeatureOfInterest .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;

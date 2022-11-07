@@ -1,0 +1,249 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Gis_X",
+    "description": "Remove column Gis_X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Gis_Y",
+    "description": "Remove column Gis_Y"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Fecha de Alta",
+    "description": "Remove column Fecha de Alta"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Direccion",
+    "description": "Remove column Direccion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Tipo de Reserva",
+    "description": "Remove column Tipo de Reserva"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Calle",
+    "newColumnName": "AD_NAME",
+    "description": "Rename column Calle to AD_NAME"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº Finca",
+    "newColumnName": "AD_NUMBER",
+    "description": "Rename column Nº Finca to AD_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "CAPACITY",
+    "description": "Rename column Número de Plazas to CAPACITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Longitud",
+    "newColumnName": "LONGITUDE",
+    "description": "Rename column Longitud to LONGITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Latitud",
+    "newColumnName": "LATITUDE",
+    "description": "Rename column Latitud to LATITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "ID_BIKEST",
+    "description": "Rename column ﻿Número to ID_BIKEST"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUDE",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUDE using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUDE",
+    "expression": "grel:toNumber(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUDE using expression grel:toNumber(value)"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Distrito by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito 1",
+    "newColumnName": "DISTRICT_NUMBER",
+    "description": "Rename column Distrito 1 to DISTRICT_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito 2",
+    "newColumnName": "DISTRICT_NAME",
+    "description": "Rename column Distrito 2 to DISTRICT_NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT_NAME",
+    "expression": "grel:value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT_NAME using expression grel:value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Barrio by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1",
+    "expression": "grel:toNumber(value.split(\"-\")[0])*10+toNumber(value.split(\"-\")[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio 1 using expression grel:toNumber(value.split(\"-\")[0])*10+toNumber(value.split(\"-\")[1])"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 1",
+    "newColumnName": "NEIGHBOURHOOD_NUMBER",
+    "description": "Rename column Barrio 1 to NEIGHBOURHOOD_NUMBER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 2",
+    "newColumnName": "NEIGHBOURHOOD_NAME",
+    "description": "Rename column Barrio 2 to NEIGHBOURHOOD_NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AD_NAME",
+    "expression": "grel:if(value.split(\",\").length()==3,value.split(\",\")[1].trim() + value.split(\",\")[2] + \" \" + value.split(\",\")[0],value.split(\",\")[1].trim() + \" \" + value.split(\",\")[0])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column AD_NAME using expression grel:if(value.split(\",\").length()==3,value.split(\",\")[1].trim() + value.split(\",\")[2] + \" \" + value.split(\",\")[0],value.split(\",\")[1].trim() + \" \" + value.split(\",\")[0])"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AD_NUMBER",
+    "expression": "grel:if(value.match(/\\D*(\\d*)\\D*/)[0]!=\"\",value.match(/\\D*(\\d*)\\D*/)[0],\"S/N\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column AD_NUMBER using expression grel:if(value.match(/\\D*(\\d*)\\D*/)[0]!=\"\",value.match(/\\D*(\\d*)\\D*/)[0],\"S/N\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_BIKEST",
+    "expression": "grel:if(value.split(\" \").length()==2, if(or(value.split(\" \")[1]==\"ampliacion\", value.split(\" \")[1]==\"ampliación\"),\"\",toNumber(value.split(\" \")[0]) + value.split(\" \")[1]), value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID_BIKEST using expression grel:if(value.split(\" \").length()==2, if(or(value.split(\" \")[1]==\"ampliacion\", value.split(\" \")[1]==\"ampliación\"),\"\",toNumber(value.split(\" \")[0]) + value.split(\" \")[1]), value)"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "CAPACITY",
+    "keyColumnName": "ID_BIKEST",
+    "separator": "|",
+    "description": "Join multi-valued cells in column CAPACITY"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAPACITY",
+    "expression": "grel:if(value.split(\"|\").length()==1,toNumber(value),toNumber(value.match(/(\\d+)\\|(\\d+)/)[0]) + toNumber(value.match(/(\\d+)\\|(\\d+)/)[1]))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CAPACITY using expression grel:if(value.split(\"|\").length()==1,toNumber(value),toNumber(value.match(/(\\d+)\\|(\\d+)/)[0]) + toNumber(value.match(/(\\d+)\\|(\\d+)/)[1]))"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ID_BIKEST",
+          "expression": "value",
+          "columnName": "ID_BIKEST",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

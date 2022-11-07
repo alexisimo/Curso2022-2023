@@ -13,8 +13,8 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#CleanPoint/{PK}";
-    rr:class cp:cleanPoint
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/CleanPoint/{PK}";
+    rr:class cp:CleanPoint
   ];
 
   rr:predicateObjectMap [
@@ -42,7 +42,7 @@
     rr:predicate cp:hasAccesibility;
     rr:objectMap [
       rml:reference "ACCESIBILIDAD";
-      rr:datatype <http://www.w3.org/2001/XMLSchema#string>
+      rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>
     ]
   ];
   
@@ -50,16 +50,43 @@
     rr:predicate cp:hasUrl;
     rr:objectMap [
       rml:reference "CONTENT-URL";
-      rr:datatype <http://www.w3.org/2001/XMLSchema#anyUri>
-      ]
+      rr:termType rr:IRI
+    ]
   ];
-
+  rr:predicateObjectMap [
+    rr:predicate cp:hasCoordinateX;
+    rr:objectMap [
+      rml:reference "COORDENADA-X";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasCoordinateY;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasLatitude;
+    rr:objectMap [
+      rml:reference "LATITUD";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate cp:hasLongitude;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+      rr:datatype <http://www.w3.org/2001/XMLSchema#double>
+    ]
+  ];
   rr:predicateObjectMap [
     rr:predicate cp:locatedIn;
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap2>;
       rr:joinCondition [
-        rr:child "NOMBRE-VIA"; rr:parent "NOMBRE-VIA";  ];
+        rr:child "DIRECCION"; rr:parent "DIRECCION";  ];
     ] 
   ];
   rr:predicateObjectMap [
@@ -89,8 +116,8 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#Address/{DIRECCION}";
-    rr:class cp:address
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/Address/{DIRECCION}";
+    rr:class cp:Address
   ];
 
   rr:predicateObjectMap [
@@ -101,7 +128,7 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasNameStreetWD;
     rr:objectMap [
       rml:reference "wikidata_DIRECCION";
       rr:termType rr:IRI
@@ -143,8 +170,8 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#neighborhood/{BARRIO}";
-    rr:class cp:neighborhood
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/neighborhood/{BARRIO}";
+    rr:class cp:Neighborhood
   ];
 
   rr:predicateObjectMap [
@@ -155,7 +182,7 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasNeighborhoodWD;
     rr:objectMap [
       rml:reference "wikidata_BARRIO";
       rr:termType rr:IRI
@@ -177,19 +204,19 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#District/{DISTRITO}";
-    rr:class cp:district
+    rr:template "https://www.puntoslimpiosmadrid.com/resource/District/{DISTRITO}";
+    rr:class cp:District
   ];
 
   rr:predicateObjectMap [
-    rr:predicate cp:districtName;
+    rr:predicate cp:hasDistrict;
     rr:objectMap [
       rml:reference "DISTRITO";
       rr:datatype <http://www.w3.org/2001/XMLSchema#string>
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate cp:hasNameStreet;
+    rr:predicate cp:hasDistrictWD;
     rr:objectMap [
       rml:reference "wikidata_DISTRITO";
       rr:termType rr:IRI

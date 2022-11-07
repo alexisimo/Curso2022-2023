@@ -1,46 +1,65 @@
+#mv: <http://schema.mobivoc.org/#> .
+#ns: <http://HO-G1.linkeddata.es/ontology/Chargingstation#> .
+#schema: <http://schema.org/> .
+#uiote: <http://www.w3id.org/urban-iot/uiote#> .
+#xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 # MOSTRAR TODO
-  SELECT DISTINCT * WHERE { 
+SELECT DISTINCT *
+WHERE { 
     ?sub ?pre ?obj. 
-  }
+}
 
 
 #Mostrar owners en el sistema
-  SELECT DISTINCT ?owner
+SELECT DISTINCT ?owner
 WHERE 
 {
-    ?chargingStation a ns:Charging_station ;
+    ?chargingStation a uiote:ChargingStation ;
         ns:owner ?owner ;
 }
 
 
 #Mostrar todas las estaciones de carga
-  SELECT DISTINCT ?chargingStation
+SELECT DISTINCT ?chargingStation
 WHERE 
 {
-    ?chargingStation a ns:Charging_station ;
+    ?chargingStation a uiote:ChargingStation ;
 }
 
 
 #Mostrar todas las estaciones de carga de un owner
-  SELECT DISTINCT ?chargingStation
+SELECT DISTINCT ?chargingStation
 WHERE 
 {
-    ?chargingStation a ns:Charging_station ;
-        ns:owner "EMOVILI"^^xsd:String ;
+    ?chargingStation a uiote:ChargingStation ;
+        ns:owner "EMOVILI";
 }
 
 #Contar todas las estaciones de cargas existentes
 SELECT  (count(?chargingStation) AS ?count)
 WHERE 
 {
-    ?chargingStation a ns:Charging_station ;
+    ?chargingStation a uiote:ChargingStation ;
 
 }
 
 #mostrar todas las estaciones de carga con precio "Gratuito"
 SELECT DISTINCT ?chargingStation
-    WHERE 
-    {
-        ?chargingStation a ns:Charging_station ;
-            ns:price "Gratuito"^^xsd:String ;
-    }
+WHERE 
+{
+    ?chargingStation a uiote:ChargingStation ;
+        schema:price "Gratuito";
+}
+
+#muestra charging station y localización con owner EMOVILI
+SELECT DISTINCT ?lat ?long ?cs
+WHERE 
+{
+      ?cs a uiote:ChargingStation ;
+       ns:owner "EMOVILI" .
+      ?geo a schema:GeoCoordinates ;
+          schema:latitude ?lat ;
+        schema:longitude ?long .
+      ?cs ns:hasGeocoordinates ?geo .
+}

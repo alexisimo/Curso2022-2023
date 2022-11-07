@@ -45,7 +45,7 @@
     rdfs:range xsd:string .
 :hasCodigoPostalDireccion rdf:type owl:DatatypeProperty ;
     rdfs:domain :Direccion;
-    rdfs:range xsd:nonNegativeInteger.
+    rdfs:range xsd:string.
 :hasUbicacionDireccion rdf:type owl:DatatypeProperty ;
     rdfs:domain :Direccion;
     rdfs:range xsd:string .

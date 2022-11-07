@@ -1,25 +1,27 @@
 <p><strong>Data Analysis</strong></p>
 <p>We have decided which of the resource's attributes we will keep for our project.</p>
 <ul>
-<li>Our decision was to remove the dea code of the defibrilators as it is not relevant to our application, as well as the district code and the type of establishment</li>
-<li>We will also filter if the defibrilator's location is a public one by filtering the ownership column, which has a range of "Public" and "Private"</li>
-<li>Our plan is to merge all columns that refer to the building's location (name of street, door number, etc...) into a single result to deliver easily readable information</li>
-<li>We also noticed that in some cases there are defibrilators with missing data such as the building's working hours. If the missing information is key, as the coordinates of the device, it would not show as a result.</li>
+    <li>Our decision was to remove the dea code of the defibrilators as it is not relevant to our application, as well as the district code and the type of establishment</li>
+    <li>We will also filter if the defibrilator's location is a public one by filtering the ownership column, which has a range of "Public" and "Private"</li>
+    <li>Our plan is to merge all columns that refer to the building's location (name of street, door number, etc...) into a single result to deliver easily readable information</li>
+    <li>We also noticed that in some cases there are defibrilators with missing data such as the building's working hours. If the missing information is key, as the coordinates of the device, it would not show as a result.</li>
 </ul>
 <p><strong>Licensing</strong></p>
 <p>The data was published by the Comunidad de Madrid in April 2022</p>
 <p>The licensing of the data source is (CC BY 4.0), which means it is okay to use it commercialy and change the licensing as long as we give credit to the author. We do not plan to change the licensing as of yet.</p>
+<p><strong>Potential licensing of the dataset to be generated</strong></p>
+<p>The dataset to be generated will inherit the same licensing of the original data, which is Creative Commons (CC BY 4.0)</p>
 <p><strong>Naming strategy</strong></p>
 <p>The planned domain for the app would be&nbsp;</p>
-<p style="padding-left: 40px;"><a>http://desfibriladoresfinder.com</a></p>
+<p style="padding-left: 40px;"><a>http://desfibriladores.com</a></p>
 <p>Both ontologies and resources will be held in</p>
-<p style="padding-left: 40px;"><a>http://desfibriladoresfinder.com/ontology</a></p>
-<p style="padding-left: 40px;"><a>http://desfibriladoresfinder.com/resource</a></p>
+<p style="padding-left: 40px;"><a>http://desfibriladores.com/ontology</a></p>
+<p style="padding-left: 40px;"><a>http://desfibriladores.com/resource</a></p>
 <p>respectively.</p>
 <p>The attributes location_direction and the direction of the defibrilator will redirect the user to the web page of the location and the Google Maps URI of the coordinates respectively</p>
 <p><strong>Structure of the ontology</strong></p>
 <p>We have decided to create the following classes and properties to organize our ontology:</p>
 <ul>
-<li>Classes: Desfibrilador, Establecimiento, Titularidad, Municipio, Direccion, HorarioAcceso</li>
-<li>Properties: hasEstablecimiento, hasTitularidad, hasCodigoMunicipio, hasNombreMunicipio, hasCodigoViaDireccion, hasNombreViaDireccion, hasNumeroPortalDireccion, hasPisoDireccion, hasPuertaDireccion, hasCodigoPostalDireccion, hasUbicacionDireccion, hasCoordXDireccion, hasCoordYDireccion, hasHorarioAcceso, hasMunicipio, hasDireccion.</li>
+    <li>Classes: Desfibrilador, Municipio, Direccion </li>
+    <li>Properties: hasEstablecimiento, hasTitularidad, hasCodigoMunicipio, hasNombreMunicipio, hasCodigoViaDireccion, hasNombreViaDireccion, hasNumeroPortalDireccion, hasPisoDireccion, hasPuertaDireccion, hasCodigoPostalDireccion, hasUbicacionDireccion, hasCoordXDireccion, hasCoordYDireccion, hasHorarioAcceso, hasMunicipio, hasDireccion.</li>
 </ul>

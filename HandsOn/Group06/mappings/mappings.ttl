@@ -16,7 +16,7 @@
 <http://mapping.example.com/rules_000> a void:Dataset.
 ns:source_000 a rml:LogicalSource;
     rdfs:label "desfibriladores";
-    rml:source "../csv/desfibriladores-externos-fuera-ambito-sanitario-csv-updated.csv";
+    rml:source "../csv/desfibriladores-externos-fuera-ambito-sanitario-csv.csv";
     rml:referenceFormulation ql:CSV.
 <http://mapping.example.com/rules_000> void:exampleResource ns:map_triplesmap1_000.
 ns:map_triplesmap1_000 rml:logicalSource ns:source_000;
@@ -56,55 +56,48 @@ ns:pom_003 a rr:PredicateObjectMap.
 ns:map_triplesmap1_000 rr:predicateObjectMap ns:pom_003.
 ns:pm_003 a rr:PredicateMap.
 ns:pom_003 rr:predicateMap ns:pm_003.
-ns:pm_003 rr:constant ns:hasDireccionEstablecimiento.
+ns:pm_003 rr:constant ns:hasHorarioAcceso.
 ns:pom_003 rr:objectMap ns:om_003.
 ns:om_003 a rr:ObjectMap;
-    rml:reference "direccion_establecimiento";
+    rml:reference "horario_acceso";
     rr:termType rr:Literal.
 ns:pom_004 a rr:PredicateObjectMap.
 ns:map_triplesmap1_000 rr:predicateObjectMap ns:pom_004.
 ns:pm_004 a rr:PredicateMap.
 ns:pom_004 rr:predicateMap ns:pm_004.
-ns:pm_004 rr:constant ns:hasHorarioAcceso.
+ns:pm_004 rr:constant ns:hasCodigoDea.
 ns:pom_004 rr:objectMap ns:om_004.
 ns:om_004 a rr:ObjectMap;
-    rml:reference "horario_acceso";
+    rml:reference "codigo_dea";
     rr:termType rr:Literal.
 ns:pom_005 a rr:PredicateObjectMap.
 ns:map_triplesmap1_000 rr:predicateObjectMap ns:pom_005.
 ns:pm_005 a rr:PredicateMap.
 ns:pom_005 rr:predicateMap ns:pm_005.
-ns:pm_005 rr:constant ns:hasCodigoDea.
+ns:pm_005 rr:constant ns:hasHorarioAcceso.
 ns:pom_005 rr:objectMap ns:om_005.
 ns:om_005 a rr:ObjectMap;
-    rml:reference "codigo_dea";
+    rml:reference "horario_acceso";
     rr:termType rr:Literal.
 ns:pom_006 a rr:PredicateObjectMap.
 ns:map_triplesmap1_000 rr:predicateObjectMap ns:pom_006.
 ns:pm_006 a rr:PredicateMap.
 ns:pom_006 rr:predicateMap ns:pm_006.
-ns:pm_006 rr:constant ns:hasMunicipio.
+ns:pm_006 rr:constant ns:hasDireccionEstablecimiento.
 ns:pom_006 rr:objectMap ns:om_006.
-ns:om_006 a rr:ObjectMap;
-    rml:reference "municipio_codigo";
-    rr:termType rr:Literal;
-    rr:datatype xsd:nonNegativeInteger.
 ns:pom_007 a rr:PredicateObjectMap.
 ns:map_triplesmap1_000 rr:predicateObjectMap ns:pom_007.
 ns:pm_007 a rr:PredicateMap.
 ns:pom_007 rr:predicateMap ns:pm_007.
-ns:pm_007 rr:constant ns:hasHorarioAcceso.
+ns:pm_007 rr:constant ns:hasMunicipio.
 ns:pom_007 rr:objectMap ns:om_007.
-ns:om_007 a rr:ObjectMap;
-    rml:reference "horario_acceso";
-    rr:termType rr:Literal.
 <http://mapping.example.com/rules_000> void:exampleResource ns:map_triplesmap2_000.
 ns:map_triplesmap2_000 rml:logicalSource ns:source_000;
     a rr:TriplesMap;
     rdfs:label "triplesmap2".
 ns:s_001 a rr:SubjectMap.
 ns:map_triplesmap2_000 rr:subjectMap ns:s_001.
-ns:s_001 rml:reference "direccion_establecimiento".
+ns:s_001 rr:template "http://desfibriladores.com/ontology/desfibrilador/direccion/{direccion_establecimiento}".
 ns:pom_008 a rr:PredicateObjectMap.
 ns:map_triplesmap2_000 rr:predicateObjectMap ns:pom_008.
 ns:pm_008 a rr:PredicateMap.
@@ -167,8 +160,7 @@ ns:pm_014 rr:constant ns:hasCodigoPostalDireccion.
 ns:pom_014 rr:objectMap ns:om_014.
 ns:om_014 a rr:ObjectMap;
     rml:reference "direccion_codigo_postal";
-    rr:termType rr:Literal;
-    rr:datatype xsd:nonNegativeInteger.
+    rr:termType rr:Literal.
 ns:pom_015 a rr:PredicateObjectMap.
 ns:map_triplesmap2_000 rr:predicateObjectMap ns:pom_015.
 ns:pm_015 a rr:PredicateMap.
@@ -204,7 +196,7 @@ ns:map_triplesmap3_000 rml:logicalSource ns:source_000;
     rdfs:label "triplesmap3".
 ns:s_002 a rr:SubjectMap.
 ns:map_triplesmap3_000 rr:subjectMap ns:s_002.
-ns:s_002 rml:reference "municipio_codigo".
+ns:s_002 rr:template "http://desfibriladores.com/ontology/desfibrilador/municipio/{municipio_codigo}".
 ns:pom_018 a rr:PredicateObjectMap.
 ns:map_triplesmap3_000 rr:predicateObjectMap ns:pom_018.
 ns:pm_018 a rr:PredicateMap.
@@ -233,3 +225,7 @@ ns:pom_020 rr:objectMap ns:om_020.
 ns:om_020 a rr:ObjectMap;
     rml:reference "municipio_nombre";
     rr:termType rr:Literal.
+ns:om_006 a rr:ObjectMap;
+    rr:parentTriplesMap ns:map_triplesmap2_000.
+ns:om_007 a rr:ObjectMap;
+    rr:parentTriplesMap ns:map_triplesmap3_000.

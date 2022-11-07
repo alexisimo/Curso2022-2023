@@ -1,90 +1,75 @@
-@base <https://www.puntodecargasMadrid.com/> .
+@base <https://www.puntodecargasMadrid.com/recargas/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix properties: <https://www.puntodecargasMadrid/Propiedades#> .
-@prefix classes: <https://www.puntodecargasMadrid/Clases#> .
+@prefix properties: <https://www.puntodecargasMadrid/recargas/Propiedades#> .
+@prefix classes: <https://www.puntodecargasMadrid/recargas/Clases#> .
 @prefix schema: <http://schema.org/> .
 
 # Ontology
 
-<https://www.puntodecargasMadrid.com/> rdfs:type owl:Ontology.
+<https://www.puntodecargasMadrid.com/recargas/> rdfs:type owl:Ontology .
 
 # Classes                
 
-classes:PuntosRecarga rdf:type owl:Class.
+classes:PuntoRecarga rdf:type owl:Class .
 
-classes:Distrito rdf:type owl:Class.
+classes:Distrito rdf:type owl:Class .
 
-classes:Barrio rdf:type owl:Class
+classes:Barrio rdf:type owl:Class .
 
 schema:GeoCoordinates rdf:type owl:Class .
 
 # Data Properties
 
 properties:emplazamiento rdf:type owl:DatatypeProperty ;
-          rdfs:domain classes:PuntoRecarga ;
-          rdfs:range xsd:string .
+	rdfs:range xsd:string .
 
 properties:infoAdicional rdf:type owl:DatatypeProperty ;
-	rdfs:domain classes:PuntoRecarga ;
         rdfs:range xsd:string .
 
 properties:numEquipo rdf:type owl:DatatypeProperty ;
-	rdf:domain classes:puntoRecarga ;
         rdfs:range xsd:integer .
 
 properties:potencia rdf:type owl:DatatypeProperty ;
-	rdf:domain classes:puntoRecarga ;
         rdfs:range xsd:string .
 
 properties:conectorCC rdf:type owl:DatatypeProperty ;
-        rdfs:domain classes:PuntoRecarga ;
         rdfs:range xsd:integer .
 
 properties:conectorAC rdf:type owl:DatatypeProperty ;
-         rdfs:domain classes:PuntoRecarga ;
-         rdfs:range xsd:integer .
+        rdfs:range xsd:integer .
 
 properties:operador rdf:type owl:DatatypeProperty ;
-         rdfs:domain classes:PuntoRecarga ;
-         rdfs:range xsd:string .
+        rdfs:range xsd:string .
 
 
 schema:value rdf:type owl:DatatypeProperty ;
-                rdfs:domain classes:Distritos,Barrios ;
-                rdfs:range xsd:Integer .
+        rdfs:range xsd:integer .
 
 
 schema:address rdf:type owl:DatatypeProperty ;
-                rdfs:domain classes:PuntoRecarga ;
-                rdfs:range xsd:string .
+	rdfs:range xsd:string .
 
 schema:label rdf:type owl:DatatypeProperty ;
-                rdfs:domain classes:Distritos,Barrios ;
-                rdfs:range xsd:string .
+	rdfs:range xsd:string .
 
 schema:longitude rdf:type owl:DatatypeProperty ;
-                rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:string .
+	rdfs:range xsd:float .
 
 schema:latitude rdf:type owl:DatatypeProperty ;
-                rdfs:domain schema:GeoCoordinates ;
-                rdfs:range xsd:string .
+	rdfs:range xsd:float .
 
 
 
 # Object Properties
 
 properties:puntoRecargaPerteneceDist rdf:type owl:ObjectProperty ;
-        	rdfs:domain classes:PuntosRecarga ;
 		rdfs:range classes:Distrito .
 
 properties:distPerteneceBarrio rdf:type owl:ObjectProperty ;
-                rdfs:domain classes:Distrito ;
 		rdfs:range classes:Barrio .
 
 schema:geo rdf:type owl:ObjectProperty ;
-                rdfs:domain classes:PuntoRecarga ;
                 rdfs:range schema:GeoCoordinates .

@@ -1,0 +1,101 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  dc: http://purl.org/dc/elements/1.1/
+  geosparql: http://www.opengis.net/ont/geosparql# 
+  esbici: http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#
+  ev: https://smart-data-models.github.io/dataModel.Transportation/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ont: http://smartcity.linkeddata.es/transport/ontology/
+  
+mappings:
+  bikeStation:
+    sources:
+      - [csv/bases_bicimad-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/bikeStation/$(ID_BIKEST)
+    po:
+      - [a, esbici:EstacionBicicleta]
+      - [dct:identifier,$(ID_BIKEST),xsd:string]
+      - [ont:capacity,$(CAPACITY),xsd:integer]
+      - [ont:hasNeighbourhood,http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_NUMBER)~iri]
+      - [ont:hasAddress,http://smartcity.linkeddata.es/transport/data/address/AD$(ID_BIKEST)BS~iri]
+      - [geosparql:hasGeometry,http://smartcity.linkeddata.es/transport/data/geopoint/GP$(ID_BIKEST)BS~iri]
+
+  addressBS:
+    sources:
+      - [csv/bases_bicimad-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/address/AD$(ID_BIKEST)BS
+    po: 
+      - [a, ont:Address]
+      - [ont:ad_name,$(AD_NAME),xsd:string]
+      - [ont:ad_number,$(AD_NUMBER),xsd:string]
+
+  addressEVC:
+    sources:
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/address/AD$(ID_EVC)EVC
+    po: 
+      - [a, ont:Address]
+      - [ont:ad_name,$(AD_NAME),xsd:string]
+      - [ont:ad_number,$(AD_NUMBER),xsd:string]
+
+  geopointBS:
+    sources:
+      - [csv/bases_bicimad-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/geopoint/GP$(ID_BIKEST)BS
+    po: 
+      - [a, geosparql:Point]
+      - [geosparql:asWKT, POINT($(LATITUDE) $(LONGITUDE)),geosparql:wktLiteral]
+
+  geopointEVC:
+    sources:
+      - [csv/COORDENADAS-PUNTOS-DE-RECARGA.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/geopoint/GP$(ID_EVC)EVC
+    po: 
+      - [a, geosparql:Point]
+      - [geosparql:asWKT, POINT($(LATITUDE) $(LONGITUDE)),geosparql:wktLiteral]
+      
+  chargeStation:
+    sources:
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/chargeStation/$(ID_EVC)
+    po:
+      - [a, ev:EVChargingStation]
+      - [ev:allowedVehicleType,["car", "truck"], xsd:string]
+      - [ev:capacity,$(CAPACITY),xsd:integer]
+      - [ev:socketNumber,$(SOCKET_NUMBER),xsd:integer]
+      - [ev:socketType,$(SOCKET_TYPE),xsd:string]
+      - [ont:id,$(ID_EVC),xsd:string]
+      - [ont:hasLocationType,$(LOCATION),xsd:string]
+      - [ont:hasAddress, http://smartcity.linkeddata.es/transport/data/address/AD$(ID_EVC)EVC~iri]
+      - [ont:hasNeighbourhood, http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_NUMBER)~iri]
+      - [ont:hasOperator, $(OPERATOR), xsd:string]
+      - [geosparql:hasGeometry, http://smartcity.linkeddata.es/transport/data/geopoint/GP$(ID_EVC)EVC~iri]
+
+  neighbourhood:
+    sources:
+      - [csv/bases_bicimad-updated-v2.csv~csv]
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/neighbourhood/$(NEIGHBOURHOOD_NUMBER)
+    po:
+      - [a, ont:Neighbourhood]
+      - [ont:number_id,$(NEIGHBOURHOOD_NUMBER),xsd:integer]
+      - [ont:name_id,$(NEIGHBOURHOOD_NAME),xsd:string]
+      - [ont:hasDistrict, http://smartcity.linkeddata.es/transport/data/district/$(DISTRICT_NUMBER)~iri]
+
+  district:
+    sources:
+      - [csv/bases_bicimad-updated-v2.csv~csv]
+      - [csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated-v2.csv~csv]
+    s: http://smartcity.linkeddata.es/transport/data/district/$(DISTRICT_NUMBER)
+    po:
+      - [a, ont:District]
+      - [ont:number_id,$(DISTRICT_NUMBER),xsd:integer]
+      - [ont:name_id,$(DISTRICT_NAME),xsd:string]
