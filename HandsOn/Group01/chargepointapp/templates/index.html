@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title1">Bienvenido a Charging Point App</h1>
+    <hr>
+    <!-- divide page in two columns, one with a map using folium and the other contains a form (html and flask), bootstrap 5-->
+    <!-- center columns content -->
+    <div class="d-flex align-content-center flex-wrap">
+
+        <div class="col-6 p-5">
+            <p>
+                Introduce los datos a filtrar y pulsa el botón "Realizar query" para ver los puntos de carga disponibles.
+            </p>
+            <form action="/" method="POST">
+                <div class="mb-3">
+                    <label for="address" class="form-label">Dirección</label>
+                    
+                    <input type="text" class="form-control" id="direccion" placeholder="Introduce el nombre de una calle, número..." name="address">
+                </div>
+                <div class="mb-3">
+                    <label for="owner" class="form-label">Operadores</label>
+                    <select class="form-select" name="owner" aria-label="owner select">
+                        <option selected>{{defaultOwner}}</option>
+                        {% for e in owners %}
+                            <option value="{{e}}">{{e}}</option>
+                        {% endfor %}
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Tipo de conector</label>
+                    <select class="form-select" name="connectorType" aria-label="connector type select">
+                        <option selected>{{defaultConnectorType}}</option>
+                        {% for e in connectorsType %}
+                            <option value="{{e}}">{{e}}</option>
+                        {% endfor %}
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <label for="bookable" class="form-label">Reservable</label>
+                    <select class="form-select" name="bookable" aria-label="bookable select">
+                        <option selected>{{defaultBookable}}</option>
+                        {% for e in bookables %}
+                            <option value="{{e}}">{{e}}</option>
+                        {% endfor %}
+                      </select>
+                </div>
+                <button type="submit" class="btn btn-dark">Realizar query</button>
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/'">Reset</button>
+            </form>
+        </div>
+
+        <div class="col-6">
+            <div id="mapid">
+                <iframe class="map", src="/foliumMap" width="700" height="560"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+{% endblock %}

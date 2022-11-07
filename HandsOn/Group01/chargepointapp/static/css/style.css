@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+body {
+    font-family: "IBM Plex Sans";
+}
+h4 {
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+    margin-bottom: 14px;
+}
+.navbar-brand {
+    font-family: "Plus Jakarta Sans";
+}
+.title1 {
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.map-popup {
+    color: red;
+}
