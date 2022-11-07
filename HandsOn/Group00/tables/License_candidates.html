@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://joinup.ec.europa.eu/licence/compare/CC-BY-4.0;EUPL-1.2;PDDL-1.0;ODC-By-1.0;ODbL-1.0 -->
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+    <style>
+.btn{--bs-btn-padding-x:1.6rem;--bs-btn-padding-y:0.4rem;--bs-btn-font-family:;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.5;--bs-btn-color:#242626;--bs-btn-bg:transparent;--bs-btn-border-width:1px;--bs-btn-border-color:transparent;--bs-btn-border-radius:0.4rem;--bs-btn-box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);--bs-btn-disabled-opacity:0.5;--bs-btn-focus-box-shadow:0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb),.5);display:inline-block;padding:var(--bs-btn-padding-y) var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;border:var(--bs-btn-border-width) solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg);box-shadow:var(--bs-btn-box-shadow);transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;}@media (prefers-reduced-motion:reduce){.btn{transition:none;}}.btn:hover{color:var(--bs-btn-hover-color);text-decoration:none;background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color);}.btn-check:focus + .btn,.btn:focus{color:var(--bs-btn-hover-color);background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color);outline:0;box-shadow:var(--bs-btn-box-shadow),var(--bs-btn-focus-box-shadow);}.btn-check:checked + .btn,.btn-check:active + .btn,.btn:active,.btn.active,.btn.show{color:var(--bs-btn-active-color);background-color:var(--bs-btn-active-bg);border-color:var(--bs-btn-active-border-color);box-shadow:var(--bs-btn-active-shadow);}.btn-check:checked + .btn:focus,.btn-check:active + .btn:focus,.btn:active:focus,.btn.active:focus,.btn.show:focus{box-shadow:var(--bs-btn-active-shadow),var(--bs-btn-focus-box-shadow);}.btn:disabled,.btn.disabled,fieldset:disabled .btn{color:var(--bs-btn-disabled-color);pointer-events:none;background-color:var(--bs-btn-disabled-bg);border-color:var(--bs-btn-disabled-border-color);opacity:var(--bs-btn-disabled-opacity);box-shadow:none;}.btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#143b76;--bs-btn-border-color:#143b76;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#12356a;--bs-btn-hover-border-color:#102f5e;--bs-btn-focus-shadow-rgb:55,88,139;--bs-btn-active-color:#fff;--bs-btn-active-bg:#102f5e;--bs-btn-active-border-color:#0f2c59;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#143b76;--bs-btn-disabled-border-color:#143b76;}.btn-secondary{--bs-btn-color:#000;--bs-btn-bg:#e7f1fb;--bs-btn-border-color:#e7f1fb;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#e9f2fb;--bs-btn-hover-border-color:#e9f2fb;--bs-btn-focus-shadow-rgb:196,205,213;--bs-btn-active-color:#000;--bs-btn-active-bg:#ecf4fc;--bs-btn-active-border-color:#e9f2fb;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#e7f1fb;--bs-btn-disabled-border-color:#e7f1fb;}.btn-success{--bs-btn-color:#000;--bs-btn-bg:#18bf80;--bs-btn-border-color:#18bf80;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#2fc58d;--bs-btn-hover-border-color:#2fc58d;--bs-btn-focus-shadow-rgb:20,162,109;--bs-btn-active-color:#000;--bs-btn-active-bg:#46cc99;--bs-btn-active-border-color:#2fc58d;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#18bf80;--bs-btn-disabled-border-color:#18bf80;}.btn-info{--bs-btn-color:#fff;--bs-btn-bg:#0d768b;--bs-btn-border-color:#0d768b;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#0c6a7d;--bs-btn-hover-border-color:#0a5e6f;--bs-btn-focus-shadow-rgb:49,139,156;--bs-btn-active-color:#fff;--bs-btn-active-bg:#0a5e6f;--bs-btn-active-border-color:#0a5968;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#0d768b;--bs-btn-disabled-border-color:#0d768b;}.btn-warning{--bs-btn-color:#000;--bs-btn-bg:#eba843;--bs-btn-border-color:#eba843;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#edb156;--bs-btn-hover-border-color:#edb156;--bs-btn-focus-shadow-rgb:200,143,57;--bs-btn-active-color:#000;--bs-btn-active-bg:#efb969;--bs-btn-active-border-color:#edb156;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#eba843;--bs-btn-disabled-border-color:#eba843;}.btn-danger{--bs-btn-color:#000;--bs-btn-bg:#eb3434;--bs-btn-border-color:#eb3434;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#ed4848;--bs-btn-hover-border-color:#ed4848;--bs-btn-focus-shadow-rgb:200,44,44;--bs-btn-active-color:#000;--bs-btn-active-bg:#ef5d5d;--bs-btn-active-border-color:#ed4848;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#eb3434;--bs-btn-disabled-border-color:#eb3434;}.btn-light{--bs-btn-color:#000;--bs-btn-bg:#f8f9fa;--bs-btn-border-color:#f8f9fa;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#dfe0e1;--bs-btn-hover-border-color:#c6c7c8;--bs-btn-focus-shadow-rgb:211,212,213;--bs-btn-active-color:#000;--bs-btn-active-bg:#c6c7c8;--bs-btn-active-border-color:#babbbc;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#f8f9fa;--bs-btn-disabled-border-color:#f8f9fa;}.btn-dark{--bs-btn-color:#fff;--bs-btn-bg:#212529;--bs-btn-border-color:#212529;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#373b3e;--bs-btn-hover-border-color:#373b3e;--bs-btn-focus-shadow-rgb:66,70,73;--bs-btn-active-color:#fff;--bs-btn-active-bg:#4d5154;--bs-btn-active-border-color:#373b3e;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#212529;--bs-btn-disabled-border-color:#212529;}.btn-brand{--bs-btn-color:#fff;--bs-btn-bg:#1073de;--bs-btn-border-color:#1073de;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#0e68c8;--bs-btn-hover-border-color:#0d5cb2;--bs-btn-focus-shadow-rgb:52,136,227;--bs-btn-active-color:#fff;--bs-btn-active-bg:#0d5cb2;--bs-btn-active-border-color:#0c56a7;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#1073de;--bs-btn-disabled-border-color:#1073de;}.btn-outline-primary{--bs-btn-color:#143b76;--bs-btn-border-color:#143b76;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#143b76;--bs-btn-hover-border-color:#143b76;--bs-btn-focus-shadow-rgb:20,59,118;--bs-btn-active-color:#fff;--bs-btn-active-bg:#143b76;--bs-btn-active-border-color:#143b76;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#143b76;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#143b76;--bs-gradient:none;}.btn-outline-secondary{--bs-btn-color:#e7f1fb;--bs-btn-border-color:#e7f1fb;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#e7f1fb;--bs-btn-hover-border-color:#e7f1fb;--bs-btn-focus-shadow-rgb:231,241,251;--bs-btn-active-color:#000;--bs-btn-active-bg:#e7f1fb;--bs-btn-active-border-color:#e7f1fb;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#e7f1fb;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#e7f1fb;--bs-gradient:none;}.btn-outline-success{--bs-btn-color:#18bf80;--bs-btn-border-color:#18bf80;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#18bf80;--bs-btn-hover-border-color:#18bf80;--bs-btn-focus-shadow-rgb:24,191,128;--bs-btn-active-color:#000;--bs-btn-active-bg:#18bf80;--bs-btn-active-border-color:#18bf80;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#18bf80;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#18bf80;--bs-gradient:none;}.btn-outline-info{--bs-btn-color:#0d768b;--bs-btn-border-color:#0d768b;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#0d768b;--bs-btn-hover-border-color:#0d768b;--bs-btn-focus-shadow-rgb:13,118,139;--bs-btn-active-color:#fff;--bs-btn-active-bg:#0d768b;--bs-btn-active-border-color:#0d768b;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#0d768b;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#0d768b;--bs-gradient:none;}.btn-outline-warning{--bs-btn-color:#eba843;--bs-btn-border-color:#eba843;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#eba843;--bs-btn-hover-border-color:#eba843;--bs-btn-focus-shadow-rgb:235,168,67;--bs-btn-active-color:#000;--bs-btn-active-bg:#eba843;--bs-btn-active-border-color:#eba843;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#eba843;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#eba843;--bs-gradient:none;}.btn-outline-danger{--bs-btn-color:#eb3434;--bs-btn-border-color:#eb3434;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#eb3434;--bs-btn-hover-border-color:#eb3434;--bs-btn-focus-shadow-rgb:235,52,52;--bs-btn-active-color:#000;--bs-btn-active-bg:#eb3434;--bs-btn-active-border-color:#eb3434;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#eb3434;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#eb3434;--bs-gradient:none;}.btn-outline-light{--bs-btn-color:#f8f9fa;--bs-btn-border-color:#f8f9fa;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#f8f9fa;--bs-btn-hover-border-color:#f8f9fa;--bs-btn-focus-shadow-rgb:248,249,250;--bs-btn-active-color:#000;--bs-btn-active-bg:#f8f9fa;--bs-btn-active-border-color:#f8f9fa;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#f8f9fa;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#f8f9fa;--bs-gradient:none;}.btn-outline-dark{--bs-btn-color:#212529;--bs-btn-border-color:#212529;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#212529;--bs-btn-hover-border-color:#212529;--bs-btn-focus-shadow-rgb:33,37,41;--bs-btn-active-color:#fff;--bs-btn-active-bg:#212529;--bs-btn-active-border-color:#212529;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#212529;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#212529;--bs-gradient:none;}.btn-outline-brand{--bs-btn-color:#1073de;--bs-btn-border-color:#1073de;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#1073de;--bs-btn-hover-border-color:#1073de;--bs-btn-focus-shadow-rgb:16,115,222;--bs-btn-active-color:#fff;--bs-btn-active-bg:#1073de;--bs-btn-active-border-color:#1073de;--bs-btn-active-shadow:inset 0 3px 5px rgba(0,0,0,0.125);--bs-btn-disabled-color:#1073de;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#1073de;--bs-gradient:none;}.btn-link{--bs-btn-font-weight:400;--bs-btn-color:#1073de;--bs-btn-bg:transparent;--bs-btn-border-color:transparent;--bs-btn-hover-color:var(--bs-link-hover-color);--bs-btn-hover-border-color:transparent;--bs-btn-active-color:var(--bs-link-hover-color);--bs-btn-active-border-color:transparent;--bs-btn-disabled-color:#6d7173;--bs-btn-disabled-border-color:transparent;--bs-btn-box-shadow:none;--bs-btn-focus-shadow-rgb:55,88,139;text-decoration:none;}.btn-link:hover,.btn-link:focus{text-decoration:underline;}.btn-link:focus{color:var(--bs-btn-color);}.btn-link:hover{color:var(--bs-btn-hover-color);}.btn-lg{--bs-btn-padding-y:0.5rem;--bs-btn-padding-x:1rem;--bs-btn-font-size:1.25rem;--bs-btn-border-radius:0.5rem;}.btn-sm{--bs-btn-padding-y:0.25rem;--bs-btn-padding-x:0.5rem;--bs-btn-font-size:0.875rem;--bs-btn-border-radius:0.25rem;}.dropup,.dropend,.dropdown,.dropstart,.dropup-center,.dropdown-center{position:relative;}.dropdown-toggle{white-space:nowrap;}.dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";border-top:0.3em solid;border-right:0.3em solid transparent;border-bottom:0;border-left:0.3em solid transparent;}.dropdown-toggle:empty::after{margin-left:0;}.dropdown-menu{--bs-dropdown-min-width:10rem;--bs-dropdown-padding-x:0;--bs-dropdown-padding-y:0.5rem;--bs-dropdown-spacer:0.125rem;--bs-dropdown-font-size:1rem;--bs-dropdown-color:#242626;--bs-dropdown-bg:#fff;--bs-dropdown-border-color:var(--bs-border-color-translucent);--bs-dropdown-border-radius:0.375rem;--bs-dropdown-border-width:1px;--bs-dropdown-inner-border-radius:calc(0.375rem - 1px);--bs-dropdown-divider-bg:var(--bs-border-color-translucent);--bs-dropdown-divider-margin-y:0.5rem;--bs-dropdown-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);--bs-dropdown-link-color:#242626;--bs-dropdown-link-hover-color:#202222;--bs-dropdown-link-hover-bg:#f5f6f7;--bs-dropdown-link-active-color:#fff;--bs-dropdown-link-active-bg:#143b76;--bs-dropdown-link-disabled-color:#858a8c;--bs-dropdown-item-padding-x:1rem;--bs-dropdown-item-padding-y:0.25rem;--bs-dropdown-header-color:#6d7173;--bs-dropdown-header-padding-x:1rem;--bs-dropdown-header-padding-y:0.5rem;position:absolute;z-index:40;display:none;min-width:var(--bs-dropdown-min-width);padding:var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);margin:0;font-size:var(--bs-dropdown-font-size);color:var(--bs-dropdown-color);text-align:left;list-style:none;background-color:var(--bs-dropdown-bg);background-clip:padding-box;border:var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);border-radius:var(--bs-dropdown-border-radius);box-shadow:var(--bs-dropdown-box-shadow);}.dropdown-menu[data-bs-popper]{top:100%;left:0;margin-top:var(--bs-dropdown-spacer);}.dropdown-menu-start{--bs-position:start;}.dropdown-menu-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-end{--bs-position:end;}.dropdown-menu-end[data-bs-popper]{right:0;left:auto;}@media (min-width:576px){.dropdown-menu-sm-start{--bs-position:start;}.dropdown-menu-sm-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-sm-end{--bs-position:end;}.dropdown-menu-sm-end[data-bs-popper]{right:0;left:auto;}}@media (min-width:768px){.dropdown-menu-md-start{--bs-position:start;}.dropdown-menu-md-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-md-end{--bs-position:end;}.dropdown-menu-md-end[data-bs-popper]{right:0;left:auto;}}@media (min-width:992px){.dropdown-menu-lg-start{--bs-position:start;}.dropdown-menu-lg-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-lg-end{--bs-position:end;}.dropdown-menu-lg-end[data-bs-popper]{right:0;left:auto;}}@media (min-width:1200px){.dropdown-menu-xl-start{--bs-position:start;}.dropdown-menu-xl-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-xl-end{--bs-position:end;}.dropdown-menu-xl-end[data-bs-popper]{right:0;left:auto;}}@media (min-width:1400px){.dropdown-menu-xxl-start{--bs-position:start;}.dropdown-menu-xxl-start[data-bs-popper]{right:auto;left:0;}.dropdown-menu-xxl-end{--bs-position:end;}.dropdown-menu-xxl-end[data-bs-popper]{right:0;left:auto;}}.dropup .dropdown-menu[data-bs-popper]{top:auto;bottom:100%;margin-top:0;margin-bottom:var(--bs-dropdown-spacer);}.dropup .dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";border-top:0;border-right:0.3em solid transparent;border-bottom:0.3em solid;border-left:0.3em solid transparent;}.dropup .dropdown-toggle:empty::after{margin-left:0;}.dropend .dropdown-menu[data-bs-popper]{top:0;right:auto;left:100%;margin-top:0;margin-left:var(--bs-dropdown-spacer);}.dropend .dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";border-top:0.3em solid transparent;border-right:0;border-bottom:0.3em solid transparent;border-left:0.3em solid;}.dropend .dropdown-toggle:empty::after{margin-left:0;}.dropend .dropdown-toggle::after{vertical-align:0;}.dropstart .dropdown-menu[data-bs-popper]{top:0;right:100%;left:auto;margin-top:0;margin-right:var(--bs-dropdown-spacer);}.dropstart .dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";}.dropstart .dropdown-toggle::after{display:none;}.dropstart .dropdown-toggle::before{display:inline-block;margin-right:0.255em;vertical-align:0.255em;content:"";border-top:0.3em solid transparent;border-right:0.3em solid;border-bottom:0.3em solid transparent;}.dropstart .dropdown-toggle:empty::after{margin-left:0;}.dropstart .dropdown-toggle::before{vertical-align:0;}.dropdown-divider{height:0;margin:var(--bs-dropdown-divider-margin-y) 0;overflow:hidden;border-top:1px solid var(--bs-dropdown-divider-bg);opacity:1;}.dropdown-item{display:block;width:100%;padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);clear:both;font-weight:400;color:var(--bs-dropdown-link-color);text-align:inherit;white-space:nowrap;background-color:transparent;border:0;}.dropdown-item:hover,.dropdown-item:focus{color:var(--bs-dropdown-link-hover-color);text-decoration:none;background-color:var(--bs-dropdown-link-hover-bg);}.dropdown-item.active,.dropdown-item:active{color:var(--bs-dropdown-link-active-color);text-decoration:none;background-color:var(--bs-dropdown-link-active-bg);}.dropdown-item.disabled,.dropdown-item:disabled{color:var(--bs-dropdown-link-disabled-color);pointer-events:none;background-color:transparent;}.dropdown-menu.show{display:block;}.dropdown-header{display:block;padding:var(--bs-dropdown-header-padding-y) var(--bs-dropdown-header-padding-x);margin-bottom:0;font-size:0.875rem;color:var(--bs-dropdown-header-color);white-space:nowrap;}.dropdown-item-text{display:block;padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);color:var(--bs-dropdown-link-color);}.dropdown-menu-dark{--bs-dropdown-color:#dadee0;--bs-dropdown-bg:#3d3f40;--bs-dropdown-border-color:var(--bs-border-color-translucent);--bs-dropdown-box-shadow:;--bs-dropdown-link-color:#dadee0;--bs-dropdown-link-hover-color:#fff;--bs-dropdown-divider-bg:var(--bs-border-color-translucent);--bs-dropdown-link-hover-bg:rgba(255,255,255,0.15);--bs-dropdown-link-active-color:#fff;--bs-dropdown-link-active-bg:#143b76;--bs-dropdown-link-disabled-color:#858a8c;--bs-dropdown-header-color:#858a8c;}.nav{--bs-nav-link-padding-x:1rem;--bs-nav-link-padding-y:0.5rem;--bs-nav-link-font-weight:;--bs-nav-link-color:var(--bs-link-color);--bs-nav-link-hover-color:var(--bs-link-hover-color);--bs-nav-link-disabled-color:#6d7173;display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none;}.nav-link{display:block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;}@media (prefers-reduced-motion:reduce){.nav-link{transition:none;}}.nav-link:hover,.nav-link:focus{color:var(--bs-nav-link-hover-color);text-decoration:none;}.nav-link.disabled{color:var(--bs-nav-link-disabled-color);pointer-events:none;cursor:default;}.nav-tabs{--bs-nav-tabs-border-width:1px;--bs-nav-tabs-border-color:#dadee0;--bs-nav-tabs-border-radius:0.375rem;--bs-nav-tabs-link-hover-border-color:#f5f6f7 #f5f6f7 #dadee0;--bs-nav-tabs-link-active-color:#555859;--bs-nav-tabs-link-active-bg:#fff;--bs-nav-tabs-link-active-border-color:#dadee0 #dadee0 #fff;border-bottom:var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);}.nav-tabs .nav-link{margin-bottom:calc(var(--bs-nav-tabs-border-width) * -1);background:none;border:var(--bs-nav-tabs-border-width) solid transparent;border-top-left-radius:var(--bs-nav-tabs-border-radius);border-top-right-radius:var(--bs-nav-tabs-border-radius);}.nav-tabs .nav-link:hover,.nav-tabs .nav-link:focus{isolation:isolate;border-color:var(--bs-nav-tabs-link-hover-border-color);}.nav-tabs .nav-link.disabled,.nav-tabs .nav-link:disabled{color:var(--bs-nav-link-disabled-color);background-color:transparent;border-color:transparent;}.nav-tabs .nav-link.active,.nav-tabs .nav-item.show .nav-link{color:var(--bs-nav-tabs-link-active-color);background-color:var(--bs-nav-tabs-link-active-bg);border-color:var(--bs-nav-tabs-link-active-border-color);}.nav-tabs .dropdown-menu{margin-top:calc(var(--bs-nav-tabs-border-width) * -1);border-top-left-radius:0;border-top-right-radius:0;}.nav-pills{--bs-nav-pills-border-radius:0.375rem;--bs-nav-pills-link-active-color:#fff;--bs-nav-pills-link-active-bg:#143b76;}.nav-pills .nav-link{background:none;border:0;border-radius:var(--bs-nav-pills-border-radius);}.nav-pills .nav-link:disabled{color:var(--bs-nav-link-disabled-color);background-color:transparent;border-color:transparent;}.nav-pills .nav-link.active,.nav-pills .show > .nav-link{color:var(--bs-nav-pills-link-active-color);background-color:var(--bs-nav-pills-link-active-bg);}.nav-fill > .nav-link,.nav-fill .nav-item{flex:1 1 auto;text-align:center;}.nav-justified > .nav-link,.nav-justified .nav-item{flex-basis:0;flex-grow:1;text-align:center;}.nav-fill .nav-item .nav-link,.nav-justified .nav-item .nav-link{width:100%;}.tab-content > .tab-pane{display:none;}.tab-content > .active{display:block;}.navbar{--bs-navbar-padding-x:0;--bs-navbar-padding-y:0.5rem;--bs-navbar-color:rgba(0,0,0,0.55);--bs-navbar-hover-color:rgba(0,0,0,0.7);--bs-navbar-disabled-color:rgba(0,0,0,0.3);--bs-navbar-active-color:rgba(0,0,0,0.9);--bs-navbar-brand-padding-y:0.3125rem;--bs-navbar-brand-margin-end:1rem;--bs-navbar-brand-font-size:1.25rem;--bs-navbar-brand-color:rgba(0,0,0,0.9);--bs-navbar-brand-hover-color:rgba(0,0,0,0.9);--bs-navbar-nav-link-padding-x:0.75rem;--bs-navbar-toggler-padding-y:0.25rem;--bs-navbar-toggler-padding-x:0.75rem;--bs-navbar-toggler-font-size:1.25rem;--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");--bs-navbar-toggler-border-color:rgba(0,0,0,0.1);--bs-navbar-toggler-border-radius:0.375rem;--bs-navbar-toggler-focus-width:0.25rem;--bs-navbar-toggler-transition:box-shadow 0.15s ease-in-out;position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);}.navbar > .container-xxl,.navbar > .container-xl,.navbar > .container-lg,.navbar > .container-md,.navbar > .container-sm,.navbar > .container,.navbar > .container-fluid{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between;}.navbar-brand{padding-top:var(--bs-navbar-brand-padding-y);padding-bottom:var(--bs-navbar-brand-padding-y);margin-right:var(--bs-navbar-brand-margin-end);font-size:var(--bs-navbar-brand-font-size);color:var(--bs-navbar-brand-color);white-space:nowrap;}.navbar-brand:hover,.navbar-brand:focus{color:var(--bs-navbar-brand-hover-color);text-decoration:none;}.navbar-nav{--bs-nav-link-padding-x:0;--bs-nav-link-padding-y:0.5rem;--bs-nav-link-font-weight:;--bs-nav-link-color:var(--bs-navbar-color);--bs-nav-link-hover-color:var(--bs-navbar-hover-color);--bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none;}.navbar-nav .show > .nav-link,.navbar-nav .nav-link.active{color:var(--bs-navbar-active-color);}.navbar-nav .dropdown-menu{position:static;}.navbar-text{padding-top:0.5rem;padding-bottom:0.5rem;color:var(--bs-navbar-color);}.navbar-text a,.navbar-text a:hover,.navbar-text a:focus{color:var(--bs-navbar-active-color);}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center;}.navbar-toggler{padding:var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);font-size:var(--bs-navbar-toggler-font-size);line-height:1;color:var(--bs-navbar-color);background-color:transparent;border:var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);border-radius:var(--bs-navbar-toggler-border-radius);transition:var(--bs-navbar-toggler-transition);}@media (prefers-reduced-motion:reduce){.navbar-toggler{transition:none;}}.navbar-toggler:hover{text-decoration:none;}.navbar-toggler:focus{text-decoration:none;outline:0;box-shadow:0 0 0 var(--bs-navbar-toggler-focus-width);}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;background-image:var(--bs-navbar-toggler-icon-bg);background-repeat:no-repeat;background-position:center;background-size:100%;}.navbar-nav-scroll{max-height:var(--bs-scroll-height,75vh);overflow-y:auto;}@media (min-width:576px){.navbar-expand-sm{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand-sm .navbar-nav{flex-direction:row;}.navbar-expand-sm .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand-sm .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand-sm .navbar-nav-scroll{overflow:visible;}.navbar-expand-sm .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand-sm .navbar-toggler{display:none;}.navbar-expand-sm .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand-sm .offcanvas .offcanvas-header{display:none;}.navbar-expand-sm .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}}@media (min-width:768px){.navbar-expand-md{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand-md .navbar-nav{flex-direction:row;}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand-md .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand-md .navbar-nav-scroll{overflow:visible;}.navbar-expand-md .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand-md .navbar-toggler{display:none;}.navbar-expand-md .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand-md .offcanvas .offcanvas-header{display:none;}.navbar-expand-md .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand-lg .navbar-nav{flex-direction:row;}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand-lg .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand-lg .navbar-nav-scroll{overflow:visible;}.navbar-expand-lg .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand-lg .navbar-toggler{display:none;}.navbar-expand-lg .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand-lg .offcanvas .offcanvas-header{display:none;}.navbar-expand-lg .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}}@media (min-width:1200px){.navbar-expand-xl{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand-xl .navbar-nav{flex-direction:row;}.navbar-expand-xl .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand-xl .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand-xl .navbar-nav-scroll{overflow:visible;}.navbar-expand-xl .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand-xl .navbar-toggler{display:none;}.navbar-expand-xl .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand-xl .offcanvas .offcanvas-header{display:none;}.navbar-expand-xl .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}}@media (min-width:1400px){.navbar-expand-xxl{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand-xxl .navbar-nav{flex-direction:row;}.navbar-expand-xxl .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand-xxl .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand-xxl .navbar-nav-scroll{overflow:visible;}.navbar-expand-xxl .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand-xxl .navbar-toggler{display:none;}.navbar-expand-xxl .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand-xxl .offcanvas .offcanvas-header{display:none;}.navbar-expand-xxl .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}}.navbar-expand{flex-wrap:nowrap;justify-content:flex-start;}.navbar-expand .navbar-nav{flex-direction:row;}.navbar-expand .navbar-nav .dropdown-menu{position:absolute;}.navbar-expand .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x);}.navbar-expand .navbar-nav-scroll{overflow:visible;}.navbar-expand .navbar-collapse{display:flex !important;flex-basis:auto;}.navbar-expand .navbar-toggler{display:none;}.navbar-expand .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto !important;height:auto !important;visibility:visible !important;background-color:transparent !important;border:0 !important;transform:none !important;box-shadow:none;transition:none;}.navbar-expand .offcanvas .offcanvas-header{display:none;}.navbar-expand .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible;}.navbar-dark{--bs-navbar-color:rgba(255,255,255,0.55);--bs-navbar-hover-color:rgba(255,255,255,0.75);--bs-navbar-disabled-color:rgba(255,255,255,0.25);--bs-navbar-active-color:#fff;--bs-navbar-brand-color:#fff;--bs-navbar-brand-hover-color:#fff;--bs-navbar-toggler-border-color:rgba(255,255,255,0.1);--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}.bcl-header .container{position:relative;}.bcl-header__project,.bcl-header__navbar{background:linear-gradient(90deg,#039 0%,#1b4ac3 100%);}.bcl-header__top-navbar .navbar-collapse{justify-content:end;}.bcl-header__top-navbar .navbar-toggler{border:none;color:#f8f9fa;}.bcl-header__top-navbar .navbar-toggler-icon{background:url("data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjY0IiByPSIxNiIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjEyOCIgcj0iMTYiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxOTIiIHI9IjE2Ii8+PC9zdmc+");}.bcl-header .nav-link{color:#1b4ac3;display:flex;align-items:center;padding:0.5rem;}.bcl-header__navbar .navbar-collapse{padding-bottom:1rem;}.bcl-header__navbar .navbar-nav .nav-link{color:#fafbfc;}.bcl-header__navbar .navbar-nav .nav-link:focus,.bcl-header__navbar .navbar-nav .nav-link:hover,.bcl-header__navbar .navbar-nav .nav-link.active{color:#fff;}.bcl-header__navbar .navbar-nav .nav-link:first-child{padding-left:0;}.bcl-header__navbar .navbar-toggler{position:absolute;top:-43px;left:0.75rem;border-color:#fff;}.bcl-header__navbar .navbar-toggler-icon{background:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}.bcl-header__navbar input:active,.bcl-header__navbar input:focus{box-shadow:0 0 0 0.25rem hsla(210deg,2%,83%,0.5);}.bcl-header--ec,.ec__header{}.bcl-header--ec .bcl-header__project,.bcl-header--ec .bcl-header__navbar,.ec__header .bcl-header__project,.ec__header .bcl-header__navbar{background:#004494;}.bcl-header--ec .nav-link,.ec__header .nav-link{color:#17458f;}.bcl-navbar-header{align-items:flex-end;}.bcl-header--neutral .bcl-header__project,.bcl-header--neutral .bcl-header__navbar{background:#555859;}.bcl-header:not(.bcl-header--neutral) .bcl-header__project{padding-top:1rem;}.bcl-header .navbar-brand img{width:100px;}.bcl-header .notification{position:relative;padding-right:0;}.bcl-header .notification span{z-index:1;height:18px;padding-right:5px;padding-left:5px;line-height:0.6rem;border-radius:10px;transform:translate(-11px,5px);}.bcl-header__project .bcl-header__site-name{display:inline-block;margin-bottom:0;font-size:1.3rem;font-weight:300;color:#fff;vertical-align:middle;max-width:80%;}@media only screen and (max-width:400px){.bcl-header--neutral .bcl-header__project-logo{display:none;}}@media (max-width:575.98px){.bcl-header .navbar:first-child .nav-link{padding:0.5rem 0.4rem;}}@media (min-width:768px){.bcl-header--ec .navbar-brand img,.ec__header .navbar-brand img{width:180px;}}@media (max-width:991.98px){.bcl-header__site-name{margin-left:5rem;}.bcl-header__top-navbar .navbar-collapse{z-index:1050;position:absolute;right:0.75rem;top:100%;background:white;border:1px solid #dadee0;border-radius:4px;}.bcl-header__top-navbar .navbar-collapse .nav{align-items:flex-start;flex-direction:column;min-width:16rem;padding:1rem;}.bcl-header__top-navbar .navbar-collapse .nav li{width:100%;}.bcl-header__project{min-height:3rem;padding-top:1rem;}.bcl-header nav + nav{min-height:3.5rem;}.bcl-header nav + nav .navbar-toggler{position:static;}.bcl-header__navbar .navbar-collapse{max-width:100%;}.bcl-header__navbar .navbar-collapse .nav-item.dropdown{max-width:100%;}.bcl-header__navbar .navbar-collapse .nav-item.dropdown a{white-space:normal;}.bcl-header__navbar .navbar-collapse .nav-item.dropdown .dropdown-menu{max-width:100%;}}@media (min-width:992px){.bcl-header__project.light,.bcl-header--ec .bcl-header__project.light,.ec__header .bcl-header__project.light{background:#fff;}.bcl-header__site-name{margin-left:1.5rem;font-weight:500;}.bcl-header__project.light .bcl-header__site-name{color:#000;}.bcl-header .navbar-toggler{position:relative;right:0;bottom:0;}.bcl-header .navbar-brand img{width:auto;}.bcl-header__navbar .navbar-collapse{padding-bottom:0;}.bcl-header__navbar .nav-link.active{padding-top:1rem;padding-bottom:1rem;margin-top:-0.5rem;margin-bottom:-0.5rem;}.bcl-header__navbar .dropdown-menu{z-index:1050;}.bcl-header:not(.bcl-header--neutral) .bcl-header__project{padding-bottom:1rem;}.bcl-header--ec .navbar-brand img,.ec__header .navbar-brand img{width:285px;}}.bcl-language-list-modal .btn-close{opacity:1;}.bcl-language-list-modal.bcl-language-list-modal--ec .modal-body,.bcl-language-list-modal.bcl-language-list-modal--eu .modal-body{padding-top:0.5rem;overflow:visible;}.bcl-language-list-modal.bcl-language-list-modal--ec .modal-header,.bcl-language-list-modal.bcl-language-list-modal--eu .modal-header{border:0;padding:0;}.bcl-language-list-modal.bcl-language-list-modal--eu .modal-body{background:#fff;}.bcl-language-list-modal.bcl-language-list-modal--eu .modal-dialog{background:#fff;}.bcl-language-list-modal.bcl-language-list-modal--eu h5{color:#0e47cb;}.bcl-language-list-modal.bcl-language-list-modal--eu svg{color:#0e47cb;}.bcl-language-list-modal.bcl-language-list-modal--eu .btn-close{filter:invert(20%) sepia(70%) saturate(2876%) hue-rotate(216deg) brightness(94%) contrast(105%);}.bcl-language-list-modal.bcl-language-list-modal--ec{background:#034da1;}.bcl-language-list-modal.bcl-language-list-modal--ec .modal-content{background:#034da1;}.bcl-language-list-modal.bcl-language-list-modal--ec h5{color:#fff;}.bcl-language-list-modal.bcl-language-list-modal--ec svg{color:#fff;}.bcl-language-list-modal.bcl-language-list-modal--ec .btn-close{filter:invert(1) grayscale(100%) brightness(200%);}.icon--2xs{width:0.75rem;height:0.75rem;}.icon--xs{width:1rem;height:1rem;}.icon--s{width:1.25rem;height:1.25rem;}.icon--m{width:1.5rem;height:1.5rem;}.icon--l{width:2rem;height:2rem;}.icon--xl{width:2.5rem;height:2.5rem;}.icon--2xl{width:3rem;height:3rem;}.icon--fluid{width:1em;height:1em;}.icon--rotate-90{transform:rotateZ(90deg);}.icon--rotate-180{transform:rotateZ(180deg);}.icon--rotate-270{transform:rotateZ(270deg);}.icon--flip-horizontal{transform:scaleX(-1);}.icon--flip-vertical{transform:scaleY(-1);}.icon--file{color:#6d7173;}.btn{font-weight:500;}.btn:not(.btn-link):hover{box-shadow:0 0.1rem 0.4rem 0.1rem rgba(0,0,0,0.1);}.btn-primary:hover{background-color:#305286;}.btn-primary:focus,.btn-primary:active,.btn-primary.active{background-color:#113264;}.btn-secondary{color:#0b4e97;}.btn-secondary:hover{color:#0b4e97;}.btn-light{color:#143b76;}.btn-light:hover{color:#143b76;}
+.fs-sm,.fs-xs{color:#858a8c;}.fw-medium{color:#555859;}h1,.h1{color:#113264;}h2.fw-medium,.fw-medium.h2,h3.fw-medium,.fw-medium.h3,h4.fw-medium,.fw-medium.h4{color:#113264;}h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{margin-top:0;margin-bottom:0.5rem;font-weight:700;line-height:1.2;color:#143b76;}h1,.h1{font-size:calc(1.375rem + 1.5vw);}@media (min-width:1200px){h1,.h1{font-size:2.5rem;}}h2,.h2{font-size:calc(1.325rem + 0.9vw);}@media (min-width:1200px){h2,.h2{font-size:2rem;}}h3,.h3{font-size:calc(1.275rem + 0.3vw);}@media (min-width:1200px){h3,.h3{font-size:1.5rem;}}h4,.h4{font-size:1.25rem;}h5,.h5{font-size:1rem;}h6,.h6{font-size:1rem;}small,.small{font-size:0.875em;}mark,.mark{padding:0.1875em;background-color:#fff3cd;}.lead{font-size:1.25rem;font-weight:300;}.display-1{font-size:calc(1.625rem + 4.5vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-1{font-size:5rem;}}.display-2{font-size:calc(1.575rem + 3.9vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-2{font-size:4.5rem;}}.display-3{font-size:calc(1.525rem + 3.3vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-3{font-size:4rem;}}.display-4{font-size:calc(1.475rem + 2.7vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-4{font-size:3.5rem;}}.display-5{font-size:calc(1.425rem + 2.1vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-5{font-size:3rem;}}.display-6{font-size:calc(1.375rem + 1.5vw);font-weight:normal;line-height:1.2;}@media (min-width:1200px){.display-6{font-size:2.5rem;}}.list-unstyled{padding-left:0;list-style:none;}.list-inline{padding-left:0;list-style:none;}.list-inline-item{display:inline-block;}.list-inline-item:not(:last-child){margin-right:0.5rem;}.initialism{font-size:0.875em;text-transform:uppercase;}.blockquote{margin-bottom:1rem;font-size:1.25rem;}.blockquote > :last-child{margin-bottom:0;}.blockquote-footer{margin-top:-1rem;margin-bottom:1rem;font-size:0.875em;color:#6d7173;}.blockquote-footer::before{content:"— ";}.fade{transition:opacity 0.15s linear;}@media (prefers-reduced-motion:reduce){.fade{transition:none;}}.fade:not(.show){opacity:0;}.collapse:not(.show){display:none;}.collapsing{height:0;overflow:hidden;transition:height 0.35s ease;}@media (prefers-reduced-motion:reduce){.collapsing{transition:none;}}.collapsing.collapse-horizontal{width:0;height:auto;transition:width 0.35s ease;}@media (prefers-reduced-motion:reduce){.collapsing.collapse-horizontal{transition:none;}}a{text-underline-offset:2px;}a:not(.text-underline-hover):not(.standalone){-webkit-text-decoration-color:rgba(20,59,118,0.3);text-decoration-color:rgba(20,59,118,0.3);}a:not(.text-underline-hover):not(.standalone):visited{-webkit-text-decoration-color:rgba(111,66,193,0.3);text-decoration-color:rgba(111,66,193,0.3);}a:not(.text-underline-hover):not(.standalone):hover{-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor;}a:not(.text-underline-hover):not(.standalone):hover:visited{-webkit-text-decoration-color:#6f42c1;text-decoration-color:#6f42c1;}a.standalone,a.text-underline-hover{-webkit-text-decoration-color:transparent;text-decoration-color:transparent;}a.standalone:hover,a.text-underline-hover:hover{-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor;}a.standalone:hover:visited,a.text-underline-hover:hover:visited{-webkit-text-decoration-color:#6f42c1;text-decoration-color:#6f42c1;}svg{fill:currentColor;}@media (max-width:767.98px){.n-mx-container{padding-right:1.5rem;padding-left:1.5rem;margin-right:-1.5rem;margin-left:-1.5rem;}}.bg-lighter{background-color:#fafbfc;}.bg-gray-200{background-color:#f5f6f7;}.bg-gray-400{background-color:#a2a8ab;}.border-gray-300{border-color:#dadee0;}.grid-3-9{grid-template-columns:25% 75%;grid-gap:0.75rem;}.clearfix::after{display:block;clear:both;content:"";}.text-bg-primary{color:#fff !important;background-color:RGBA(20,59,118,var(--bs-bg-opacity,1)) !important;}.text-bg-secondary{color:#000 !important;background-color:RGBA(231,241,251,var(--bs-bg-opacity,1)) !important;}.text-bg-success{color:#000 !important;background-color:RGBA(24,191,128,var(--bs-bg-opacity,1)) !important;}.text-bg-info{color:#fff !important;background-color:RGBA(13,118,139,var(--bs-bg-opacity,1)) !important;}.text-bg-warning{color:#000 !important;background-color:RGBA(235,168,67,var(--bs-bg-opacity,1)) !important;}.text-bg-danger{color:#000 !important;background-color:RGBA(235,52,52,var(--bs-bg-opacity,1)) !important;}.text-bg-light{color:#000 !important;background-color:RGBA(248,249,250,var(--bs-bg-opacity,1)) !important;}.text-bg-dark{color:#fff !important;background-color:RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;}.text-bg-brand{color:#fff !important;background-color:RGBA(16,115,222,var(--bs-bg-opacity,1)) !important;}.link-primary{color:#143b76 !important;}.link-primary:hover,.link-primary:focus{color:#102f5e !important;}.link-secondary{color:#e7f1fb !important;}.link-secondary:hover,.link-secondary:focus{color:#ecf4fc !important;}.link-success{color:#18bf80 !important;}.link-success:hover,.link-success:focus{color:#46cc99 !important;}.link-info{color:#0d768b !important;}.link-info:hover,.link-info:focus{color:#0a5e6f !important;}.link-warning{color:#eba843 !important;}.link-warning:hover,.link-warning:focus{color:#efb969 !important;}.link-danger{color:#eb3434 !important;}.link-danger:hover,.link-danger:focus{color:#ef5d5d !important;}.link-light{color:#f8f9fa !important;}.link-light:hover,.link-light:focus{color:#f9fafb !important;}.link-dark{color:#212529 !important;}.link-dark:hover,.link-dark:focus{color:#1a1e21 !important;}.link-brand{color:#1073de !important;}.link-brand:hover,.link-brand:focus{color:#0d5cb2 !important;}.ratio{position:relative;width:100%;}.ratio::before{display:block;padding-top:var(--bs-aspect-ratio);content:"";}.ratio > *{position:absolute;top:0;left:0;width:100%;height:100%;}.ratio-1x1{--bs-aspect-ratio:100%;}.ratio-4x3{--bs-aspect-ratio:75%;}.ratio-16x9{--bs-aspect-ratio:56.25%;}.ratio-21x9{--bs-aspect-ratio:42.8571428571%;}.fixed-top{position:fixed;top:0;right:0;left:0;z-index:60;}.fixed-bottom{position:fixed;right:0;bottom:0;left:0;z-index:60;}.sticky-top{position:sticky;top:0;z-index:50;}.sticky-bottom{position:sticky;bottom:0;z-index:50;}@media (min-width:576px){.sticky-sm-top{position:sticky;top:0;z-index:50;}.sticky-sm-bottom{position:sticky;bottom:0;z-index:50;}}@media (min-width:768px){.sticky-md-top{position:sticky;top:0;z-index:50;}.sticky-md-bottom{position:sticky;bottom:0;z-index:50;}}@media (min-width:992px){.sticky-lg-top{position:sticky;top:0;z-index:50;}.sticky-lg-bottom{position:sticky;bottom:0;z-index:50;}}@media (min-width:1200px){.sticky-xl-top{position:sticky;top:0;z-index:50;}.sticky-xl-bottom{position:sticky;bottom:0;z-index:50;}}@media (min-width:1400px){.sticky-xxl-top{position:sticky;top:0;z-index:50;}.sticky-xxl-bottom{position:sticky;bottom:0;z-index:50;}}.hstack{display:flex;flex-direction:row;align-items:center;align-self:stretch;}.vstack{display:flex;flex:1 1 auto;flex-direction:column;align-self:stretch;}.visually-hidden,.visually-hidden-focusable:not(:focus):not(:focus-within){position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0,0,0,0) !important;white-space:nowrap !important;border:0 !important;}.stretched-link::after{position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;content:"";}.text-truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.vr{display:inline-block;align-self:stretch;width:1px;min-height:1em;background-color:currentcolor;opacity:0.25;}.float-start{float:left !important;}.float-end{float:right !important;}.float-none{float:none !important;}.d-inline{display:inline !important;}.d-inline-block{display:inline-block !important;}.d-block{display:block !important;}.d-grid{display:grid !important;}.d-table{display:table !important;}.d-table-row{display:table-row !important;}.d-table-cell{display:table-cell !important;}.d-flex{display:flex !important;}.d-inline-flex{display:inline-flex !important;}.d-none{display:none !important;}.position-static{position:static !important;}.position-relative{position:relative !important;}.position-absolute{position:absolute !important;}.position-fixed{position:fixed !important;}.position-sticky{position:sticky !important;}.top-0{top:0 !important;}.top-50{top:50% !important;}.top-100{top:100% !important;}.bottom-0{bottom:0 !important;}.bottom-50{bottom:50% !important;}.bottom-100{bottom:100% !important;}.start-0{left:0 !important;}.start-50{left:50% !important;}.start-100{left:100% !important;}.end-0{right:0 !important;}.end-50{right:50% !important;}.end-100{right:100% !important;}.border{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-0{border:0 !important;}.border-top{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-0{border-top:0 !important;}.border-bottom{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-0{border-bottom:0 !important;}.border-opacity-10{--bs-border-opacity:0.1;}.border-opacity-25{--bs-border-opacity:0.25;}.border-opacity-50{--bs-border-opacity:0.5;}.border-opacity-75{--bs-border-opacity:0.75;}.border-opacity-100{--bs-border-opacity:1;}.w-25{width:25% !important;}.w-50{width:50% !important;}.w-75{width:75% !important;}.w-100{width:100% !important;}.w-auto{width:auto !important;}.w-min-content{width:-webkit-min-content !important;width:-moz-min-content !important;width:min-content !important;}.mw-100{max-width:100% !important;}.mw-date{max-width:10rem !important;}.mw-col-date{max-width:calc(10rem + var(--bs-gutter-x)) !important;}.mw-listing-img{max-width:10rem !important;}.h-25{height:25% !important;}.h-50{height:50% !important;}.h-75{height:75% !important;}.h-100{height:100% !important;}.h-auto{height:auto !important;}.flex-row{flex-direction:row !important;}.flex-column{flex-direction:column !important;}.flex-row-reverse{flex-direction:row-reverse !important;}.flex-column-reverse{flex-direction:column-reverse !important;}.flex-wrap{flex-wrap:wrap !important;}.flex-nowrap{flex-wrap:nowrap !important;}.flex-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-start{justify-content:flex-start !important;}.justify-content-end{justify-content:flex-end !important;}.justify-content-center{justify-content:center !important;}.justify-content-between{justify-content:space-between !important;}.justify-content-around{justify-content:space-around !important;}.justify-content-evenly{justify-content:space-evenly !important;}.align-content-start{align-content:flex-start !important;}.align-content-end{align-content:flex-end !important;}.align-content-center{align-content:center !important;}.align-content-between{align-content:space-between !important;}.align-content-around{align-content:space-around !important;}.align-content-stretch{align-content:stretch !important;}.order-first{order:-1 !important;}.order-0{order:0 !important;}.order-1{order:1 !important;}.order-2{order:2 !important;}.order-3{order:3 !important;}.order-4{order:4 !important;}.order-5{order:5 !important;}.order-last{order:6 !important;}.m-0{margin:0 !important;}.m-1{margin:0.25rem !important;}.m-2{margin:0.5rem !important;}.m-2-5{margin:0.75rem !important;}.m-3{margin:1rem !important;}.m-4{margin:1.5rem !important;}.m-5{margin:3rem !important;}.m-auto{margin:auto !important;}.mx-0{margin-right:0 !important;margin-left:0 !important;}.mx-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-auto{margin-right:auto !important;margin-left:auto !important;}.my-0{margin-top:0 !important;margin-bottom:0 !important;}.my-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-0{margin-top:0 !important;}.mt-1{margin-top:0.25rem !important;}.mt-2{margin-top:0.5rem !important;}.mt-2-5{margin-top:0.75rem !important;}.mt-3{margin-top:1rem !important;}.mt-4{margin-top:1.5rem !important;}.mt-5{margin-top:3rem !important;}.mt-auto{margin-top:auto !important;}.me-0{margin-right:0 !important;}.me-1{margin-right:0.25rem !important;}.me-2{margin-right:0.5rem !important;}.me-2-5{margin-right:0.75rem !important;}.me-3{margin-right:1rem !important;}.me-4{margin-right:1.5rem !important;}.me-5{margin-right:3rem !important;}.me-auto{margin-right:auto !important;}.mb-0{margin-bottom:0 !important;}.mb-1{margin-bottom:0.25rem !important;}.mb-2{margin-bottom:0.5rem !important;}.mb-2-5{margin-bottom:0.75rem !important;}.mb-3{margin-bottom:1rem !important;}.mb-4{margin-bottom:1.5rem !important;}.mb-5{margin-bottom:3rem !important;}.mb-auto{margin-bottom:auto !important;}.ms-0{margin-left:0 !important;}.ms-1{margin-left:0.25rem !important;}.ms-2{margin-left:0.5rem !important;}.ms-2-5{margin-left:0.75rem !important;}.ms-3{margin-left:1rem !important;}.ms-4{margin-left:1.5rem !important;}.ms-5{margin-left:3rem !important;}.ms-auto{margin-left:auto !important;}.p-0{padding:0 !important;}.p-1{padding:0.25rem !important;}.p-2{padding:0.5rem !important;}.p-2-5{padding:0.75rem !important;}.p-3{padding:1rem !important;}.p-4{padding:1.5rem !important;}.p-5{padding:3rem !important;}.px-0{padding-right:0 !important;padding-left:0 !important;}.px-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-3{padding-right:1rem !important;padding-left:1rem !important;}.px-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-5{padding-right:3rem !important;padding-left:3rem !important;}.py-0{padding-top:0 !important;padding-bottom:0 !important;}.py-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-0{padding-top:0 !important;}.pt-1{padding-top:0.25rem !important;}.pt-2{padding-top:0.5rem !important;}.pt-2-5{padding-top:0.75rem !important;}.pt-3{padding-top:1rem !important;}.pt-4{padding-top:1.5rem !important;}.pt-5{padding-top:3rem !important;}.pe-0{padding-right:0 !important;}.pe-1{padding-right:0.25rem !important;}.pe-2{padding-right:0.5rem !important;}.pe-2-5{padding-right:0.75rem !important;}.pe-3{padding-right:1rem !important;}.pe-4{padding-right:1.5rem !important;}.pe-5{padding-right:3rem !important;}.pb-0{padding-bottom:0 !important;}.pb-1{padding-bottom:0.25rem !important;}.pb-2{padding-bottom:0.5rem !important;}.pb-2-5{padding-bottom:0.75rem !important;}.pb-3{padding-bottom:1rem !important;}.pb-4{padding-bottom:1.5rem !important;}.pb-5{padding-bottom:3rem !important;}.ps-0{padding-left:0 !important;}.ps-1{padding-left:0.25rem !important;}.ps-2{padding-left:0.5rem !important;}.ps-2-5{padding-left:0.75rem !important;}.ps-3{padding-left:1rem !important;}.ps-4{padding-left:1.5rem !important;}.ps-5{padding-left:3rem !important;}.fs-1{font-size:calc(1.375rem + 1.5vw) !important;}.fs-2{font-size:calc(1.325rem + 0.9vw) !important;}.fs-3{font-size:calc(1.3rem + 0.6vw) !important;}.fs-4{font-size:calc(1.275rem + 0.3vw) !important;}.fs-5{font-size:1.25rem !important;}.fs-6{font-size:1rem !important;}.fs-sm{font-size:0.875rem !important;}.fs-xs{font-size:0.75rem !important;}.fw-light{font-weight:300 !important;}.fw-lighter{font-weight:lighter !important;}.fw-normal{font-weight:400 !important;}.fw-bold{font-weight:700 !important;}.fw-semibold{font-weight:600 !important;}.fw-bolder{font-weight:bolder !important;}.fw-medium{font-weight:500 !important;}.fw-md{font-weight:500 !important;}.text-start{text-align:left !important;}.text-end{text-align:right !important;}.text-center{text-align:center !important;}.text-primary{--bs-text-opacity:1;color:rgba(var(--bs-primary-rgb),var(--bs-text-opacity)) !important;}.text-secondary{--bs-text-opacity:1;color:rgba(var(--bs-secondary-rgb),var(--bs-text-opacity)) !important;}.text-success{--bs-text-opacity:1;color:rgba(var(--bs-success-rgb),var(--bs-text-opacity)) !important;}.text-info{--bs-text-opacity:1;color:rgba(var(--bs-info-rgb),var(--bs-text-opacity)) !important;}.text-warning{--bs-text-opacity:1;color:rgba(var(--bs-warning-rgb),var(--bs-text-opacity)) !important;}.text-danger{--bs-text-opacity:1;color:rgba(var(--bs-danger-rgb),var(--bs-text-opacity)) !important;}.text-light{--bs-text-opacity:1;color:rgba(var(--bs-light-rgb),var(--bs-text-opacity)) !important;}.text-dark{--bs-text-opacity:1;color:rgba(var(--bs-dark-rgb),var(--bs-text-opacity)) !important;}.text-brand{--bs-text-opacity:1;color:rgba(var(--bs-brand-rgb),var(--bs-text-opacity)) !important;}.text-black{--bs-text-opacity:1;color:rgba(var(--bs-black-rgb),var(--bs-text-opacity)) !important;}.text-white{--bs-text-opacity:1;color:rgba(var(--bs-white-rgb),var(--bs-text-opacity)) !important;}.text-body{--bs-text-opacity:1;color:rgba(var(--bs-body-color-rgb),var(--bs-text-opacity)) !important;}.text-muted{--bs-text-opacity:1;color:#495057 !important;}.text-black-50{--bs-text-opacity:1;color:rgba(0,0,0,0.5) !important;}.text-white-50{--bs-text-opacity:1;color:rgba(255,255,255,0.5) !important;}.text-reset{--bs-text-opacity:1;color:inherit !important;}.bg-primary{--bs-bg-opacity:1;background-color:rgba(var(--bs-primary-rgb),var(--bs-bg-opacity)) !important;}.bg-secondary{--bs-bg-opacity:1;background-color:rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity)) !important;}.bg-success{--bs-bg-opacity:1;background-color:rgba(var(--bs-success-rgb),var(--bs-bg-opacity)) !important;}.bg-info{--bs-bg-opacity:1;background-color:rgba(var(--bs-info-rgb),var(--bs-bg-opacity)) !important;}.bg-warning{--bs-bg-opacity:1;background-color:rgba(var(--bs-warning-rgb),var(--bs-bg-opacity)) !important;}.bg-danger{--bs-bg-opacity:1;background-color:rgba(var(--bs-danger-rgb),var(--bs-bg-opacity)) !important;}.bg-light{--bs-bg-opacity:1;background-color:rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;}.bg-dark{--bs-bg-opacity:1;background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;}.bg-brand{--bs-bg-opacity:1;background-color:rgba(var(--bs-brand-rgb),var(--bs-bg-opacity)) !important;}.bg-black{--bs-bg-opacity:1;background-color:rgba(var(--bs-black-rgb),var(--bs-bg-opacity)) !important;}.bg-white{--bs-bg-opacity:1;background-color:rgba(var(--bs-white-rgb),var(--bs-bg-opacity)) !important;}.bg-body{--bs-bg-opacity:1;background-color:rgba(var(--bs-body-bg-rgb),var(--bs-bg-opacity)) !important;}.bg-transparent{--bs-bg-opacity:1;background-color:transparent !important;}.bg-date{--bs-bg-opacity:1;background-color:#1698af !important;}.rounded{border-radius:var(--bs-border-radius) !important;}.rounded-0{border-radius:0 !important;}.rounded-1{border-radius:var(--bs-border-radius-sm) !important;}.rounded-2{border-radius:var(--bs-border-radius) !important;}.rounded-3{border-radius:var(--bs-border-radius-lg) !important;}.rounded-4{border-radius:var(--bs-border-radius-xl) !important;}.rounded-5{border-radius:var(--bs-border-radius-2xl) !important;}.rounded-circle{border-radius:50% !important;}.rounded-pill{border-radius:var(--bs-border-radius-pill) !important;}.rounded-top{border-top-left-radius:var(--bs-border-radius) !important;border-top-right-radius:var(--bs-border-radius) !important;}.rounded-end{border-top-right-radius:var(--bs-border-radius) !important;border-bottom-right-radius:var(--bs-border-radius) !important;}.rounded-bottom{border-bottom-right-radius:var(--bs-border-radius) !important;border-bottom-left-radius:var(--bs-border-radius) !important;}.rounded-start{border-bottom-left-radius:var(--bs-border-radius) !important;border-top-left-radius:var(--bs-border-radius) !important;}.visible{visibility:visible !important;}.invisible{visibility:hidden !important;}@media (min-width:576px){.d-sm-inline{display:inline !important;}.d-sm-inline-block{display:inline-block !important;}.d-sm-block{display:block !important;}.d-sm-grid{display:grid !important;}.d-sm-table{display:table !important;}.d-sm-table-row{display:table-row !important;}.d-sm-table-cell{display:table-cell !important;}.d-sm-flex{display:flex !important;}.d-sm-inline-flex{display:inline-flex !important;}.d-sm-none{display:none !important;}.border-sm{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-sm-0{border:0 !important;}.border-top-sm{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-sm-0{border-top:0 !important;}.border-bottom-sm{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-sm-0{border-bottom:0 !important;}.flex-sm-row{flex-direction:row !important;}.flex-sm-column{flex-direction:column !important;}.flex-sm-row-reverse{flex-direction:row-reverse !important;}.flex-sm-column-reverse{flex-direction:column-reverse !important;}.flex-sm-wrap{flex-wrap:wrap !important;}.flex-sm-nowrap{flex-wrap:nowrap !important;}.flex-sm-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-sm-start{justify-content:flex-start !important;}.justify-content-sm-end{justify-content:flex-end !important;}.justify-content-sm-center{justify-content:center !important;}.justify-content-sm-between{justify-content:space-between !important;}.justify-content-sm-around{justify-content:space-around !important;}.justify-content-sm-evenly{justify-content:space-evenly !important;}.align-content-sm-start{align-content:flex-start !important;}.align-content-sm-end{align-content:flex-end !important;}.align-content-sm-center{align-content:center !important;}.align-content-sm-between{align-content:space-between !important;}.align-content-sm-around{align-content:space-around !important;}.align-content-sm-stretch{align-content:stretch !important;}.order-sm-first{order:-1 !important;}.order-sm-0{order:0 !important;}.order-sm-1{order:1 !important;}.order-sm-2{order:2 !important;}.order-sm-3{order:3 !important;}.order-sm-4{order:4 !important;}.order-sm-5{order:5 !important;}.order-sm-last{order:6 !important;}.m-sm-0{margin:0 !important;}.m-sm-1{margin:0.25rem !important;}.m-sm-2{margin:0.5rem !important;}.m-sm-2-5{margin:0.75rem !important;}.m-sm-3{margin:1rem !important;}.m-sm-4{margin:1.5rem !important;}.m-sm-5{margin:3rem !important;}.m-sm-auto{margin:auto !important;}.mx-sm-0{margin-right:0 !important;margin-left:0 !important;}.mx-sm-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-sm-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-sm-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-sm-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-sm-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-sm-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-sm-auto{margin-right:auto !important;margin-left:auto !important;}.my-sm-0{margin-top:0 !important;margin-bottom:0 !important;}.my-sm-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-sm-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-sm-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-sm-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-sm-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-sm-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-sm-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-sm-0{margin-top:0 !important;}.mt-sm-1{margin-top:0.25rem !important;}.mt-sm-2{margin-top:0.5rem !important;}.mt-sm-2-5{margin-top:0.75rem !important;}.mt-sm-3{margin-top:1rem !important;}.mt-sm-4{margin-top:1.5rem !important;}.mt-sm-5{margin-top:3rem !important;}.mt-sm-auto{margin-top:auto !important;}.me-sm-0{margin-right:0 !important;}.me-sm-1{margin-right:0.25rem !important;}.me-sm-2{margin-right:0.5rem !important;}.me-sm-2-5{margin-right:0.75rem !important;}.me-sm-3{margin-right:1rem !important;}.me-sm-4{margin-right:1.5rem !important;}.me-sm-5{margin-right:3rem !important;}.me-sm-auto{margin-right:auto !important;}.mb-sm-0{margin-bottom:0 !important;}.mb-sm-1{margin-bottom:0.25rem !important;}.mb-sm-2{margin-bottom:0.5rem !important;}.mb-sm-2-5{margin-bottom:0.75rem !important;}.mb-sm-3{margin-bottom:1rem !important;}.mb-sm-4{margin-bottom:1.5rem !important;}.mb-sm-5{margin-bottom:3rem !important;}.mb-sm-auto{margin-bottom:auto !important;}.ms-sm-0{margin-left:0 !important;}.ms-sm-1{margin-left:0.25rem !important;}.ms-sm-2{margin-left:0.5rem !important;}.ms-sm-2-5{margin-left:0.75rem !important;}.ms-sm-3{margin-left:1rem !important;}.ms-sm-4{margin-left:1.5rem !important;}.ms-sm-5{margin-left:3rem !important;}.ms-sm-auto{margin-left:auto !important;}.p-sm-0{padding:0 !important;}.p-sm-1{padding:0.25rem !important;}.p-sm-2{padding:0.5rem !important;}.p-sm-2-5{padding:0.75rem !important;}.p-sm-3{padding:1rem !important;}.p-sm-4{padding:1.5rem !important;}.p-sm-5{padding:3rem !important;}.px-sm-0{padding-right:0 !important;padding-left:0 !important;}.px-sm-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-sm-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-sm-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-sm-3{padding-right:1rem !important;padding-left:1rem !important;}.px-sm-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-sm-5{padding-right:3rem !important;padding-left:3rem !important;}.py-sm-0{padding-top:0 !important;padding-bottom:0 !important;}.py-sm-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-sm-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-sm-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-sm-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-sm-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-sm-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-sm-0{padding-top:0 !important;}.pt-sm-1{padding-top:0.25rem !important;}.pt-sm-2{padding-top:0.5rem !important;}.pt-sm-2-5{padding-top:0.75rem !important;}.pt-sm-3{padding-top:1rem !important;}.pt-sm-4{padding-top:1.5rem !important;}.pt-sm-5{padding-top:3rem !important;}.pe-sm-0{padding-right:0 !important;}.pe-sm-1{padding-right:0.25rem !important;}.pe-sm-2{padding-right:0.5rem !important;}.pe-sm-2-5{padding-right:0.75rem !important;}.pe-sm-3{padding-right:1rem !important;}.pe-sm-4{padding-right:1.5rem !important;}.pe-sm-5{padding-right:3rem !important;}.pb-sm-0{padding-bottom:0 !important;}.pb-sm-1{padding-bottom:0.25rem !important;}.pb-sm-2{padding-bottom:0.5rem !important;}.pb-sm-2-5{padding-bottom:0.75rem !important;}.pb-sm-3{padding-bottom:1rem !important;}.pb-sm-4{padding-bottom:1.5rem !important;}.pb-sm-5{padding-bottom:3rem !important;}.ps-sm-0{padding-left:0 !important;}.ps-sm-1{padding-left:0.25rem !important;}.ps-sm-2{padding-left:0.5rem !important;}.ps-sm-2-5{padding-left:0.75rem !important;}.ps-sm-3{padding-left:1rem !important;}.ps-sm-4{padding-left:1.5rem !important;}.ps-sm-5{padding-left:3rem !important;}.text-sm-start{text-align:left !important;}.text-sm-end{text-align:right !important;}.text-sm-center{text-align:center !important;}}@media (min-width:768px){.d-md-inline{display:inline !important;}.d-md-inline-block{display:inline-block !important;}.d-md-block{display:block !important;}.d-md-grid{display:grid !important;}.d-md-table{display:table !important;}.d-md-table-row{display:table-row !important;}.d-md-table-cell{display:table-cell !important;}.d-md-flex{display:flex !important;}.d-md-inline-flex{display:inline-flex !important;}.d-md-none{display:none !important;}.border-md{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-md-0{border:0 !important;}.border-top-md{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-md-0{border-top:0 !important;}.border-bottom-md{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-md-0{border-bottom:0 !important;}.flex-md-row{flex-direction:row !important;}.flex-md-column{flex-direction:column !important;}.flex-md-row-reverse{flex-direction:row-reverse !important;}.flex-md-column-reverse{flex-direction:column-reverse !important;}.flex-md-wrap{flex-wrap:wrap !important;}.flex-md-nowrap{flex-wrap:nowrap !important;}.flex-md-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-md-start{justify-content:flex-start !important;}.justify-content-md-end{justify-content:flex-end !important;}.justify-content-md-center{justify-content:center !important;}.justify-content-md-between{justify-content:space-between !important;}.justify-content-md-around{justify-content:space-around !important;}.justify-content-md-evenly{justify-content:space-evenly !important;}.align-content-md-start{align-content:flex-start !important;}.align-content-md-end{align-content:flex-end !important;}.align-content-md-center{align-content:center !important;}.align-content-md-between{align-content:space-between !important;}.align-content-md-around{align-content:space-around !important;}.align-content-md-stretch{align-content:stretch !important;}.order-md-first{order:-1 !important;}.order-md-0{order:0 !important;}.order-md-1{order:1 !important;}.order-md-2{order:2 !important;}.order-md-3{order:3 !important;}.order-md-4{order:4 !important;}.order-md-5{order:5 !important;}.order-md-last{order:6 !important;}.m-md-0{margin:0 !important;}.m-md-1{margin:0.25rem !important;}.m-md-2{margin:0.5rem !important;}.m-md-2-5{margin:0.75rem !important;}.m-md-3{margin:1rem !important;}.m-md-4{margin:1.5rem !important;}.m-md-5{margin:3rem !important;}.m-md-auto{margin:auto !important;}.mx-md-0{margin-right:0 !important;margin-left:0 !important;}.mx-md-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-md-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-md-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-md-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-md-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-md-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-md-auto{margin-right:auto !important;margin-left:auto !important;}.my-md-0{margin-top:0 !important;margin-bottom:0 !important;}.my-md-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-md-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-md-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-md-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-md-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-md-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-md-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-md-0{margin-top:0 !important;}.mt-md-1{margin-top:0.25rem !important;}.mt-md-2{margin-top:0.5rem !important;}.mt-md-2-5{margin-top:0.75rem !important;}.mt-md-3{margin-top:1rem !important;}.mt-md-4{margin-top:1.5rem !important;}.mt-md-5{margin-top:3rem !important;}.mt-md-auto{margin-top:auto !important;}.me-md-0{margin-right:0 !important;}.me-md-1{margin-right:0.25rem !important;}.me-md-2{margin-right:0.5rem !important;}.me-md-2-5{margin-right:0.75rem !important;}.me-md-3{margin-right:1rem !important;}.me-md-4{margin-right:1.5rem !important;}.me-md-5{margin-right:3rem !important;}.me-md-auto{margin-right:auto !important;}.mb-md-0{margin-bottom:0 !important;}.mb-md-1{margin-bottom:0.25rem !important;}.mb-md-2{margin-bottom:0.5rem !important;}.mb-md-2-5{margin-bottom:0.75rem !important;}.mb-md-3{margin-bottom:1rem !important;}.mb-md-4{margin-bottom:1.5rem !important;}.mb-md-5{margin-bottom:3rem !important;}.mb-md-auto{margin-bottom:auto !important;}.ms-md-0{margin-left:0 !important;}.ms-md-1{margin-left:0.25rem !important;}.ms-md-2{margin-left:0.5rem !important;}.ms-md-2-5{margin-left:0.75rem !important;}.ms-md-3{margin-left:1rem !important;}.ms-md-4{margin-left:1.5rem !important;}.ms-md-5{margin-left:3rem !important;}.ms-md-auto{margin-left:auto !important;}.p-md-0{padding:0 !important;}.p-md-1{padding:0.25rem !important;}.p-md-2{padding:0.5rem !important;}.p-md-2-5{padding:0.75rem !important;}.p-md-3{padding:1rem !important;}.p-md-4{padding:1.5rem !important;}.p-md-5{padding:3rem !important;}.px-md-0{padding-right:0 !important;padding-left:0 !important;}.px-md-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-md-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-md-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-md-3{padding-right:1rem !important;padding-left:1rem !important;}.px-md-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-md-5{padding-right:3rem !important;padding-left:3rem !important;}.py-md-0{padding-top:0 !important;padding-bottom:0 !important;}.py-md-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-md-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-md-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-md-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-md-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-md-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-md-0{padding-top:0 !important;}.pt-md-1{padding-top:0.25rem !important;}.pt-md-2{padding-top:0.5rem !important;}.pt-md-2-5{padding-top:0.75rem !important;}.pt-md-3{padding-top:1rem !important;}.pt-md-4{padding-top:1.5rem !important;}.pt-md-5{padding-top:3rem !important;}.pe-md-0{padding-right:0 !important;}.pe-md-1{padding-right:0.25rem !important;}.pe-md-2{padding-right:0.5rem !important;}.pe-md-2-5{padding-right:0.75rem !important;}.pe-md-3{padding-right:1rem !important;}.pe-md-4{padding-right:1.5rem !important;}.pe-md-5{padding-right:3rem !important;}.pb-md-0{padding-bottom:0 !important;}.pb-md-1{padding-bottom:0.25rem !important;}.pb-md-2{padding-bottom:0.5rem !important;}.pb-md-2-5{padding-bottom:0.75rem !important;}.pb-md-3{padding-bottom:1rem !important;}.pb-md-4{padding-bottom:1.5rem !important;}.pb-md-5{padding-bottom:3rem !important;}.ps-md-0{padding-left:0 !important;}.ps-md-1{padding-left:0.25rem !important;}.ps-md-2{padding-left:0.5rem !important;}.ps-md-2-5{padding-left:0.75rem !important;}.ps-md-3{padding-left:1rem !important;}.ps-md-4{padding-left:1.5rem !important;}.ps-md-5{padding-left:3rem !important;}.text-md-start{text-align:left !important;}.text-md-end{text-align:right !important;}.text-md-center{text-align:center !important;}}@media (min-width:992px){.d-lg-inline{display:inline !important;}.d-lg-inline-block{display:inline-block !important;}.d-lg-block{display:block !important;}.d-lg-grid{display:grid !important;}.d-lg-table{display:table !important;}.d-lg-table-row{display:table-row !important;}.d-lg-table-cell{display:table-cell !important;}.d-lg-flex{display:flex !important;}.d-lg-inline-flex{display:inline-flex !important;}.d-lg-none{display:none !important;}.border-lg{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-lg-0{border:0 !important;}.border-top-lg{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-lg-0{border-top:0 !important;}.border-bottom-lg{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-lg-0{border-bottom:0 !important;}.flex-lg-row{flex-direction:row !important;}.flex-lg-column{flex-direction:column !important;}.flex-lg-row-reverse{flex-direction:row-reverse !important;}.flex-lg-column-reverse{flex-direction:column-reverse !important;}.flex-lg-wrap{flex-wrap:wrap !important;}.flex-lg-nowrap{flex-wrap:nowrap !important;}.flex-lg-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-lg-start{justify-content:flex-start !important;}.justify-content-lg-end{justify-content:flex-end !important;}.justify-content-lg-center{justify-content:center !important;}.justify-content-lg-between{justify-content:space-between !important;}.justify-content-lg-around{justify-content:space-around !important;}.justify-content-lg-evenly{justify-content:space-evenly !important;}.align-content-lg-start{align-content:flex-start !important;}.align-content-lg-end{align-content:flex-end !important;}.align-content-lg-center{align-content:center !important;}.align-content-lg-between{align-content:space-between !important;}.align-content-lg-around{align-content:space-around !important;}.align-content-lg-stretch{align-content:stretch !important;}.order-lg-first{order:-1 !important;}.order-lg-0{order:0 !important;}.order-lg-1{order:1 !important;}.order-lg-2{order:2 !important;}.order-lg-3{order:3 !important;}.order-lg-4{order:4 !important;}.order-lg-5{order:5 !important;}.order-lg-last{order:6 !important;}.m-lg-0{margin:0 !important;}.m-lg-1{margin:0.25rem !important;}.m-lg-2{margin:0.5rem !important;}.m-lg-2-5{margin:0.75rem !important;}.m-lg-3{margin:1rem !important;}.m-lg-4{margin:1.5rem !important;}.m-lg-5{margin:3rem !important;}.m-lg-auto{margin:auto !important;}.mx-lg-0{margin-right:0 !important;margin-left:0 !important;}.mx-lg-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-lg-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-lg-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-lg-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-lg-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-lg-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-lg-auto{margin-right:auto !important;margin-left:auto !important;}.my-lg-0{margin-top:0 !important;margin-bottom:0 !important;}.my-lg-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-lg-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-lg-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-lg-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-lg-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-lg-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-lg-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-lg-0{margin-top:0 !important;}.mt-lg-1{margin-top:0.25rem !important;}.mt-lg-2{margin-top:0.5rem !important;}.mt-lg-2-5{margin-top:0.75rem !important;}.mt-lg-3{margin-top:1rem !important;}.mt-lg-4{margin-top:1.5rem !important;}.mt-lg-5{margin-top:3rem !important;}.mt-lg-auto{margin-top:auto !important;}.me-lg-0{margin-right:0 !important;}.me-lg-1{margin-right:0.25rem !important;}.me-lg-2{margin-right:0.5rem !important;}.me-lg-2-5{margin-right:0.75rem !important;}.me-lg-3{margin-right:1rem !important;}.me-lg-4{margin-right:1.5rem !important;}.me-lg-5{margin-right:3rem !important;}.me-lg-auto{margin-right:auto !important;}.mb-lg-0{margin-bottom:0 !important;}.mb-lg-1{margin-bottom:0.25rem !important;}.mb-lg-2{margin-bottom:0.5rem !important;}.mb-lg-2-5{margin-bottom:0.75rem !important;}.mb-lg-3{margin-bottom:1rem !important;}.mb-lg-4{margin-bottom:1.5rem !important;}.mb-lg-5{margin-bottom:3rem !important;}.mb-lg-auto{margin-bottom:auto !important;}.ms-lg-0{margin-left:0 !important;}.ms-lg-1{margin-left:0.25rem !important;}.ms-lg-2{margin-left:0.5rem !important;}.ms-lg-2-5{margin-left:0.75rem !important;}.ms-lg-3{margin-left:1rem !important;}.ms-lg-4{margin-left:1.5rem !important;}.ms-lg-5{margin-left:3rem !important;}.ms-lg-auto{margin-left:auto !important;}.p-lg-0{padding:0 !important;}.p-lg-1{padding:0.25rem !important;}.p-lg-2{padding:0.5rem !important;}.p-lg-2-5{padding:0.75rem !important;}.p-lg-3{padding:1rem !important;}.p-lg-4{padding:1.5rem !important;}.p-lg-5{padding:3rem !important;}.px-lg-0{padding-right:0 !important;padding-left:0 !important;}.px-lg-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-lg-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-lg-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-lg-3{padding-right:1rem !important;padding-left:1rem !important;}.px-lg-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-lg-5{padding-right:3rem !important;padding-left:3rem !important;}.py-lg-0{padding-top:0 !important;padding-bottom:0 !important;}.py-lg-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-lg-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-lg-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-lg-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-lg-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-lg-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-lg-0{padding-top:0 !important;}.pt-lg-1{padding-top:0.25rem !important;}.pt-lg-2{padding-top:0.5rem !important;}.pt-lg-2-5{padding-top:0.75rem !important;}.pt-lg-3{padding-top:1rem !important;}.pt-lg-4{padding-top:1.5rem !important;}.pt-lg-5{padding-top:3rem !important;}.pe-lg-0{padding-right:0 !important;}.pe-lg-1{padding-right:0.25rem !important;}.pe-lg-2{padding-right:0.5rem !important;}.pe-lg-2-5{padding-right:0.75rem !important;}.pe-lg-3{padding-right:1rem !important;}.pe-lg-4{padding-right:1.5rem !important;}.pe-lg-5{padding-right:3rem !important;}.pb-lg-0{padding-bottom:0 !important;}.pb-lg-1{padding-bottom:0.25rem !important;}.pb-lg-2{padding-bottom:0.5rem !important;}.pb-lg-2-5{padding-bottom:0.75rem !important;}.pb-lg-3{padding-bottom:1rem !important;}.pb-lg-4{padding-bottom:1.5rem !important;}.pb-lg-5{padding-bottom:3rem !important;}.ps-lg-0{padding-left:0 !important;}.ps-lg-1{padding-left:0.25rem !important;}.ps-lg-2{padding-left:0.5rem !important;}.ps-lg-2-5{padding-left:0.75rem !important;}.ps-lg-3{padding-left:1rem !important;}.ps-lg-4{padding-left:1.5rem !important;}.ps-lg-5{padding-left:3rem !important;}.text-lg-start{text-align:left !important;}.text-lg-end{text-align:right !important;}.text-lg-center{text-align:center !important;}}@media (min-width:1200px){.d-xl-inline{display:inline !important;}.d-xl-inline-block{display:inline-block !important;}.d-xl-block{display:block !important;}.d-xl-grid{display:grid !important;}.d-xl-table{display:table !important;}.d-xl-table-row{display:table-row !important;}.d-xl-table-cell{display:table-cell !important;}.d-xl-flex{display:flex !important;}.d-xl-inline-flex{display:inline-flex !important;}.d-xl-none{display:none !important;}.border-xl{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-xl-0{border:0 !important;}.border-top-xl{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-xl-0{border-top:0 !important;}.border-bottom-xl{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-xl-0{border-bottom:0 !important;}.flex-xl-row{flex-direction:row !important;}.flex-xl-column{flex-direction:column !important;}.flex-xl-row-reverse{flex-direction:row-reverse !important;}.flex-xl-column-reverse{flex-direction:column-reverse !important;}.flex-xl-wrap{flex-wrap:wrap !important;}.flex-xl-nowrap{flex-wrap:nowrap !important;}.flex-xl-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-xl-start{justify-content:flex-start !important;}.justify-content-xl-end{justify-content:flex-end !important;}.justify-content-xl-center{justify-content:center !important;}.justify-content-xl-between{justify-content:space-between !important;}.justify-content-xl-around{justify-content:space-around !important;}.justify-content-xl-evenly{justify-content:space-evenly !important;}.align-content-xl-start{align-content:flex-start !important;}.align-content-xl-end{align-content:flex-end !important;}.align-content-xl-center{align-content:center !important;}.align-content-xl-between{align-content:space-between !important;}.align-content-xl-around{align-content:space-around !important;}.align-content-xl-stretch{align-content:stretch !important;}.order-xl-first{order:-1 !important;}.order-xl-0{order:0 !important;}.order-xl-1{order:1 !important;}.order-xl-2{order:2 !important;}.order-xl-3{order:3 !important;}.order-xl-4{order:4 !important;}.order-xl-5{order:5 !important;}.order-xl-last{order:6 !important;}.m-xl-0{margin:0 !important;}.m-xl-1{margin:0.25rem !important;}.m-xl-2{margin:0.5rem !important;}.m-xl-2-5{margin:0.75rem !important;}.m-xl-3{margin:1rem !important;}.m-xl-4{margin:1.5rem !important;}.m-xl-5{margin:3rem !important;}.m-xl-auto{margin:auto !important;}.mx-xl-0{margin-right:0 !important;margin-left:0 !important;}.mx-xl-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-xl-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-xl-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-xl-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-xl-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-xl-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-xl-auto{margin-right:auto !important;margin-left:auto !important;}.my-xl-0{margin-top:0 !important;margin-bottom:0 !important;}.my-xl-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-xl-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-xl-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-xl-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-xl-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-xl-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-xl-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-xl-0{margin-top:0 !important;}.mt-xl-1{margin-top:0.25rem !important;}.mt-xl-2{margin-top:0.5rem !important;}.mt-xl-2-5{margin-top:0.75rem !important;}.mt-xl-3{margin-top:1rem !important;}.mt-xl-4{margin-top:1.5rem !important;}.mt-xl-5{margin-top:3rem !important;}.mt-xl-auto{margin-top:auto !important;}.me-xl-0{margin-right:0 !important;}.me-xl-1{margin-right:0.25rem !important;}.me-xl-2{margin-right:0.5rem !important;}.me-xl-2-5{margin-right:0.75rem !important;}.me-xl-3{margin-right:1rem !important;}.me-xl-4{margin-right:1.5rem !important;}.me-xl-5{margin-right:3rem !important;}.me-xl-auto{margin-right:auto !important;}.mb-xl-0{margin-bottom:0 !important;}.mb-xl-1{margin-bottom:0.25rem !important;}.mb-xl-2{margin-bottom:0.5rem !important;}.mb-xl-2-5{margin-bottom:0.75rem !important;}.mb-xl-3{margin-bottom:1rem !important;}.mb-xl-4{margin-bottom:1.5rem !important;}.mb-xl-5{margin-bottom:3rem !important;}.mb-xl-auto{margin-bottom:auto !important;}.ms-xl-0{margin-left:0 !important;}.ms-xl-1{margin-left:0.25rem !important;}.ms-xl-2{margin-left:0.5rem !important;}.ms-xl-2-5{margin-left:0.75rem !important;}.ms-xl-3{margin-left:1rem !important;}.ms-xl-4{margin-left:1.5rem !important;}.ms-xl-5{margin-left:3rem !important;}.ms-xl-auto{margin-left:auto !important;}.p-xl-0{padding:0 !important;}.p-xl-1{padding:0.25rem !important;}.p-xl-2{padding:0.5rem !important;}.p-xl-2-5{padding:0.75rem !important;}.p-xl-3{padding:1rem !important;}.p-xl-4{padding:1.5rem !important;}.p-xl-5{padding:3rem !important;}.px-xl-0{padding-right:0 !important;padding-left:0 !important;}.px-xl-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-xl-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-xl-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-xl-3{padding-right:1rem !important;padding-left:1rem !important;}.px-xl-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-xl-5{padding-right:3rem !important;padding-left:3rem !important;}.py-xl-0{padding-top:0 !important;padding-bottom:0 !important;}.py-xl-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-xl-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-xl-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-xl-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-xl-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-xl-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-xl-0{padding-top:0 !important;}.pt-xl-1{padding-top:0.25rem !important;}.pt-xl-2{padding-top:0.5rem !important;}.pt-xl-2-5{padding-top:0.75rem !important;}.pt-xl-3{padding-top:1rem !important;}.pt-xl-4{padding-top:1.5rem !important;}.pt-xl-5{padding-top:3rem !important;}.pe-xl-0{padding-right:0 !important;}.pe-xl-1{padding-right:0.25rem !important;}.pe-xl-2{padding-right:0.5rem !important;}.pe-xl-2-5{padding-right:0.75rem !important;}.pe-xl-3{padding-right:1rem !important;}.pe-xl-4{padding-right:1.5rem !important;}.pe-xl-5{padding-right:3rem !important;}.pb-xl-0{padding-bottom:0 !important;}.pb-xl-1{padding-bottom:0.25rem !important;}.pb-xl-2{padding-bottom:0.5rem !important;}.pb-xl-2-5{padding-bottom:0.75rem !important;}.pb-xl-3{padding-bottom:1rem !important;}.pb-xl-4{padding-bottom:1.5rem !important;}.pb-xl-5{padding-bottom:3rem !important;}.ps-xl-0{padding-left:0 !important;}.ps-xl-1{padding-left:0.25rem !important;}.ps-xl-2{padding-left:0.5rem !important;}.ps-xl-2-5{padding-left:0.75rem !important;}.ps-xl-3{padding-left:1rem !important;}.ps-xl-4{padding-left:1.5rem !important;}.ps-xl-5{padding-left:3rem !important;}.text-xl-start{text-align:left !important;}.text-xl-end{text-align:right !important;}.text-xl-center{text-align:center !important;}}@media (min-width:1400px){.d-xxl-inline{display:inline !important;}.d-xxl-inline-block{display:inline-block !important;}.d-xxl-block{display:block !important;}.d-xxl-grid{display:grid !important;}.d-xxl-table{display:table !important;}.d-xxl-table-row{display:table-row !important;}.d-xxl-table-cell{display:table-cell !important;}.d-xxl-flex{display:flex !important;}.d-xxl-inline-flex{display:inline-flex !important;}.d-xxl-none{display:none !important;}.border-xxl{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-xxl-0{border:0 !important;}.border-top-xxl{border-top:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-top-xxl-0{border-top:0 !important;}.border-bottom-xxl{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}.border-bottom-xxl-0{border-bottom:0 !important;}.flex-xxl-row{flex-direction:row !important;}.flex-xxl-column{flex-direction:column !important;}.flex-xxl-row-reverse{flex-direction:row-reverse !important;}.flex-xxl-column-reverse{flex-direction:column-reverse !important;}.flex-xxl-wrap{flex-wrap:wrap !important;}.flex-xxl-nowrap{flex-wrap:nowrap !important;}.flex-xxl-wrap-reverse{flex-wrap:wrap-reverse !important;}.justify-content-xxl-start{justify-content:flex-start !important;}.justify-content-xxl-end{justify-content:flex-end !important;}.justify-content-xxl-center{justify-content:center !important;}.justify-content-xxl-between{justify-content:space-between !important;}.justify-content-xxl-around{justify-content:space-around !important;}.justify-content-xxl-evenly{justify-content:space-evenly !important;}.align-content-xxl-start{align-content:flex-start !important;}.align-content-xxl-end{align-content:flex-end !important;}.align-content-xxl-center{align-content:center !important;}.align-content-xxl-between{align-content:space-between !important;}.align-content-xxl-around{align-content:space-around !important;}.align-content-xxl-stretch{align-content:stretch !important;}.order-xxl-first{order:-1 !important;}.order-xxl-0{order:0 !important;}.order-xxl-1{order:1 !important;}.order-xxl-2{order:2 !important;}.order-xxl-3{order:3 !important;}.order-xxl-4{order:4 !important;}.order-xxl-5{order:5 !important;}.order-xxl-last{order:6 !important;}.m-xxl-0{margin:0 !important;}.m-xxl-1{margin:0.25rem !important;}.m-xxl-2{margin:0.5rem !important;}.m-xxl-2-5{margin:0.75rem !important;}.m-xxl-3{margin:1rem !important;}.m-xxl-4{margin:1.5rem !important;}.m-xxl-5{margin:3rem !important;}.m-xxl-auto{margin:auto !important;}.mx-xxl-0{margin-right:0 !important;margin-left:0 !important;}.mx-xxl-1{margin-right:0.25rem !important;margin-left:0.25rem !important;}.mx-xxl-2{margin-right:0.5rem !important;margin-left:0.5rem !important;}.mx-xxl-2-5{margin-right:0.75rem !important;margin-left:0.75rem !important;}.mx-xxl-3{margin-right:1rem !important;margin-left:1rem !important;}.mx-xxl-4{margin-right:1.5rem !important;margin-left:1.5rem !important;}.mx-xxl-5{margin-right:3rem !important;margin-left:3rem !important;}.mx-xxl-auto{margin-right:auto !important;margin-left:auto !important;}.my-xxl-0{margin-top:0 !important;margin-bottom:0 !important;}.my-xxl-1{margin-top:0.25rem !important;margin-bottom:0.25rem !important;}.my-xxl-2{margin-top:0.5rem !important;margin-bottom:0.5rem !important;}.my-xxl-2-5{margin-top:0.75rem !important;margin-bottom:0.75rem !important;}.my-xxl-3{margin-top:1rem !important;margin-bottom:1rem !important;}.my-xxl-4{margin-top:1.5rem !important;margin-bottom:1.5rem !important;}.my-xxl-5{margin-top:3rem !important;margin-bottom:3rem !important;}.my-xxl-auto{margin-top:auto !important;margin-bottom:auto !important;}.mt-xxl-0{margin-top:0 !important;}.mt-xxl-1{margin-top:0.25rem !important;}.mt-xxl-2{margin-top:0.5rem !important;}.mt-xxl-2-5{margin-top:0.75rem !important;}.mt-xxl-3{margin-top:1rem !important;}.mt-xxl-4{margin-top:1.5rem !important;}.mt-xxl-5{margin-top:3rem !important;}.mt-xxl-auto{margin-top:auto !important;}.me-xxl-0{margin-right:0 !important;}.me-xxl-1{margin-right:0.25rem !important;}.me-xxl-2{margin-right:0.5rem !important;}.me-xxl-2-5{margin-right:0.75rem !important;}.me-xxl-3{margin-right:1rem !important;}.me-xxl-4{margin-right:1.5rem !important;}.me-xxl-5{margin-right:3rem !important;}.me-xxl-auto{margin-right:auto !important;}.mb-xxl-0{margin-bottom:0 !important;}.mb-xxl-1{margin-bottom:0.25rem !important;}.mb-xxl-2{margin-bottom:0.5rem !important;}.mb-xxl-2-5{margin-bottom:0.75rem !important;}.mb-xxl-3{margin-bottom:1rem !important;}.mb-xxl-4{margin-bottom:1.5rem !important;}.mb-xxl-5{margin-bottom:3rem !important;}.mb-xxl-auto{margin-bottom:auto !important;}.ms-xxl-0{margin-left:0 !important;}.ms-xxl-1{margin-left:0.25rem !important;}.ms-xxl-2{margin-left:0.5rem !important;}.ms-xxl-2-5{margin-left:0.75rem !important;}.ms-xxl-3{margin-left:1rem !important;}.ms-xxl-4{margin-left:1.5rem !important;}.ms-xxl-5{margin-left:3rem !important;}.ms-xxl-auto{margin-left:auto !important;}.p-xxl-0{padding:0 !important;}.p-xxl-1{padding:0.25rem !important;}.p-xxl-2{padding:0.5rem !important;}.p-xxl-2-5{padding:0.75rem !important;}.p-xxl-3{padding:1rem !important;}.p-xxl-4{padding:1.5rem !important;}.p-xxl-5{padding:3rem !important;}.px-xxl-0{padding-right:0 !important;padding-left:0 !important;}.px-xxl-1{padding-right:0.25rem !important;padding-left:0.25rem !important;}.px-xxl-2{padding-right:0.5rem !important;padding-left:0.5rem !important;}.px-xxl-2-5{padding-right:0.75rem !important;padding-left:0.75rem !important;}.px-xxl-3{padding-right:1rem !important;padding-left:1rem !important;}.px-xxl-4{padding-right:1.5rem !important;padding-left:1.5rem !important;}.px-xxl-5{padding-right:3rem !important;padding-left:3rem !important;}.py-xxl-0{padding-top:0 !important;padding-bottom:0 !important;}.py-xxl-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important;}.py-xxl-2{padding-top:0.5rem !important;padding-bottom:0.5rem !important;}.py-xxl-2-5{padding-top:0.75rem !important;padding-bottom:0.75rem !important;}.py-xxl-3{padding-top:1rem !important;padding-bottom:1rem !important;}.py-xxl-4{padding-top:1.5rem !important;padding-bottom:1.5rem !important;}.py-xxl-5{padding-top:3rem !important;padding-bottom:3rem !important;}.pt-xxl-0{padding-top:0 !important;}.pt-xxl-1{padding-top:0.25rem !important;}.pt-xxl-2{padding-top:0.5rem !important;}.pt-xxl-2-5{padding-top:0.75rem !important;}.pt-xxl-3{padding-top:1rem !important;}.pt-xxl-4{padding-top:1.5rem !important;}.pt-xxl-5{padding-top:3rem !important;}.pe-xxl-0{padding-right:0 !important;}.pe-xxl-1{padding-right:0.25rem !important;}.pe-xxl-2{padding-right:0.5rem !important;}.pe-xxl-2-5{padding-right:0.75rem !important;}.pe-xxl-3{padding-right:1rem !important;}.pe-xxl-4{padding-right:1.5rem !important;}.pe-xxl-5{padding-right:3rem !important;}.pb-xxl-0{padding-bottom:0 !important;}.pb-xxl-1{padding-bottom:0.25rem !important;}.pb-xxl-2{padding-bottom:0.5rem !important;}.pb-xxl-2-5{padding-bottom:0.75rem !important;}.pb-xxl-3{padding-bottom:1rem !important;}.pb-xxl-4{padding-bottom:1.5rem !important;}.pb-xxl-5{padding-bottom:3rem !important;}.ps-xxl-0{padding-left:0 !important;}.ps-xxl-1{padding-left:0.25rem !important;}.ps-xxl-2{padding-left:0.5rem !important;}.ps-xxl-2-5{padding-left:0.75rem !important;}.ps-xxl-3{padding-left:1rem !important;}.ps-xxl-4{padding-left:1.5rem !important;}.ps-xxl-5{padding-left:3rem !important;}.text-xxl-start{text-align:left !important;}.text-xxl-end{text-align:right !important;}.text-xxl-center{text-align:center !important;}}@media (min-width:1200px){.fs-1{font-size:2.5rem !important;}.fs-2{font-size:2rem !important;}.fs-3{font-size:1.75rem !important;}.fs-4{font-size:1.5rem !important;}}@media print{.d-print-inline{display:inline !important;}.d-print-inline-block{display:inline-block !important;}.d-print-block{display:block !important;}.d-print-grid{display:grid !important;}.d-print-table{display:table !important;}.d-print-table-row{display:table-row !important;}.d-print-table-cell{display:table-cell !important;}.d-print-flex{display:flex !important;}.d-print-inline-flex{display:inline-flex !important;}.d-print-none{display:none !important;}}a:hover:visited{-webkit-text-decoration-color:currentColor !important;text-decoration-color:currentColor !important;}
+.btn-close{box-sizing:content-box;width:1em;height:1em;padding:0.25em 0.25em;color:#000;background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;border:0;border-radius:0.5rem;opacity:0.5;}.btn-close:hover{color:#000;text-decoration:none;opacity:0.75;}.btn-close:focus{outline:0;box-shadow:0 0 0 0.25rem rgba(20,59,118,0.25);opacity:1;}.btn-close:disabled,.btn-close.disabled{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0.25;}.btn-close-white{filter:invert(1) grayscale(100%) brightness(200%);}
+.modal{--bs-modal-zindex:120;--bs-modal-width:500px;--bs-modal-padding:1rem;--bs-modal-margin:0.5rem;--bs-modal-color:;--bs-modal-bg:#fff;--bs-modal-border-color:var(--bs-border-color-translucent);--bs-modal-border-width:1px;--bs-modal-border-radius:0.5rem;--bs-modal-box-shadow:0 0.125rem 0.25rem rgba(0,0,0,0.075);--bs-modal-inner-border-radius:calc(0.5rem - 1px);--bs-modal-header-padding-x:1rem;--bs-modal-header-padding-y:1rem;--bs-modal-header-padding:1rem 1rem;--bs-modal-header-border-color:var(--bs-border-color);--bs-modal-header-border-width:1px;--bs-modal-title-line-height:1.5;--bs-modal-footer-gap:0.5rem;--bs-modal-footer-bg:;--bs-modal-footer-border-color:var(--bs-border-color);--bs-modal-footer-border-width:1px;position:fixed;top:0;left:0;z-index:var(--bs-modal-zindex);display:none;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;outline:0;}.modal-dialog{position:relative;width:auto;margin:var(--bs-modal-margin);pointer-events:none;}.modal.fade .modal-dialog{transition:transform 0.3s ease-out;transform:translate(0,-50px);}@media (prefers-reduced-motion:reduce){.modal.fade .modal-dialog{transition:none;}}.modal.show .modal-dialog{transform:none;}.modal.modal-static .modal-dialog{transform:scale(1.02);}.modal-dialog-scrollable{height:calc(100% - var(--bs-modal-margin) * 2);}.modal-dialog-scrollable .modal-content{max-height:100%;overflow:hidden;}.modal-dialog-scrollable .modal-body{overflow-y:auto;}.modal-dialog-centered{display:flex;align-items:center;min-height:calc(100% - var(--bs-modal-margin) * 2);}.modal-content{position:relative;display:flex;flex-direction:column;width:100%;color:var(--bs-modal-color);pointer-events:auto;background-color:var(--bs-modal-bg);background-clip:padding-box;border:var(--bs-modal-border-width) solid var(--bs-modal-border-color);border-radius:var(--bs-modal-border-radius);box-shadow:var(--bs-modal-box-shadow);outline:0;}.modal-backdrop{--bs-backdrop-zindex:110;--bs-backdrop-bg:#000;--bs-backdrop-opacity:0.5;position:fixed;top:0;left:0;z-index:var(--bs-backdrop-zindex);width:100vw;height:100vh;background-color:var(--bs-backdrop-bg);}.modal-backdrop.fade{opacity:0;}.modal-backdrop.show{opacity:var(--bs-backdrop-opacity);}.modal-header{display:flex;flex-shrink:0;align-items:center;justify-content:space-between;padding:var(--bs-modal-header-padding);border-bottom:var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);border-top-left-radius:var(--bs-modal-inner-border-radius);border-top-right-radius:var(--bs-modal-inner-border-radius);}.modal-header .btn-close{padding:calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);margin:calc(var(--bs-modal-header-padding-y) * -0.5) calc(var(--bs-modal-header-padding-x) * -0.5) calc(var(--bs-modal-header-padding-y) * -0.5) auto;}.modal-title{margin-bottom:0;line-height:var(--bs-modal-title-line-height);}.modal-body{position:relative;flex:1 1 auto;padding:var(--bs-modal-padding);}.modal-footer{display:flex;flex-shrink:0;flex-wrap:wrap;align-items:center;justify-content:flex-end;padding:calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * 0.5);background-color:var(--bs-modal-footer-bg);border-top:var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);border-bottom-right-radius:var(--bs-modal-inner-border-radius);border-bottom-left-radius:var(--bs-modal-inner-border-radius);}.modal-footer > *{margin:calc(var(--bs-modal-footer-gap) * 0.5);}@media (min-width:576px){.modal{--bs-modal-margin:1.75rem;--bs-modal-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);}.modal-dialog{max-width:var(--bs-modal-width);margin-right:auto;margin-left:auto;}.modal-sm{--bs-modal-width:300px;}}@media (min-width:992px){.modal-lg,.modal-xl{--bs-modal-width:800px;}}@media (min-width:1200px){.modal-xl{--bs-modal-width:1140px;}}.modal-fullscreen{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen .modal-header,.modal-fullscreen .modal-footer{border-radius:0;}.modal-fullscreen .modal-body{overflow-y:auto;}@media (max-width:575.98px){.modal-fullscreen-sm-down{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen-sm-down .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen-sm-down .modal-header,.modal-fullscreen-sm-down .modal-footer{border-radius:0;}.modal-fullscreen-sm-down .modal-body{overflow-y:auto;}}@media (max-width:767.98px){.modal-fullscreen-md-down{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen-md-down .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen-md-down .modal-header,.modal-fullscreen-md-down .modal-footer{border-radius:0;}.modal-fullscreen-md-down .modal-body{overflow-y:auto;}}@media (max-width:991.98px){.modal-fullscreen-lg-down{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen-lg-down .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen-lg-down .modal-header,.modal-fullscreen-lg-down .modal-footer{border-radius:0;}.modal-fullscreen-lg-down .modal-body{overflow-y:auto;}}@media (max-width:1199.98px){.modal-fullscreen-xl-down{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen-xl-down .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen-xl-down .modal-header,.modal-fullscreen-xl-down .modal-footer{border-radius:0;}.modal-fullscreen-xl-down .modal-body{overflow-y:auto;}}@media (max-width:1399.98px){.modal-fullscreen-xxl-down{width:100vw;max-width:none;height:100%;margin:0;}.modal-fullscreen-xxl-down .modal-content{height:100%;border:0;border-radius:0;}.modal-fullscreen-xxl-down .modal-header,.modal-fullscreen-xxl-down .modal-footer{border-radius:0;}.modal-fullscreen-xxl-down .modal-body{overflow-y:auto;}}ul.linkit-ui-autocomplete{position:absolute;z-index:9999;}
+.licence-comparer{text-align:center;margin-bottom:0.5rem;}@media (min-width:768px){.licence-comparer{table-layout:fixed;}}.licence-comparer__wrapper{overflow-x:auto;margin-bottom:1rem;}.licence-comparer__sidebar-header,.licence-comparer__header > .btn{font-weight:700;}.licence-comparer__sidebar-header,.licence-comparer__sidebar-cell,.licence-comparer__header,.licence-comparer__cell{border:1px solid #dadee0;}.licence-comparer__sidebar-header.licence-filter--can{background-color:#198754 !important;color:#fff;}.licence-comparer__sidebar-header.licence-filter--must{background-color:#555859 !important;color:#fff;}.licence-comparer__sidebar-header.licence-filter--cannot{background-color:#dc3545 !important;color:#fff;}.licence-comparer__sidebar-header.licence-filter--compatible{background-color:#6610f2 !important;color:#fff;}.licence-comparer__sidebar-header.licence-filter--law{background-color:#fd7e14 !important;color:#fff;}.licence-comparer__sidebar-header.licence-filter--support{background-color:#0b4e97 !important;color:#fff;}.licence-comparer__sidebar-cell.licence-filter--can{background-color:rgba(25,135,84,0.1);}.licence-comparer__sidebar-cell.licence-filter--must{background-color:rgba(85,88,89,0.1);}.licence-comparer__sidebar-cell.licence-filter--cannot{background-color:rgba(220,53,69,0.1);}.licence-comparer__sidebar-cell.licence-filter--compatible{background-color:rgba(102,16,242,0.1);}.licence-comparer__sidebar-cell.licence-filter--law{background-color:rgba(253,126,20,0.1);}.licence-comparer__sidebar-cell.licence-filter--support{background-color:rgba(11,78,151,0.1);}.licence-comparer__header{background-color:#f5f6f7 !important;}.modal-body{text-align:left;}
+.table{--bs-table-color:var(--bs-body-color);--bs-table-bg:transparent;--bs-table-border-color:var(--bs-border-color);--bs-table-accent-bg:transparent;--bs-table-striped-color:var(--bs-body-color);--bs-table-striped-bg:rgba(0,0,0,0.05);--bs-table-active-color:var(--bs-body-color);--bs-table-active-bg:rgba(0,0,0,0.1);--bs-table-hover-color:var(--bs-body-color);--bs-table-hover-bg:rgba(0,0,0,0.1);width:100%;margin-bottom:1rem;color:var(--bs-table-color);vertical-align:top;border-color:var(--bs-table-border-color);}.table > :not(caption) > * > *{padding:0.5rem 0.5rem;background-color:var(--bs-table-bg);border-bottom-width:1px;box-shadow:inset 0 0 0 9999px var(--bs-table-accent-bg);}.table > tbody{vertical-align:inherit;}.table > thead{vertical-align:bottom;}.table-group-divider{border-top:2px solid currentcolor;}.caption-top{caption-side:top;}.table-sm > :not(caption) > * > *{padding:0.25rem 0.25rem;}.table-bordered > :not(caption) > *{border-width:1px 0;}.table-bordered > :not(caption) > * > *{border-width:0 1px;}.table-borderless > :not(caption) > * > *{border-bottom-width:0;}.table-borderless > :not(:first-child){border-top-width:0;}.table-striped > tbody > tr:nth-of-type(odd) > *{--bs-table-accent-bg:var(--bs-table-striped-bg);color:var(--bs-table-striped-color);}.table-striped-columns > :not(caption) > tr > :nth-child(even){--bs-table-accent-bg:var(--bs-table-striped-bg);color:var(--bs-table-striped-color);}.table-active{--bs-table-accent-bg:var(--bs-table-active-bg);color:var(--bs-table-active-color);}.table-hover > tbody > tr:hover > *{--bs-table-accent-bg:var(--bs-table-hover-bg);color:var(--bs-table-hover-color);}.table-primary{--bs-table-color:#000;--bs-table-bg:#d0d8e4;--bs-table-border-color:#bbc2cd;--bs-table-striped-bg:#c6cdd9;--bs-table-striped-color:#000;--bs-table-active-bg:#bbc2cd;--bs-table-active-color:#000;--bs-table-hover-bg:#bbc2cd;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-secondary{--bs-table-color:#000;--bs-table-bg:#fafcfe;--bs-table-border-color:#e1e3e5;--bs-table-striped-bg:#eeeff1;--bs-table-striped-color:#000;--bs-table-active-bg:#e1e3e5;--bs-table-active-color:#000;--bs-table-hover-bg:#e1e3e5;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-success{--bs-table-color:#000;--bs-table-bg:#d1f2e6;--bs-table-border-color:#bcdacf;--bs-table-striped-bg:#c7e6db;--bs-table-striped-color:#000;--bs-table-active-bg:#bcdacf;--bs-table-active-color:#000;--bs-table-hover-bg:#bcdacf;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-info{--bs-table-color:#000;--bs-table-bg:#cfe4e8;--bs-table-border-color:#bacdd1;--bs-table-striped-bg:#c5d9dc;--bs-table-striped-color:#000;--bs-table-active-bg:#bacdd1;--bs-table-active-color:#000;--bs-table-hover-bg:#bacdd1;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-warning{--bs-table-color:#000;--bs-table-bg:#fbeed9;--bs-table-border-color:#e2d6c3;--bs-table-striped-bg:#eee2ce;--bs-table-striped-color:#000;--bs-table-active-bg:#e2d6c3;--bs-table-active-color:#000;--bs-table-hover-bg:#e2d6c3;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-danger{--bs-table-color:#000;--bs-table-bg:#fbd6d6;--bs-table-border-color:#e2c1c1;--bs-table-striped-bg:#eecbcb;--bs-table-striped-color:#000;--bs-table-active-bg:#e2c1c1;--bs-table-active-color:#000;--bs-table-hover-bg:#e2c1c1;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-light{--bs-table-color:#000;--bs-table-bg:#f8f9fa;--bs-table-border-color:#dfe0e1;--bs-table-striped-bg:#ecedee;--bs-table-striped-color:#000;--bs-table-active-bg:#dfe0e1;--bs-table-active-color:#000;--bs-table-hover-bg:#dfe0e1;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-dark{--bs-table-color:#fff;--bs-table-bg:#212529;--bs-table-border-color:#373b3e;--bs-table-striped-bg:#2c3034;--bs-table-striped-color:#fff;--bs-table-active-bg:#373b3e;--bs-table-active-color:#fff;--bs-table-hover-bg:#373b3e;--bs-table-hover-color:#fff;color:var(--bs-table-color);border-color:var(--bs-table-border-color);}.table-responsive{overflow-x:auto;-webkit-overflow-scrolling:touch;}@media (max-width:575.98px){.table-responsive-sm{overflow-x:auto;-webkit-overflow-scrolling:touch;}}@media (max-width:767.98px){.table-responsive-md{overflow-x:auto;-webkit-overflow-scrolling:touch;}}@media (max-width:991.98px){.table-responsive-lg{overflow-x:auto;-webkit-overflow-scrolling:touch;}}@media (max-width:1199.98px){.table-responsive-xl{overflow-x:auto;-webkit-overflow-scrolling:touch;}}@media (max-width:1399.98px){.table-responsive-xxl{overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+    </style>
+</head>
+
+<body style="padding-top: 54px;">
+<table data-drupal-selector="licence-comparer" class="licence-comparer table" data-striping="1">
+  
+  
+  
+      <tbody>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--can">Can</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+
+
+<div id="cc-by-4-0" tabindex="-1" aria-hidden="true" aria-label="cc-by-4-0Label" class="modal fade"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button></div><div class="modal-body"><p class="h4">Creative Commons Attribution 4.0 International (CC-BY-4.0)</p><p>The less restrictive Creative Commons Attribution licence is this international version 4, which gives recipients maximum freedom to do what they want with the work of the licensor. Recipents redistributing the work must give credit to the original author of the work (= attribution)&nbsp;and state changes if any, including a URL&nbsp;or link to the original work, this CC-BY licence and a copyright notice. Author can request to remove any attribution given information. Recipients re-distributing the work to third parties may not apply legal terms or technological measures (like Tivoisation) that legally restrict the rights granted by the licence.&nbsp;OKF (Open Knowledge Fundation) recommends this licence. The European Commission has adopted CC-BY-4.0 for sharing documents.</p></div><div class="modal-footer"><a class="btn btn-outline-primary btn-md" href="http://spdx.org/licenses/CC-BY-4.0" target="_blank" rel="noopener nofollow" role="button">Licence text</a></div></div></div></div>
+
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+
+
+<div id="eupl-1-2" tabindex="-1" aria-hidden="true" aria-label="eupl-1-2Label" class="modal fade"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button></div><div class="modal-body"><p class="h4">European Union Public Licence, Version 1.2 or later (EUPL)</p><p>Official Licence of the European Union (EC Decision, &nbsp;part of European law). The licence is interoperable (no restrictions on linking&nbsp;in order to facilitate the integration of multiple components),&nbsp;reciprocal (third parties distributing improvements or derivatives must publish&nbsp;and provide&nbsp;back the modified source code) and compatible: no global relicensing permitted, but&nbsp;the source code could be reused in other projects under GPL/AGPL, EPL, LGPL, MPL, OSL, CeCILL, LiLiQ. EUPL covers SaaS / network distribution. EUPL covers "the Work" (software and ancillary data). Original in 23 EU languages. Replaces EUPL-1.1 for works "Licensed under the EUPL" without specifying licence version, or adding "or later". Applicable law and court: licensor seat in EU (or specific additional agreement), otherwise Belgium. Support from the Joinup.eu community. Free legal support provided.</p></div><div class="modal-footer"><a class="btn btn-outline-primary btn-md" href="http://spdx.org/licenses/EUPL-1.2" target="_blank" rel="noopener nofollow" role="button">Licence text</a></div></div></div></div>
+
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+
+
+<div id="pddl-1-0" tabindex="-1" aria-hidden="true" aria-label="pddl-1-0Label" class="modal fade"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button></div><div class="modal-body"><p class="h4">ODC Public Domain Dedication &amp; License 1.0 (PDDL)</p><p>This licence is meant to be an international, database-specific equivalent of public domain dedication. At the same time, licence states that nobody can relicense or sublicense any database under PDDL because after a public domain dedication nobody longer own any rights to the database. It looks dubious that such prohibition is enforceable, and by whom? However, OKF (Open Knowledge Fundation) recommends this licence...&nbsp;</p></div><div class="modal-footer"><a class="btn btn-outline-primary btn-md" href="http://spdx.org/licenses/PDDL-1.0" target="_blank" rel="noopener nofollow" role="button">Licence text</a></div></div></div></div>
+
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+
+
+<div id="odc-by-1-0" tabindex="-1" aria-hidden="true" aria-label="odc-by-1-0Label" class="modal fade"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button></div><div class="modal-body"><p class="h4">Open Data Commons Attribution License (ODC-BY)</p><p>Open Data Commons Attribution (ODC-BY) is a rather permissive licence written for databases. It allow users to freely share, modify, and use a database subject only to attribution requirements set out in its Section 4, but does not permit sublicensing or imposing any further restrictions on the exercise of the granted rights. ODC-BY is recommended by Open Knowledge Fundation (OKF)</p></div><div class="modal-footer"><a class="btn btn-outline-primary btn-md" href="http://spdx.org/licenses/ODC-By-1.0" target="_blank" rel="noopener nofollow" role="button">Licence text</a></div></div></div></div>
+
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+
+
+<div id="odbl-1-0" tabindex="-1" aria-hidden="true" aria-label="odbl-1-0Label" class="modal fade"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button></div><div class="modal-body"><p class="h4">ODC Open Database License (ODbL)</p><p>ODC Open Database License (ODbL) is a reciprocal (or copyleft) licence with specific terms convenient for databases. ODbL is recommended by Open Knowledge Fundation (OKF).</p></div><div class="modal-footer"><a class="btn btn-outline-primary btn-md" href="http://spdx.org/licenses/ODbL-1.0" target="_blank" rel="noopener nofollow" role="button">Licence text</a></div></div></div></div>
+
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Use/reproduce</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 can use/reproduce.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can use/reproduce.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 can use/reproduce.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 can use/reproduce.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 can use/reproduce.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Distribute</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 can distribute.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can distribute.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 can distribute.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 can distribute.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 can distribute.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Modify/merge</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 can modify/merge.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can modify/merge.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 can modify/merge.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 can modify/merge.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 can modify/merge.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Sublicense</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 can sublicense.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can sublicense.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 can not sublicense.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 can not sublicense.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 can not sublicense.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Commercial use</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 can commercial use.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can commercial use.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 can commercial use.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 can commercial use.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 can commercial use.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Use patents</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 can not use patents.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can use patents.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 can not use patents.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 can not use patents.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 can not use patents.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--can">Place warranty</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 can not place warranty.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 can place warranty.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 can not place warranty.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 can not place warranty.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 can not place warranty.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--must">Must</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Incl. Copyright</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 must incl. copyright.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must incl. copyright.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not incl. copyright.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 must incl. copyright.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 must incl. copyright.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Royalty free</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not royalty free.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must royalty free.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not royalty free.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not royalty free.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not royalty free.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">State changes</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 must state changes.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must state changes.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not state changes.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not state changes.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not state changes.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Disclose source</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not disclose source.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must disclose source.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not disclose source.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not disclose source.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not disclose source.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Copyleft/Share a.</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not copyleft/share a..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must copyleft/share a..
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not copyleft/share a..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not copyleft/share a..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 must copyleft/share a..
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Lesser copyleft</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not lesser copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 must not lesser copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not lesser copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not lesser copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not lesser copyleft.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">SaaS/network </td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not saas/network .
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must saas/network .
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not saas/network .
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not saas/network .
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not saas/network .
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Include licence</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not include licence.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 must include licence.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not include licence.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not include licence.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 must include licence.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--must">Rename modifs.</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 must not rename modifs..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 must not rename modifs..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 must not rename modifs..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 must not rename modifs..
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 must not rename modifs..
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--cannot">Cannot</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Hold liable</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not hold liable.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 cannot hold liable.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 cannot hold liable.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 cannot hold liable.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 cannot hold liable.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Use trademark</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not use trademark.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 cannot use trademark.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 cannot use trademark.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 cannot use trademark.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 cannot use trademark.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Commerce</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not commerce.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 cannot not commerce.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 cannot not commerce.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 cannot not commerce.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 cannot not commerce.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Modify</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not modify.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 cannot not modify.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 cannot not modify.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 cannot not modify.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 cannot not modify.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Ethical clauses</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not ethical clauses.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 cannot not ethical clauses.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 cannot not ethical clauses.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 cannot not ethical clauses.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 cannot not ethical clauses.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Pub sector only</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not pub sector only.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 cannot not pub sector only.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 cannot not pub sector only.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 cannot not pub sector only.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 cannot not pub sector only.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--cannot">Sublicence</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 cannot not sublicence.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 cannot not sublicence.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 cannot sublicence.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 cannot sublicence.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 cannot sublicence.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--compatible">Compatible</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">None N/A</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 is compatible with none n/a.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 is not compatible with none n/a.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with none n/a.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with none n/a.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with none n/a.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">Permissive</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 is compatible with permissive.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2 is not compatible with permissive.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 is compatible with permissive.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 is compatible with permissive.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with permissive.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">GPL</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 is not compatible with gpl.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with gpl.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with gpl.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with gpl.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with gpl.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">Other copyleft</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 is not compatible with other copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with other copyleft.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with other copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with other copyleft.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 is compatible with other copyleft.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">Linking freedom</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 is not compatible with linking freedom.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with linking freedom.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with linking freedom.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with linking freedom.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with linking freedom.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">Multilingual</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 is compatible with multilingual.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with multilingual.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with multilingual.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with multilingual.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with multilingual.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">For data</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0 is compatible with for data.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with for data.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0 is compatible with for data.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0 is compatible with for data.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0 is compatible with for data.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--compatible">For software</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0 is not compatible with for software.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2 is compatible with for software.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0 is not compatible with for software.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0 is not compatible with for software.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0 is not compatible with for software.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--law">Law</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">EU/MS law</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's law is not EU/MS law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's law is EU/MS law.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's law is not EU/MS law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's law is not EU/MS law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's law is not EU/MS law.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">US law</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's law is not US law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2's law is not US law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's law is not US law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's law is not US law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's law is not US law.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">Licensor's law</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's law is not Licensor's law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's law is Licensor's law.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's law is not Licensor's law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's law is not Licensor's law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's law is not Licensor's law.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">Other law</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's law is not Other law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2's law is not Other law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's law is not Other law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's law is not Other law.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's law is not Other law.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">Not fixed/local</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0's law is Not fixed/local.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          EUPL-1.2's law is not Not fixed/local.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          PDDL-1.0's law is Not fixed/local.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0's law is Not fixed/local.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0's law is Not fixed/local.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--law">Venue fixed</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's law is not Venue fixed.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's law is Venue fixed.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's law is not Venue fixed.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's law is not Venue fixed.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's law is not Venue fixed.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-header licence-filter--support">Support</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#cc-by-4-0">
+  CC-BY-4.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#eupl-1-2">
+  EUPL-1.2
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#pddl-1-0">
+  PDDL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odc-by-1-0">
+  ODC-By-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                      <td class="licence-comparer__header">
+
+
+
+<button class="btn btn-link btn-md text-dark p-0" type="button" data-bs-toggle="modal" data-bs-target="#odbl-1-0">
+  ODbL-1.0
+  <svg class="bi icon--fluid">
+    <use xlink:href="/themes/ventuno/assets/icons/icons.svg#info-circle"></use>
+  </svg>
+</button>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--support">Strong Community</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          CC-BY-4.0's support is Strong Community.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's support is Strong Community.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's support is not Strong Community.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODC-By-1.0's support is Strong Community.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          ODbL-1.0's support is Strong Community.
+      </span>
+  X
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--support">Governments/EU</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's support is not Governments/EU.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's support is Governments/EU.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's support is not Governments/EU.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's support is not Governments/EU.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's support is not Governments/EU.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--support">OSI approved</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's support is not OSI approved.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's support is OSI approved.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's support is not OSI approved.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's support is not OSI approved.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's support is not OSI approved.
+      </span>
+</td>
+                  </tr>
+              <tr>
+                      <td class="licence-comparer__sidebar-cell licence-filter--support">FSF Free/Libre</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          CC-BY-4.0's support is not FSF Free/Libre.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-on">  <span class="visually-hidden">
+          EUPL-1.2's support is FSF Free/Libre.
+      </span>
+  X
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          PDDL-1.0's support is not FSF Free/Libre.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODC-By-1.0's support is not FSF Free/Libre.
+      </span>
+</td>
+                      <td class="licence-comparer__cell licence-comparer__cell-off">  <span class="visually-hidden">
+          ODbL-1.0's support is not FSF Free/Libre.
+      </span>
+</td>
+                  </tr>
+          </tbody>
+    </table>
+</body>

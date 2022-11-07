@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8>
+    <title>Datasets analysis</title>
+    <style>
+    .collapsible {
+      color: gray;
+      cursor: pointer;
+      padding: 10px;
+
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      color: black;
+      background-color: #777;
+    }
+
+    .content {
+      display: none;
+    }
+    </style>
+</head>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+<body>
+<h1>Datasets Analysis</h1>
+<p> Each dataset was analysed by providing information regarding the publisher or provider, the data owner and rights holder,
+    licensing and access considerations, and a description, type, comments and problems table for each of the attribute
+    present in the dataset.
+
+<h2>Datadis datasets</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher / provider:</b> Datadis platform (giving access to different energy distributors' databases from Catalan patrimony data). </li>
+    <li> <b> Data owner / rights holder: </b> Catalonia government. </li>
+    <li> <b> License and access considerations: </b> In spite of being public assets' data the information stored in this datasets
+        is private and could be used for bad purposes. Hence, this information falls into our private and anonymized
+        access categories. Its license's restrictions is strong which means that only authorized users are allowed to see the
+        entries in detail. Aggregated by any parameter e.g. temporal or by administrative divisions would make this data anonymized. This
+        action would allow us to give access to an extended number of users. </li>
+</ul>
+     More information about Datadis' data treatment is available in <a href="https://datadis.es/faqs">https://datadis.es/faqs</a>.
+
+<h3>Supplies dataset</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size:</b> Consist of 5655 supplies. (607kB) </li>
+    <li> <b> Serialization:</b> Single csv file. </li>
+</ul>
+<button type="button" class="collapsible">Datadis supplies attributes table</button>
+<div class="content" w3-include-html="tables/Datadis_supplies.html"></div>
+
+<h3>Timeseries datasets</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size:</b> Consist of 81601183 entries in total (5.26 GB) split into 81 files of about one million entries
+        each (around 67 MB each). </li>
+    <li> <b> Serialization</b> 81 csv files.  </li>
+</ul>
+<button type="button" class="collapsible">Datadis timeseries attributes table</button>
+<div class="content" w3-include-html="tables/Datadis_timeseries.html"></div>
+
+<h2>GPG patrimony dataset</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher /provider:</b> "Gestió de Patrimoni de la Generalitat" that can be translated into the Catalan
+        Patrimony Management organization.</li>
+    <li> <b> Data owner / rights holder: </b> Catalonia government. </li>
+    <li> <b> License and access considerations: </b> The attributes selected from this dataset that meets the use cases
+        requirements might neither be sensible nor represent any harm for public use. However, it is not clear which type
+        of license is attached to this dataset forcing us to impose limits on any kind of publication. This situation includes
+        the selected attributes and made us classify this data into the same categories from the previous two datasets:
+        private and anonymized data access.</li>
+    <li> <b> Data size: </b> This dataset consist of 4331 patrimonies. (1.013 MB)</li>
+    <li> <b> Serialization: </b> Single csv file. </li>
+</ul>
+<button type="button" class="collapsible">GPG patrimony attributes table</button>
+<div class="content" w3-include-html="tables/GPG_patrimony.html"></div>
+
+<h2>Gemweb datasets</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher / provider: </b> Gemweb platform.</li>
+    <li> <b> Data owner / rights holder: </b> Catalonia government. </li>
+    <li> <b> License and access considerations: </b> The data coming from this datasource was gathered from a private
+        company with a framework of access granted to our organization for a limited period of time.
+        The nature of the information stored in any of the Gemweb extracted files is private. This fact made this data
+        be from private or anonymized access categories.
+        Only data-owners can access to granular information and only a small set of users can access to the
+        aggregated ones. </li>
+</ul>
+
+<h3>Entities dataset</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Consist of 45 entities. (14.8 kB)</li>
+    <li> <b> Serialization: </b> Single csv file.</li>
+</ul>
+<button type="button" class="collapsible">Gemweb entities attributes table</button>
+<div class="content" w3-include-html="tables/Gemweb_entities.html"></div>
+
+<h3>Buildings dataset</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Consist of 1681 entries. (353 kB) </li>
+    <li> <b> Serialization: </b> Single csv file.</li>
+</ul>
+<button type="button" class="collapsible">Gemweb buildings attributes table</button>
+<div class="content" w3-include-html="tables/Gemweb_buildings.html"></div>
+
+<h3>Supplies dataset</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Consist of 2472 entities. (387 kB) </li>
+    <li> <b> Serialization: </b> Single csv file. </li>
+</ul>
+<button type="button" class="collapsible">Gemweb supplies attributes table</button>
+<div class="content" w3-include-html="tables/Gemweb_supplies.html"></div>
+
+<h2> Cadastral datasets in INSPIRE format</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher / provider: </b> "Dirección General del Catastro", which in English is translated to Directorate
+        General for Cadastre, through the "Sede Electrónica del Catastro" or Cadastral Electronic Site. </li>
+    <li> <b> Data owner: </b> Directorate General for Cadastre. Spain (author and owner). </li>
+    <li> <b> License and access considerations: </b> Transformation of the original data is required previous
+        its public or private, and commercial or personal use. It is not allowed to use this data to offer a service
+        that supersede the services provided by the Cadastal Electronic Site. The use of this data would imply the
+        acceptance of missing, inaccurate or out of date entries assuming the responsibility of what this can
+        provoke to the outputs of a service that depends on this data. <br>
+        Following the previous considerations, DGC's cadastral information could be classified within the public access category
+        giving important information to enable the dimension required for geographical aggregation within the anonymized data
+        category.</li>
+</ul>
+<p> Massive download of INSPIRE formatted data is enabled through a service called "atom" in compressed format (zip) files.
+    Three atom URLs allows the access to cadastral parcels', addresses' and buildings' data grouped by province and provides links
+    to the compressed datasets by municipality. With each municipality URLs everyone could access to download three compressed
+    files for each municipality. </p>
+<ul>
+    <li> Each cadastral parcel compressed file contains beyond the cadastral parcels gml file a gml file from the cadastral zoning
+    and an xml with the dataset metadata.</li>
+    <li> Within the address compressed file there are the gml file with the addresses available for the municipality and
+    its xml metadata file.</li>
+    <li> Lastly, the building compressed file contains a buildings' gml file, a buildings' part gml file and another gml file
+    for other constructions in addition to the metadata xml file.</li>
+</ul>
+<p> We are only aware of the building, address and cadastral parcel gml files for our use cases.</p>
+
+<h3> Cadastral parcels datasets</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Single file's number of entries and its corresponding size varies according to the entities
+        present in each municipality. In total there are 947 municipalities in Catalonia which means that we are dealing
+        with 947 gml files (7.51 GB) for cadastral parcels. Due to the transformation needed to get the desired EPSG projection
+        we processed those files into a new set of 947 gml files (6.04 GB).</li>
+    <li> <b> Serialization:</b> Multiple (947) gml (geography markup language) files, one for each municipality of Catalonia. </li>
+</ul>
+<p> This dataset is pre-processed and contains Catalonia cadastral parcels information with projected to <b>EPSG:4326</b> coordinates using QGIS. <br>
+    Every attribute has this path: <b>gml:FeatureMember - ogr:qgis - ...</b> before the attribute name shown in the table below.</p>
+<button type="button" class="collapsible">INSPIRE parcels attributes table</button>
+<div class="content" w3-include-html="tables/INSPIRE_parcels.html"></div>
+
+<h3>Buildings datasets</h3>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Single file's number of entries and its corresponding size varies according to the entities
+        present in each municipality. In total there are 947 municipalities in Catalonia which means that we are dealing
+        with 947 gml files (6.47 GB) for buildings. Due to the transformation needed to get the desired EPSG projection
+        we processed those files into a new set of 947 gml files (3.61 GB).</li>
+    <li> <b> Serialization: </b> Multiple (947) gml files, one for each municipality of Catalonia. </li>
+</ul>
+<p> This dataset is pre-processed and contains Catalonia buildings information with projected to <b>EPSG:4326</b> coordinates using QGIS. <br>
+    Every attribute has this path: <b>gml:featureMember - ogr:qgis - ...</b> before the attribute name shown in the table below.</p>
+<button type="button" class="collapsible">INSPIRE buildings attributes table</button>
+<div class="content" w3-include-html="tables/INSPIRE_buildings.html"></div>
+
+<h3>Address datasets</h3>
+<p> To extract the addresses' information needed we are using both the original and the pre-processed gml files due to the
+    projection executed by QGIS removed some data from the original file in the process.
+    From the original gml file we pretend to extract among others the postal code, municipality, and the province whereas
+    from the pre-processed file the intention is to extract the projected to <b>EPSG:4326</b> coordinates.</p>
+
+<h4>Original datasets</h4>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Single file's number of entries and its corresponding size varies according to the entities
+        present in each municipality. In total there are 947 municipalities in Catalonia which means that we are dealing
+        with 947 gml files (2.54 GB) for addresses.</li>
+    <li> <b> Serialization: </b> Multiple (947) gml files, one for each municipality of Catalonia. </li>
+</ul>
+<p> Every attribute has this path: <b> gml:FeatureCollection - ...</b> before the attribute name shown in the table below.</p>
+<button type="button" class="collapsible">INSPIRE addresses attributes table</button>
+<div class="content" w3-include-html="tables/INSPIRE_addresses_original.html"></div>
+
+<h4>Pre-processed datasets</h4>
+<ul style="list-style-type:none">
+    <li> <b> Data size: </b> Single file's number of entries and its corresponding size varies according to the entities
+        present in each municipality. Due to the transformation needed to get the desired EPSG projection
+        we processed the original files into a new set of 947 gml files (1.38 GB).</li>
+    <li> <b> Serialization: </b> Multiple (947) gml files, one for each municipality of Catalonia. </li>
+</ul>
+<p> This dataset is pre-processed and contains Catalonia cadastral addresses with projected to <b>EPSG:4326</b> coordinates using QGIS. <br>
+    Every attribute has this path: <b>gml:featureMember - ogr:qgis - ...</b> before the attribute name shown in the table below.</p>
+<button type="button" class="collapsible">INSPIRE pre-processed addresses attributes table</button>
+<div class="content" w3-include-html="tables/INSPIRE_addresses.html"></div>
+
+<h2>Geonames dataset</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher / provider: </b> GeoNames database through the geonames.org portal.</li>
+    <li> <b> Data owner: </b> The GeoNames gazetteer is an aggregation of hundreds of public data sources. Original data's ownership
+        depends on the data source.</li>
+    <li> <b> License and access considerations: </b> GeoNames data is under a Creative commons attribution 4.0 license. Because this
+    type of license has no constrain for publishment we have categorized this dataset in the public accesss type.</li>
+    <li> <b> Data size: </b> The 2020's original Geonames datadump consist of 11985741 features. Given that our use cases are
+        bounded by the Catalonia region we have shortened to 8195 the number of features in the datadump for meeting only
+        a Spanish scale. For convenience, we have split this files into three: one for the regions level of Spain (74 kB), one for
+        the province level of Catalonia (238 kB) and the latter for municipalities level of Catalonia (9.3 MB).
+    </li>
+    <li> <b> Serialization: </b> Multiple (3) ttl (turtle) files, one for the Spanish regions, one for Catalonia provinces and the last
+        containing Catalonia municipalities. </li>
+</ul>
+<p></p>
+<p>Some of the fields present in the table are written using the prefix <b>gn: &lthttps://www.geonames.org/ontology#></b>.</p>
+<button type="button" class="collapsible">Geonames attributes table</button>
+<div class="content" w3-include-html="tables/Geonames.html"></div>
+
+<h2> Certificates of energetic efficiency of buildings dataset</h2>
+<ul style="list-style-type:none">
+    <li> <b> Publisher / provider: </b> Published at "dades obertes catalunya" (Catalonia open data) <a href="https://analisi.transparenciacatalunya.cat/en/Energia/Certificats-d-efici-ncia-energ-tica-d-edificis/j6ii-t3w2">portal</a>
+        provided by the "Institut Català d’Energia (ICAEN)" (Catalan Energy Institute). </li>
+    <li> <b> Data owner: </b> Catalonia open data.</li>
+    <li> <b> License and access considerations:</b> This data is under a "Llicència oberta d'ús d'informació Catalunya" license
+        (information use open license) that allows anyone to reuse, distribute, diffuse and transform the information without
+        any temporal restriction. Detailed information can be found following this
+        <a href="http://governobert.gencat.cat/ca/dades_obertes/llicencia-oberta-informacio-catalunya/">link</a>
+        (only available in Catalan language).</li>
+    <li> <b> Data size: </b> Consist of 1371456 energy performance certificates (510.8 MB).</li>
+    <li> <b> Serialization: </b> Single csv file. </li>
+</ul>
+<p> More information regarding this dataset can be found in this <a href="https://analisi.transparenciacatalunya.cat/en/Energia/Certificats-d-efici-ncia-energ-tica-d-edificis/j6ii-t3w2">
+    link</a>. </p>
+<button type="button" class="collapsible">EPC attributes table</button>
+<div class="content" w3-include-html="tables/EPC.html"></div>
+
+<h1>Potential license</h1>
+<p> The intention of this project is to give three access alternatives. Each one would have a license attached to it. The
+    three access levels are graphically depicted below.</p>
+<p style="text-align:center;"><img src="tables/Access_directives.png" alt="Access_directives" width="800"></p>
+<p> In the figure the main set of data is represented as the outer circle that is split into two distinct access levels:
+    public and private access. As a subset, the circle in red depicts the information regarding our use cases which besides
+    the two access levels another one, that splits the private access adding access to anonymized data, is represented. <br>
+    The anonimized data can be either publicly or privately accessed depending on the agreements with the private data owners. This
+    fact made us formulate distinct license types for each access variation. </p>
+
+<button type="button" class="collapsible">Data sources licenses</button>
+<div class="content" w3-include-html="tables/DataSources_licenses.html"></div>
+
+
+<h2>Public data access license</h2>
+<p> For the public access case the most suitable license chosen should be compatible with the public datasets used to create
+    the knowledge graph.</p>
+<p> We have found two main constrains for the public datasets used. Those are:</p>
+<ul>
+    <li> the requirement of data transformation previous its publishment and,
+    <li> the ensurance of not offering a cadastral service that might supersede the Cadastral Electronic site.</li>
+</ul>
+<p> Our application require a data transformation process and doesn't provide a service comparable to that of the Cadastral
+    Electronic site; therefore, an open access license with a disclaimer pointing to the datasources licenses was selected. </p>
+<p> The <b><a href="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons Attribution 4.0 International Public License</a></b>
+    or <b> <a href="https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_en.pdf">European Union Public Licence (EUPL) 1.2 </a> </b>
+    meet the above-described licensing requirements. </p>
+
+<button type="button" class="collapsible">Public licenses candidates</button>
+<div class="content" w3-include-html="tables/License_candidates.html"></div>
+
+
+
+<h2>Anonymized data access license</h2>
+<p> The most common aggregations would be geographical as well as temporal in distinct combinations. Being, were available,
+    monthly and by postal code with a minimum number of entities the finest aggregation possible for anonymized data access. </p>
+<p> For now, only private users are allowed to access anonymized data through a login mechanism which means no public license
+    is selected for this access type. Terms and conditions of the private license are restrictive at proprietary level sharing terms and conditions
+    with the private access type license. </p>
+
+<h2>Private data access license</h2>
+<p> No public license is selected for this access type. Only the owners of the data can access to their private information.
+    Authentication mechanisms would be used for this purpose. More details on the terms, conditions and security for this
+    kind of access are not part of this project. For now, private and anonymized access is locally implemented, if the system
+    is intended to be put into production a cybersecurity layer should be developed to manage this two access types. </p>
+
+<h1> Resource naming strategy</h1>
+<p> The methodology used for this project suggest us to first, select the form of URI we are going to use. Second, to choose
+    a controlled domain should be set. Then when necessary a path for the URIs should be defined. Finally, the pattern for
+    ontology classes, properties and individuals should be designed.</p>
+<h3> URI form</h3>
+<p> The ontological terms defined don't represent a huge amount of triples, therefore we selected as best form for
+    vocabularies and all terminological objects to be in the hash form.</p>
+<p> Our datasets' sizes are in different scales, in most of the cases the smaller ones links the bigger ones entities.
+    Being the energy consumption timeseries data, the cadastral information and the Certificates of energetic efficiency
+    of buildings the set of the largest datasets, the best approach for the URI definition is to use the slash form combined
+    with the hash form. This would provide us access to data in groups rather than the whole knowledge graph in a single URI.</p>
+<h3> Domain</h3>
+<p>  We have the following domains for the project that are under our control.</p>
+<ul>
+    <li>http://bigg-project.eu</li>
+    <li>https://bigg-project.eu (redirected from the previous)</li>
+</ul>
+<p> For our use cases purposes we have selected the <b>http://bigg-project.eu</b> as the base domain.
+    Security encryption and verification would represent a barrier from some servers to access the linked data generated
+    for this project. </p>
+
+<h3> Path</h3>
+<p> Not to conflict with other uses of the base domain e.g. the project's webpage and its contents we have defined
+    as a main path the following: <b>http://bigg-project.eu/ld/</b> .</p>
+
+<h3> Patterns for ontology classes, properties and individuals</h3>
+<p> Having established the domain and the main path, the next step is to set up a path that distinguishes the assertional box (ABox)
+    and the terminological box (TBox) clearly. A big part of the terminological box is the ontology with all of its terms.
+    On the other hand, the assertional box consist practically of individuals. Thus, we have selected two paths for this two cases. </p>
+
+<h4> Ontological terms path </h4>
+<p> The base of the ontological terms should follow this pattern as base:
+    <div style="text-align:center"> <b>http://bigg-project.eu/ld/ontology/</b>. </div> <br>
+    Since the BIGG project consist of more use cases than the ones mentioned in this document, the ontology is meant to be
+    modular. Each module is focused in a specific domain of knowledge that extends the core. <br>
+    Therefore, we have set: <b>http://bigg-project.eu/ld/ontology/[moduleName]#[className]</b>
+    as a good URI pattern to follow that deals with a modular ontology design. Within <b>[moduleName]</b> it could also
+    be included some information about the ontology or the module versions.<br>
+    An example of a class defined within the ontology is stated as follows: <b>http://bigg-project.eu/ld/ontology/Core#Measurement</b>.<br>
+    Likewise, a property should be described like this: <b>http://bigg-project.eu/ld/ontology/Core#connectsAt</b>.</p>
+
+<h4> Individuals path </h4>
+<p> Similar to what was declared for the ontological terms, the next URI was selected as the base URI for all the individuals.
+    <div style="text-align:center"> <b>http://bigg-project.eu/ld/resource/</b></div> <br>
+    Then, to add verbosity to the kind of data we are referring to, a URI that points to a resource should follow
+    the structure: <b>http://bigg-project.eu/ld/resource/[className]/[identifier]</b>. <br>
+    Where <b>[className]</b> encloses the name of the populated class from the ontology, accompanied by a unique identifier
+    for that class in <b>[identifier]</b>. This identifier can also contain a hash depending on the size of the data of the
+    same declared class and on whether the intention is to access this data individually or in batch. <br>
+    To ensure the paths for individuals of different classes are not the same, the strategy is to identify the unique identifier
+    present per concept in each dataset, if not present the procedure is to create an identifier based on a combination of the
+    information available that ensure uniqueness. <br>
+    One example is the case of an individual that represents an organization: <b>http://bigg-project.eu/ld/resource/Organization/gemweb/8017</b>
+    where <b>gemweb/8017</b> represents the identifier of a Organization class subject that states also the provenance
+    of this information. <br>
+</p>
+
+<p> Data provenance could be solved using distinct mechanisms, in our project the definition of a proper URI that contains
+    information regarding the dataset is the selected solution. An additional URI for the default value could be created
+    as a selection mechanism, it would replicate the value the selected data source becoming the default.
+    In addition, to ensure linkage among the data coming from the datasources a sameAs relation should be established between
+    the datasets.</p>
+<p> This W3C <a href="https://www.w3.org/TR/cooluris/" >document</a> exposes that the Coolest URIs for the Semantic Web are
+    those that are designed with Simplicity, Stability and Manageability in mind. </p>
+
+
+<script>
+includeHTML();
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
