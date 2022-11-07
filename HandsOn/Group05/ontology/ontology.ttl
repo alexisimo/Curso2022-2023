@@ -1,122 +1,21 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix em: <http://ocioMadrid/lcc/ontology/EventosMadrid#> .
-@prefix er: <http://ocioMadrid/lcc/resource/> .
-@prefix ns: <http://ns.com#> .
+@base <http://ocioMadrid.com/eventosMadrid/ontology/Eventos> .
+@prefix : <http://ocioMadrid.com/eventosMadrid/ontology/Eventos#> .
+@prefix er: <http://ocioMadrid.com/eventosMadrid/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <http://www.owl-ontologies.com/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix mz: <http://madrid/zonas/> .
-ns: a owl:Ontology ;
-    dc:creator "Grupo5" ;
-    dc:description "Ontology code created by Chowlk" ;
-    dc:title "Ontology" ;
-    owl:versionInfo "0.0.1" .
 
-ns:Accesibilidad a owl:DatatypeProperty ;
-    rdfs:label "accesibilidad" ;
-    rdfs:range xsd:double .
 
-ns:Audiencia a owl:DatatypeProperty ;
-    rdfs:label "audiencia" ;
-    rdfs:range xsd:string .
-
-ns:ClaseVial a owl:DatatypeProperty ;
-    rdfs:label "clase vial" ;
-    rdfs:range xsd:string .
-
-ns:CodigoPostal a owl:DatatypeProperty ;
-    rdfs:label "codigo postal" ;
-    rdfs:range xsd:integer .
-
-ns:Coordenadas-X a owl:DatatypeProperty ;
-    rdfs:label "coordenadas- x" ;
-    rdfs:range xsd:double .
-
-ns:Coordenadas-Y a owl:DatatypeProperty ;
-    rdfs:label "coordenadas- y" ;
-    rdfs:range xsd:double .
-
-ns:Gratuito a owl:DatatypeProperty ;
-    rdfs:label "gratuito" ;
-    rdfs:range xsd:boolean .
-
-ns:IDEvento a owl:DatatypeProperty ;
-    rdfs:label "i d evento" ;
-    rdfs:range xsd:interger .
-
-ns:Nombre a owl:DatatypeProperty ;
-    rdfs:label "nombre" ;
-    rdfs:range xsd:string .
-
-ns:Precio a owl:DatatypeProperty ;
-    rdfs:label "precio" ;
-    rdfs:range xsd:string .
-
-ns:Tipo a owl:DatatypeProperty ;
-    rdfs:label "tipo" ;
-    rdfs:range xsd:string .
-
-ns:Titulo a owl:DatatypeProperty ;
-    rdfs:label "titulo" ;
-    rdfs:range xsd:string .
-
-ns:URL a owl:DatatypeProperty ;
-    rdfs:label "u r l" ;
-    rdfs:range xsd:string .
-
-ns:Via a owl:DatatypeProperty ;
-    rdfs:label "via" ;
-    rdfs:range xsd:string .
-
-em:seDesarrolla a owl:ObjectProperty ;
-    rdfs:label "se desarrolla" ;
-    rdfs:domain er:Evento ;
-    rdfs:range time:IntervaloTiempo .
-
-em:perteneceBarrio a owl:ObjectProperty ;
-    rdfs:label "pertenece barrio" ;
-    rdfs:domain er:Instalacion ;
-    rdfs:range mz:Barrio .
-
-em:inscribe a owl:ObjectProperty ;
-    rdfs:label "inscribe" ;
-    rdfs:domain er:Evento ;
-    rdfs:range er:Actividad .
-
-em:perteneceDistrito a owl:ObjectProperty ;
-    rdfs:label "pertenece distrito" ;
-    rdfs:domain er:Instalacion ;
-    rdfs:range mz:Distrito .
-
-em:seLocaliza a owl:ObjectProperty ;
-    rdfs:label "se localiza" ;
-    rdfs:domain er:Evento ;
-    rdfs:range er:Instalacion .
-
-time:fin a owl:DatatypeProperty ;
-    rdfs:label "fin" ;
-    rdfs:range xsd:date .
-
-time:hora a owl:DatatypeProperty ;
-    rdfs:label "hora" ;
-    rdfs:range xsd:time .
-
-time:inicio a owl:DatatypeProperty ;
-    rdfs:label "inicio" ;
-    rdfs:range xsd:date .
+<http://ocioMadrid.com/eventosMadrid/ontology/Eventos> rdf:type owl:Ontology
 
 er:Actividad a owl:Class ;
     rdfs:label "Actividad" .
 
-mz:Barrio a owl:Class ;
+er:Barrio a owl:Class ;
     rdfs:label "Barrio" .
 
-mz:Distrito a owl:Class ;
+er:Distrito a owl:Class ;
     rdfs:label "Distrito" .
-
-time:IntervaloTiempo a owl:Class ;
-    rdfs:label "Intervalo Tiempo" .
 
 er:Instalacion a owl:Class ;
     rdfs:label "Instalacion" .
@@ -124,3 +23,142 @@ er:Instalacion a owl:Class ;
 er:Evento a owl:Class ;
     rdfs:label "Evento" .
 
+
+:accesibilidad a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "accesibilidad" ;
+    rdfs:range xsd:string .
+
+:audiencia a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "audiencia" ;
+    rdfs:range xsd:string .
+
+:claseVial a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "clase vial" ;
+    rdfs:range xsd:string .
+
+:codigoPostal a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "codigo postal" ;
+    rdfs:range xsd:string .
+
+:latitud a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "latitud" ;
+    rdfs:range xsd:double .
+
+:longitud a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "longitud" ;
+    rdfs:range xsd:double .
+:numero a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "numero" ;
+    rdfs:range xsd:string .
+
+:gratuito a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "gratuito" ;
+    rdfs:range xsd:boolean .
+
+:iDEvento a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "id evento" ;
+    rdfs:range xsd:string .
+
+:nombreI a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "nombre" ;
+    rdfs:range xsd:string .
+
+:nombreB a owl:DatatypeProperty ;
+    rdfs:domain Barrio
+    rdfs:label "nombre" ;
+    rdfs:range xsd:string .
+
+:nombreD a owl:DatatypeProperty ;
+    rdfs:domain Distrito
+    rdfs:label "nombre" ;
+    rdfs:range xsd:string .
+
+:precio a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "precio" ;
+    rdfs:range xsd:string .
+
+:tipo a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "tipo" ;
+    rdfs:range xsd:string .
+
+:titulo a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "titulo" ;
+    rdfs:range xsd:string .
+
+:tituloA a owl:DatatypeProperty ;
+    rdfs:domain Actividad
+    rdfs:label "titulo" ;
+    rdfs:range xsd:string .
+
+:url a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "url" ;
+    rdfs:range xsd:anyURI .
+
+:urlI a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "url" ;
+    rdfs:range xsd:anyURI .
+
+:urlA a owl:DatatypeProperty ;
+    rdfs:domain Actividad
+    rdfs:label "url" ;
+    rdfs:range xsd:anyURI .
+
+:via a owl:DatatypeProperty ;
+    rdfs:domain Instalacion
+    rdfs:label "via" ;
+    rdfs:range xsd:string .
+
+:perteneceBarrio a owl:ObjectProperty ;
+    rdfs:label "pertenece barrio" ;
+    rdfs:domain er:Instalacion ;
+    rdfs:range er:Barrio .
+
+:inscribe a owl:ObjectProperty ;
+    rdfs:label "inscribe" ;
+    rdfs:domain er:Evento ;
+    rdfs:range er:Actividad .
+
+:perteneceDistrito a owl:ObjectProperty ;
+    rdfs:label "pertenece distrito" ;
+    rdfs:domain er:Instalacion ;
+    rdfs:range er:Distrito .
+
+:seLocaliza a owl:ObjectProperty ;
+    rdfs:label "se localiza" ;
+    rdfs:domain er:Evento ;
+    rdfs:range er:Instalacion .
+
+:fin a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "fin" ;
+    rdfs:range xsd:date .
+
+:hora a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "hora" ;
+    rdfs:range xsd:time .
+
+:inicio a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "inicio" ;
+    rdfs:range xsd:date .
+
+:dias a owl:DatatypeProperty ;
+    rdfs:domain Evento
+    rdfs:label "dias" ;
+    rdfs:range xsd:string .
