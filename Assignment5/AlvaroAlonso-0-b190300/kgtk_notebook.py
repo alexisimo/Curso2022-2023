@@ -162,6 +162,7 @@ kgtk("""
 """
 SELECT ?partyName WHERE{
   wd:Q2685 wdt:P102 ?poliParty .
+  ?member wdt:P102 ?poliParty .
   ?member wdt:P102 ?poliParty FILTER (?member != wd:Q2685) FILTER NOT EXISTS {?member wdt:P570 []} .
   ?member rdfs:label ?partyName FILTER (lang(?partyName) = "es") .
 } LIMIT 3
@@ -170,9 +171,9 @@ SELECT ?partyName WHERE{
 # Kypher:
 kgtk("""
     query -i all
-    --match '(:Q2685)-[:P102]->(poliparty)<-[:P102]-(member)-[:label]->(partyName)'
+    --match '(:Q2685)-[:P102]->(poliparty)<-[:P102]-(member)-[:P31]->(:Q5),(member)-[:label]->(partyMemberName)'
     --limit 3
-    --return 'partyName'
+    --return 'partyMemberName'
 """)
 
 # What are the properties that describe an artist?
@@ -246,7 +247,12 @@ kgtk("""
 
 # Calculate all the paths between Trump and Schwarzenegger (max hops: 3)  
 kgtk("""
-    #TO DO
+    paths --max-hops 3 
+      --path-file paths.tsv
+      --path-mode NONE
+      --path-source source
+      --path-target target
+      -i all --statistics-only
 """)
 
 # Retrieve all the family of Schwarzenegger (child/father/mother/sibling/spouse relationships)
@@ -259,7 +265,17 @@ kgtk("""
 
 # What are the 10 most relevant actors (pagerank) in the graph? (Use graph-statistics command to calculate page rank, and then filter only actors)
 kgtk("""
-    #TO DO
+    graph-statistics -i all -o $OUT/pagerank.tsv.gz
+      --compute-pagerank True
+      --compute-hits False
+      --page-rank-property Pdirected_pagerank
+      --vertex-in-degree-property Pindegree
+      --vertex-ouyt-degree-property Poutdegree
+      --output-degrees True
+      --output-pagerank True
+      --output-hits False \
+      --output-statistics-only
+      --undirected True
 """)
 
 #Hint: do the query after calculating the pagerank. See https://github.com/usc-isi-i2/kgtk-notebooks/blob/main/tutorial/06-kg-network-analysis.ipynb for inspiration
