@@ -162,7 +162,8 @@ kgtk("""
 """
 SELECT ?partName WHERE{
   wd:Q2685 wdt:P102 ?pParty.
-  ?partner wdt:P102 ?pParty FILTER (?partner != wd:Q2685) FILTER NOT EXISTS { ?partner wdt:P570 []}.
+  ?partner wdt:P102 ?pParty .
+  ?partner wdt:P31 wd:Q5 FILTER (?partner != wd:Q2685) FILTER NOT EXISTS { ?partner wdt:P570 []}.
   ?partner rdfs:label ?partName FILTER (lang(?partName) = "es").
 }LIMIT 5
 """
@@ -170,7 +171,7 @@ SELECT ?partName WHERE{
 # Kypher:
 kgtk("""
     query -i all
-    --match '(:Q2685)-[:P102]->(pparty)<-[:P102]-(partner)-[:label]->(partname)'
+    --match '(:Q2685)-[:P102]->(pparty)<-[:P102]-(partner)-[:P31]->(:Q5), (partner)-[:label]->(partname)'
     --limit 2
     --return 'partname'
 """)
