@@ -163,7 +163,7 @@ kgtk("""
 SELECT ?partyName WHERE{
   wd:Q2685 wdt:P102 ?poliParty .
   ?member wdt:P102 ?poliParty .
-  ?member wdt:P102 ?poliParty FILTER (?member != wd:Q2685) FILTER NOT EXISTS {?member wdt:P570 []} .
+  ?member wdt:P31 wd:Q5 FILTER (?member != wd:Q2685) FILTER NOT EXISTS {?member wdt:P570 []} .
   ?member rdfs:label ?partyName FILTER (lang(?partyName) = "es") .
 } LIMIT 3
 """
