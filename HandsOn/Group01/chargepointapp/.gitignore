@@ -1,0 +1,6 @@
+flask_application/*
+flask_application/**
+__pycache__/*
+__pycache__/**
+tmp/*
+tmp/**

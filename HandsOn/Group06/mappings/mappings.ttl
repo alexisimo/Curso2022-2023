@@ -16,7 +16,7 @@
 <http://mapping.example.com/rules_000> a void:Dataset.
 ns:source_000 a rml:LogicalSource;
     rdfs:label "desfibriladores";
-    rml:source "../csv/desfibriladores-externos-fuera-ambito-sanitario-csv-updated.csv";
+    rml:source "../csv/desfibriladores-externos-fuera-ambito-sanitario-csv.csv";
     rml:referenceFormulation ql:CSV.
 <http://mapping.example.com/rules_000> void:exampleResource ns:map_triplesmap1_000.
 ns:map_triplesmap1_000 rml:logicalSource ns:source_000;

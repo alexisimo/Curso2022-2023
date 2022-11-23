@@ -1,0 +1,115 @@
+PREFIX ns1: <http://smartcity.linkeddata.es/transport/ontology/> .
+PREFIX ns4: <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.> .
+PREFIX esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+
+# BIKE STATIONS--------------------------------------------------------------------------
+
+# list wikidata equivalent of bike station districts
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub owl:sameAs ?val.
+}
+
+# list extra information about bike station districts on wididata
+
+SELECT DISTINCT ?property WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?n.
+    ?n ns1:hasDistrict ?d.
+    ?d a ns1:District.
+    ?d owl:sameAs ?qnode.
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?qnode ?property ?obj.
+    }
+}LIMIT 100
+
+# list wikidata equivalent of bike station neighbourhoods
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub owl:sameAs ?val.
+}
+
+# list extra information about bike station neighbourhoods on wididata
+
+SELECT DISTINCT ?property WHERE { 
+    ?bike a esbici:EstacionBicicleta.
+    ?bike ns1:hasNeighbourhood ?n.
+    ?n a ns1:Neighbourhood.
+    ?n owl:sameAs ?qnode.
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?qnode ?property ?obj.
+    }
+}LIMIT 100
+
+# CHARGE STATIONS--------------------------------------------------------------------------
+
+# list wikidata equivalent of charge station districts
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?neighbourhood.
+    ?neighbourhood ns1:hasDistrict ?sub.
+    ?sub a ns1:District.
+    ?sub owl:sameAs ?val.
+}
+
+# list extra information about charge station districts on wididata
+
+SELECT DISTINCT ?property WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?n.
+    ?n ns1:hasDistrict ?d.
+    ?d a ns1:District.
+    ?d owl:sameAs ?qnode.
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?qnode ?property ?obj.
+    }
+}LIMIT 100
+
+# list wikidata equivalent of charge station neighbourhoods
+
+SELECT DISTINCT ?sub ?val WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
+    ?sub owl:sameAs ?val.
+}
+
+# list extra information about charge station neighbourhoods on wididata
+
+SELECT DISTINCT ?property WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasNeighbourhood ?n.
+    ?n a ns1:Neighbourhood.
+    ?n owl:sameAs ?qnode.
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?qnode ?property ?obj.
+    }
+}LIMIT 100
+
+#list wikidata equivalent of charge station operators
+
+SELECT DISTINCT ?sub ?val WHERE {
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasOperator ?sub.
+    ?sub owl:sameAs ?val. 
+}
+
+# list extra information about charge station operator on wididata
+
+SELECT DISTINCT ?property WHERE { 
+    ?cs a ns4:EVChargingStation.
+    ?cs ns1:hasOperator ?op.
+    ?op owl:sameAs ?qnode.
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?qnode ?property ?obj.
+    }
+}LIMIT 100

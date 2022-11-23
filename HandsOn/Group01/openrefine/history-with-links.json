@@ -855,5 +855,161 @@
       "limit": 0
     },
     "description": "Reconcile cells in column Time limit to type Q21199"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Longitude",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Geolocation",
+    "columnInsertIndex": 7,
+    "description": "Create column Geolocation at index 7 based on column Longitude using expression grel:value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Geolocation",
+    "index": 6,
+    "description": "Move column Geolocation to position 6"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Geolocation",
+    "expression": "join ([coalesce(cells['Geolocation'].value,''),coalesce(cells['Latitude'].value,'')],'_')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Geolocation using expression join ([coalesce(cells['Geolocation'].value,''),coalesce(cells['Latitude'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Peripheral",
+    "newColumnName": "Connector type",
+    "description": "Rename column Peripheral to Connector type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Same_as_wikidata_N_Connector",
+    "description": "Remove column Same_as_wikidata_N_Connector"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Charging Station",
+    "expression": "grel:value.md5()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Charging Station using expression grel:value.md5()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Charging Station",
+    "newColumnName": "Charging Station Id",
+    "description": "Rename column Charging Station to Charging Station Id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Geolocation",
+    "newColumnName": "Geolocation Id",
+    "description": "Rename column Geolocation to Geolocation Id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Connector",
+    "newColumnName": "Connector Id",
+    "description": "Rename column Connector to Connector Id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Connector Id",
+    "expression": "grel:value.md5()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Connector Id using expression grel:value.md5()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Geolocation Id",
+    "expression": "grel:value.md5()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Geolocation Id using expression grel:value.md5()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Charging Station Id",
+    "expression": "grel:\"CS_\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Charging Station Id using expression grel:\"CS_\"+value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Geolocation Id",
+    "expression": "grel:\"GL_\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Geolocation Id using expression grel:\"GL_\"+value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Connector Id",
+    "expression": "grel:\"CN_\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Connector Id using expression grel:\"CN_\"+value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cables_Annotation",
+    "newColumnName": "Cables Annotation",
+    "description": "Rename column Cables_Annotation to Cables Annotation"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Time_limit",
+    "newColumnName": "Time limit",
+    "description": "Rename column Time_limit to Time limit"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Same_as_wikidata_Price",
+    "description": "Remove column Same_as_wikidata_Price"
   }
 ]

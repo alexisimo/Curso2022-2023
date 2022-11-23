@@ -35,9 +35,10 @@ SELECT DISTINCT ?sub WHERE {
 
 # list bike station neighbourhoods
 
-SELECT ?Subject WHERE {
-    ?Subject a ns1:BikeStation.
-    ?Subject a ns1:Neighbourhood.
+SELECT ?sub WHERE {
+    ?bike a ns1:BikeStation.
+    ?bike ns1:hasNeighbourhood ?sub.
+    ?sub a ns1:Neighbourhood.
 }
 
 #list capacity of each bike station

@@ -1,6 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix res: <http://monumentmadrid.com/resource/> .
-@prefix ont: <http://monumentmadrid.com/ontology#> .
+@prefix prop: <http://monumentmadrid.com/property#> .
+@prefix clas: <http://monumentmadrid.com/class#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -8,24 +9,28 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 
-res:409512 a ont:Monument ;
-            ont:haspk 409512^^xsd:integer ;
-            ont:hasname "A los Abuelos"^^xsd:string ;
-            ont:hassubtype "Grupo Escultórico"^^xsd:string ;
-            ont:hasdescription "Pequeña escultura, situada en un parque delimitado por la intersección entre las calles Alicún y Purchena, que fue donada por la cercana Escuela Infantil “El Carmen” al Concejal del Distrito Jorge Tapia. La obra constituye un homenaje a los abuelos y abuelas que cuidan de sus nietos."^^xsd:string ;
-            ont:hasinagurationDate 1994^^xsd:integer ;
-            ont:designedBy "M., Esther"^^xsd:string .;
-            ont:hasAddress monu:Alicun .
+res/monument/:409512 a clas:Monument ;
+            prop:haspk 409512^^xsd:integer ;
+            prop:hasname "A los Abuelos"^^xsd:string ;
+            prop:hassubtype "Grupo Escultórico"^^xsd:string ;
+            prop:hasdescription "Pequeña escultura, situada en un parque delimitado por la intersección entre las calles Alicún y Purchena, que fue donada por la cercana Escuela Infantil “El Carmen” al Concejal del Distrito Jorge Tapia. La obra constituye un homenaje a los abuelos y abuelas que cuidan de sus nietos."^^xsd:string ;
+            prop:hasinagurationDate 1994^^xsd:integer ;
+            prop:designedBy "M., Esther"^^xsd:string .;
+            prop:hasAddress monu:Alicun .
 
-res:443913-4481224 a ont:Address ;
-            ont:hasaddressname "Alicun"^^xsd:string ;
-            ont:hasaddresstype "C"^^xsd:string ;
-            ont:hascity "Madrid"^^xsd:string ;
-            ont:hasprovince "Madrid"^^xsd:string ;
-            ont:hasneighborhood "APÓSTOL SANTIAGO"^^xsd:string ;
-            ont:hasdistrict "HORTALEZA"^^xsd:string .
+res/address/:443913-4481224 a clas:Address ;
+            prop:hasaddressname "Alicun"^^xsd:string ;
+            prop:hasaddresstype "C"^^xsd:string ;
+            prop:hascity "Madrid"^^xsd:string ;
+            prop:hasprovince "Madrid"^^xsd:string ;
+            prop:hasneighborhood "APÓSTOL SANTIAGO"^^xsd:string ;
+            prop:hasdistrict "HORTALEZA"^^xsd:string .
 
-res:443913-4481224 a sf:Point ;
+/res/district/:HORTALEZA a clas:District ;
+            prop:hasname HORTALEZA ;
+            prop:hascode 16 .
+
+res/geometry/:443913-4481224 a sf:Point ;
             geo_core:xETRS89 "443913"^^xsd:float ;
             geo_core:yETRS89 "4481224"^^xsd:float ;
             geo_core:latETRS89 "40.479811874274304"^^xsd:float ;

@@ -17,10 +17,8 @@ mappings:
       - [a, ns:Desfibrilador]
       - [ns:hasEstablecimiento, $(tipo_establecimiento)]
       - [ns:hasTitularidad, $(tipo_titularidad)]
-      #- [ns:hasDireccionEstablecimiento, $(direccion_establecimiento)]
       - [ns:hasHorarioAcceso , $(horario_acceso)]
       - [ns:hasCodigoDea, $(codigo_dea)]
-      #- [ns:hasMunicipio, $(municipio_codigo), xsd:nonNegativeInteger]
       - [ns:hasHorarioAcceso, $(horario_acceso)]
       - p: ns:hasDireccionEstablecimiento
         o:

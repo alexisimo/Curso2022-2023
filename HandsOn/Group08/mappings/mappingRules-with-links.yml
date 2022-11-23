@@ -21,7 +21,7 @@ prefixes:
        - [ont:hasId, $(PK),xsd:string]
        - [ont:hasName, $(NOMBRE),xsd:string]
        - [ont:hasTransport, $(TRANSPORTE),xsd:string]
-       - [ont:hasAccessibility, $(ACCESIBILIDAD),xsd:string]
+       - [ont:hasAccessibility, $(ACCESIBILIDAD),xsd:boolean]
        - [ont:hasUrl, $(CONTENT-URL),xsd:string]
        - [ont:hasCoordinateX, $(COORDENADA-X),xsd:double]
        - [ont:hasCoordinateY, $(COORDENADA-Y),xsd:double]

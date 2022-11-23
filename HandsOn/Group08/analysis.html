@@ -7,9 +7,11 @@
 			<li><b>License: </b><a href="https://datos.madrid.es/egob/catalogo/aviso-legal"</a> https://datos.madrid.es/egob/catalogo/aviso-legal</a>
 			<li><b>Publisher:</b> <a href="https://datos.madrid.es/portal/site/egob/">Portal de datos abiertos del Ayuntamiento de Madrid</a></li>
 			<li><b>Rightsholder:</b>Ayuntamiento de la comunidad de Madrid.</li>
-			</li>	
+			</li>
 		</ul>
-	
+	<span>License of the dataset we are going to generate<br>
+         We will use the same license for the generated dataset, with commercial and non- commercial purposes,<br>  
+         using creative commons license "CC(BY SA)" </span>
 	<h2>Data Set</h2>
     <table>
       <tbody style="background: lightblue;">
@@ -89,7 +91,7 @@
       <tr>
   
         <td>ACCESIBILIDAD</td>
-        <td>String</td>
+        <td>Boolean</td>
         <td>Not Unique</td>
         <td> </td>
       
@@ -310,7 +312,7 @@
 	<h2>Resource naming strategy</h2>
 		<ul>
 			<li><b>Domain: </b><a href="https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios">https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios</a> </li>
-			<li><b>Classes: </b><a href="https://www.puntoslimpiosmadrid.com/PuntosLimpios#">https://www.puntoslimpiosmadrid.com/PuntosLimpios#</a>
+			<li><b>Classes: </b><a href="https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#">https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#</a>
         <ul>
           <li type="square">Address</li>
           <li type="square">CleanPoint</li>
@@ -319,7 +321,7 @@
         </ul>
 
 			</li>
-			<li><b>Properties: </b><a href="https://www.puntoslimpiosmadrid.com/PuntosLimpios#">https://www.puntoslimpiosmadrid.com/PuntosLimpios#</a> 
+			<li><b>Properties: </b><a href="https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#">https://www.puntoslimpiosmadrid.com/ontology/PuntosLimpios#</a> 
         <ul>
           <li type="circle">Object Properties:</li>
           <ul>
@@ -330,22 +332,31 @@
 
           <li type="circle">Data Properties:</li>
           <ul>
+	    <li type="square">hasAccessibility</li>
             <li type="square">hasCoordinateX</li>
             <li type="square">hasCoordinateY</li>
+	    <li type="square">hasDistrict</li>
             <li type="square">hasDistrictCode</li>
             <li type="square">hasId</li>
             <li type="square">hasLatitude</li>
             <li type="square">hasLongitude</li>
             <li type="square">hasName</li>
             <li type="square">hasNameStreet</li>
+            <li type="square">hasNeighborhood</li>
             <li type="square">hasNeighborhoodCode</li>
             <li type="square">hasNumber</li>
-            <li type="square">hasSchedule</li>
+            <li type="square">hasOrientation</li>
+	    <li type="square">hasTransport</li>
+	    <li type="square">hasTypeNumber</li>
+            <li type="square">hasTypeStreet</li>
+            <li type="square">hasUrl</li>
             <li type="square">hasZipCode</li>
           </ul>
         </ul>
         
 
+			</li>
+			<li>Individuals:https://www.puntoslimpiosmadrid.com/resource/[className]/[identifier]
 			</li>
 		</ul>
 		

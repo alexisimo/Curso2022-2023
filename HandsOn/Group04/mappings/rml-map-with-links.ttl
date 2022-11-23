@@ -14,8 +14,8 @@
 @prefix v: <http://rdf.data-vocabulary.org/#> .
 @prefix schema: <http://schema.org/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix prop: <https://www.puntodecargasMadrid/Propiedades#> .
-@prefix class: <https://www.puntodecargasMadrid/Clases#> .
+@prefix prop: <https://www.puntodecargasMadrid/recargas/Propiedades#> .
+@prefix class: <https://www.puntodecargasMadrid/recargas/Clases#> .
 
 map:jc_000 rr:child "PUNTORECARGAPERTENECEDIST" ;
 	rr:parent "PUNTORECARGAPERTENECEDIST" .
@@ -51,7 +51,7 @@ map:map_PuntoDeCarga_000 rml:logicalSource map:source_000 ;
 	rr:subjectMap map:s_000 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant "https://www.puntodecargasMadrid/Clases#puntoRecarga" ;
+	rr:constant "https://www.puntodecargasMadrid/recargas/Clases#puntoRecarga" ;
 	rr:termType rr:IRI .
 
 map:om_001 rml:reference "UBICACION" ;
@@ -98,7 +98,7 @@ map:om_009 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Coordenadas_000 .
 
 map:om_010 rdf:type rr:ObjectMap ;
-	rr:constant "https://www.puntodecargasMadrid/Clases#Distrito" ;
+	rr:constant "https://www.puntodecargasMadrid/recargas/Clases#Distrito" ;
 	rr:termType rr:IRI .
 
 map:om_011 rml:reference "DISTRITO" ;
@@ -120,7 +120,7 @@ map:om_014 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Barrio_000 .
 
 map:om_015 rdf:type rr:ObjectMap ;
-	rr:constant "https://www.puntodecargasMadrid/Clases#Barrio" ;
+	rr:constant "https://www.puntodecargasMadrid/recargas/Clases#Barrio" ;
 	rr:termType rr:IRI .
 
 map:om_016 rml:reference "COD_BAR" ;
@@ -143,12 +143,12 @@ map:om_019 rdf:type rr:ObjectMap ;
 
 map:om_020 rml:reference "XCoord" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_021 rml:reference "YCoord" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:pm_000 rdf:type rr:PredicateMap ;
@@ -309,16 +309,16 @@ map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Barrio_000, map:
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "https://www.puntodecargasmadrid/Recursos/PuntoRecarga/{PuntoRecargaID}" .
+	rr:template "https://www.puntodecargasmadrid/recargas/recursos/PuntoRecarga/{PuntoRecargaID}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "https://www.puntodecargasmadrid/Clases/Distrito/{PUNTORECARGAPERTENECEDIST}" .
+	rr:template "https://www.puntodecargasmadrid/recargas/recursos/Distrito/{PUNTORECARGAPERTENECEDIST}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://www.puntodecargasmadrid/Recursos/Barrio/{DISTPERTENECEBARRIO}" .
+	rr:template "http://www.puntodecargasmadrid/recargas/recursos/Barrio/{DISTPERTENECEBARRIO}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://www.puntorecargasmadrid/Recursos/coordonnes/{COORDONNES}" .
+	rr:template "http://www.puntorecargasmadrid/recargas/recursos/coordonnes/{COORDONNES}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv" ;

@@ -1398,4 +1398,256 @@ CarlosD21 Hands-on assignment 3
       "repeatCount": 10,
       "description": "Text transform on cells in column ACCESIBILIDAD-INSTALACION using expression value.toNumber()"
     }
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NO ACCESIBLE"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0,6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NO ACCESIBLE , BUCLE DE INDUCCION MAGNETICO"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBLE"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1,4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBLE, LENGUA DE SIGNOS "
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1,5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBILIDAD, PODO TACTIL"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ACCESIBILIDAD, PODO TACTIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBILIDAD, SEÑALIZACION PODOTACTIL"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1,5,6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBILIDAD,SEÑALIZACION PODOTACTIL,BUCLE DE INDUCCION MAGNETICO"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1,6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBLE,BUCLE DE INDUCCION MAGNETICO"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ACCESIBILIDAD, SEÑALIZACION PODOTACTIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBLE, SEÑALIZACION PODOTACTIL"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ACCESIBILIDAD,SEÑALIZACION PODOTACTIL,BUCLE DE INDUCCION MAGNETICO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCESIBLE,SEÑALIZACION PODOTACTIL,BUCLE DE INDUCCION MAGNETICO"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INSTALACIÓN PARCIALMENTE ACCESIBLE PARA PERSONAS CON MOVILIDAD REDUCIDA"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIN INFORMACIÓN SOBRE ACCESIBILIDAD PARA\nPERSONAS CON MOVILIDAD REDUCIDA\n"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD-INSTALACION"
+  },{
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "TIPO",
+    "expression": "grel:value.split("/contenido/actividades/")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression grel:value.split("/contenido/actividades/")[0]"
+  }
   ]

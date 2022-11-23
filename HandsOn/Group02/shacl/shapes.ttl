@@ -1,0 +1,169 @@
+@prefix ev:    <https://smart-data-models.github.io/dataModel.Transportation/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ont:   <http://smartcity.linkeddata.es/transport/ontology/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix esbici: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix base:  <http://smartcity.linkeddata.es/transport/> .
+
+<https://astrea.linkeddata.es/shapes#ab94cb7be7a93617a4d257494047f5f6>
+        a               sh:NodeShape ;
+        rdfs:label      "Estacion Bicicleta" ;
+        sh:name         "Estacion Bicicleta" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#f20303d03b2e4d320997ba0465f85d6f> ;
+        sh:targetClass  esbici:EstacionBicicleta .
+
+<https://astrea.linkeddata.es/shapes#ac862df4f074826aae62cebcfaa7035d>
+        a               sh:NodeShape ;
+        rdfs:label      "Neighbourhood" ;
+        sh:name         "Neighbourhood" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#608247da2a5ba698ea9e8c4b6782a31f> ;
+        sh:targetClass  ont:Neighbourhood .
+
+<https://astrea.linkeddata.es/shapes#9faf7c40b6fd0bb1d372c98c743d557f>
+        a            sh:PropertyShape ;
+        rdfs:label   "number_id" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "number_id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:number_id ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#27295d6025aac57a2c1fa68b77563877>
+        a            sh:PropertyShape ;
+        rdfs:label   "id" ;
+        sh:datatype  xsd:string ;
+        sh:name      "id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:id ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425>
+        a               sh:NodeShape ;
+        rdfs:label      "Feature" ;
+        sh:name         "Feature" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#a155f6621cf2fa569313a950f2ce48aa> , <https://astrea.linkeddata.es/shapes#5fb9da15de47ca1be01f4dbfae4625e0> , <https://astrea.linkeddata.es/shapes#c177d8828739143cb1157ed520fc3988> ;
+        sh:targetClass  geosparql:Feature .
+
+<https://astrea.linkeddata.es/shapes#fa70bec39afbb95f6c94ff26e5d2cbd0>
+        a            sh:PropertyShape ;
+        rdfs:label   "ad_name" ;
+        sh:datatype  xsd:string ;
+        sh:name      "ad_name" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:ad_name ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#a155f6621cf2fa569313a950f2ce48aa>
+        a            sh:PropertyShape ;
+        rdfs:label   "has neighbourhood" ;
+        sh:class     ont:Neighbourhood ;
+        sh:name      "has neighbourhood" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:hasNeighbourhood .
+
+<https://astrea.linkeddata.es/shapes#608247da2a5ba698ea9e8c4b6782a31f>
+        a            sh:PropertyShape ;
+        rdfs:label   "has district" ;
+        sh:class     ont:District ;
+        sh:name      "has district" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:hasDistrict .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#9c59f2685cc14ce9c835af8c804d41b2> , <https://astrea.linkeddata.es/shapes#5fb9da15de47ca1be01f4dbfae4625e0> , <https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> , <https://astrea.linkeddata.es/shapes#c1b95e2fb39adf53f7b1e1ab74d50ebc> , <https://astrea.linkeddata.es/shapes#c177d8828739143cb1157ed520fc3988> , <https://astrea.linkeddata.es/shapes#63c7a0bc4209e54621598af603c013ae> , <https://astrea.linkeddata.es/shapes#ac862df4f074826aae62cebcfaa7035d> , <https://astrea.linkeddata.es/shapes#9faf7c40b6fd0bb1d372c98c743d557f> , <https://astrea.linkeddata.es/shapes#917a1792f5f76c0766fd0a572738c016> , <https://astrea.linkeddata.es/shapes#27295d6025aac57a2c1fa68b77563877> , <https://astrea.linkeddata.es/shapes#ab94cb7be7a93617a4d257494047f5f6> , <https://astrea.linkeddata.es/shapes#a155f6621cf2fa569313a950f2ce48aa> , <https://astrea.linkeddata.es/shapes#9cf2826c1628b4413892a09777801ae1> , <https://astrea.linkeddata.es/shapes#608247da2a5ba698ea9e8c4b6782a31f> , <https://astrea.linkeddata.es/shapes#cc38c3ebe51dff130ef7aa906180b376> , <https://astrea.linkeddata.es/shapes#fa70bec39afbb95f6c94ff26e5d2cbd0> , <https://astrea.linkeddata.es/shapes#f20303d03b2e4d320997ba0465f85d6f> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#63c7a0bc4209e54621598af603c013ae>
+        a               sh:NodeShape ;
+        rdfs:label      "E V Charging Station" ;
+        sh:name         "E V Charging Station" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#27295d6025aac57a2c1fa68b77563877> , <https://astrea.linkeddata.es/shapes#917a1792f5f76c0766fd0a572738c016> ;
+        sh:targetClass  ev:EVChargingStation .
+
+<https://astrea.linkeddata.es/shapes#5fb9da15de47ca1be01f4dbfae4625e0>
+        a            sh:PropertyShape ;
+        rdfs:label   "has address" ;
+        sh:class     ont:Address ;
+        sh:name      "has address" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:hasAddress .
+
+<https://astrea.linkeddata.es/shapes#917a1792f5f76c0766fd0a572738c016>
+        a            sh:PropertyShape ;
+        rdfs:label   "has operator" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has operator" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:hasOperator ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#f20303d03b2e4d320997ba0465f85d6f>
+        a            sh:PropertyShape ;
+        rdfs:label   "capacity" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "capacity" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:capacity ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#c177d8828739143cb1157ed520fc3988>
+        a            sh:PropertyShape ;
+        rdfs:label   "has location type" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has location type" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:hasLocationType ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#cc38c3ebe51dff130ef7aa906180b376>
+        a            sh:PropertyShape ;
+        rdfs:label   "ad_number" ;
+        sh:datatype  xsd:string ;
+        sh:name      "ad_number" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:ad_number ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#9cf2826c1628b4413892a09777801ae1>
+        a               sh:NodeShape ;
+        rdfs:label      "Address" ;
+        sh:name         "Address" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#cc38c3ebe51dff130ef7aa906180b376> , <https://astrea.linkeddata.es/shapes#fa70bec39afbb95f6c94ff26e5d2cbd0> ;
+        sh:targetClass  ont:Address .
+
+<https://astrea.linkeddata.es/shapes#c1b95e2fb39adf53f7b1e1ab74d50ebc>
+        a            sh:PropertyShape ;
+        rdfs:label   "name_id" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name_id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:name_id ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#9c59f2685cc14ce9c835af8c804d41b2>
+        a               sh:NodeShape ;
+        rdfs:label      "District" ;
+        sh:name         "District" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ont:District .

@@ -1,19 +1,44 @@
-@prefix em: <http://ocioMadrid/lcc/ontology/EventosMadrid#> .
-@prefix ns: <http://ns.com#> .
+@base <http://ocioMadrid.com/eventosMadrid/ontology/Eventos> .
+@prefix : <http://ocioMadrid.com/eventosMadrid/ontology/Eventos#> .
+@prefix er: <http://ocioMadrid.com/eventosMadrid/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <http://www.owl-ontologies.com/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ev: <http://ocioMadrid/lcc/resource/Evento#> .
-@prefix ac: <http://ocioMadrid/lcc/resource/Actividad#> .
-@prefix ins: <http://ocioMadrid/lcc/resource/Instalacion#> .
-@prefix dis: <http://ocioMadrid/lcc/resource/Distrito#> .
-@prefix ba: <http://ocioMadrid/lcc/resource/Barrio#> .
 
-ev:11768163 em:seDesarrolla time:IntervaloTiempo [
-    time:inicio "2022-09-30 00:00:00.0"^^xsd:date; 		
-    time:fin "2022-10-02 23:59:00.0"^^xsd:date
-    time:hora "21:00"^^xsd:time
-    ].
+@prefix ev: <http://ocioMadrid.com/eventosMadrid/resource/Evento> .
+@prefix in: <http://ocioMadrid.com/eventosMadrid/resource/Instalacion> .
+@prefix ba: <http://ocioMadrid.com/eventosMadrid/resource/Barrio> .
+@prefix di: <http://ocioMadrid.com/eventosMadrid/resource/Distrito> .
+@prefix ac: <http://ocioMadrid.com/eventosMadrid/resource/Actividad> .
+
+ev:11768163 :titulo "15ª_Edición_Mi_primer_Festival_de_Cine"^^xsd:string;
+            :precio "Más información sobre precios y programación en próximas fechas."^^xsd:string;
+            :gratuito "1"^^xsd:boolean;
+            :larga-duracion "1"^^xsd:boolean;
+            :url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4fd9afbfa0423810VgnVCM1000001d4a900aRCRD"^^xsd:anyURI;
+            :audiencia ""^^xsd:string;
+            :tipo "CineActividadesAudiovisuales"^^xsd:string;
+            :tituloA "15ª_Edición_Mi_primer_Festival_de_Cine"^^xsd:string;
+            :nombreI "Centro de Cultura Contemporánea Conde Duque"^^xsd:string;
+            :inicio "2022-09-30 00:00:00.0"^^xsd:date; 		
+            :fin "2022-10-02 23:59:00.0"^^xsd:date;
+            :hora "21:00"^^xsd:time;
+            :dias "S,D"^^xsd:string.
+
+ac:15ª_Edición_Mi_primer_Festival_de_Cine :tituloA "15ª_Edición_Mi_primer_Festival_de_Cine"^^xsd:string;
+                                          :urlA "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f3e9afbfa0423810VgnVCM1000001d4a900aRCRD"^^xsd:anyURI.
+
+in:Centro de Cultura Contemporánea Conde Duque :nombreI "Centro de Cultura Contemporánea Conde Duque"^^xsd:string;
+                                               :accesibilidad "accesible"^^xsd:string;
+                                               :claseVial "calle"^^xsd:string;
+                                               :via "Conde Duque"^^xsd:string;
+                                               :codigoPostal "28015"^^xsd:string;
+                                               :numero "9"^^xsd:string;
+                                               :barrio "Universidad"^^xsd:string;
+                                               :distrito "centro"^^xsd:string;
+                                               :latitud "40.42802889001877"^^xsd:double;
+                                               :longitud "-3.7101823535818"^^xsd:double;
+
 
 ev:11768163 em:inscribe ac:15ª_Edición_Mi_primer_Festival_de_Cine.
 ev:11768163 em:seLocaliza ins:Centro_de_Cultura_Contemporánea_Conde_Duque.
